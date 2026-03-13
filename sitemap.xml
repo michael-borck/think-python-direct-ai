@@ -1,131 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/index.html</loc>
-    <lastmod>2026-01-23T13:36:20.023Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/index.html</loc>
+    <lastmod>2026-03-13T17:15:41.369Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/acknowledgments.html</loc>
-    <lastmod>2026-01-22T09:26:57.741Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/copyright.html</loc>
+    <lastmod>2026-03-13T17:15:41.355Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-0-understanding-ai-partner.html</loc>
-    <lastmod>2026-01-23T04:48:41.520Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/acknowledgments.html</loc>
+    <lastmod>2026-03-13T17:15:41.354Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-1-input-process-output.html</loc>
-    <lastmod>2026-01-22T09:26:57.742Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-understanding-ai-partner.html</loc>
+    <lastmod>2026-03-13T17:15:41.354Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-2-variables.html</loc>
-    <lastmod>2026-01-22T09:26:57.743Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-input-process-output.html</loc>
+    <lastmod>2026-03-13T17:15:41.378Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-3-input.html</loc>
-    <lastmod>2026-01-22T09:26:57.743Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-variables.html</loc>
+    <lastmod>2026-03-13T17:15:41.383Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-4-making-decisions.html</loc>
-    <lastmod>2026-01-22T09:26:57.743Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-input.html</loc>
+    <lastmod>2026-03-13T17:15:41.382Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-5-loops.html</loc>
-    <lastmod>2026-01-22T09:26:57.743Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-making-decisions.html</loc>
+    <lastmod>2026-03-13T17:15:41.384Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/expression-toolkit.html</loc>
-    <lastmod>2026-01-22T09:26:57.758Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-loops.html</loc>
+    <lastmod>2026-03-13T17:15:41.355Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-1-fortune-teller.html</loc>
-    <lastmod>2026-01-22T09:26:57.760Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/expression-toolkit.html</loc>
+    <lastmod>2026-03-13T17:15:41.371Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-2-mad-libs.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/fortune-teller.html</loc>
+    <lastmod>2026-03-13T17:15:41.366Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-3-number-game.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/mad-libs.html</loc>
+    <lastmod>2026-03-13T17:15:41.359Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-4-rock-paper-scissors.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/number-game.html</loc>
+    <lastmod>2026-03-13T17:15:41.367Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-6-functions.html</loc>
-    <lastmod>2026-01-22T09:26:57.744Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/rock-paper-scissors.html</loc>
+    <lastmod>2026-03-13T17:15:41.368Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-7-organizing-information.html</loc>
-    <lastmod>2026-01-22T09:26:57.744Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-functions.html</loc>
+    <lastmod>2026-03-13T17:15:41.371Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-8-saving-work.html</loc>
-    <lastmod>2026-01-22T09:26:57.744Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-organizing-information.html</loc>
+    <lastmod>2026-03-13T17:15:41.373Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-9-debugging.html</loc>
-    <lastmod>2026-01-22T09:26:57.744Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-saving-work.html</loc>
+    <lastmod>2026-03-13T17:15:41.357Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-5-temperature-converter.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-debugging.html</loc>
+    <lastmod>2026-03-13T17:15:41.381Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-6-contact-book.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/temperature-converter.html</loc>
+    <lastmod>2026-03-13T17:15:41.358Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-7-journal-app.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/contact-book.html</loc>
+    <lastmod>2026-03-13T17:15:41.362Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-8-quiz-game.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/journal-app.html</loc>
+    <lastmod>2026-03-13T17:15:41.363Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-10-working-with-data.html</loc>
-    <lastmod>2026-01-22T09:26:57.742Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/quiz-game.html</loc>
+    <lastmod>2026-03-13T17:15:41.369Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-11-connected-programs.html</loc>
-    <lastmod>2026-01-22T09:26:57.742Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-working-with-data.html</loc>
+    <lastmod>2026-03-13T17:15:41.356Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-12-interactive-systems.html</loc>
-    <lastmod>2026-01-22T09:26:57.742Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-connected-programs.html</loc>
+    <lastmod>2026-03-13T17:15:41.379Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-13-becoming-architect.html</loc>
-    <lastmod>2026-01-22T09:26:57.743Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-interactive-systems.html</loc>
+    <lastmod>2026-03-13T17:15:41.374Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-9-grade-analysis.html</loc>
-    <lastmod>2026-01-22T09:26:57.762Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-becoming-architect.html</loc>
+    <lastmod>2026-03-13T17:15:41.380Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-10-weather-app.html</loc>
-    <lastmod>2026-01-22T09:26:57.760Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/grade-analysis.html</loc>
+    <lastmod>2026-03-13T17:15:41.365Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-11-text-adventure.html</loc>
-    <lastmod>2026-01-22T09:26:57.760Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/weather-app.html</loc>
+    <lastmod>2026-03-13T17:15:41.361Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/projects/week-12-todo-gui.html</loc>
-    <lastmod>2026-01-22T09:26:57.761Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/text-adventure.html</loc>
+    <lastmod>2026-03-13T17:15:41.364Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/chapter-14-next-steps.html</loc>
-    <lastmod>2026-01-22T09:26:57.743Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/projects/todo-gui.html</loc>
+    <lastmod>2026-03-13T17:15:41.360Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/summary.html</loc>
-    <lastmod>2026-01-22T09:26:57.762Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/chapter-next-steps.html</loc>
+    <lastmod>2026-03-13T17:15:41.372Z</lastmod>
   </url>
   <url>
-    <loc>https://michaelborck-books.github.io/think-python-direct-ai/references.html</loc>
-    <lastmod>2026-01-22T09:26:57.762Z</lastmod>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/summary.html</loc>
+    <lastmod>2026-03-13T17:15:41.370Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/references.html</loc>
+    <lastmod>2026-03-13T17:15:41.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/think-python-direct-ai/about-author.html</loc>
+    <lastmod>2026-03-13T17:15:41.384Z</lastmod>
   </url>
 </urlset>

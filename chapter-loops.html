@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions.">
+
+<title>6&nbsp; Doing Things Over and Over: Loops – Think Python, Direct AI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./expression-toolkit.html" rel="next">
+<link href="./chapter-making-decisions.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-7ac2f9da8c2617a4fdd15004b4601015.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-597958c53c93a607afca12fd375c57ed.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d5c24611f24218015e8fca33dc27a3d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5843e84163a10bdcc16362dd56f5f38a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d5c24611f24218015e8fca33dc27a3d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+// Custom JavaScript for interactive elements
+</script>
+
+
+<link rel="stylesheet" href="assets/custom.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter-input-process-output.html">Part I: Computational Thinking (Weeks 1-4)</a></li><li class="breadcrumb-item"><a href="./chapter-loops.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Doing Things Over and Over: Loops</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Think Python, Direct AI</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/michael-borck/think-python-direct-ai" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="./resources/ai-templates.html" title="AI Templates" class="quarto-navigation-tool px-1" aria-label="AI Templates"><i class="bi bi-chat-dots"></i></a>
+    <a href="https://github.com/michael-borck/think-python-direct-ai" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./acknowledgments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgments</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 0: Your AI Learning Partnership</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-understanding-ai-partner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Understanding Your AI Partner</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I: Computational Thinking (Weeks 1-4)</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-input-process-output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Input, Process, Output: The Universal Pattern</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remembering Things: Variables</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-input.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Asking Questions: Getting Input</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-making-decisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Making Decisions: If Statements</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-loops.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Doing Things Over and Over: Loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./expression-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Your Expression Toolkit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/fortune-teller.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 1 Project: Fortune Teller</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/mad-libs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 2 Project: Mad Libs Generator</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/number-game.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Week 3 Project: Number Guessing Game</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/rock-paper-scissors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Week 4 Project: Rock Paper Scissors</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II: Building Systems (Weeks 5-8)</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Creating Your Own Commands: Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-organizing-information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">organising Information: Lists and Dictionaries</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-saving-work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Saving Your Work: Files</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-debugging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">When Things Go Wrong: Debugging</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/temperature-converter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Week 5 Project: Temperature Converter</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/contact-book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Week 6 Project: Contact Book</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/journal-app.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Week 7 Project: Personal Journal</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/quiz-game.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Week 8 Project: Quiz Game</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III: Real-World Programming (Weeks 9-12)</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-working-with-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Chapter 10: Working with Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-connected-programs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Chapter 11: Connected Programs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-interactive-systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Chapter 12: Interactive Systems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-becoming-architect.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Chapter 13: Becoming an Architect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/grade-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Week 9 Project: Grade Analysis Tool</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/weather-app.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Week 10 Project: Weather Dashboard</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/text-adventure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Week 11 Project: Text Adventure Game</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects/todo-gui.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Week 12 Project: Todo Application with GUI</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV: Your Journey Forward</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-next-steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Chapter 14: Your Programming Journey Forward</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Summary: Your Programming Transformation Complete</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about-author.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About the Author</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-concept-first" id="toc-the-concept-first" class="nav-link active" data-scroll-target="#the-concept-first"><span class="header-section-number">6.1</span> The Concept First</a></li>
+  <li><a href="#understanding-through-real-life" id="toc-understanding-through-real-life" class="nav-link" data-scroll-target="#understanding-through-real-life"><span class="header-section-number">6.2</span> Understanding Through Real Life</a>
+  <ul class="collapse">
+  <li><a href="#repetition-is-everywhere" id="toc-repetition-is-everywhere" class="nav-link" data-scroll-target="#repetition-is-everywhere">Repetition Is Everywhere</a></li>
+  <li><a href="#natural-stopping-points" id="toc-natural-stopping-points" class="nav-link" data-scroll-target="#natural-stopping-points">Natural Stopping Points</a></li>
+  <li><a href="#the-power-of-patterns" id="toc-the-power-of-patterns" class="nav-link" data-scroll-target="#the-power-of-patterns">The Power of Patterns</a></li>
+  </ul></li>
+  <li><a href="#discovering-loops-with-your-ai-partner" id="toc-discovering-loops-with-your-ai-partner" class="nav-link" data-scroll-target="#discovering-loops-with-your-ai-partner"><span class="header-section-number">6.3</span> Discovering Loops with Your AI Partner</a>
+  <ul class="collapse">
+  <li><a href="#exploration-1-finding-repetition" id="toc-exploration-1-finding-repetition" class="nav-link" data-scroll-target="#exploration-1-finding-repetition">Exploration 1: Finding Repetition</a></li>
+  <li><a href="#exploration-2-different-types-of-repetition" id="toc-exploration-2-different-types-of-repetition" class="nav-link" data-scroll-target="#exploration-2-different-types-of-repetition">Exploration 2: Different Types of Repetition</a></li>
+  <li><a href="#exploration-3-the-magic-of-loops" id="toc-exploration-3-the-magic-of-loops" class="nav-link" data-scroll-target="#exploration-3-the-magic-of-loops">Exploration 3: The Magic of Loops</a></li>
+  </ul></li>
+  <li><a href="#from-concept-to-code" id="toc-from-concept-to-code" class="nav-link" data-scroll-target="#from-concept-to-code"><span class="header-section-number">6.4</span> From Concept to Code</a>
+  <ul class="collapse">
+  <li><a href="#the-simplest-expression" id="toc-the-simplest-expression" class="nav-link" data-scroll-target="#the-simplest-expression">The Simplest Expression</a></li>
+  <li><a href="#understanding-the-flow" id="toc-understanding-the-flow" class="nav-link" data-scroll-target="#understanding-the-flow">Understanding the Flow</a></li>
+  </ul></li>
+  <li><a href="#mental-model-building" id="toc-mental-model-building" class="nav-link" data-scroll-target="#mental-model-building"><span class="header-section-number">6.5</span> Mental Model Building</a>
+  <ul class="collapse">
+  <li><a href="#model-1-the-assembly-line" id="toc-model-1-the-assembly-line" class="nav-link" data-scroll-target="#model-1-the-assembly-line">Model 1: The Assembly Line</a></li>
+  <li><a href="#model-2-the-track-runner" id="toc-model-2-the-track-runner" class="nav-link" data-scroll-target="#model-2-the-track-runner">Model 2: The Track Runner</a></li>
+  <li><a href="#model-3-the-playlist" id="toc-model-3-the-playlist" class="nav-link" data-scroll-target="#model-3-the-playlist">Model 3: The Playlist</a></li>
+  </ul></li>
+  <li><a href="#prompt-evolution-exercise" id="toc-prompt-evolution-exercise" class="nav-link" data-scroll-target="#prompt-evolution-exercise"><span class="header-section-number">6.6</span> Prompt Evolution Exercise</a>
+  <ul class="collapse">
+  <li><a href="#round-1-too-vague" id="toc-round-1-too-vague" class="nav-link" data-scroll-target="#round-1-too-vague">Round 1: Too Vague</a></li>
+  <li><a href="#round-2-more-specific" id="toc-round-2-more-specific" class="nav-link" data-scroll-target="#round-2-more-specific">Round 2: More Specific</a></li>
+  <li><a href="#round-3-learning-focused" id="toc-round-3-learning-focused" class="nav-link" data-scroll-target="#round-3-learning-focused">Round 3: Learning-Focused</a></li>
+  <li><a href="#round-4-concept-reinforcement" id="toc-round-4-concept-reinforcement" class="nav-link" data-scroll-target="#round-4-concept-reinforcement">Round 4: Concept Reinforcement</a></li>
+  </ul></li>
+  <li><a href="#common-ai-complications" id="toc-common-ai-complications" class="nav-link" data-scroll-target="#common-ai-complications"><span class="header-section-number">6.7</span> Common AI Complications</a></li>
+  <li><a href="#the-learning-approach" id="toc-the-learning-approach" class="nav-link" data-scroll-target="#the-learning-approach"><span class="header-section-number">6.8</span> The Learning Approach</a>
+  <ul class="collapse">
+  <li><a href="#level-1-simple-counting" id="toc-level-1-simple-counting" class="nav-link" data-scroll-target="#level-1-simple-counting">Level 1: Simple Counting</a></li>
+  <li><a href="#level-2-counting-with-purpose" id="toc-level-2-counting-with-purpose" class="nav-link" data-scroll-target="#level-2-counting-with-purpose">Level 2: Counting with Purpose</a></li>
+  <li><a href="#level-3-looping-through-collections" id="toc-level-3-looping-through-collections" class="nav-link" data-scroll-target="#level-3-looping-through-collections">Level 3: Looping Through Collections</a></li>
+  <li><a href="#level-4-loops-with-decisions" id="toc-level-4-loops-with-decisions" class="nav-link" data-scroll-target="#level-4-loops-with-decisions">Level 4: Loops with Decisions</a></li>
+  <li><a href="#level-5-user-controlled-loops" id="toc-level-5-user-controlled-loops" class="nav-link" data-scroll-target="#level-5-user-controlled-loops">Level 5: User-Controlled Loops</a></li>
+  </ul></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">6.9</span> Exercises</a></li>
+  <li><a href="#ai-partnership-patterns" id="toc-ai-partnership-patterns" class="nav-link" data-scroll-target="#ai-partnership-patterns"><span class="header-section-number">6.10</span> AI Partnership Patterns</a>
+  <ul class="collapse">
+  <li><a href="#pattern-1-loop-comparison" id="toc-pattern-1-loop-comparison" class="nav-link" data-scroll-target="#pattern-1-loop-comparison">Pattern 1: Loop Comparison</a></li>
+  <li><a href="#pattern-2-incremental-complexity" id="toc-pattern-2-incremental-complexity" class="nav-link" data-scroll-target="#pattern-2-incremental-complexity">Pattern 2: Incremental Complexity</a></li>
+  <li><a href="#pattern-3-real-world-mapping" id="toc-pattern-3-real-world-mapping" class="nav-link" data-scroll-target="#pattern-3-real-world-mapping">Pattern 3: Real-World Mapping</a></li>
+  </ul></li>
+  <li><a href="#common-misconceptions" id="toc-common-misconceptions" class="nav-link" data-scroll-target="#common-misconceptions"><span class="header-section-number">6.11</span> Common Misconceptions</a>
+  <ul class="collapse">
+  <li><a href="#loops-are-only-for-counting" id="toc-loops-are-only-for-counting" class="nav-link" data-scroll-target="#loops-are-only-for-counting">“Loops are only for counting”</a></li>
+  <li><a href="#you-need-to-know-the-count-beforehand" id="toc-you-need-to-know-the-count-beforehand" class="nav-link" data-scroll-target="#you-need-to-know-the-count-beforehand">“You need to know the count beforehand”</a></li>
+  <li><a href="#loop-variables-are-just-throwaway-counters" id="toc-loop-variables-are-just-throwaway-counters" class="nav-link" data-scroll-target="#loop-variables-are-just-throwaway-counters">“Loop variables are just throwaway counters”</a></li>
+  </ul></li>
+  <li><a href="#real-world-connection" id="toc-real-world-connection" class="nav-link" data-scroll-target="#real-world-connection"><span class="header-section-number">6.12</span> Real-World Connection</a></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary"><span class="header-section-number">6.13</span> Chapter Summary</a></li>
+  <li><a href="#reflection-checklist" id="toc-reflection-checklist" class="nav-link" data-scroll-target="#reflection-checklist"><span class="header-section-number">6.14</span> Reflection Checklist</a></li>
+  <li><a href="#your-learning-journal" id="toc-your-learning-journal" class="nav-link" data-scroll-target="#your-learning-journal"><span class="header-section-number">6.15</span> Your Learning Journal</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps"><span class="header-section-number">6.16</span> Next Steps</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/michael-borck/think-python-direct-ai/edit/main/chapter-loops.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter-input-process-output.html">Part I: Computational Thinking (Weeks 1-4)</a></li><li class="breadcrumb-item"><a href="./chapter-loops.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Doing Things Over and Over: Loops</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-loops" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Doing Things Over and Over: Loops</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-concept-first" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="the-concept-first"><span class="header-section-number">6.1</span> The Concept First</h2>
+<p>Imagine if you had to write a separate line of code for every item in a list, every user in a system, or every second in a countdown. Programs would be impossibly long and inflexible.</p>
+<p>The power of repetition lets programs handle any amount of data with the same few lines of code. This is what transforms programs from rigid scripts into flexible tools.</p>
+</section>
+<section id="understanding-through-real-life" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="understanding-through-real-life"><span class="header-section-number">6.2</span> Understanding Through Real Life</h2>
+<section id="repetition-is-everywhere" class="level3">
+<h3 class="anchored" data-anchor-id="repetition-is-everywhere">Repetition Is Everywhere</h3>
+<p>Think about repetitive tasks in your day: - <strong>Brushing teeth</strong>: Brush each tooth (repeat for all teeth) - <strong>Climbing stairs</strong>: Step up (repeat until you reach the top) - <strong>Reading</strong>: Read word (repeat until end of page) - <strong>Washing dishes</strong>: Clean dish (repeat until sink is empty)</p>
+<p>Each follows a pattern: 1. Start with something to process 2. Do an action 3. Move to the next item 4. Stop when done</p>
+</section>
+<section id="natural-stopping-points" class="level3">
+<h3 class="anchored" data-anchor-id="natural-stopping-points">Natural Stopping Points</h3>
+<p>Every repetition needs to know when to stop: - <strong>Counting</strong>: Stop at a specific number - <strong>Lists</strong>: Stop when no items left - <strong>Conditions</strong>: Stop when something becomes true/false - <strong>User says</strong>: Stop when user wants</p>
+</section>
+<section id="the-power-of-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="the-power-of-patterns">The Power of Patterns</h3>
+<p>Once you define a pattern, it works for any amount: - Recipe for 1 cookie → Recipe for 100 cookies - Greeting for 1 student → Greeting for whole class - Check 1 password → Check million passwords - Process 1 photo → Process entire album</p>
+</section>
+</section>
+<section id="discovering-loops-with-your-ai-partner" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="discovering-loops-with-your-ai-partner"><span class="header-section-number">6.3</span> Discovering Loops with Your AI Partner</h2>
+<p>Let’s explore how programs repeat intelligently.</p>
+<section id="exploration-1-finding-repetition" class="level3">
+<h3 class="anchored" data-anchor-id="exploration-1-finding-repetition">Exploration 1: Finding Repetition</h3>
+<p>Ask your AI:</p>
+<pre><code>Give me 5 examples of repetitive tasks a music player app performs, without using code</code></pre>
+<p>You’ll see patterns like: - Play each song in playlist - Update progress bar every second - Check for next song continuously</p>
+</section>
+<section id="exploration-2-different-types-of-repetition" class="level3">
+<h3 class="anchored" data-anchor-id="exploration-2-different-types-of-repetition">Exploration 2: Different Types of Repetition</h3>
+<p>Try this prompt:</p>
+<pre><code>What's the difference between "repeat 10 times" vs "repeat while music playing" vs "repeat for each song"?</code></pre>
+<p>This reveals the three main types of loops: counting, conditional, and collection-based.</p>
+</section>
+<section id="exploration-3-the-magic-of-loops" class="level3">
+<h3 class="anchored" data-anchor-id="exploration-3-the-magic-of-loops">Exploration 3: The Magic of Loops</h3>
+<p>Ask:</p>
+<pre><code>Show how a loop can replace 100 lines of code with just 3 lines, using a simple example</code></pre>
+<p>This demonstrates the power of repetition patterns.</p>
+</section>
+</section>
+<section id="from-concept-to-code" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="from-concept-to-code"><span class="header-section-number">6.4</span> From Concept to Code</h2>
+<p>Let’s see how Python expresses repetition.</p>
+<section id="the-simplest-expression" class="level3">
+<h3 class="anchored" data-anchor-id="the-simplest-expression">The Simplest Expression</h3>
+<p>Ask your AI:</p>
+<pre><code>Show me the absolute simplest Python loop that prints "Hello" 5 times. No functions, no complexity.</code></pre>
+<p>You’ll get something like:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hello"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>That’s it! - <code>for</code> - the repetition keyword - <code>i in range(5)</code> - repeat 5 times - Indented lines - what to repeat</p>
+</section>
+<section id="understanding-the-flow" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-the-flow">Understanding the Flow</h3>
+<p>Let’s trace through:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Count: </span><span class="sc">{</span>number<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Done!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Output:</p>
+<pre><code>Count: 0
+Count: 1  
+Count: 2
+Done!</code></pre>
+<p>The loop runs the indented code once for each number.</p>
+</section>
+</section>
+<section id="mental-model-building" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="mental-model-building"><span class="header-section-number">6.5</span> Mental Model Building</h2>
+<section id="model-1-the-assembly-line" class="level3">
+<h3 class="anchored" data-anchor-id="model-1-the-assembly-line">Model 1: The Assembly Line</h3>
+<pre><code>Items: [📦, 📦, 📦, 📦, 📦]
+         ↓
+    For each box:
+    [Process] → ✅
+         ↓
+    All done!</code></pre>
+</section>
+<section id="model-2-the-track-runner" class="level3">
+<h3 class="anchored" data-anchor-id="model-2-the-track-runner">Model 2: The Track Runner</h3>
+<pre><code>Start line → Lap 1 → Lap 2 → Lap 3 → Finish!
+             ↺       ↺       ↺
+         (same track each time)</code></pre>
+</section>
+<section id="model-3-the-playlist" class="level3">
+<h3 class="anchored" data-anchor-id="model-3-the-playlist">Model 3: The Playlist</h3>
+<pre><code>Songs: [🎵, 🎵, 🎵, 🎵]
+For each song:
+    ▶️ Play
+    ⏭️ Next
+When no more songs: ⏹️ Stop</code></pre>
+</section>
+</section>
+<section id="prompt-evolution-exercise" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="prompt-evolution-exercise"><span class="header-section-number">6.6</span> Prompt Evolution Exercise</h2>
+<p>Let’s practice getting loop examples from AI.</p>
+<section id="round-1-too-vague" class="level3">
+<h3 class="anchored" data-anchor-id="round-1-too-vague">Round 1: Too Vague</h3>
+<pre><code>show me loops</code></pre>
+<p>You’ll get while loops, for loops, nested loops, infinite loops - overwhelming!</p>
+</section>
+<section id="round-2-more-specific" class="level3">
+<h3 class="anchored" data-anchor-id="round-2-more-specific">Round 2: More Specific</h3>
+<pre><code>show me Python for loops</code></pre>
+<p>Better, but might include complex iterations and list comprehensions.</p>
+</section>
+<section id="round-3-learning-focused" class="level3">
+<h3 class="anchored" data-anchor-id="round-3-learning-focused">Round 3: Learning-Focused</h3>
+<pre><code>I'm learning repetition in programming. Show me a simple for loop that counts from 1 to 10.</code></pre>
+<p>Perfect for understanding!</p>
+</section>
+<section id="round-4-concept-reinforcement" class="level3">
+<h3 class="anchored" data-anchor-id="round-4-concept-reinforcement">Round 4: Concept Reinforcement</h3>
+<pre><code>Now show the same counting without a loop, to see why loops are useful</code></pre>
+<p>This shows the power of loops vs manual repetition.</p>
+</section>
+</section>
+<section id="common-ai-complications" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="common-ai-complications"><span class="header-section-number">6.7</span> Common AI Complications</h2>
+<p>When you ask AI about loops, it often gives you:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_data_pipeline(data_sources, transformations, validators):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Complex data processing with multiple loop types"""</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> []</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> source <span class="kw">in</span> data_sources:</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Nested loop with enumeration</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> idx, item <span class="kw">in</span> <span class="bu">enumerate</span>(source.fetch_items()):</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Validation loop</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> validator <span class="kw">in</span> validators:</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> <span class="kw">not</span> validator.validate(item):</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>                        logger.warning(<span class="ss">f"Item </span><span class="sc">{</span>idx<span class="sc">}</span><span class="ss"> failed validation"</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">continue</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Transformation pipeline</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>                transformed <span class="op">=</span> item</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> transform <span class="kw">in</span> transformations:</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>                    transformed <span class="op">=</span> transform.<span class="bu">apply</span>(transformed)</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>                <span class="co"># While loop for retry logic</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>                retry_count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>                <span class="cf">while</span> retry_count <span class="op">&lt;</span> <span class="dv">3</span>:</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">try</span>:</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>                        results.append(transformed)</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">break</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>                        retry_count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>            logger.error(<span class="ss">f"Source processing failed: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># List comprehension alternative</span></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [r <span class="cf">for</span> r <span class="kw">in</span> results <span class="cf">if</span> r <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Nested loops! Enumerations! While loops! Exception handling! This is data pipeline architecture, not learning loops!</p>
+</section>
+<section id="the-learning-approach" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="the-learning-approach"><span class="header-section-number">6.8</span> The Learning Approach</h2>
+<p>Build understanding step by step:</p>
+<section id="level-1-simple-counting" class="level3">
+<h3 class="anchored" data-anchor-id="level-1-simple-counting">Level 1: Simple Counting</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Count to 5</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Prints: 0, 1, 2, 3, 4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="level-2-counting-with-purpose" class="level3">
+<h3 class="anchored" data-anchor-id="level-2-counting-with-purpose">Level 2: Counting with Purpose</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Countdown</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> seconds <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>seconds<span class="sc">}</span><span class="ss"> seconds left"</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Blast off! 🚀"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="level-3-looping-through-collections" class="level3">
+<h3 class="anchored" data-anchor-id="level-3-looping-through-collections">Level 3: Looping Through Collections</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each item</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"orange"</span>]</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits:</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"I like </span><span class="sc">{</span>fruit<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="level-4-loops-with-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="level-4-loops-with-decisions">Level 4: Loops with Decisions</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combining loops and if statements</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> numbers:</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>num<span class="sc">}</span><span class="ss"> is even"</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>num<span class="sc">}</span><span class="ss"> is odd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Expression Explorer: The Modulo Operator
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <code>%</code> operator (modulo) gives the remainder after division: - <code>5 % 2 = 1</code> (5 ÷ 2 = 2 remainder 1) - <code>4 % 2 = 0</code> (4 ÷ 2 = 2 remainder 0) - Even numbers: <code>num % 2 == 0</code> (no remainder) - Every third: <code>num % 3 == 0</code></p>
+<p>Ask AI: “Show me creative uses of the modulo operator in loops”</p>
+</div>
+</div>
+</section>
+<section id="level-5-user-controlled-loops" class="level3">
+<h3 class="anchored" data-anchor-id="level-5-user-controlled-loops">Level 5: User-Controlled Loops</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep going until user stops</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    answer <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Continue? (yes/no): "</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> answer <span class="op">==</span> <span class="st">"no"</span>:</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Okay, continuing..."</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Thanks for playing!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="exercises" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="exercises"><span class="header-section-number">6.9</span> Exercises</h2>
+<div class="exercise-container">
+<div class="exercise-level-badge level-1-badge">
+<p>Exercise 5.1: Concept Recognition</p>
+</div>
+<section id="identifying-repetition-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="identifying-repetition-patterns">Identifying Repetition Patterns</h3>
+<p>For each scenario, identify: 1. What repeats 2. How many times (or what condition) 3. When it stops</p>
+<p><strong>Scenario A</strong>: Watering plants in a garden <strong>Scenario B</strong>: Checking email for new messages <strong>Scenario C</strong>: Vending machine dispensing change</p>
+<details>
+<summary>
+Check Your Analysis
+</summary>
+<p><strong>Scenario A - Watering Plants</strong>: - Repeats: Water each plant - How many: For each plant in garden - Stops: When all plants watered</p>
+<p><strong>Scenario B - Checking Email</strong>: - Repeats: Check inbox - How many: While new messages exist - Stops: When no new messages</p>
+<strong>Scenario C - Dispensing Change</strong>: - Repeats: Give coin - How many: Until correct change given - Stops: When change equals zero
+</details>
+</section>
+</div>
+<div class="exercise-container">
+<div class="exercise-level-badge level-2-badge">
+<p>Exercise 5.2: Prompt Engineering</p>
+</div>
+<section id="getting-clear-loop-examples" class="level3">
+<h3 class="anchored" data-anchor-id="getting-clear-loop-examples">Getting Clear Loop Examples</h3>
+<p>Start with: “multiplication table”</p>
+<p>Evolve this prompt to get AI to show you: 1. A loop that prints 5 x 1 through 5 x 10 2. Uses a simple for loop 3. Shows the calculation clearly 4. No functions or complex formatting</p>
+<p>Document your prompt evolution.</p>
+<details>
+<summary>
+Effective Final Prompt
+</summary>
+“Show me a simple Python for loop that prints the 5 times table from 5x1 to 5x10. Just use print statements, no functions or formatting.”
+</details>
+</section>
+</div>
+<div class="exercise-container">
+<div class="exercise-level-badge level-3-badge">
+<p>Exercise 5.3: Pattern Matching</p>
+</div>
+<section id="finding-core-loop-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="finding-core-loop-patterns">Finding Core Loop Patterns</h3>
+<p>Ask AI for a “professional inventory management system”. In the complex code: 1. Find all loops 2. Identify what each loop does 3. Rewrite the essential logic using simple loops</p>
+<details>
+<summary>
+Core Patterns to Find
+</summary>
+<ul>
+<li>Loop through all items</li>
+<li>Count total quantity</li>
+<li>Check each item’s stock level</li>
+<li>Update prices for each item</li>
+<li>Generate report for each category</li>
+</ul>
+Strip away databases, classes, error handling - keep just the repetition pattern!
+</details>
+</section>
+</div>
+<div class="exercise-container">
+<div class="exercise-level-badge level-4-badge">
+<p>Exercise 5.4: Build a Model</p>
+</div>
+<section id="visualizing-loop-flow" class="level3">
+<h3 class="anchored" data-anchor-id="visualizing-loop-flow">Visualizing Loop Flow</h3>
+<p>Create three different models showing how loops work: 1. A circular diagram showing repetition 2. An analogy using a non-computer activity 3. A before/after comparison (without loop vs with loop)</p>
+<p>Test your models by explaining loops to someone.</p>
+</section>
+</div>
+<div class="exercise-container">
+<div class="exercise-level-badge level-5-badge">
+<p>Exercise 5.5: Architect First</p>
+</div>
+<section id="design-loop-based-programs" class="level3">
+<h3 class="anchored" data-anchor-id="design-loop-based-programs">Design Loop-Based Programs</h3>
+<p>Design these programs before coding:</p>
+<ol type="1">
+<li><strong>Class Greeting System</strong>
+<ul>
+<li>Task: Greet each student by name</li>
+<li>Data: List of student names</li>
+<li>Pattern: For each name, print personalized greeting</li>
+</ul></li>
+<li><strong>Exercise Counter</strong>
+<ul>
+<li>Task: Count exercises (jumping jacks, etc.)</li>
+<li>Pattern: Count from 1 to target number</li>
+<li>Extra: Encourage at halfway point</li>
+</ul></li>
+<li><strong>Password Attempt Limiter</strong>
+<ul>
+<li>Task: Give user 3 chances for password</li>
+<li>Pattern: Keep asking while attempts left and not correct</li>
+<li>Stop: When correct or out of attempts</li>
+</ul></li>
+</ol>
+<p>Write your design as: - What needs repeating - What controls the repetition - When to stop - What happens each time</p>
+<p>Then ask AI: “Implement this exact loop design: [your design]”</p>
+<details>
+<summary>
+Design Example
+</summary>
+<strong>Class Greeting Design</strong>: - Store names: [“Alice”, “Bob”, “Charlie”] - For each name in the list: - Print “Good morning, [name]!” - After all names: Print “Welcome, everyone!”
+</details>
+</section>
+</div>
+</section>
+<section id="ai-partnership-patterns" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="ai-partnership-patterns"><span class="header-section-number">6.10</span> AI Partnership Patterns</h2>
+<section id="pattern-1-loop-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="pattern-1-loop-comparison">Pattern 1: Loop Comparison</h3>
+<p>Ask AI to show different loop types: - “Show counting to 10 with for vs while” - “Show processing a list three different ways” - “Compare loop vs manual repetition”</p>
+</section>
+<section id="pattern-2-incremental-complexity" class="level3">
+<h3 class="anchored" data-anchor-id="pattern-2-incremental-complexity">Pattern 2: Incremental Complexity</h3>
+<p>Build up understanding: 1. “Show a loop that prints one word 5 times” 2. “Now make it print different numbers” 3. “Now make it process a list” 4. “Now add a condition inside”</p>
+</section>
+<section id="pattern-3-real-world-mapping" class="level3">
+<h3 class="anchored" data-anchor-id="pattern-3-real-world-mapping">Pattern 3: Real-World Mapping</h3>
+<p>Connect loops to life: - “Explain for loops using a cooking recipe” - “Show while loops using a game example” - “Compare nested loops to organising drawers”</p>
+</section>
+</section>
+<section id="common-misconceptions" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="common-misconceptions"><span class="header-section-number">6.11</span> Common Misconceptions</h2>
+<section id="loops-are-only-for-counting" class="level3">
+<h3 class="anchored" data-anchor-id="loops-are-only-for-counting">“Loops are only for counting”</h3>
+<p><strong>Reality</strong>: Loops process any collection or repeat any action:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Not just counting - processing data</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> word <span class="kw">in</span> sentence.split():</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(word.upper())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="you-need-to-know-the-count-beforehand" class="level3">
+<h3 class="anchored" data-anchor-id="you-need-to-know-the-count-beforehand">“You need to know the count beforehand”</h3>
+<p><strong>Reality</strong>: Loops can run until a condition is met:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> user_input <span class="op">!=</span> <span class="st">"quit"</span>:</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    user_input <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Command: "</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="loop-variables-are-just-throwaway-counters" class="level3">
+<h3 class="anchored" data-anchor-id="loop-variables-are-just-throwaway-counters">“Loop variables are just throwaway counters”</h3>
+<p><strong>Reality</strong>: Loop variables can be meaningful:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> student <span class="kw">in</span> class_roster:</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Assignment for </span><span class="sc">{</span>student<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 'student' has meaning, not just 'i' or 'x'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="real-world-connection" class="level2" data-number="6.12">
+<h2 data-number="6.12" class="anchored" data-anchor-id="real-world-connection"><span class="header-section-number">6.12</span> Real-World Connection</h2>
+<p>Every app uses loops constantly:</p>
+<p><strong>Social Media Feed</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> post <span class="kw">in</span> recent_posts:</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    display_post(post)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    check_for_likes(post)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    load_comments(post)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Music Player</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> song <span class="kw">in</span> playlist:</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    play_song(song)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    update_progress_bar()</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    check_skip_button()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Game Engine</strong> (60 times per second!):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> game_running:</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    check_input()</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    update_positions()</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    detect_collisions()</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    draw_screen()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="chapter-summary" class="level2" data-number="6.13">
+<h2 data-number="6.13" class="anchored" data-anchor-id="chapter-summary"><span class="header-section-number">6.13</span> Chapter Summary</h2>
+<p>You’ve learned: - Loops let programs repeat actions efficiently - <code>for</code> loops work with collections and counts - <code>while</code> loops continue until conditions change - Loops eliminate repetitive code - Repetition patterns make programs flexible</p>
+</section>
+<section id="reflection-checklist" class="level2" data-number="6.14">
+<h2 data-number="6.14" class="anchored" data-anchor-id="reflection-checklist"><span class="header-section-number">6.14</span> Reflection Checklist</h2>
+<p>Before moving to Week 1 Project, ensure you:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Understand repetition as a concept beyond coding</label></li>
+<li><label><input type="checkbox">Can write for loops for counting and collections</label></li>
+<li><label><input type="checkbox">Know when to use while vs for loops</label></li>
+<li><label><input type="checkbox">Can combine loops with if statements</label></li>
+<li><label><input type="checkbox">See how loops make programs handle any amount of data</label></li>
+</ul>
+</section>
+<section id="your-learning-journal" class="level2" data-number="6.15">
+<h2 data-number="6.15" class="anchored" data-anchor-id="your-learning-journal"><span class="header-section-number">6.15</span> Your Learning Journal</h2>
+<p>For this chapter, record:</p>
+<ol type="1">
+<li><strong>Repetition Mapping</strong>: List 10 repetitive tasks in your daily life</li>
+<li><strong>Loop Visualization</strong>: Draw your mental model of how loops work</li>
+<li><strong>Power of Loops</strong>: Write 10 print statements, then replace with 2-line loop</li>
+<li><strong>Design Practice</strong>: How would loops improve your previous programs?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The Complete Toolkit
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You now have all the fundamental building blocks: - <strong>Input/Output</strong>: Communicate with users - <strong>Variables</strong>: Remember information - <strong>Decisions</strong>: Respond intelligently - <strong>Loops</strong>: Handle any amount of data</p>
+<p>With just these four concepts, you can build surprisingly powerful programs!</p>
+</div>
+</div>
+</section>
+<section id="next-steps" class="level2" data-number="6.16">
+<h2 data-number="6.16" class="anchored" data-anchor-id="next-steps"><span class="header-section-number">6.16</span> Next Steps</h2>
+<p>Congratulations! You’ve completed the fundamental concepts of programming. In the Week 1 Project, you’ll combine everything you’ve learned to build your first complete program: a Fortune Teller that uses input, variables, decisions, and loops to create an interactive experience.</p>
+<p>Remember: Loops aren’t about memorizing <code>for</code> and <code>while</code> syntax. They’re about recognising repetition patterns and making programs that can handle anything from 1 to 1 million items with the same elegant code!</p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/michael-borck\.github\.io\/think-python-direct-ai");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter-making-decisions.html" class="pagination-link" aria-label="Making Decisions: If Statements">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Making Decisions: If Statements</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./expression-toolkit.html" class="pagination-link" aria-label="Your Expression Toolkit">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Your Expression Toolkit</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Doing Things Over and Over: Loops {#sec-loops}</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Concept First</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>Imagine if you had to write a separate line of code for every item in a list, every user in a system, or every second in a countdown. Programs would be impossibly long and inflexible. </span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>The power of repetition lets programs handle any amount of data with the same few lines of code. This is what transforms programs from rigid scripts into flexible tools.</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Understanding Through Real Life</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="fu">### Repetition Is Everywhere</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>Think about repetitive tasks in your day:</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Brushing teeth**: Brush each tooth (repeat for all teeth)</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Climbing stairs**: Step up (repeat until you reach the top)</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reading**: Read word (repeat until end of page)</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Washing dishes**: Clean dish (repeat until sink is empty)</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>Each follows a pattern:</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Start with something to process</span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Do an action</span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Move to the next item</span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Stop when done</span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### Natural Stopping Points</span></span>
+<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a>Every repetition needs to know when to stop:</span>
+<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Counting**: Stop at a specific number</span>
+<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Lists**: Stop when no items left</span>
+<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Conditions**: Stop when something becomes true/false</span>
+<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**User says**: Stop when user wants</span>
+<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-33"><a href="#cb27-33" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Power of Patterns</span></span>
+<span id="cb27-34"><a href="#cb27-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-35"><a href="#cb27-35" aria-hidden="true" tabindex="-1"></a>Once you define a pattern, it works for any amount:</span>
+<span id="cb27-36"><a href="#cb27-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Recipe for 1 cookie → Recipe for 100 cookies</span>
+<span id="cb27-37"><a href="#cb27-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Greeting for 1 student → Greeting for whole class</span>
+<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check 1 password → Check million passwords</span>
+<span id="cb27-39"><a href="#cb27-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Process 1 photo → Process entire album</span>
+<span id="cb27-40"><a href="#cb27-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-41"><a href="#cb27-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Discovering Loops with Your AI Partner</span></span>
+<span id="cb27-42"><a href="#cb27-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-43"><a href="#cb27-43" aria-hidden="true" tabindex="-1"></a>Let's explore how programs repeat intelligently.</span>
+<span id="cb27-44"><a href="#cb27-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-45"><a href="#cb27-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 1: Finding Repetition</span></span>
+<span id="cb27-46"><a href="#cb27-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-47"><a href="#cb27-47" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
+<span id="cb27-48"><a href="#cb27-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-49"><a href="#cb27-49" aria-hidden="true" tabindex="-1"></a><span class="in">Give me 5 examples of repetitive tasks a music player app performs, without using code</span></span>
+<span id="cb27-50"><a href="#cb27-50" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-51"><a href="#cb27-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-52"><a href="#cb27-52" aria-hidden="true" tabindex="-1"></a>You'll see patterns like:</span>
+<span id="cb27-53"><a href="#cb27-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Play each song in playlist</span>
+<span id="cb27-54"><a href="#cb27-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Update progress bar every second</span>
+<span id="cb27-55"><a href="#cb27-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check for next song continuously</span>
+<span id="cb27-56"><a href="#cb27-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-57"><a href="#cb27-57" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 2: Different Types of Repetition</span></span>
+<span id="cb27-58"><a href="#cb27-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-59"><a href="#cb27-59" aria-hidden="true" tabindex="-1"></a>Try this prompt:</span>
+<span id="cb27-60"><a href="#cb27-60" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-61"><a href="#cb27-61" aria-hidden="true" tabindex="-1"></a><span class="in">What's the difference between "repeat 10 times" vs "repeat while music playing" vs "repeat for each song"?</span></span>
+<span id="cb27-62"><a href="#cb27-62" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-63"><a href="#cb27-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-64"><a href="#cb27-64" aria-hidden="true" tabindex="-1"></a>This reveals the three main types of loops: counting, conditional, and collection-based.</span>
+<span id="cb27-65"><a href="#cb27-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-66"><a href="#cb27-66" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 3: The Magic of Loops</span></span>
+<span id="cb27-67"><a href="#cb27-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-68"><a href="#cb27-68" aria-hidden="true" tabindex="-1"></a>Ask:</span>
+<span id="cb27-69"><a href="#cb27-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-70"><a href="#cb27-70" aria-hidden="true" tabindex="-1"></a><span class="in">Show how a loop can replace 100 lines of code with just 3 lines, using a simple example</span></span>
+<span id="cb27-71"><a href="#cb27-71" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-72"><a href="#cb27-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-73"><a href="#cb27-73" aria-hidden="true" tabindex="-1"></a>This demonstrates the power of repetition patterns.</span>
+<span id="cb27-74"><a href="#cb27-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-75"><a href="#cb27-75" aria-hidden="true" tabindex="-1"></a><span class="fu">## From Concept to Code</span></span>
+<span id="cb27-76"><a href="#cb27-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-77"><a href="#cb27-77" aria-hidden="true" tabindex="-1"></a>Let's see how Python expresses repetition.</span>
+<span id="cb27-78"><a href="#cb27-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-79"><a href="#cb27-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Simplest Expression</span></span>
+<span id="cb27-80"><a href="#cb27-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-81"><a href="#cb27-81" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
+<span id="cb27-82"><a href="#cb27-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-83"><a href="#cb27-83" aria-hidden="true" tabindex="-1"></a><span class="in">Show me the absolute simplest Python loop that prints "Hello" 5 times. No functions, no complexity.</span></span>
+<span id="cb27-84"><a href="#cb27-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-85"><a href="#cb27-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-86"><a href="#cb27-86" aria-hidden="true" tabindex="-1"></a>You'll get something like:</span>
+<span id="cb27-87"><a href="#cb27-87" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-88"><a href="#cb27-88" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb27-89"><a href="#cb27-89" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hello"</span>)</span>
+<span id="cb27-90"><a href="#cb27-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-91"><a href="#cb27-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-92"><a href="#cb27-92" aria-hidden="true" tabindex="-1"></a>That's it! </span>
+<span id="cb27-93"><a href="#cb27-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`for`</span> - the repetition keyword</span>
+<span id="cb27-94"><a href="#cb27-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`i in range(5)`</span> - repeat 5 times</span>
+<span id="cb27-95"><a href="#cb27-95" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Indented lines - what to repeat</span>
+<span id="cb27-96"><a href="#cb27-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-97"><a href="#cb27-97" aria-hidden="true" tabindex="-1"></a><span class="fu">### Understanding the Flow</span></span>
+<span id="cb27-98"><a href="#cb27-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-99"><a href="#cb27-99" aria-hidden="true" tabindex="-1"></a>Let's trace through:</span>
+<span id="cb27-100"><a href="#cb27-100" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-101"><a href="#cb27-101" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> number <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb27-102"><a href="#cb27-102" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Count: </span><span class="sc">{</span>number<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb27-103"><a href="#cb27-103" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Done!"</span>)</span>
+<span id="cb27-104"><a href="#cb27-104" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-105"><a href="#cb27-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-106"><a href="#cb27-106" aria-hidden="true" tabindex="-1"></a>Output:</span>
+<span id="cb27-107"><a href="#cb27-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-108"><a href="#cb27-108" aria-hidden="true" tabindex="-1"></a><span class="in">Count: 0</span></span>
+<span id="cb27-109"><a href="#cb27-109" aria-hidden="true" tabindex="-1"></a><span class="in">Count: 1  </span></span>
+<span id="cb27-110"><a href="#cb27-110" aria-hidden="true" tabindex="-1"></a><span class="in">Count: 2</span></span>
+<span id="cb27-111"><a href="#cb27-111" aria-hidden="true" tabindex="-1"></a><span class="in">Done!</span></span>
+<span id="cb27-112"><a href="#cb27-112" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-113"><a href="#cb27-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-114"><a href="#cb27-114" aria-hidden="true" tabindex="-1"></a>The loop runs the indented code once for each number.</span>
+<span id="cb27-115"><a href="#cb27-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-116"><a href="#cb27-116" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model Building</span></span>
+<span id="cb27-117"><a href="#cb27-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-118"><a href="#cb27-118" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 1: The Assembly Line</span></span>
+<span id="cb27-119"><a href="#cb27-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-120"><a href="#cb27-120" aria-hidden="true" tabindex="-1"></a><span class="in">Items: [📦, 📦, 📦, 📦, 📦]</span></span>
+<span id="cb27-121"><a href="#cb27-121" aria-hidden="true" tabindex="-1"></a><span class="in">         ↓</span></span>
+<span id="cb27-122"><a href="#cb27-122" aria-hidden="true" tabindex="-1"></a><span class="in">    For each box:</span></span>
+<span id="cb27-123"><a href="#cb27-123" aria-hidden="true" tabindex="-1"></a><span class="in">    [Process] → ✅</span></span>
+<span id="cb27-124"><a href="#cb27-124" aria-hidden="true" tabindex="-1"></a><span class="in">         ↓</span></span>
+<span id="cb27-125"><a href="#cb27-125" aria-hidden="true" tabindex="-1"></a><span class="in">    All done!</span></span>
+<span id="cb27-126"><a href="#cb27-126" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-127"><a href="#cb27-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-128"><a href="#cb27-128" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 2: The Track Runner</span></span>
+<span id="cb27-129"><a href="#cb27-129" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-130"><a href="#cb27-130" aria-hidden="true" tabindex="-1"></a><span class="in">Start line → Lap 1 → Lap 2 → Lap 3 → Finish!</span></span>
+<span id="cb27-131"><a href="#cb27-131" aria-hidden="true" tabindex="-1"></a><span class="in">             ↺       ↺       ↺</span></span>
+<span id="cb27-132"><a href="#cb27-132" aria-hidden="true" tabindex="-1"></a><span class="in">         (same track each time)</span></span>
+<span id="cb27-133"><a href="#cb27-133" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-134"><a href="#cb27-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-135"><a href="#cb27-135" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 3: The Playlist</span></span>
+<span id="cb27-136"><a href="#cb27-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-137"><a href="#cb27-137" aria-hidden="true" tabindex="-1"></a><span class="in">Songs: [🎵, 🎵, 🎵, 🎵]</span></span>
+<span id="cb27-138"><a href="#cb27-138" aria-hidden="true" tabindex="-1"></a><span class="in">For each song:</span></span>
+<span id="cb27-139"><a href="#cb27-139" aria-hidden="true" tabindex="-1"></a><span class="in">    ▶️ Play</span></span>
+<span id="cb27-140"><a href="#cb27-140" aria-hidden="true" tabindex="-1"></a><span class="in">    ⏭️ Next</span></span>
+<span id="cb27-141"><a href="#cb27-141" aria-hidden="true" tabindex="-1"></a><span class="in">When no more songs: ⏹️ Stop</span></span>
+<span id="cb27-142"><a href="#cb27-142" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-143"><a href="#cb27-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-144"><a href="#cb27-144" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prompt Evolution Exercise</span></span>
+<span id="cb27-145"><a href="#cb27-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-146"><a href="#cb27-146" aria-hidden="true" tabindex="-1"></a>Let's practice getting loop examples from AI.</span>
+<span id="cb27-147"><a href="#cb27-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-148"><a href="#cb27-148" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 1: Too Vague</span></span>
+<span id="cb27-149"><a href="#cb27-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-150"><a href="#cb27-150" aria-hidden="true" tabindex="-1"></a><span class="in">show me loops</span></span>
+<span id="cb27-151"><a href="#cb27-151" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-152"><a href="#cb27-152" aria-hidden="true" tabindex="-1"></a>You'll get while loops, for loops, nested loops, infinite loops - overwhelming!</span>
+<span id="cb27-153"><a href="#cb27-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-154"><a href="#cb27-154" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 2: More Specific  </span></span>
+<span id="cb27-155"><a href="#cb27-155" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-156"><a href="#cb27-156" aria-hidden="true" tabindex="-1"></a><span class="in">show me Python for loops</span></span>
+<span id="cb27-157"><a href="#cb27-157" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-158"><a href="#cb27-158" aria-hidden="true" tabindex="-1"></a>Better, but might include complex iterations and list comprehensions.</span>
+<span id="cb27-159"><a href="#cb27-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-160"><a href="#cb27-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 3: Learning-Focused</span></span>
+<span id="cb27-161"><a href="#cb27-161" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-162"><a href="#cb27-162" aria-hidden="true" tabindex="-1"></a><span class="in">I'm learning repetition in programming. Show me a simple for loop that counts from 1 to 10.</span></span>
+<span id="cb27-163"><a href="#cb27-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-164"><a href="#cb27-164" aria-hidden="true" tabindex="-1"></a>Perfect for understanding!</span>
+<span id="cb27-165"><a href="#cb27-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-166"><a href="#cb27-166" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 4: Concept Reinforcement</span></span>
+<span id="cb27-167"><a href="#cb27-167" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-168"><a href="#cb27-168" aria-hidden="true" tabindex="-1"></a><span class="in">Now show the same counting without a loop, to see why loops are useful</span></span>
+<span id="cb27-169"><a href="#cb27-169" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-170"><a href="#cb27-170" aria-hidden="true" tabindex="-1"></a>This shows the power of loops vs manual repetition.</span>
+<span id="cb27-171"><a href="#cb27-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-172"><a href="#cb27-172" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common AI Complications</span></span>
+<span id="cb27-173"><a href="#cb27-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-174"><a href="#cb27-174" aria-hidden="true" tabindex="-1"></a>When you ask AI about loops, it often gives you:</span>
+<span id="cb27-175"><a href="#cb27-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-176"><a href="#cb27-176" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-177"><a href="#cb27-177" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_data_pipeline(data_sources, transformations, validators):</span>
+<span id="cb27-178"><a href="#cb27-178" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Complex data processing with multiple loop types"""</span></span>
+<span id="cb27-179"><a href="#cb27-179" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> []</span>
+<span id="cb27-180"><a href="#cb27-180" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-181"><a href="#cb27-181" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> source <span class="kw">in</span> data_sources:</span>
+<span id="cb27-182"><a href="#cb27-182" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb27-183"><a href="#cb27-183" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Nested loop with enumeration</span></span>
+<span id="cb27-184"><a href="#cb27-184" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> idx, item <span class="kw">in</span> <span class="bu">enumerate</span>(source.fetch_items()):</span>
+<span id="cb27-185"><a href="#cb27-185" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Validation loop</span></span>
+<span id="cb27-186"><a href="#cb27-186" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> validator <span class="kw">in</span> validators:</span>
+<span id="cb27-187"><a href="#cb27-187" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> <span class="kw">not</span> validator.validate(item):</span>
+<span id="cb27-188"><a href="#cb27-188" aria-hidden="true" tabindex="-1"></a>                        logger.warning(<span class="ss">f"Item </span><span class="sc">{</span>idx<span class="sc">}</span><span class="ss"> failed validation"</span>)</span>
+<span id="cb27-189"><a href="#cb27-189" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">continue</span></span>
+<span id="cb27-190"><a href="#cb27-190" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb27-191"><a href="#cb27-191" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Transformation pipeline</span></span>
+<span id="cb27-192"><a href="#cb27-192" aria-hidden="true" tabindex="-1"></a>                transformed <span class="op">=</span> item</span>
+<span id="cb27-193"><a href="#cb27-193" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> transform <span class="kw">in</span> transformations:</span>
+<span id="cb27-194"><a href="#cb27-194" aria-hidden="true" tabindex="-1"></a>                    transformed <span class="op">=</span> transform.<span class="bu">apply</span>(transformed)</span>
+<span id="cb27-195"><a href="#cb27-195" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb27-196"><a href="#cb27-196" aria-hidden="true" tabindex="-1"></a>                <span class="co"># While loop for retry logic</span></span>
+<span id="cb27-197"><a href="#cb27-197" aria-hidden="true" tabindex="-1"></a>                retry_count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb27-198"><a href="#cb27-198" aria-hidden="true" tabindex="-1"></a>                <span class="cf">while</span> retry_count <span class="op">&lt;</span> <span class="dv">3</span>:</span>
+<span id="cb27-199"><a href="#cb27-199" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">try</span>:</span>
+<span id="cb27-200"><a href="#cb27-200" aria-hidden="true" tabindex="-1"></a>                        results.append(transformed)</span>
+<span id="cb27-201"><a href="#cb27-201" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">break</span></span>
+<span id="cb27-202"><a href="#cb27-202" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb27-203"><a href="#cb27-203" aria-hidden="true" tabindex="-1"></a>                        retry_count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb27-204"><a href="#cb27-204" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb27-205"><a href="#cb27-205" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb27-206"><a href="#cb27-206" aria-hidden="true" tabindex="-1"></a>            logger.error(<span class="ss">f"Source processing failed: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb27-207"><a href="#cb27-207" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb27-208"><a href="#cb27-208" aria-hidden="true" tabindex="-1"></a>    <span class="co"># List comprehension alternative</span></span>
+<span id="cb27-209"><a href="#cb27-209" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [r <span class="cf">for</span> r <span class="kw">in</span> results <span class="cf">if</span> r <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>]</span>
+<span id="cb27-210"><a href="#cb27-210" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-211"><a href="#cb27-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-212"><a href="#cb27-212" aria-hidden="true" tabindex="-1"></a>Nested loops! Enumerations! While loops! Exception handling! This is data pipeline architecture, not learning loops!</span>
+<span id="cb27-213"><a href="#cb27-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-214"><a href="#cb27-214" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Learning Approach</span></span>
+<span id="cb27-215"><a href="#cb27-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-216"><a href="#cb27-216" aria-hidden="true" tabindex="-1"></a>Build understanding step by step:</span>
+<span id="cb27-217"><a href="#cb27-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-218"><a href="#cb27-218" aria-hidden="true" tabindex="-1"></a><span class="fu">### Level 1: Simple Counting</span></span>
+<span id="cb27-219"><a href="#cb27-219" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-220"><a href="#cb27-220" aria-hidden="true" tabindex="-1"></a><span class="co"># Count to 5</span></span>
+<span id="cb27-221"><a href="#cb27-221" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb27-222"><a href="#cb27-222" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span>
+<span id="cb27-223"><a href="#cb27-223" aria-hidden="true" tabindex="-1"></a><span class="co"># Prints: 0, 1, 2, 3, 4</span></span>
+<span id="cb27-224"><a href="#cb27-224" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-225"><a href="#cb27-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-226"><a href="#cb27-226" aria-hidden="true" tabindex="-1"></a><span class="fu">### Level 2: Counting with Purpose</span></span>
+<span id="cb27-227"><a href="#cb27-227" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-228"><a href="#cb27-228" aria-hidden="true" tabindex="-1"></a><span class="co"># Countdown</span></span>
+<span id="cb27-229"><a href="#cb27-229" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> seconds <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb27-230"><a href="#cb27-230" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>seconds<span class="sc">}</span><span class="ss"> seconds left"</span>)</span>
+<span id="cb27-231"><a href="#cb27-231" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Blast off! 🚀"</span>)</span>
+<span id="cb27-232"><a href="#cb27-232" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-233"><a href="#cb27-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-234"><a href="#cb27-234" aria-hidden="true" tabindex="-1"></a><span class="fu">### Level 3: Looping Through Collections</span></span>
+<span id="cb27-235"><a href="#cb27-235" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-236"><a href="#cb27-236" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each item</span></span>
+<span id="cb27-237"><a href="#cb27-237" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"orange"</span>]</span>
+<span id="cb27-238"><a href="#cb27-238" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> fruit <span class="kw">in</span> fruits:</span>
+<span id="cb27-239"><a href="#cb27-239" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"I like </span><span class="sc">{</span>fruit<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb27-240"><a href="#cb27-240" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-241"><a href="#cb27-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-242"><a href="#cb27-242" aria-hidden="true" tabindex="-1"></a><span class="fu">### Level 4: Loops with Decisions</span></span>
+<span id="cb27-243"><a href="#cb27-243" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-244"><a href="#cb27-244" aria-hidden="true" tabindex="-1"></a><span class="co"># Combining loops and if statements</span></span>
+<span id="cb27-245"><a href="#cb27-245" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span>
+<span id="cb27-246"><a href="#cb27-246" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> numbers:</span>
+<span id="cb27-247"><a href="#cb27-247" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb27-248"><a href="#cb27-248" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>num<span class="sc">}</span><span class="ss"> is even"</span>)</span>
+<span id="cb27-249"><a href="#cb27-249" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb27-250"><a href="#cb27-250" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>num<span class="sc">}</span><span class="ss"> is odd"</span>)</span>
+<span id="cb27-251"><a href="#cb27-251" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-252"><a href="#cb27-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-253"><a href="#cb27-253" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb27-254"><a href="#cb27-254" aria-hidden="true" tabindex="-1"></a><span class="fu">## Expression Explorer: The Modulo Operator</span></span>
+<span id="cb27-255"><a href="#cb27-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-256"><a href="#cb27-256" aria-hidden="true" tabindex="-1"></a>The <span class="in">`%`</span> operator (modulo) gives the remainder after division:</span>
+<span id="cb27-257"><a href="#cb27-257" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`5 % 2 = 1`</span> (5 ÷ 2 = 2 remainder 1)</span>
+<span id="cb27-258"><a href="#cb27-258" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`4 % 2 = 0`</span> (4 ÷ 2 = 2 remainder 0)</span>
+<span id="cb27-259"><a href="#cb27-259" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Even numbers: <span class="in">`num % 2 == 0`</span> (no remainder)</span>
+<span id="cb27-260"><a href="#cb27-260" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Every third: <span class="in">`num % 3 == 0`</span></span>
+<span id="cb27-261"><a href="#cb27-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-262"><a href="#cb27-262" aria-hidden="true" tabindex="-1"></a>Ask AI: "Show me creative uses of the modulo operator in loops"</span>
+<span id="cb27-263"><a href="#cb27-263" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-264"><a href="#cb27-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-265"><a href="#cb27-265" aria-hidden="true" tabindex="-1"></a><span class="fu">### Level 5: User-Controlled Loops</span></span>
+<span id="cb27-266"><a href="#cb27-266" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-267"><a href="#cb27-267" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep going until user stops</span></span>
+<span id="cb27-268"><a href="#cb27-268" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb27-269"><a href="#cb27-269" aria-hidden="true" tabindex="-1"></a>    answer <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Continue? (yes/no): "</span>)</span>
+<span id="cb27-270"><a href="#cb27-270" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> answer <span class="op">==</span> <span class="st">"no"</span>:</span>
+<span id="cb27-271"><a href="#cb27-271" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb27-272"><a href="#cb27-272" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Okay, continuing..."</span>)</span>
+<span id="cb27-273"><a href="#cb27-273" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Thanks for playing!"</span>)</span>
+<span id="cb27-274"><a href="#cb27-274" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-275"><a href="#cb27-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-276"><a href="#cb27-276" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exercises</span></span>
+<span id="cb27-277"><a href="#cb27-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-278"><a href="#cb27-278" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-279"><a href="#cb27-279" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-1-badge}</span>
+<span id="cb27-280"><a href="#cb27-280" aria-hidden="true" tabindex="-1"></a>Exercise 5.1: Concept Recognition</span>
+<span id="cb27-281"><a href="#cb27-281" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-282"><a href="#cb27-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-283"><a href="#cb27-283" aria-hidden="true" tabindex="-1"></a><span class="fu">### Identifying Repetition Patterns</span></span>
+<span id="cb27-284"><a href="#cb27-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-285"><a href="#cb27-285" aria-hidden="true" tabindex="-1"></a>For each scenario, identify:</span>
+<span id="cb27-286"><a href="#cb27-286" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>What repeats</span>
+<span id="cb27-287"><a href="#cb27-287" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>How many times (or what condition)</span>
+<span id="cb27-288"><a href="#cb27-288" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>When it stops</span>
+<span id="cb27-289"><a href="#cb27-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-290"><a href="#cb27-290" aria-hidden="true" tabindex="-1"></a>**Scenario A**: Watering plants in a garden</span>
+<span id="cb27-291"><a href="#cb27-291" aria-hidden="true" tabindex="-1"></a>**Scenario B**: Checking email for new messages</span>
+<span id="cb27-292"><a href="#cb27-292" aria-hidden="true" tabindex="-1"></a>**Scenario C**: Vending machine dispensing change</span>
+<span id="cb27-293"><a href="#cb27-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-294"><a href="#cb27-294" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-295"><a href="#cb27-295" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Check Your Analysis<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-296"><a href="#cb27-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-297"><a href="#cb27-297" aria-hidden="true" tabindex="-1"></a>**Scenario A - Watering Plants**:</span>
+<span id="cb27-298"><a href="#cb27-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Repeats: Water each plant</span>
+<span id="cb27-299"><a href="#cb27-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How many: For each plant in garden</span>
+<span id="cb27-300"><a href="#cb27-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stops: When all plants watered</span>
+<span id="cb27-301"><a href="#cb27-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-302"><a href="#cb27-302" aria-hidden="true" tabindex="-1"></a>**Scenario B - Checking Email**:</span>
+<span id="cb27-303"><a href="#cb27-303" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Repeats: Check inbox</span>
+<span id="cb27-304"><a href="#cb27-304" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How many: While new messages exist</span>
+<span id="cb27-305"><a href="#cb27-305" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stops: When no new messages</span>
+<span id="cb27-306"><a href="#cb27-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-307"><a href="#cb27-307" aria-hidden="true" tabindex="-1"></a>**Scenario C - Dispensing Change**:</span>
+<span id="cb27-308"><a href="#cb27-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Repeats: Give coin</span>
+<span id="cb27-309"><a href="#cb27-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How many: Until correct change given</span>
+<span id="cb27-310"><a href="#cb27-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Stops: When change equals zero</span>
+<span id="cb27-311"><a href="#cb27-311" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-312"><a href="#cb27-312" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-313"><a href="#cb27-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-314"><a href="#cb27-314" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-315"><a href="#cb27-315" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-2-badge}</span>
+<span id="cb27-316"><a href="#cb27-316" aria-hidden="true" tabindex="-1"></a>Exercise 5.2: Prompt Engineering</span>
+<span id="cb27-317"><a href="#cb27-317" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-318"><a href="#cb27-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-319"><a href="#cb27-319" aria-hidden="true" tabindex="-1"></a><span class="fu">### Getting Clear Loop Examples</span></span>
+<span id="cb27-320"><a href="#cb27-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-321"><a href="#cb27-321" aria-hidden="true" tabindex="-1"></a>Start with: "multiplication table"</span>
+<span id="cb27-322"><a href="#cb27-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-323"><a href="#cb27-323" aria-hidden="true" tabindex="-1"></a>Evolve this prompt to get AI to show you:</span>
+<span id="cb27-324"><a href="#cb27-324" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A loop that prints 5 x 1 through 5 x 10</span>
+<span id="cb27-325"><a href="#cb27-325" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Uses a simple for loop</span>
+<span id="cb27-326"><a href="#cb27-326" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Shows the calculation clearly</span>
+<span id="cb27-327"><a href="#cb27-327" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>No functions or complex formatting</span>
+<span id="cb27-328"><a href="#cb27-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-329"><a href="#cb27-329" aria-hidden="true" tabindex="-1"></a>Document your prompt evolution.</span>
+<span id="cb27-330"><a href="#cb27-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-331"><a href="#cb27-331" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-332"><a href="#cb27-332" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Effective Final Prompt<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-333"><a href="#cb27-333" aria-hidden="true" tabindex="-1"></a>"Show me a simple Python for loop that prints the 5 times table from 5x1 to 5x10. Just use print statements, no functions or formatting."</span>
+<span id="cb27-334"><a href="#cb27-334" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-335"><a href="#cb27-335" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-336"><a href="#cb27-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-337"><a href="#cb27-337" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-338"><a href="#cb27-338" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-3-badge}</span>
+<span id="cb27-339"><a href="#cb27-339" aria-hidden="true" tabindex="-1"></a>Exercise 5.3: Pattern Matching</span>
+<span id="cb27-340"><a href="#cb27-340" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-341"><a href="#cb27-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-342"><a href="#cb27-342" aria-hidden="true" tabindex="-1"></a><span class="fu">### Finding Core Loop Patterns</span></span>
+<span id="cb27-343"><a href="#cb27-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-344"><a href="#cb27-344" aria-hidden="true" tabindex="-1"></a>Ask AI for a "professional inventory management system". In the complex code:</span>
+<span id="cb27-345"><a href="#cb27-345" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Find all loops</span>
+<span id="cb27-346"><a href="#cb27-346" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Identify what each loop does</span>
+<span id="cb27-347"><a href="#cb27-347" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Rewrite the essential logic using simple loops</span>
+<span id="cb27-348"><a href="#cb27-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-349"><a href="#cb27-349" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-350"><a href="#cb27-350" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Core Patterns to Find<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-351"><a href="#cb27-351" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Loop through all items</span>
+<span id="cb27-352"><a href="#cb27-352" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Count total quantity</span>
+<span id="cb27-353"><a href="#cb27-353" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check each item's stock level</span>
+<span id="cb27-354"><a href="#cb27-354" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Update prices for each item</span>
+<span id="cb27-355"><a href="#cb27-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generate report for each category</span>
+<span id="cb27-356"><a href="#cb27-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-357"><a href="#cb27-357" aria-hidden="true" tabindex="-1"></a>Strip away databases, classes, error handling - keep just the repetition pattern!</span>
+<span id="cb27-358"><a href="#cb27-358" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-359"><a href="#cb27-359" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-360"><a href="#cb27-360" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-361"><a href="#cb27-361" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-362"><a href="#cb27-362" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-4-badge}</span>
+<span id="cb27-363"><a href="#cb27-363" aria-hidden="true" tabindex="-1"></a>Exercise 5.4: Build a Model</span>
+<span id="cb27-364"><a href="#cb27-364" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-365"><a href="#cb27-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-366"><a href="#cb27-366" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualizing Loop Flow</span></span>
+<span id="cb27-367"><a href="#cb27-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-368"><a href="#cb27-368" aria-hidden="true" tabindex="-1"></a>Create three different models showing how loops work:</span>
+<span id="cb27-369"><a href="#cb27-369" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A circular diagram showing repetition</span>
+<span id="cb27-370"><a href="#cb27-370" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>An analogy using a non-computer activity</span>
+<span id="cb27-371"><a href="#cb27-371" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>A before/after comparison (without loop vs with loop)</span>
+<span id="cb27-372"><a href="#cb27-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-373"><a href="#cb27-373" aria-hidden="true" tabindex="-1"></a>Test your models by explaining loops to someone.</span>
+<span id="cb27-374"><a href="#cb27-374" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-375"><a href="#cb27-375" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-376"><a href="#cb27-376" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-377"><a href="#cb27-377" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-5-badge}</span>
+<span id="cb27-378"><a href="#cb27-378" aria-hidden="true" tabindex="-1"></a>Exercise 5.5: Architect First</span>
+<span id="cb27-379"><a href="#cb27-379" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-380"><a href="#cb27-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-381"><a href="#cb27-381" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Loop-Based Programs</span></span>
+<span id="cb27-382"><a href="#cb27-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-383"><a href="#cb27-383" aria-hidden="true" tabindex="-1"></a>Design these programs before coding:</span>
+<span id="cb27-384"><a href="#cb27-384" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-385"><a href="#cb27-385" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Class Greeting System**</span>
+<span id="cb27-386"><a href="#cb27-386" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Task: Greet each student by name</span>
+<span id="cb27-387"><a href="#cb27-387" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Data: List of student names</span>
+<span id="cb27-388"><a href="#cb27-388" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Pattern: For each name, print personalized greeting</span>
+<span id="cb27-389"><a href="#cb27-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-390"><a href="#cb27-390" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Exercise Counter**</span>
+<span id="cb27-391"><a href="#cb27-391" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Task: Count exercises (jumping jacks, etc.)</span>
+<span id="cb27-392"><a href="#cb27-392" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Pattern: Count from 1 to target number</span>
+<span id="cb27-393"><a href="#cb27-393" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Extra: Encourage at halfway point</span>
+<span id="cb27-394"><a href="#cb27-394" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-395"><a href="#cb27-395" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Password Attempt Limiter**</span>
+<span id="cb27-396"><a href="#cb27-396" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Task: Give user 3 chances for password</span>
+<span id="cb27-397"><a href="#cb27-397" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Pattern: Keep asking while attempts left and not correct</span>
+<span id="cb27-398"><a href="#cb27-398" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Stop: When correct or out of attempts</span>
+<span id="cb27-399"><a href="#cb27-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-400"><a href="#cb27-400" aria-hidden="true" tabindex="-1"></a>Write your design as:</span>
+<span id="cb27-401"><a href="#cb27-401" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What needs repeating</span>
+<span id="cb27-402"><a href="#cb27-402" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What controls the repetition</span>
+<span id="cb27-403"><a href="#cb27-403" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>When to stop</span>
+<span id="cb27-404"><a href="#cb27-404" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What happens each time</span>
+<span id="cb27-405"><a href="#cb27-405" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-406"><a href="#cb27-406" aria-hidden="true" tabindex="-1"></a>Then ask AI: "Implement this exact loop design: <span class="co">[</span><span class="ot">your design</span><span class="co">]</span>"</span>
+<span id="cb27-407"><a href="#cb27-407" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-408"><a href="#cb27-408" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-409"><a href="#cb27-409" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Design Example<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-410"><a href="#cb27-410" aria-hidden="true" tabindex="-1"></a>**Class Greeting Design**:</span>
+<span id="cb27-411"><a href="#cb27-411" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Store names: <span class="co">[</span><span class="ot">"Alice", "Bob", "Charlie"</span><span class="co">]</span></span>
+<span id="cb27-412"><a href="#cb27-412" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For each name in the list:</span>
+<span id="cb27-413"><a href="#cb27-413" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Print "Good morning, <span class="co">[</span><span class="ot">name</span><span class="co">]</span>!"</span>
+<span id="cb27-414"><a href="#cb27-414" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>After all names: Print "Welcome, everyone!"</span>
+<span id="cb27-415"><a href="#cb27-415" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-416"><a href="#cb27-416" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-417"><a href="#cb27-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-418"><a href="#cb27-418" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI Partnership Patterns</span></span>
+<span id="cb27-419"><a href="#cb27-419" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-420"><a href="#cb27-420" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 1: Loop Comparison</span></span>
+<span id="cb27-421"><a href="#cb27-421" aria-hidden="true" tabindex="-1"></a>Ask AI to show different loop types:</span>
+<span id="cb27-422"><a href="#cb27-422" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Show counting to 10 with for vs while"</span>
+<span id="cb27-423"><a href="#cb27-423" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Show processing a list three different ways"</span>
+<span id="cb27-424"><a href="#cb27-424" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Compare loop vs manual repetition"</span>
+<span id="cb27-425"><a href="#cb27-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-426"><a href="#cb27-426" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 2: Incremental Complexity</span></span>
+<span id="cb27-427"><a href="#cb27-427" aria-hidden="true" tabindex="-1"></a>Build up understanding:</span>
+<span id="cb27-428"><a href="#cb27-428" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>"Show a loop that prints one word 5 times"</span>
+<span id="cb27-429"><a href="#cb27-429" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>"Now make it print different numbers"</span>
+<span id="cb27-430"><a href="#cb27-430" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>"Now make it process a list"</span>
+<span id="cb27-431"><a href="#cb27-431" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>"Now add a condition inside"</span>
+<span id="cb27-432"><a href="#cb27-432" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-433"><a href="#cb27-433" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 3: Real-World Mapping</span></span>
+<span id="cb27-434"><a href="#cb27-434" aria-hidden="true" tabindex="-1"></a>Connect loops to life:</span>
+<span id="cb27-435"><a href="#cb27-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Explain for loops using a cooking recipe"</span>
+<span id="cb27-436"><a href="#cb27-436" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Show while loops using a game example"</span>
+<span id="cb27-437"><a href="#cb27-437" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Compare nested loops to organising drawers"</span>
+<span id="cb27-438"><a href="#cb27-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-439"><a href="#cb27-439" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Misconceptions</span></span>
+<span id="cb27-440"><a href="#cb27-440" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-441"><a href="#cb27-441" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Loops are only for counting"</span></span>
+<span id="cb27-442"><a href="#cb27-442" aria-hidden="true" tabindex="-1"></a>**Reality**: Loops process any collection or repeat any action:</span>
+<span id="cb27-443"><a href="#cb27-443" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-444"><a href="#cb27-444" aria-hidden="true" tabindex="-1"></a><span class="co"># Not just counting - processing data</span></span>
+<span id="cb27-445"><a href="#cb27-445" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> word <span class="kw">in</span> sentence.split():</span>
+<span id="cb27-446"><a href="#cb27-446" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(word.upper())</span>
+<span id="cb27-447"><a href="#cb27-447" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-448"><a href="#cb27-448" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-449"><a href="#cb27-449" aria-hidden="true" tabindex="-1"></a><span class="fu">### "You need to know the count beforehand"</span></span>
+<span id="cb27-450"><a href="#cb27-450" aria-hidden="true" tabindex="-1"></a>**Reality**: Loops can run until a condition is met:</span>
+<span id="cb27-451"><a href="#cb27-451" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-452"><a href="#cb27-452" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> user_input <span class="op">!=</span> <span class="st">"quit"</span>:</span>
+<span id="cb27-453"><a href="#cb27-453" aria-hidden="true" tabindex="-1"></a>    user_input <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Command: "</span>)</span>
+<span id="cb27-454"><a href="#cb27-454" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-455"><a href="#cb27-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-456"><a href="#cb27-456" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Loop variables are just throwaway counters"</span></span>
+<span id="cb27-457"><a href="#cb27-457" aria-hidden="true" tabindex="-1"></a>**Reality**: Loop variables can be meaningful:</span>
+<span id="cb27-458"><a href="#cb27-458" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-459"><a href="#cb27-459" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> student <span class="kw">in</span> class_roster:</span>
+<span id="cb27-460"><a href="#cb27-460" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Assignment for </span><span class="sc">{</span>student<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb27-461"><a href="#cb27-461" aria-hidden="true" tabindex="-1"></a><span class="co"># 'student' has meaning, not just 'i' or 'x'</span></span>
+<span id="cb27-462"><a href="#cb27-462" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-463"><a href="#cb27-463" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-464"><a href="#cb27-464" aria-hidden="true" tabindex="-1"></a><span class="fu">## Real-World Connection</span></span>
+<span id="cb27-465"><a href="#cb27-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-466"><a href="#cb27-466" aria-hidden="true" tabindex="-1"></a>Every app uses loops constantly:</span>
+<span id="cb27-467"><a href="#cb27-467" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-468"><a href="#cb27-468" aria-hidden="true" tabindex="-1"></a>**Social Media Feed**:</span>
+<span id="cb27-469"><a href="#cb27-469" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-470"><a href="#cb27-470" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> post <span class="kw">in</span> recent_posts:</span>
+<span id="cb27-471"><a href="#cb27-471" aria-hidden="true" tabindex="-1"></a>    display_post(post)</span>
+<span id="cb27-472"><a href="#cb27-472" aria-hidden="true" tabindex="-1"></a>    check_for_likes(post)</span>
+<span id="cb27-473"><a href="#cb27-473" aria-hidden="true" tabindex="-1"></a>    load_comments(post)</span>
+<span id="cb27-474"><a href="#cb27-474" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-475"><a href="#cb27-475" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-476"><a href="#cb27-476" aria-hidden="true" tabindex="-1"></a>**Music Player**:</span>
+<span id="cb27-477"><a href="#cb27-477" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-478"><a href="#cb27-478" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> song <span class="kw">in</span> playlist:</span>
+<span id="cb27-479"><a href="#cb27-479" aria-hidden="true" tabindex="-1"></a>    play_song(song)</span>
+<span id="cb27-480"><a href="#cb27-480" aria-hidden="true" tabindex="-1"></a>    update_progress_bar()</span>
+<span id="cb27-481"><a href="#cb27-481" aria-hidden="true" tabindex="-1"></a>    check_skip_button()</span>
+<span id="cb27-482"><a href="#cb27-482" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-483"><a href="#cb27-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-484"><a href="#cb27-484" aria-hidden="true" tabindex="-1"></a>**Game Engine** (60 times per second!):</span>
+<span id="cb27-485"><a href="#cb27-485" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-486"><a href="#cb27-486" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> game_running:</span>
+<span id="cb27-487"><a href="#cb27-487" aria-hidden="true" tabindex="-1"></a>    check_input()</span>
+<span id="cb27-488"><a href="#cb27-488" aria-hidden="true" tabindex="-1"></a>    update_positions()</span>
+<span id="cb27-489"><a href="#cb27-489" aria-hidden="true" tabindex="-1"></a>    detect_collisions()</span>
+<span id="cb27-490"><a href="#cb27-490" aria-hidden="true" tabindex="-1"></a>    draw_screen()</span>
+<span id="cb27-491"><a href="#cb27-491" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-492"><a href="#cb27-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-493"><a href="#cb27-493" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
+<span id="cb27-494"><a href="#cb27-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-495"><a href="#cb27-495" aria-hidden="true" tabindex="-1"></a>You've learned:</span>
+<span id="cb27-496"><a href="#cb27-496" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Loops let programs repeat actions efficiently</span>
+<span id="cb27-497"><a href="#cb27-497" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`for`</span> loops work with collections and counts</span>
+<span id="cb27-498"><a href="#cb27-498" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`while`</span> loops continue until conditions change</span>
+<span id="cb27-499"><a href="#cb27-499" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Loops eliminate repetitive code</span>
+<span id="cb27-500"><a href="#cb27-500" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Repetition patterns make programs flexible</span>
+<span id="cb27-501"><a href="#cb27-501" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-502"><a href="#cb27-502" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection Checklist</span></span>
+<span id="cb27-503"><a href="#cb27-503" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-504"><a href="#cb27-504" aria-hidden="true" tabindex="-1"></a>Before moving to Week 1 Project, ensure you:</span>
+<span id="cb27-505"><a href="#cb27-505" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-506"><a href="#cb27-506" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Understand repetition as a concept beyond coding</span>
+<span id="cb27-507"><a href="#cb27-507" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can write for loops for counting and collections</span>
+<span id="cb27-508"><a href="#cb27-508" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Know when to use while vs for loops</span>
+<span id="cb27-509"><a href="#cb27-509" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can combine loops with if statements</span>
+<span id="cb27-510"><a href="#cb27-510" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> See how loops make programs handle any amount of data</span>
+<span id="cb27-511"><a href="#cb27-511" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-512"><a href="#cb27-512" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your Learning Journal</span></span>
+<span id="cb27-513"><a href="#cb27-513" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-514"><a href="#cb27-514" aria-hidden="true" tabindex="-1"></a>For this chapter, record:</span>
+<span id="cb27-515"><a href="#cb27-515" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-516"><a href="#cb27-516" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Repetition Mapping**: List 10 repetitive tasks in your daily life</span>
+<span id="cb27-517"><a href="#cb27-517" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Loop Visualization**: Draw your mental model of how loops work</span>
+<span id="cb27-518"><a href="#cb27-518" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Power of Loops**: Write 10 print statements, then replace with 2-line loop</span>
+<span id="cb27-519"><a href="#cb27-519" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Design Practice**: How would loops improve your previous programs?</span>
+<span id="cb27-520"><a href="#cb27-520" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-521"><a href="#cb27-521" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb27-522"><a href="#cb27-522" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Complete Toolkit</span></span>
+<span id="cb27-523"><a href="#cb27-523" aria-hidden="true" tabindex="-1"></a>You now have all the fundamental building blocks:</span>
+<span id="cb27-524"><a href="#cb27-524" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Input/Output**: Communicate with users</span>
+<span id="cb27-525"><a href="#cb27-525" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Variables**: Remember information</span>
+<span id="cb27-526"><a href="#cb27-526" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Decisions**: Respond intelligently</span>
+<span id="cb27-527"><a href="#cb27-527" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Loops**: Handle any amount of data</span>
+<span id="cb27-528"><a href="#cb27-528" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-529"><a href="#cb27-529" aria-hidden="true" tabindex="-1"></a>With just these four concepts, you can build surprisingly powerful programs!</span>
+<span id="cb27-530"><a href="#cb27-530" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-531"><a href="#cb27-531" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-532"><a href="#cb27-532" aria-hidden="true" tabindex="-1"></a><span class="fu">## Next Steps</span></span>
+<span id="cb27-533"><a href="#cb27-533" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-534"><a href="#cb27-534" aria-hidden="true" tabindex="-1"></a>Congratulations! You've completed the fundamental concepts of programming. In the Week 1 Project, you'll combine everything you've learned to build your first complete program: a Fortune Teller that uses input, variables, decisions, and loops to create an interactive experience.</span>
+<span id="cb27-535"><a href="#cb27-535" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-536"><a href="#cb27-536" aria-hidden="true" tabindex="-1"></a>Remember: Loops aren't about memorizing <span class="in">`for`</span> and <span class="in">`while`</span> syntax. They're about recognising repetition patterns and making programs that can handle anything from 1 to 1 million items with the same elegant code!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/michael-borck/think-python-direct-ai/edit/main/chapter-loops.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
