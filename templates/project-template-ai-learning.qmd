@@ -35,7 +35,7 @@ Before writing any code or consulting AI, design your solution:
 Create a design document that includes:
 - [ ] Input/Output specification
 - [ ] Process flow (diagram or steps)
-- [ ] Data organization plan
+- [ ] Data organisation plan
 - [ ] User interaction flow
 
 ### 3. Identify Patterns

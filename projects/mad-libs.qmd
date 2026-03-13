@@ -307,7 +307,7 @@ After completing the project:
 2. **Technical Reflection**
    - How did string manipulation work differently than expected?
    - What was challenging about collecting multiple inputs?
-   - How did variables help organize the word collection?
+   - How did variables help organise the word collection?
 
 3. **AI Partnership Reflection**
    - What prompts helped improve your stories?
@@ -345,7 +345,7 @@ Before considering your project complete:
 - [ ] **Word Collection**: Asks for 6+ words with clear explanations
 - [ ] **Text Manipulation**: Successfully substitutes words into template
 - [ ] **User Experience**: Dramatic presentation and clear instructions
-- [ ] **Code Organization**: Descriptive variables and clear structure
+- [ ] **Code organisation**: Descriptive variables and clear structure
 - [ ] **Testing**: Tried with various word combinations
 - [ ] **Enhancement**: Added at least one extra feature (replay, multiple stories, etc.)
 
@@ -371,7 +371,7 @@ Before considering your project complete:
 
 By completing this project, you've learned:
 - How to manipulate strings creatively with expressions
-- How to collect and organize multiple related inputs
+- How to collect and organise multiple related inputs
 - How to build longer programs with clear structure
 - How to balance technical functionality with user experience
 - How to debug string formatting and spacing issues

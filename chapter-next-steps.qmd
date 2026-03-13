@@ -27,7 +27,7 @@ More importantly, you've learned **how to think like a programmer** while partne
 - Working with lists and collections
 
 **Part II - Building Systems:**
-- Functions for code organization
+- Functions for code organisation
 - Data structures for information management
 - File operations for data persistence
 - Debugging strategies and error handling
@@ -74,7 +74,7 @@ Before moving forward, let's verify your readiness. You should be able to confid
 - [ ] "I can write programs from scratch without AI"
 - [ ] "I can break big problems into smaller, solvable pieces"
 - [ ] "I can choose the right data structures for a problem"
-- [ ] "I can organize code into functions and classes"
+- [ ] "I can organise code into functions and classes"
 
 **Working with AI:**
 - [ ] "I can ask AI the right questions to learn, not just get answers"
@@ -152,7 +152,7 @@ file operations, API calls, data persistence
 
 ### Problem-Solving Patterns
 
-You recognize common programming patterns:
+You recognise common programming patterns:
 - **Input → Process → Output**: The foundation of all programs
 - **Loop + Accumulator**: Building results incrementally
 - **Guard Clauses**: Checking conditions before proceeding
@@ -220,7 +220,7 @@ Before jumping into Jumpstart, consider building these practice projects:
 
 **Game Collection:**
 - Build 3-4 simple games with a menu system
-- Practice code organization and user experience
+- Practice code organisation and user experience
 - Explore more advanced tkinter features
 
 **Data Analysis Tool:**
@@ -238,7 +238,7 @@ Before jumping into Jumpstart, consider building these practice projects:
 **Database Fundamentals:**
 - Understand how databases differ from files
 - Learn basic SQL concepts
-- Practice data modeling and relationships
+- Practice data modelling and relationships
 
 **Version Control:**
 - Learn Git for tracking code changes
@@ -257,7 +257,7 @@ Before jumping into Jumpstart, consider building these practice projects:
 **Week 13: Consolidation**
 - Review all your projects and identify patterns
 - Refactor one project to improve its design
-- Write documentation for your favorite application
+- Write documentation for your favourite application
 
 **Week 14: Exploration**
 - Try building something you've never attempted

@@ -21,7 +21,7 @@ Each piece of information is stored in a mental "variable" that holds it until i
 
 ### Labels on Boxes
 
-The simplest mental model: Variables are like labeled boxes.
+The simplest mental model: Variables are like labelled boxes.
 - The label is the variable's name
 - The contents are the value it stores
 - You can change what's in the box
@@ -97,7 +97,7 @@ Let's break down what happens:
 age = 25
 ```
 
-This says: "Create a box labeled 'age' and put the number 25 in it."
+This says: "Create a box labelled 'age' and put the number 25 in it."
 
 ## Mental Model Building
 
@@ -195,7 +195,7 @@ Build understanding step by step:
 ```python
 # Store one thing
 favorite_color = "blue"
-print("Your favorite color is " + favorite_color)
+print("Your favourite color is " + favorite_color)
 ```
 
 ### Level 2: Variables Can Change
@@ -280,7 +280,7 @@ Exercise 2.2: Prompt Engineering
 Start with: "variable examples"
 
 Evolve this prompt to get AI to show you:
-1. A program that remembers someone's favorite food
+1. A program that remembers someone's favourite food
 2. Uses the variable twice
 3. Shows the variable changing
 4. Keeps it super simple
@@ -290,7 +290,7 @@ Document your prompt evolution journey.
 <details>
 <summary>Successful Prompt Example</summary>
 "Show me a simple Python program that:
-1. Stores someone's favorite food in a variable
+1. Stores someone's favourite food in a variable
 2. Prints it
 3. Changes it to something else  
 4. Prints the new value
@@ -428,7 +428,7 @@ Every app uses variables:
 - last_seen = "2 minutes ago"
 
 **Music Player:**
-- current_song = "Favorite Track"
+- current_song = "favourite Track"
 - volume_level = 70
 - is_playing = True
 - playlist_position = 3
@@ -464,7 +464,7 @@ Before moving to Chapter 3, ensure you:
 For this chapter, record:
 
 1. **Real-World Variables**: List 10 "variables" in your daily life
-2. **Metaphor Creation**: What's your favorite way to think about variables?
+2. **Metaphor Creation**: What's your favourite way to think about variables?
 3. **AI Experiments**: What happened when you asked for "simple" vs "complex" examples?
 4. **Naming Practice**: Create good names for variables that store:
    - Someone's hometown

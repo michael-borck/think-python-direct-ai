@@ -66,7 +66,7 @@ Ask AI for a "production-ready [topic] implementation". In the complex code it p
 <summary>Guidance</summary>
 Look for:
 - The basic [concept] structure
-- Extra features AI added (error handling, optimization, etc.)
+- Extra features AI added (error handling, optimisation, etc.)
 - The simplest version that still demonstrates [concept]
 </details>
 ```
@@ -127,12 +127,12 @@ Please implement this in Python, keeping it as simple as possible.
 </details>
 ```
 
-## Exercise Type 6: AI Dialogue
+## Exercise Type 6: AI dialogue
 
 **Purpose**: Practice learning conversations with AI.
 
 ```markdown
-### Exercise X.6: Learning Dialogue
+### Exercise X.6: Learning dialogue
 
 Have a learning conversation with AI about [concept]:
 
@@ -258,7 +258,7 @@ Share:
 
 These exercises support new assessment approaches:
 
-- **Early weeks**: Can you recognize the concept?
+- **Early weeks**: Can you recognise the concept?
 - **Middle weeks**: Can you guide AI to explain/implement clearly?
 - **Later weeks**: Can you architect solutions and direct AI precisely?
 

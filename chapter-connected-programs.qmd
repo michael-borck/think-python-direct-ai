@@ -277,7 +277,7 @@ convert_currency(100, "USD", "EUR")
 
 ### GraphQL APIs
 - Request exactly what you need
-- Like a customizable menu
+- Like a customisable menu
 - Growing in popularity
 
 ## Building a News Aggregator
@@ -451,7 +451,7 @@ def create_morning_briefing():
 
 ### Project 3: News Sentiment Analyzer
 - Collect news articles
-- Analyze headlines
+- analyse headlines
 - Track topics over time
 - Create summaries
 

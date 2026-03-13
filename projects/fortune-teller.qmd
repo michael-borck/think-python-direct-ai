@@ -36,7 +36,7 @@ People want to know their future! Your fortune teller should:
 Before writing any code or consulting AI, design your fortune teller:
 
 ### 1. Understand the Problem
-- What questions will you ask? (name, age, favorite color, etc.)
+- What questions will you ask? (name, age, favourite color, etc.)
 - How will answers affect the fortune?
 - What makes a fortune feel "personalized"?
 - How can you make it entertaining?
@@ -72,7 +72,7 @@ Start with the absolute minimum:
 ### Phase 2: Enhancement
 
 Once core works:
-1. Add more questions (age, favorite color, etc.)
+1. Add more questions (age, favourite color, etc.)
 2. Use if statements to give different fortunes
 3. Make fortunes depend on multiple answers
 4. Add personality to your fortune teller
@@ -102,7 +102,7 @@ How can I add more variety without making it complex?"
 ```
 
 ```
-"I want to combine the user's favorite color and age to pick a fortune.
+"I want to combine the user's favourite color and age to pick a fortune.
 What's a simple way to check both conditions?"
 ```
 
@@ -190,7 +190,7 @@ Ah, Luna... interesting name.
 Tell me, Luna, how old are you? 25
 25 years of wisdom already...
 
-What is your favorite color? purple
+What is your favourite color? purple
 Purple! The color of mystery and magic...
 
 Let me gaze into the crystal ball...
@@ -215,7 +215,7 @@ Write your logic in plain English:
 1. Print mystical welcome
 2. Get user's name
 3. Get user's age
-4. Get favorite color
+4. Get favourite color
 5. If age < 20 and color is "blue":
       Give fortune about calm waters ahead
 6. Elif age < 20 and color is "red":

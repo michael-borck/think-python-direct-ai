@@ -64,7 +64,7 @@ This code has an error:
 
 ## Level 3: Simplify (Make It Cleaner)
 
-**Purpose**: Recognize overcomplicated code and practice simplification.
+**Purpose**: recognise overcomplicated code and practice simplification.
 
 **Format**:
 ```markdown
@@ -126,7 +126,7 @@ Here's working but overcomplicated code:
 Requirements:
 - Must use [concept 1]
 - Must include [concept 2]
-- Should [behavior requirement]
+- Should [behaviour requirement]
 - Cannot use [advanced concept not yet learned]
 
 <details>

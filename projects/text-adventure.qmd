@@ -170,7 +170,7 @@ to serialize my game state dictionary and restore it safely."
 2. **State Management**: Complex data tracking
    ```
    "My adventure game tracks player stats, inventory, and story progress. 
-   How do I organize this data and update it efficiently?"
+   How do I organise this data and update it efficiently?"
    ```
 
 3. **Interface Integration**: GUI and game logic
@@ -212,7 +212,7 @@ Your text adventure must:
 ### Learning Requirements
 
 Your implementation should:
-- [ ] Use classes to organize game components
+- [ ] Use classes to organise game components
 - [ ] Manage complex application state
 - [ ] Create dynamic GUI updates
 - [ ] Handle user input and choices
@@ -783,7 +783,7 @@ class AchievementManager:
 
 ### Pitfall 4: Poor State Management
 **Problem**: Game state becomes inconsistent
-**Solution**: Centralize state updates through clear methods
+**Solution**: centralise state updates through clear methods
 
 ## Testing Your Adventure
 

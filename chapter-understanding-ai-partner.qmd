@@ -195,7 +195,7 @@ Example prompts:
 Example prompts:
 - "I need to read data from a CSV file, process it, and create a summary. Here's my design..."
 - "Implement this API connection according to my specification..."
-- "Optimize this working code for better performance"
+- "optimise this working code for better performance"
 ```
 
 ## The Honest Truth
@@ -232,7 +232,7 @@ Start with "loops" and evolve it to get an explanation of repetition before any 
 Exercise 0.1: Concept Recognition
 :::
 
-### Recognizing AI's Patterns
+### recognising AI's Patterns
 
 Ask three different AI assistants (or the same one three times) for a "greeting program". 
 

@@ -360,7 +360,7 @@ Ask AI for a "professional configuration file system". In the complex code:
 <summary>Essential Operations</summary>
 You really just need:
 - Open file for writing
-- Write your data (maybe with some organization)
+- Write your data (maybe with some organisation)
 - Close file
 - Open file for reading
 - Read the data
@@ -411,7 +411,7 @@ Design these programs before coding:
 
 For each, plan:
 - What information needs saving
-- How to organize it in the file
+- How to organise it in the file
 - How to read it back usefully
 
 Then ask AI: "Implement this file design: [your specification]"
@@ -433,7 +433,7 @@ Start simple and improve:
 1. "Save a single number to a file"
 2. "Save a list of numbers, one per line"
 3. "Save names and scores together"
-4. "Organize the data for easy reading"
+4. "organise the data for easy reading"
 
 ### Pattern 2: Error Handling Addition
 Add robustness gradually:

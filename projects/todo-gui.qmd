@@ -25,7 +25,7 @@ This isn't just about completing a project - it's about proving you can design, 
 Everyone needs to manage tasks, but most todo apps are either too simple (just text files) or too complex (overwhelming features). Your todo application should:
 - Provide a clean, intuitive interface for managing tasks
 - Persist data between sessions reliably  
-- Support task organization and prioritization
+- Support task organisation and prioritization
 - Allow efficient task completion workflows
 - Demonstrate professional software architecture
 - Show your growth as a programmer
@@ -140,7 +140,7 @@ todo_data = {
 ### Phase 4: Polish and Architecture
 1. Error handling and validation
 2. User experience improvements
-3. Code organization and documentation
+3. Code organisation and documentation
 4. Testing and refinement
 
 ## AI Partnership Guidelines
@@ -220,7 +220,7 @@ Your todo application must:
    - Handle file errors gracefully
 
 3. **User Interface**
-   - Display tasks in an organized list
+   - Display tasks in an organised list
    - Provide clear add/edit/delete controls
    - Show task completion status visually
    - Display application statistics
@@ -959,7 +959,7 @@ After completing your todo application:
 
 3. **User Experience**: What makes your application easy or difficult to use?
 
-4. **Code Organization**: How did you structure your code for maintainability?
+4. **Code organisation**: How did you structure your code for maintainability?
 
 5. **Problem Solving**: What challenges surprised you during development?
 

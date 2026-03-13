@@ -434,7 +434,7 @@ Build up understanding:
 Connect loops to life:
 - "Explain for loops using a cooking recipe"
 - "Show while loops using a game example"
-- "Compare nested loops to organizing drawers"
+- "Compare nested loops to organising drawers"
 
 ## Common Misconceptions
 
@@ -533,4 +533,4 @@ With just these four concepts, you can build surprisingly powerful programs!
 
 Congratulations! You've completed the fundamental concepts of programming. In the Week 1 Project, you'll combine everything you've learned to build your first complete program: a Fortune Teller that uses input, variables, decisions, and loops to create an interactive experience.
 
-Remember: Loops aren't about memorizing `for` and `while` syntax. They're about recognizing repetition patterns and making programs that can handle anything from 1 to 1 million items with the same elegant code!
+Remember: Loops aren't about memorizing `for` and `while` syntax. They're about recognising repetition patterns and making programs that can handle anything from 1 to 1 million items with the same elegant code!

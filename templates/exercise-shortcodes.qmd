@@ -260,7 +260,7 @@ Create a program that [specific requirements].
 ::: {.exercise-requirements}
 - Must use [concept 1]
 - Must include [concept 2]  
-- Should [behavior]
+- Should [behaviour]
 - Cannot use [not-yet-learned concept]
 :::
 :::

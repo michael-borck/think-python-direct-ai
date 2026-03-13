@@ -2,7 +2,7 @@
 
 ::: {.callout-note}
 ## Chapter Summary
-In this chapter, you'll learn how to work with real-world data files. You'll discover how to read CSV files, process JSON data, and analyze information - skills that transform your programs from toys to tools. This is where programming becomes practical!
+In this chapter, you'll learn how to work with real-world data files. You'll discover how to read CSV files, process JSON data, and analyse information - skills that transform your programs from toys to tools. This is where programming becomes practical!
 :::
 
 ## Introduction: Data Is Everywhere
@@ -11,7 +11,7 @@ Up until now, your programs have worked with data you typed in or created yourse
 
 Think of data files like different types of containers:
 - **CSV files** are like spreadsheets - rows and columns of information
-- **JSON files** are like nested folders - organized hierarchies of data
+- **JSON files** are like nested folders - organised hierarchies of data
 - **Text files** are like notebooks - free-form information
 
 ## CSV Files: Your Gateway to Spreadsheet Data
@@ -165,7 +165,7 @@ Use JSON when:
 
 ## Real-World Data Analysis
 
-Let's combine everything into a practical example - analyzing weather data:
+Let's combine everything into a practical example - analysing weather data:
 
 ### The Weather Data Project
 
@@ -181,7 +181,7 @@ Let's build an analyzer:
 
 ```python
 def analyze_weather(filename):
-    """Analyze weather patterns"""
+    """analyse weather patterns"""
     data = []
     
     # Read the data
@@ -255,7 +255,7 @@ A data pipeline is a series of steps that transform raw data into useful informa
 1. **Load** - Read from file
 2. **Clean** - Fix problems
 3. **Transform** - Calculate new values
-4. **Analyze** - Find patterns
+4. **analyse** - Find patterns
 5. **Report** - Present results
 
 ### Example: Student Performance Pipeline
@@ -275,7 +275,7 @@ def process_student_data(csv_file):
         student['average'] = calculate_average(student['grades'])
         student['letter_grade'] = get_letter_grade(student['average'])
     
-    # Analyze
+    # analyse
     class_average = sum(s['average'] for s in students) / len(students)
     
     # Report
@@ -386,7 +386,7 @@ Develop a tool that:
 ## Connecting to the Real World
 
 Working with data files is your bridge to real-world programming. Every business runs on data:
-- **Scientists** analyze research data
+- **Scientists** analyse research data
 - **Teachers** track student progress
 - **Businesses** monitor sales and inventory
 - **Developers** process application logs
@@ -412,7 +412,7 @@ These aren't just programming skills - they're data literacy skills that apply w
 
 1. **Data Format Choice**: When would you choose CSV vs JSON for a project?
 2. **Error Handling**: What could go wrong when reading data files?
-3. **Real Applications**: What data would you like to analyze with these skills?
+3. **Real Applications**: What data would you like to analyse with these skills?
 4. **Pipeline Thinking**: How does breaking processing into steps help?
 
 Remember: Every major application works with data files. You now have the foundation to build real tools that solve real problems!

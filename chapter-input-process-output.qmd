@@ -268,7 +268,7 @@ Look at these programs and identify the input, process, and output:
 
 **Program A:**
 ```python
-color = input("Favorite color: ")
+color = input("favourite color: ")
 shout = color.upper()
 print("YOU LOVE", shout)
 ```
@@ -284,7 +284,7 @@ print("Triple that is", tripled)
 <summary>Check Your Answers</summary>
 
 **Program A:**
-- Input: User's favorite color (as text)
+- Input: User's favourite color (as text)
 - Process: Convert to uppercase
 - Output: Display "YOU LOVE" with uppercase color
 
@@ -487,12 +487,12 @@ For this chapter, record:
 1. **Pattern Recognition**: List 5 things you did today that follow I/P/O
 2. **Prompt Evolution**: What was your most successful prompt evolution?
 3. **AI Surprises**: What unexpected response taught you something?
-4. **Mental Models**: Sketch your favorite way to visualize I/P/O
+4. **Mental Models**: Sketch your favourite way to visualize I/P/O
 5. **Design Practice**: Write the design for a simple "Welcome Message" program
 
 ::: {.callout-tip}
 ## Learning Tip
-The goal isn't to memorize Python's `input()` and `print()` functions. The goal is to recognize that EVERY program needs to get data, transform it, and produce results. The functions are just how Python expresses this universal pattern.
+The goal isn't to memorize Python's `input()` and `print()` functions. The goal is to recognise that EVERY program needs to get data, transform it, and produce results. The functions are just how Python expresses this universal pattern.
 :::
 
 ## Next Steps

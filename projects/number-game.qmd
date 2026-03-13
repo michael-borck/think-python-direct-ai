@@ -422,7 +422,7 @@ By completing this project, you've learned:
 - How to create engaging game loops with clear objectives
 - How to generate and use random numbers in programs
 - How to manage complex program state (attempts, win conditions)
-- How to provide meaningful feedback that guides user behavior
+- How to provide meaningful feedback that guides user behaviour
 - How to balance challenge and fairness in interactive systems
 
 ## Next Week Preview

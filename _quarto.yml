@@ -18,6 +18,7 @@ book:
   subtitle: "Computational Thinking for Beginners"
   author: "Michael Borck"
   date: "24/07/2025"
+  license: "CC BY 4.0 (content), MIT (code examples)"
   description: "A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions."
   cover-image: cover.png
   site-url: https://michael-borck.github.io/think-python-direct-ai
@@ -31,42 +32,42 @@ book:
     - acknowledgments.qmd
     - part: "Part 0: Your AI Learning Partnership"
       chapters:
-        - chapter-0-understanding-ai-partner.qmd
+        - chapter-understanding-ai-partner.qmd
     - part: "Part I: Computational Thinking (Weeks 1-4)"
       chapters:
-        - chapter-1-input-process-output.qmd
-        - chapter-2-variables.qmd
-        - chapter-3-input.qmd
-        - chapter-4-making-decisions.qmd
-        - chapter-5-loops.qmd
+        - chapter-input-process-output.qmd
+        - chapter-variables.qmd
+        - chapter-input.qmd
+        - chapter-making-decisions.qmd
+        - chapter-loops.qmd
         - expression-toolkit.qmd
-        - projects/week-1-fortune-teller.qmd
-        - projects/week-2-mad-libs.qmd
-        - projects/week-3-number-game.qmd
-        - projects/week-4-rock-paper-scissors.qmd
+        - projects/fortune-teller.qmd
+        - projects/mad-libs.qmd
+        - projects/number-game.qmd
+        - projects/rock-paper-scissors.qmd
     - part: "Part II: Building Systems (Weeks 5-8)"
       chapters:
-        - chapter-6-functions.qmd
-        - chapter-7-organizing-information.qmd
-        - chapter-8-saving-work.qmd
-        - chapter-9-debugging.qmd
-        - projects/week-5-temperature-converter.qmd
-        - projects/week-6-contact-book.qmd
-        - projects/week-7-journal-app.qmd
-        - projects/week-8-quiz-game.qmd
+        - chapter-functions.qmd
+        - chapter-organizing-information.qmd
+        - chapter-saving-work.qmd
+        - chapter-debugging.qmd
+        - projects/temperature-converter.qmd
+        - projects/contact-book.qmd
+        - projects/journal-app.qmd
+        - projects/quiz-game.qmd
     - part: "Part III: Real-World Programming (Weeks 9-12)"
       chapters:
-        - chapter-10-working-with-data.qmd
-        - chapter-11-connected-programs.qmd
-        - chapter-12-interactive-systems.qmd
-        - chapter-13-becoming-architect.qmd
-        - projects/week-9-grade-analysis.qmd
-        - projects/week-10-weather-app.qmd
-        - projects/week-11-text-adventure.qmd
-        - projects/week-12-todo-gui.qmd
+        - chapter-working-with-data.qmd
+        - chapter-connected-programs.qmd
+        - chapter-interactive-systems.qmd
+        - chapter-becoming-architect.qmd
+        - projects/grade-analysis.qmd
+        - projects/weather-app.qmd
+        - projects/text-adventure.qmd
+        - projects/todo-gui.qmd
     - part: "Part IV: Your Journey Forward"
       chapters:
-        - chapter-14-next-steps.qmd
+        - chapter-next-steps.qmd
     - summary.qmd
     - references.qmd
     - about-author.qmd

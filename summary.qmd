@@ -18,12 +18,12 @@ You mastered the fundamental concepts that power all programming:
 - Working with collections of data
 
 **Part II: Building Systems (Weeks 5-8)**
-You learned to create organized, reusable code:
+You learned to create organised, reusable code:
 - Functions for modularity and reuse
-- Data structures for information organization
+- Data structures for information organisation
 - File operations for data persistence
 - Debugging strategies for problem-solving
-- Code organization and documentation
+- Code organisation and documentation
 
 **Part III: Real-World Programming (Weeks 9-12)**
 You integrated concepts to build complete applications:
@@ -65,7 +65,7 @@ This book pioneered a new approach to programming education. Instead of avoiding
 
 **Develop Critical Thinking**
 - Evaluated AI suggestions for appropriateness and correctness
-- Recognized when AI overcomplicated simple problems
+- recognised when AI overcomplicated simple problems
 - Built confidence in your own problem-solving abilities
 
 This partnership model represents the future of programming. You're among the first generation to master this collaborative approach from the beginning.
@@ -202,7 +202,7 @@ You now possess the foundational skills necessary for professional programming w
 - Stay current with industry developments
 
 **Problem-Solving Ability**
-- Analyze requirements thoroughly
+- analyse requirements thoroughly
 - Design appropriate solutions
 - Implement solutions incrementally
 - Refine based on testing and feedback
@@ -258,7 +258,7 @@ You're now positioned to help others learn programming effectively:
 Your recent journey from beginner to programmer gives you unique insights into common learning challenges and effective solutions.
 
 **AI-Assisted Learning Advocacy**
-Your experience with effective AI partnership can help others avoid common pitfalls and maximize learning benefits.
+Your experience with effective AI partnership can help others avoid common pitfalls and maximise learning benefits.
 
 **Open Source Contributions**
 As you build more projects, consider sharing your code and contributing to projects that help other learners.

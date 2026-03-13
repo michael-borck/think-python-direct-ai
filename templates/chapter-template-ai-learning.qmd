@@ -151,7 +151,7 @@ Instead, we build understanding step by step:
 Before moving to Chapter [X+1], check that you:
 
 - [ ] Understand [concept] as a pattern, not just syntax
-- [ ] Can recognize [concept] in real-world scenarios
+- [ ] Can recognise [concept] in real-world scenarios
 - [ ] Practiced prompt evolution for [concept]
 - [ ] Built a mental model of how [concept] works
 - [ ] Can architect a solution using [concept] before coding

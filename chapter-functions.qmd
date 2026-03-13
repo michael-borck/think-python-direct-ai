@@ -543,7 +543,7 @@ For this chapter, record:
 
 1. **Function Opportunities**: Find 5 repetitive tasks in your daily life that could be "functions"
 2. **Code Comparison**: Write greeting code with and without functions - which is clearer?
-3. **Mental Models**: Draw your favorite visualization of how functions work
+3. **Mental Models**: Draw your favourite visualization of how functions work
 4. **Design Practice**: List functions needed for a simple recipe app
 
 ::: {.callout-tip}
@@ -563,6 +563,6 @@ Anyone can understand what this does!
 
 ## Next Steps
 
-In Chapter 7, we'll explore how to organize complex information using lists and dictionaries. You'll see how functions and data structures work together to create powerful programs that can handle real-world complexity.
+In Chapter 7, we'll explore how to organise complex information using lists and dictionaries. You'll see how functions and data structures work together to create powerful programs that can handle real-world complexity.
 
-Remember: Functions aren't about memorizing syntax. They're about recognizing patterns, reducing repetition, and building programs from well-named, reusable pieces!
+Remember: Functions aren't about memorizing syntax. They're about recognising patterns, reducing repetition, and building programs from well-named, reusable pieces!

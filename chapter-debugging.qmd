@@ -4,7 +4,7 @@
 
 Here's the truth: Every programmer's code breaks. The difference between beginners and experts isn't that experts write perfect code - it's that experts are better at finding and fixing problems.
 
-Debugging is detective work. Each error is a clue, each unexpected behavior a mystery to solve. And like any good detective, you need the right mindset and tools.
+Debugging is detective work. Each error is a clue, each unexpected behaviour a mystery to solve. And like any good detective, you need the right mindset and tools.
 
 ## Understanding Through Real Life
 
@@ -34,7 +34,7 @@ Debugging follows the same process as science:
 1. **Observe**: What exactly is happening?
 2. **Hypothesize**: What might cause this?
 3. **Test**: Try a fix
-4. **Analyze**: Did it work? What did we learn?
+4. **analyse**: Did it work? What did we learn?
 5. **Repeat**: Until solved
 
 ## Discovering Debugging with Your AI Partner
@@ -59,7 +59,7 @@ What are the 5 most common beginner Python errors?
 Show simple examples of each.
 ```
 
-Recognizing patterns helps you debug faster.
+recognising patterns helps you debug faster.
 
 ### Exploration 3: Debugging Strategies
 
@@ -335,7 +335,7 @@ Exercise 9.2: Prompt Engineering
 ### Getting Debug Help
 
 Your code shows wrong output. Create prompts that:
-1. Clearly describe the expected vs actual behavior
+1. Clearly describe the expected vs actual behaviour
 2. Include the relevant code
 3. Ask for debugging steps, not just the fix
 4. Request explanation of why it happened
@@ -344,7 +344,7 @@ Document what makes a good debugging prompt.
 
 <details>
 <summary>Effective Debug Prompt Template</summary>
-"My [type of program] should [expected behavior] but instead [actual behavior].
+"My [type of program] should [expected behaviour] but instead [actual behaviour].
 Here's the code: [code]
 Can you help me understand:
 1. Why this is happening
@@ -363,7 +363,7 @@ Exercise 9.3: Pattern Matching
 
 Ask AI for a "professional inventory system with a bug". In the code:
 1. Use print statements to trace execution
-2. Identify where expected and actual behavior diverge
+2. Identify where expected and actual behaviour diverge
 3. Isolate the buggy section
 4. Fix with minimal changes
 
@@ -570,7 +570,7 @@ For this chapter, record:
 
 ## Next Steps
 
-Congratulations on completing Part II! You've learned to build systems with functions, organize data with collections, create persistent programs with files, and debug when things go wrong. 
+Congratulations on completing Part II! You've learned to build systems with functions, organise data with collections, create persistent programs with files, and debug when things go wrong. 
 
 In your Week 5 Project, you'll combine all these skills to build a Temperature Converter with memory - a useful tool that demonstrates real system building!
 

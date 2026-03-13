@@ -99,7 +99,7 @@ Think of widgets like LEGO blocks for your interface:
 2. **Button** - Clickable actions
 3. **Entry** - Single-line text input
 4. **Text** - Multi-line text area
-5. **Frame** - Container for organization
+5. **Frame** - Container for organisation
 6. **Canvas** - Drawing and graphics
 
 ### Layout Managers
@@ -570,7 +570,7 @@ widget.config(relief="solid", borderwidth=2)
 - Multiple text areas
 - Save/load files
 - Search functionality
-- Font customization
+- Font customisation
 
 ### Project 2: Simple Paint Program
 - Drawing tools (pencil, shapes)

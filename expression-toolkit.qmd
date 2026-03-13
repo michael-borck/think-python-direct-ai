@@ -6,7 +6,7 @@ As you've journeyed through the fundamental concepts, you've encountered various
 
 But here's what happens next: When you start building projects and exploring AI-generated code, you'll see expressions you haven't met yet. AI loves using clever shortcuts and advanced operators. 
 
-**This toolkit isn't for memorizing. It's for recognizing patterns and knowing how to explore.**
+**This toolkit isn't for memorizing. It's for recognising patterns and knowing how to explore.**
 
 ## Your AI Expression Detective Skills
 
@@ -142,7 +142,7 @@ Try this exercise with AI:
 ## Expression Confidence
 
 You don't need to memorize operators. You need to:
-- Recognize when you need to create a value
+- recognise when you need to create a value
 - Know that an expression can create it
 - Ask AI for the right expression pattern
 - Understand what value it produces

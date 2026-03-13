@@ -5,7 +5,7 @@
 Make sure you've completed:
 - All previous projects
 - Chapter 6: Functions
-- Chapter 7: Organizing Information (Lists & Dictionaries)
+- Chapter 7: organising Information (Lists & Dictionaries)
 - Chapter 8: Saving Your Work (Files)
 
 You should understand:
@@ -19,14 +19,14 @@ You should understand:
 
 A contact book is the perfect project for combining dictionaries, lists, and functions. You'll build a system that stores detailed contact information, provides search capabilities, and persists data between sessions.
 
-This project demonstrates real-world data management - how professional applications organize, search, and maintain information.
+This project demonstrates real-world data management - how professional applications organise, search, and maintain information.
 
 ## The Problem to Solve
 
 People need to manage their growing contact lists! Your contact book should:
 - Store multiple pieces of information per contact
 - Provide easy ways to add, view, and search contacts
-- Organize contacts sensibly
+- organise contacts sensibly
 - Save contacts between program runs
 - Handle real-world scenarios (duplicate names, missing info)
 
@@ -180,7 +180,7 @@ Your implementation should:
 - [ ] Use a list to store all contacts
 - [ ] Create separate functions for each operation
 - [ ] Demonstrate file I/O for persistence
-- [ ] Show good function organization
+- [ ] Show good function organisation
 
 ## Sample Interaction
 
@@ -471,7 +471,7 @@ Before considering your project complete:
 - [ ] **File Persistence**: Saves and loads correctly
 - [ ] **User Experience**: Clear menus and formatting
 - [ ] **Error Handling**: Graceful handling of edge cases
-- [ ] **Code Organization**: Logical function separation
+- [ ] **Code organisation**: Logical function separation
 - [ ] **Search Feature**: Can find contacts by name
 
 ## Common Pitfalls and How to Avoid Them
@@ -503,6 +503,6 @@ By completing this project, you've learned:
 
 ## Next Week Preview
 
-Great work! Next week, you'll build a Personal Journal that uses files to create a permanent record of entries. You'll learn about organizing time-based data and creating a reflective tool that grows more valuable over time.
+Great work! Next week, you'll build a Personal Journal that uses files to create a permanent record of entries. You'll learn about organising time-based data and creating a reflective tool that grows more valuable over time.
 
-Your contact book demonstrates professional data management skills - organizing, searching, and persisting information effectively! 📚
+Your contact book demonstrates professional data management skills - organising, searching, and persisting information effectively! 📚

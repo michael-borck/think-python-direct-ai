@@ -16,7 +16,7 @@ You should be ready to:
 
 ## Project Overview
 
-This project combines everything you've learned about data processing to create a real tool that teachers and students can use. You'll analyze grade data from CSV files, calculate statistics, identify trends, and generate actionable insights.
+This project combines everything you've learned about data processing to create a real tool that teachers and students can use. You'll analyse grade data from CSV files, calculate statistics, identify trends, and generate actionable insights.
 
 This is where programming becomes genuinely useful - solving real problems with real data.
 
@@ -91,7 +91,7 @@ Real gradebook data has problems:
 
 ✅ **Good Learning Prompts**:
 ```
-"I'm analyzing grade data from CSV. Some cells are empty or contain 
+"I'm analysing grade data from CSV. Some cells are empty or contain 
 'N/A'. Show me how to safely convert grade values to numbers, 
 handling these edge cases."
 ```
@@ -356,7 +356,7 @@ def calculate_class_statistics(students):
 Identify patterns in performance:
 ```python
 def analyze_student_trend(student):
-    """Analyze if student is improving or declining"""
+    """analyse if student is improving or declining"""
     grades = []
     assignments = student['assignments']
     
@@ -389,7 +389,7 @@ def analyze_student_trend(student):
 
 ```python
 def analyze_grade_distribution(students):
-    """Analyze how grades are distributed"""
+    """analyse how grades are distributed"""
     distribution = {'A': 0, 'B': 0, 'C': 0, 'D': 0, 'F': 0}
     
     for student in students:

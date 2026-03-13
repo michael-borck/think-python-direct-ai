@@ -25,7 +25,7 @@ Each decision follows a pattern:
 
 Your phone makes thousands of decisions per second:
 - **IF** battery < 20% → Show low battery warning
-- **IF** face recognized → Unlock phone
+- **IF** face recognised → Unlock phone
 - **IF** notification arrives → Display alert
 - **IF** no internet → Show offline message
 
@@ -68,7 +68,7 @@ Ask:
 Draw a simple decision tree for an ATM withdrawal process
 ```
 
-This reveals how decisions can branch and create complex behavior from simple rules.
+This reveals how decisions can branch and create complex behaviour from simple rules.
 
 ## From Concept to Code
 
@@ -494,7 +494,7 @@ You've learned:
 - if statements let programs choose different paths
 - elif handles multiple related choices
 - else provides a default action
-- Decision logic creates intelligent behavior
+- Decision logic creates intelligent behaviour
 
 ## Reflection Checklist
 

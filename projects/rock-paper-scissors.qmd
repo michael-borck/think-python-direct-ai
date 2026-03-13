@@ -256,7 +256,7 @@ Tournament Statistics:
 
 🎮 Play another tournament? (yes/no): no
 
-Thanks for playing! May the odds be ever in your favor! 🎯
+Thanks for playing! May the odds be ever in your favour! 🎯
 ```
 
 ## Development Approach

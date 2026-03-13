@@ -5,20 +5,20 @@
 Make sure you've completed:
 - Part I: All concepts and projects
 - Chapter 6: Creating Your Own Commands (Functions)
-- Chapter 7: Organizing Information (Lists & Dictionaries)
+- Chapter 7: organising Information (Lists & Dictionaries)
 
 You should understand:
 - How to create and use functions
 - How to work with lists and dictionaries
 - How to build modular programs
-- How to organize code effectively
+- How to organise code effectively
 :::
 
 ## Project Overview
 
 Temperature conversion is a perfect example of where functions shine. Instead of writing the same conversion formula repeatedly, you'll create a smart converter that remembers conversions, supports multiple units, and can be extended easily.
 
-This project demonstrates the power of functions to create reusable, organized code that's easy to understand and maintain.
+This project demonstrates the power of functions to create reusable, organised code that's easy to understand and maintain.
 
 ## The Problem to Solve
 
@@ -26,7 +26,7 @@ Scientists, cooks, and travelers need temperature conversions constantly! Your c
 - Convert between Celsius, Fahrenheit, and Kelvin
 - Use functions to avoid repeating formulas
 - Remember recent conversions
-- Provide a clean, organized interface
+- Provide a clean, organised interface
 - Be easily extendable for new temperature scales
 
 ## Architect Your Solution First
@@ -81,7 +81,7 @@ Build the interaction layer:
 Add value through functions:
 1. History tracking with list/dictionary
 2. Batch conversion capability
-3. Favorite conversions
+3. favourite conversions
 4. Round-trip verification
 5. Scientific notation for extreme values
 
@@ -97,7 +97,7 @@ with clear parameter and return value."
 ```
 
 ```
-"My converter has 6 conversion functions. How can I organize them to avoid 
+"My converter has 6 conversion functions. How can I organise them to avoid 
 a massive if/elif chain? Show me a clean approach using what I know."
 ```
 
@@ -125,7 +125,7 @@ What's a simple structure that captures all relevant information?"
    It should handle negative temperatures correctly."
    ```
 
-3. **Organization Phase**: Connect functions cleanly
+3. **organisation Phase**: Connect functions cleanly
    ```
    "I have 6 conversion functions. Show me how to call the right one 
    based on user's choice without complex if statements."
@@ -172,7 +172,7 @@ Your temperature converter must:
 
 Your implementation should:
 - [ ] Use a separate function for each conversion formula
-- [ ] Use functions to organize UI elements
+- [ ] Use functions to organise UI elements
 - [ ] Demonstrate function parameters and return values
 - [ ] Show functions calling other functions
 - [ ] Include clear function names and comments
@@ -347,7 +347,7 @@ After completing the project:
    - How did functions simplify your main program?
    - What would this look like without functions?
 
-2. **Organization Reflection**
+2. **organisation Reflection**
    - How did you decide what deserved its own function?
    - Which functions call other functions?
    - How does this compare to your Part I projects?
@@ -390,7 +390,7 @@ Before considering your project complete:
 - [ ] **Program Structure**: Clear main() function coordinating everything
 - [ ] **History Feature**: Stores and displays past conversions
 - [ ] **Error Handling**: Graceful handling of invalid input
-- [ ] **Code Organization**: Functions have single, clear purposes
+- [ ] **Code organisation**: Functions have single, clear purposes
 - [ ] **Documentation**: Each function has a clear docstring
 
 ## Common Pitfalls and How to Avoid Them
@@ -416,7 +416,7 @@ Before considering your project complete:
 By completing this project, you've learned:
 - How to design programs as collections of functions
 - How to create reusable, modular code
-- How to organize complex programs clearly
+- How to organise complex programs clearly
 - How functions calling functions creates powerful systems
 - How to build maintainable, extendable programs
 

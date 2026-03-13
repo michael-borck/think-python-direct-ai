@@ -48,7 +48,7 @@ Create a design document that includes:
 - [ ] Scoring mechanism
 - [ ] High score tracking
 - [ ] Game flow and user experience
-- [ ] File organization for questions
+- [ ] File organisation for questions
 
 ### 3. Identify Patterns
 
@@ -176,7 +176,7 @@ Your quiz game must:
 ### Learning Requirements
 
 Your implementation should:
-- [ ] Use functions to organize game logic
+- [ ] Use functions to organise game logic
 - [ ] Use dictionaries for question structure
 - [ ] Use lists for question banks
 - [ ] Use files for persistence
@@ -555,7 +555,7 @@ Before considering your project complete:
 - [ ] **High Scores**: Persistent leaderboard
 - [ ] **User Experience**: Clear interface and feedback
 - [ ] **Error Handling**: Graceful file and input handling
-- [ ] **Code Organization**: Well-structured functions
+- [ ] **Code organisation**: Well-structured functions
 
 ## Common Pitfalls and How to Avoid Them
 
@@ -588,7 +588,7 @@ By completing this project, you've learned:
 
 Congratulations! You've finished Part II: Building Systems. Your quiz game demonstrates mastery of:
 
-✅ **Functions**: Organized, reusable game logic
+✅ **Functions**: organised, reusable game logic
 ✅ **Data Structures**: Questions as dictionaries, banks as lists
 ✅ **Files**: Persistent questions and scores
 ✅ **Debugging**: Handling complex interactions

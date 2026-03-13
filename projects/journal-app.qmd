@@ -35,7 +35,7 @@ People need a private, digital space for reflection! Your journal should:
 Before writing any code or consulting AI, design your journal:
 
 ### 1. Understand the Problem
-- How should entries be organized? (by date? topics?)
+- How should entries be organised? (by date? topics?)
 - What makes journaling feel natural vs. forced?
 - How can the app encourage regular use?
 - What would make you want to use this daily?
@@ -43,7 +43,7 @@ Before writing any code or consulting AI, design your journal:
 ### 2. Design Your Approach
 
 Create a design document that includes:
-- [ ] File organization strategy
+- [ ] File organisation strategy
 - [ ] Entry format (how to store date, text)
 - [ ] Viewing options (recent, by date, search)
 - [ ] User interface flow
@@ -416,7 +416,7 @@ After completing the project:
 
 1. **Design Reflection**
    - What entry format works best for searching?
-   - How does file organization affect performance?
+   - How does file organisation affect performance?
    - What would you add to make journaling more engaging?
 
 2. **Technical Reflection**

@@ -215,7 +215,7 @@ Build understanding progressively:
 ### Level 1: Basic Question and Answer
 ```python
 # Ask one question
-favorite_food = input("What's your favorite food? ")
+favorite_food = input("What's your favourite food? ")
 print("I love " + favorite_food + " too!")
 ```
 
@@ -321,7 +321,7 @@ Document each prompt iteration.
 <details>
 <summary>Effective Final Prompt</summary>
 "Show me a simple Python program that:
-1. Asks the user for their favorite hobby
+1. Asks the user for their favourite hobby
 2. Stores it in a variable
 3. Prints two different messages using that hobby
 Use only input() and print(), nothing complex"
@@ -383,7 +383,7 @@ Exercise 3.5: Architect First
 Design these programs before coding:
 
 1. **Personal Greeting Bot**
-   - Questions needed: name, mood, favorite color
+   - Questions needed: name, mood, favourite color
    - Output: Personalized colorful greeting
 
 2. **Simple Story Generator**
@@ -406,7 +406,7 @@ Then ask AI: "Implement this exact design: [your design]"
 **Personal Greeting Bot Design:**
 - Ask "What's your name?" → store in `user_name`
 - Ask "How are you feeling?" → store in `mood`
-- Ask "Favorite color?" → store in `color`
+- Ask "favourite color?" → store in `color`
 - Output: "Hi [name]! Hope your [mood] day gets even better! [color] is awesome!"
 </details>
 :::
@@ -502,7 +502,7 @@ For this chapter, record:
 
 1. **Real-World Inputs**: List 10 times you provided input to technology today
 2. **Prompt Practice**: Write 5 different ways to ask for someone's age
-3. **Mental Model**: Draw your favorite visualization of how input() works
+3. **Mental Model**: Draw your favourite visualization of how input() works
 4. **Program Ideas**: List 3 programs you could build with just input(), variables, and print()
 
 ::: {.callout-tip}

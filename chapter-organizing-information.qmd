@@ -1,4 +1,4 @@
-# Organizing Information: Lists and Dictionaries {#sec-organizing-information}
+# organising Information: Lists and Dictionaries {#sec-organising-information}
 
 ## The Concept First
 
@@ -20,9 +20,9 @@ Think about everyday lists:
 
 Lists keep items in order and let you work with the whole collection.
 
-### Dictionaries: Labeled Storage
+### Dictionaries: labelled Storage
 
-Think about labeled organization:
+Think about labelled organisation:
 - **Phone contacts**: "Mom" → 555-1234, "Pizza Place" → 555-5678
 - **Student grades**: "Alice" → 95, "Bob" → 87, "Charlie" → 92
 - **Game inventory**: "health potions" → 3, "gold" → 150, "arrows" → 25
@@ -39,7 +39,7 @@ Different organizational needs require different tools.
 
 ## Discovering Collections with Your AI Partner
 
-Let's explore how programs organize multiple pieces of information.
+Let's explore how programs organise multiple pieces of information.
 
 ### Exploration 1: The Problem with Many Variables
 
@@ -94,7 +94,7 @@ print(fruits[1])  # banana
 print(fruits[2])  # orange
 ```
 
-### Dictionaries: Labeled Information
+### Dictionaries: labelled Information
 
 Now for dictionaries:
 ```python
@@ -164,7 +164,7 @@ Better, but might still be overwhelming.
 
 ### Round 3: Learning-Focused
 ```
-I'm learning to organize multiple pieces of information. Show me a simple 
+I'm learning to organise multiple pieces of information. Show me a simple 
 shopping list using a Python list, and a simple contact book using a dictionary.
 ```
 Perfect for understanding!
@@ -367,7 +367,7 @@ Exercise 7.4: Build a Model
 ### Visualizing Collections
 
 Create visual models for:
-1. A list of your 5 favorite songs showing index positions
+1. A list of your 5 favourite songs showing index positions
 2. A dictionary of 4 friends and their birthdays
 3. A diagram showing when to use list vs dictionary
 
@@ -417,7 +417,7 @@ Then ask AI: "Implement this design: [your specification]"
 ## AI Partnership Patterns
 
 ### Pattern 1: Collection Conversion
-Show AI different organizations:
+Show AI different organisations:
 - "Convert these 10 variables into a list"
 - "Convert this numbered list into a dictionary"
 - "Show me why one is better than the other here"
@@ -429,7 +429,7 @@ Learn operations gradually:
 3. "Remove 'blue' from the list"
 4. "Check if 'red' is in the list"
 
-### Pattern 3: Real-World Modeling
+### Pattern 3: Real-World modelling
 Connect to familiar systems:
 - "Model a playlist using a list"
 - "Model a phonebook using a dictionary"
@@ -506,7 +506,7 @@ profiles = {
 
 You've learned:
 - Lists store ordered collections accessible by position
-- Dictionaries store labeled information accessible by key
+- Dictionaries store labelled information accessible by key
 - Both can be modified after creation
 - Lists excel at sequences, dictionaries at lookups
 - Real programs often use both together
@@ -541,4 +541,4 @@ For this chapter, record:
 
 In Chapter 8, we'll learn how to save and load data from files. You'll see how collections become even more powerful when you can preserve them between program runs - turning temporary programs into persistent applications!
 
-Remember: Lists and dictionaries aren't about syntax. They're about choosing the right organizational tool for your data - just like choosing between a numbered list or a labeled filing system in real life!
+Remember: Lists and dictionaries aren't about syntax. They're about choosing the right organizational tool for your data - just like choosing between a numbered list or a labelled filing system in real life!
