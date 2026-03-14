@@ -226,3 +226,4 @@ $RECYCLE.BIN/
 .Trash-*
 .nfs*
 **/*.quarto_ipynb
+llm.txt
