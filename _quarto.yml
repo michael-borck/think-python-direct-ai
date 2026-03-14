@@ -16,6 +16,7 @@ profiles:
 book:
   title: "Think Python, Direct AI"
   subtitle: "Computational Thinking for Beginners"
+  favicon: favicon.svg
   author: "Michael Borck"
   date: "24/07/2025"
   license: "CC BY 4.0 (content), MIT (code examples)"
@@ -86,9 +87,6 @@ book:
 
 bibliography: references.bib
 csl: chicago-author-date.csl
-
-website:
-  favicon: favicon.svg
 
 format:
   html:
