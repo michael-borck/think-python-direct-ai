@@ -227,3 +227,4 @@ $RECYCLE.BIN/
 .nfs*
 **/*.quarto_ipynb
 llm.txt
+rag-documents/
