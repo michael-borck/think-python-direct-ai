@@ -87,9 +87,12 @@ book:
 bibliography: references.bib
 csl: chicago-author-date.csl
 
+website:
+  favicon: favicon.svg
+
 format:
   html:
-    theme: 
+    theme:
       light: cosmo
       dark: darkly
     css: assets/custom.css
