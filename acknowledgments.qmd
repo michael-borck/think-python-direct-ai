@@ -1,36 +1,9 @@
 # Acknowledgments {.unnumbered}
 
-## A Note on AI Collaboration
+This book distils years of teaching programming across multiple languages — C, C++, C#, Python — into the concepts that stay constant regardless of syntax. The students who worked through earlier versions of this material, in handouts and exercises and lab sessions, shaped the approach long before it became a book. Their questions revealed which explanations worked and which needed rethinking. Their frustrations pointed to the real barriers, which were almost never about syntax.
 
-This book represents a unique collaboration between human expertise and artificial intelligence. In keeping with the book's central philosophy of "Learning with AI," the book itself was created using AI as a collaborative partner.
+Colleagues who teach programming in different contexts provided feedback that kept the ideas grounded. The question "would a complete beginner actually understand this?" became a design principle.
 
-### How This Book Was Written
+The Python community deserves credit for creating a language accessible enough to teach concepts without the language itself becoming the obstacle. The open source community behind Quarto, GitHub, and the broader publishing toolchain made it possible to write, build, and publish across multiple formats.
 
-- **Human Direction**: All conceptual frameworks, pedagogical approaches, and learning objectives were designed by Michael Borck
-- **AI Assistance**: Claude (Anthropic) assisted with:
-  - Drafting and refining explanations
-  - Generating code examples and exercises
-  - Ensuring consistency across chapters
-  - Developing practice problems and solutions
-
-### Transparency and Learning
-
-Just as this book teaches you to work effectively with AI as a learning partner, it was created using the same principles. Every chapter, example, and exercise has been:
-
-- Carefully reviewed and validated by human expertise
-- Tested for pedagogical effectiveness
-- Refined through iterative human-AI collaboration
-
-This transparent approach to AI collaboration serves as a meta-example of the book's core message: AI is a powerful tool that, when used thoughtfully with human oversight, can enhance our ability to create, learn, and teach.
-
-### Traditional Acknowledgments
-
-Special thanks to:
-- The Python community for creating such an accessible and powerful language
-- The educators and researchers exploring AI in education
-- Early readers and reviewers who provided valuable feedback
-- You, the reader, for embracing this new approach to learning programming
-
----
-
-*"In the spirit of the book's philosophy, this acknowledgment itself was written collaboratively with AI, demonstrating that transparency about AI use enhances rather than diminishes the value of human-AI collaboration."*
+AI tools were used throughout the writing process. Claude (Anthropic) served as a conversation partner for drafting, iterating, and refining both text and code examples. The process was the same one the book teaches: use AI to explore and refine, but keep the thinking yours. Every explanation, every exercise, every pedagogical decision reflects the author's judgement. The AI made the work faster. It did not make the decisions.

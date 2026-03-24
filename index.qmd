@@ -1,51 +1,62 @@
 # Preface {.unnumbered}
 
-## A Revolutionary Approach to Learning Python
+## Why This Book Exists
 
-Welcome to *Think Python, Direct AI: Computational Thinking for Beginners* – a groundbreaking approach to programming education that embraces AI as your learning partner rather than avoiding it.
+Most programming books teach you syntax. This one teaches you to think.
 
-### Why This Book Is Different
+That distinction matters more now than it ever has. AI can generate code in seconds. If your only skill is writing code, you are competing with something faster and cheaper. But if you can decompose a problem, design a solution, and evaluate whether an implementation is correct — you have the skill that makes AI useful rather than dangerous.
 
-Traditional programming books were written for a world where students coded alone. This book is written for our reality – where AI can generate code in seconds. But here's the crucial insight: **generating code isn't the same as understanding programming**.
+This book grew out of years of teaching programming across multiple languages — C, C++, C#, Python — and noticing that the students who struggled were rarely struggling with syntax. They were struggling with the thinking that comes before syntax: breaking a problem into parts, recognising patterns, understanding what a program is actually doing. The concepts are the same regardless of the language. Python is simply the vehicle we use to express them.
 
-This book teaches you to:
-- **Think** like a programmer, not just code like one
-- **Architect** solutions that AI can help you build
-- **Understand** concepts deeply, not just make things work
-- **Partner** with AI effectively, knowing when and how to use it
+## Who This Book Is For
 
-### About This Book's Creation
+You are a complete beginner. You have never written a program, or you have tried and it did not stick. You may be a student in a programming course, a professional looking to add a skill, or someone who is simply curious about how software works.
 
-In the spirit of transparency and demonstrating the very principles it teaches, this book was created through human-AI collaboration. Every chapter, example, and exercise represents a partnership between human expertise (Michael Borck) and AI assistance (Claude from Anthropic), with careful human oversight ensuring pedagogical effectiveness and accuracy.
+You do not need a mathematics background. You do not need prior experience with any programming language. You need willingness to think carefully about problems before reaching for solutions.
 
-This isn't just a book *about* learning with AI – it's a book *created* with AI, showing that when used thoughtfully, AI enhances rather than replaces human creativity and expertise.
+## What This Book Is Not
 
-### Your Learning Journey
+This is not a Python reference manual. It does not cover every feature of the language. It covers the concepts you need to think like a programmer, using Python to make those concepts concrete.
 
-Over 12 weeks, you'll progress from understanding basic computational concepts to architecting complex systems. More importantly, you'll develop the critical skill for our era: knowing how to think about problems so clearly that you can guide AI to help you solve them.
+It is not a prompt engineering guide. You will use AI as an exploration tool throughout, but the book argues that understanding must come before code generation. If you are looking for ways to get AI to write your programs for you, this is the wrong book.
 
-Welcome to the future of programming education. Let's learn together.
+It is not the only Python book you will ever need. It is the first one. It gives you the mental models that make every subsequent book, course, or tutorial more effective. When you are ready for focused fundamentals, move to *Code Python, Consult AI*. When you are ready for professional practices, move to *Ship Python, Orchestrate AI*. The series is designed so each book builds on the one before.
 
-### Related Resources
+And it is not a book that avoids AI or treats it as cheating. AI is your learning partner here. The book teaches you to use it as an exploration tool — to ask questions, test hypotheses, and discover patterns — not as a shortcut around understanding.
 
-This guide is part of a 5-book series designed to help you master modern software development in the AI era:
+## If You Are Feeling Uncertain
 
-#### Foundational Methodology
-**Converse Python, Partner AI: The Python Edition** - A methodology for effective AI collaboration (human oversight + methodology + LLM = success)
+You are not behind. Programming is genuinely hard to learn, and the people who make it look easy have simply been doing it longer. AI tools have added a new layer of confusion: it looks like the machine can already do everything, so why bother learning? The answer is that the machine cannot think about problems. You can. This book develops that ability.
 
-#### Python Track
-**Think Python, Direct AI: Computational Thinking for Beginners** (this book) - An innovative programming textbook that embraces AI as a learning partner. Perfect for absolute beginners in the age of AI.
+## How This Book Is Structured
 
-**Code Python, Consult AI: Python Fundamentals for the AI Era** - Learn fundamental Python with AI integration - ideal for those who want a focused introduction to Python fundamentals
+Over 12 weeks, you progress from understanding basic computational concepts to architecting systems:
 
-**Ship Python, Orchestrate AI: Professional Python in the AI Era** - Build professional-grade Python applications with modern tools (uv, ruff, mypy, pytest - simple but not simplistic)
+**Weeks 1--4** (Computational Thinking): Input/output, storage, decisions, patterns. You learn to think about problems before you write a single line of code.
 
-#### Web Track
-**Build Web, Guide AI: Business Web Development with AI** - A practical guide to modern web development with AI as your development partner.
+**Weeks 5--8** (Building Systems): Functions, data structures, file handling, integration. You learn to build programs from smaller, reusable pieces.
 
-**Book Progression**: Start with "Think Python, Direct AI" if you're a complete beginner, or jump into "Code Python, Consult AI" if you want a more focused approach to Python fundamentals. Both books prepare you for the production-focused content in "Ship Python, Orchestrate AI." For web development, see "Build Web, Guide AI." The methodology from "Converse Python, Partner AI" enhances all your development work.
+**Weeks 9--12** (Real-World Programming): Data processing, APIs, interaction, architecture. You learn to build programs that do useful things in the real world.
 
-### Ways to Engage with This Book
+Each chapter follows a consistent pattern: concept first, then AI-guided exploration, then code. You understand the idea before you see the syntax.
+
+## The Series
+
+This book is the first in a Python learning path:
+
+1. **Think Python, Direct AI** (this book) — computational thinking for absolute beginners
+2. **Code Python, Consult AI** — focused Python fundamentals with AI integration
+3. **Ship Python, Orchestrate AI** — professional Python development practices and tooling
+
+The methodology behind all three comes from *Conversation, Not Delegation: How to Think With AI, Not Just Use It*, which covers the full framework for working with AI across any discipline.
+
+All titles are available at [books.borck.education](https://books.borck.education).
+
+## How This Book Was Written
+
+This book was written through human-AI collaboration, using the same approach it teaches. The conceptual frameworks, pedagogical structure, and learning objectives were designed by the author. Claude (Anthropic) assisted with drafting, refining, and iterating. Every chapter was reviewed for accuracy and pedagogical effectiveness. The process demonstrates the book's core message: AI enhances human thinking when used with intention and oversight.
+
+## Ways to Engage with This Book
 
 This book is available in several formats. Pick whichever fits how you work and learn.
 
@@ -60,14 +71,10 @@ The online version is always the most current.
 
 ### Source Code & Feedback
 
-**Source Code**
 All code examples and project files are available at:
 https://github.com/michael-borck/think-python-direct-ai
 
-**Feedback and Errata**
-Found an error? Have a suggestion? We welcome your feedback:
+Found an error? Have a suggestion?
 
 - Open an issue: https://github.com/michael-borck/think-python-direct-ai/issues
 - Email: michael@borck.me
-
-Your input helps improve this book for future readers.
