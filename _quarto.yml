@@ -1,24 +1,13 @@
 project:
   type: book
   output-dir: _book
-  
-# Define profiles for different output formats
-profiles:
-  default:
-    - format: html
-  pdf:
-    - _quarto-pdf.yml
-  html:
-    - _quarto-html.yml
-  epub:
-    - _quarto-epub.yml
 
 book:
   title: "Think Python, Direct AI"
   subtitle: "Computational Thinking for Beginners"
   favicon: favicon.svg
   author: "Michael Borck"
-  date: "24/07/2025"
+  date: "last-modified"
   license: "CC BY 4.0 (content), MIT (code examples)"
   description: "A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions."
   cover-image: cover.png
@@ -26,7 +15,6 @@ book:
   repo-url: https://github.com/michael-borck/think-python-direct-ai
   repo-branch: main
   repo-actions: [edit, issue]
-  
   chapters:
     - index.qmd
     - copyright.qmd
@@ -72,7 +60,6 @@ book:
     - summary.qmd
     - references.qmd
     - about-author.qmd
-  
   page-navigation: true
   sidebar:
     style: docked
@@ -81,9 +68,19 @@ book:
     tools:
       - icon: github
         href: https://github.com/michael-borck/think-python-direct-ai
-      - icon: chat-dots
-        text: AI Templates
-        href: resources/ai-templates.html
+  other-links:
+    - text: Download PDF
+      icon: file-pdf
+      href: think-python-direct-ai.pdf
+    - text: Download EPUB
+      icon: book
+      href: think-python-direct-ai.epub
+    - text: Download llm.txt
+      icon: robot
+      href: llm.txt
+    - text: DeepWiki
+      icon: search
+      href: https://deepwiki.com/michael-borck/think-python-direct-ai
 
 bibliography: references.bib
 csl: chicago-author-date.csl
@@ -105,17 +102,12 @@ format:
     number-sections: true
     number-depth: 2
     highlight-style: github
-    include-in-header:
-      - text: |
-          <script>
-          // Custom JavaScript for interactive elements
-          </script>
 
 crossref:
   chapters: true
   fig-title: "Figure"
   tbl-title: "Table"
-  
+
 execute:
   echo: true
   warning: false
@@ -124,6 +116,3 @@ execute:
 
 filters:
   - _extensions/details/details.lua
-
-
-
