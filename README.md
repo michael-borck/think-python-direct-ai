@@ -186,6 +186,7 @@ This book is part of the [books.borck.education](https://books.borck.education) 
 | `epub-styles.css` | EPUB styles |
 | `scripts/` | Build scripts (`preprocess.py` = print preprocessing hook) |
 | `appendices/` | Appendix content |
+| `notes/` | Working notes, outlines, planning docs (not published) |
 | `rag-documents/` | Generated RAG chunks for chatbot |
 | `_book/` | Rendered output (gitignored) |
 | `_print_source/` | Generated print source (gitignored) |
