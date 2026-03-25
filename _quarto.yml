@@ -23,43 +23,43 @@ book:
     - acknowledgments.qmd
     - part: "Part 0: Your AI Learning Partnership"
       chapters:
-        - chapter-understanding-ai-partner.qmd
+        - chapters/chapter-understanding-ai-partner.qmd
     - part: "Part I: Computational Thinking (Weeks 1-4)"
       chapters:
-        - chapter-input-process-output.qmd
-        - chapter-variables.qmd
-        - chapter-input.qmd
-        - chapter-making-decisions.qmd
-        - chapter-loops.qmd
-        - expression-toolkit.qmd
+        - chapters/chapter-input-process-output.qmd
+        - chapters/chapter-variables.qmd
+        - chapters/chapter-input.qmd
+        - chapters/chapter-making-decisions.qmd
+        - chapters/chapter-loops.qmd
+        - chapters/expression-toolkit.qmd
         - projects/fortune-teller.qmd
         - projects/mad-libs.qmd
         - projects/number-game.qmd
         - projects/rock-paper-scissors.qmd
     - part: "Part II: Building Systems (Weeks 5-8)"
       chapters:
-        - chapter-functions.qmd
-        - chapter-organizing-information.qmd
-        - chapter-saving-work.qmd
-        - chapter-debugging.qmd
+        - chapters/chapter-functions.qmd
+        - chapters/chapter-organizing-information.qmd
+        - chapters/chapter-saving-work.qmd
+        - chapters/chapter-debugging.qmd
         - projects/temperature-converter.qmd
         - projects/contact-book.qmd
         - projects/journal-app.qmd
         - projects/quiz-game.qmd
     - part: "Part III: Real-World Programming (Weeks 9-12)"
       chapters:
-        - chapter-working-with-data.qmd
-        - chapter-connected-programs.qmd
-        - chapter-interactive-systems.qmd
-        - chapter-becoming-architect.qmd
+        - chapters/chapter-working-with-data.qmd
+        - chapters/chapter-connected-programs.qmd
+        - chapters/chapter-interactive-systems.qmd
+        - chapters/chapter-becoming-architect.qmd
         - projects/grade-analysis.qmd
         - projects/weather-app.qmd
         - projects/text-adventure.qmd
         - projects/todo-gui.qmd
     - part: "Part IV: Your Journey Forward"
       chapters:
-        - chapter-next-steps.qmd
-    - summary.qmd
+        - chapters/chapter-next-steps.qmd
+    - chapters/summary.qmd
     - references.qmd
     - about-author.qmd
   page-navigation: true
