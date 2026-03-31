@@ -56,7 +56,50 @@ name = input("What is your name? ")
 print(f"Hello, {name}!")
 ```
 
-You will also encounter coloured callout boxes: **green** for practical tips, **blue** for key concepts, **yellow** for common mistakes, and **red** for critical points you must understand before moving on.
+You will also encounter coloured callout boxes. Each serves a different purpose.
+
+::: {.callout-tip title="Practical advice"}
+**Green boxes** offer tips you can apply immediately — things to try, exploration suggestions.
+:::
+
+::: {.callout-note title="Key concept"}
+**Blue boxes** highlight important ideas worth pausing on — mental models, patterns, principles.
+:::
+
+::: {.callout-warning title="Watch out"}
+**Yellow boxes** flag common mistakes or misconceptions that trip up beginners.
+:::
+
+::: {.callout-important title="Critical point"}
+**Red boxes** mark things that are essential to understand before moving on.
+:::
+
+## How This Book Was Written
+
+This book was written through human-AI collaboration, using the same approach it teaches. The conceptual frameworks, pedagogical structure, and learning objectives were designed by the author. Claude (Anthropic) assisted with drafting, refining, and iterating. Every chapter was reviewed for accuracy and pedagogical effectiveness. The process demonstrates the book's core message: AI enhances human thinking when used with intention and oversight.
+
+## Ways to Engage with This Book
+
+This book is available in several formats. Pick whichever fits how you work and learn.
+
+- **Read it online.** The full book is freely available at the companion website, with dark mode, search, and navigation.
+- **Read it on paper or e-reader.** Available as a paperback and ebook through Amazon KDP.
+- **Converse with it.** The online edition includes a chatbot grounded in the book's content.
+- **Feed it to your own AI.** The `llm.txt` file provides a clean text version of the entire book, ready to paste into ChatGPT, Claude, or any AI tool.
+- **Run the code.** All code examples are available on [GitHub](https://github.com/michael-borck/think-python-direct-ai). [DeepWiki](https://deepwiki.com/michael-borck/think-python-direct-ai) provides an AI-navigable view of the repository.
+- **Browse all books.** This book is part of a series. See all titles at [books.borck.education](https://books.borck.education).
+
+The online version is always the most current.
+
+### Source Code & Feedback
+
+All code examples and project files are available at:
+https://github.com/michael-borck/think-python-direct-ai
+
+Found an error? Have a suggestion?
+
+- Open an issue: https://github.com/michael-borck/think-python-direct-ai/issues
+- Email: michael@borck.me
 
 ## The Series
 
@@ -91,30 +134,3 @@ flowchart TD
 **Build Web, Guide AI** — web development with AI as your development partner.
 
 All titles are available at [books.borck.education](https://books.borck.education).
-
-## How This Book Was Written
-
-This book was written through human-AI collaboration, using the same approach it teaches. The conceptual frameworks, pedagogical structure, and learning objectives were designed by the author. Claude (Anthropic) assisted with drafting, refining, and iterating. Every chapter was reviewed for accuracy and pedagogical effectiveness. The process demonstrates the book's core message: AI enhances human thinking when used with intention and oversight.
-
-## Ways to Engage with This Book
-
-This book is available in several formats. Pick whichever fits how you work and learn.
-
-- **Read it online.** The full book is freely available at the companion website, with dark mode, search, and navigation.
-- **Read it on paper or e-reader.** Available as a paperback and ebook through Amazon KDP.
-- **Converse with it.** The online edition includes a chatbot grounded in the book's content.
-- **Feed it to your own AI.** The `llm.txt` file provides a clean text version of the entire book, ready to paste into ChatGPT, Claude, or any AI tool.
-- **Run the code.** All code examples are available on [GitHub](https://github.com/michael-borck/think-python-direct-ai). [DeepWiki](https://deepwiki.com/michael-borck/think-python-direct-ai) provides an AI-navigable view of the repository.
-- **Browse all books.** This book is part of a series. See all titles at [books.borck.education](https://books.borck.education).
-
-The online version is always the most current.
-
-### Source Code & Feedback
-
-All code examples and project files are available at:
-https://github.com/michael-borck/think-python-direct-ai
-
-Found an error? Have a suggestion?
-
-- Open an issue: https://github.com/michael-borck/think-python-direct-ai/issues
-- Email: michael@borck.me
