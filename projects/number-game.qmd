@@ -4,8 +4,8 @@
 ## Before You Start
 Make sure you've completed:
 - All of Part I: Computational Thinking (Chapters 1-5)
-- Week 1 Project: Fortune Teller
-- Week 2 Project: Mad Libs Generator
+- The Fortune Teller project
+- The Mad Libs Generator project
 
 You should be comfortable with:
 - Using loops to repeat actions
@@ -425,8 +425,8 @@ By completing this project, you've learned:
 - How to provide meaningful feedback that guides user behaviour
 - How to balance challenge and fairness in interactive systems
 
-## Next Week Preview
+## Next Project Preview
 
-Excellent gaming! Next week, you'll create the classic Rock Paper Scissors game, which introduces competitive logic and multiple-round gameplay. You'll learn about handling ties, tournament systems, and creating AI opponents.
+Excellent gaming! Next, you'll create the classic Rock Paper Scissors game, which introduces competitive logic and multiple-round gameplay. You'll learn about handling ties, tournament systems, and creating AI opponents.
 
 Your number guessing game shows you can create genuinely engaging interactive experiences! 🎯

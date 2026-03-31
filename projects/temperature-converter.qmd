@@ -1,4 +1,4 @@
-# Week 5 Project: Temperature Converter {#sec-project-temperature-converter}
+# Project: Temperature Converter {#sec-project-temperature-converter}
 
 ::: {.callout-important}
 ## Before You Start
@@ -420,8 +420,8 @@ By completing this project, you've learned:
 - How functions calling functions creates powerful systems
 - How to build maintainable, extendable programs
 
-## Next Week Preview
+## Next Project Preview
 
-Excellent work! Next week, you'll build a Contact Book that uses dictionaries to store structured information and functions to manage it. You'll see how functions and data structures work together to create useful applications.
+Excellent work! Next, you'll build a Contact Book that uses dictionaries to store structured information and functions to manage it. You'll see how functions and data structures work together to create useful applications.
 
 Your temperature converter shows you understand the power of functions - breaking complex problems into simple, reusable pieces! 🌡️

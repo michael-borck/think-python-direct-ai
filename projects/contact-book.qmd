@@ -1,4 +1,4 @@
-# Week 6 Project: Contact Book {#sec-project-contact-book}
+# Project: Contact Book {#sec-project-contact-book}
 
 ::: {.callout-important}
 ## Before You Start
@@ -501,8 +501,8 @@ By completing this project, you've learned:
 - How to persist structured data in files
 - How to build user-friendly search functionality
 
-## Next Week Preview
+## Next Project Preview
 
-Great work! Next week, you'll build a Personal Journal that uses files to create a permanent record of entries. You'll learn about organising time-based data and creating a reflective tool that grows more valuable over time.
+Great work! Next, you'll build a Personal Journal that uses files to create a permanent record of entries. You'll learn about organising time-based data and creating a reflective tool that grows more valuable over time.
 
 Your contact book demonstrates professional data management skills - organising, searching, and persisting information effectively! 📚

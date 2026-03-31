@@ -1,4 +1,4 @@
-# Week 9 Project: Grade Analysis Tool {#sec-project-grade-analysis}
+# Project: Grade Analysis Tool {#sec-project-grade-analysis}
 
 ::: {.callout-important}
 ## Before You Start
@@ -525,8 +525,8 @@ After completing the project:
 3. **Error Handling**: How did you make your code robust?
 4. **User Value**: How would teachers actually use this tool?
 
-## Next Week Preview
+## Next Project Preview
 
-Excellent work! Next week, you'll build a Weather Dashboard that pulls live data from APIs, creating a real-time application that connects to the internet. You'll see how external data sources make programs dynamic and current!
+Excellent work! Next, you'll build a Weather Dashboard that pulls live data from APIs, creating a real-time application that connects to the internet. You'll see how external data sources make programs dynamic and current!
 
 Your grade analyzer proves you can turn raw data into actionable insights - a skill valuable in any field! 📊

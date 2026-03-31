@@ -30,13 +30,13 @@ You are not behind. Programming is genuinely hard to learn, and the people who m
 
 ## How This Book Is Structured
 
-Over 12 weeks, you progress from understanding basic computational concepts to architecting systems:
+The book progresses from understanding basic computational concepts to architecting systems:
 
-**Weeks 1--4** (Computational Thinking): Input/output, storage, decisions, patterns. You learn to think about problems before you write a single line of code.
+**Part I** (Computational Thinking): Input/output, storage, decisions, patterns. You learn to think about problems before you write a single line of code.
 
-**Weeks 5--8** (Building Systems): Functions, data structures, file handling, integration. You learn to build programs from smaller, reusable pieces.
+**Part II** (Building Systems): Functions, data structures, file handling, integration. You learn to build programs from smaller, reusable pieces.
 
-**Weeks 9--12** (Real-World Programming): Data processing, APIs, interaction, architecture. You learn to build programs that do useful things in the real world.
+**Part III** (Real-World Programming): Data processing, APIs, interaction, architecture. You learn to build programs that do useful things in the real world.
 
 Each chapter follows a consistent pattern: concept first, then AI-guided exploration, then code. You understand the idea before you see the syntax.
 

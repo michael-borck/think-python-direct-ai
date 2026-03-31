@@ -1,9 +1,9 @@
-# Week 12 Project: Todo Application with GUI {#sec-project-todo-gui}
+# Project: Todo Application with GUI {#sec-project-todo-gui}
 
 ::: {.callout-important}
 ## Capstone Project - Before You Start
 This is your **final project** that demonstrates everything you've learned! Make sure you've completed:
-- All previous projects (Weeks 1-11)
+- All previous projects
 - Chapter 12: Interactive Systems  
 - Chapter 13: Becoming an Architect
 
@@ -73,7 +73,7 @@ Sketch your application layout:
 │  Current Tasks:                              [Show: All ▼] │
 │  ┌─────────────────────────────────────────────────────────┐ │
 │  │ ☐ Finish Python course (Priority: High)                │ │
-│  │ ☑ Complete Week 11 project (Priority: Medium)          │ │
+│  │ ☑ Complete text adventure project (Priority: Medium)    │ │
 │  │ ☐ Read about software architecture (Priority: Low)     │ │
 │  │ ☐ Practice with more Python projects (Priority: High)  │ │
 │  │                                                         │ │
@@ -258,7 +258,7 @@ Found 3 existing tasks
 │  📋 Current Tasks (3 total, 1 completed, 2 remaining):      │
 │                                                             │
 │  ☐ HIGH   | Finish Python Step by Step course              │
-│  ☑ MEDIUM | Complete Week 11 text adventure project         │
+│  ☑ MEDIUM | Complete text adventure project                 │
 │  ☐ LOW    | Read about software design patterns            │
 │                                                             │
 │  Selected: [Finish Python Step by Step course]             │

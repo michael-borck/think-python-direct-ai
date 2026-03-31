@@ -174,7 +174,7 @@ A working program isn't the goal. Understanding how and why it works is. Use AI 
 
 ## Your Progressive AI Journey
 
-### Weeks 1-4: AI as Concept Explorer
+### Part I: AI as Concept Explorer
 ```text
 Example prompts:
 - "Explain the concept of variables using real-world examples"
@@ -182,7 +182,7 @@ Example prompts:
 - "Trace through this simple code and explain each step"
 ```
 
-### Weeks 5-8: AI as Implementation Assistant  
+### Part II: AI as Implementation Assistant
 ```text
 Example prompts:
 - "I've designed a contact book with name and phone. Show me the simplest implementation"
@@ -190,7 +190,7 @@ Example prompts:
 - "Explain why this error occurs and how to fix it"
 ```
 
-### Weeks 9-12: AI as Code Producer
+### Part III: AI as Code Producer
 ```text
 Example prompts:
 - "I need to read data from a CSV file, process it, and create a summary. Here's my design..."

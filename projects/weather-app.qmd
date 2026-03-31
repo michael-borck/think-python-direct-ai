@@ -1,4 +1,4 @@
-# Week 10 Project: Weather Dashboard {#sec-project-weather-app}
+# Project: Weather Dashboard {#sec-project-weather-app}
 
 ::: {.callout-important}
 ## Before You Start
@@ -677,8 +677,8 @@ After completing the project:
 3. **Error Handling**: What edge cases surprised you?
 4. **User Experience**: What would make this more useful daily?
 
-## Next Week Preview
+## Next Project Preview
 
-Fantastic work! Next week, you'll build a Text Adventure Game that showcases interactive systems and complex state management. You'll create an engaging, story-driven application that responds dynamically to user choices!
+Fantastic work! Next, you'll build a Text Adventure Game that showcases interactive systems and complex state management. You'll create an engaging, story-driven application that responds dynamically to user choices!
 
 Your weather dashboard proves you can integrate external data sources with polished user interfaces - a skill at the heart of modern app development! 🌤️

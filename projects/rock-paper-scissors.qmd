@@ -1,12 +1,12 @@
-# Week 4 Project: Rock Paper Scissors {#sec-project-rock-paper-scissors}
+# Project: Rock Paper Scissors {#sec-project-rock-paper-scissors}
 
 ::: {.callout-important}
 ## Before You Start
 Make sure you've completed:
 - All of Part I: Computational Thinking (Chapters 1-5)
-- Week 1 Project: Fortune Teller
-- Week 2 Project: Mad Libs Generator  
-- Week 3 Project: Number Guessing Game
+- The Fortune Teller project
+- The Mad Libs Generator project
+- The Number Guessing Game project
 
 You should be comfortable with:
 - Creating complex decision logic with if/elif/else

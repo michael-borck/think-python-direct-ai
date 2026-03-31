@@ -1,4 +1,4 @@
-# Week 8 Project: Quiz Game {#sec-project-quiz-game}
+# Project: Quiz Game {#sec-project-quiz-game}
 
 ::: {.callout-important}
 ## Before You Start

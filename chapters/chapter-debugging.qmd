@@ -542,7 +542,7 @@ You've learned:
 
 ## Reflection Checklist
 
-Before moving to Week 5 Project, ensure you:
+Before moving to the next project, ensure you:
 
 - [ ] Can read and understand basic error messages
 - [ ] Know how to use print statements for debugging
@@ -572,6 +572,6 @@ For this chapter, record:
 
 Congratulations on completing Part II! You've learned to build systems with functions, organise data with collections, create persistent programs with files, and debug when things go wrong. 
 
-In your Week 5 Project, you'll combine all these skills to build a Temperature Converter with memory - a useful tool that demonstrates real system building!
+In the Temperature Converter project, you'll combine all these skills to build a Temperature Converter with memory - a useful tool that demonstrates real system building!
 
 Remember: Debugging isn't about avoiding errors. It's about developing the confidence and skills to fix anything that goes wrong. Every bug you fix makes you a better programmer!

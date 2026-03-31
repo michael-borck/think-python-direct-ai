@@ -9,7 +9,7 @@ You began this journey as a complete beginner. Today, you finish as a programmer
 **Part 0: Your AI Learning Partnership**
 You discovered how to learn programming in the AI era, establishing a foundation for lifelong learning with artificial intelligence as your partner, not your replacement.
 
-**Part I: Computational Thinking (Weeks 1-4)**
+**Part I: Computational Thinking**
 You mastered the fundamental concepts that power all programming:
 - Variables and data storage
 - Input, processing, and output flows
@@ -17,7 +17,7 @@ You mastered the fundamental concepts that power all programming:
 - Repetition and pattern recognition
 - Working with collections of data
 
-**Part II: Building Systems (Weeks 5-8)**
+**Part II: Building Systems**
 You learned to create organised, reusable code:
 - Functions for modularity and reuse
 - Data structures for information organisation
@@ -25,7 +25,7 @@ You learned to create organised, reusable code:
 - Debugging strategies for problem-solving
 - Code organisation and documentation
 
-**Part III: Real-World Programming (Weeks 9-12)**
+**Part III: Real-World Programming**
 You integrated concepts to build complete applications:
 - Processing data from files and web APIs
 - Creating interactive graphical user interfaces
@@ -34,18 +34,18 @@ You integrated concepts to build complete applications:
 
 ### 12 Projects That Prove Your Growth
 
-1. **Fortune Teller** (Week 1): Your first program with variables and output
-2. **Mad Libs** (Week 2): Interactive input and string manipulation
-3. **Number Guessing Game** (Week 3): Loops, conditions, and game logic
-4. **Rock Paper Scissors** (Week 4): Complex decision trees and user interaction
-5. **Temperature Converter** (Week 5): Functions and mathematical processing
-6. **Contact Book** (Week 6): Data structures and information management
-7. **Journal App** (Week 7): File operations and data persistence
-8. **Quiz Game** (Week 8): Integration of multiple concepts
-9. **Grade Analysis** (Week 9): Data processing and analysis
-10. **Weather Dashboard** (Week 10): API integration and real-time data
-11. **Text Adventure Game** (Week 11): Complex state management and storytelling
-12. **Todo GUI Application** (Week 12): Complete software architecture
+1. **Fortune Teller** (Part I): Your first program with variables and output
+2. **Mad Libs** (Part I): Interactive input and string manipulation
+3. **Number Guessing Game** (Part I): Loops, conditions, and game logic
+4. **Rock Paper Scissors** (Part I): Complex decision trees and user interaction
+5. **Temperature Converter** (Part II): Functions and mathematical processing
+6. **Contact Book** (Part II): Data structures and information management
+7. **Journal App** (Part II): File operations and data persistence
+8. **Quiz Game** (Part II): Integration of multiple concepts
+9. **Grade Analysis** (Part III): Data processing and analysis
+10. **Weather Dashboard** (Part III): API integration and real-time data
+11. **Text Adventure Game** (Part III): Complex state management and storytelling
+12. **Todo GUI Application** (Part III): Complete software architecture
 
 Each project built upon previous skills while introducing new concepts, creating a scaffold of knowledge that supports increasingly sophisticated applications.
 
@@ -129,15 +129,15 @@ You're prepared for a programming landscape where AI collaboration is standard, 
 
 ## Measuring Your Transformation
 
-### Week 1 vs. Week 12
+### Then vs. Now
 
-**Week 1:**
+**At the start:**
 - Didn't understand what variables were
 - Copied code without comprehension
 - Got frustrated by error messages
 - Thought programming was mysterious magic
 
-**Week 12:**
+**Now:**
 - Architects complete applications from scratch
 - Debugs problems systematically
 - Collaborates effectively with AI

@@ -1,4 +1,4 @@
-# Week 11 Project: Text Adventure Game {#sec-project-text-adventure}
+# Project: Text Adventure Game {#sec-project-text-adventure}
 
 ::: {.callout-important}
 ## Before You Start
@@ -804,8 +804,8 @@ After completing the project:
 3. **Player Engagement**: What kept players invested in the story?
 4. **Technical Challenges**: Which systems were hardest to implement?
 
-## Next Week Preview
+## Next Project Preview
 
-Outstanding work! Next week, you'll create the capstone project - a Todo GUI application that demonstrates everything you've learned about software architecture. You'll design a complete application from scratch using all your skills!
+Outstanding work! Next, you'll create the capstone project - a Todo GUI application that demonstrates everything you've learned about software architecture. You'll design a complete application from scratch using all your skills!
 
 Your text adventure proves you can create engaging, interactive experiences with complex state management - the foundation of game development and interactive applications! 🗡️

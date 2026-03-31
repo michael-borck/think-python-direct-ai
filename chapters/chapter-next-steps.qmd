@@ -7,7 +7,7 @@ Congratulations! You've completed your foundation in Python programming with AI 
 
 ## From Beginner to Builder
 
-Twelve weeks ago, you knew nothing about programming. Today, you've built:
+When you started this book, you knew nothing about programming. Today, you've built:
 - Interactive games and applications
 - Data analysis tools
 - Web-connected programs
@@ -252,24 +252,24 @@ Before jumping into Jumpstart, consider building these practice projects:
 
 ## The Road Ahead
 
-### Immediate Next Steps (Weeks 13-16)
+### Immediate Next Steps
 
-**Week 13: Consolidation**
+**Consolidation**
 - Review all your projects and identify patterns
 - Refactor one project to improve its design
 - Write documentation for your favourite application
 
-**Week 14: Exploration**
+**Exploration**
 - Try building something you've never attempted
 - Explore a Python library you haven't used
 - Read other programmers' code for inspiration
 
-**Week 15: Teaching**
+**Teaching**
 - Explain programming concepts to a friend or family member
 - Write a blog post about something you've learned
 - Help someone else with their programming questions
 
-**Week 16: Preparation**
+**Preparation**
 - Set up your development environment for web programming
 - Review web development fundamentals
 - Plan your first Jumpstart project
@@ -434,15 +434,15 @@ Use this perspective to help others and contribute to the programming community 
 
 ## Looking Back: Your Transformation
 
-### Week 1 vs. Week 12
+### Then vs. Now
 
-**Week 1 You:**
+**You at the start:**
 - Didn't know what a variable was
 - Copied code without understanding
 - Got frustrated by error messages
 - Thought programming was magic
 
-**Week 12 You:**
+**You now:**
 - Builds complete applications from scratch
 - Designs solutions before implementing
 - Debugs problems systematically
@@ -477,7 +477,7 @@ These meta-skills will serve you throughout your career, whether you become a pr
 
 Take time to reflect on your journey:
 
-1. **Growth Mindset:** How has your attitude toward challenges changed since Week 1?
+1. **Growth Mindset:** How has your attitude toward challenges changed since you started?
 
 2. **Problem Solving:** What's your approach now when you encounter something you don't understand?
 
@@ -492,7 +492,7 @@ Take time to reflect on your journey:
 You've accomplished something significant. Many people start learning programming but give up when it gets challenging. You persisted, learned effectively, and built real skills.
 
 **You Should Be Proud That You:**
-- Completed 12 weeks of consistent learning
+- Completed consistent learning throughout this book
 - Built 12 substantial programming projects
 - Developed effective AI collaboration skills
 - Transformed from complete beginner to capable programmer
@@ -526,7 +526,7 @@ When you're ready to continue your journey:
 3. **Set up your development environment** for web programming
 4. **Begin Python Jumpstart** with confidence in your foundational skills
 
-Remember: You're not just someone who completed a programming course. You're a programmer who builds solutions. You've earned that identity through weeks of consistent effort and thoughtful practice.
+Remember: You're not just someone who completed a programming course. You're a programmer who builds solutions. You've earned that identity through consistent effort and thoughtful practice.
 
 Your journey from zero to programmer is complete. Your journey from programmer to professional developer is just beginning.
 

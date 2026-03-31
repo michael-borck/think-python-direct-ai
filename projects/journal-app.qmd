@@ -1,4 +1,4 @@
-# Week 7 Project: Personal Journal {#sec-project-journal-app}
+# Project: Personal Journal {#sec-project-journal-app}
 
 ::: {.callout-important}
 ## Before You Start
@@ -497,8 +497,8 @@ By completing this project, you've learned:
 - How to build tools that improve with use
 - How to create engaging user experiences
 
-## Next Week Preview
+## Next Project Preview
 
-Excellent journaling! Next week, you'll build a Quiz Game that combines everything you've learned - functions, data structures, files, and user interaction - into an educational game that can quiz on any topic.
+Excellent journaling! Next, you'll build a Quiz Game that combines everything you've learned - functions, data structures, files, and user interaction - into an educational game that can quiz on any topic.
 
 Your journal demonstrates that simple file operations can create deeply personal and valuable applications. Keep journaling - both in life and in code! 📖
