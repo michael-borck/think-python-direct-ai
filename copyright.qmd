@@ -8,11 +8,16 @@
 
 **Think Python, Direct AI: Computational Thinking for Beginners**
 
-Copyright 2026 Michael Borck. All rights reserved.
+Copyright © 2026 Michael Borck. All rights reserved.
 
-No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+Published by Michael Borck\
+Perth, Western Australia
 
-**First Edition, 2026**
+**ISBN:** 979-8-2544-1990-7
+
+First edition, 2026.
+
+No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author, except for brief quotations in reviews and certain non-commercial uses permitted by copyright law.
 
 While every precaution has been taken in the preparation of this book, the author assumes no responsibility for errors or omissions, or for damages resulting from the use of information contained herein.
 
