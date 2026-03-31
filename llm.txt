@@ -55,7 +55,7 @@ Throughout the book, AI exploration prompts appear as grey monospace blocks — 
 
 Code examples appear with syntax highlighting:
 
-You will also encounter coloured callout boxes:
+You will also encounter coloured callout boxes. Each serves a different purpose.
 
 Green boxes offer tips you can apply immediately — things to try, exploration suggestions.
 
@@ -64,24 +64,6 @@ Blue boxes highlight important ideas worth pausing on — mental models, pattern
 Yellow boxes flag common mistakes or misconceptions that trip up beginners.
 
 Red boxes mark things that are essential to understand before moving on.
-
-## The Series
-
-This book is part of a series designed to help you master modern software development in the AI era.
-
-Conversation, Not Delegation — the general methodology for working with AI across any discipline.
-
-Converse Python, Partner AI — intentional prompting methodology applied to software development.
-
-Think Python, Direct AI (this book) — computational thinking for absolute beginners.
-
-Code Python, Consult AI — focused Python fundamentals with AI integration.
-
-Ship Python, Orchestrate AI — professional Python development practices and tooling.
-
-Build Web, Guide AI — web development with AI as your development partner.
-
-All titles are available at books.borck.education.
 
 ## How This Book Was Written
 
@@ -109,6 +91,24 @@ Found an error? Have a suggestion?
 
 - Open an issue: https://github.com/michael-borck/think-python-direct-ai/issues
 - Email: michael@borck.me
+
+## The Series
+
+This book is part of a series designed to help you master modern software development in the AI era.
+
+Conversation, Not Delegation — the general methodology for working with AI across any discipline.
+
+Converse Python, Partner AI — intentional prompting methodology applied to software development.
+
+Think Python, Direct AI (this book) — computational thinking for absolute beginners.
+
+Code Python, Consult AI — focused Python fundamentals with AI integration.
+
+Ship Python, Orchestrate AI — professional Python development practices and tooling.
+
+Build Web, Guide AI — web development with AI as your development partner.
+
+All titles are available at books.borck.education.
 
 ============================================================
 SOURCE: copyright.qmd

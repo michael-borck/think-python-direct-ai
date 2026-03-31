@@ -64,17 +64,7 @@
     "href": "index.html#conventions-used-in-this-book",
     "title": "Think Python, Direct AI",
     "section": "Conventions Used in This Book",
-    "text": "Conventions Used in This Book\nThroughout the book, AI exploration prompts appear as grey monospace blocks — these are things you type into your AI tool:\nShow me 5 examples of input→process→output\nin everyday life\nCode examples appear with syntax highlighting:\nname = input(\"What is your name? \")\nprint(f\"Hello, {name}!\")\nYou will also encounter coloured callout boxes:\n\n\n\n\n\n\nTipPractical advice\n\n\n\nGreen boxes offer tips you can apply immediately — things to try, exploration suggestions.\n\n\n\n\n\n\n\n\nNoteKey concept\n\n\n\nBlue boxes highlight important ideas worth pausing on — mental models, patterns, principles.\n\n\n\n\n\n\n\n\nWarningWatch out\n\n\n\nYellow boxes flag common mistakes or misconceptions that trip up beginners.\n\n\n\n\n\n\n\n\nImportantCritical point\n\n\n\nRed boxes mark things that are essential to understand before moving on.",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "index.html#the-series",
-    "href": "index.html#the-series",
-    "title": "Think Python, Direct AI",
-    "section": "The Series",
-    "text": "The Series\nThis book is part of a series designed to help you master modern software development in the AI era.\n\nflowchart TD\n    CND[\"Conversation,&lt;br/&gt;Not Delegation\"]\n    CPPA[\"Converse Python,&lt;br/&gt;Partner AI\"]\n    Think[\"Think Python,&lt;br/&gt;Direct AI\"]\n    Code[\"Code Python,&lt;br/&gt;Consult AI\"]\n    Ship[\"Ship Python,&lt;br/&gt;Orchestrate AI\"]\n    Web[\"Build Web,&lt;br/&gt;Guide AI\"]\n    CND --&gt; CPPA\n    CND --&gt; Web\n    CPPA --&gt; Think\n    Think --&gt; Code\n    Code --&gt; Ship\n\n\n\n\nflowchart TD\n    CND[\"Conversation,&lt;br/&gt;Not Delegation\"]\n    CPPA[\"Converse Python,&lt;br/&gt;Partner AI\"]\n    Think[\"Think Python,&lt;br/&gt;Direct AI\"]\n    Code[\"Code Python,&lt;br/&gt;Consult AI\"]\n    Ship[\"Ship Python,&lt;br/&gt;Orchestrate AI\"]\n    Web[\"Build Web,&lt;br/&gt;Guide AI\"]\n    CND --&gt; CPPA\n    CND --&gt; Web\n    CPPA --&gt; Think\n    Think --&gt; Code\n    Code --&gt; Ship\n\n\n\n\n\n\nConversation, Not Delegation — the general methodology for working with AI across any discipline.\nConverse Python, Partner AI — intentional prompting methodology applied to software development.\nThink Python, Direct AI (this book) — computational thinking for absolute beginners.\nCode Python, Consult AI — focused Python fundamentals with AI integration.\nShip Python, Orchestrate AI — professional Python development practices and tooling.\nBuild Web, Guide AI — web development with AI as your development partner.\nAll titles are available at books.borck.education.",
+    "text": "Conventions Used in This Book\nThroughout the book, AI exploration prompts appear as grey monospace blocks — these are things you type into your AI tool:\nShow me 5 examples of input→process→output\nin everyday life\nCode examples appear with syntax highlighting:\nname = input(\"What is your name? \")\nprint(f\"Hello, {name}!\")\nYou will also encounter coloured callout boxes. Each serves a different purpose.\n\n\n\n\n\n\nTipPractical advice\n\n\n\nGreen boxes offer tips you can apply immediately — things to try, exploration suggestions.\n\n\n\n\n\n\n\n\nNoteKey concept\n\n\n\nBlue boxes highlight important ideas worth pausing on — mental models, patterns, principles.\n\n\n\n\n\n\n\n\nWarningWatch out\n\n\n\nYellow boxes flag common mistakes or misconceptions that trip up beginners.\n\n\n\n\n\n\n\n\nImportantCritical point\n\n\n\nRed boxes mark things that are essential to understand before moving on.",
     "crumbs": [
       "Preface"
     ]
@@ -95,6 +85,16 @@
     "title": "Think Python, Direct AI",
     "section": "Ways to Engage with This Book",
     "text": "Ways to Engage with This Book\nThis book is available in several formats. Pick whichever fits how you work and learn.\n\nRead it online. The full book is freely available at the companion website, with dark mode, search, and navigation.\nRead it on paper or e-reader. Available as a paperback and ebook through Amazon KDP.\nConverse with it. The online edition includes a chatbot grounded in the book’s content.\nFeed it to your own AI. The llm.txt file provides a clean text version of the entire book, ready to paste into ChatGPT, Claude, or any AI tool.\nRun the code. All code examples are available on GitHub. DeepWiki provides an AI-navigable view of the repository.\nBrowse all books. This book is part of a series. See all titles at books.borck.education.\n\nThe online version is always the most current.\n\nSource Code & Feedback\nAll code examples and project files are available at: https://github.com/michael-borck/think-python-direct-ai\nFound an error? Have a suggestion?\n\nOpen an issue: https://github.com/michael-borck/think-python-direct-ai/issues\nEmail: michael@borck.me",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#the-series",
+    "href": "index.html#the-series",
+    "title": "Think Python, Direct AI",
+    "section": "The Series",
+    "text": "The Series\nThis book is part of a series designed to help you master modern software development in the AI era.\n\nflowchart TD\n    CND[\"Conversation,&lt;br/&gt;Not Delegation\"]\n    CPPA[\"Converse Python,&lt;br/&gt;Partner AI\"]\n    Think[\"Think Python,&lt;br/&gt;Direct AI\"]\n    Code[\"Code Python,&lt;br/&gt;Consult AI\"]\n    Ship[\"Ship Python,&lt;br/&gt;Orchestrate AI\"]\n    Web[\"Build Web,&lt;br/&gt;Guide AI\"]\n    CND --&gt; CPPA\n    CND --&gt; Web\n    CPPA --&gt; Think\n    Think --&gt; Code\n    Code --&gt; Ship\n\n\n\n\nflowchart TD\n    CND[\"Conversation,&lt;br/&gt;Not Delegation\"]\n    CPPA[\"Converse Python,&lt;br/&gt;Partner AI\"]\n    Think[\"Think Python,&lt;br/&gt;Direct AI\"]\n    Code[\"Code Python,&lt;br/&gt;Consult AI\"]\n    Ship[\"Ship Python,&lt;br/&gt;Orchestrate AI\"]\n    Web[\"Build Web,&lt;br/&gt;Guide AI\"]\n    CND --&gt; CPPA\n    CND --&gt; Web\n    CPPA --&gt; Think\n    Think --&gt; Code\n    Code --&gt; Ship\n\n\n\n\n\n\nConversation, Not Delegation — the general methodology for working with AI across any discipline.\nConverse Python, Partner AI — intentional prompting methodology applied to software development.\nThink Python, Direct AI (this book) — computational thinking for absolute beginners.\nCode Python, Consult AI — focused Python fundamentals with AI integration.\nShip Python, Orchestrate AI — professional Python development practices and tooling.\nBuild Web, Guide AI — web development with AI as your development partner.\nAll titles are available at books.borck.education.",
     "crumbs": [
       "Preface"
     ]
