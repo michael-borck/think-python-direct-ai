@@ -1,4 +1,4 @@
-# Week 1 Project: Fortune Teller {#sec-project-fortune-teller}
+# Project: Fortune Teller {#sec-project-fortune-teller}
 
 ::: {.callout-important}
 ## Before You Start
@@ -331,8 +331,8 @@ By completing this project, you've learned:
 - How to use decisions to create variety
 - How to guide AI to help without taking over
 
-## Next Week Preview
+## Next Project Preview
 
-Excellent work, fortune teller! Next week, you'll create a Mad Libs generator that tells hilarious stories. You'll learn more about string manipulation and creative uses of variables.
+Excellent work, fortune teller! Next, you'll create a Mad Libs generator that tells hilarious stories. You'll learn more about string manipulation and creative uses of variables.
 
 But for now, bask in the mystical glow of your first complete Python program! 🔮

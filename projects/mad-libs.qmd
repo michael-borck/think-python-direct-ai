@@ -1,10 +1,10 @@
-# Week 2 Project: Mad Libs Generator {#sec-project-mad-libs}
+# Project: Mad Libs Generator {#sec-project-mad-libs}
 
 ::: {.callout-important}
 ## Before You Start
 Make sure you've completed:
 - All of Part I: Computational Thinking (Chapters 1-5)
-- Week 1 Project: Fortune Teller
+- The Fortune Teller project
 - Your Expression Toolkit
 
 You should be comfortable with:
@@ -376,8 +376,8 @@ By completing this project, you've learned:
 - How to balance technical functionality with user experience
 - How to debug string formatting and spacing issues
 
-## Next Week Preview
+## Next Project Preview
 
-Fantastic storytelling! Next week, you'll create a Number Guessing Game that introduces strategic thinking and game logic. You'll learn about random numbers and creating engaging gameplay loops.
+Fantastic storytelling! Next, you'll create a Number Guessing Game that introduces strategic thinking and game logic. You'll learn about random numbers and creating engaging gameplay loops.
 
 Your Mad Libs generator shows you can combine multiple concepts to create genuinely entertaining programs! 🎭

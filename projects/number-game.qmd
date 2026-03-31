@@ -1,4 +1,4 @@
-# Week 3 Project: Number Guessing Game {#sec-project-number-game}
+# Project: Number Guessing Game {#sec-project-number-game}
 
 ::: {.callout-important}
 ## Before You Start
