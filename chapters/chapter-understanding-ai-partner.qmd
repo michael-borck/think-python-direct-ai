@@ -225,6 +225,8 @@ The point is developing habits that scale. The student who learns to decompose a
 The exercises are simple so you can focus on the process, not the problem. Once the process is second nature, you can apply it to problems that are too complex to vibe code — and those are the problems that matter professionally.
 :::
 
+One more thing: this book does not argue for avoiding AI until you are ready to write code. AI is your thinking partner *throughout*. Use it to brainstorm what a program should do. Use it to explore edge cases you had not considered. Use it to check your understanding of a concept. Use it to trace through your logic before you write a single line. The three learning strategies in this chapter — concept before code, explore not avoid, build mental models — all involve AI. The difference between this approach and vibe coding is not whether you use AI. It is whether you are thinking alongside it or just accepting what it gives you.
+
 ## Practice: Prompt Evolution Mastery
 
 Let's practice the core skill you'll use throughout this book. Complete each evolution:
