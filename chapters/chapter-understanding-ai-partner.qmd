@@ -209,6 +209,22 @@ By the end of this book:
 
 This is not a consolation prize. This is the actual job of a modern programmer.
 
+## Why Not Just Vibe Code?
+
+There is a popular approach called "vibe coding" — prompting AI until something works, without worrying too much about understanding the code. For quick experiments and throwaway scripts, it can be genuinely useful. If you just need a one-off script to rename some files, vibe coding is fine.
+
+But vibe coding has a ceiling, and you hit it fast.
+
+When a vibe-coded program breaks, you cannot fix it — you can only paste the error back into the AI and hope. When requirements change, you start over because you never understood the original design. When the project grows beyond a single file, you have no mental model of how the pieces connect, so every change risks breaking something else. The AI gets stuck too — it suggests fixes that introduce new bugs, because it is guessing at the architecture just like you are.
+
+The exercises in this book look simple. A temperature converter. A greeting program. A number game. You could vibe code all of them in minutes. But that is not the point.
+
+The point is developing habits that scale. The student who learns to decompose a temperature converter into input, process, and output will decompose a web application into routes, handlers, and data layers. The student who learns to trace through a loop by hand will find the off-by-one error that the AI cannot see. The student who learns to write pseudocode before code will give the AI specifications precise enough to produce correct implementations on the first try.
+
+::: {.callout-important title="The real skill"}
+The exercises are simple so you can focus on the process, not the problem. Once the process is second nature, you can apply it to problems that are too complex to vibe code — and those are the problems that matter professionally.
+:::
+
 ## Practice: Prompt Evolution Mastery
 
 Let's practice the core skill you'll use throughout this book. Complete each evolution:
