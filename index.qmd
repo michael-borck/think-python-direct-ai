@@ -56,23 +56,7 @@ name = input("What is your name? ")
 print(f"Hello, {name}!")
 ```
 
-You will also encounter coloured callout boxes:
-
-::: {.callout-tip title="Practical advice"}
-**Green boxes** offer tips you can apply immediately — things to try, exploration suggestions.
-:::
-
-::: {.callout-note title="Key concept"}
-**Blue boxes** highlight important ideas worth pausing on — mental models, patterns, principles.
-:::
-
-::: {.callout-warning title="Watch out"}
-**Yellow boxes** flag common mistakes or misconceptions that trip up beginners.
-:::
-
-::: {.callout-important title="Critical point"}
-**Red boxes** mark things that are essential to understand before moving on.
-:::
+You will also encounter coloured callout boxes: **green** for practical tips, **blue** for key concepts, **yellow** for common mistakes, and **red** for critical points you must understand before moving on.
 
 ## The Series
 
