@@ -21,10 +21,10 @@ book:
     - index.qmd
     - copyright.qmd
     - acknowledgments.qmd
-    - part: "Part 0: Your AI Learning Partnership"
+    - part: "Your AI Learning Partnership"
       chapters:
         - chapters/chapter-understanding-ai-partner.qmd
-    - part: "Part I: Computational Thinking (Weeks 1-4)"
+    - part: "Computational Thinking"
       chapters:
         - chapters/chapter-input-process-output.qmd
         - chapters/chapter-variables.qmd
@@ -36,7 +36,7 @@ book:
         - projects/mad-libs.qmd
         - projects/number-game.qmd
         - projects/rock-paper-scissors.qmd
-    - part: "Part II: Building Systems (Weeks 5-8)"
+    - part: "Building Systems"
       chapters:
         - chapters/chapter-functions.qmd
         - chapters/chapter-organizing-information.qmd
@@ -46,7 +46,7 @@ book:
         - projects/contact-book.qmd
         - projects/journal-app.qmd
         - projects/quiz-game.qmd
-    - part: "Part III: Real-World Programming (Weeks 9-12)"
+    - part: "Real-World Programming"
       chapters:
         - chapters/chapter-working-with-data.qmd
         - chapters/chapter-connected-programs.qmd
@@ -56,7 +56,7 @@ book:
         - projects/weather-app.qmd
         - projects/text-adventure.qmd
         - projects/todo-gui.qmd
-    - part: "Part IV: Your Journey Forward"
+    - part: "Your Journey Forward"
       chapters:
         - chapters/chapter-next-steps.qmd
     - chapters/summary.qmd
