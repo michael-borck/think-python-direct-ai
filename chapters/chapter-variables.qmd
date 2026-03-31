@@ -44,7 +44,7 @@ Let's explore how programs remember things.
 ### Exploration 1: The Need for Memory
 
 Ask your AI:
-```
+```text
 Why do programs need to remember information? Give me 3 simple examples without code.
 ```
 
@@ -56,7 +56,7 @@ You'll see examples like:
 ### Exploration 2: Finding Variables in Life
 
 Try this prompt:
-```
+```text
 List 5 things a food delivery app needs to remember while you're ordering
 ```
 
@@ -65,7 +65,7 @@ Notice how each piece of information needs a name and a value?
 ### Exploration 3: The Concept of Change
 
 Ask:
-```
+```text
 Explain why they're called "variables" using a real-world analogy
 ```
 
@@ -78,7 +78,7 @@ Now let's see how Python implements this universal concept of memory.
 ### The Simplest Expression
 
 Ask your AI:
-```
+```text
 Show me the simplest possible Python example of creating a variable and using it. No functions, no complexity.
 ```
 
@@ -102,7 +102,7 @@ This says: "Create a box labelled 'age' and put the number 25 in it."
 ## Mental Model Building
 
 ### Model 1: The Sticky Note System
-```
+```text
 ┌─────────────┐
 │ name: Alice │  <- Sticky note with label and value
 └─────────────┘
@@ -113,7 +113,7 @@ This says: "Create a box labelled 'age' and put the number 25 in it."
 ```
 
 ### Model 2: The Storage Room
-```
+```text
 Storage Room of Your Program:
 ┌────────┐ ┌────────┐ ┌────────┐
 │  name  │ │  age   │ │ score  │
@@ -136,25 +136,25 @@ print(greeting + " " + name)
 Let's practice getting the right level of complexity from AI.
 
 ### Round 1: Too Vague
-```
+```text
 explain variables
 ```
 You might get computer science theory about memory allocation!
 
 ### Round 2: Better Direction
-```
+```text
 explain variables in Python for beginners
 ```
 Closer, but might still include types, scope, and advanced concepts.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning to store information in Python programs. Show me the simplest way to remember a user's name.
 ```
 Now we're getting useful learning material!
 
 ### Round 4: Building Understanding
-```
+```text
 Using that example, show me how the variable changes if the user enters a different name
 ```
 This demonstrates the "variable" nature of variables.
@@ -358,7 +358,7 @@ Design programs that use variables for:
    - How they change: update with new readings
 
 Write your design first, then ask AI:
-```
+```text
 Implement this exact design in simple Python: [your design]
 ```
 

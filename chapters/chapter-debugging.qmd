@@ -44,7 +44,7 @@ Let's explore how to become a code detective.
 ### Exploration 1: Understanding Error Messages
 
 Ask your AI:
-```
+```text
 Show me a simple Python error with a typo, and explain what each part 
 of the error message tells us.
 ```
@@ -54,7 +54,7 @@ Learn to read errors as helpful clues, not scary warnings.
 ### Exploration 2: Common Mistake Patterns
 
 Try this prompt:
-```
+```text
 What are the 5 most common beginner Python errors? 
 Show simple examples of each.
 ```
@@ -64,7 +64,7 @@ recognising patterns helps you debug faster.
 ### Exploration 3: Debugging Strategies
 
 Ask:
-```
+```text
 My program gives the wrong output but no error. What debugging strategies 
 can I use? Keep it simple.
 ```
@@ -85,7 +85,7 @@ print("Hello, " + nmae)
 ```
 
 Python tells you exactly what's wrong:
-```
+```text
 SyntaxError: unterminated string literal
   File "program.py", line 1
     name = input("What's your name? )
@@ -114,7 +114,7 @@ Seeing values helps spot logic errors.
 ## Mental Model Building
 
 ### Model 1: The Detective Board
-```
+```text
 Problem: Score shows 0 when it should be 100
 
 Clues:
@@ -134,7 +134,7 @@ print(f"Step 3: Score = {score}") # Reveals the problem!
 ```
 
 ### Model 3: The Process of Elimination
-```
+```text
 Program crashes when:
 ❌ User enters name? No, works fine
 ❌ User enters age? No, works fine
@@ -146,19 +146,19 @@ Program crashes when:
 Let's practice debugging with AI assistance.
 
 ### Round 1: Too Vague
-```
+```text
 my code doesn't work
 ```
 AI can't help without specifics!
 
 ### Round 2: Better but Missing Context
-```
+```text
 I get a NameError in my Python code
 ```
 Better, but AI needs to see the code.
 
 ### Round 3: Good Debugging Request
-```
+```text
 My Python code gives "NameError: name 'scroe' is not defined" 
 when I run it. Here's the code: [code]
 What's wrong and how do I fix it?
@@ -166,7 +166,7 @@ What's wrong and how do I fix it?
 Now AI can help effectively!
 
 ### Round 4: Learning from Errors
-```
+```text
 I fixed the NameError, but now I understand why it happened. 
 What other similar typos should I watch out for?
 ```

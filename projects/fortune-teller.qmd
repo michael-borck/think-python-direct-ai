@@ -90,18 +90,18 @@ If time allows:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a fortune teller. I've designed it to ask for name and age, 
 then give different fortunes for different age groups. 
 Show me how to implement the age checking logic simply."
 ```
 
-```
+```text
 "My fortune teller works but feels repetitive. Here's my code: [code].
 How can I add more variety without making it complex?"
 ```
 
-```
+```text
 "I want to combine the user's favourite color and age to pick a fortune.
 What's a simple way to check both conditions?"
 ```
@@ -114,25 +114,25 @@ What's a simple way to check both conditions?"
 ### AI Learning Progression
 
 1. **Design Phase**: Use AI to validate your approach
-   ```
+   ```text
    "I'm planning a fortune teller that asks 3 questions and has 5 fortunes. 
    Is this a good scope for a beginner project?"
    ```
 
 2. **Implementation Phase**: Use AI for specific components
-   ```
+   ```text
    "I need to check if age is less than 20 for 'young' fortunes. 
    What's the simplest if statement for this?"
    ```
 
 3. **Debug Phase**: Use AI to understand errors
-   ```
+   ```text
    "My program crashes when someone enters text instead of a number for age. 
    What's happening and how do I handle it simply?"
    ```
 
 4. **Enhancement Phase**: Use AI to add personality
-   ```
+   ```text
    "What are some mystical-sounding phrases I could add to make 
    my fortune teller more atmospheric?"
    ```
@@ -180,7 +180,7 @@ Your implementation should:
 
 Here's how your program might work:
 
-```
+```text
 🔮 Welcome to the Mystic Fortune Teller 🔮
 ═══════════════════════════════════════
 
@@ -211,7 +211,7 @@ May the stars guide your path, Luna!
 ### Step 1: Start with Pseudocode
 
 Write your logic in plain English:
-```
+```text
 1. Print mystical welcome
 2. Get user's name
 3. Get user's age

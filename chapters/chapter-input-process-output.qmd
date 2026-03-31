@@ -4,7 +4,7 @@
 
 Before we write any code, let's understand the most fundamental pattern in all of computing. Every program, from the simplest calculator to the most complex AI system, follows this pattern:
 
-```
+```text
 Input → Process → Output
 ```
 
@@ -40,7 +40,7 @@ Let's explore this concept with AI. This is where AI shines - helping us see pat
 ### Exploration 1: Finding the Pattern
 
 Ask your AI:
-```
+```text
 Show me 5 different examples of input→process→output in everyday life
 ```
 
@@ -49,7 +49,7 @@ Look at what you get. Notice how every example follows the same three-step patte
 ### Exploration 2: Programming Context
 
 Now ask:
-```
+```text
 Show me the same input→process→output pattern in 5 simple programming tasks
 ```
 
@@ -63,7 +63,7 @@ The pattern is universal!
 ### Exploration 3: Different Perspectives
 
 Try this prompt:
-```
+```text
 Explain input→process→output using a cooking metaphor, then a factory metaphor
 ```
 
@@ -76,7 +76,7 @@ Now let's see how Python expresses this universal pattern.
 ### The Simplest Expression
 
 Ask your AI:
-```
+```text
 Show me the absolute simplest Python code that demonstrates input→process→output with clear comments labeling each part
 ```
 
@@ -99,7 +99,7 @@ Three lines. Three steps. The universal pattern.
 Let's build several mental models to really understand this:
 
 ### Model 1: The Machine
-```
+```text
     [INPUT]
        ↓
    ┌─────────┐
@@ -110,13 +110,13 @@ Let's build several mental models to really understand this:
 ```
 
 ### Model 2: The Kitchen
-```
+```text
 Ingredients → Recipe → Dish
     INPUT     PROCESS  OUTPUT
 ```
 
 ### Model 3: The Conversation
-```
+```text
 Listen → Think → Speak
 INPUT   PROCESS  OUTPUT
 ```
@@ -128,25 +128,25 @@ Every program is just a variation of these models.
 Let's practice the core skill of evolving prompts to get exactly what we need for learning.
 
 ### Round 1: Too Vague
-```
+```text
 Show me input and output
 ```
 AI might show you file I/O, network I/O, database operations - way too complex!
 
 ### Round 2: More Specific
-```
+```text
 Show me user input and screen output in Python
 ```
 Better! But might still include error handling and extra features.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning the concept of input→process→output. Show me the simplest possible Python example with no extra features.
 ```
 Now you're getting what you need!
 
 ### Round 4: Concept Reinforcement
-```
+```text
 Using that simple example, trace through what happens at each step when the user types "Alice"
 ```
 This helps cement your understanding.

@@ -91,17 +91,17 @@ If time allows:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a Mad Libs generator. I need to substitute user words into a story template. 
 What's the simplest way to replace placeholders in a string with variables?"
 ```
 
-```
+```text
 "My Mad Libs asks for 8 words but feels repetitive. Here's my current approach: [code].
 How can I use a loop to collect words more efficiently?"
 ```
 
-```
+```text
 "I want to randomly choose between 3 different story templates. 
 What's a simple way to pick one randomly using concepts I know?"
 ```
@@ -114,25 +114,25 @@ What's a simple way to pick one randomly using concepts I know?"
 ### AI Learning Progression
 
 1. **Design Phase**: Use AI to improve your stories
-   ```
+   ```text
    "I'm writing a Mad Libs story about going to school. 
    What word types would make it funnier?"
    ```
 
 2. **Implementation Phase**: Use AI for specific techniques
-   ```
+   ```text
    "I have variables: noun1, verb1, adjective1. 
    What's the clearest way to put them into a story string?"
    ```
 
 3. **Debug Phase**: Use AI to understand string issues
-   ```
+   ```text
    "My story has weird spacing when I substitute words. 
    Here's my code: [code]. What's happening?"
    ```
 
 4. **Enhancement Phase**: Use AI for variety
-   ```
+   ```text
    "How can I make my Mad Libs generator pick randomly between 
    3 stories without complex code?"
    ```
@@ -178,7 +178,7 @@ Your implementation should:
 
 Here's how your program might work:
 
-```
+```text
 🎭 Welcome to the Mad Libs Story Generator! 🎭
 ═══════════════════════════════════════════════
 

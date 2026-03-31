@@ -32,7 +32,7 @@ Your phone makes thousands of decisions per second:
 ### The Universal Pattern
 
 Every decision has the same structure:
-```
+```text
 IF (something is true)
     THEN do this
 ELSE
@@ -46,7 +46,7 @@ Let's explore how programs make intelligent choices.
 ### Exploration 1: Types of Decisions
 
 Ask your AI:
-```
+```text
 Give me 5 examples of decisions a smart home system makes, showing the IF-THEN pattern
 ```
 
@@ -55,7 +55,7 @@ Notice how each follows: condition → action.
 ### Exploration 2: Real App Logic
 
 Try this prompt:
-```
+```text
 What decisions does a music app make when you press play? List them as IF-THEN rules.
 ```
 
@@ -64,7 +64,7 @@ You'll see layers of decisions that create smooth user experience.
 ### Exploration 3: Decision Trees
 
 Ask:
-```
+```text
 Draw a simple decision tree for an ATM withdrawal process
 ```
 
@@ -77,7 +77,7 @@ Let's see how Python expresses these decision patterns.
 ### The Simplest Expression
 
 Ask your AI:
-```
+```text
 Show me the absolute simplest Python if statement that checks if a number is positive. No functions or complexity.
 ```
 
@@ -111,7 +111,7 @@ if age >= 13:
 ## Mental Model Building
 
 ### Model 1: The Fork in the Road
-```
+```text
      Program flow
           ↓
     [IF condition?]
@@ -125,7 +125,7 @@ if age >= 13:
 ```
 
 ### Model 2: The Gatekeeper
-```
+```text
 if password == "secret123":
     🚪 Gate Opens → Enter
 else:
@@ -133,7 +133,7 @@ else:
 ```
 
 ### Model 3: The Traffic Light
-```
+```text
 if light == "green":
     → GO
 elif light == "yellow":  
@@ -147,25 +147,25 @@ else:  # red
 Practice getting decision examples from AI.
 
 ### Round 1: Too Vague
-```
+```text
 show me if statements
 ```
 You'll get complex nested conditions and advanced patterns!
 
 ### Round 2: More Specific
-```
+```text
 show me Python if statement examples
 ```
 Better, but still might include functions and complex logic.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning how programs make decisions. Show me the simplest possible if statement that checks user input.
 ```
 Now we're learning-sized!
 
 ### Round 4: Building Understanding
-```
+```text
 Using that example, trace through what happens when the user enters different values
 ```
 This builds deep understanding of flow.

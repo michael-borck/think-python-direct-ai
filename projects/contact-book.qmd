@@ -92,18 +92,18 @@ Add professional touches:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a contact book where each contact is a dictionary. 
 What fields should a contact dictionary have? Show me a simple example 
 structure with common fields."
 ```
 
-```
+```text
 "I have a list of contact dictionaries. How do I search through them 
 to find all contacts with a specific name? Show me a simple function."
 ```
 
-```
+```text
 "I need to save my contact list to a file. What's the simplest format 
 that preserves the dictionary structure and is human-readable?"
 ```
@@ -116,25 +116,25 @@ that preserves the dictionary structure and is human-readable?"
 ### AI Learning Progression
 
 1. **Design Phase**: Structure planning
-   ```
+   ```text
    "What information do people typically store for contacts? 
    Help me design a simple dictionary structure."
    ```
 
 2. **Implementation Phase**: Focused functions
-   ```
+   ```text
    "I need a function that takes contact info as parameters 
    and returns a properly formatted contact dictionary."
    ```
 
 3. **Search Phase**: Finding contacts
-   ```
+   ```text
    "Show me how to search a list of dictionaries for contacts 
    where the name contains a search term."
    ```
 
 4. **Storage Phase**: File handling
-   ```
+   ```text
    "What's the simplest way to save a list of dictionaries 
    to a text file and read it back?"
    ```
@@ -186,7 +186,7 @@ Your implementation should:
 
 Here's how your contact book might work:
 
-```
+```text
 📚 CONTACT BOOK MANAGER 📚
 Loaded 3 contacts from contacts.txt
 

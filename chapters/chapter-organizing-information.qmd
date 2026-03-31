@@ -44,7 +44,7 @@ Let's explore how programs organise multiple pieces of information.
 ### Exploration 1: The Problem with Many Variables
 
 Ask your AI:
-```
+```text
 Show me code that stores 10 student names using individual variables. 
 Then show me the same thing using a list.
 ```
@@ -54,7 +54,7 @@ Notice how lists eliminate variable explosion?
 ### Exploration 2: Finding vs Position
 
 Try this prompt:
-```
+```text
 Compare finding "Sarah's phone number" in a list vs a dictionary. 
 Show me why dictionaries are better for lookup.
 ```
@@ -64,7 +64,7 @@ This reveals when to use each type.
 ### Exploration 3: Real Program Needs
 
 Ask:
-```
+```text
 What kind of information would a simple game need to track? 
 Show examples using both lists and dictionaries.
 ```
@@ -78,7 +78,7 @@ Let's see how Python implements these organizational tools.
 ### Lists: Your First Collection
 
 Ask your AI:
-```
+```text
 Show me the simplest possible Python list with 3 fruits, 
 and how to display them all.
 ```
@@ -113,7 +113,7 @@ Labels make finding information natural!
 ## Mental Model Building
 
 ### Model 1: Lists as Trains
-```
+```text
 [car0] → [car1] → [car2] → [car3]
 "apple"  "banana" "orange" "grape"
 
@@ -121,7 +121,7 @@ Access by position: fruits[2] gets third car
 ```
 
 ### Model 2: Dictionaries as Filing Cabinets
-```
+```text
 ┌─────────────┐
 │ Mom         │ → "555-1234"
 ├─────────────┤
@@ -134,7 +134,7 @@ Access by label: phone_book["Pizza"]
 ```
 
 ### Model 3: Lists vs Dictionaries
-```
+```text
 List: "What's in position 3?"
       [0][1][2][3][4]
        ↑  ↑  ↑  ↑  ↑
@@ -151,26 +151,26 @@ Dictionary: "What's the capital of France?"
 Let's practice getting collection examples from AI.
 
 ### Round 1: Too Vague
-```
+```text
 show me lists and dictionaries
 ```
 You'll get advanced features like comprehensions, nested structures, and methods galore!
 
 ### Round 2: More Specific
-```
+```text
 show me Python lists and dictionaries for beginners
 ```
 Better, but might still be overwhelming.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning to organise multiple pieces of information. Show me a simple 
 shopping list using a Python list, and a simple contact book using a dictionary.
 ```
 Perfect for understanding!
 
 ### Round 4: Practical Application
-```
+```text
 Now show me how to add items to the shopping list and look up a contact
 ```
 This shows basic operations.

@@ -21,7 +21,7 @@ CSV stands for "Comma-Separated Values" - it's the simplest way to store table-l
 ### Understanding CSV Structure
 
 Imagine a grade book:
-```
+```text
 Name,Quiz1,Quiz2,MidTerm,Final
 Alice,85,92,88,91
 Bob,78,85,82,79
@@ -170,7 +170,7 @@ Let's combine everything into a practical example - analysing weather data:
 ### The Weather Data Project
 
 Imagine you have weather data in CSV format:
-```
+```text
 Date,Temperature,Humidity,Conditions
 2024-03-01,72,65,Sunny
 2024-03-02,68,70,Cloudy

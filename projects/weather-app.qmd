@@ -44,7 +44,7 @@ Before writing any code or consulting AI, design your weather dashboard:
 ### 2. Design Your Interface
 
 Sketch your dashboard layout:
-```
+```text
 ┌─────────────────────────────────────────────┐
 │  🌤️  Weather Dashboard                      │
 ├─────────────────────────────────────────────┤
@@ -120,18 +120,18 @@ weather_data = {
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a weather app with tkinter. I need to display current 
 weather data in a card-like widget. Show me how to create a Frame 
 with temperature, condition, and humidity nicely formatted."
 ```
 
-```
+```text
 "My weather API returns temperature in Kelvin. Show me a simple 
 function to convert Kelvin to both Fahrenheit and Celsius."
 ```
 
-```
+```text
 "I want to update my GUI every 10 minutes with new weather data. 
 How do I use tkinter's after() method to schedule updates?"
 ```
@@ -144,19 +144,19 @@ How do I use tkinter's after() method to schedule updates?"
 ### AI Learning Progression
 
 1. **API Integration Phase**: Data fetching
-   ```
+   ```text
    "I'm using OpenWeatherMap API. Show me how to make a request 
    for current weather and safely extract temperature and condition."
    ```
 
 2. **GUI Building Phase**: Interface creation
-   ```
+   ```text
    "I need to create a grid of weather cards in tkinter. Each card 
    shows one city. How do I use Frame and grid layout?"
    ```
 
 3. **Real-time Updates**: Live data
-   ```
+   ```text
    "How do I update tkinter Labels with new weather data without 
    recreating the entire interface?"
    ```
@@ -203,7 +203,7 @@ Your implementation should:
 
 Here's how your weather dashboard might work:
 
-```
+```text
 Starting Weather Dashboard...
 Loading saved cities: Boston, Tokyo, London
 Fetching weather data...

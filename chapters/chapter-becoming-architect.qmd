@@ -85,7 +85,7 @@ Write down what your application MUST do:
 
 Draw your application's structure:
 
-```
+```text
 ┌─────────────────────────────────────┐
 │          Main Window                │
 ├─────────────────────────────────────┤
@@ -160,7 +160,7 @@ Create a build order:
 ### Tool 1: User Stories
 
 Write from the user's perspective:
-```
+```text
 As a student,
 I want to track my study time by subject,
 So that I can see where I'm spending my time.
@@ -173,7 +173,7 @@ So that I can improve my study habits.
 ### Tool 2: Wireframing
 
 Sketch every screen:
-```
+```text
 Main Screen          Stats Screen
 ┌─────────┐         ┌─────────────┐
 │ Timer   │         │ This Week:  │
@@ -186,7 +186,7 @@ Main Screen          Stats Screen
 ### Tool 3: State Diagrams
 
 Map application states:
-```
+```text
     IDLE ──[Start]──> TIMING
      ↑                   │
      └────[Stop]─────────┘
@@ -195,7 +195,7 @@ Map application states:
 ### Tool 4: Component Planning
 
 List each piece:
-```
+```text
 Components Needed:
 - TimerDisplay: Shows current time
 - SubjectSelector: Dropdown menu
@@ -223,7 +223,7 @@ Please implement this timer class."
 ### Providing Context
 
 Give AI your blueprints:
-```
+```text
 "I have a study tracker with this data structure:
 [paste your session structure]
 

@@ -60,7 +60,7 @@ Before writing any code or consulting AI, design your complete application:
 ### 2. Design Your Interface
 
 Sketch your application layout:
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │  📋 Todo Manager - My Tasks                    [Save] [Load] │
 ├─────────────────────────────────────────────────────────────┤
@@ -150,20 +150,20 @@ This is your chance to demonstrate mastery of AI collaboration!
 ### Effective Architecture Prompts
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a todo app with this data structure: [paste structure]
 I need a TaskManager class that handles adding, completing, and 
 deleting tasks. Show me a clean implementation with methods for 
 each operation."
 ```
 
-```
+```text
 "My todo app needs to save/load from JSON. I have this data 
 structure: [paste]. Show me functions to safely save and load 
 this data with error handling."
 ```
 
-```
+```text
 "I need a tkinter interface that displays a list of tasks with 
 checkboxes. Each task should show description and priority. 
 Show me how to create this with proper layout."
@@ -177,25 +177,25 @@ Show me how to create this with proper layout."
 ### AI Learning Progression
 
 1. **Architecture Phase**: System design
-   ```
+   ```text
    "I want to build a todo app. Help me design the class structure
    and data flow. What are the main components I'll need?"
    ```
 
 2. **Implementation Phase**: Component building
-   ```
+   ```text
    "Here's my TaskManager class design: [paste]. Help me implement
    the add_task method with proper validation."
    ```
 
 3. **Integration Phase**: Connecting pieces
-   ```
+   ```text
    "I have separate Task, TaskManager, and GUI classes. Show me 
    how to connect them so GUI updates when tasks change."
    ```
 
 4. **Polish Phase**: Enhancement and refinement
-   ```
+   ```text
    "My todo app works but needs better error handling. Show me 
    how to validate user input and handle file errors gracefully."
    ```
@@ -244,7 +244,7 @@ Your implementation should demonstrate:
 
 Here's how your todo application might work:
 
-```
+```text
 📋 TODO MANAGER - Starting Up...
 Loading saved tasks from: todo_data.json
 Found 3 existing tasks
@@ -916,7 +916,7 @@ def create_import_export(self):
 
 ### Manual Testing Checklist
 
-```
+```text
 □ Add new task with each priority level
 □ Complete and uncomplete tasks
 □ Edit existing task descriptions

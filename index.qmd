@@ -40,15 +40,71 @@ Over 12 weeks, you progress from understanding basic computational concepts to a
 
 Each chapter follows a consistent pattern: concept first, then AI-guided exploration, then code. You understand the idea before you see the syntax.
 
+## Conventions Used in This Book
+
+Throughout the book, AI exploration prompts appear as grey monospace blocks — these are things you type into your AI tool:
+
+```text
+Show me 5 examples of input→process→output
+in everyday life
+```
+
+Code examples appear with syntax highlighting:
+
+```python
+name = input("What is your name? ")
+print(f"Hello, {name}!")
+```
+
+You will also encounter coloured callout boxes:
+
+::: {.callout-tip title="Practical advice"}
+**Green boxes** offer tips you can apply immediately — things to try, exploration suggestions.
+:::
+
+::: {.callout-note title="Key concept"}
+**Blue boxes** highlight important ideas worth pausing on — mental models, patterns, principles.
+:::
+
+::: {.callout-warning title="Watch out"}
+**Yellow boxes** flag common mistakes or misconceptions that trip up beginners.
+:::
+
+::: {.callout-important title="Critical point"}
+**Red boxes** mark things that are essential to understand before moving on.
+:::
+
 ## The Series
 
-This book is the first in a Python learning path:
+This book is part of a series designed to help you master modern software development in the AI era.
 
-1. **Think Python, Direct AI** (this book) — computational thinking for absolute beginners
-2. **Code Python, Consult AI** — focused Python fundamentals with AI integration
-3. **Ship Python, Orchestrate AI** — professional Python development practices and tooling
+```{mermaid}
+%%| fig-width: 4
+flowchart TD
+    CND["Conversation,<br/>Not Delegation"]
+    CPPA["Converse Python,<br/>Partner AI"]
+    Think["Think Python,<br/>Direct AI"]
+    Code["Code Python,<br/>Consult AI"]
+    Ship["Ship Python,<br/>Orchestrate AI"]
+    Web["Build Web,<br/>Guide AI"]
+    CND --> CPPA
+    CND --> Web
+    CPPA --> Think
+    Think --> Code
+    Code --> Ship
+```
 
-The methodology behind all three comes from *Conversation, Not Delegation: How to Think With AI, Not Just Use It*, which covers the full framework for working with AI across any discipline.
+**Conversation, Not Delegation** — the general methodology for working with AI across any discipline.
+
+**Converse Python, Partner AI** — intentional prompting methodology applied to software development.
+
+**Think Python, Direct AI** (this book) — computational thinking for absolute beginners.
+
+**Code Python, Consult AI** — focused Python fundamentals with AI integration.
+
+**Ship Python, Orchestrate AI** — professional Python development practices and tooling.
+
+**Build Web, Guide AI** — web development with AI as your development partner.
 
 All titles are available at [books.borck.education](https://books.borck.education).
 

@@ -16,7 +16,7 @@ Let's discover how AI really works as a learning partner. This experiment will s
 
 Open your AI assistant (ChatGPT, Claude, or whatever you're using). Type this exactly:
 
-```
+```text
 Write a program
 ```
 
@@ -26,7 +26,7 @@ What did you get? The AI probably asked for clarification or made assumptions ab
 
 Now try:
 
-```
+```text
 Write a temperature converter
 ```
 
@@ -88,7 +88,7 @@ Look at all that code! Functions, loops, error handling, menus, multiple convers
 
 Now try this:
 
-```
+```text
 I'm learning basic programming concepts. Show me the simplest possible temperature converter that demonstrates input, process, and output.
 ```
 
@@ -111,7 +111,7 @@ Much clearer! This demonstrates a key insight: **AI responds to your learning ne
 
 Finally, try:
 
-```
+```text
 Explain the concept of input→process→output using a temperature converter, without focusing on code syntax
 ```
 
@@ -175,7 +175,7 @@ A working program isn't the goal. Understanding how and why it works is. Use AI 
 ## Your Progressive AI Journey
 
 ### Weeks 1-4: AI as Concept Explorer
-```
+```text
 Example prompts:
 - "Explain the concept of variables using real-world examples"
 - "Show me 5 different ways data can be stored in a program"
@@ -183,7 +183,7 @@ Example prompts:
 ```
 
 ### Weeks 5-8: AI as Implementation Assistant  
-```
+```text
 Example prompts:
 - "I've designed a contact book with name and phone. Show me the simplest implementation"
 - "My code works but feels complex. How can I simplify it?"
@@ -191,7 +191,7 @@ Example prompts:
 ```
 
 ### Weeks 9-12: AI as Code Producer
-```
+```text
 Example prompts:
 - "I need to read data from a CSV file, process it, and create a summary. Here's my design..."
 - "Implement this API connection according to my specification..."

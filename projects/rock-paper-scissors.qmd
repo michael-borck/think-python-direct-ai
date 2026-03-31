@@ -93,18 +93,18 @@ If time allows:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building Rock Paper Scissors. I need to check all combinations: 
 rock beats scissors, scissors beats paper, paper beats rock. 
 What's the clearest if statement structure for this?"
 ```
 
-```
+```text
 "My Rock Paper Scissors works for one round but I want best-of-5 tournament. 
 How do I track wins and determine when someone reaches 3 victories?"
 ```
 
-```
+```text
 "I want my computer opponent to choose randomly between rock, paper, scissors. 
 What's the simplest way to pick randomly from a list of options?"
 ```
@@ -117,25 +117,25 @@ What's the simplest way to pick randomly from a list of options?"
 ### AI Learning Progression
 
 1. **Design Phase**: Use AI to verify game rules
-   ```
+   ```text
    "In Rock Paper Scissors, what beats what? I want to make sure 
    I have all the winning combinations correct."
    ```
 
 2. **Implementation Phase**: Use AI for decision logic
-   ```
+   ```text
    "I have player_choice and computer_choice variables. 
    What's the most readable way to determine who wins the round?"
    ```
 
 3. **Debug Phase**: Use AI to find logic errors
-   ```
+   ```text
    "My game sometimes declares the wrong winner. Here's my winning logic: [code]. 
    Can you spot what's wrong?"
    ```
 
 4. **Enhancement Phase**: Use AI for tournament features
-   ```
+   ```text
    "How can I make my Rock Paper Scissors tournament more exciting 
    without adding complexity?"
    ```
@@ -188,7 +188,7 @@ Your implementation should:
 
 Here's how your game might work:
 
-```
+```text
 🪨📄✂️  ROCK PAPER SCISSORS TOURNAMENT  ✂️📄🪨
 ═══════════════════════════════════════════════════
 

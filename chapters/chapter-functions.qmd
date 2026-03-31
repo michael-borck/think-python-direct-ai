@@ -45,7 +45,7 @@ Let's explore how functions transform programming.
 ### Exploration 1: Finding Repetition
 
 Ask your AI:
-```
+```text
 Show me a program that greets 5 different people without using functions. 
 Then show me how it looks with a function.
 ```
@@ -55,7 +55,7 @@ Notice how the function eliminates repetition?
 ### Exploration 2: The Power of Parameters
 
 Try this prompt:
-```
+```text
 Explain how a coffee-making function might work differently based on inputs 
 like "espresso" vs "latte" vs "cappuccino"
 ```
@@ -65,7 +65,7 @@ This shows how functions adapt based on what you give them.
 ### Exploration 3: Building Blocks
 
 Ask:
-```
+```text
 How do functions help us build larger programs? Use a cooking app as an example.
 ```
 
@@ -78,7 +78,7 @@ Let's see how Python lets us create our own commands.
 ### The Simplest Function
 
 Ask your AI:
-```
+```text
 Show me the absolute simplest Python function that just prints "Hello". 
 No parameters, no complexity.
 ```
@@ -110,7 +110,7 @@ The function adapts based on what you give it!
 ## Mental Model Building
 
 ### Model 1: The Recipe Card
-```
+```text
 Recipe: Make Greeting
 Ingredients needed: [name]
 Steps:
@@ -121,14 +121,14 @@ Steps:
 ```
 
 ### Model 2: The Machine
-```
+```text
      [name] → │ GREET  │ → "Hello, [name]!"
                │MACHINE │
                └────────┘
 ```
 
 ### Model 3: The Shortcut
-```
+```text
 Instead of:
   print("Hello, Alice!")
   print("Hello, Bob!")
@@ -145,26 +145,26 @@ We create:
 Let's practice getting the right function examples from AI.
 
 ### Round 1: Too Vague
-```
+```text
 show me functions
 ```
 You'll get complex examples with returns, multiple parameters, and advanced features!
 
 ### Round 2: More Specific
-```
+```text
 show me simple Python functions for beginners
 ```
 Better, but might still include concepts you haven't learned.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning to create my own commands in Python. Show me a simple function 
 that combines greeting and farewell messages.
 ```
 Perfect for understanding!
 
 ### Round 4: Building Understanding
-```
+```text
 Using that function, show me how calling it multiple times saves code
 ```
 This demonstrates the value of functions.

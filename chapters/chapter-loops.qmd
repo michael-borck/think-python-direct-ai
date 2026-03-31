@@ -45,7 +45,7 @@ Let's explore how programs repeat intelligently.
 ### Exploration 1: Finding Repetition
 
 Ask your AI:
-```
+```text
 Give me 5 examples of repetitive tasks a music player app performs, without using code
 ```
 
@@ -57,7 +57,7 @@ You'll see patterns like:
 ### Exploration 2: Different Types of Repetition
 
 Try this prompt:
-```
+```text
 What's the difference between "repeat 10 times" vs "repeat while music playing" vs "repeat for each song"?
 ```
 
@@ -66,7 +66,7 @@ This reveals the three main types of loops: counting, conditional, and collectio
 ### Exploration 3: The Magic of Loops
 
 Ask:
-```
+```text
 Show how a loop can replace 100 lines of code with just 3 lines, using a simple example
 ```
 
@@ -79,7 +79,7 @@ Let's see how Python expresses repetition.
 ### The Simplest Expression
 
 Ask your AI:
-```
+```text
 Show me the absolute simplest Python loop that prints "Hello" 5 times. No functions, no complexity.
 ```
 
@@ -104,7 +104,7 @@ print("Done!")
 ```
 
 Output:
-```
+```text
 Count: 0
 Count: 1  
 Count: 2
@@ -116,7 +116,7 @@ The loop runs the indented code once for each number.
 ## Mental Model Building
 
 ### Model 1: The Assembly Line
-```
+```text
 Items: [📦, 📦, 📦, 📦, 📦]
          ↓
     For each box:
@@ -126,14 +126,14 @@ Items: [📦, 📦, 📦, 📦, 📦]
 ```
 
 ### Model 2: The Track Runner
-```
+```text
 Start line → Lap 1 → Lap 2 → Lap 3 → Finish!
              ↺       ↺       ↺
          (same track each time)
 ```
 
 ### Model 3: The Playlist
-```
+```text
 Songs: [🎵, 🎵, 🎵, 🎵]
 For each song:
     ▶️ Play
@@ -146,25 +146,25 @@ When no more songs: ⏹️ Stop
 Let's practice getting loop examples from AI.
 
 ### Round 1: Too Vague
-```
+```text
 show me loops
 ```
 You'll get while loops, for loops, nested loops, infinite loops - overwhelming!
 
 ### Round 2: More Specific  
-```
+```text
 show me Python for loops
 ```
 Better, but might include complex iterations and list comprehensions.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning repetition in programming. Show me a simple for loop that counts from 1 to 10.
 ```
 Perfect for understanding!
 
 ### Round 4: Concept Reinforcement
-```
+```text
 Now show the same counting without a loop, to see why loops are useful
 ```
 This shows the power of loops vs manual repetition.

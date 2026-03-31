@@ -46,7 +46,7 @@ Plan your adventure:
 ### 2. Interface Design
 
 Sketch your game window:
-```
+```text
 ┌───────────────────────────────────────────────────────────────┐
 │  🗡️ ADVENTURE GAME - The Crystal Caves                       │
 ├───────────────────────────────────────────────────────────────┤
@@ -137,19 +137,19 @@ game_state = {
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a text adventure game. I need a Scene class that stores 
 story text, available choices, and consequences. Show me a simple 
 structure with methods for displaying and handling choices."
 ```
 
-```
+```text
 "My adventure game needs to track player inventory. Show me how to 
 add/remove items and display them in a tkinter Listbox with item 
 descriptions on selection."
 ```
 
-```
+```text
 "I want to save game state to JSON and reload it later. Show me how 
 to serialize my game state dictionary and restore it safely."
 ```
@@ -162,19 +162,19 @@ to serialize my game state dictionary and restore it safely."
 ### AI Learning Progression
 
 1. **Architecture Phase**: Game structure
-   ```
+   ```text
    "I need to manage game scenes with story text and player choices. 
    What's a good design pattern for this? Show me a simple example."
    ```
 
 2. **State Management**: Complex data tracking
-   ```
+   ```text
    "My adventure game tracks player stats, inventory, and story progress. 
    How do I organise this data and update it efficiently?"
    ```
 
 3. **Interface Integration**: GUI and game logic
-   ```
+   ```text
    "How do I update tkinter widgets when game state changes? 
    Show me a pattern for keeping GUI in sync with game data."
    ```
@@ -222,7 +222,7 @@ Your implementation should:
 
 Here's how your text adventure might work:
 
-```
+```text
 🗡️ THE CRYSTAL CAVES ADVENTURE
 ═══════════════════════════════════════════════════════════════
 

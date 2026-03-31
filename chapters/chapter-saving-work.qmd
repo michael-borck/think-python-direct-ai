@@ -40,7 +40,7 @@ Let's explore how programs create lasting memory.
 ### Exploration 1: The Problem with Temporary Data
 
 Ask your AI:
-```
+```text
 Show me a simple score tracking program that loses all data when it ends. 
 Then show how files could preserve the scores.
 ```
@@ -50,7 +50,7 @@ See how files solve the persistence problem?
 ### Exploration 2: File Operations
 
 Try this prompt:
-```
+```text
 Explain the difference between read, write, and append modes 
 using a diary or journal as an analogy.
 ```
@@ -60,7 +60,7 @@ This clarifies when to use each mode.
 ### Exploration 3: Real-World File Uses
 
 Ask:
-```
+```text
 What kinds of files do games, apps, and programs typically save? 
 Give simple examples without code.
 ```
@@ -74,7 +74,7 @@ Let's see how Python works with files.
 ### Writing: Creating Files
 
 Ask your AI:
-```
+```text
 Show me the absolute simplest way to save a message to a file in Python. 
 No error handling, just the basics.
 ```
@@ -108,7 +108,7 @@ Your data survives between program runs!
 ## Mental Model Building
 
 ### Model 1: Files as Notebooks
-```
+```text
 Program → 📓 File
          Write
          
@@ -119,7 +119,7 @@ Program → 📓 File
 ```
 
 ### Model 2: The File Cabinet
-```
+```text
 Your Computer's Storage:
 📁 Documents/
   📄 scores.txt ← Your program can read/write
@@ -128,7 +128,7 @@ Your Computer's Storage:
 ```
 
 ### Model 3: The Save Game Slot
-```
+```text
 Without Files:           With Files:
 [Play Game]             [Play Game]
 Score: 1000      →      Score: 1000
@@ -143,26 +143,26 @@ Score: 0 😢             Score: 1000 😊
 Let's practice getting file examples from AI.
 
 ### Round 1: Too Vague
-```
+```text
 show me file handling
 ```
 You'll get binary files, JSON, CSV, exception handling - overwhelming!
 
 ### Round 2: More Specific
-```
+```text
 show me reading and writing text files in Python
 ```
 Better, but might still include complex modes and methods.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning to save program data. Show me how to save a shopping list 
 to a file and read it back, keeping it simple.
 ```
 Perfect for understanding!
 
 ### Round 4: Building Understanding
-```
+```text
 Now show me how to add new items to the existing shopping list file
 ```
 This introduces append mode.

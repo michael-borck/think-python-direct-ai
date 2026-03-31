@@ -90,13 +90,13 @@ Real gradebook data has problems:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm analysing grade data from CSV. Some cells are empty or contain 
 'N/A'. Show me how to safely convert grade values to numbers, 
 handling these edge cases."
 ```
 
-```
+```text
 "I have a list of student grade dictionaries. How do I calculate 
 the median grade for the class? Show me both sorted and 
 statistics module approaches."
@@ -110,19 +110,19 @@ statistics module approaches."
 ### AI Learning Progression
 
 1. **Data Cleaning Phase**: Handling messy data
-   ```
+   ```text
    "My CSV has grades like '85', '92.5', 'N/A', '', and '102'. 
    How do I clean and validate these values?"
    ```
 
 2. **Statistics Phase**: Mathematical analysis
-   ```
+   ```text
    "I need to calculate mean, median, and standard deviation 
    for a list of grades. Show me simple implementations."
    ```
 
 3. **Pattern Recognition**: Finding insights
-   ```
+   ```text
    "How can I compare a student's recent grades to their 
    earlier grades to detect improvement or decline?"
    ```
@@ -170,7 +170,7 @@ Your implementation should:
 
 Here's how your analyzer might work:
 
-```
+```text
 📊 GRADE ANALYSIS TOOL 📊
 ════════════════════════════
 

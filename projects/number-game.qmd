@@ -92,17 +92,17 @@ If time allows:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a number guessing game. I need to generate a random number between 1 and 100. 
 What's the simplest way to do this in Python?"
 ```
 
-```
+```text
 "My guessing game works but feels repetitive. Here's my feedback system: [code].
 How can I make the hints more interesting without making it too easy?"
 ```
 
-```
+```text
 "I want to limit players to 7 guesses. How do I track attempts and stop the game 
 when they run out, using concepts I already know?"
 ```
@@ -115,25 +115,25 @@ when they run out, using concepts I already know?"
 ### AI Learning Progression
 
 1. **Design Phase**: Use AI to validate game balance
-   ```
+   ```text
    "For a number guessing game with range 1-100, how many guesses 
    is fair? What makes it challenging but not frustrating?"
    ```
 
 2. **Implementation Phase**: Use AI for specific mechanics
-   ```
+   ```text
    "I need to check if the player's guess is higher, lower, or equal 
    to the secret number. What's the clearest if statement structure?"
    ```
 
 3. **Debug Phase**: Use AI to understand logic errors
-   ```
+   ```text
    "My game sometimes says 'higher' when the guess is already correct. 
    Here's my code: [code]. What's wrong with my logic?"
    ```
 
 4. **Enhancement Phase**: Use AI for game feel
-   ```
+   ```text
    "How can I make victory feel more rewarding and defeat less discouraging 
    in my number guessing game?"
    ```
@@ -182,7 +182,7 @@ Your implementation should:
 
 Here's how your game might work:
 
-```
+```text
 🎯 Welcome to the Number Guessing Game! 🎯
 ═══════════════════════════════════════════
 

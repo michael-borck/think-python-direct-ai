@@ -44,7 +44,7 @@ Let's explore how programs ask questions and get answers.
 ### Exploration 1: Types of Questions
 
 Ask your AI:
-```
+```text
 What are 5 different types of questions a program might ask users? Give examples without code.
 ```
 
@@ -57,7 +57,7 @@ You'll see categories like:
 ### Exploration 2: Real App Inputs
 
 Try this prompt:
-```
+```text
 List all the inputs Instagram asks for when you create a new post
 ```
 
@@ -66,7 +66,7 @@ Notice how each input serves a specific purpose in the app's functionality.
 ### Exploration 3: Input in Action
 
 Ask:
-```
+```text
 Explain the flow of what happens when a user types their name into a program, from keyboard press to program memory
 ```
 
@@ -79,7 +79,7 @@ Let's see how Python implements this conversational pattern.
 ### The Simplest Expression
 
 Ask your AI:
-```
+```text
 Show me the absolute simplest Python example of asking the user a question and using their answer. Nothing fancy.
 ```
 
@@ -107,7 +107,7 @@ age = input("How old are you? ")
 ## Mental Model Building
 
 ### Model 1: The Conversation
-```
+```text
 Program: "What's your name?"    [PROMPT]
            ↓
 User: *types* "Alice"           [INPUT]
@@ -119,14 +119,14 @@ Program: "Hello, Alice!"        [OUTPUT]
 
 ### Model 2: The Form Field
 Think of `input()` like a form field:
-```
+```text
 ┌─────────────────────────┐
 │ What's your name? _____ │ <- User fills in the blank
 └─────────────────────────┘
 ```
 
 ### Model 3: The Pause Button
-```
+```text
 Program running...
 → Hit input() - PAUSE! Wait for user...
 → User types...
@@ -139,25 +139,25 @@ Program continues with the answer...
 Let's practice getting the right examples from AI.
 
 ### Round 1: Too Vague
-```
+```text
 show me input
 ```
 AI might show file input, network input, or complex forms!
 
 ### Round 2: More Specific
-```
+```text
 show me Python user input
 ```
 Better, but might include GUI elements or web forms.
 
 ### Round 3: Learning-Focused
-```
+```text
 I'm learning to get keyboard input from users in Python. Show me the simplest example of asking for their name.
 ```
 Perfect for learning!
 
 ### Round 4: Building Understanding
-```
+```text
 Using that example, show me step-by-step what happens when the user types "Sam" and presses Enter
 ```
 This reinforces the mental model.

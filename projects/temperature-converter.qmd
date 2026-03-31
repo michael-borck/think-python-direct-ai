@@ -90,18 +90,18 @@ Add value through functions:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a temperature converter using functions. I need a function 
 that converts Celsius to Fahrenheit. Show me the simplest implementation 
 with clear parameter and return value."
 ```
 
-```
+```text
 "My converter has 6 conversion functions. How can I organise them to avoid 
 a massive if/elif chain? Show me a clean approach using what I know."
 ```
 
-```
+```text
 "I want to store conversion history as a list of dictionaries. 
 What's a simple structure that captures all relevant information?"
 ```
@@ -114,25 +114,25 @@ What's a simple structure that captures all relevant information?"
 ### AI Learning Progression
 
 1. **Design Phase**: Validate conversion formulas
-   ```
+   ```text
    "What's the correct formula for Celsius to Kelvin? 
    Show me with an example calculation."
    ```
 
 2. **Implementation Phase**: Build focused functions
-   ```
+   ```text
    "I need a function that takes Fahrenheit and returns Celsius. 
    It should handle negative temperatures correctly."
    ```
 
 3. **organisation Phase**: Connect functions cleanly
-   ```
+   ```text
    "I have 6 conversion functions. Show me how to call the right one 
    based on user's choice without complex if statements."
    ```
 
 4. **Enhancement Phase**: Add useful features
-   ```
+   ```text
    "How can I modify my display_result function to also show 
    the conversion formula used?"
    ```
@@ -181,7 +181,7 @@ Your implementation should:
 
 Here's how your converter might work:
 
-```
+```text
 🌡️  SMART TEMPERATURE CONVERTER  🌡️
 ════════════════════════════════════
 

@@ -92,17 +92,17 @@ Make it delightful to use:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a journal app. How can I get today's date and format it 
 nicely for a journal entry header? Show me simple Python code."
 ```
 
-```
+```text
 "My journal stores entries with dates. What's a good file format that's 
 human-readable and easy to search? Show me an example entry."
 ```
 
-```
+```text
 "I want to search through a journal file for entries containing a keyword. 
 How do I read the file and find matching entries?"
 ```
@@ -115,25 +115,25 @@ How do I read the file and find matching entries?"
 ### AI Learning Progression
 
 1. **Design Phase**: Entry format planning
-   ```
+   ```text
    "What information should each journal entry include? 
    Show me a simple, readable format for storing entries."
    ```
 
 2. **Date Handling**: Working with time
-   ```
+   ```text
    "How do I get the current date and time in Python 
    and format it like 'Monday, January 15, 2024 - 2:30 PM'?"
    ```
 
 3. **File Strategy**: Append vs overwrite
-   ```
+   ```text
    "For a journal app, should I use one big file or separate files? 
    What are the trade-offs?"
    ```
 
 4. **Search Implementation**: Finding content
-   ```
+   ```text
    "How can I search through a text file line by line 
    to find entries containing specific words?"
    ```
@@ -181,7 +181,7 @@ Your implementation should:
 
 Here's how your journal might work:
 
-```
+```text
 📖 PERSONAL JOURNAL 📖
 You have 47 entries since January 1, 2024
 

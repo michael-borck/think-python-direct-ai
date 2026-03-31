@@ -93,18 +93,18 @@ Add engagement features:
 ### Effective Prompts for This Project
 
 ✅ **Good Learning Prompts**:
-```
+```text
 "I'm building a quiz game where each question is a dictionary. 
 What fields should it have? Show me a simple structure for 
 multiple choice questions."
 ```
 
-```
+```text
 "I have a list of question dictionaries. How do I randomly select 
 questions without repeating until all are used?"
 ```
 
-```
+```text
 "I want to save quiz questions in a text file that's easy to edit. 
 What's a good format that I can parse back into dictionaries?"
 ```
@@ -117,25 +117,25 @@ What's a good format that I can parse back into dictionaries?"
 ### AI Learning Progression
 
 1. **Design Phase**: Question structure
-   ```
+   ```text
    "What information does a quiz question need? 
    Design a simple dictionary structure for multiple choice."
    ```
 
 2. **Logic Phase**: Game flow
-   ```
+   ```text
    "How should I structure the main game loop for a quiz? 
    Show me the basic flow without the full implementation."
    ```
 
 3. **Storage Phase**: File formats
-   ```
+   ```text
    "What's a simple text format for storing quiz questions 
    that's both human-editable and easy to parse?"
    ```
 
 4. **Feature Phase**: Enhancements
-   ```
+   ```text
    "How can I implement a simple timer for each question 
    using basic Python?"
    ```
@@ -186,7 +186,7 @@ Your implementation should:
 
 Here's how your quiz game might work:
 
-```
+```text
 🎯 ULTIMATE QUIZ GAME 🎯
 Test your knowledge and beat the high score!
 
@@ -422,7 +422,7 @@ def save_high_score(category, name, score, filename="highscores.txt"):
 ## Question File Format
 
 Create readable question files:
-```
+```text
 # Python Programming Questions
 # Format: Question, 4 options, correct letter, explanation
 
