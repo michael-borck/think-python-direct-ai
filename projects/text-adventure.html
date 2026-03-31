@@ -695,7 +695,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="interface-design" class="level3">
 <h3 class="anchored" data-anchor-id="interface-design">2. Interface Design</h3>
 <p>Sketch your game window:</p>
-<pre><code>┌───────────────────────────────────────────────────────────────┐
+<pre class="text"><code>┌───────────────────────────────────────────────────────────────┐
 │  🗡️ ADVENTURE GAME - The Crystal Caves                       │
 ├───────────────────────────────────────────────────────────────┤
 │                    STORY DISPLAY                              │
@@ -796,13 +796,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="effective-prompts-for-this-project" class="level3">
 <h3 class="anchored" data-anchor-id="effective-prompts-for-this-project">Effective Prompts for This Project</h3>
 <p>✅ <strong>Good Learning Prompts</strong>:</p>
-<pre><code>"I'm building a text adventure game. I need a Scene class that stores 
+<pre class="text"><code>"I'm building a text adventure game. I need a Scene class that stores 
 story text, available choices, and consequences. Show me a simple 
 structure with methods for displaying and handling choices."</code></pre>
-<pre><code>"My adventure game needs to track player inventory. Show me how to 
+<pre class="text"><code>"My adventure game needs to track player inventory. Show me how to 
 add/remove items and display them in a tkinter Listbox with item 
 descriptions on selection."</code></pre>
-<pre><code>"I want to save game state to JSON and reload it later. Show me how 
+<pre class="text"><code>"I want to save game state to JSON and reload it later. Show me how 
 to serialize my game state dictionary and restore it safely."</code></pre>
 <p>❌ <strong>Avoid These Prompts</strong>: - “Create a full RPG with graphics and multiplayer” - “Build an AI that generates infinite storylines” - “Add 3D graphics and voice acting”</p>
 </section>
@@ -810,13 +810,13 @@ to serialize my game state dictionary and restore it safely."</code></pre>
 <h3 class="anchored" data-anchor-id="ai-learning-progression">AI Learning Progression</h3>
 <ol type="1">
 <li><p><strong>Architecture Phase</strong>: Game structure</p>
-<pre><code>"I need to manage game scenes with story text and player choices. 
+<pre class="text"><code>"I need to manage game scenes with story text and player choices. 
 What's a good design pattern for this? Show me a simple example."</code></pre></li>
 <li><p><strong>State Management</strong>: Complex data tracking</p>
-<pre><code>"My adventure game tracks player stats, inventory, and story progress. 
+<pre class="text"><code>"My adventure game tracks player stats, inventory, and story progress. 
 How do I organise this data and update it efficiently?"</code></pre></li>
 <li><p><strong>Interface Integration</strong>: GUI and game logic</p>
-<pre><code>"How do I update tkinter widgets when game state changes? 
+<pre class="text"><code>"How do I update tkinter widgets when game state changes? 
 Show me a pattern for keeping GUI in sync with game data."</code></pre></li>
 </ol>
 </section>
@@ -865,7 +865,7 @@ Show me a pattern for keeping GUI in sync with game data."</code></pre></li>
 <section id="sample-interaction" class="level2" data-number="26.7">
 <h2 data-number="26.7" class="anchored" data-anchor-id="sample-interaction"><span class="header-section-number">26.7</span> Sample Interaction</h2>
 <p>Here’s how your text adventure might work:</p>
-<pre><code>🗡️ THE CRYSTAL CAVES ADVENTURE
+<pre class="text"><code>🗡️ THE CRYSTAL CAVES ADVENTURE
 ═══════════════════════════════════════════════════════════════
 
 [STORY PANEL]
@@ -1979,7 +1979,7 @@ GAME PROGRESS:                   ACHIEVEMENTS:
 <span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Interface Design</span></span>
 <span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>Sketch your game window:</span>
-<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a><span class="in">┌───────────────────────────────────────────────────────────────┐</span></span>
 <span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a><span class="in">│  🗡️ ADVENTURE GAME - The Crystal Caves                       │</span></span>
 <span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a><span class="in">├───────────────────────────────────────────────────────────────┤</span></span>
@@ -2070,19 +2070,19 @@ GAME PROGRESS:                   ACHIEVEMENTS:
 <span id="cb15-137"><a href="#cb15-137" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effective Prompts for This Project</span></span>
 <span id="cb15-138"><a href="#cb15-138" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-139"><a href="#cb15-139" aria-hidden="true" tabindex="-1"></a>✅ **Good Learning Prompts**:</span>
-<span id="cb15-140"><a href="#cb15-140" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-140"><a href="#cb15-140" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb15-141"><a href="#cb15-141" aria-hidden="true" tabindex="-1"></a><span class="in">"I'm building a text adventure game. I need a Scene class that stores </span></span>
 <span id="cb15-142"><a href="#cb15-142" aria-hidden="true" tabindex="-1"></a><span class="in">story text, available choices, and consequences. Show me a simple </span></span>
 <span id="cb15-143"><a href="#cb15-143" aria-hidden="true" tabindex="-1"></a><span class="in">structure with methods for displaying and handling choices."</span></span>
 <span id="cb15-144"><a href="#cb15-144" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb15-145"><a href="#cb15-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-146"><a href="#cb15-146" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-146"><a href="#cb15-146" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb15-147"><a href="#cb15-147" aria-hidden="true" tabindex="-1"></a><span class="in">"My adventure game needs to track player inventory. Show me how to </span></span>
 <span id="cb15-148"><a href="#cb15-148" aria-hidden="true" tabindex="-1"></a><span class="in">add/remove items and display them in a tkinter Listbox with item </span></span>
 <span id="cb15-149"><a href="#cb15-149" aria-hidden="true" tabindex="-1"></a><span class="in">descriptions on selection."</span></span>
 <span id="cb15-150"><a href="#cb15-150" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb15-151"><a href="#cb15-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-152"><a href="#cb15-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-152"><a href="#cb15-152" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb15-153"><a href="#cb15-153" aria-hidden="true" tabindex="-1"></a><span class="in">"I want to save game state to JSON and reload it later. Show me how </span></span>
 <span id="cb15-154"><a href="#cb15-154" aria-hidden="true" tabindex="-1"></a><span class="in">to serialize my game state dictionary and restore it safely."</span></span>
 <span id="cb15-155"><a href="#cb15-155" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -2095,19 +2095,19 @@ GAME PROGRESS:                   ACHIEVEMENTS:
 <span id="cb15-162"><a href="#cb15-162" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Learning Progression</span></span>
 <span id="cb15-163"><a href="#cb15-163" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-164"><a href="#cb15-164" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Architecture Phase**: Game structure</span>
-<span id="cb15-165"><a href="#cb15-165" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb15-165"><a href="#cb15-165" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb15-166"><a href="#cb15-166" aria-hidden="true" tabindex="-1"></a><span class="in">   "I need to manage game scenes with story text and player choices. </span></span>
 <span id="cb15-167"><a href="#cb15-167" aria-hidden="true" tabindex="-1"></a><span class="in">   What's a good design pattern for this? Show me a simple example."</span></span>
 <span id="cb15-168"><a href="#cb15-168" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb15-169"><a href="#cb15-169" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-170"><a href="#cb15-170" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**State Management**: Complex data tracking</span>
-<span id="cb15-171"><a href="#cb15-171" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb15-171"><a href="#cb15-171" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb15-172"><a href="#cb15-172" aria-hidden="true" tabindex="-1"></a><span class="in">   "My adventure game tracks player stats, inventory, and story progress. </span></span>
 <span id="cb15-173"><a href="#cb15-173" aria-hidden="true" tabindex="-1"></a><span class="in">   How do I organise this data and update it efficiently?"</span></span>
 <span id="cb15-174"><a href="#cb15-174" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb15-175"><a href="#cb15-175" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-176"><a href="#cb15-176" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Interface Integration**: GUI and game logic</span>
-<span id="cb15-177"><a href="#cb15-177" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb15-177"><a href="#cb15-177" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb15-178"><a href="#cb15-178" aria-hidden="true" tabindex="-1"></a><span class="in">   "How do I update tkinter widgets when game state changes? </span></span>
 <span id="cb15-179"><a href="#cb15-179" aria-hidden="true" tabindex="-1"></a><span class="in">   Show me a pattern for keeping GUI in sync with game data."</span></span>
 <span id="cb15-180"><a href="#cb15-180" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
@@ -2155,7 +2155,7 @@ GAME PROGRESS:                   ACHIEVEMENTS:
 <span id="cb15-222"><a href="#cb15-222" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-223"><a href="#cb15-223" aria-hidden="true" tabindex="-1"></a>Here's how your text adventure might work:</span>
 <span id="cb15-224"><a href="#cb15-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-225"><a href="#cb15-225" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-225"><a href="#cb15-225" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb15-226"><a href="#cb15-226" aria-hidden="true" tabindex="-1"></a><span class="in">🗡️ THE CRYSTAL CAVES ADVENTURE</span></span>
 <span id="cb15-227"><a href="#cb15-227" aria-hidden="true" tabindex="-1"></a><span class="in">═══════════════════════════════════════════════════════════════</span></span>
 <span id="cb15-228"><a href="#cb15-228" aria-hidden="true" tabindex="-1"></a></span>

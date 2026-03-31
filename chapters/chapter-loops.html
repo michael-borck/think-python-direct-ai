@@ -697,19 +697,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exploration-1-finding-repetition" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-1-finding-repetition">Exploration 1: Finding Repetition</h3>
 <p>Ask your AI:</p>
-<pre><code>Give me 5 examples of repetitive tasks a music player app performs, without using code</code></pre>
+<pre class="text"><code>Give me 5 examples of repetitive tasks a music player app performs, without using code</code></pre>
 <p>You’ll see patterns like: - Play each song in playlist - Update progress bar every second - Check for next song continuously</p>
 </section>
 <section id="exploration-2-different-types-of-repetition" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-2-different-types-of-repetition">Exploration 2: Different Types of Repetition</h3>
 <p>Try this prompt:</p>
-<pre><code>What's the difference between "repeat 10 times" vs "repeat while music playing" vs "repeat for each song"?</code></pre>
+<pre class="text"><code>What's the difference between "repeat 10 times" vs "repeat while music playing" vs "repeat for each song"?</code></pre>
 <p>This reveals the three main types of loops: counting, conditional, and collection-based.</p>
 </section>
 <section id="exploration-3-the-magic-of-loops" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-3-the-magic-of-loops">Exploration 3: The Magic of Loops</h3>
 <p>Ask:</p>
-<pre><code>Show how a loop can replace 100 lines of code with just 3 lines, using a simple example</code></pre>
+<pre class="text"><code>Show how a loop can replace 100 lines of code with just 3 lines, using a simple example</code></pre>
 <p>This demonstrates the power of repetition patterns.</p>
 </section>
 </section>
@@ -719,7 +719,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-simplest-expression" class="level3">
 <h3 class="anchored" data-anchor-id="the-simplest-expression">The Simplest Expression</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me the absolute simplest Python loop that prints "Hello" 5 times. No functions, no complexity.</code></pre>
+<pre class="text"><code>Show me the absolute simplest Python loop that prints "Hello" 5 times. No functions, no complexity.</code></pre>
 <p>You’ll get something like:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hello"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -732,7 +732,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Count: </span><span class="sc">{</span>number<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Done!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Output:</p>
-<pre><code>Count: 0
+<pre class="text"><code>Count: 0
 Count: 1  
 Count: 2
 Done!</code></pre>
@@ -743,7 +743,7 @@ Done!</code></pre>
 <h2 data-number="6.5" class="anchored" data-anchor-id="mental-model-building"><span class="header-section-number">6.5</span> Mental Model Building</h2>
 <section id="model-1-the-assembly-line" class="level3">
 <h3 class="anchored" data-anchor-id="model-1-the-assembly-line">Model 1: The Assembly Line</h3>
-<pre><code>Items: [📦, 📦, 📦, 📦, 📦]
+<pre class="text"><code>Items: [📦, 📦, 📦, 📦, 📦]
          ↓
     For each box:
     [Process] → ✅
@@ -752,13 +752,13 @@ Done!</code></pre>
 </section>
 <section id="model-2-the-track-runner" class="level3">
 <h3 class="anchored" data-anchor-id="model-2-the-track-runner">Model 2: The Track Runner</h3>
-<pre><code>Start line → Lap 1 → Lap 2 → Lap 3 → Finish!
+<pre class="text"><code>Start line → Lap 1 → Lap 2 → Lap 3 → Finish!
              ↺       ↺       ↺
          (same track each time)</code></pre>
 </section>
 <section id="model-3-the-playlist" class="level3">
 <h3 class="anchored" data-anchor-id="model-3-the-playlist">Model 3: The Playlist</h3>
-<pre><code>Songs: [🎵, 🎵, 🎵, 🎵]
+<pre class="text"><code>Songs: [🎵, 🎵, 🎵, 🎵]
 For each song:
     ▶️ Play
     ⏭️ Next
@@ -770,22 +770,22 @@ When no more songs: ⏹️ Stop</code></pre>
 <p>Let’s practice getting loop examples from AI.</p>
 <section id="round-1-too-vague" class="level3">
 <h3 class="anchored" data-anchor-id="round-1-too-vague">Round 1: Too Vague</h3>
-<pre><code>show me loops</code></pre>
+<pre class="text"><code>show me loops</code></pre>
 <p>You’ll get while loops, for loops, nested loops, infinite loops - overwhelming!</p>
 </section>
 <section id="round-2-more-specific" class="level3">
 <h3 class="anchored" data-anchor-id="round-2-more-specific">Round 2: More Specific</h3>
-<pre><code>show me Python for loops</code></pre>
+<pre class="text"><code>show me Python for loops</code></pre>
 <p>Better, but might include complex iterations and list comprehensions.</p>
 </section>
 <section id="round-3-learning-focused" class="level3">
 <h3 class="anchored" data-anchor-id="round-3-learning-focused">Round 3: Learning-Focused</h3>
-<pre><code>I'm learning repetition in programming. Show me a simple for loop that counts from 1 to 10.</code></pre>
+<pre class="text"><code>I'm learning repetition in programming. Show me a simple for loop that counts from 1 to 10.</code></pre>
 <p>Perfect for understanding!</p>
 </section>
 <section id="round-4-concept-reinforcement" class="level3">
 <h3 class="anchored" data-anchor-id="round-4-concept-reinforcement">Round 4: Concept Reinforcement</h3>
-<pre><code>Now show the same counting without a loop, to see why loops are useful</code></pre>
+<pre class="text"><code>Now show the same counting without a loop, to see why loops are useful</code></pre>
 <p>This shows the power of loops vs manual repetition.</p>
 </section>
 </section>
@@ -1626,7 +1626,7 @@ Design Example
 <span id="cb27-45"><a href="#cb27-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 1: Finding Repetition</span></span>
 <span id="cb27-46"><a href="#cb27-46" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-47"><a href="#cb27-47" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb27-48"><a href="#cb27-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-48"><a href="#cb27-48" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-49"><a href="#cb27-49" aria-hidden="true" tabindex="-1"></a><span class="in">Give me 5 examples of repetitive tasks a music player app performs, without using code</span></span>
 <span id="cb27-50"><a href="#cb27-50" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-51"><a href="#cb27-51" aria-hidden="true" tabindex="-1"></a></span>
@@ -1638,7 +1638,7 @@ Design Example
 <span id="cb27-57"><a href="#cb27-57" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 2: Different Types of Repetition</span></span>
 <span id="cb27-58"><a href="#cb27-58" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-59"><a href="#cb27-59" aria-hidden="true" tabindex="-1"></a>Try this prompt:</span>
-<span id="cb27-60"><a href="#cb27-60" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-60"><a href="#cb27-60" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-61"><a href="#cb27-61" aria-hidden="true" tabindex="-1"></a><span class="in">What's the difference between "repeat 10 times" vs "repeat while music playing" vs "repeat for each song"?</span></span>
 <span id="cb27-62"><a href="#cb27-62" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-63"><a href="#cb27-63" aria-hidden="true" tabindex="-1"></a></span>
@@ -1647,7 +1647,7 @@ Design Example
 <span id="cb27-66"><a href="#cb27-66" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 3: The Magic of Loops</span></span>
 <span id="cb27-67"><a href="#cb27-67" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-68"><a href="#cb27-68" aria-hidden="true" tabindex="-1"></a>Ask:</span>
-<span id="cb27-69"><a href="#cb27-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-69"><a href="#cb27-69" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-70"><a href="#cb27-70" aria-hidden="true" tabindex="-1"></a><span class="in">Show how a loop can replace 100 lines of code with just 3 lines, using a simple example</span></span>
 <span id="cb27-71"><a href="#cb27-71" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-72"><a href="#cb27-72" aria-hidden="true" tabindex="-1"></a></span>
@@ -1660,7 +1660,7 @@ Design Example
 <span id="cb27-79"><a href="#cb27-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Simplest Expression</span></span>
 <span id="cb27-80"><a href="#cb27-80" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-81"><a href="#cb27-81" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb27-82"><a href="#cb27-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-82"><a href="#cb27-82" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-83"><a href="#cb27-83" aria-hidden="true" tabindex="-1"></a><span class="in">Show me the absolute simplest Python loop that prints "Hello" 5 times. No functions, no complexity.</span></span>
 <span id="cb27-84"><a href="#cb27-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-85"><a href="#cb27-85" aria-hidden="true" tabindex="-1"></a></span>
@@ -1685,7 +1685,7 @@ Design Example
 <span id="cb27-104"><a href="#cb27-104" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-105"><a href="#cb27-105" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-106"><a href="#cb27-106" aria-hidden="true" tabindex="-1"></a>Output:</span>
-<span id="cb27-107"><a href="#cb27-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-107"><a href="#cb27-107" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-108"><a href="#cb27-108" aria-hidden="true" tabindex="-1"></a><span class="in">Count: 0</span></span>
 <span id="cb27-109"><a href="#cb27-109" aria-hidden="true" tabindex="-1"></a><span class="in">Count: 1  </span></span>
 <span id="cb27-110"><a href="#cb27-110" aria-hidden="true" tabindex="-1"></a><span class="in">Count: 2</span></span>
@@ -1697,7 +1697,7 @@ Design Example
 <span id="cb27-116"><a href="#cb27-116" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model Building</span></span>
 <span id="cb27-117"><a href="#cb27-117" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-118"><a href="#cb27-118" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 1: The Assembly Line</span></span>
-<span id="cb27-119"><a href="#cb27-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-119"><a href="#cb27-119" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-120"><a href="#cb27-120" aria-hidden="true" tabindex="-1"></a><span class="in">Items: [📦, 📦, 📦, 📦, 📦]</span></span>
 <span id="cb27-121"><a href="#cb27-121" aria-hidden="true" tabindex="-1"></a><span class="in">         ↓</span></span>
 <span id="cb27-122"><a href="#cb27-122" aria-hidden="true" tabindex="-1"></a><span class="in">    For each box:</span></span>
@@ -1707,14 +1707,14 @@ Design Example
 <span id="cb27-126"><a href="#cb27-126" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-127"><a href="#cb27-127" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-128"><a href="#cb27-128" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 2: The Track Runner</span></span>
-<span id="cb27-129"><a href="#cb27-129" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-129"><a href="#cb27-129" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-130"><a href="#cb27-130" aria-hidden="true" tabindex="-1"></a><span class="in">Start line → Lap 1 → Lap 2 → Lap 3 → Finish!</span></span>
 <span id="cb27-131"><a href="#cb27-131" aria-hidden="true" tabindex="-1"></a><span class="in">             ↺       ↺       ↺</span></span>
 <span id="cb27-132"><a href="#cb27-132" aria-hidden="true" tabindex="-1"></a><span class="in">         (same track each time)</span></span>
 <span id="cb27-133"><a href="#cb27-133" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-134"><a href="#cb27-134" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-135"><a href="#cb27-135" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 3: The Playlist</span></span>
-<span id="cb27-136"><a href="#cb27-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-136"><a href="#cb27-136" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-137"><a href="#cb27-137" aria-hidden="true" tabindex="-1"></a><span class="in">Songs: [🎵, 🎵, 🎵, 🎵]</span></span>
 <span id="cb27-138"><a href="#cb27-138" aria-hidden="true" tabindex="-1"></a><span class="in">For each song:</span></span>
 <span id="cb27-139"><a href="#cb27-139" aria-hidden="true" tabindex="-1"></a><span class="in">    ▶️ Play</span></span>
@@ -1727,25 +1727,25 @@ Design Example
 <span id="cb27-146"><a href="#cb27-146" aria-hidden="true" tabindex="-1"></a>Let's practice getting loop examples from AI.</span>
 <span id="cb27-147"><a href="#cb27-147" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-148"><a href="#cb27-148" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 1: Too Vague</span></span>
-<span id="cb27-149"><a href="#cb27-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-149"><a href="#cb27-149" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-150"><a href="#cb27-150" aria-hidden="true" tabindex="-1"></a><span class="in">show me loops</span></span>
 <span id="cb27-151"><a href="#cb27-151" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-152"><a href="#cb27-152" aria-hidden="true" tabindex="-1"></a>You'll get while loops, for loops, nested loops, infinite loops - overwhelming!</span>
 <span id="cb27-153"><a href="#cb27-153" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-154"><a href="#cb27-154" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 2: More Specific  </span></span>
-<span id="cb27-155"><a href="#cb27-155" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-155"><a href="#cb27-155" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-156"><a href="#cb27-156" aria-hidden="true" tabindex="-1"></a><span class="in">show me Python for loops</span></span>
 <span id="cb27-157"><a href="#cb27-157" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-158"><a href="#cb27-158" aria-hidden="true" tabindex="-1"></a>Better, but might include complex iterations and list comprehensions.</span>
 <span id="cb27-159"><a href="#cb27-159" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-160"><a href="#cb27-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 3: Learning-Focused</span></span>
-<span id="cb27-161"><a href="#cb27-161" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-161"><a href="#cb27-161" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-162"><a href="#cb27-162" aria-hidden="true" tabindex="-1"></a><span class="in">I'm learning repetition in programming. Show me a simple for loop that counts from 1 to 10.</span></span>
 <span id="cb27-163"><a href="#cb27-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-164"><a href="#cb27-164" aria-hidden="true" tabindex="-1"></a>Perfect for understanding!</span>
 <span id="cb27-165"><a href="#cb27-165" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-166"><a href="#cb27-166" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 4: Concept Reinforcement</span></span>
-<span id="cb27-167"><a href="#cb27-167" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-167"><a href="#cb27-167" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-168"><a href="#cb27-168" aria-hidden="true" tabindex="-1"></a><span class="in">Now show the same counting without a loop, to see why loops are useful</span></span>
 <span id="cb27-169"><a href="#cb27-169" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-170"><a href="#cb27-170" aria-hidden="true" tabindex="-1"></a>This shows the power of loops vs manual repetition.</span>

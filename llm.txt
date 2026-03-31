@@ -49,15 +49,37 @@ Weeks 9--12 (Real-World Programming): Data processing, APIs, interaction, archit
 
 Each chapter follows a consistent pattern: concept first, then AI-guided exploration, then code. You understand the idea before you see the syntax.
 
+## Conventions Used in This Book
+
+Throughout the book, AI exploration prompts appear as grey monospace blocks — these are things you type into your AI tool:
+
+Code examples appear with syntax highlighting:
+
+You will also encounter coloured callout boxes:
+
+Green boxes offer tips you can apply immediately — things to try, exploration suggestions.
+
+Blue boxes highlight important ideas worth pausing on — mental models, patterns, principles.
+
+Yellow boxes flag common mistakes or misconceptions that trip up beginners.
+
+Red boxes mark things that are essential to understand before moving on.
+
 ## The Series
 
-This book is the first in a Python learning path:
+This book is part of a series designed to help you master modern software development in the AI era.
 
-1. Think Python, Direct AI (this book) — computational thinking for absolute beginners
-2. Code Python, Consult AI — focused Python fundamentals with AI integration
-3. Ship Python, Orchestrate AI — professional Python development practices and tooling
+Conversation, Not Delegation — the general methodology for working with AI across any discipline.
 
-The methodology behind all three comes from Conversation, Not Delegation: How to Think With AI, Not Just Use It, which covers the full framework for working with AI across any discipline.
+Converse Python, Partner AI — intentional prompting methodology applied to software development.
+
+Think Python, Direct AI (this book) — computational thinking for absolute beginners.
+
+Code Python, Consult AI — focused Python fundamentals with AI integration.
+
+Ship Python, Orchestrate AI — professional Python development practices and tooling.
+
+Build Web, Guide AI — web development with AI as your development partner.
 
 All titles are available at books.borck.education.
 
@@ -261,6 +283,22 @@ By the end of this book:
 - You'll be the architect, not the typist ✓
 
 This is not a consolation prize. This is the actual job of a modern programmer.
+
+## Why Not Just Vibe Code?
+
+There is a popular approach called "vibe coding" — prompting AI until something works, without worrying too much about understanding the code. For quick experiments and throwaway scripts, it can be genuinely useful. If you just need a one-off script to rename some files, vibe coding is fine.
+
+But vibe coding has a ceiling, and you hit it fast.
+
+When a vibe-coded program breaks, you cannot fix it — you can only paste the error back into the AI and hope. When requirements change, you start over because you never understood the original design. When the project grows beyond a single file, you have no mental model of how the pieces connect, so every change risks breaking something else. The AI gets stuck too — it suggests fixes that introduce new bugs, because it is guessing at the architecture just like you are.
+
+The exercises in this book look simple. A temperature converter. A greeting program. A number game. You could vibe code all of them in minutes. But that is not the point.
+
+The point is developing habits that scale. The student who learns to decompose a temperature converter into input, process, and output will decompose a web application into routes, handlers, and data layers. The student who learns to trace through a loop by hand will find the off-by-one error that the AI cannot see. The student who learns to write pseudocode before code will give the AI specifications precise enough to produce correct implementations on the first try.
+
+The exercises are simple so you can focus on the process, not the problem. Once the process is second nature, you can apply it to problems that are too complex to vibe code — and those are the problems that matter professionally.
+
+One more thing: this book does not argue for avoiding AI until you are ready to write code. AI is your thinking partner throughout. Use it to brainstorm what a program should do. Use it to explore edge cases you had not considered. Use it to check your understanding of a concept. Use it to trace through your logic before you write a single line. The three learning strategies in this chapter — concept before code, explore not avoid, build mental models — all involve AI. The difference between this approach and vibe coding is not whether you use AI. It is whether you are thinking alongside it or just accepting what it gives you.
 
 ## Practice: Prompt Evolution Mastery
 
@@ -5840,18 +5878,28 @@ SOURCE: chapters/chapter-working-with-data.qmd
 ## Chapter Summary
 In this chapter, you'll learn how to work with real-world data files. You'll discover how to read CSV files, process JSON data, and analyse information - skills that transform your programs from toys to tools. This is where programming becomes practical!
 
-## Introduction: Data Is Everywhere
+## The Concept First
 
-Up until now, your programs have worked with data you typed in or created yourself. But the real world runs on data files - spreadsheets of grades, lists of products, weather records, and more. Learning to work with these files opens up endless possibilities.
+Up until now, your programs have worked with data you typed in or created yourself. But real programs work with existing data — grade books, weather records, product inventories, survey results. The data already exists somewhere; your job is to read it, make sense of it, and do something useful.
 
-Think of data files like different types of containers:
-- CSV files are like spreadsheets - rows and columns of information
-- JSON files are like nested folders - organised hierarchies of data
-- Text files are like notebooks - free-form information
+Think of it this way: you already know how to cook (write programs). Now you need to learn how to unpack groceries (read data files). The food arrives in different packaging — cans, bags, boxes — and you need to know how to open each one before you can start cooking.
+
+Two formats dominate the data world. CSV is like a spreadsheet saved as plain text — rows and columns separated by commas, nothing fancy. JSON is like a set of nested labelled boxes — open one and you might find more boxes inside, each with its own label. Most data you'll encounter comes in one of these two formats.
+
+## Discovering Data with Your AI Partner
+
+Before we write any code, let's build intuition for how data files work.
+
+Ask your AI:
+
+Notice how CSV is flat and table-like while JSON can nest information inside other information. This difference drives when you'd choose each format.
 
 ## CSV Files: Your Gateway to Spreadsheet Data
 
 CSV stands for "Comma-Separated Values" - it's the simplest way to store table-like data. Every spreadsheet program can export to CSV, making it a universal data format.
+
+## Mental Model: CSV as a Text Spreadsheet
+Picture a spreadsheet. Now imagine stripping away the grid lines, the colours, the formulas — and just keeping the text, with commas where the column borders were. That's a CSV file. Each line is a row, each comma marks a new column. You could create one in any text editor.
 
 ### Understanding CSV Structure
 
@@ -5888,9 +5936,18 @@ When working with CSV files, you'll often need to:
 3. Convert types - Everything starts as text
 4. Deal with special characters - Commas in data, quotes, etc.
 
-## JSON: When Data Gets Interesting
+## From Tables to Trees: JSON
+
+CSV works brilliantly for flat, table-shaped data. But what happens when your data has structure within structure — a contact who has multiple phone numbers, or a student who belongs to several clubs? You need a format that can nest information. That's where JSON comes in.
 
 JSON (JavaScript Object Notation) is how modern applications share data. It's like Python dictionaries written as text - perfect for complex, nested information.
+
+## Mental Model: JSON as Labelled Boxes
+Think of JSON like a set of nested labelled boxes. You open a box marked "contacts" and find smaller boxes inside, each labelled with a person's name. Open one of those and you find even smaller boxes: "phone", "email", "tags". Each box either contains a value or more boxes. If you've used Python dictionaries, you already understand the idea.
+
+Ask your AI:
+
+This will show you exactly why both formats exist.
 
 ### Understanding JSON Structure
 
@@ -5988,6 +6045,20 @@ Solution: Use header row to find columns
 Problem: Special characters appear as ???
 Solution: Specify encoding when opening files
 
+## Common AI Complications
+
+When you ask AI to help with data processing, watch for these patterns where it overcomplicates things.
+
+Pandas for everything. Ask AI to read a CSV file and it will often reach for `pandas`, a powerful data analysis library. For simple tasks — reading rows, calculating averages, filtering — Python's built-in `csv` module or even plain string splitting is simpler and teaches you more. Save pandas for when you actually need its power.
+
+One-liner list comprehensions. AI loves to compress data processing into dense single lines like `[{k: (int(v) if v.isdigit() else v) for k, v in zip(headers, line.split(','))} for line in open('data.csv').readlines()[1:]]`. This is clever but unreadable. A simple `for` loop with clear variable names is almost always better when you're learning.
+
+Over-engineered error handling. AI might wrap every line in try/except blocks or create elaborate validation classes for a 20-line script. Start with the straightforward version. Add error handling where your program actually crashes on real data.
+
+Ask your AI:
+
+Compare what you get to earlier responses. Simpler is almost always better when you're learning.
+
 ## Practice Projects
 
 ### Project 1: Grade Book Analyzer
@@ -6054,16 +6125,21 @@ SOURCE: chapters/chapter-connected-programs.qmd
 ## Chapter Summary
 In this chapter, you'll learn how to connect your programs to the internet. You'll discover APIs (Application Programming Interfaces), make web requests, and process real-time data. This is where your programs join the global conversation!
 
-## Introduction: Your Programs Go Online
+## The Concept First
 
-Remember when your programs could only work with data you typed in or saved in files? Those days are over! The internet is full of live data waiting for your programs to use:
-- Current weather from anywhere in the world
-- Live stock prices and currency rates
-- News headlines as they happen
-- Social media updates
-- And millions more data sources
+Every program you've written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world -- weather apps, price trackers, news readers -- all have one thing in common: they talk to other programs across the internet to get fresh, live information.
 
-This chapter teaches you to tap into this river of information.
+This is a fundamental shift. Your program stops being a closed box and becomes part of a network. Instead of containing all the data it needs, it asks for data from services that already have it. That's the idea behind connected programs, and it's how most modern software actually works.
+
+## Understanding Through Real Life
+
+Think about how you already get information from remote sources every day:
+- You check the weather on your phone (your phone asks a weather service)
+- You look up a word's definition (your browser asks a dictionary service)
+- You check your bank balance (your bank's app asks the bank's server)
+- You translate a phrase (a translation service does the work remotely)
+
+In every case, the pattern is the same: you make a request, a remote service processes it, and you get a response back. Your programs can do exactly the same thing.
 
 ## Understanding APIs: How Programs Talk
 
@@ -6077,19 +6153,52 @@ Think of APIs like this:
 3. Kitchen (Server) - Prepares your data
 4. Delivery (Response) - You receive what you ordered
 
+You never walk into the kitchen yourself. You don't need to know how the food is prepared -- you just need to know what's on the menu and how to order. APIs work the same way: your program doesn't need to know how a weather service collects its data, only how to ask for it and what the answer will look like.
+
+## Mental Model: The Request-Response Cycle
+Every API interaction follows the same three steps: (1) your program sends a request to a specific URL, (2) a remote server processes that request, and (3) the server sends back a response containing data (usually in JSON format) and a status code telling you whether it worked. Once you understand this cycle, every API in the world follows the same pattern.
+
+## Discovering APIs with Your AI Partner
+
+Before writing any code, let's build intuition for how connected programs work.
+
+### Exploration 1: APIs in Your Daily Life
+
+Ask your AI:
+
+You'll start to see that APIs are everywhere, quietly powering the apps you already use.
+
+### Exploration 2: The Request-Response Pattern
+
+Try this prompt:
+
+This will solidify the mental model before you see any code.
+
+### Exploration 3: What Can Go Wrong
+
+Ask:
+
+Understanding failure modes early makes error handling feel natural later.
+
+## From Concept to Code
+
+Now that you understand the pattern, let's see it in Python.
+
 ### Your First API Call
 
-Let's start with something fun - getting a random joke:
+Let's start with something fun -- getting a random joke:
 
 ## Installing Libraries
 This chapter uses the `requests` library. When AI suggests libraries, always ask: "How do I install this library? What does it do that Python can't do by itself?"
 
 ## How Web Requests Work
 
-When your program "talks" to the internet, it follows a conversation pattern:
+When your program "talks" to the internet, it follows a simple conversation pattern:
 
 1. Request: "Hey weather service, what's the temperature in Boston?"
 2. Response: "It's 72°F, partly cloudy"
+
+Every response comes with a status code -- a number that tells you whether things went well. Think of it like a delivery receipt: 200 means "here's your data," 401 means "you're not authorized," 404 means "we don't have that," and 500 means "something broke on our end." You don't need to memorize these; you just need to know that 200 means success and anything else means something went wrong.
 
 ### The Request-Response Cycle
 
@@ -6098,7 +6207,7 @@ When working with new APIs, ask AI: "I want to use the [service] API. Show me th
 
 ## Working with JSON Responses
 
-Most APIs return data in JSON format - the same format you learned in Chapter 10! This makes it easy to work with.
+Most APIs return data in JSON (JavaScript Object Notation) format. JSON looks almost identical to Python dictionaries and lists, which is why `response.json()` converts the response directly into Python data structures you already know how to use. If you've worked with dictionaries, you already know how to work with JSON.
 
 ### Exploring API Responses
 
@@ -6109,7 +6218,7 @@ When you see `data['current']['temp_f']`, you're accessing nested dictionaries. 
 
 ## API Keys: Your Program's ID Card
 
-Many APIs require a key - like a password that identifies your program. Here's how to handle them safely:
+Some APIs are open to everyone (like the joke API above), but many require an API key -- a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.
 
 ### Getting and Using API Keys
 
@@ -6120,11 +6229,11 @@ Many APIs require a key - like a password that identifies your program. Here's h
 
 ## Building a Weather Dashboard
 
-Let's create something useful - a weather comparison tool:
+Now that you understand the building blocks -- requests, responses, JSON, and API keys -- let's combine them into something useful. This weather comparison tool applies every concept from the previous sections:
 
 ## Handling API Errors Gracefully
 
-APIs can fail for many reasons. Your program needs to handle these gracefully:
+Unlike files on your computer, APIs depend on the internet, remote servers, and services you don't control. Things will go wrong, and your program needs to handle failures without crashing:
 
 ### Common API Problems
 
@@ -6141,9 +6250,11 @@ Most free APIs limit how many requests you can make. Always check the documentat
 
 ## Creating a Currency Converter
 
-Let's build something practical - a live currency converter:
+With error handling in place, let's build something practical -- a live currency converter. Notice how this example uses a free API that doesn't require a key, making it a great one to try yourself:
 
 ## Working with Different API Types
+
+You'll encounter different styles of APIs as you explore. For now, REST APIs are all you need -- they're the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.
 
 ### REST APIs (Most Common)
 - Request specific URLs
@@ -6157,7 +6268,7 @@ Let's build something practical - a live currency converter:
 
 ### GraphQL APIs
 - Request exactly what you need
-- Like a customisable menu
+- Like a customizable menu
 - Growing in popularity
 
 ## Building a News Aggregator
@@ -6177,11 +6288,29 @@ APIs can return unexpected data:
 
 ## Creating Your API Toolkit
 
-Build reusable functions for common patterns:
+Once you've written a few API calls, you'll notice you're repeating the same steps: build a URL, send a request, check the status, parse the JSON. That repetition is a signal that it's time to build reusable tools:
 
 ## Real Project: Multi-Source Dashboard
 
 Let's combine multiple APIs into one useful program:
+
+## Common AI Complications
+
+When you ask AI to help you make API calls, it tends to build a spaceship when you need a bicycle. Here's a typical example of what AI produces when you ask "How do I get data from an API?":
+
+That's 35+ lines before you've even asked for any data! For learning and most small projects, all you need is this:
+
+## Simplification Strategy
+When AI gives you a complex API client with sessions, retry adapters, custom exceptions, and connection pooling, ask: "Can you show me the simplest version that makes one successful request and handles basic errors with try/except?" You can always add complexity later when you understand why you need it.
+
+Watch for these specific over-engineering patterns:
+
+- Session objects when you're making a single request
+- Retry logic with exponential backoff when you're just learning how APIs work
+- Custom exception hierarchies when a simple `try/except` tells you everything you need to know
+- Connection pooling and adapter mounting which are performance optimizations for production servers, not learning exercises
+
+Start simple. Add complexity only when a real problem demands it.
 
 ## Common Pitfalls and Solutions
 
@@ -6257,7 +6386,7 @@ In this chapter, you'll learn to create programs with graphical user interfaces 
 
 ## Introduction: From Console to Canvas
 
-All your programs so far have lived in the console - that text-based world of `print()` and `input()`. But most software you use daily has windows, buttons, menus, and graphics. Today, you'll learn to build those kinds of programs!
+All your programs so far have lived in the console - that text-based world of `print()` and `input()`. But most software you use daily has windows, buttons, menus, and graphics. In this chapter, you'll learn to build those kinds of programs.
 
 Think about the apps you use:
 - They have buttons you can click
@@ -6266,32 +6395,57 @@ Think about the apps you use:
 - Images and colors
 - Multiple things happening at once
 
-This chapter teaches you to create all of these.
+This chapter teaches you to create all of these. But more importantly, it introduces a fundamentally different way of thinking about how programs run.
 
 ## Understanding Event-Driven Programming
 
-Console programs are like a conversation - one thing happens, then the next. GUI programs are like a party - many things can happen at any time!
+Until now, every program you've written runs top to bottom. Line 1 executes, then line 2, then line 3. Even with functions and loops, you control the order. Your program asks a question with `input()`, waits for an answer, and moves on.
+
+GUI programs abandon that model entirely. Instead of your code deciding what happens next, the user decides. They might click a button, type in a text field, resize the window, or do nothing at all. Your program has to be ready for any of those actions, in any order, at any time. This is event-driven programming, and it requires a genuine shift in how you think about code.
 
 ### The Event Loop
 
-GUI programs work differently:
+Think of the event loop like a receptionist at a front desk. The receptionist doesn't decide who walks in or when - they simply wait, and when someone arrives, they handle the request and go back to waiting. Your GUI program works the same way: it sets everything up, then hands control to an event loop that watches for user actions and dispatches them to the right handler.
+
+Here's the cycle:
+
 1. Setup - Create window and widgets
 2. Wait - Program waits for user action
 3. React - User clicks/types/moves
 4. Update - Program responds
 5. Repeat - Back to waiting
 
+That final call to `mainloop()` in every tkinter program is where your code says: "I'm done setting up. Start the receptionist."
+
 ## AI Partnership for GUIs
 When learning GUI programming, ask AI: "Show me the simplest possible tkinter program with just one button that prints 'clicked' when pressed."
 
+### Discovering GUIs with Your AI Partner
+
+The jump to event-driven programming is big enough that it's worth exploring before you start building.
+
+Ask your AI:
+
+Notice how the console version uses a `while` loop to keep asking, but the GUI version sets up widgets once and lets the event loop handle everything after that.
+
+Try this follow-up:
+
+This reveals something important about the event loop: while your handler is running, the receptionist is busy and can't respond to anyone else.
+
 ## Your First Interactive Window
 
-Let's build a simple temperature converter with a GUI:
+Now that you understand the event-driven model, let's build something with it. The key pattern is always the same: create widgets, connect them to handler functions, and start the event loop. Here's a simple temperature converter:
 
 ## Expression Explorer: Lambda Functions
-You'll often see `command=lambda: function()` in GUI code. Ask AI: "Explain lambda functions in tkinter buttons with simple examples."
+You'll see `lambda` appear frequently in GUI code, so it's worth understanding before we go further. A lambda is simply a small, anonymous function written on one line. Where you'd normally write:
+
+You can instead write `lambda: set_color('red')`. It does the same thing - creates a function that calls `set_color('red')` - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. You'll see it in action shortly.
+
+Ask your AI:
 
 ## Building Blocks of GUIs
+
+With the basic pattern under your belt - create widgets, connect handlers, run the event loop - let's look at the building blocks you have to work with.
 
 ### Common Widgets
 
@@ -6310,11 +6464,11 @@ Layout managers arrange your widgets:
 
 ## Creating a To-Do List Application
 
-Let's build something useful - a visual to-do list:
+You've seen individual widgets and layout managers. Now let's combine them into a complete, useful application. This to-do list uses a class to keep all the related widgets and functions organised together:
 
 ## Event Handling: Making Things Happen
 
-Events are user actions - clicks, key presses, mouse movements. Your program responds to these events:
+In the to-do app, we only handled button clicks. But the event loop can respond to much more than that - key presses, mouse movements, window resizing, and more. Let's look at how to connect your code to these different kinds of user actions:
 
 ### Common Events
 
@@ -6329,7 +6483,7 @@ Let's create a program where users can draw:
 
 ## Working with User Input
 
-GUI programs need to validate and process user input carefully:
+With console programs, `input()` always returns a string and your program stops to wait for it. In a GUI, user input arrives whenever the user decides to type or click, and you need to validate it without halting the event loop. Here are the key patterns:
 
 ### Input Validation
 
@@ -6354,19 +6508,21 @@ Using `eval()` is dangerous in real applications! For learning it's okay, but as
 
 ## Managing Application State
 
-GUI applications need to track their state carefully:
+In a console program, state is straightforward: variables hold values, and your code updates them in a predictable sequence. GUI state is harder because changes can come from anywhere - a button click, a menu selection, a timer, or a key press - and the display needs to stay in sync with the data at all times. If your data changes but the screen doesn't update, or the screen shows something that doesn't match your data, users see bugs. Keeping data and display synchronised is the central challenge of GUI programming.
 
 ### State Management Pattern
 
 ## Creating Responsive Interfaces
 
-Good GUIs stay responsive even during long operations:
+Remember the receptionist metaphor? If a handler takes a long time to finish, the receptionist can't greet anyone else - and the window freezes. Good GUIs stay responsive even during long operations by breaking work into small pieces:
 
 ### Using After() for Updates
 
 ### Progress Indication
 
 ## Common GUI Patterns
+
+As your GUI applications grow, you'll want to keep your code organised. One of the most useful ideas is separating what your program knows from what it shows on screen.
 
 ### Model-View Pattern
 Separate your data (model) from display (view):
@@ -6378,6 +6534,21 @@ GUI debugging requires special techniques:
 ### Debug Prints
 
 ### Visual Debugging
+
+## Common AI Complications
+
+GUI code is where AI tends to overcomplicate things the most. Ask AI to build a simple counter app (a label and two buttons: increment and decrement), and you'll likely get a class hierarchy with a base `Application` class, a separate `CounterWidget` that inherits from `tk.Frame`, a `Controller` mediating between a `Model` and a `View`, and custom event dispatchers - all for what could be twenty lines of straightforward code.
+
+Here's what to watch for:
+
+- Unnecessary class inheritance. AI loves creating custom widget classes that inherit from `tk.Frame` or `tk.Toplevel`. For learning, a simple function-based approach or a single class is almost always enough.
+- Design patterns you don't need yet. Model-View-Controller (MVC), Observer patterns, and event bus architectures are real tools for large applications, but they add complexity that obscures the fundamentals when you're starting out.
+- Premature abstraction. AI may create a generic `WidgetFactory` or a `ThemeManager` when you just need a button with a colour. If you can't explain why an abstraction exists, you probably don't need it yet.
+
+When AI gives you GUI code, ask yourself: "Could I build this with just functions, a few widgets, and `mainloop()`?" If yes, simplify. You can always add structure later when your application genuinely needs it.
+
+## Simplification Prompt
+When AI overcomplicates your GUI code, try this prompt:
 
 ## Practice Projects
 

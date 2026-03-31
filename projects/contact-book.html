@@ -738,12 +738,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="effective-prompts-for-this-project" class="level3">
 <h3 class="anchored" data-anchor-id="effective-prompts-for-this-project">Effective Prompts for This Project</h3>
 <p>✅ <strong>Good Learning Prompts</strong>:</p>
-<pre><code>"I'm building a contact book where each contact is a dictionary. 
+<pre class="text"><code>"I'm building a contact book where each contact is a dictionary. 
 What fields should a contact dictionary have? Show me a simple example 
 structure with common fields."</code></pre>
-<pre><code>"I have a list of contact dictionaries. How do I search through them 
+<pre class="text"><code>"I have a list of contact dictionaries. How do I search through them 
 to find all contacts with a specific name? Show me a simple function."</code></pre>
-<pre><code>"I need to save my contact list to a file. What's the simplest format 
+<pre class="text"><code>"I need to save my contact list to a file. What's the simplest format 
 that preserves the dictionary structure and is human-readable?"</code></pre>
 <p>❌ <strong>Avoid These Prompts</strong>: - “Build a complete contact management system” - “Add database integration and cloud sync” - “Create a graphical address book application”</p>
 </section>
@@ -751,16 +751,16 @@ that preserves the dictionary structure and is human-readable?"</code></pre>
 <h3 class="anchored" data-anchor-id="ai-learning-progression">AI Learning Progression</h3>
 <ol type="1">
 <li><p><strong>Design Phase</strong>: Structure planning</p>
-<pre><code>"What information do people typically store for contacts? 
+<pre class="text"><code>"What information do people typically store for contacts? 
 Help me design a simple dictionary structure."</code></pre></li>
 <li><p><strong>Implementation Phase</strong>: Focused functions</p>
-<pre><code>"I need a function that takes contact info as parameters 
+<pre class="text"><code>"I need a function that takes contact info as parameters 
 and returns a properly formatted contact dictionary."</code></pre></li>
 <li><p><strong>Search Phase</strong>: Finding contacts</p>
-<pre><code>"Show me how to search a list of dictionaries for contacts 
+<pre class="text"><code>"Show me how to search a list of dictionaries for contacts 
 where the name contains a search term."</code></pre></li>
 <li><p><strong>Storage Phase</strong>: File handling</p>
-<pre><code>"What's the simplest way to save a list of dictionaries 
+<pre class="text"><code>"What's the simplest way to save a list of dictionaries 
 to a text file and read it back?"</code></pre></li>
 </ol>
 </section>
@@ -813,7 +813,7 @@ to a text file and read it back?"</code></pre></li>
 <section id="sample-interaction" class="level2" data-number="17.7">
 <h2 data-number="17.7" class="anchored" data-anchor-id="sample-interaction"><span class="header-section-number">17.7</span> Sample Interaction</h2>
 <p>Here’s how your contact book might work:</p>
-<pre><code>📚 CONTACT BOOK MANAGER 📚
+<pre class="text"><code>📚 CONTACT BOOK MANAGER 📚
 Loaded 3 contacts from contacts.txt
 
 ════════════════════════════════
@@ -1691,18 +1691,18 @@ Found 1 contact(s):
 <span id="cb19-92"><a href="#cb19-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effective Prompts for This Project</span></span>
 <span id="cb19-93"><a href="#cb19-93" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-94"><a href="#cb19-94" aria-hidden="true" tabindex="-1"></a>✅ **Good Learning Prompts**:</span>
-<span id="cb19-95"><a href="#cb19-95" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-95"><a href="#cb19-95" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb19-96"><a href="#cb19-96" aria-hidden="true" tabindex="-1"></a><span class="in">"I'm building a contact book where each contact is a dictionary. </span></span>
 <span id="cb19-97"><a href="#cb19-97" aria-hidden="true" tabindex="-1"></a><span class="in">What fields should a contact dictionary have? Show me a simple example </span></span>
 <span id="cb19-98"><a href="#cb19-98" aria-hidden="true" tabindex="-1"></a><span class="in">structure with common fields."</span></span>
 <span id="cb19-99"><a href="#cb19-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb19-100"><a href="#cb19-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-101"><a href="#cb19-101" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-101"><a href="#cb19-101" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb19-102"><a href="#cb19-102" aria-hidden="true" tabindex="-1"></a><span class="in">"I have a list of contact dictionaries. How do I search through them </span></span>
 <span id="cb19-103"><a href="#cb19-103" aria-hidden="true" tabindex="-1"></a><span class="in">to find all contacts with a specific name? Show me a simple function."</span></span>
 <span id="cb19-104"><a href="#cb19-104" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb19-105"><a href="#cb19-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-106"><a href="#cb19-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-106"><a href="#cb19-106" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb19-107"><a href="#cb19-107" aria-hidden="true" tabindex="-1"></a><span class="in">"I need to save my contact list to a file. What's the simplest format </span></span>
 <span id="cb19-108"><a href="#cb19-108" aria-hidden="true" tabindex="-1"></a><span class="in">that preserves the dictionary structure and is human-readable?"</span></span>
 <span id="cb19-109"><a href="#cb19-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1715,25 +1715,25 @@ Found 1 contact(s):
 <span id="cb19-116"><a href="#cb19-116" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Learning Progression</span></span>
 <span id="cb19-117"><a href="#cb19-117" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-118"><a href="#cb19-118" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Design Phase**: Structure planning</span>
-<span id="cb19-119"><a href="#cb19-119" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb19-119"><a href="#cb19-119" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb19-120"><a href="#cb19-120" aria-hidden="true" tabindex="-1"></a><span class="in">   "What information do people typically store for contacts? </span></span>
 <span id="cb19-121"><a href="#cb19-121" aria-hidden="true" tabindex="-1"></a><span class="in">   Help me design a simple dictionary structure."</span></span>
 <span id="cb19-122"><a href="#cb19-122" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb19-123"><a href="#cb19-123" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-124"><a href="#cb19-124" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Implementation Phase**: Focused functions</span>
-<span id="cb19-125"><a href="#cb19-125" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb19-125"><a href="#cb19-125" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb19-126"><a href="#cb19-126" aria-hidden="true" tabindex="-1"></a><span class="in">   "I need a function that takes contact info as parameters </span></span>
 <span id="cb19-127"><a href="#cb19-127" aria-hidden="true" tabindex="-1"></a><span class="in">   and returns a properly formatted contact dictionary."</span></span>
 <span id="cb19-128"><a href="#cb19-128" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb19-129"><a href="#cb19-129" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-130"><a href="#cb19-130" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Search Phase**: Finding contacts</span>
-<span id="cb19-131"><a href="#cb19-131" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb19-131"><a href="#cb19-131" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb19-132"><a href="#cb19-132" aria-hidden="true" tabindex="-1"></a><span class="in">   "Show me how to search a list of dictionaries for contacts </span></span>
 <span id="cb19-133"><a href="#cb19-133" aria-hidden="true" tabindex="-1"></a><span class="in">   where the name contains a search term."</span></span>
 <span id="cb19-134"><a href="#cb19-134" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb19-135"><a href="#cb19-135" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-136"><a href="#cb19-136" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Storage Phase**: File handling</span>
-<span id="cb19-137"><a href="#cb19-137" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb19-137"><a href="#cb19-137" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb19-138"><a href="#cb19-138" aria-hidden="true" tabindex="-1"></a><span class="in">   "What's the simplest way to save a list of dictionaries </span></span>
 <span id="cb19-139"><a href="#cb19-139" aria-hidden="true" tabindex="-1"></a><span class="in">   to a text file and read it back?"</span></span>
 <span id="cb19-140"><a href="#cb19-140" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
@@ -1785,7 +1785,7 @@ Found 1 contact(s):
 <span id="cb19-186"><a href="#cb19-186" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-187"><a href="#cb19-187" aria-hidden="true" tabindex="-1"></a>Here's how your contact book might work:</span>
 <span id="cb19-188"><a href="#cb19-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-189"><a href="#cb19-189" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-189"><a href="#cb19-189" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb19-190"><a href="#cb19-190" aria-hidden="true" tabindex="-1"></a><span class="in">📚 CONTACT BOOK MANAGER 📚</span></span>
 <span id="cb19-191"><a href="#cb19-191" aria-hidden="true" tabindex="-1"></a><span class="in">Loaded 3 contacts from contacts.txt</span></span>
 <span id="cb19-192"><a href="#cb19-192" aria-hidden="true" tabindex="-1"></a></span>

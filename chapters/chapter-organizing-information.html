@@ -702,21 +702,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exploration-1-the-problem-with-many-variables" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-1-the-problem-with-many-variables">Exploration 1: The Problem with Many Variables</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me code that stores 10 student names using individual variables. 
+<pre class="text"><code>Show me code that stores 10 student names using individual variables. 
 Then show me the same thing using a list.</code></pre>
 <p>Notice how lists eliminate variable explosion?</p>
 </section>
 <section id="exploration-2-finding-vs-position" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-2-finding-vs-position">Exploration 2: Finding vs Position</h3>
 <p>Try this prompt:</p>
-<pre><code>Compare finding "Sarah's phone number" in a list vs a dictionary. 
+<pre class="text"><code>Compare finding "Sarah's phone number" in a list vs a dictionary. 
 Show me why dictionaries are better for lookup.</code></pre>
 <p>This reveals when to use each type.</p>
 </section>
 <section id="exploration-3-real-program-needs" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-3-real-program-needs">Exploration 3: Real Program Needs</h3>
 <p>Ask:</p>
-<pre><code>What kind of information would a simple game need to track? 
+<pre class="text"><code>What kind of information would a simple game need to track? 
 Show examples using both lists and dictionaries.</code></pre>
 <p>You’ll see how real programs combine both types.</p>
 </section>
@@ -727,7 +727,7 @@ Show examples using both lists and dictionaries.</code></pre>
 <section id="lists-your-first-collection" class="level3">
 <h3 class="anchored" data-anchor-id="lists-your-first-collection">Lists: Your First Collection</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me the simplest possible Python list with 3 fruits, 
+<pre class="text"><code>Show me the simplest possible Python list with 3 fruits, 
 and how to display them all.</code></pre>
 <p>You’ll get something like:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> [<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"orange"</span>]</span>
@@ -756,14 +756,14 @@ and how to display them all.</code></pre>
 <h2 data-number="13.5" class="anchored" data-anchor-id="mental-model-building"><span class="header-section-number">13.5</span> Mental Model Building</h2>
 <section id="model-1-lists-as-trains" class="level3">
 <h3 class="anchored" data-anchor-id="model-1-lists-as-trains">Model 1: Lists as Trains</h3>
-<pre><code>[car0] → [car1] → [car2] → [car3]
+<pre class="text"><code>[car0] → [car1] → [car2] → [car3]
 "apple"  "banana" "orange" "grape"
 
 Access by position: fruits[2] gets third car</code></pre>
 </section>
 <section id="model-2-dictionaries-as-filing-cabinets" class="level3">
 <h3 class="anchored" data-anchor-id="model-2-dictionaries-as-filing-cabinets">Model 2: Dictionaries as Filing Cabinets</h3>
-<pre><code>┌─────────────┐
+<pre class="text"><code>┌─────────────┐
 │ Mom         │ → "555-1234"
 ├─────────────┤
 │ Pizza       │ → "555-5678"  
@@ -775,7 +775,7 @@ Access by label: phone_book["Pizza"]</code></pre>
 </section>
 <section id="model-3-lists-vs-dictionaries" class="level3">
 <h3 class="anchored" data-anchor-id="model-3-lists-vs-dictionaries">Model 3: Lists vs Dictionaries</h3>
-<pre><code>List: "What's in position 3?"
+<pre class="text"><code>List: "What's in position 3?"
       [0][1][2][3][4]
        ↑  ↑  ↑  ↑  ↑
       🍎 🍌 🍊 🍇 🍓
@@ -791,23 +791,23 @@ Dictionary: "What's the capital of France?"
 <p>Let’s practice getting collection examples from AI.</p>
 <section id="round-1-too-vague" class="level3">
 <h3 class="anchored" data-anchor-id="round-1-too-vague">Round 1: Too Vague</h3>
-<pre><code>show me lists and dictionaries</code></pre>
+<pre class="text"><code>show me lists and dictionaries</code></pre>
 <p>You’ll get advanced features like comprehensions, nested structures, and methods galore!</p>
 </section>
 <section id="round-2-more-specific" class="level3">
 <h3 class="anchored" data-anchor-id="round-2-more-specific">Round 2: More Specific</h3>
-<pre><code>show me Python lists and dictionaries for beginners</code></pre>
+<pre class="text"><code>show me Python lists and dictionaries for beginners</code></pre>
 <p>Better, but might still be overwhelming.</p>
 </section>
 <section id="round-3-learning-focused" class="level3">
 <h3 class="anchored" data-anchor-id="round-3-learning-focused">Round 3: Learning-Focused</h3>
-<pre><code>I'm learning to organise multiple pieces of information. Show me a simple 
+<pre class="text"><code>I'm learning to organise multiple pieces of information. Show me a simple 
 shopping list using a Python list, and a simple contact book using a dictionary.</code></pre>
 <p>Perfect for understanding!</p>
 </section>
 <section id="round-4-practical-application" class="level3">
 <h3 class="anchored" data-anchor-id="round-4-practical-application">Round 4: Practical Application</h3>
-<pre><code>Now show me how to add items to the shopping list and look up a contact</code></pre>
+<pre class="text"><code>Now show me how to add items to the shopping list and look up a contact</code></pre>
 <p>This shows basic operations.</p>
 </section>
 </section>
@@ -1671,7 +1671,7 @@ Design Example
 <span id="cb25-44"><a href="#cb25-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 1: The Problem with Many Variables</span></span>
 <span id="cb25-45"><a href="#cb25-45" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-46"><a href="#cb25-46" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb25-47"><a href="#cb25-47" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-47"><a href="#cb25-47" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-48"><a href="#cb25-48" aria-hidden="true" tabindex="-1"></a><span class="in">Show me code that stores 10 student names using individual variables. </span></span>
 <span id="cb25-49"><a href="#cb25-49" aria-hidden="true" tabindex="-1"></a><span class="in">Then show me the same thing using a list.</span></span>
 <span id="cb25-50"><a href="#cb25-50" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1681,7 +1681,7 @@ Design Example
 <span id="cb25-54"><a href="#cb25-54" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 2: Finding vs Position</span></span>
 <span id="cb25-55"><a href="#cb25-55" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-56"><a href="#cb25-56" aria-hidden="true" tabindex="-1"></a>Try this prompt:</span>
-<span id="cb25-57"><a href="#cb25-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-57"><a href="#cb25-57" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-58"><a href="#cb25-58" aria-hidden="true" tabindex="-1"></a><span class="in">Compare finding "Sarah's phone number" in a list vs a dictionary. </span></span>
 <span id="cb25-59"><a href="#cb25-59" aria-hidden="true" tabindex="-1"></a><span class="in">Show me why dictionaries are better for lookup.</span></span>
 <span id="cb25-60"><a href="#cb25-60" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1691,7 +1691,7 @@ Design Example
 <span id="cb25-64"><a href="#cb25-64" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 3: Real Program Needs</span></span>
 <span id="cb25-65"><a href="#cb25-65" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-66"><a href="#cb25-66" aria-hidden="true" tabindex="-1"></a>Ask:</span>
-<span id="cb25-67"><a href="#cb25-67" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-67"><a href="#cb25-67" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-68"><a href="#cb25-68" aria-hidden="true" tabindex="-1"></a><span class="in">What kind of information would a simple game need to track? </span></span>
 <span id="cb25-69"><a href="#cb25-69" aria-hidden="true" tabindex="-1"></a><span class="in">Show examples using both lists and dictionaries.</span></span>
 <span id="cb25-70"><a href="#cb25-70" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1705,7 +1705,7 @@ Design Example
 <span id="cb25-78"><a href="#cb25-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### Lists: Your First Collection</span></span>
 <span id="cb25-79"><a href="#cb25-79" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-80"><a href="#cb25-80" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb25-81"><a href="#cb25-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-81"><a href="#cb25-81" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-82"><a href="#cb25-82" aria-hidden="true" tabindex="-1"></a><span class="in">Show me the simplest possible Python list with 3 fruits, </span></span>
 <span id="cb25-83"><a href="#cb25-83" aria-hidden="true" tabindex="-1"></a><span class="in">and how to display them all.</span></span>
 <span id="cb25-84"><a href="#cb25-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1740,7 +1740,7 @@ Design Example
 <span id="cb25-113"><a href="#cb25-113" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model Building</span></span>
 <span id="cb25-114"><a href="#cb25-114" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-115"><a href="#cb25-115" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 1: Lists as Trains</span></span>
-<span id="cb25-116"><a href="#cb25-116" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-116"><a href="#cb25-116" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-117"><a href="#cb25-117" aria-hidden="true" tabindex="-1"></a><span class="in">[car0] → [car1] → [car2] → [car3]</span></span>
 <span id="cb25-118"><a href="#cb25-118" aria-hidden="true" tabindex="-1"></a><span class="in">"apple"  "banana" "orange" "grape"</span></span>
 <span id="cb25-119"><a href="#cb25-119" aria-hidden="true" tabindex="-1"></a></span>
@@ -1748,7 +1748,7 @@ Design Example
 <span id="cb25-121"><a href="#cb25-121" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb25-122"><a href="#cb25-122" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-123"><a href="#cb25-123" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 2: Dictionaries as Filing Cabinets</span></span>
-<span id="cb25-124"><a href="#cb25-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-124"><a href="#cb25-124" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-125"><a href="#cb25-125" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────┐</span></span>
 <span id="cb25-126"><a href="#cb25-126" aria-hidden="true" tabindex="-1"></a><span class="in">│ Mom         │ → "555-1234"</span></span>
 <span id="cb25-127"><a href="#cb25-127" aria-hidden="true" tabindex="-1"></a><span class="in">├─────────────┤</span></span>
@@ -1761,7 +1761,7 @@ Design Example
 <span id="cb25-134"><a href="#cb25-134" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb25-135"><a href="#cb25-135" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-136"><a href="#cb25-136" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 3: Lists vs Dictionaries</span></span>
-<span id="cb25-137"><a href="#cb25-137" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-137"><a href="#cb25-137" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-138"><a href="#cb25-138" aria-hidden="true" tabindex="-1"></a><span class="in">List: "What's in position 3?"</span></span>
 <span id="cb25-139"><a href="#cb25-139" aria-hidden="true" tabindex="-1"></a><span class="in">      [0][1][2][3][4]</span></span>
 <span id="cb25-140"><a href="#cb25-140" aria-hidden="true" tabindex="-1"></a><span class="in">       ↑  ↑  ↑  ↑  ↑</span></span>
@@ -1778,26 +1778,26 @@ Design Example
 <span id="cb25-151"><a href="#cb25-151" aria-hidden="true" tabindex="-1"></a>Let's practice getting collection examples from AI.</span>
 <span id="cb25-152"><a href="#cb25-152" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-153"><a href="#cb25-153" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 1: Too Vague</span></span>
-<span id="cb25-154"><a href="#cb25-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-154"><a href="#cb25-154" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-155"><a href="#cb25-155" aria-hidden="true" tabindex="-1"></a><span class="in">show me lists and dictionaries</span></span>
 <span id="cb25-156"><a href="#cb25-156" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb25-157"><a href="#cb25-157" aria-hidden="true" tabindex="-1"></a>You'll get advanced features like comprehensions, nested structures, and methods galore!</span>
 <span id="cb25-158"><a href="#cb25-158" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-159"><a href="#cb25-159" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 2: More Specific</span></span>
-<span id="cb25-160"><a href="#cb25-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-160"><a href="#cb25-160" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-161"><a href="#cb25-161" aria-hidden="true" tabindex="-1"></a><span class="in">show me Python lists and dictionaries for beginners</span></span>
 <span id="cb25-162"><a href="#cb25-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb25-163"><a href="#cb25-163" aria-hidden="true" tabindex="-1"></a>Better, but might still be overwhelming.</span>
 <span id="cb25-164"><a href="#cb25-164" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-165"><a href="#cb25-165" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 3: Learning-Focused</span></span>
-<span id="cb25-166"><a href="#cb25-166" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-166"><a href="#cb25-166" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-167"><a href="#cb25-167" aria-hidden="true" tabindex="-1"></a><span class="in">I'm learning to organise multiple pieces of information. Show me a simple </span></span>
 <span id="cb25-168"><a href="#cb25-168" aria-hidden="true" tabindex="-1"></a><span class="in">shopping list using a Python list, and a simple contact book using a dictionary.</span></span>
 <span id="cb25-169"><a href="#cb25-169" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb25-170"><a href="#cb25-170" aria-hidden="true" tabindex="-1"></a>Perfect for understanding!</span>
 <span id="cb25-171"><a href="#cb25-171" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-172"><a href="#cb25-172" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 4: Practical Application</span></span>
-<span id="cb25-173"><a href="#cb25-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-173"><a href="#cb25-173" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb25-174"><a href="#cb25-174" aria-hidden="true" tabindex="-1"></a><span class="in">Now show me how to add items to the shopping list and look up a contact</span></span>
 <span id="cb25-175"><a href="#cb25-175" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb25-176"><a href="#cb25-176" aria-hidden="true" tabindex="-1"></a>This shows basic operations.</span>

@@ -694,19 +694,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exploration-1-types-of-questions" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-1-types-of-questions">Exploration 1: Types of Questions</h3>
 <p>Ask your AI:</p>
-<pre><code>What are 5 different types of questions a program might ask users? Give examples without code.</code></pre>
+<pre class="text"><code>What are 5 different types of questions a program might ask users? Give examples without code.</code></pre>
 <p>You’ll see categories like: - Identity questions (What’s your name?) - Choice questions (Yes or no?) - Quantity questions (How many?) - Preference questions (Which color?)</p>
 </section>
 <section id="exploration-2-real-app-inputs" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-2-real-app-inputs">Exploration 2: Real App Inputs</h3>
 <p>Try this prompt:</p>
-<pre><code>List all the inputs Instagram asks for when you create a new post</code></pre>
+<pre class="text"><code>List all the inputs Instagram asks for when you create a new post</code></pre>
 <p>Notice how each input serves a specific purpose in the app’s functionality.</p>
 </section>
 <section id="exploration-3-input-in-action" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-3-input-in-action">Exploration 3: Input in Action</h3>
 <p>Ask:</p>
-<pre><code>Explain the flow of what happens when a user types their name into a program, from keyboard press to program memory</code></pre>
+<pre class="text"><code>Explain the flow of what happens when a user types their name into a program, from keyboard press to program memory</code></pre>
 <p>This helps you understand the complete input process.</p>
 </section>
 </section>
@@ -716,7 +716,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-simplest-expression" class="level3">
 <h3 class="anchored" data-anchor-id="the-simplest-expression">The Simplest Expression</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me the absolute simplest Python example of asking the user a question and using their answer. Nothing fancy.</code></pre>
+<pre class="text"><code>Show me the absolute simplest Python example of asking the user a question and using their answer. Nothing fancy.</code></pre>
 <p>You’ll get something like:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"What's your name? "</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, "</span> <span class="op">+</span> name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -739,7 +739,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="4.5" class="anchored" data-anchor-id="mental-model-building"><span class="header-section-number">4.5</span> Mental Model Building</h2>
 <section id="model-1-the-conversation" class="level3">
 <h3 class="anchored" data-anchor-id="model-1-the-conversation">Model 1: The Conversation</h3>
-<pre><code>Program: "What's your name?"    [PROMPT]
+<pre class="text"><code>Program: "What's your name?"    [PROMPT]
            ↓
 User: *types* "Alice"           [INPUT]
            ↓
@@ -750,13 +750,13 @@ Program: "Hello, Alice!"        [OUTPUT]</code></pre>
 <section id="model-2-the-form-field" class="level3">
 <h3 class="anchored" data-anchor-id="model-2-the-form-field">Model 2: The Form Field</h3>
 <p>Think of <code>input()</code> like a form field:</p>
-<pre><code>┌─────────────────────────┐
+<pre class="text"><code>┌─────────────────────────┐
 │ What's your name? _____ │ &lt;- User fills in the blank
 └─────────────────────────┘</code></pre>
 </section>
 <section id="model-3-the-pause-button" class="level3">
 <h3 class="anchored" data-anchor-id="model-3-the-pause-button">Model 3: The Pause Button</h3>
-<pre><code>Program running...
+<pre class="text"><code>Program running...
 → Hit input() - PAUSE! Wait for user...
 → User types...
 → User presses Enter - RESUME!
@@ -768,22 +768,22 @@ Program continues with the answer...</code></pre>
 <p>Let’s practice getting the right examples from AI.</p>
 <section id="round-1-too-vague" class="level3">
 <h3 class="anchored" data-anchor-id="round-1-too-vague">Round 1: Too Vague</h3>
-<pre><code>show me input</code></pre>
+<pre class="text"><code>show me input</code></pre>
 <p>AI might show file input, network input, or complex forms!</p>
 </section>
 <section id="round-2-more-specific" class="level3">
 <h3 class="anchored" data-anchor-id="round-2-more-specific">Round 2: More Specific</h3>
-<pre><code>show me Python user input</code></pre>
+<pre class="text"><code>show me Python user input</code></pre>
 <p>Better, but might include GUI elements or web forms.</p>
 </section>
 <section id="round-3-learning-focused" class="level3">
 <h3 class="anchored" data-anchor-id="round-3-learning-focused">Round 3: Learning-Focused</h3>
-<pre><code>I'm learning to get keyboard input from users in Python. Show me the simplest example of asking for their name.</code></pre>
+<pre class="text"><code>I'm learning to get keyboard input from users in Python. Show me the simplest example of asking for their name.</code></pre>
 <p>Perfect for learning!</p>
 </section>
 <section id="round-4-building-understanding" class="level3">
 <h3 class="anchored" data-anchor-id="round-4-building-understanding">Round 4: Building Understanding</h3>
-<pre><code>Using that example, show me step-by-step what happens when the user types "Sam" and presses Enter</code></pre>
+<pre class="text"><code>Using that example, show me step-by-step what happens when the user types "Sam" and presses Enter</code></pre>
 <p>This reinforces the mental model.</p>
 </section>
 </section>
@@ -1604,7 +1604,7 @@ Design Example
 <span id="cb23-44"><a href="#cb23-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 1: Types of Questions</span></span>
 <span id="cb23-45"><a href="#cb23-45" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-46"><a href="#cb23-46" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb23-47"><a href="#cb23-47" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-47"><a href="#cb23-47" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-48"><a href="#cb23-48" aria-hidden="true" tabindex="-1"></a><span class="in">What are 5 different types of questions a program might ask users? Give examples without code.</span></span>
 <span id="cb23-49"><a href="#cb23-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-50"><a href="#cb23-50" aria-hidden="true" tabindex="-1"></a></span>
@@ -1617,7 +1617,7 @@ Design Example
 <span id="cb23-57"><a href="#cb23-57" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 2: Real App Inputs</span></span>
 <span id="cb23-58"><a href="#cb23-58" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-59"><a href="#cb23-59" aria-hidden="true" tabindex="-1"></a>Try this prompt:</span>
-<span id="cb23-60"><a href="#cb23-60" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-60"><a href="#cb23-60" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-61"><a href="#cb23-61" aria-hidden="true" tabindex="-1"></a><span class="in">List all the inputs Instagram asks for when you create a new post</span></span>
 <span id="cb23-62"><a href="#cb23-62" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-63"><a href="#cb23-63" aria-hidden="true" tabindex="-1"></a></span>
@@ -1626,7 +1626,7 @@ Design Example
 <span id="cb23-66"><a href="#cb23-66" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 3: Input in Action</span></span>
 <span id="cb23-67"><a href="#cb23-67" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-68"><a href="#cb23-68" aria-hidden="true" tabindex="-1"></a>Ask:</span>
-<span id="cb23-69"><a href="#cb23-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-69"><a href="#cb23-69" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-70"><a href="#cb23-70" aria-hidden="true" tabindex="-1"></a><span class="in">Explain the flow of what happens when a user types their name into a program, from keyboard press to program memory</span></span>
 <span id="cb23-71"><a href="#cb23-71" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-72"><a href="#cb23-72" aria-hidden="true" tabindex="-1"></a></span>
@@ -1639,7 +1639,7 @@ Design Example
 <span id="cb23-79"><a href="#cb23-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Simplest Expression</span></span>
 <span id="cb23-80"><a href="#cb23-80" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-81"><a href="#cb23-81" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb23-82"><a href="#cb23-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-82"><a href="#cb23-82" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-83"><a href="#cb23-83" aria-hidden="true" tabindex="-1"></a><span class="in">Show me the absolute simplest Python example of asking the user a question and using their answer. Nothing fancy.</span></span>
 <span id="cb23-84"><a href="#cb23-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-85"><a href="#cb23-85" aria-hidden="true" tabindex="-1"></a></span>
@@ -1667,7 +1667,7 @@ Design Example
 <span id="cb23-107"><a href="#cb23-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model Building</span></span>
 <span id="cb23-108"><a href="#cb23-108" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-109"><a href="#cb23-109" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 1: The Conversation</span></span>
-<span id="cb23-110"><a href="#cb23-110" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-110"><a href="#cb23-110" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-111"><a href="#cb23-111" aria-hidden="true" tabindex="-1"></a><span class="in">Program: "What's your name?"    [PROMPT]</span></span>
 <span id="cb23-112"><a href="#cb23-112" aria-hidden="true" tabindex="-1"></a><span class="in">           ↓</span></span>
 <span id="cb23-113"><a href="#cb23-113" aria-hidden="true" tabindex="-1"></a><span class="in">User: *types* "Alice"           [INPUT]</span></span>
@@ -1679,14 +1679,14 @@ Design Example
 <span id="cb23-119"><a href="#cb23-119" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-120"><a href="#cb23-120" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 2: The Form Field</span></span>
 <span id="cb23-121"><a href="#cb23-121" aria-hidden="true" tabindex="-1"></a>Think of <span class="in">`input()`</span> like a form field:</span>
-<span id="cb23-122"><a href="#cb23-122" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-122"><a href="#cb23-122" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-123"><a href="#cb23-123" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────┐</span></span>
 <span id="cb23-124"><a href="#cb23-124" aria-hidden="true" tabindex="-1"></a><span class="in">│ What's your name? _____ │ &lt;- User fills in the blank</span></span>
 <span id="cb23-125"><a href="#cb23-125" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────────────────────┘</span></span>
 <span id="cb23-126"><a href="#cb23-126" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-127"><a href="#cb23-127" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-128"><a href="#cb23-128" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 3: The Pause Button</span></span>
-<span id="cb23-129"><a href="#cb23-129" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-129"><a href="#cb23-129" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-130"><a href="#cb23-130" aria-hidden="true" tabindex="-1"></a><span class="in">Program running...</span></span>
 <span id="cb23-131"><a href="#cb23-131" aria-hidden="true" tabindex="-1"></a><span class="in">→ Hit input() - PAUSE! Wait for user...</span></span>
 <span id="cb23-132"><a href="#cb23-132" aria-hidden="true" tabindex="-1"></a><span class="in">→ User types...</span></span>
@@ -1699,25 +1699,25 @@ Design Example
 <span id="cb23-139"><a href="#cb23-139" aria-hidden="true" tabindex="-1"></a>Let's practice getting the right examples from AI.</span>
 <span id="cb23-140"><a href="#cb23-140" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-141"><a href="#cb23-141" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 1: Too Vague</span></span>
-<span id="cb23-142"><a href="#cb23-142" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-142"><a href="#cb23-142" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-143"><a href="#cb23-143" aria-hidden="true" tabindex="-1"></a><span class="in">show me input</span></span>
 <span id="cb23-144"><a href="#cb23-144" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-145"><a href="#cb23-145" aria-hidden="true" tabindex="-1"></a>AI might show file input, network input, or complex forms!</span>
 <span id="cb23-146"><a href="#cb23-146" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-147"><a href="#cb23-147" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 2: More Specific</span></span>
-<span id="cb23-148"><a href="#cb23-148" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-148"><a href="#cb23-148" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-149"><a href="#cb23-149" aria-hidden="true" tabindex="-1"></a><span class="in">show me Python user input</span></span>
 <span id="cb23-150"><a href="#cb23-150" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-151"><a href="#cb23-151" aria-hidden="true" tabindex="-1"></a>Better, but might include GUI elements or web forms.</span>
 <span id="cb23-152"><a href="#cb23-152" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-153"><a href="#cb23-153" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 3: Learning-Focused</span></span>
-<span id="cb23-154"><a href="#cb23-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-154"><a href="#cb23-154" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-155"><a href="#cb23-155" aria-hidden="true" tabindex="-1"></a><span class="in">I'm learning to get keyboard input from users in Python. Show me the simplest example of asking for their name.</span></span>
 <span id="cb23-156"><a href="#cb23-156" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-157"><a href="#cb23-157" aria-hidden="true" tabindex="-1"></a>Perfect for learning!</span>
 <span id="cb23-158"><a href="#cb23-158" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-159"><a href="#cb23-159" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 4: Building Understanding</span></span>
-<span id="cb23-160"><a href="#cb23-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-160"><a href="#cb23-160" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb23-161"><a href="#cb23-161" aria-hidden="true" tabindex="-1"></a><span class="in">Using that example, show me step-by-step what happens when the user types "Sam" and presses Enter</span></span>
 <span id="cb23-162"><a href="#cb23-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb23-163"><a href="#cb23-163" aria-hidden="true" tabindex="-1"></a>This reinforces the mental model.</span>

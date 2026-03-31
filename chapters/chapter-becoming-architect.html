@@ -763,7 +763,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-3-designing-the-architecture" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-designing-the-architecture">Step 3: Designing the Architecture</h3>
 <p>Draw your application’s structure:</p>
-<pre><code>┌─────────────────────────────────────┐
+<pre class="text"><code>┌─────────────────────────────────────┐
 │          Main Window                │
 ├─────────────────────────────────────┤
 │  ┌─────────────┐  ┌──────────────┐ │
@@ -841,7 +841,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tool-1-user-stories" class="level3">
 <h3 class="anchored" data-anchor-id="tool-1-user-stories">Tool 1: User Stories</h3>
 <p>Write from the user’s perspective:</p>
-<pre><code>As a student,
+<pre class="text"><code>As a student,
 I want to track my study time by subject,
 So that I can see where I'm spending my time.
 
@@ -852,7 +852,7 @@ So that I can improve my study habits.</code></pre>
 <section id="tool-2-wireframing" class="level3">
 <h3 class="anchored" data-anchor-id="tool-2-wireframing">Tool 2: Wireframing</h3>
 <p>Sketch every screen:</p>
-<pre><code>Main Screen          Stats Screen
+<pre class="text"><code>Main Screen          Stats Screen
 ┌─────────┐         ┌─────────────┐
 │ Timer   │         │ This Week:  │
 │ 00:45   │         │ Math: 5h    │
@@ -863,14 +863,14 @@ So that I can improve my study habits.</code></pre>
 <section id="tool-3-state-diagrams" class="level3">
 <h3 class="anchored" data-anchor-id="tool-3-state-diagrams">Tool 3: State Diagrams</h3>
 <p>Map application states:</p>
-<pre><code>    IDLE ──[Start]──&gt; TIMING
+<pre class="text"><code>    IDLE ──[Start]──&gt; TIMING
      ↑                   │
      └────[Stop]─────────┘</code></pre>
 </section>
 <section id="tool-4-component-planning" class="level3">
 <h3 class="anchored" data-anchor-id="tool-4-component-planning">Tool 4: Component Planning</h3>
 <p>List each piece:</p>
-<pre><code>Components Needed:
+<pre class="text"><code>Components Needed:
 - TimerDisplay: Shows current time
 - SubjectSelector: Dropdown menu
 - ControlButton: Start/Stop
@@ -890,7 +890,7 @@ So that I can improve my study habits.</code></pre>
 <section id="providing-context" class="level3">
 <h3 class="anchored" data-anchor-id="providing-context">Providing Context</h3>
 <p>Give AI your blueprints:</p>
-<pre><code>"I have a study tracker with this data structure:
+<pre class="text"><code>"I have a study tracker with this data structure:
 [paste your session structure]
 
 I need a function that:
@@ -1790,50 +1790,50 @@ I need a function that:
 <span id="cb17-85"><a href="#cb17-85" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-86"><a href="#cb17-86" aria-hidden="true" tabindex="-1"></a><span class="in">Draw your application's structure:</span></span>
 <span id="cb17-87"><a href="#cb17-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-88"><a href="#cb17-88" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-89"><a href="#cb17-89" aria-hidden="true" tabindex="-1"></a>┌─────────────────────────────────────┐</span>
-<span id="cb17-90"><a href="#cb17-90" aria-hidden="true" tabindex="-1"></a>│          Main Window                │</span>
-<span id="cb17-91"><a href="#cb17-91" aria-hidden="true" tabindex="-1"></a>├─────────────────────────────────────┤</span>
-<span id="cb17-92"><a href="#cb17-92" aria-hidden="true" tabindex="-1"></a>│  ┌─────────────┐  ┌──────────────┐ │</span>
-<span id="cb17-93"><a href="#cb17-93" aria-hidden="true" tabindex="-1"></a>│  │   Timer     │  │   Subjects   │ │</span>
-<span id="cb17-94"><a href="#cb17-94" aria-hidden="true" tabindex="-1"></a>│  │  Display    │  │   Dropdown   │ │</span>
-<span id="cb17-95"><a href="#cb17-95" aria-hidden="true" tabindex="-1"></a>│  └─────────────┘  └──────────────┘ │</span>
-<span id="cb17-96"><a href="#cb17-96" aria-hidden="true" tabindex="-1"></a>│                                     │</span>
-<span id="cb17-97"><a href="#cb17-97" aria-hidden="true" tabindex="-1"></a>│  ┌─────────────────────────────┐   │</span>
-<span id="cb17-98"><a href="#cb17-98" aria-hidden="true" tabindex="-1"></a>│  │     Start/Stop Button       │   │</span>
-<span id="cb17-99"><a href="#cb17-99" aria-hidden="true" tabindex="-1"></a>│  └─────────────────────────────┘   │</span>
-<span id="cb17-100"><a href="#cb17-100" aria-hidden="true" tabindex="-1"></a>│                                     │</span>
-<span id="cb17-101"><a href="#cb17-101" aria-hidden="true" tabindex="-1"></a>│  ┌─────────────────────────────┐   │</span>
-<span id="cb17-102"><a href="#cb17-102" aria-hidden="true" tabindex="-1"></a>│  │     Today's Sessions        │   │</span>
-<span id="cb17-103"><a href="#cb17-103" aria-hidden="true" tabindex="-1"></a>│  │  - Math: 45 min            │   │</span>
-<span id="cb17-104"><a href="#cb17-104" aria-hidden="true" tabindex="-1"></a>│  │  - Science: 30 min         │   │</span>
-<span id="cb17-105"><a href="#cb17-105" aria-hidden="true" tabindex="-1"></a>│  └─────────────────────────────┘   │</span>
-<span id="cb17-106"><a href="#cb17-106" aria-hidden="true" tabindex="-1"></a>└─────────────────────────────────────┘</span>
+<span id="cb17-88"><a href="#cb17-88" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb17-89"><a href="#cb17-89" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────┐</span></span>
+<span id="cb17-90"><a href="#cb17-90" aria-hidden="true" tabindex="-1"></a><span class="in">│          Main Window                │</span></span>
+<span id="cb17-91"><a href="#cb17-91" aria-hidden="true" tabindex="-1"></a><span class="in">├─────────────────────────────────────┤</span></span>
+<span id="cb17-92"><a href="#cb17-92" aria-hidden="true" tabindex="-1"></a><span class="in">│  ┌─────────────┐  ┌──────────────┐ │</span></span>
+<span id="cb17-93"><a href="#cb17-93" aria-hidden="true" tabindex="-1"></a><span class="in">│  │   Timer     │  │   Subjects   │ │</span></span>
+<span id="cb17-94"><a href="#cb17-94" aria-hidden="true" tabindex="-1"></a><span class="in">│  │  Display    │  │   Dropdown   │ │</span></span>
+<span id="cb17-95"><a href="#cb17-95" aria-hidden="true" tabindex="-1"></a><span class="in">│  └─────────────┘  └──────────────┘ │</span></span>
+<span id="cb17-96"><a href="#cb17-96" aria-hidden="true" tabindex="-1"></a><span class="in">│                                     │</span></span>
+<span id="cb17-97"><a href="#cb17-97" aria-hidden="true" tabindex="-1"></a><span class="in">│  ┌─────────────────────────────┐   │</span></span>
+<span id="cb17-98"><a href="#cb17-98" aria-hidden="true" tabindex="-1"></a><span class="in">│  │     Start/Stop Button       │   │</span></span>
+<span id="cb17-99"><a href="#cb17-99" aria-hidden="true" tabindex="-1"></a><span class="in">│  └─────────────────────────────┘   │</span></span>
+<span id="cb17-100"><a href="#cb17-100" aria-hidden="true" tabindex="-1"></a><span class="in">│                                     │</span></span>
+<span id="cb17-101"><a href="#cb17-101" aria-hidden="true" tabindex="-1"></a><span class="in">│  ┌─────────────────────────────┐   │</span></span>
+<span id="cb17-102"><a href="#cb17-102" aria-hidden="true" tabindex="-1"></a><span class="in">│  │     Today's Sessions        │   │</span></span>
+<span id="cb17-103"><a href="#cb17-103" aria-hidden="true" tabindex="-1"></a><span class="in">│  │  - Math: 45 min            │   │</span></span>
+<span id="cb17-104"><a href="#cb17-104" aria-hidden="true" tabindex="-1"></a><span class="in">│  │  - Science: 30 min         │   │</span></span>
+<span id="cb17-105"><a href="#cb17-105" aria-hidden="true" tabindex="-1"></a><span class="in">│  └─────────────────────────────┘   │</span></span>
+<span id="cb17-106"><a href="#cb17-106" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────────────────────────────────┘</span></span>
 <span id="cb17-107"><a href="#cb17-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-108"><a href="#cb17-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-109"><a href="#cb17-109" aria-hidden="true" tabindex="-1"></a><span class="in">### Step 4: Data Structure Design</span></span>
+<span id="cb17-109"><a href="#cb17-109" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 4: Data Structure Design</span></span>
 <span id="cb17-110"><a href="#cb17-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-111"><a href="#cb17-111" aria-hidden="true" tabindex="-1"></a><span class="in">Plan how you'll store information:</span></span>
+<span id="cb17-111"><a href="#cb17-111" aria-hidden="true" tabindex="-1"></a>Plan how you'll store information:</span>
 <span id="cb17-112"><a href="#cb17-112" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-113"><a href="#cb17-113" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb17-114"><a href="#cb17-114" aria-hidden="true" tabindex="-1"></a><span class="in"># Session data structure</span></span>
-<span id="cb17-115"><a href="#cb17-115" aria-hidden="true" tabindex="-1"></a><span class="in">session = {</span></span>
-<span id="cb17-116"><a href="#cb17-116" aria-hidden="true" tabindex="-1"></a><span class="in">    'subject': 'Mathematics',</span></span>
-<span id="cb17-117"><a href="#cb17-117" aria-hidden="true" tabindex="-1"></a><span class="in">    'start_time': '2024-03-15 14:30:00',</span></span>
-<span id="cb17-118"><a href="#cb17-118" aria-hidden="true" tabindex="-1"></a><span class="in">    'end_time': '2024-03-15 15:15:00',</span></span>
-<span id="cb17-119"><a href="#cb17-119" aria-hidden="true" tabindex="-1"></a><span class="in">    'duration_minutes': 45,</span></span>
-<span id="cb17-120"><a href="#cb17-120" aria-hidden="true" tabindex="-1"></a><span class="in">    'notes': 'Studied calculus chapter 5'</span></span>
-<span id="cb17-121"><a href="#cb17-121" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb17-114"><a href="#cb17-114" aria-hidden="true" tabindex="-1"></a><span class="co"># Session data structure</span></span>
+<span id="cb17-115"><a href="#cb17-115" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> {</span>
+<span id="cb17-116"><a href="#cb17-116" aria-hidden="true" tabindex="-1"></a>    <span class="st">'subject'</span>: <span class="st">'Mathematics'</span>,</span>
+<span id="cb17-117"><a href="#cb17-117" aria-hidden="true" tabindex="-1"></a>    <span class="st">'start_time'</span>: <span class="st">'2024-03-15 14:30:00'</span>,</span>
+<span id="cb17-118"><a href="#cb17-118" aria-hidden="true" tabindex="-1"></a>    <span class="st">'end_time'</span>: <span class="st">'2024-03-15 15:15:00'</span>,</span>
+<span id="cb17-119"><a href="#cb17-119" aria-hidden="true" tabindex="-1"></a>    <span class="st">'duration_minutes'</span>: <span class="dv">45</span>,</span>
+<span id="cb17-120"><a href="#cb17-120" aria-hidden="true" tabindex="-1"></a>    <span class="st">'notes'</span>: <span class="st">'Studied calculus chapter 5'</span></span>
+<span id="cb17-121"><a href="#cb17-121" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb17-122"><a href="#cb17-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-123"><a href="#cb17-123" aria-hidden="true" tabindex="-1"></a><span class="in"># Storage format (JSON file)</span></span>
-<span id="cb17-124"><a href="#cb17-124" aria-hidden="true" tabindex="-1"></a><span class="in">{</span></span>
-<span id="cb17-125"><a href="#cb17-125" aria-hidden="true" tabindex="-1"></a><span class="in">    'sessions': [...],</span></span>
-<span id="cb17-126"><a href="#cb17-126" aria-hidden="true" tabindex="-1"></a><span class="in">    'subjects': ['Math', 'Science', 'English'],</span></span>
-<span id="cb17-127"><a href="#cb17-127" aria-hidden="true" tabindex="-1"></a><span class="in">    'settings': {</span></span>
-<span id="cb17-128"><a href="#cb17-128" aria-hidden="true" tabindex="-1"></a><span class="in">        'break_reminder': True,</span></span>
-<span id="cb17-129"><a href="#cb17-129" aria-hidden="true" tabindex="-1"></a><span class="in">        'break_interval': 25</span></span>
-<span id="cb17-130"><a href="#cb17-130" aria-hidden="true" tabindex="-1"></a><span class="in">    }</span></span>
-<span id="cb17-131"><a href="#cb17-131" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb17-123"><a href="#cb17-123" aria-hidden="true" tabindex="-1"></a><span class="co"># Storage format (JSON file)</span></span>
+<span id="cb17-124"><a href="#cb17-124" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb17-125"><a href="#cb17-125" aria-hidden="true" tabindex="-1"></a>    <span class="st">'sessions'</span>: [...],</span>
+<span id="cb17-126"><a href="#cb17-126" aria-hidden="true" tabindex="-1"></a>    <span class="st">'subjects'</span>: [<span class="st">'Math'</span>, <span class="st">'Science'</span>, <span class="st">'English'</span>],</span>
+<span id="cb17-127"><a href="#cb17-127" aria-hidden="true" tabindex="-1"></a>    <span class="st">'settings'</span>: {</span>
+<span id="cb17-128"><a href="#cb17-128" aria-hidden="true" tabindex="-1"></a>        <span class="st">'break_reminder'</span>: <span class="va">True</span>,</span>
+<span id="cb17-129"><a href="#cb17-129" aria-hidden="true" tabindex="-1"></a>        <span class="st">'break_interval'</span>: <span class="dv">25</span></span>
+<span id="cb17-130"><a href="#cb17-130" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb17-131"><a href="#cb17-131" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb17-132"><a href="#cb17-132" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-133"><a href="#cb17-133" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-134"><a href="#cb17-134" aria-hidden="true" tabindex="-1"></a><span class="fu">### Step 5: Breaking Down Implementation</span></span>
@@ -1865,120 +1865,120 @@ I need a function that:
 <span id="cb17-160"><a href="#cb17-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tool 1: User Stories</span></span>
 <span id="cb17-161"><a href="#cb17-161" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-162"><a href="#cb17-162" aria-hidden="true" tabindex="-1"></a>Write from the user's perspective:</span>
-<span id="cb17-163"><a href="#cb17-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-164"><a href="#cb17-164" aria-hidden="true" tabindex="-1"></a>As a student,</span>
-<span id="cb17-165"><a href="#cb17-165" aria-hidden="true" tabindex="-1"></a>I want to track my study time by subject,</span>
-<span id="cb17-166"><a href="#cb17-166" aria-hidden="true" tabindex="-1"></a>So that I can see where I'm spending my time.</span>
+<span id="cb17-163"><a href="#cb17-163" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb17-164"><a href="#cb17-164" aria-hidden="true" tabindex="-1"></a><span class="in">As a student,</span></span>
+<span id="cb17-165"><a href="#cb17-165" aria-hidden="true" tabindex="-1"></a><span class="in">I want to track my study time by subject,</span></span>
+<span id="cb17-166"><a href="#cb17-166" aria-hidden="true" tabindex="-1"></a><span class="in">So that I can see where I'm spending my time.</span></span>
 <span id="cb17-167"><a href="#cb17-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-168"><a href="#cb17-168" aria-hidden="true" tabindex="-1"></a>As a student,</span>
-<span id="cb17-169"><a href="#cb17-169" aria-hidden="true" tabindex="-1"></a>I want to see weekly summaries,</span>
-<span id="cb17-170"><a href="#cb17-170" aria-hidden="true" tabindex="-1"></a>So that I can improve my study habits.</span>
+<span id="cb17-168"><a href="#cb17-168" aria-hidden="true" tabindex="-1"></a><span class="in">As a student,</span></span>
+<span id="cb17-169"><a href="#cb17-169" aria-hidden="true" tabindex="-1"></a><span class="in">I want to see weekly summaries,</span></span>
+<span id="cb17-170"><a href="#cb17-170" aria-hidden="true" tabindex="-1"></a><span class="in">So that I can improve my study habits.</span></span>
 <span id="cb17-171"><a href="#cb17-171" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-172"><a href="#cb17-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-173"><a href="#cb17-173" aria-hidden="true" tabindex="-1"></a><span class="in">### Tool 2: Wireframing</span></span>
+<span id="cb17-173"><a href="#cb17-173" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tool 2: Wireframing</span></span>
 <span id="cb17-174"><a href="#cb17-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-175"><a href="#cb17-175" aria-hidden="true" tabindex="-1"></a><span class="in">Sketch every screen:</span></span>
-<span id="cb17-176"><a href="#cb17-176" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-177"><a href="#cb17-177" aria-hidden="true" tabindex="-1"></a>Main Screen          Stats Screen</span>
-<span id="cb17-178"><a href="#cb17-178" aria-hidden="true" tabindex="-1"></a>┌─────────┐         ┌─────────────┐</span>
-<span id="cb17-179"><a href="#cb17-179" aria-hidden="true" tabindex="-1"></a>│ Timer   │         │ This Week:  │</span>
-<span id="cb17-180"><a href="#cb17-180" aria-hidden="true" tabindex="-1"></a>│ 00:45   │         │ Math: 5h    │</span>
-<span id="cb17-181"><a href="#cb17-181" aria-hidden="true" tabindex="-1"></a>│ <span class="co">[</span><span class="ot">Stop</span><span class="co">]</span>  │  ---&gt;   │ Sci: 3h     │</span>
-<span id="cb17-182"><a href="#cb17-182" aria-hidden="true" tabindex="-1"></a>│         │         │ Eng: 4h     │</span>
-<span id="cb17-183"><a href="#cb17-183" aria-hidden="true" tabindex="-1"></a>└─────────┘         └─────────────┘</span>
+<span id="cb17-175"><a href="#cb17-175" aria-hidden="true" tabindex="-1"></a>Sketch every screen:</span>
+<span id="cb17-176"><a href="#cb17-176" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb17-177"><a href="#cb17-177" aria-hidden="true" tabindex="-1"></a><span class="in">Main Screen          Stats Screen</span></span>
+<span id="cb17-178"><a href="#cb17-178" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────┐         ┌─────────────┐</span></span>
+<span id="cb17-179"><a href="#cb17-179" aria-hidden="true" tabindex="-1"></a><span class="in">│ Timer   │         │ This Week:  │</span></span>
+<span id="cb17-180"><a href="#cb17-180" aria-hidden="true" tabindex="-1"></a><span class="in">│ 00:45   │         │ Math: 5h    │</span></span>
+<span id="cb17-181"><a href="#cb17-181" aria-hidden="true" tabindex="-1"></a><span class="in">│ [Stop]  │  ---&gt;   │ Sci: 3h     │</span></span>
+<span id="cb17-182"><a href="#cb17-182" aria-hidden="true" tabindex="-1"></a><span class="in">│         │         │ Eng: 4h     │</span></span>
+<span id="cb17-183"><a href="#cb17-183" aria-hidden="true" tabindex="-1"></a><span class="in">└─────────┘         └─────────────┘</span></span>
 <span id="cb17-184"><a href="#cb17-184" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-185"><a href="#cb17-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-186"><a href="#cb17-186" aria-hidden="true" tabindex="-1"></a><span class="in">### Tool 3: State Diagrams</span></span>
+<span id="cb17-186"><a href="#cb17-186" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tool 3: State Diagrams</span></span>
 <span id="cb17-187"><a href="#cb17-187" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-188"><a href="#cb17-188" aria-hidden="true" tabindex="-1"></a><span class="in">Map application states:</span></span>
-<span id="cb17-189"><a href="#cb17-189" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-190"><a href="#cb17-190" aria-hidden="true" tabindex="-1"></a>    IDLE ──<span class="co">[</span><span class="ot">Start</span><span class="co">]</span>──&gt; TIMING</span>
-<span id="cb17-191"><a href="#cb17-191" aria-hidden="true" tabindex="-1"></a>     ↑                   │</span>
-<span id="cb17-192"><a href="#cb17-192" aria-hidden="true" tabindex="-1"></a>     └────<span class="co">[</span><span class="ot">Stop</span><span class="co">]</span>─────────┘</span>
+<span id="cb17-188"><a href="#cb17-188" aria-hidden="true" tabindex="-1"></a>Map application states:</span>
+<span id="cb17-189"><a href="#cb17-189" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb17-190"><a href="#cb17-190" aria-hidden="true" tabindex="-1"></a><span class="in">    IDLE ──[Start]──&gt; TIMING</span></span>
+<span id="cb17-191"><a href="#cb17-191" aria-hidden="true" tabindex="-1"></a><span class="in">     ↑                   │</span></span>
+<span id="cb17-192"><a href="#cb17-192" aria-hidden="true" tabindex="-1"></a><span class="in">     └────[Stop]─────────┘</span></span>
 <span id="cb17-193"><a href="#cb17-193" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-194"><a href="#cb17-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-195"><a href="#cb17-195" aria-hidden="true" tabindex="-1"></a><span class="in">### Tool 4: Component Planning</span></span>
+<span id="cb17-195"><a href="#cb17-195" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tool 4: Component Planning</span></span>
 <span id="cb17-196"><a href="#cb17-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-197"><a href="#cb17-197" aria-hidden="true" tabindex="-1"></a><span class="in">List each piece:</span></span>
-<span id="cb17-198"><a href="#cb17-198" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-199"><a href="#cb17-199" aria-hidden="true" tabindex="-1"></a>Components Needed:</span>
-<span id="cb17-200"><a href="#cb17-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>TimerDisplay: Shows current time</span>
-<span id="cb17-201"><a href="#cb17-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SubjectSelector: Dropdown menu</span>
-<span id="cb17-202"><a href="#cb17-202" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ControlButton: Start/Stop</span>
-<span id="cb17-203"><a href="#cb17-203" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SessionList: Today's sessions</span>
-<span id="cb17-204"><a href="#cb17-204" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>DataManager: Save/load logic</span>
-<span id="cb17-205"><a href="#cb17-205" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>StatsCalculator: Summaries</span>
+<span id="cb17-197"><a href="#cb17-197" aria-hidden="true" tabindex="-1"></a>List each piece:</span>
+<span id="cb17-198"><a href="#cb17-198" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb17-199"><a href="#cb17-199" aria-hidden="true" tabindex="-1"></a><span class="in">Components Needed:</span></span>
+<span id="cb17-200"><a href="#cb17-200" aria-hidden="true" tabindex="-1"></a><span class="in">- TimerDisplay: Shows current time</span></span>
+<span id="cb17-201"><a href="#cb17-201" aria-hidden="true" tabindex="-1"></a><span class="in">- SubjectSelector: Dropdown menu</span></span>
+<span id="cb17-202"><a href="#cb17-202" aria-hidden="true" tabindex="-1"></a><span class="in">- ControlButton: Start/Stop</span></span>
+<span id="cb17-203"><a href="#cb17-203" aria-hidden="true" tabindex="-1"></a><span class="in">- SessionList: Today's sessions</span></span>
+<span id="cb17-204"><a href="#cb17-204" aria-hidden="true" tabindex="-1"></a><span class="in">- DataManager: Save/load logic</span></span>
+<span id="cb17-205"><a href="#cb17-205" aria-hidden="true" tabindex="-1"></a><span class="in">- StatsCalculator: Summaries</span></span>
 <span id="cb17-206"><a href="#cb17-206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-207"><a href="#cb17-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-208"><a href="#cb17-208" aria-hidden="true" tabindex="-1"></a><span class="in">## Working with AI as Your Builder</span></span>
+<span id="cb17-208"><a href="#cb17-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working with AI as Your Builder</span></span>
 <span id="cb17-209"><a href="#cb17-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-210"><a href="#cb17-210" aria-hidden="true" tabindex="-1"></a><span class="in">Now that you're the architect, here's how to work with AI:</span></span>
+<span id="cb17-210"><a href="#cb17-210" aria-hidden="true" tabindex="-1"></a>Now that you're the architect, here's how to work with AI:</span>
 <span id="cb17-211"><a href="#cb17-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-212"><a href="#cb17-212" aria-hidden="true" tabindex="-1"></a><span class="in">### Effective Architect Prompts</span></span>
+<span id="cb17-212"><a href="#cb17-212" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effective Architect Prompts</span></span>
 <span id="cb17-213"><a href="#cb17-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-214"><a href="#cb17-214" aria-hidden="true" tabindex="-1"></a><span class="in">Instead of: "Build me a study tracker"</span></span>
+<span id="cb17-214"><a href="#cb17-214" aria-hidden="true" tabindex="-1"></a>Instead of: "Build me a study tracker"</span>
 <span id="cb17-215"><a href="#cb17-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-216"><a href="#cb17-216" aria-hidden="true" tabindex="-1"></a><span class="in">Try: "I'm building a study tracker. Here's my timer component design:</span></span>
-<span id="cb17-217"><a href="#cb17-217" aria-hidden="true" tabindex="-1"></a><span class="in">- Display format: MM:SS</span></span>
-<span id="cb17-218"><a href="#cb17-218" aria-hidden="true" tabindex="-1"></a><span class="in">- Updates every second</span></span>
-<span id="cb17-219"><a href="#cb17-219" aria-hidden="true" tabindex="-1"></a><span class="in">- Needs start(), stop(), and reset() methods</span></span>
-<span id="cb17-220"><a href="#cb17-220" aria-hidden="true" tabindex="-1"></a><span class="in">- Should emit events when started/stopped</span></span>
-<span id="cb17-221"><a href="#cb17-221" aria-hidden="true" tabindex="-1"></a><span class="in">Please implement this timer class."</span></span>
+<span id="cb17-216"><a href="#cb17-216" aria-hidden="true" tabindex="-1"></a>Try: "I'm building a study tracker. Here's my timer component design:</span>
+<span id="cb17-217"><a href="#cb17-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Display format: MM:SS</span>
+<span id="cb17-218"><a href="#cb17-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Updates every second</span>
+<span id="cb17-219"><a href="#cb17-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Needs start(), stop(), and reset() methods</span>
+<span id="cb17-220"><a href="#cb17-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Should emit events when started/stopped</span>
+<span id="cb17-221"><a href="#cb17-221" aria-hidden="true" tabindex="-1"></a>Please implement this timer class."</span>
 <span id="cb17-222"><a href="#cb17-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-223"><a href="#cb17-223" aria-hidden="true" tabindex="-1"></a><span class="in">### Providing Context</span></span>
+<span id="cb17-223"><a href="#cb17-223" aria-hidden="true" tabindex="-1"></a><span class="fu">### Providing Context</span></span>
 <span id="cb17-224"><a href="#cb17-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-225"><a href="#cb17-225" aria-hidden="true" tabindex="-1"></a><span class="in">Give AI your blueprints:</span></span>
-<span id="cb17-226"><a href="#cb17-226" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-227"><a href="#cb17-227" aria-hidden="true" tabindex="-1"></a>"I have a study tracker with this data structure:</span>
-<span id="cb17-228"><a href="#cb17-228" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">paste your session structure</span><span class="co">]</span></span>
+<span id="cb17-225"><a href="#cb17-225" aria-hidden="true" tabindex="-1"></a>Give AI your blueprints:</span>
+<span id="cb17-226"><a href="#cb17-226" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb17-227"><a href="#cb17-227" aria-hidden="true" tabindex="-1"></a><span class="in">"I have a study tracker with this data structure:</span></span>
+<span id="cb17-228"><a href="#cb17-228" aria-hidden="true" tabindex="-1"></a><span class="in">[paste your session structure]</span></span>
 <span id="cb17-229"><a href="#cb17-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-230"><a href="#cb17-230" aria-hidden="true" tabindex="-1"></a>I need a function that:</span>
-<span id="cb17-231"><a href="#cb17-231" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Takes a list of sessions</span>
-<span id="cb17-232"><a href="#cb17-232" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Groups them by subject</span>
-<span id="cb17-233"><a href="#cb17-233" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Calculates total time per subject</span>
-<span id="cb17-234"><a href="#cb17-234" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Returns a summary dictionary"</span>
+<span id="cb17-230"><a href="#cb17-230" aria-hidden="true" tabindex="-1"></a><span class="in">I need a function that:</span></span>
+<span id="cb17-231"><a href="#cb17-231" aria-hidden="true" tabindex="-1"></a><span class="in">1. Takes a list of sessions</span></span>
+<span id="cb17-232"><a href="#cb17-232" aria-hidden="true" tabindex="-1"></a><span class="in">2. Groups them by subject</span></span>
+<span id="cb17-233"><a href="#cb17-233" aria-hidden="true" tabindex="-1"></a><span class="in">3. Calculates total time per subject</span></span>
+<span id="cb17-234"><a href="#cb17-234" aria-hidden="true" tabindex="-1"></a><span class="in">4. Returns a summary dictionary"</span></span>
 <span id="cb17-235"><a href="#cb17-235" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-236"><a href="#cb17-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-237"><a href="#cb17-237" aria-hidden="true" tabindex="-1"></a><span class="in">### Iterative Building</span></span>
+<span id="cb17-237"><a href="#cb17-237" aria-hidden="true" tabindex="-1"></a><span class="fu">### Iterative Building</span></span>
 <span id="cb17-238"><a href="#cb17-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-239"><a href="#cb17-239" aria-hidden="true" tabindex="-1"></a><span class="in">Build in layers:</span></span>
-<span id="cb17-240"><a href="#cb17-240" aria-hidden="true" tabindex="-1"></a><span class="in">1. "Create the basic timer logic"</span></span>
-<span id="cb17-241"><a href="#cb17-241" aria-hidden="true" tabindex="-1"></a><span class="in">2. "Add pause/resume functionality"</span></span>
-<span id="cb17-242"><a href="#cb17-242" aria-hidden="true" tabindex="-1"></a><span class="in">3. "Add event callbacks for UI updates"</span></span>
-<span id="cb17-243"><a href="#cb17-243" aria-hidden="true" tabindex="-1"></a><span class="in">4. "Add persistence between sessions"</span></span>
+<span id="cb17-239"><a href="#cb17-239" aria-hidden="true" tabindex="-1"></a>Build in layers:</span>
+<span id="cb17-240"><a href="#cb17-240" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>"Create the basic timer logic"</span>
+<span id="cb17-241"><a href="#cb17-241" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>"Add pause/resume functionality"</span>
+<span id="cb17-242"><a href="#cb17-242" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>"Add event callbacks for UI updates"</span>
+<span id="cb17-243"><a href="#cb17-243" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>"Add persistence between sessions"</span>
 <span id="cb17-244"><a href="#cb17-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-245"><a href="#cb17-245" aria-hidden="true" tabindex="-1"></a><span class="in">::: {.callout-tip}</span></span>
-<span id="cb17-246"><a href="#cb17-246" aria-hidden="true" tabindex="-1"></a><span class="in">## The Architect's Advantage</span></span>
-<span id="cb17-247"><a href="#cb17-247" aria-hidden="true" tabindex="-1"></a><span class="in">When you provide clear specifications, AI can build exactly what you envision. You maintain control while leveraging AI's coding speed.</span></span>
-<span id="cb17-248"><a href="#cb17-248" aria-hidden="true" tabindex="-1"></a><span class="in">:::</span></span>
+<span id="cb17-245"><a href="#cb17-245" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb17-246"><a href="#cb17-246" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Architect's Advantage</span></span>
+<span id="cb17-247"><a href="#cb17-247" aria-hidden="true" tabindex="-1"></a>When you provide clear specifications, AI can build exactly what you envision. You maintain control while leveraging AI's coding speed.</span>
+<span id="cb17-248"><a href="#cb17-248" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb17-249"><a href="#cb17-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-250"><a href="#cb17-250" aria-hidden="true" tabindex="-1"></a><span class="in">## Architecture Patterns</span></span>
+<span id="cb17-250"><a href="#cb17-250" aria-hidden="true" tabindex="-1"></a><span class="fu">## Architecture Patterns</span></span>
 <span id="cb17-251"><a href="#cb17-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-252"><a href="#cb17-252" aria-hidden="true" tabindex="-1"></a><span class="in">### Pattern 1: Model-View-Controller (MVC)</span></span>
+<span id="cb17-252"><a href="#cb17-252" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 1: Model-View-Controller (MVC)</span></span>
 <span id="cb17-253"><a href="#cb17-253" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-254"><a href="#cb17-254" aria-hidden="true" tabindex="-1"></a><span class="in">Separate concerns:</span></span>
+<span id="cb17-254"><a href="#cb17-254" aria-hidden="true" tabindex="-1"></a>Separate concerns:</span>
 <span id="cb17-255"><a href="#cb17-255" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb17-256"><a href="#cb17-256" aria-hidden="true" tabindex="-1"></a><span class="in"># Model - Data and logic</span></span>
-<span id="cb17-257"><a href="#cb17-257" aria-hidden="true" tabindex="-1"></a><span class="in">class StudyModel:</span></span>
-<span id="cb17-258"><a href="#cb17-258" aria-hidden="true" tabindex="-1"></a><span class="in">    def __init__(self):</span></span>
-<span id="cb17-259"><a href="#cb17-259" aria-hidden="true" tabindex="-1"></a><span class="in">        self.sessions = []</span></span>
-<span id="cb17-260"><a href="#cb17-260" aria-hidden="true" tabindex="-1"></a><span class="in">        self.current_session = None</span></span>
-<span id="cb17-261"><a href="#cb17-261" aria-hidden="true" tabindex="-1"></a><span class="in">    </span></span>
-<span id="cb17-262"><a href="#cb17-262" aria-hidden="true" tabindex="-1"></a><span class="in">    def start_session(self, subject):</span></span>
-<span id="cb17-263"><a href="#cb17-263" aria-hidden="true" tabindex="-1"></a><span class="in">        # Logic here</span></span>
-<span id="cb17-264"><a href="#cb17-264" aria-hidden="true" tabindex="-1"></a><span class="in">        </span></span>
-<span id="cb17-265"><a href="#cb17-265" aria-hidden="true" tabindex="-1"></a><span class="in"># View - User interface</span></span>
-<span id="cb17-266"><a href="#cb17-266" aria-hidden="true" tabindex="-1"></a><span class="in">class StudyView:</span></span>
-<span id="cb17-267"><a href="#cb17-267" aria-hidden="true" tabindex="-1"></a><span class="in">    def __init__(self, model):</span></span>
-<span id="cb17-268"><a href="#cb17-268" aria-hidden="true" tabindex="-1"></a><span class="in">        self.model = model</span></span>
-<span id="cb17-269"><a href="#cb17-269" aria-hidden="true" tabindex="-1"></a><span class="in">        # GUI setup</span></span>
-<span id="cb17-270"><a href="#cb17-270" aria-hidden="true" tabindex="-1"></a><span class="in">        </span></span>
-<span id="cb17-271"><a href="#cb17-271" aria-hidden="true" tabindex="-1"></a><span class="in"># Controller - Coordinates</span></span>
-<span id="cb17-272"><a href="#cb17-272" aria-hidden="true" tabindex="-1"></a><span class="in">class StudyController:</span></span>
-<span id="cb17-273"><a href="#cb17-273" aria-hidden="true" tabindex="-1"></a><span class="in">    def __init__(self, model, view):</span></span>
-<span id="cb17-274"><a href="#cb17-274" aria-hidden="true" tabindex="-1"></a><span class="in">        self.model = model</span></span>
-<span id="cb17-275"><a href="#cb17-275" aria-hidden="true" tabindex="-1"></a><span class="in">        self.view = view</span></span>
-<span id="cb17-276"><a href="#cb17-276" aria-hidden="true" tabindex="-1"></a><span class="in">        # Connect them</span></span>
+<span id="cb17-256"><a href="#cb17-256" aria-hidden="true" tabindex="-1"></a><span class="co"># Model - Data and logic</span></span>
+<span id="cb17-257"><a href="#cb17-257" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> StudyModel:</span>
+<span id="cb17-258"><a href="#cb17-258" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb17-259"><a href="#cb17-259" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.sessions <span class="op">=</span> []</span>
+<span id="cb17-260"><a href="#cb17-260" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current_session <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb17-261"><a href="#cb17-261" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-262"><a href="#cb17-262" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> start_session(<span class="va">self</span>, subject):</span>
+<span id="cb17-263"><a href="#cb17-263" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Logic here</span></span>
+<span id="cb17-264"><a href="#cb17-264" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-265"><a href="#cb17-265" aria-hidden="true" tabindex="-1"></a><span class="co"># View - User interface</span></span>
+<span id="cb17-266"><a href="#cb17-266" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> StudyView:</span>
+<span id="cb17-267"><a href="#cb17-267" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, model):</span>
+<span id="cb17-268"><a href="#cb17-268" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
+<span id="cb17-269"><a href="#cb17-269" aria-hidden="true" tabindex="-1"></a>        <span class="co"># GUI setup</span></span>
+<span id="cb17-270"><a href="#cb17-270" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-271"><a href="#cb17-271" aria-hidden="true" tabindex="-1"></a><span class="co"># Controller - Coordinates</span></span>
+<span id="cb17-272"><a href="#cb17-272" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> StudyController:</span>
+<span id="cb17-273"><a href="#cb17-273" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, model, view):</span>
+<span id="cb17-274"><a href="#cb17-274" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
+<span id="cb17-275"><a href="#cb17-275" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.view <span class="op">=</span> view</span>
+<span id="cb17-276"><a href="#cb17-276" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Connect them</span></span>
 <span id="cb17-277"><a href="#cb17-277" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-278"><a href="#cb17-278" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-279"><a href="#cb17-279" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 2: Event-Driven Architecture</span></span>

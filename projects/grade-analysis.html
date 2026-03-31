@@ -750,10 +750,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="effective-prompts-for-this-project" class="level3">
 <h3 class="anchored" data-anchor-id="effective-prompts-for-this-project">Effective Prompts for This Project</h3>
 <p>✅ <strong>Good Learning Prompts</strong>:</p>
-<pre><code>"I'm analysing grade data from CSV. Some cells are empty or contain 
+<pre class="text"><code>"I'm analysing grade data from CSV. Some cells are empty or contain 
 'N/A'. Show me how to safely convert grade values to numbers, 
 handling these edge cases."</code></pre>
-<pre><code>"I have a list of student grade dictionaries. How do I calculate 
+<pre class="text"><code>"I have a list of student grade dictionaries. How do I calculate 
 the median grade for the class? Show me both sorted and 
 statistics module approaches."</code></pre>
 <p>❌ <strong>Avoid These Prompts</strong>: - “Build a complete grade analysis system” - “Create a machine learning model for grade prediction” - “Add database integration and web interface”</p>
@@ -762,13 +762,13 @@ statistics module approaches."</code></pre>
 <h3 class="anchored" data-anchor-id="ai-learning-progression">AI Learning Progression</h3>
 <ol type="1">
 <li><p><strong>Data Cleaning Phase</strong>: Handling messy data</p>
-<pre><code>"My CSV has grades like '85', '92.5', 'N/A', '', and '102'. 
+<pre class="text"><code>"My CSV has grades like '85', '92.5', 'N/A', '', and '102'. 
 How do I clean and validate these values?"</code></pre></li>
 <li><p><strong>Statistics Phase</strong>: Mathematical analysis</p>
-<pre><code>"I need to calculate mean, median, and standard deviation 
+<pre class="text"><code>"I need to calculate mean, median, and standard deviation 
 for a list of grades. Show me simple implementations."</code></pre></li>
 <li><p><strong>Pattern Recognition</strong>: Finding insights</p>
-<pre><code>"How can I compare a student's recent grades to their 
+<pre class="text"><code>"How can I compare a student's recent grades to their 
 earlier grades to detect improvement or decline?"</code></pre></li>
 </ol>
 </section>
@@ -817,7 +817,7 @@ earlier grades to detect improvement or decline?"</code></pre></li>
 <section id="sample-interaction" class="level2" data-number="24.7">
 <h2 data-number="24.7" class="anchored" data-anchor-id="sample-interaction"><span class="header-section-number">24.7</span> Sample Interaction</h2>
 <p>Here’s how your analyzer might work:</p>
-<pre><code>📊 GRADE ANALYSIS TOOL 📊
+<pre class="text"><code>📊 GRADE ANALYSIS TOOL 📊
 ════════════════════════════
 
 Loading grades from 'class_grades.csv'...
@@ -1749,13 +1749,13 @@ INDIVIDUAL REPORTS
 <span id="cb17-90"><a href="#cb17-90" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effective Prompts for This Project</span></span>
 <span id="cb17-91"><a href="#cb17-91" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-92"><a href="#cb17-92" aria-hidden="true" tabindex="-1"></a>✅ **Good Learning Prompts**:</span>
-<span id="cb17-93"><a href="#cb17-93" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb17-93"><a href="#cb17-93" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb17-94"><a href="#cb17-94" aria-hidden="true" tabindex="-1"></a><span class="in">"I'm analysing grade data from CSV. Some cells are empty or contain </span></span>
 <span id="cb17-95"><a href="#cb17-95" aria-hidden="true" tabindex="-1"></a><span class="in">'N/A'. Show me how to safely convert grade values to numbers, </span></span>
 <span id="cb17-96"><a href="#cb17-96" aria-hidden="true" tabindex="-1"></a><span class="in">handling these edge cases."</span></span>
 <span id="cb17-97"><a href="#cb17-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb17-98"><a href="#cb17-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-99"><a href="#cb17-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb17-99"><a href="#cb17-99" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb17-100"><a href="#cb17-100" aria-hidden="true" tabindex="-1"></a><span class="in">"I have a list of student grade dictionaries. How do I calculate </span></span>
 <span id="cb17-101"><a href="#cb17-101" aria-hidden="true" tabindex="-1"></a><span class="in">the median grade for the class? Show me both sorted and </span></span>
 <span id="cb17-102"><a href="#cb17-102" aria-hidden="true" tabindex="-1"></a><span class="in">statistics module approaches."</span></span>
@@ -1769,19 +1769,19 @@ INDIVIDUAL REPORTS
 <span id="cb17-110"><a href="#cb17-110" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Learning Progression</span></span>
 <span id="cb17-111"><a href="#cb17-111" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-112"><a href="#cb17-112" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Data Cleaning Phase**: Handling messy data</span>
-<span id="cb17-113"><a href="#cb17-113" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb17-113"><a href="#cb17-113" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb17-114"><a href="#cb17-114" aria-hidden="true" tabindex="-1"></a><span class="in">   "My CSV has grades like '85', '92.5', 'N/A', '', and '102'. </span></span>
 <span id="cb17-115"><a href="#cb17-115" aria-hidden="true" tabindex="-1"></a><span class="in">   How do I clean and validate these values?"</span></span>
 <span id="cb17-116"><a href="#cb17-116" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb17-117"><a href="#cb17-117" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-118"><a href="#cb17-118" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Statistics Phase**: Mathematical analysis</span>
-<span id="cb17-119"><a href="#cb17-119" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb17-119"><a href="#cb17-119" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb17-120"><a href="#cb17-120" aria-hidden="true" tabindex="-1"></a><span class="in">   "I need to calculate mean, median, and standard deviation </span></span>
 <span id="cb17-121"><a href="#cb17-121" aria-hidden="true" tabindex="-1"></a><span class="in">   for a list of grades. Show me simple implementations."</span></span>
 <span id="cb17-122"><a href="#cb17-122" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb17-123"><a href="#cb17-123" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-124"><a href="#cb17-124" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Pattern Recognition**: Finding insights</span>
-<span id="cb17-125"><a href="#cb17-125" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb17-125"><a href="#cb17-125" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb17-126"><a href="#cb17-126" aria-hidden="true" tabindex="-1"></a><span class="in">   "How can I compare a student's recent grades to their </span></span>
 <span id="cb17-127"><a href="#cb17-127" aria-hidden="true" tabindex="-1"></a><span class="in">   earlier grades to detect improvement or decline?"</span></span>
 <span id="cb17-128"><a href="#cb17-128" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
@@ -1829,7 +1829,7 @@ INDIVIDUAL REPORTS
 <span id="cb17-170"><a href="#cb17-170" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-171"><a href="#cb17-171" aria-hidden="true" tabindex="-1"></a>Here's how your analyzer might work:</span>
 <span id="cb17-172"><a href="#cb17-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-173"><a href="#cb17-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb17-173"><a href="#cb17-173" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb17-174"><a href="#cb17-174" aria-hidden="true" tabindex="-1"></a><span class="in">📊 GRADE ANALYSIS TOOL 📊</span></span>
 <span id="cb17-175"><a href="#cb17-175" aria-hidden="true" tabindex="-1"></a><span class="in">════════════════════════════</span></span>
 <span id="cb17-176"><a href="#cb17-176" aria-hidden="true" tabindex="-1"></a></span>

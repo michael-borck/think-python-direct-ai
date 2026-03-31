@@ -699,21 +699,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exploration-1-finding-repetition" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-1-finding-repetition">Exploration 1: Finding Repetition</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me a program that greets 5 different people without using functions. 
+<pre class="text"><code>Show me a program that greets 5 different people without using functions. 
 Then show me how it looks with a function.</code></pre>
 <p>Notice how the function eliminates repetition?</p>
 </section>
 <section id="exploration-2-the-power-of-parameters" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-2-the-power-of-parameters">Exploration 2: The Power of Parameters</h3>
 <p>Try this prompt:</p>
-<pre><code>Explain how a coffee-making function might work differently based on inputs 
+<pre class="text"><code>Explain how a coffee-making function might work differently based on inputs 
 like "espresso" vs "latte" vs "cappuccino"</code></pre>
 <p>This shows how functions adapt based on what you give them.</p>
 </section>
 <section id="exploration-3-building-blocks" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-3-building-blocks">Exploration 3: Building Blocks</h3>
 <p>Ask:</p>
-<pre><code>How do functions help us build larger programs? Use a cooking app as an example.</code></pre>
+<pre class="text"><code>How do functions help us build larger programs? Use a cooking app as an example.</code></pre>
 <p>You’ll see how complex programs are just collections of simpler functions.</p>
 </section>
 </section>
@@ -723,7 +723,7 @@ like "espresso" vs "latte" vs "cappuccino"</code></pre>
 <section id="the-simplest-function" class="level3">
 <h3 class="anchored" data-anchor-id="the-simplest-function">The Simplest Function</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me the absolute simplest Python function that just prints "Hello". 
+<pre class="text"><code>Show me the absolute simplest Python function that just prints "Hello". 
 No parameters, no complexity.</code></pre>
 <p>You’ll get something like:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet():</span>
@@ -748,7 +748,7 @@ No parameters, no complexity.</code></pre>
 <h2 data-number="12.5" class="anchored" data-anchor-id="mental-model-building"><span class="header-section-number">12.5</span> Mental Model Building</h2>
 <section id="model-1-the-recipe-card" class="level3">
 <h3 class="anchored" data-anchor-id="model-1-the-recipe-card">Model 1: The Recipe Card</h3>
-<pre><code>Recipe: Make Greeting
+<pre class="text"><code>Recipe: Make Greeting
 Ingredients needed: [name]
 Steps:
 1. Take the name given
@@ -758,13 +758,13 @@ Steps:
 </section>
 <section id="model-2-the-machine" class="level3">
 <h3 class="anchored" data-anchor-id="model-2-the-machine">Model 2: The Machine</h3>
-<pre><code>     [name] → │ GREET  │ → "Hello, [name]!"
+<pre class="text"><code>     [name] → │ GREET  │ → "Hello, [name]!"
                │MACHINE │
                └────────┘</code></pre>
 </section>
 <section id="model-3-the-shortcut" class="level3">
 <h3 class="anchored" data-anchor-id="model-3-the-shortcut">Model 3: The Shortcut</h3>
-<pre><code>Instead of:
+<pre class="text"><code>Instead of:
   print("Hello, Alice!")
   print("Hello, Bob!")
   print("Hello, Charlie!")
@@ -780,23 +780,23 @@ We create:
 <p>Let’s practice getting the right function examples from AI.</p>
 <section id="round-1-too-vague" class="level3">
 <h3 class="anchored" data-anchor-id="round-1-too-vague">Round 1: Too Vague</h3>
-<pre><code>show me functions</code></pre>
+<pre class="text"><code>show me functions</code></pre>
 <p>You’ll get complex examples with returns, multiple parameters, and advanced features!</p>
 </section>
 <section id="round-2-more-specific" class="level3">
 <h3 class="anchored" data-anchor-id="round-2-more-specific">Round 2: More Specific</h3>
-<pre><code>show me simple Python functions for beginners</code></pre>
+<pre class="text"><code>show me simple Python functions for beginners</code></pre>
 <p>Better, but might still include concepts you haven’t learned.</p>
 </section>
 <section id="round-3-learning-focused" class="level3">
 <h3 class="anchored" data-anchor-id="round-3-learning-focused">Round 3: Learning-Focused</h3>
-<pre><code>I'm learning to create my own commands in Python. Show me a simple function 
+<pre class="text"><code>I'm learning to create my own commands in Python. Show me a simple function 
 that combines greeting and farewell messages.</code></pre>
 <p>Perfect for understanding!</p>
 </section>
 <section id="round-4-building-understanding" class="level3">
 <h3 class="anchored" data-anchor-id="round-4-building-understanding">Round 4: Building Understanding</h3>
-<pre><code>Using that function, show me how calling it multiple times saves code</code></pre>
+<pre class="text"><code>Using that function, show me how calling it multiple times saves code</code></pre>
 <p>This demonstrates the value of functions.</p>
 </section>
 </section>
@@ -1675,7 +1675,7 @@ Design Example
 <span id="cb27-45"><a href="#cb27-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 1: Finding Repetition</span></span>
 <span id="cb27-46"><a href="#cb27-46" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-47"><a href="#cb27-47" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb27-48"><a href="#cb27-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-48"><a href="#cb27-48" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-49"><a href="#cb27-49" aria-hidden="true" tabindex="-1"></a><span class="in">Show me a program that greets 5 different people without using functions. </span></span>
 <span id="cb27-50"><a href="#cb27-50" aria-hidden="true" tabindex="-1"></a><span class="in">Then show me how it looks with a function.</span></span>
 <span id="cb27-51"><a href="#cb27-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1685,7 +1685,7 @@ Design Example
 <span id="cb27-55"><a href="#cb27-55" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 2: The Power of Parameters</span></span>
 <span id="cb27-56"><a href="#cb27-56" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-57"><a href="#cb27-57" aria-hidden="true" tabindex="-1"></a>Try this prompt:</span>
-<span id="cb27-58"><a href="#cb27-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-58"><a href="#cb27-58" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-59"><a href="#cb27-59" aria-hidden="true" tabindex="-1"></a><span class="in">Explain how a coffee-making function might work differently based on inputs </span></span>
 <span id="cb27-60"><a href="#cb27-60" aria-hidden="true" tabindex="-1"></a><span class="in">like "espresso" vs "latte" vs "cappuccino"</span></span>
 <span id="cb27-61"><a href="#cb27-61" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1695,7 +1695,7 @@ Design Example
 <span id="cb27-65"><a href="#cb27-65" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 3: Building Blocks</span></span>
 <span id="cb27-66"><a href="#cb27-66" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-67"><a href="#cb27-67" aria-hidden="true" tabindex="-1"></a>Ask:</span>
-<span id="cb27-68"><a href="#cb27-68" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-68"><a href="#cb27-68" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-69"><a href="#cb27-69" aria-hidden="true" tabindex="-1"></a><span class="in">How do functions help us build larger programs? Use a cooking app as an example.</span></span>
 <span id="cb27-70"><a href="#cb27-70" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-71"><a href="#cb27-71" aria-hidden="true" tabindex="-1"></a></span>
@@ -1708,7 +1708,7 @@ Design Example
 <span id="cb27-78"><a href="#cb27-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Simplest Function</span></span>
 <span id="cb27-79"><a href="#cb27-79" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-80"><a href="#cb27-80" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb27-81"><a href="#cb27-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-81"><a href="#cb27-81" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-82"><a href="#cb27-82" aria-hidden="true" tabindex="-1"></a><span class="in">Show me the absolute simplest Python function that just prints "Hello". </span></span>
 <span id="cb27-83"><a href="#cb27-83" aria-hidden="true" tabindex="-1"></a><span class="in">No parameters, no complexity.</span></span>
 <span id="cb27-84"><a href="#cb27-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1740,7 +1740,7 @@ Design Example
 <span id="cb27-110"><a href="#cb27-110" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model Building</span></span>
 <span id="cb27-111"><a href="#cb27-111" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-112"><a href="#cb27-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 1: The Recipe Card</span></span>
-<span id="cb27-113"><a href="#cb27-113" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-113"><a href="#cb27-113" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-114"><a href="#cb27-114" aria-hidden="true" tabindex="-1"></a><span class="in">Recipe: Make Greeting</span></span>
 <span id="cb27-115"><a href="#cb27-115" aria-hidden="true" tabindex="-1"></a><span class="in">Ingredients needed: [name]</span></span>
 <span id="cb27-116"><a href="#cb27-116" aria-hidden="true" tabindex="-1"></a><span class="in">Steps:</span></span>
@@ -1751,14 +1751,14 @@ Design Example
 <span id="cb27-121"><a href="#cb27-121" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-122"><a href="#cb27-122" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-123"><a href="#cb27-123" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 2: The Machine</span></span>
-<span id="cb27-124"><a href="#cb27-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-124"><a href="#cb27-124" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-125"><a href="#cb27-125" aria-hidden="true" tabindex="-1"></a><span class="in">     [name] → │ GREET  │ → "Hello, [name]!"</span></span>
 <span id="cb27-126"><a href="#cb27-126" aria-hidden="true" tabindex="-1"></a><span class="in">               │MACHINE │</span></span>
 <span id="cb27-127"><a href="#cb27-127" aria-hidden="true" tabindex="-1"></a><span class="in">               └────────┘</span></span>
 <span id="cb27-128"><a href="#cb27-128" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-129"><a href="#cb27-129" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-130"><a href="#cb27-130" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 3: The Shortcut</span></span>
-<span id="cb27-131"><a href="#cb27-131" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-131"><a href="#cb27-131" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-132"><a href="#cb27-132" aria-hidden="true" tabindex="-1"></a><span class="in">Instead of:</span></span>
 <span id="cb27-133"><a href="#cb27-133" aria-hidden="true" tabindex="-1"></a><span class="in">  print("Hello, Alice!")</span></span>
 <span id="cb27-134"><a href="#cb27-134" aria-hidden="true" tabindex="-1"></a><span class="in">  print("Hello, Bob!")</span></span>
@@ -1775,26 +1775,26 @@ Design Example
 <span id="cb27-145"><a href="#cb27-145" aria-hidden="true" tabindex="-1"></a>Let's practice getting the right function examples from AI.</span>
 <span id="cb27-146"><a href="#cb27-146" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-147"><a href="#cb27-147" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 1: Too Vague</span></span>
-<span id="cb27-148"><a href="#cb27-148" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-148"><a href="#cb27-148" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-149"><a href="#cb27-149" aria-hidden="true" tabindex="-1"></a><span class="in">show me functions</span></span>
 <span id="cb27-150"><a href="#cb27-150" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-151"><a href="#cb27-151" aria-hidden="true" tabindex="-1"></a>You'll get complex examples with returns, multiple parameters, and advanced features!</span>
 <span id="cb27-152"><a href="#cb27-152" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-153"><a href="#cb27-153" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 2: More Specific</span></span>
-<span id="cb27-154"><a href="#cb27-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-154"><a href="#cb27-154" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-155"><a href="#cb27-155" aria-hidden="true" tabindex="-1"></a><span class="in">show me simple Python functions for beginners</span></span>
 <span id="cb27-156"><a href="#cb27-156" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-157"><a href="#cb27-157" aria-hidden="true" tabindex="-1"></a>Better, but might still include concepts you haven't learned.</span>
 <span id="cb27-158"><a href="#cb27-158" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-159"><a href="#cb27-159" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 3: Learning-Focused</span></span>
-<span id="cb27-160"><a href="#cb27-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-160"><a href="#cb27-160" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-161"><a href="#cb27-161" aria-hidden="true" tabindex="-1"></a><span class="in">I'm learning to create my own commands in Python. Show me a simple function </span></span>
 <span id="cb27-162"><a href="#cb27-162" aria-hidden="true" tabindex="-1"></a><span class="in">that combines greeting and farewell messages.</span></span>
 <span id="cb27-163"><a href="#cb27-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-164"><a href="#cb27-164" aria-hidden="true" tabindex="-1"></a>Perfect for understanding!</span>
 <span id="cb27-165"><a href="#cb27-165" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-166"><a href="#cb27-166" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 4: Building Understanding</span></span>
-<span id="cb27-167"><a href="#cb27-167" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-167"><a href="#cb27-167" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb27-168"><a href="#cb27-168" aria-hidden="true" tabindex="-1"></a><span class="in">Using that function, show me how calling it multiple times saves code</span></span>
 <span id="cb27-169"><a href="#cb27-169" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-170"><a href="#cb27-170" aria-hidden="true" tabindex="-1"></a>This demonstrates the value of functions.</span>

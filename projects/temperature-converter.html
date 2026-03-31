@@ -736,12 +736,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="effective-prompts-for-this-project" class="level3">
 <h3 class="anchored" data-anchor-id="effective-prompts-for-this-project">Effective Prompts for This Project</h3>
 <p>✅ <strong>Good Learning Prompts</strong>:</p>
-<pre><code>"I'm building a temperature converter using functions. I need a function 
+<pre class="text"><code>"I'm building a temperature converter using functions. I need a function 
 that converts Celsius to Fahrenheit. Show me the simplest implementation 
 with clear parameter and return value."</code></pre>
-<pre><code>"My converter has 6 conversion functions. How can I organise them to avoid 
+<pre class="text"><code>"My converter has 6 conversion functions. How can I organise them to avoid 
 a massive if/elif chain? Show me a clean approach using what I know."</code></pre>
-<pre><code>"I want to store conversion history as a list of dictionaries. 
+<pre class="text"><code>"I want to store conversion history as a list of dictionaries. 
 What's a simple structure that captures all relevant information?"</code></pre>
 <p>❌ <strong>Avoid These Prompts</strong>: - “Write a complete temperature converter program” - “Add GUI interface and graphing capabilities” - “Implement scientific temperature scales like Rankine”</p>
 </section>
@@ -749,16 +749,16 @@ What's a simple structure that captures all relevant information?"</code></pre>
 <h3 class="anchored" data-anchor-id="ai-learning-progression">AI Learning Progression</h3>
 <ol type="1">
 <li><p><strong>Design Phase</strong>: Validate conversion formulas</p>
-<pre><code>"What's the correct formula for Celsius to Kelvin? 
+<pre class="text"><code>"What's the correct formula for Celsius to Kelvin? 
 Show me with an example calculation."</code></pre></li>
 <li><p><strong>Implementation Phase</strong>: Build focused functions</p>
-<pre><code>"I need a function that takes Fahrenheit and returns Celsius. 
+<pre class="text"><code>"I need a function that takes Fahrenheit and returns Celsius. 
 It should handle negative temperatures correctly."</code></pre></li>
 <li><p><strong>organisation Phase</strong>: Connect functions cleanly</p>
-<pre><code>"I have 6 conversion functions. Show me how to call the right one 
+<pre class="text"><code>"I have 6 conversion functions. Show me how to call the right one 
 based on user's choice without complex if statements."</code></pre></li>
 <li><p><strong>Enhancement Phase</strong>: Add useful features</p>
-<pre><code>"How can I modify my display_result function to also show 
+<pre class="text"><code>"How can I modify my display_result function to also show 
 the conversion formula used?"</code></pre></li>
 </ol>
 </section>
@@ -808,7 +808,7 @@ the conversion formula used?"</code></pre></li>
 <section id="sample-interaction" class="level2" data-number="16.7">
 <h2 data-number="16.7" class="anchored" data-anchor-id="sample-interaction"><span class="header-section-number">16.7</span> Sample Interaction</h2>
 <p>Here’s how your converter might work:</p>
-<pre><code>🌡️  SMART TEMPERATURE CONVERTER  🌡️
+<pre class="text"><code>🌡️  SMART TEMPERATURE CONVERTER  🌡️
 ════════════════════════════════════
 
 1. Celsius to Fahrenheit
@@ -1612,18 +1612,18 @@ Press Enter to continue...</code></pre>
 <span id="cb16-90"><a href="#cb16-90" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effective Prompts for This Project</span></span>
 <span id="cb16-91"><a href="#cb16-91" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-92"><a href="#cb16-92" aria-hidden="true" tabindex="-1"></a>✅ **Good Learning Prompts**:</span>
-<span id="cb16-93"><a href="#cb16-93" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-93"><a href="#cb16-93" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-94"><a href="#cb16-94" aria-hidden="true" tabindex="-1"></a><span class="in">"I'm building a temperature converter using functions. I need a function </span></span>
 <span id="cb16-95"><a href="#cb16-95" aria-hidden="true" tabindex="-1"></a><span class="in">that converts Celsius to Fahrenheit. Show me the simplest implementation </span></span>
 <span id="cb16-96"><a href="#cb16-96" aria-hidden="true" tabindex="-1"></a><span class="in">with clear parameter and return value."</span></span>
 <span id="cb16-97"><a href="#cb16-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb16-98"><a href="#cb16-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-99"><a href="#cb16-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-99"><a href="#cb16-99" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-100"><a href="#cb16-100" aria-hidden="true" tabindex="-1"></a><span class="in">"My converter has 6 conversion functions. How can I organise them to avoid </span></span>
 <span id="cb16-101"><a href="#cb16-101" aria-hidden="true" tabindex="-1"></a><span class="in">a massive if/elif chain? Show me a clean approach using what I know."</span></span>
 <span id="cb16-102"><a href="#cb16-102" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb16-103"><a href="#cb16-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-104"><a href="#cb16-104" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-104"><a href="#cb16-104" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-105"><a href="#cb16-105" aria-hidden="true" tabindex="-1"></a><span class="in">"I want to store conversion history as a list of dictionaries. </span></span>
 <span id="cb16-106"><a href="#cb16-106" aria-hidden="true" tabindex="-1"></a><span class="in">What's a simple structure that captures all relevant information?"</span></span>
 <span id="cb16-107"><a href="#cb16-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1636,25 +1636,25 @@ Press Enter to continue...</code></pre>
 <span id="cb16-114"><a href="#cb16-114" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Learning Progression</span></span>
 <span id="cb16-115"><a href="#cb16-115" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-116"><a href="#cb16-116" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Design Phase**: Validate conversion formulas</span>
-<span id="cb16-117"><a href="#cb16-117" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-117"><a href="#cb16-117" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-118"><a href="#cb16-118" aria-hidden="true" tabindex="-1"></a><span class="in">   "What's the correct formula for Celsius to Kelvin? </span></span>
 <span id="cb16-119"><a href="#cb16-119" aria-hidden="true" tabindex="-1"></a><span class="in">   Show me with an example calculation."</span></span>
 <span id="cb16-120"><a href="#cb16-120" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb16-121"><a href="#cb16-121" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-122"><a href="#cb16-122" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Implementation Phase**: Build focused functions</span>
-<span id="cb16-123"><a href="#cb16-123" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-123"><a href="#cb16-123" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-124"><a href="#cb16-124" aria-hidden="true" tabindex="-1"></a><span class="in">   "I need a function that takes Fahrenheit and returns Celsius. </span></span>
 <span id="cb16-125"><a href="#cb16-125" aria-hidden="true" tabindex="-1"></a><span class="in">   It should handle negative temperatures correctly."</span></span>
 <span id="cb16-126"><a href="#cb16-126" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb16-127"><a href="#cb16-127" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-128"><a href="#cb16-128" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**organisation Phase**: Connect functions cleanly</span>
-<span id="cb16-129"><a href="#cb16-129" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-129"><a href="#cb16-129" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-130"><a href="#cb16-130" aria-hidden="true" tabindex="-1"></a><span class="in">   "I have 6 conversion functions. Show me how to call the right one </span></span>
 <span id="cb16-131"><a href="#cb16-131" aria-hidden="true" tabindex="-1"></a><span class="in">   based on user's choice without complex if statements."</span></span>
 <span id="cb16-132"><a href="#cb16-132" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb16-133"><a href="#cb16-133" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-134"><a href="#cb16-134" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Enhancement Phase**: Add useful features</span>
-<span id="cb16-135"><a href="#cb16-135" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-135"><a href="#cb16-135" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-136"><a href="#cb16-136" aria-hidden="true" tabindex="-1"></a><span class="in">   "How can I modify my display_result function to also show </span></span>
 <span id="cb16-137"><a href="#cb16-137" aria-hidden="true" tabindex="-1"></a><span class="in">   the conversion formula used?"</span></span>
 <span id="cb16-138"><a href="#cb16-138" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
@@ -1703,7 +1703,7 @@ Press Enter to continue...</code></pre>
 <span id="cb16-181"><a href="#cb16-181" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-182"><a href="#cb16-182" aria-hidden="true" tabindex="-1"></a>Here's how your converter might work:</span>
 <span id="cb16-183"><a href="#cb16-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-184"><a href="#cb16-184" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-184"><a href="#cb16-184" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-185"><a href="#cb16-185" aria-hidden="true" tabindex="-1"></a><span class="in">🌡️  SMART TEMPERATURE CONVERTER  🌡️</span></span>
 <span id="cb16-186"><a href="#cb16-186" aria-hidden="true" tabindex="-1"></a><span class="in">════════════════════════════════════</span></span>
 <span id="cb16-187"><a href="#cb16-187" aria-hidden="true" tabindex="-1"></a></span>

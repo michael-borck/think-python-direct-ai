@@ -697,21 +697,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exploration-1-the-problem-with-temporary-data" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-1-the-problem-with-temporary-data">Exploration 1: The Problem with Temporary Data</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me a simple score tracking program that loses all data when it ends. 
+<pre class="text"><code>Show me a simple score tracking program that loses all data when it ends. 
 Then show how files could preserve the scores.</code></pre>
 <p>See how files solve the persistence problem?</p>
 </section>
 <section id="exploration-2-file-operations" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-2-file-operations">Exploration 2: File Operations</h3>
 <p>Try this prompt:</p>
-<pre><code>Explain the difference between read, write, and append modes 
+<pre class="text"><code>Explain the difference between read, write, and append modes 
 using a diary or journal as an analogy.</code></pre>
 <p>This clarifies when to use each mode.</p>
 </section>
 <section id="exploration-3-real-world-file-uses" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-3-real-world-file-uses">Exploration 3: Real-World File Uses</h3>
 <p>Ask:</p>
-<pre><code>What kinds of files do games, apps, and programs typically save? 
+<pre class="text"><code>What kinds of files do games, apps, and programs typically save? 
 Give simple examples without code.</code></pre>
 <p>You’ll see files are everywhere in software!</p>
 </section>
@@ -722,7 +722,7 @@ Give simple examples without code.</code></pre>
 <section id="writing-creating-files" class="level3">
 <h3 class="anchored" data-anchor-id="writing-creating-files">Writing: Creating Files</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me the absolute simplest way to save a message to a file in Python. 
+<pre class="text"><code>Show me the absolute simplest way to save a message to a file in Python. 
 No error handling, just the basics.</code></pre>
 <p>You’ll get something like:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Write to a file</span></span>
@@ -749,7 +749,7 @@ No error handling, just the basics.</code></pre>
 <h2 data-number="14.5" class="anchored" data-anchor-id="mental-model-building"><span class="header-section-number">14.5</span> Mental Model Building</h2>
 <section id="model-1-files-as-notebooks" class="level3">
 <h3 class="anchored" data-anchor-id="model-1-files-as-notebooks">Model 1: Files as Notebooks</h3>
-<pre><code>Program → 📓 File
+<pre class="text"><code>Program → 📓 File
          Write
          
 Later...
@@ -759,7 +759,7 @@ Program → 📓 File
 </section>
 <section id="model-2-the-file-cabinet" class="level3">
 <h3 class="anchored" data-anchor-id="model-2-the-file-cabinet">Model 2: The File Cabinet</h3>
-<pre><code>Your Computer's Storage:
+<pre class="text"><code>Your Computer's Storage:
 📁 Documents/
   📄 scores.txt ← Your program can read/write
   📄 notes.txt
@@ -767,7 +767,7 @@ Program → 📓 File
 </section>
 <section id="model-3-the-save-game-slot" class="level3">
 <h3 class="anchored" data-anchor-id="model-3-the-save-game-slot">Model 3: The Save Game Slot</h3>
-<pre><code>Without Files:           With Files:
+<pre class="text"><code>Without Files:           With Files:
 [Play Game]             [Play Game]
 Score: 1000      →      Score: 1000
 [Quit]                  [Save &amp; Quit]
@@ -781,23 +781,23 @@ Score: 0 😢             Score: 1000 😊</code></pre>
 <p>Let’s practice getting file examples from AI.</p>
 <section id="round-1-too-vague" class="level3">
 <h3 class="anchored" data-anchor-id="round-1-too-vague">Round 1: Too Vague</h3>
-<pre><code>show me file handling</code></pre>
+<pre class="text"><code>show me file handling</code></pre>
 <p>You’ll get binary files, JSON, CSV, exception handling - overwhelming!</p>
 </section>
 <section id="round-2-more-specific" class="level3">
 <h3 class="anchored" data-anchor-id="round-2-more-specific">Round 2: More Specific</h3>
-<pre><code>show me reading and writing text files in Python</code></pre>
+<pre class="text"><code>show me reading and writing text files in Python</code></pre>
 <p>Better, but might still include complex modes and methods.</p>
 </section>
 <section id="round-3-learning-focused" class="level3">
 <h3 class="anchored" data-anchor-id="round-3-learning-focused">Round 3: Learning-Focused</h3>
-<pre><code>I'm learning to save program data. Show me how to save a shopping list 
+<pre class="text"><code>I'm learning to save program data. Show me how to save a shopping list 
 to a file and read it back, keeping it simple.</code></pre>
 <p>Perfect for understanding!</p>
 </section>
 <section id="round-4-building-understanding" class="level3">
 <h3 class="anchored" data-anchor-id="round-4-building-understanding">Round 4: Building Understanding</h3>
-<pre><code>Now show me how to add new items to the existing shopping list file</code></pre>
+<pre class="text"><code>Now show me how to add new items to the existing shopping list file</code></pre>
 <p>This introduces append mode.</p>
 </section>
 </section>
@@ -1669,7 +1669,7 @@ Design Example
 <span id="cb26-40"><a href="#cb26-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 1: The Problem with Temporary Data</span></span>
 <span id="cb26-41"><a href="#cb26-41" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-42"><a href="#cb26-42" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb26-43"><a href="#cb26-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-43"><a href="#cb26-43" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-44"><a href="#cb26-44" aria-hidden="true" tabindex="-1"></a><span class="in">Show me a simple score tracking program that loses all data when it ends. </span></span>
 <span id="cb26-45"><a href="#cb26-45" aria-hidden="true" tabindex="-1"></a><span class="in">Then show how files could preserve the scores.</span></span>
 <span id="cb26-46"><a href="#cb26-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1679,7 +1679,7 @@ Design Example
 <span id="cb26-50"><a href="#cb26-50" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 2: File Operations</span></span>
 <span id="cb26-51"><a href="#cb26-51" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-52"><a href="#cb26-52" aria-hidden="true" tabindex="-1"></a>Try this prompt:</span>
-<span id="cb26-53"><a href="#cb26-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-53"><a href="#cb26-53" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-54"><a href="#cb26-54" aria-hidden="true" tabindex="-1"></a><span class="in">Explain the difference between read, write, and append modes </span></span>
 <span id="cb26-55"><a href="#cb26-55" aria-hidden="true" tabindex="-1"></a><span class="in">using a diary or journal as an analogy.</span></span>
 <span id="cb26-56"><a href="#cb26-56" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1689,7 +1689,7 @@ Design Example
 <span id="cb26-60"><a href="#cb26-60" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 3: Real-World File Uses</span></span>
 <span id="cb26-61"><a href="#cb26-61" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-62"><a href="#cb26-62" aria-hidden="true" tabindex="-1"></a>Ask:</span>
-<span id="cb26-63"><a href="#cb26-63" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-63"><a href="#cb26-63" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-64"><a href="#cb26-64" aria-hidden="true" tabindex="-1"></a><span class="in">What kinds of files do games, apps, and programs typically save? </span></span>
 <span id="cb26-65"><a href="#cb26-65" aria-hidden="true" tabindex="-1"></a><span class="in">Give simple examples without code.</span></span>
 <span id="cb26-66"><a href="#cb26-66" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1703,7 +1703,7 @@ Design Example
 <span id="cb26-74"><a href="#cb26-74" aria-hidden="true" tabindex="-1"></a><span class="fu">### Writing: Creating Files</span></span>
 <span id="cb26-75"><a href="#cb26-75" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-76"><a href="#cb26-76" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb26-77"><a href="#cb26-77" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-77"><a href="#cb26-77" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-78"><a href="#cb26-78" aria-hidden="true" tabindex="-1"></a><span class="in">Show me the absolute simplest way to save a message to a file in Python. </span></span>
 <span id="cb26-79"><a href="#cb26-79" aria-hidden="true" tabindex="-1"></a><span class="in">No error handling, just the basics.</span></span>
 <span id="cb26-80"><a href="#cb26-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1737,7 +1737,7 @@ Design Example
 <span id="cb26-108"><a href="#cb26-108" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model Building</span></span>
 <span id="cb26-109"><a href="#cb26-109" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-110"><a href="#cb26-110" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 1: Files as Notebooks</span></span>
-<span id="cb26-111"><a href="#cb26-111" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-111"><a href="#cb26-111" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-112"><a href="#cb26-112" aria-hidden="true" tabindex="-1"></a><span class="in">Program → 📓 File</span></span>
 <span id="cb26-113"><a href="#cb26-113" aria-hidden="true" tabindex="-1"></a><span class="in">         Write</span></span>
 <span id="cb26-114"><a href="#cb26-114" aria-hidden="true" tabindex="-1"></a><span class="in">         </span></span>
@@ -1748,7 +1748,7 @@ Design Example
 <span id="cb26-119"><a href="#cb26-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-120"><a href="#cb26-120" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-121"><a href="#cb26-121" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 2: The File Cabinet</span></span>
-<span id="cb26-122"><a href="#cb26-122" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-122"><a href="#cb26-122" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-123"><a href="#cb26-123" aria-hidden="true" tabindex="-1"></a><span class="in">Your Computer's Storage:</span></span>
 <span id="cb26-124"><a href="#cb26-124" aria-hidden="true" tabindex="-1"></a><span class="in">📁 Documents/</span></span>
 <span id="cb26-125"><a href="#cb26-125" aria-hidden="true" tabindex="-1"></a><span class="in">  📄 scores.txt ← Your program can read/write</span></span>
@@ -1757,7 +1757,7 @@ Design Example
 <span id="cb26-128"><a href="#cb26-128" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-129"><a href="#cb26-129" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-130"><a href="#cb26-130" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 3: The Save Game Slot</span></span>
-<span id="cb26-131"><a href="#cb26-131" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-131"><a href="#cb26-131" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-132"><a href="#cb26-132" aria-hidden="true" tabindex="-1"></a><span class="in">Without Files:           With Files:</span></span>
 <span id="cb26-133"><a href="#cb26-133" aria-hidden="true" tabindex="-1"></a><span class="in">[Play Game]             [Play Game]</span></span>
 <span id="cb26-134"><a href="#cb26-134" aria-hidden="true" tabindex="-1"></a><span class="in">Score: 1000      →      Score: 1000</span></span>
@@ -1772,26 +1772,26 @@ Design Example
 <span id="cb26-143"><a href="#cb26-143" aria-hidden="true" tabindex="-1"></a>Let's practice getting file examples from AI.</span>
 <span id="cb26-144"><a href="#cb26-144" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-145"><a href="#cb26-145" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 1: Too Vague</span></span>
-<span id="cb26-146"><a href="#cb26-146" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-146"><a href="#cb26-146" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-147"><a href="#cb26-147" aria-hidden="true" tabindex="-1"></a><span class="in">show me file handling</span></span>
 <span id="cb26-148"><a href="#cb26-148" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-149"><a href="#cb26-149" aria-hidden="true" tabindex="-1"></a>You'll get binary files, JSON, CSV, exception handling - overwhelming!</span>
 <span id="cb26-150"><a href="#cb26-150" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-151"><a href="#cb26-151" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 2: More Specific</span></span>
-<span id="cb26-152"><a href="#cb26-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-152"><a href="#cb26-152" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-153"><a href="#cb26-153" aria-hidden="true" tabindex="-1"></a><span class="in">show me reading and writing text files in Python</span></span>
 <span id="cb26-154"><a href="#cb26-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-155"><a href="#cb26-155" aria-hidden="true" tabindex="-1"></a>Better, but might still include complex modes and methods.</span>
 <span id="cb26-156"><a href="#cb26-156" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-157"><a href="#cb26-157" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 3: Learning-Focused</span></span>
-<span id="cb26-158"><a href="#cb26-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-158"><a href="#cb26-158" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-159"><a href="#cb26-159" aria-hidden="true" tabindex="-1"></a><span class="in">I'm learning to save program data. Show me how to save a shopping list </span></span>
 <span id="cb26-160"><a href="#cb26-160" aria-hidden="true" tabindex="-1"></a><span class="in">to a file and read it back, keeping it simple.</span></span>
 <span id="cb26-161"><a href="#cb26-161" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-162"><a href="#cb26-162" aria-hidden="true" tabindex="-1"></a>Perfect for understanding!</span>
 <span id="cb26-163"><a href="#cb26-163" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-164"><a href="#cb26-164" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 4: Building Understanding</span></span>
-<span id="cb26-165"><a href="#cb26-165" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-165"><a href="#cb26-165" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-166"><a href="#cb26-166" aria-hidden="true" tabindex="-1"></a><span class="in">Now show me how to add new items to the existing shopping list file</span></span>
 <span id="cb26-167"><a href="#cb26-167" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-168"><a href="#cb26-168" aria-hidden="true" tabindex="-1"></a>This introduces append mode.</span>

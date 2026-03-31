@@ -689,7 +689,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-universal-pattern" class="level3">
 <h3 class="anchored" data-anchor-id="the-universal-pattern">The Universal Pattern</h3>
 <p>Every decision has the same structure:</p>
-<pre><code>IF (something is true)
+<pre class="text"><code>IF (something is true)
     THEN do this
 ELSE
     do that instead</code></pre>
@@ -701,19 +701,19 @@ ELSE
 <section id="exploration-1-types-of-decisions" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-1-types-of-decisions">Exploration 1: Types of Decisions</h3>
 <p>Ask your AI:</p>
-<pre><code>Give me 5 examples of decisions a smart home system makes, showing the IF-THEN pattern</code></pre>
+<pre class="text"><code>Give me 5 examples of decisions a smart home system makes, showing the IF-THEN pattern</code></pre>
 <p>Notice how each follows: condition → action.</p>
 </section>
 <section id="exploration-2-real-app-logic" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-2-real-app-logic">Exploration 2: Real App Logic</h3>
 <p>Try this prompt:</p>
-<pre><code>What decisions does a music app make when you press play? List them as IF-THEN rules.</code></pre>
+<pre class="text"><code>What decisions does a music app make when you press play? List them as IF-THEN rules.</code></pre>
 <p>You’ll see layers of decisions that create smooth user experience.</p>
 </section>
 <section id="exploration-3-decision-trees" class="level3">
 <h3 class="anchored" data-anchor-id="exploration-3-decision-trees">Exploration 3: Decision Trees</h3>
 <p>Ask:</p>
-<pre><code>Draw a simple decision tree for an ATM withdrawal process</code></pre>
+<pre class="text"><code>Draw a simple decision tree for an ATM withdrawal process</code></pre>
 <p>This reveals how decisions can branch and create complex behaviour from simple rules.</p>
 </section>
 </section>
@@ -723,7 +723,7 @@ ELSE
 <section id="the-simplest-expression" class="level3">
 <h3 class="anchored" data-anchor-id="the-simplest-expression">The Simplest Expression</h3>
 <p>Ask your AI:</p>
-<pre><code>Show me the absolute simplest Python if statement that checks if a number is positive. No functions or complexity.</code></pre>
+<pre class="text"><code>Show me the absolute simplest Python if statement that checks if a number is positive. No functions or complexity.</code></pre>
 <p>You’ll get something like:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> number <span class="op">&gt;</span> <span class="dv">0</span>:</span>
@@ -748,7 +748,7 @@ ELSE
 <h2 data-number="5.5" class="anchored" data-anchor-id="mental-model-building"><span class="header-section-number">5.5</span> Mental Model Building</h2>
 <section id="model-1-the-fork-in-the-road" class="level3">
 <h3 class="anchored" data-anchor-id="model-1-the-fork-in-the-road">Model 1: The Fork in the Road</h3>
-<pre><code>     Program flow
+<pre class="text"><code>     Program flow
           ↓
     [IF condition?]
        ↙     ↘
@@ -761,14 +761,14 @@ ELSE
 </section>
 <section id="model-2-the-gatekeeper" class="level3">
 <h3 class="anchored" data-anchor-id="model-2-the-gatekeeper">Model 2: The Gatekeeper</h3>
-<pre><code>if password == "secret123":
+<pre class="text"><code>if password == "secret123":
     🚪 Gate Opens → Enter
 else:
     🚫 Gate Stays Closed → Stay Out</code></pre>
 </section>
 <section id="model-3-the-traffic-light" class="level3">
 <h3 class="anchored" data-anchor-id="model-3-the-traffic-light">Model 3: The Traffic Light</h3>
-<pre><code>if light == "green":
+<pre class="text"><code>if light == "green":
     → GO
 elif light == "yellow":  
     → SLOW DOWN
@@ -781,22 +781,22 @@ else:  # red
 <p>Practice getting decision examples from AI.</p>
 <section id="round-1-too-vague" class="level3">
 <h3 class="anchored" data-anchor-id="round-1-too-vague">Round 1: Too Vague</h3>
-<pre><code>show me if statements</code></pre>
+<pre class="text"><code>show me if statements</code></pre>
 <p>You’ll get complex nested conditions and advanced patterns!</p>
 </section>
 <section id="round-2-more-specific" class="level3">
 <h3 class="anchored" data-anchor-id="round-2-more-specific">Round 2: More Specific</h3>
-<pre><code>show me Python if statement examples</code></pre>
+<pre class="text"><code>show me Python if statement examples</code></pre>
 <p>Better, but still might include functions and complex logic.</p>
 </section>
 <section id="round-3-learning-focused" class="level3">
 <h3 class="anchored" data-anchor-id="round-3-learning-focused">Round 3: Learning-Focused</h3>
-<pre><code>I'm learning how programs make decisions. Show me the simplest possible if statement that checks user input.</code></pre>
+<pre class="text"><code>I'm learning how programs make decisions. Show me the simplest possible if statement that checks user input.</code></pre>
 <p>Now we’re learning-sized!</p>
 </section>
 <section id="round-4-building-understanding" class="level3">
 <h3 class="anchored" data-anchor-id="round-4-building-understanding">Round 4: Building Understanding</h3>
-<pre><code>Using that example, trace through what happens when the user enters different values</code></pre>
+<pre class="text"><code>Using that example, trace through what happens when the user enters different values</code></pre>
 <p>This builds deep understanding of flow.</p>
 </section>
 </section>
@@ -1619,7 +1619,7 @@ Design Example
 <span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Universal Pattern</span></span>
 <span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>Every decision has the same structure:</span>
-<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a><span class="in">IF (something is true)</span></span>
 <span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a><span class="in">    THEN do this</span></span>
 <span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a><span class="in">ELSE</span></span>
@@ -1633,7 +1633,7 @@ Design Example
 <span id="cb26-46"><a href="#cb26-46" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 1: Types of Decisions</span></span>
 <span id="cb26-47"><a href="#cb26-47" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-48"><a href="#cb26-48" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb26-49"><a href="#cb26-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-49"><a href="#cb26-49" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-50"><a href="#cb26-50" aria-hidden="true" tabindex="-1"></a><span class="in">Give me 5 examples of decisions a smart home system makes, showing the IF-THEN pattern</span></span>
 <span id="cb26-51"><a href="#cb26-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-52"><a href="#cb26-52" aria-hidden="true" tabindex="-1"></a></span>
@@ -1642,7 +1642,7 @@ Design Example
 <span id="cb26-55"><a href="#cb26-55" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 2: Real App Logic</span></span>
 <span id="cb26-56"><a href="#cb26-56" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-57"><a href="#cb26-57" aria-hidden="true" tabindex="-1"></a>Try this prompt:</span>
-<span id="cb26-58"><a href="#cb26-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-58"><a href="#cb26-58" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-59"><a href="#cb26-59" aria-hidden="true" tabindex="-1"></a><span class="in">What decisions does a music app make when you press play? List them as IF-THEN rules.</span></span>
 <span id="cb26-60"><a href="#cb26-60" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-61"><a href="#cb26-61" aria-hidden="true" tabindex="-1"></a></span>
@@ -1651,7 +1651,7 @@ Design Example
 <span id="cb26-64"><a href="#cb26-64" aria-hidden="true" tabindex="-1"></a><span class="fu">### Exploration 3: Decision Trees</span></span>
 <span id="cb26-65"><a href="#cb26-65" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-66"><a href="#cb26-66" aria-hidden="true" tabindex="-1"></a>Ask:</span>
-<span id="cb26-67"><a href="#cb26-67" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-67"><a href="#cb26-67" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-68"><a href="#cb26-68" aria-hidden="true" tabindex="-1"></a><span class="in">Draw a simple decision tree for an ATM withdrawal process</span></span>
 <span id="cb26-69"><a href="#cb26-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-70"><a href="#cb26-70" aria-hidden="true" tabindex="-1"></a></span>
@@ -1664,7 +1664,7 @@ Design Example
 <span id="cb26-77"><a href="#cb26-77" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Simplest Expression</span></span>
 <span id="cb26-78"><a href="#cb26-78" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-79"><a href="#cb26-79" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
-<span id="cb26-80"><a href="#cb26-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-80"><a href="#cb26-80" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-81"><a href="#cb26-81" aria-hidden="true" tabindex="-1"></a><span class="in">Show me the absolute simplest Python if statement that checks if a number is positive. No functions or complexity.</span></span>
 <span id="cb26-82"><a href="#cb26-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-83"><a href="#cb26-83" aria-hidden="true" tabindex="-1"></a></span>
@@ -1698,7 +1698,7 @@ Design Example
 <span id="cb26-111"><a href="#cb26-111" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model Building</span></span>
 <span id="cb26-112"><a href="#cb26-112" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-113"><a href="#cb26-113" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 1: The Fork in the Road</span></span>
-<span id="cb26-114"><a href="#cb26-114" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-114"><a href="#cb26-114" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-115"><a href="#cb26-115" aria-hidden="true" tabindex="-1"></a><span class="in">     Program flow</span></span>
 <span id="cb26-116"><a href="#cb26-116" aria-hidden="true" tabindex="-1"></a><span class="in">          ↓</span></span>
 <span id="cb26-117"><a href="#cb26-117" aria-hidden="true" tabindex="-1"></a><span class="in">    [IF condition?]</span></span>
@@ -1712,7 +1712,7 @@ Design Example
 <span id="cb26-125"><a href="#cb26-125" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-126"><a href="#cb26-126" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-127"><a href="#cb26-127" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 2: The Gatekeeper</span></span>
-<span id="cb26-128"><a href="#cb26-128" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-128"><a href="#cb26-128" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-129"><a href="#cb26-129" aria-hidden="true" tabindex="-1"></a><span class="in">if password == "secret123":</span></span>
 <span id="cb26-130"><a href="#cb26-130" aria-hidden="true" tabindex="-1"></a><span class="in">    🚪 Gate Opens → Enter</span></span>
 <span id="cb26-131"><a href="#cb26-131" aria-hidden="true" tabindex="-1"></a><span class="in">else:</span></span>
@@ -1720,7 +1720,7 @@ Design Example
 <span id="cb26-133"><a href="#cb26-133" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-134"><a href="#cb26-134" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-135"><a href="#cb26-135" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model 3: The Traffic Light</span></span>
-<span id="cb26-136"><a href="#cb26-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-136"><a href="#cb26-136" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-137"><a href="#cb26-137" aria-hidden="true" tabindex="-1"></a><span class="in">if light == "green":</span></span>
 <span id="cb26-138"><a href="#cb26-138" aria-hidden="true" tabindex="-1"></a><span class="in">    → GO</span></span>
 <span id="cb26-139"><a href="#cb26-139" aria-hidden="true" tabindex="-1"></a><span class="in">elif light == "yellow":  </span></span>
@@ -1734,25 +1734,25 @@ Design Example
 <span id="cb26-147"><a href="#cb26-147" aria-hidden="true" tabindex="-1"></a>Practice getting decision examples from AI.</span>
 <span id="cb26-148"><a href="#cb26-148" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-149"><a href="#cb26-149" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 1: Too Vague</span></span>
-<span id="cb26-150"><a href="#cb26-150" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-150"><a href="#cb26-150" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-151"><a href="#cb26-151" aria-hidden="true" tabindex="-1"></a><span class="in">show me if statements</span></span>
 <span id="cb26-152"><a href="#cb26-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-153"><a href="#cb26-153" aria-hidden="true" tabindex="-1"></a>You'll get complex nested conditions and advanced patterns!</span>
 <span id="cb26-154"><a href="#cb26-154" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-155"><a href="#cb26-155" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 2: More Specific</span></span>
-<span id="cb26-156"><a href="#cb26-156" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-156"><a href="#cb26-156" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-157"><a href="#cb26-157" aria-hidden="true" tabindex="-1"></a><span class="in">show me Python if statement examples</span></span>
 <span id="cb26-158"><a href="#cb26-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-159"><a href="#cb26-159" aria-hidden="true" tabindex="-1"></a>Better, but still might include functions and complex logic.</span>
 <span id="cb26-160"><a href="#cb26-160" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-161"><a href="#cb26-161" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 3: Learning-Focused</span></span>
-<span id="cb26-162"><a href="#cb26-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-162"><a href="#cb26-162" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-163"><a href="#cb26-163" aria-hidden="true" tabindex="-1"></a><span class="in">I'm learning how programs make decisions. Show me the simplest possible if statement that checks user input.</span></span>
 <span id="cb26-164"><a href="#cb26-164" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-165"><a href="#cb26-165" aria-hidden="true" tabindex="-1"></a>Now we're learning-sized!</span>
 <span id="cb26-166"><a href="#cb26-166" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-167"><a href="#cb26-167" aria-hidden="true" tabindex="-1"></a><span class="fu">### Round 4: Building Understanding</span></span>
-<span id="cb26-168"><a href="#cb26-168" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-168"><a href="#cb26-168" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb26-169"><a href="#cb26-169" aria-hidden="true" tabindex="-1"></a><span class="in">Using that example, trace through what happens when the user enters different values</span></span>
 <span id="cb26-170"><a href="#cb26-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-171"><a href="#cb26-171" aria-hidden="true" tabindex="-1"></a>This builds deep understanding of flow.</span>

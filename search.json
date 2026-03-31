@@ -60,11 +60,21 @@
     ]
   },
   {
+    "objectID": "index.html#conventions-used-in-this-book",
+    "href": "index.html#conventions-used-in-this-book",
+    "title": "Think Python, Direct AI",
+    "section": "Conventions Used in This Book",
+    "text": "Conventions Used in This Book\nThroughout the book, AI exploration prompts appear as grey monospace blocks — these are things you type into your AI tool:\nShow me 5 examples of input→process→output\nin everyday life\nCode examples appear with syntax highlighting:\nname = input(\"What is your name? \")\nprint(f\"Hello, {name}!\")\nYou will also encounter coloured callout boxes:\n\n\n\n\n\n\nTipPractical advice\n\n\n\nGreen boxes offer tips you can apply immediately — things to try, exploration suggestions.\n\n\n\n\n\n\n\n\nNoteKey concept\n\n\n\nBlue boxes highlight important ideas worth pausing on — mental models, patterns, principles.\n\n\n\n\n\n\n\n\nWarningWatch out\n\n\n\nYellow boxes flag common mistakes or misconceptions that trip up beginners.\n\n\n\n\n\n\n\n\nImportantCritical point\n\n\n\nRed boxes mark things that are essential to understand before moving on.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
     "objectID": "index.html#the-series",
     "href": "index.html#the-series",
     "title": "Think Python, Direct AI",
     "section": "The Series",
-    "text": "The Series\nThis book is the first in a Python learning path:\n\nThink Python, Direct AI (this book) — computational thinking for absolute beginners\nCode Python, Consult AI — focused Python fundamentals with AI integration\nShip Python, Orchestrate AI — professional Python development practices and tooling\n\nThe methodology behind all three comes from Conversation, Not Delegation: How to Think With AI, Not Just Use It, which covers the full framework for working with AI across any discipline.\nAll titles are available at books.borck.education.",
+    "text": "The Series\nThis book is part of a series designed to help you master modern software development in the AI era.\n\nflowchart TD\n    CND[\"Conversation,&lt;br/&gt;Not Delegation\"]\n    CPPA[\"Converse Python,&lt;br/&gt;Partner AI\"]\n    Think[\"Think Python,&lt;br/&gt;Direct AI\"]\n    Code[\"Code Python,&lt;br/&gt;Consult AI\"]\n    Ship[\"Ship Python,&lt;br/&gt;Orchestrate AI\"]\n    Web[\"Build Web,&lt;br/&gt;Guide AI\"]\n    CND --&gt; CPPA\n    CND --&gt; Web\n    CPPA --&gt; Think\n    Think --&gt; Code\n    Code --&gt; Ship\n\n\n\n\nflowchart TD\n    CND[\"Conversation,&lt;br/&gt;Not Delegation\"]\n    CPPA[\"Converse Python,&lt;br/&gt;Partner AI\"]\n    Think[\"Think Python,&lt;br/&gt;Direct AI\"]\n    Code[\"Code Python,&lt;br/&gt;Consult AI\"]\n    Ship[\"Ship Python,&lt;br/&gt;Orchestrate AI\"]\n    Web[\"Build Web,&lt;br/&gt;Guide AI\"]\n    CND --&gt; CPPA\n    CND --&gt; Web\n    CPPA --&gt; Think\n    Think --&gt; Code\n    Code --&gt; Ship\n\n\n\n\n\n\nConversation, Not Delegation — the general methodology for working with AI across any discipline.\nConverse Python, Partner AI — intentional prompting methodology applied to software development.\nThink Python, Direct AI (this book) — computational thinking for absolute beginners.\nCode Python, Consult AI — focused Python fundamentals with AI integration.\nShip Python, Orchestrate AI — professional Python development practices and tooling.\nBuild Web, Guide AI — web development with AI as your development partner.\nAll titles are available at books.borck.education.",
     "crumbs": [
       "Preface"
     ]
@@ -187,11 +197,22 @@
     ]
   },
   {
+    "objectID": "chapters/chapter-understanding-ai-partner.html#why-not-just-vibe-code",
+    "href": "chapters/chapter-understanding-ai-partner.html#why-not-just-vibe-code",
+    "title": "1  Understanding Your AI Partner",
+    "section": "1.8 Why Not Just Vibe Code?",
+    "text": "1.8 Why Not Just Vibe Code?\nThere is a popular approach called “vibe coding” — prompting AI until something works, without worrying too much about understanding the code. For quick experiments and throwaway scripts, it can be genuinely useful. If you just need a one-off script to rename some files, vibe coding is fine.\nBut vibe coding has a ceiling, and you hit it fast.\nWhen a vibe-coded program breaks, you cannot fix it — you can only paste the error back into the AI and hope. When requirements change, you start over because you never understood the original design. When the project grows beyond a single file, you have no mental model of how the pieces connect, so every change risks breaking something else. The AI gets stuck too — it suggests fixes that introduce new bugs, because it is guessing at the architecture just like you are.\nThe exercises in this book look simple. A temperature converter. A greeting program. A number game. You could vibe code all of them in minutes. But that is not the point.\nThe point is developing habits that scale. The student who learns to decompose a temperature converter into input, process, and output will decompose a web application into routes, handlers, and data layers. The student who learns to trace through a loop by hand will find the off-by-one error that the AI cannot see. The student who learns to write pseudocode before code will give the AI specifications precise enough to produce correct implementations on the first try.\n\n\n\n\n\n\nImportantThe real skill\n\n\n\nThe exercises are simple so you can focus on the process, not the problem. Once the process is second nature, you can apply it to problems that are too complex to vibe code — and those are the problems that matter professionally.\n\n\nOne more thing: this book does not argue for avoiding AI until you are ready to write code. AI is your thinking partner throughout. Use it to brainstorm what a program should do. Use it to explore edge cases you had not considered. Use it to check your understanding of a concept. Use it to trace through your logic before you write a single line. The three learning strategies in this chapter — concept before code, explore not avoid, build mental models — all involve AI. The difference between this approach and vibe coding is not whether you use AI. It is whether you are thinking alongside it or just accepting what it gives you.",
+    "crumbs": [
+      "Part 0: Your AI Learning Partnership",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
+    ]
+  },
+  {
     "objectID": "chapters/chapter-understanding-ai-partner.html#practice-prompt-evolution-mastery",
     "href": "chapters/chapter-understanding-ai-partner.html#practice-prompt-evolution-mastery",
     "title": "1  Understanding Your AI Partner",
-    "section": "1.8 Practice: Prompt Evolution Mastery",
-    "text": "1.8 Practice: Prompt Evolution Mastery\nLet’s practice the core skill you’ll use throughout this book. Complete each evolution:\n\nEvolution 1: Calculator\n\nStart: “calculator”\nBetter: “simple calculator”\nBetter: “basic calculator that adds two numbers”\nBest: “Show me the simplest Python code that takes two numbers and adds them, demonstrating input, process, and output”\n\n\n\nEvolution 2: Your Turn\nStart with “game” and evolve it to get the simplest possible guessing game. Document each step.\n\n\nEvolution 3: Concept First\nStart with “loops” and evolve it to get an explanation of repetition before any code.",
+    "section": "1.9 Practice: Prompt Evolution Mastery",
+    "text": "1.9 Practice: Prompt Evolution Mastery\nLet’s practice the core skill you’ll use throughout this book. Complete each evolution:\n\nEvolution 1: Calculator\n\nStart: “calculator”\nBetter: “simple calculator”\nBetter: “basic calculator that adds two numbers”\nBest: “Show me the simplest Python code that takes two numbers and adds them, demonstrating input, process, and output”\n\n\n\nEvolution 2: Your Turn\nStart with “game” and evolve it to get the simplest possible guessing game. Document each step.\n\n\nEvolution 3: Concept First\nStart with “loops” and evolve it to get an explanation of repetition before any code.",
     "crumbs": [
       "Part 0: Your AI Learning Partnership",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
@@ -201,8 +222,8 @@
     "objectID": "chapters/chapter-understanding-ai-partner.html#exercises",
     "href": "chapters/chapter-understanding-ai-partner.html#exercises",
     "title": "1  Understanding Your AI Partner",
-    "section": "1.9 Exercises",
-    "text": "1.9 Exercises\n\n\nExercise 0.1: Concept Recognition\n\n\nrecognising AI’s Patterns\nAsk three different AI assistants (or the same one three times) for a “greeting program”.\nDocument: 1. What they all included 2. What was unnecessarily complex 3. What the simplest version could be\n\n\nWhat to Look For\n\nMost AIs will include: - Functions (unnecessary for simple greeting) - Error handling (not needed yet) - Multiple options or features - Complex string formatting\nThe simplest version needs only: - Get a name (input) - Create greeting (process) - Display it (output)\n\n\n\n\n\nExercise 0.2: Prompt Engineering\n\n\nBuilding Better Prompts\nTransform each vague prompt into a learning-focused prompt:\n\n“Show me variables”\n“Explain functions”\n“Write a file handler”\n\n\n\nExample Transformations\n\n\n“Show me variables” → “I’m learning about storing data in programs. Explain the concept of variables using a real-world analogy, then show the simplest Python example”\n“Explain functions” → “I understand basic input/output. Explain why we might want to group code together, using real examples, before showing any syntax”\n“Write a file handler” → “I know basic Python concepts. Show me the simplest possible way to save text to a file and read it back”\n\n\n\n\n\n\nExercise 0.3: Simplification Practice\n\n\nMaking AI Code Learner-Friendly\nGet AI to write a “number doubling program”. Then iterate with these prompts: 1. “Make it simpler” 2. “Remove any advanced features” 3. “Make it suitable for someone who just learned about input and output”\nDocument how the code changes with each iteration.\n\n\n\n\nExercise 0.4: Mental Model Building\n\n\nUnderstanding AI’s Thinking\nWrite a brief explanation (no code) of: 1. Why AI tends to make code complex 2. How you can guide it to be simpler 3. What makes a good learning-focused prompt\nShare this with a classmate or friend. Can they understand it?\n\n\n\n\nExercise 0.5: Design Your Learning\n\n\nArchitect Your AI Partnership\nDesign your personal AI learning strategy: 1. What kinds of prompts will you start with? 2. How will you know when to make code simpler? 3. What questions will you ask to deepen understanding? 4. How will you track your progress?\nCreate a “My AI Learning Plan” document.",
+    "section": "1.10 Exercises",
+    "text": "1.10 Exercises\n\n\nExercise 0.1: Concept Recognition\n\n\nrecognising AI’s Patterns\nAsk three different AI assistants (or the same one three times) for a “greeting program”.\nDocument: 1. What they all included 2. What was unnecessarily complex 3. What the simplest version could be\n\n\nWhat to Look For\n\nMost AIs will include: - Functions (unnecessary for simple greeting) - Error handling (not needed yet) - Multiple options or features - Complex string formatting\nThe simplest version needs only: - Get a name (input) - Create greeting (process) - Display it (output)\n\n\n\n\n\nExercise 0.2: Prompt Engineering\n\n\nBuilding Better Prompts\nTransform each vague prompt into a learning-focused prompt:\n\n“Show me variables”\n“Explain functions”\n“Write a file handler”\n\n\n\nExample Transformations\n\n\n“Show me variables” → “I’m learning about storing data in programs. Explain the concept of variables using a real-world analogy, then show the simplest Python example”\n“Explain functions” → “I understand basic input/output. Explain why we might want to group code together, using real examples, before showing any syntax”\n“Write a file handler” → “I know basic Python concepts. Show me the simplest possible way to save text to a file and read it back”\n\n\n\n\n\n\nExercise 0.3: Simplification Practice\n\n\nMaking AI Code Learner-Friendly\nGet AI to write a “number doubling program”. Then iterate with these prompts: 1. “Make it simpler” 2. “Remove any advanced features” 3. “Make it suitable for someone who just learned about input and output”\nDocument how the code changes with each iteration.\n\n\n\n\nExercise 0.4: Mental Model Building\n\n\nUnderstanding AI’s Thinking\nWrite a brief explanation (no code) of: 1. Why AI tends to make code complex 2. How you can guide it to be simpler 3. What makes a good learning-focused prompt\nShare this with a classmate or friend. Can they understand it?\n\n\n\n\nExercise 0.5: Design Your Learning\n\n\nArchitect Your AI Partnership\nDesign your personal AI learning strategy: 1. What kinds of prompts will you start with? 2. How will you know when to make code simpler? 3. What questions will you ask to deepen understanding? 4. How will you track your progress?\nCreate a “My AI Learning Plan” document.",
     "crumbs": [
       "Part 0: Your AI Learning Partnership",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
@@ -212,8 +233,8 @@
     "objectID": "chapters/chapter-understanding-ai-partner.html#chapter-summary",
     "href": "chapters/chapter-understanding-ai-partner.html#chapter-summary",
     "title": "1  Understanding Your AI Partner",
-    "section": "1.10 Chapter Summary",
-    "text": "1.10 Chapter Summary\n\nAI is your learning partner, not your replacement\nClear prompts lead to clear learning\nUnderstanding concepts matters more than memorizing syntax\nYou’re learning to be an architect who happens to use AI as a tool\nPrompt evolution is a core skill for modern programmers",
+    "section": "1.11 Chapter Summary",
+    "text": "1.11 Chapter Summary\n\nAI is your learning partner, not your replacement\nClear prompts lead to clear learning\nUnderstanding concepts matters more than memorizing syntax\nYou’re learning to be an architect who happens to use AI as a tool\nPrompt evolution is a core skill for modern programmers",
     "crumbs": [
       "Part 0: Your AI Learning Partnership",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
@@ -223,8 +244,8 @@
     "objectID": "chapters/chapter-understanding-ai-partner.html#reflection",
     "href": "chapters/chapter-understanding-ai-partner.html#reflection",
     "title": "1  Understanding Your AI Partner",
-    "section": "1.11 Reflection",
-    "text": "1.11 Reflection\nBefore moving to Chapter 1, ensure you:\n\nCompleted the Partnership Experiment\nUnderstand why AI overcomplicates by default\nCan evolve prompts from vague to learning-focused\nSee yourself as an architect, not a code typist\nHave a plan for using AI as a learning partner",
+    "section": "1.12 Reflection",
+    "text": "1.12 Reflection\nBefore moving to Chapter 1, ensure you:\n\nCompleted the Partnership Experiment\nUnderstand why AI overcomplicates by default\nCan evolve prompts from vague to learning-focused\nSee yourself as an architect, not a code typist\nHave a plan for using AI as a learning partner",
     "crumbs": [
       "Part 0: Your AI Learning Partnership",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
@@ -234,8 +255,8 @@
     "objectID": "chapters/chapter-understanding-ai-partner.html#your-learning-journal",
     "href": "chapters/chapter-understanding-ai-partner.html#your-learning-journal",
     "title": "1  Understanding Your AI Partner",
-    "section": "1.12 Your Learning Journal",
-    "text": "1.12 Your Learning Journal\nStart your learning journal now. For this chapter, record:\n\nPartnership Experiment Results: What surprised you about AI’s responses?\nPrompt Evolution Practice: Which evolution was hardest? Why?\nMental Model: Draw or describe how you now think about AI as a learning partner\nPersonal Goal: What kind of programmer do you want to become?\n\n\n\n\n\n\n\nTipJournal Tip\n\n\n\nYour journal is not for perfect answers. It’s for honest reflection. Write what you really think, not what you think sounds good.",
+    "section": "1.13 Your Learning Journal",
+    "text": "1.13 Your Learning Journal\nStart your learning journal now. For this chapter, record:\n\nPartnership Experiment Results: What surprised you about AI’s responses?\nPrompt Evolution Practice: Which evolution was hardest? Why?\nMental Model: Draw or describe how you now think about AI as a learning partner\nPersonal Goal: What kind of programmer do you want to become?\n\n\n\n\n\n\n\nTipJournal Tip\n\n\n\nYour journal is not for perfect answers. It’s for honest reflection. Write what you really think, not what you think sounds good.",
     "crumbs": [
       "Part 0: Your AI Learning Partnership",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
@@ -245,8 +266,8 @@
     "objectID": "chapters/chapter-understanding-ai-partner.html#related-materials",
     "href": "chapters/chapter-understanding-ai-partner.html#related-materials",
     "title": "1  Understanding Your AI Partner",
-    "section": "1.13 Related Materials",
-    "text": "1.13 Related Materials\nThis book is part of a comprehensive series for mastering modern software development in the AI era:\nFoundational Methodology\n\nConverse Python, Partner AI: The Python Edition\n\nPython Track\n\nThink Python, Direct AI: Computational Thinking for Beginners (this book) - Perfect for absolute beginners\nCode Python, Consult AI: Python Fundamentals for the AI Era - Core Python knowledge\nShip Python, Orchestrate AI - Professional Python in the AI Era\n\nWeb Track\n\nBuild Web, Guide AI: Business Web Development with AI - HTML, CSS, JavaScript, WordPress, React",
+    "section": "1.14 Related Materials",
+    "text": "1.14 Related Materials\nThis book is part of a comprehensive series for mastering modern software development in the AI era:\nFoundational Methodology\n\nConverse Python, Partner AI: The Python Edition\n\nPython Track\n\nThink Python, Direct AI: Computational Thinking for Beginners (this book) - Perfect for absolute beginners\nCode Python, Consult AI: Python Fundamentals for the AI Era - Core Python knowledge\nShip Python, Orchestrate AI - Professional Python in the AI Era\n\nWeb Track\n\nBuild Web, Guide AI: Business Web Development with AI - HTML, CSS, JavaScript, WordPress, React",
     "crumbs": [
       "Part 0: Your AI Learning Partnership",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
@@ -256,8 +277,8 @@
     "objectID": "chapters/chapter-understanding-ai-partner.html#next-steps",
     "href": "chapters/chapter-understanding-ai-partner.html#next-steps",
     "title": "1  Understanding Your AI Partner",
-    "section": "1.14 Next Steps",
-    "text": "1.14 Next Steps\nIn Chapter 1, we’ll explore the fundamental pattern of all programs: Input → Process → Output. You’ll use your new prompt evolution skills to discover this pattern with AI’s help, then build a clear mental model of how all programs work.\nRemember: You’re not learning to code. You’re learning to think computationally and direct AI to help you build solutions. Let’s begin!",
+    "section": "1.15 Next Steps",
+    "text": "1.15 Next Steps\nIn Chapter 1, we’ll explore the fundamental pattern of all programs: Input → Process → Output. You’ll use your new prompt evolution skills to discover this pattern with AI’s help, then build a clear mental model of how all programs work.\nRemember: You’re not learning to code. You’re learning to think computationally and direct AI to help you build solutions. Let’s begin!",
     "crumbs": [
       "Part 0: Your AI Learning Partnership",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Understanding Your AI Partner</span>"
@@ -3370,7 +3391,18 @@
     "href": "chapters/chapter-working-with-data.html",
     "title": "20  Chapter 10: Working with Data",
     "section": "",
-    "text": "20.1 Introduction: Data Is Everywhere\nUp until now, your programs have worked with data you typed in or created yourself. But the real world runs on data files - spreadsheets of grades, lists of products, weather records, and more. Learning to work with these files opens up endless possibilities.\nThink of data files like different types of containers: - CSV files are like spreadsheets - rows and columns of information - JSON files are like nested folders - organised hierarchies of data - Text files are like notebooks - free-form information",
+    "text": "20.1 The Concept First\nUp until now, your programs have worked with data you typed in or created yourself. But real programs work with existing data — grade books, weather records, product inventories, survey results. The data already exists somewhere; your job is to read it, make sense of it, and do something useful.\nThink of it this way: you already know how to cook (write programs). Now you need to learn how to unpack groceries (read data files). The food arrives in different packaging — cans, bags, boxes — and you need to know how to open each one before you can start cooking.\nTwo formats dominate the data world. CSV is like a spreadsheet saved as plain text — rows and columns separated by commas, nothing fancy. JSON is like a set of nested labelled boxes — open one and you might find more boxes inside, each with its own label. Most data you’ll encounter comes in one of these two formats.",
+    "crumbs": [
+      "Part III: Real-World Programming (Weeks 9-12)",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-working-with-data.html#discovering-data-with-your-ai-partner",
+    "href": "chapters/chapter-working-with-data.html#discovering-data-with-your-ai-partner",
+    "title": "20  Chapter 10: Working with Data",
+    "section": "20.2 Discovering Data with Your AI Partner",
+    "text": "20.2 Discovering Data with Your AI Partner\nBefore we write any code, let’s build intuition for how data files work.\nAsk your AI:\nShow me what a CSV file looks like as plain text, then show me\nthe same information as JSON. Use a simple example like 3 students\nwith names and grades.\nNotice how CSV is flat and table-like while JSON can nest information inside other information. This difference drives when you’d choose each format.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3380,19 +3412,19 @@
     "objectID": "chapters/chapter-working-with-data.html#csv-files-your-gateway-to-spreadsheet-data",
     "href": "chapters/chapter-working-with-data.html#csv-files-your-gateway-to-spreadsheet-data",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.2 CSV Files: Your Gateway to Spreadsheet Data",
-    "text": "20.2 CSV Files: Your Gateway to Spreadsheet Data\nCSV stands for “Comma-Separated Values” - it’s the simplest way to store table-like data. Every spreadsheet program can export to CSV, making it a universal data format.\n\nUnderstanding CSV Structure\nImagine a grade book:\nName,Quiz1,Quiz2,MidTerm,Final\nAlice,85,92,88,91\nBob,78,85,82,79\nCharlie,91,88,94,96\nEach line is a row, commas separate columns. Simple, but powerful!\n\n\nThe AI Partnership Approach\nLet’s explore CSV files together:\n\n\n\n\n\n\nTipPrompt Engineering for CSV\n\n\n\n“I have a CSV file with student grades. Show me how to read it and calculate each student’s average. Keep it simple - just the basics.”\n\n\nAI will likely show you Python’s csv module. But here’s the learning approach:\n\nFirst, understand the structure - Read the file as plain text first\nThen, parse manually - Split by commas yourself\n\nFinally, use the tools - Apply the csv module\n\n\n\nBuilding a Grade Analyzer\nLet’s design a program that reads student grades and provides insights:\ndef read_grades_simple(filename):\n    \"\"\"Read grades from CSV - learning version\"\"\"\n    grades = []\n    \n    with open(filename, 'r') as file:\n        # Skip header line\n        header = file.readline()\n        \n        # Read each student\n        for line in file:\n            parts = line.strip().split(',')\n            student = {\n                'name': parts[0],\n                'grades': [int(parts[i]) for i in range(1, len(parts))]\n            }\n            grades.append(student)\n    \n    return grades\n\ndef calculate_average(grades):\n    \"\"\"Calculate average grade\"\"\"\n    return sum(grades) / len(grades)\n\n# Use the functions\nstudents = read_grades_simple('grades.csv')\nfor student in students:\n    avg = calculate_average(student['grades'])\n    print(f\"{student['name']}: {avg:.1f}\")\n\n\n\n\n\n\nWarningExpression Explorer: List Comprehension\n\n\n\nThe line [int(parts[i]) for i in range(1, len(parts))] is a list comprehension. Ask AI: “Explain this list comprehension by showing me the loop version first.”\n\n\n\n\nCommon CSV Patterns\nWhen working with CSV files, you’ll often need to:\n\nSkip headers - First line often contains column names\nHandle missing data - Empty cells are common\nConvert types - Everything starts as text\nDeal with special characters - Commas in data, quotes, etc.",
+    "section": "20.3 CSV Files: Your Gateway to Spreadsheet Data",
+    "text": "20.3 CSV Files: Your Gateway to Spreadsheet Data\nCSV stands for “Comma-Separated Values” - it’s the simplest way to store table-like data. Every spreadsheet program can export to CSV, making it a universal data format.\n\n\n\n\n\n\nNoteMental Model: CSV as a Text Spreadsheet\n\n\n\nPicture a spreadsheet. Now imagine stripping away the grid lines, the colours, the formulas — and just keeping the text, with commas where the column borders were. That’s a CSV file. Each line is a row, each comma marks a new column. You could create one in any text editor.\n\n\n\nUnderstanding CSV Structure\nImagine a grade book:\nName,Quiz1,Quiz2,MidTerm,Final\nAlice,85,92,88,91\nBob,78,85,82,79\nCharlie,91,88,94,96\nEach line is a row, commas separate columns. Simple, but powerful!\n\n\nThe AI Partnership Approach\nLet’s explore CSV files together:\n\n\n\n\n\n\nTipPrompt Engineering for CSV\n\n\n\n“I have a CSV file with student grades. Show me how to read it and calculate each student’s average. Keep it simple - just the basics.”\n\n\nAI will likely show you Python’s csv module. But here’s the learning approach:\n\nFirst, understand the structure - Read the file as plain text first\nThen, parse manually - Split by commas yourself\n\nFinally, use the tools - Apply the csv module\n\n\n\nBuilding a Grade Analyzer\nLet’s design a program that reads student grades and provides insights:\ndef read_grades_simple(filename):\n    \"\"\"Read grades from CSV - learning version\"\"\"\n    grades = []\n    \n    with open(filename, 'r') as file:\n        # Skip header line\n        header = file.readline()\n        \n        # Read each student\n        for line in file:\n            parts = line.strip().split(',')\n            student = {\n                'name': parts[0],\n                'grades': [int(parts[i]) for i in range(1, len(parts))]\n            }\n            grades.append(student)\n    \n    return grades\n\ndef calculate_average(grades):\n    \"\"\"Calculate average grade\"\"\"\n    return sum(grades) / len(grades)\n\n# Use the functions\nstudents = read_grades_simple('grades.csv')\nfor student in students:\n    avg = calculate_average(student['grades'])\n    print(f\"{student['name']}: {avg:.1f}\")\n\n\n\n\n\n\nWarningExpression Explorer: List Comprehension\n\n\n\nThe line [int(parts[i]) for i in range(1, len(parts))] is a list comprehension. Ask AI: “Explain this list comprehension by showing me the loop version first.”\n\n\n\n\nCommon CSV Patterns\nWhen working with CSV files, you’ll often need to:\n\nSkip headers - First line often contains column names\nHandle missing data - Empty cells are common\nConvert types - Everything starts as text\nDeal with special characters - Commas in data, quotes, etc.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-working-with-data.html#json-when-data-gets-interesting",
-    "href": "chapters/chapter-working-with-data.html#json-when-data-gets-interesting",
+    "objectID": "chapters/chapter-working-with-data.html#from-tables-to-trees-json",
+    "href": "chapters/chapter-working-with-data.html#from-tables-to-trees-json",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.3 JSON: When Data Gets Interesting",
-    "text": "20.3 JSON: When Data Gets Interesting\nJSON (JavaScript Object Notation) is how modern applications share data. It’s like Python dictionaries written as text - perfect for complex, nested information.\n\nUnderstanding JSON Structure\nHere’s a contact list in JSON:\n{\n    \"contacts\": [\n        {\n            \"name\": \"Alice Smith\",\n            \"phone\": \"555-1234\",\n            \"email\": \"alice@email.com\",\n            \"tags\": [\"friend\", \"work\"]\n        },\n        {\n            \"name\": \"Bob Jones\",\n            \"phone\": \"555-5678\",\n            \"email\": \"bob@email.com\",\n            \"tags\": [\"family\"]\n        }\n    ],\n    \"last_updated\": \"2024-03-15\"\n}\nLook familiar? It’s like the dictionaries you’ve been using!\n\n\nWorking with JSON Data\nPython makes JSON easy:\nimport json\n\ndef load_contacts(filename):\n    \"\"\"Load contacts from JSON file\"\"\"\n    with open(filename, 'r') as file:\n        data = json.load(file)\n    return data\n\ndef save_contacts(contacts, filename):\n    \"\"\"Save contacts to JSON file\"\"\"\n    with open(filename, 'w') as file:\n        json.dump(contacts, file, indent=4)\n\n# Use it\ndata = load_contacts('contacts.json')\nprint(f\"You have {len(data['contacts'])} contacts\")\n\n\n\n\n\n\nTipAI Learning Pattern\n\n\n\nAsk AI: “I have a JSON file with nested data. Show me how to navigate through it step by step, printing what’s at each level.”\n\n\n\n\nJSON vs CSV: Choosing the Right Format\nUse CSV when: - Data is tabular (rows and columns) - You need Excel compatibility - Structure is simple and flat\nUse JSON when: - Data has nested relationships - You need flexible structure - Working with web APIs",
+    "section": "20.4 From Tables to Trees: JSON",
+    "text": "20.4 From Tables to Trees: JSON\nCSV works brilliantly for flat, table-shaped data. But what happens when your data has structure within structure — a contact who has multiple phone numbers, or a student who belongs to several clubs? You need a format that can nest information. That’s where JSON comes in.\nJSON (JavaScript Object Notation) is how modern applications share data. It’s like Python dictionaries written as text - perfect for complex, nested information.\n\n\n\n\n\n\nNoteMental Model: JSON as Labelled Boxes\n\n\n\nThink of JSON like a set of nested labelled boxes. You open a box marked “contacts” and find smaller boxes inside, each labelled with a person’s name. Open one of those and you find even smaller boxes: “phone”, “email”, “tags”. Each box either contains a value or more boxes. If you’ve used Python dictionaries, you already understand the idea.\n\n\nAsk your AI:\nTake this CSV data and convert it to JSON. Then show me a case\nwhere CSV can't easily represent the data but JSON can — like a\nstudent who has multiple email addresses.\nThis will show you exactly why both formats exist.\n\nUnderstanding JSON Structure\nHere’s a contact list in JSON:\n{\n    \"contacts\": [\n        {\n            \"name\": \"Alice Smith\",\n            \"phone\": \"555-1234\",\n            \"email\": \"alice@email.com\",\n            \"tags\": [\"friend\", \"work\"]\n        },\n        {\n            \"name\": \"Bob Jones\",\n            \"phone\": \"555-5678\",\n            \"email\": \"bob@email.com\",\n            \"tags\": [\"family\"]\n        }\n    ],\n    \"last_updated\": \"2024-03-15\"\n}\nLook familiar? It’s like the dictionaries you’ve been using!\n\n\nWorking with JSON Data\nPython makes JSON easy:\nimport json\n\ndef load_contacts(filename):\n    \"\"\"Load contacts from JSON file\"\"\"\n    with open(filename, 'r') as file:\n        data = json.load(file)\n    return data\n\ndef save_contacts(contacts, filename):\n    \"\"\"Save contacts to JSON file\"\"\"\n    with open(filename, 'w') as file:\n        json.dump(contacts, file, indent=4)\n\n# Use it\ndata = load_contacts('contacts.json')\nprint(f\"You have {len(data['contacts'])} contacts\")\n\n\n\n\n\n\nTipAI Learning Pattern\n\n\n\nAsk AI: “I have a JSON file with nested data. Show me how to navigate through it step by step, printing what’s at each level.”\n\n\n\n\nJSON vs CSV: Choosing the Right Format\nUse CSV when: - Data is tabular (rows and columns) - You need Excel compatibility - Structure is simple and flat\nUse JSON when: - Data has nested relationships - You need flexible structure - Working with web APIs",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3402,8 +3434,8 @@
     "objectID": "chapters/chapter-working-with-data.html#real-world-data-analysis",
     "href": "chapters/chapter-working-with-data.html#real-world-data-analysis",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.4 Real-World Data Analysis",
-    "text": "20.4 Real-World Data Analysis\nLet’s combine everything into a practical example - analysing weather data:\n\nThe Weather Data Project\nImagine you have weather data in CSV format:\nDate,Temperature,Humidity,Conditions\n2024-03-01,72,65,Sunny\n2024-03-02,68,70,Cloudy\n2024-03-03,65,80,Rainy\nLet’s build an analyzer:\ndef analyze_weather(filename):\n    \"\"\"analyse weather patterns\"\"\"\n    data = []\n    \n    # Read the data\n    with open(filename, 'r') as file:\n        header = file.readline()\n        for line in file:\n            parts = line.strip().split(',')\n            data.append({\n                'date': parts[0],\n                'temp': int(parts[1]),\n                'humidity': int(parts[2]),\n                'conditions': parts[3]\n            })\n    \n    # Find patterns\n    temps = [day['temp'] for day in data]\n    avg_temp = sum(temps) / len(temps)\n    \n    rainy_days = [day for day in data if day['conditions'] == 'Rainy']\n    \n    return {\n        'average_temperature': avg_temp,\n        'total_days': len(data),\n        'rainy_days': len(rainy_days),\n        'data': data\n    }",
+    "section": "20.5 Real-World Data Analysis",
+    "text": "20.5 Real-World Data Analysis\nLet’s combine everything into a practical example - analysing weather data:\n\nThe Weather Data Project\nImagine you have weather data in CSV format:\nDate,Temperature,Humidity,Conditions\n2024-03-01,72,65,Sunny\n2024-03-02,68,70,Cloudy\n2024-03-03,65,80,Rainy\nLet’s build an analyzer:\ndef analyze_weather(filename):\n    \"\"\"analyse weather patterns\"\"\"\n    data = []\n    \n    # Read the data\n    with open(filename, 'r') as file:\n        header = file.readline()\n        for line in file:\n            parts = line.strip().split(',')\n            data.append({\n                'date': parts[0],\n                'temp': int(parts[1]),\n                'humidity': int(parts[2]),\n                'conditions': parts[3]\n            })\n    \n    # Find patterns\n    temps = [day['temp'] for day in data]\n    avg_temp = sum(temps) / len(temps)\n    \n    rainy_days = [day for day in data if day['conditions'] == 'Rainy']\n    \n    return {\n        'average_temperature': avg_temp,\n        'total_days': len(data),\n        'rainy_days': len(rainy_days),\n        'data': data\n    }",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3413,8 +3445,8 @@
     "objectID": "chapters/chapter-working-with-data.html#data-cleaning-the-hidden-challenge",
     "href": "chapters/chapter-working-with-data.html#data-cleaning-the-hidden-challenge",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.5 Data Cleaning: The Hidden Challenge",
-    "text": "20.5 Data Cleaning: The Hidden Challenge\nReal-world data is messy! Here’s what you’ll encounter:\n\nCommon Data Problems\n\nMissing values - Empty cells or “N/A”\nInconsistent formats - “3/15/24” vs “2024-03-15”\nExtra spaces - ” Alice ” vs “Alice”\nWrong types - “123” stored as text\n\n\n\nCleaning Strategies\ndef clean_value(value):\n    \"\"\"Clean a data value\"\"\"\n    # Remove extra spaces\n    value = value.strip()\n    \n    # Handle empty values\n    if value == \"\" or value == \"N/A\":\n        return None\n    \n    return value\n\ndef safe_int(value):\n    \"\"\"Convert to int safely\"\"\"\n    try:\n        return int(value)\n    except ValueError:\n        return 0\n\n\n\n\n\n\nImportantData Cleaning Reality\n\n\n\nProfessional programmers spend 80% of their time cleaning data! When working with AI, always ask: “What could go wrong with this data? Show me how to handle those cases.”",
+    "section": "20.6 Data Cleaning: The Hidden Challenge",
+    "text": "20.6 Data Cleaning: The Hidden Challenge\nReal-world data is messy! Here’s what you’ll encounter:\n\nCommon Data Problems\n\nMissing values - Empty cells or “N/A”\nInconsistent formats - “3/15/24” vs “2024-03-15”\nExtra spaces - ” Alice ” vs “Alice”\nWrong types - “123” stored as text\n\n\n\nCleaning Strategies\ndef clean_value(value):\n    \"\"\"Clean a data value\"\"\"\n    # Remove extra spaces\n    value = value.strip()\n    \n    # Handle empty values\n    if value == \"\" or value == \"N/A\":\n        return None\n    \n    return value\n\ndef safe_int(value):\n    \"\"\"Convert to int safely\"\"\"\n    try:\n        return int(value)\n    except ValueError:\n        return 0\n\n\n\n\n\n\nImportantData Cleaning Reality\n\n\n\nProfessional programmers spend 80% of their time cleaning data! When working with AI, always ask: “What could go wrong with this data? Show me how to handle those cases.”",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3424,8 +3456,8 @@
     "objectID": "chapters/chapter-working-with-data.html#building-a-data-pipeline",
     "href": "chapters/chapter-working-with-data.html#building-a-data-pipeline",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.6 Building a Data Pipeline",
-    "text": "20.6 Building a Data Pipeline\nA data pipeline is a series of steps that transform raw data into useful information:\n\nLoad - Read from file\nClean - Fix problems\nTransform - Calculate new values\nanalyse - Find patterns\nReport - Present results\n\n\nExample: Student Performance Pipeline\ndef process_student_data(csv_file):\n    \"\"\"Complete pipeline for student data\"\"\"\n    # Load\n    students = load_csv(csv_file)\n    \n    # Clean\n    for student in students:\n        student['grades'] = [safe_int(g) for g in student['grades']]\n    \n    # Transform\n    for student in students:\n        student['average'] = calculate_average(student['grades'])\n        student['letter_grade'] = get_letter_grade(student['average'])\n    \n    # analyse\n    class_average = sum(s['average'] for s in students) / len(students)\n    \n    # Report\n    print(f\"Class Average: {class_average:.1f}\")\n    print(\"\\nTop Students:\")\n    top_students = sorted(students, key=lambda s: s['average'], reverse=True)[:3]\n    for student in top_students:\n        print(f\"  {student['name']}: {student['average']:.1f}\")",
+    "section": "20.7 Building a Data Pipeline",
+    "text": "20.7 Building a Data Pipeline\nA data pipeline is a series of steps that transform raw data into useful information:\n\nLoad - Read from file\nClean - Fix problems\nTransform - Calculate new values\nanalyse - Find patterns\nReport - Present results\n\n\nExample: Student Performance Pipeline\ndef process_student_data(csv_file):\n    \"\"\"Complete pipeline for student data\"\"\"\n    # Load\n    students = load_csv(csv_file)\n    \n    # Clean\n    for student in students:\n        student['grades'] = [safe_int(g) for g in student['grades']]\n    \n    # Transform\n    for student in students:\n        student['average'] = calculate_average(student['grades'])\n        student['letter_grade'] = get_letter_grade(student['average'])\n    \n    # analyse\n    class_average = sum(s['average'] for s in students) / len(students)\n    \n    # Report\n    print(f\"Class Average: {class_average:.1f}\")\n    print(\"\\nTop Students:\")\n    top_students = sorted(students, key=lambda s: s['average'], reverse=True)[:3]\n    for student in top_students:\n        print(f\"  {student['name']}: {student['average']:.1f}\")",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3435,8 +3467,8 @@
     "objectID": "chapters/chapter-working-with-data.html#working-with-large-files",
     "href": "chapters/chapter-working-with-data.html#working-with-large-files",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.7 Working with Large Files",
-    "text": "20.7 Working with Large Files\nSometimes data files are huge - millions of rows! Here’s how to handle them:\n\nReading Files in Chunks\ndef process_large_file(filename, chunk_size=1000):\n    \"\"\"Process a large file in chunks\"\"\"\n    with open(filename, 'r') as file:\n        header = file.readline()\n        \n        chunk = []\n        for line in file:\n            chunk.append(line.strip())\n            \n            if len(chunk) &gt;= chunk_size:\n                process_chunk(chunk)\n                chunk = []\n        \n        # Don't forget the last chunk!\n        if chunk:\n            process_chunk(chunk)\n\n\n\n\n\n\nTipMemory Management\n\n\n\nWhen AI suggests loading entire files into memory, ask: “What if this file had a million rows? Show me how to process it in chunks.”",
+    "section": "20.8 Working with Large Files",
+    "text": "20.8 Working with Large Files\nSometimes data files are huge - millions of rows! Here’s how to handle them:\n\nReading Files in Chunks\ndef process_large_file(filename, chunk_size=1000):\n    \"\"\"Process a large file in chunks\"\"\"\n    with open(filename, 'r') as file:\n        header = file.readline()\n        \n        chunk = []\n        for line in file:\n            chunk.append(line.strip())\n            \n            if len(chunk) &gt;= chunk_size:\n                process_chunk(chunk)\n                chunk = []\n        \n        # Don't forget the last chunk!\n        if chunk:\n            process_chunk(chunk)\n\n\n\n\n\n\nTipMemory Management\n\n\n\nWhen AI suggests loading entire files into memory, ask: “What if this file had a million rows? Show me how to process it in chunks.”",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3446,8 +3478,8 @@
     "objectID": "chapters/chapter-working-with-data.html#data-formats-quick-reference",
     "href": "chapters/chapter-working-with-data.html#data-formats-quick-reference",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.8 Data Formats Quick Reference",
-    "text": "20.8 Data Formats Quick Reference\n\nCSV Quick Reference\n# Read CSV\nwith open('data.csv', 'r') as file:\n    lines = file.readlines()\n\n# Write CSV\nwith open('output.csv', 'w') as file:\n    file.write('Name,Score\\n')\n    file.write('Alice,95\\n')\n\n\nJSON Quick Reference\n# Read JSON\nimport json\nwith open('data.json', 'r') as file:\n    data = json.load(file)\n\n# Write JSON\nwith open('output.json', 'w') as file:\n    json.dump(data, file, indent=4)",
+    "section": "20.9 Data Formats Quick Reference",
+    "text": "20.9 Data Formats Quick Reference\n\nCSV Quick Reference\n# Read CSV\nwith open('data.csv', 'r') as file:\n    lines = file.readlines()\n\n# Write CSV\nwith open('output.csv', 'w') as file:\n    file.write('Name,Score\\n')\n    file.write('Alice,95\\n')\n\n\nJSON Quick Reference\n# Read JSON\nimport json\nwith open('data.json', 'r') as file:\n    data = json.load(file)\n\n# Write JSON\nwith open('output.json', 'w') as file:\n    json.dump(data, file, indent=4)",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3457,8 +3489,19 @@
     "objectID": "chapters/chapter-working-with-data.html#common-pitfalls-and-solutions",
     "href": "chapters/chapter-working-with-data.html#common-pitfalls-and-solutions",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.9 Common Pitfalls and Solutions",
-    "text": "20.9 Common Pitfalls and Solutions\n\nPitfall 1: Assuming Clean Data\nProblem: Your code crashes on real data Solution: Always validate and clean first\n\n\nPitfall 2: Loading Everything at Once\nProblem: Program runs out of memory Solution: Process in chunks\n\n\nPitfall 3: Hardcoding Column Positions\nProblem: Code breaks when columns change Solution: Use header row to find columns\n\n\nPitfall 4: Ignoring Encoding Issues\nProblem: Special characters appear as ??? Solution: Specify encoding when opening files",
+    "section": "20.10 Common Pitfalls and Solutions",
+    "text": "20.10 Common Pitfalls and Solutions\n\nPitfall 1: Assuming Clean Data\nProblem: Your code crashes on real data Solution: Always validate and clean first\n\n\nPitfall 2: Loading Everything at Once\nProblem: Program runs out of memory Solution: Process in chunks\n\n\nPitfall 3: Hardcoding Column Positions\nProblem: Code breaks when columns change Solution: Use header row to find columns\n\n\nPitfall 4: Ignoring Encoding Issues\nProblem: Special characters appear as ??? Solution: Specify encoding when opening files",
+    "crumbs": [
+      "Part III: Real-World Programming (Weeks 9-12)",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-working-with-data.html#common-ai-complications",
+    "href": "chapters/chapter-working-with-data.html#common-ai-complications",
+    "title": "20  Chapter 10: Working with Data",
+    "section": "20.11 Common AI Complications",
+    "text": "20.11 Common AI Complications\nWhen you ask AI to help with data processing, watch for these patterns where it overcomplicates things.\nPandas for everything. Ask AI to read a CSV file and it will often reach for pandas, a powerful data analysis library. For simple tasks — reading rows, calculating averages, filtering — Python’s built-in csv module or even plain string splitting is simpler and teaches you more. Save pandas for when you actually need its power.\nOne-liner list comprehensions. AI loves to compress data processing into dense single lines like [{k: (int(v) if v.isdigit() else v) for k, v in zip(headers, line.split(','))} for line in open('data.csv').readlines()[1:]]. This is clever but unreadable. A simple for loop with clear variable names is almost always better when you’re learning.\nOver-engineered error handling. AI might wrap every line in try/except blocks or create elaborate validation classes for a 20-line script. Start with the straightforward version. Add error handling where your program actually crashes on real data.\nAsk your AI:\nShow me the simplest possible way to read a CSV file and print\neach row. No pandas, no list comprehensions, just basic Python.\nCompare what you get to earlier responses. Simpler is almost always better when you’re learning.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3468,8 +3511,8 @@
     "objectID": "chapters/chapter-working-with-data.html#practice-projects",
     "href": "chapters/chapter-working-with-data.html#practice-projects",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.10 Practice Projects",
-    "text": "20.10 Practice Projects\n\nProject 1: Grade Book Analyzer\nCreate a program that: - Reads student grades from CSV - Calculates averages and letter grades - Identifies struggling students - Generates a summary report\n\n\nProject 2: Weather Tracker\nBuild a system that: - Loads historical weather data - Finds temperature trends - Identifies extreme weather days - Exports summaries to JSON\n\n\nProject 3: Sales Data Processor\nDevelop a tool that: - Processes sales transactions (CSV) - Calculates daily/monthly totals - Finds best-selling products - Handles refunds and errors",
+    "section": "20.12 Practice Projects",
+    "text": "20.12 Practice Projects\n\nProject 1: Grade Book Analyzer\nCreate a program that: - Reads student grades from CSV - Calculates averages and letter grades - Identifies struggling students - Generates a summary report\n\n\nProject 2: Weather Tracker\nBuild a system that: - Loads historical weather data - Finds temperature trends - Identifies extreme weather days - Exports summaries to JSON\n\n\nProject 3: Sales Data Processor\nDevelop a tool that: - Processes sales transactions (CSV) - Calculates daily/monthly totals - Finds best-selling products - Handles refunds and errors",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3479,8 +3522,8 @@
     "objectID": "chapters/chapter-working-with-data.html#connecting-to-the-real-world",
     "href": "chapters/chapter-working-with-data.html#connecting-to-the-real-world",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.11 Connecting to the Real World",
-    "text": "20.11 Connecting to the Real World\nWorking with data files is your bridge to real-world programming. Every business runs on data: - Scientists analyse research data - Teachers track student progress - Businesses monitor sales and inventory - Developers process application logs\nThe skills you’ve learned here apply everywhere!",
+    "section": "20.13 Connecting to the Real World",
+    "text": "20.13 Connecting to the Real World\nWorking with data files is your bridge to real-world programming. Every business runs on data: - Scientists analyse research data - Teachers track student progress - Businesses monitor sales and inventory - Developers process application logs\nThe skills you’ve learned here apply everywhere!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3490,8 +3533,8 @@
     "objectID": "chapters/chapter-working-with-data.html#looking-ahead",
     "href": "chapters/chapter-working-with-data.html#looking-ahead",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.12 Looking Ahead",
-    "text": "20.12 Looking Ahead\nNext chapter, you’ll learn to get data from the internet using APIs - taking your programs from working with static files to live, updating information. Imagine weather data that’s always current, or stock prices that update in real-time!",
+    "section": "20.14 Looking Ahead",
+    "text": "20.14 Looking Ahead\nNext chapter, you’ll learn to get data from the internet using APIs - taking your programs from working with static files to live, updating information. Imagine weather data that’s always current, or stock prices that update in real-time!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3501,8 +3544,8 @@
     "objectID": "chapters/chapter-working-with-data.html#chapter-summary-1",
     "href": "chapters/chapter-working-with-data.html#chapter-summary-1",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.13 Chapter Summary",
-    "text": "20.13 Chapter Summary\nYou’ve learned to: - Read and write CSV files for tabular data - Work with JSON for complex, nested data - Clean and validate real-world data - Process large files efficiently - Build complete data pipelines\nThese aren’t just programming skills - they’re data literacy skills that apply whether you’re coding, using spreadsheets, or just understanding how modern applications work.",
+    "section": "20.15 Chapter Summary",
+    "text": "20.15 Chapter Summary\nYou’ve learned to: - Read and write CSV files for tabular data - Work with JSON for complex, nested data - Clean and validate real-world data - Process large files efficiently - Build complete data pipelines\nThese aren’t just programming skills - they’re data literacy skills that apply whether you’re coding, using spreadsheets, or just understanding how modern applications work.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3512,8 +3555,8 @@
     "objectID": "chapters/chapter-working-with-data.html#reflection-prompts",
     "href": "chapters/chapter-working-with-data.html#reflection-prompts",
     "title": "20  Chapter 10: Working with Data",
-    "section": "20.14 Reflection Prompts",
-    "text": "20.14 Reflection Prompts\n\nData Format Choice: When would you choose CSV vs JSON for a project?\nError Handling: What could go wrong when reading data files?\nReal Applications: What data would you like to analyse with these skills?\nPipeline Thinking: How does breaking processing into steps help?\n\nRemember: Every major application works with data files. You now have the foundation to build real tools that solve real problems!",
+    "section": "20.16 Reflection Prompts",
+    "text": "20.16 Reflection Prompts\n\nData Format Choice: When would you choose CSV vs JSON for a project?\nError Handling: What could go wrong when reading data files?\nReal Applications: What data would you like to analyse with these skills?\nPipeline Thinking: How does breaking processing into steps help?\n\nRemember: Every major application works with data files. You now have the foundation to build real tools that solve real problems!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Chapter 10: Working with Data</span>"
@@ -3524,7 +3567,18 @@
     "href": "chapters/chapter-connected-programs.html",
     "title": "21  Chapter 11: Connected Programs",
     "section": "",
-    "text": "21.1 Introduction: Your Programs Go Online\nRemember when your programs could only work with data you typed in or saved in files? Those days are over! The internet is full of live data waiting for your programs to use: - Current weather from anywhere in the world - Live stock prices and currency rates - News headlines as they happen - Social media updates - And millions more data sources\nThis chapter teaches you to tap into this river of information.",
+    "text": "21.1 The Concept First\nEvery program you’ve written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world – weather apps, price trackers, news readers – all have one thing in common: they talk to other programs across the internet to get fresh, live information.\nThis is a fundamental shift. Your program stops being a closed box and becomes part of a network. Instead of containing all the data it needs, it asks for data from services that already have it. That’s the idea behind connected programs, and it’s how most modern software actually works.",
+    "crumbs": [
+      "Part III: Real-World Programming (Weeks 9-12)",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-connected-programs.html#understanding-through-real-life",
+    "href": "chapters/chapter-connected-programs.html#understanding-through-real-life",
+    "title": "21  Chapter 11: Connected Programs",
+    "section": "21.2 Understanding Through Real Life",
+    "text": "21.2 Understanding Through Real Life\nThink about how you already get information from remote sources every day: - You check the weather on your phone (your phone asks a weather service) - You look up a word’s definition (your browser asks a dictionary service) - You check your bank balance (your bank’s app asks the bank’s server) - You translate a phrase (a translation service does the work remotely)\nIn every case, the pattern is the same: you make a request, a remote service processes it, and you get a response back. Your programs can do exactly the same thing.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3534,8 +3588,30 @@
     "objectID": "chapters/chapter-connected-programs.html#understanding-apis-how-programs-talk",
     "href": "chapters/chapter-connected-programs.html#understanding-apis-how-programs-talk",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.2 Understanding APIs: How Programs Talk",
-    "text": "21.2 Understanding APIs: How Programs Talk\nAn API (Application Programming Interface) is like a restaurant menu for programs. Just as a menu tells you what dishes you can order and how much they cost, an API tells your program what data it can request and how to ask for it.\n\nThe Restaurant Analogy\nThink of APIs like this: 1. Menu (API Documentation) - Lists what’s available 2. Order (Request) - You ask for specific items 3. Kitchen (Server) - Prepares your data 4. Delivery (Response) - You receive what you ordered\n\n\nYour First API Call\nLet’s start with something fun - getting a random joke:\nimport requests\n\n# Make a request to the joke API\nresponse = requests.get(\"https://official-joke-api.appspot.com/random_joke\")\n\n# Convert the response to Python data\njoke_data = response.json()\n\n# Display the joke\nprint(joke_data['setup'])\nprint(joke_data['punchline'])\n\n\n\n\n\n\nImportantInstalling Libraries\n\n\n\nThis chapter uses the requests library. When AI suggests libraries, always ask: “How do I install this library? What does it do that Python can’t do by itself?”",
+    "section": "21.3 Understanding APIs: How Programs Talk",
+    "text": "21.3 Understanding APIs: How Programs Talk\nAn API (Application Programming Interface) is like a restaurant menu for programs. Just as a menu tells you what dishes you can order and how much they cost, an API tells your program what data it can request and how to ask for it.\n\nThe Restaurant Analogy\nThink of APIs like this: 1. Menu (API Documentation) - Lists what’s available 2. Order (Request) - You ask for specific items 3. Kitchen (Server) - Prepares your data 4. Delivery (Response) - You receive what you ordered\nYou never walk into the kitchen yourself. You don’t need to know how the food is prepared – you just need to know what’s on the menu and how to order. APIs work the same way: your program doesn’t need to know how a weather service collects its data, only how to ask for it and what the answer will look like.\n\n\n\n\n\n\nNoteMental Model: The Request-Response Cycle\n\n\n\nEvery API interaction follows the same three steps: (1) your program sends a request to a specific URL, (2) a remote server processes that request, and (3) the server sends back a response containing data (usually in JSON format) and a status code telling you whether it worked. Once you understand this cycle, every API in the world follows the same pattern.",
+    "crumbs": [
+      "Part III: Real-World Programming (Weeks 9-12)",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-connected-programs.html#discovering-apis-with-your-ai-partner",
+    "href": "chapters/chapter-connected-programs.html#discovering-apis-with-your-ai-partner",
+    "title": "21  Chapter 11: Connected Programs",
+    "section": "21.4 Discovering APIs with Your AI Partner",
+    "text": "21.4 Discovering APIs with Your AI Partner\nBefore writing any code, let’s build intuition for how connected programs work.\n\nExploration 1: APIs in Your Daily Life\nAsk your AI:\nGive me 5 examples of APIs that regular phone apps use behind the scenes, explained without code. What requests do they send, and what responses come back?\nYou’ll start to see that APIs are everywhere, quietly powering the apps you already use.\n\n\nExploration 2: The Request-Response Pattern\nTry this prompt:\nUsing the restaurant analogy, walk me through what happens step by step when a weather app on my phone shows today's forecast. What is the \"order\"? What is the \"menu\"? What gets \"delivered\"?\nThis will solidify the mental model before you see any code.\n\n\nExploration 3: What Can Go Wrong\nAsk:\nWhat are the most common reasons an API request might fail? Explain using the restaurant analogy -- what could go wrong between ordering and getting your food?\nUnderstanding failure modes early makes error handling feel natural later.",
+    "crumbs": [
+      "Part III: Real-World Programming (Weeks 9-12)",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-connected-programs.html#from-concept-to-code",
+    "href": "chapters/chapter-connected-programs.html#from-concept-to-code",
+    "title": "21  Chapter 11: Connected Programs",
+    "section": "21.5 From Concept to Code",
+    "text": "21.5 From Concept to Code\nNow that you understand the pattern, let’s see it in Python.\n\nYour First API Call\nLet’s start with something fun – getting a random joke:\nimport requests\n\n# Make a request to the joke API\nresponse = requests.get(\"https://official-joke-api.appspot.com/random_joke\")\n\n# Convert the response from JSON to a Python dictionary\n# JSON is a standard text format for sending data between programs\njoke_data = response.json()\n\n# Display the joke\nprint(joke_data['setup'])\nprint(joke_data['punchline'])\n\n\n\n\n\n\nImportantInstalling Libraries\n\n\n\nThis chapter uses the requests library. When AI suggests libraries, always ask: “How do I install this library? What does it do that Python can’t do by itself?”",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3545,8 +3621,8 @@
     "objectID": "chapters/chapter-connected-programs.html#how-web-requests-work",
     "href": "chapters/chapter-connected-programs.html#how-web-requests-work",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.3 How Web Requests Work",
-    "text": "21.3 How Web Requests Work\nWhen your program “talks” to the internet, it follows a conversation pattern:\n\nRequest: “Hey weather service, what’s the temperature in Boston?”\nResponse: “It’s 72°F, partly cloudy”\n\n\nThe Request-Response Cycle\ndef get_weather(city):\n    \"\"\"Get current weather for a city\"\"\"\n    # 1. Build the request URL\n    base_url = \"http://api.weatherapi.com/v1/current.json\"\n    params = {\n        'key': 'your_api_key_here',\n        'q': city\n    }\n    \n    # 2. Send the request\n    response = requests.get(base_url, params=params)\n    \n    # 3. Check if it worked\n    if response.status_code == 200:\n        # 4. Extract the data\n        data = response.json()\n        return data['current']['temp_f']\n    else:\n        return None\n\n\n\n\n\n\nTipAI Partnership Pattern\n\n\n\nWhen working with new APIs, ask AI: “I want to use the [service] API. Show me the simplest possible example that gets one piece of data.”",
+    "section": "21.6 How Web Requests Work",
+    "text": "21.6 How Web Requests Work\nWhen your program “talks” to the internet, it follows a simple conversation pattern:\n\nRequest: “Hey weather service, what’s the temperature in Boston?”\nResponse: “It’s 72°F, partly cloudy”\n\nEvery response comes with a status code – a number that tells you whether things went well. Think of it like a delivery receipt: 200 means “here’s your data,” 401 means “you’re not authorized,” 404 means “we don’t have that,” and 500 means “something broke on our end.” You don’t need to memorize these; you just need to know that 200 means success and anything else means something went wrong.\n\nThe Request-Response Cycle\ndef get_weather(city):\n    \"\"\"Get current weather for a city\"\"\"\n    # 1. Build the request URL\n    base_url = \"http://api.weatherapi.com/v1/current.json\"\n    params = {\n        'key': 'your_api_key_here',\n        'q': city\n    }\n    \n    # 2. Send the request\n    response = requests.get(base_url, params=params)\n    \n    # 3. Check if it worked\n    if response.status_code == 200:\n        # 4. Extract the data\n        data = response.json()\n        return data['current']['temp_f']\n    else:\n        return None\n\n\n\n\n\n\nTipAI Partnership Pattern\n\n\n\nWhen working with new APIs, ask AI: “I want to use the [service] API. Show me the simplest possible example that gets one piece of data.”",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3556,8 +3632,8 @@
     "objectID": "chapters/chapter-connected-programs.html#working-with-json-responses",
     "href": "chapters/chapter-connected-programs.html#working-with-json-responses",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.4 Working with JSON Responses",
-    "text": "21.4 Working with JSON Responses\nMost APIs return data in JSON format - the same format you learned in Chapter 10! This makes it easy to work with.\n\nExploring API Responses\nWhen you get data from an API, explore it first:\ndef explore_api_response(url):\n    \"\"\"Explore what an API returns\"\"\"\n    response = requests.get(url)\n    data = response.json()\n    \n    # Print the structure\n    print(\"Response contains:\")\n    for key in data.keys():\n        print(f\"  - {key}: {type(data[key])}\")\n    \n    return data\n\n# Try it with a quote API\nquote_data = explore_api_response(\"https://api.quotable.io/random\")\n\n\n\n\n\n\nWarningExpression Explorer: Dictionary Access\n\n\n\nWhen you see data['current']['temp_f'], you’re accessing nested dictionaries. Ask AI: “Show me how to safely access nested dictionary values when keys might not exist.”",
+    "section": "21.7 Working with JSON Responses",
+    "text": "21.7 Working with JSON Responses\nMost APIs return data in JSON (JavaScript Object Notation) format. JSON looks almost identical to Python dictionaries and lists, which is why response.json() converts the response directly into Python data structures you already know how to use. If you’ve worked with dictionaries, you already know how to work with JSON.\n\nExploring API Responses\nWhen you get data from an API, explore it first:\ndef explore_api_response(url):\n    \"\"\"Explore what an API returns\"\"\"\n    response = requests.get(url)\n    data = response.json()\n    \n    # Print the structure\n    print(\"Response contains:\")\n    for key in data.keys():\n        print(f\"  - {key}: {type(data[key])}\")\n    \n    return data\n\n# Try it with a quote API\nquote_data = explore_api_response(\"https://api.quotable.io/random\")\n\n\n\n\n\n\nWarningExpression Explorer: Dictionary Access\n\n\n\nWhen you see data['current']['temp_f'], you’re accessing nested dictionaries. Ask AI: “Show me how to safely access nested dictionary values when keys might not exist.”",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3567,8 +3643,8 @@
     "objectID": "chapters/chapter-connected-programs.html#api-keys-your-programs-id-card",
     "href": "chapters/chapter-connected-programs.html#api-keys-your-programs-id-card",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.5 API Keys: Your Program’s ID Card",
-    "text": "21.5 API Keys: Your Program’s ID Card\nMany APIs require a key - like a password that identifies your program. Here’s how to handle them safely:\n\nGetting and Using API Keys\n\nSign up at the API provider’s website\nGet your key from your account dashboard\nKeep it secret - never put keys in your code!\nUse it in requests as shown below\n\ndef get_news_headlines():\n    \"\"\"Get top news headlines\"\"\"\n    # DON'T DO THIS - key exposed in code!\n    # api_key = \"abc123mysecretkey\"\n    \n    # DO THIS - read from environment or file\n    with open('api_keys.txt', 'r') as f:\n        api_key = f.readline().strip()\n    \n    url = \"https://newsapi.org/v2/top-headlines\"\n    params = {\n        'apiKey': api_key,\n        'country': 'us',\n        'pageSize': 5\n    }\n    \n    response = requests.get(url, params=params)\n    return response.json()",
+    "section": "21.8 API Keys: Your Program’s ID Card",
+    "text": "21.8 API Keys: Your Program’s ID Card\nSome APIs are open to everyone (like the joke API above), but many require an API key – a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.\n\nGetting and Using API Keys\n\nSign up at the API provider’s website\nGet your key from your account dashboard\nKeep it secret - never put keys in your code!\nUse it in requests as shown below\n\ndef get_news_headlines():\n    \"\"\"Get top news headlines\"\"\"\n    # DON'T DO THIS - key exposed in code!\n    # api_key = \"abc123mysecretkey\"\n    \n    # DO THIS - read from environment or file\n    with open('api_keys.txt', 'r') as f:\n        api_key = f.readline().strip()\n    \n    url = \"https://newsapi.org/v2/top-headlines\"\n    params = {\n        'apiKey': api_key,\n        'country': 'us',\n        'pageSize': 5\n    }\n    \n    response = requests.get(url, params=params)\n    return response.json()",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3578,8 +3654,8 @@
     "objectID": "chapters/chapter-connected-programs.html#building-a-weather-dashboard",
     "href": "chapters/chapter-connected-programs.html#building-a-weather-dashboard",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.6 Building a Weather Dashboard",
-    "text": "21.6 Building a Weather Dashboard\nLet’s create something useful - a weather comparison tool:\ndef create_weather_dashboard(cities):\n    \"\"\"Compare weather across multiple cities\"\"\"\n    api_key = load_api_key('weather_key.txt')\n    weather_data = []\n    \n    for city in cities:\n        url = f\"http://api.weatherapi.com/v1/current.json\"\n        params = {'key': api_key, 'q': city}\n        \n        response = requests.get(url, params=params)\n        if response.status_code == 200:\n            data = response.json()\n            weather_data.append({\n                'city': city,\n                'temp': data['current']['temp_f'],\n                'condition': data['current']['condition']['text'],\n                'humidity': data['current']['humidity']\n            })\n    \n    # Display the dashboard\n    print(\"\\n🌤️  WEATHER DASHBOARD  🌤️\")\n    print(\"=\" * 40)\n    for weather in weather_data:\n        print(f\"\\n{weather['city']}:\")\n        print(f\"  Temperature: {weather['temp']}°F\")\n        print(f\"  Condition: {weather['condition']}\")\n        print(f\"  Humidity: {weather['humidity']}%\")",
+    "section": "21.9 Building a Weather Dashboard",
+    "text": "21.9 Building a Weather Dashboard\nNow that you understand the building blocks – requests, responses, JSON, and API keys – let’s combine them into something useful. This weather comparison tool applies every concept from the previous sections:\ndef create_weather_dashboard(cities):\n    \"\"\"Compare weather across multiple cities\"\"\"\n    api_key = load_api_key('weather_key.txt')\n    weather_data = []\n    \n    for city in cities:\n        url = f\"http://api.weatherapi.com/v1/current.json\"\n        params = {'key': api_key, 'q': city}\n        \n        response = requests.get(url, params=params)\n        if response.status_code == 200:\n            data = response.json()\n            weather_data.append({\n                'city': city,\n                'temp': data['current']['temp_f'],\n                'condition': data['current']['condition']['text'],\n                'humidity': data['current']['humidity']\n            })\n    \n    # Display the dashboard\n    print(\"\\n🌤️  WEATHER DASHBOARD  🌤️\")\n    print(\"=\" * 40)\n    for weather in weather_data:\n        print(f\"\\n{weather['city']}:\")\n        print(f\"  Temperature: {weather['temp']}°F\")\n        print(f\"  Condition: {weather['condition']}\")\n        print(f\"  Humidity: {weather['humidity']}%\")",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3589,8 +3665,8 @@
     "objectID": "chapters/chapter-connected-programs.html#handling-api-errors-gracefully",
     "href": "chapters/chapter-connected-programs.html#handling-api-errors-gracefully",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.7 Handling API Errors Gracefully",
-    "text": "21.7 Handling API Errors Gracefully\nAPIs can fail for many reasons. Your program needs to handle these gracefully:\n\nCommon API Problems\n\nNo Internet Connection - Can’t reach the server\nInvalid API Key - Authentication failed\nRate Limiting - Too many requests\nServer Errors - API is down\nInvalid Data - Unexpected response format\n\n\n\nError Handling Strategies\ndef safe_api_call(url, params=None):\n    \"\"\"Make an API call with error handling\"\"\"\n    try:\n        response = requests.get(url, params=params, timeout=5)\n        \n        # Check status code\n        if response.status_code == 200:\n            return response.json()\n        elif response.status_code == 401:\n            print(\"Error: Invalid API key\")\n        elif response.status_code == 429:\n            print(\"Error: Too many requests - slow down!\")\n        else:\n            print(f\"Error: {response.status_code}\")\n            \n    except requests.ConnectionError:\n        print(\"Error: No internet connection\")\n    except requests.Timeout:\n        print(\"Error: Request timed out\")\n    except Exception as e:\n        print(f\"Unexpected error: {e}\")\n    \n    return None\n\n\n\n\n\n\nImportantRate Limiting Reality\n\n\n\nMost free APIs limit how many requests you can make. Always check the documentation and add delays between requests if needed:\nimport time\ntime.sleep(1)  # Wait 1 second between requests",
+    "section": "21.10 Handling API Errors Gracefully",
+    "text": "21.10 Handling API Errors Gracefully\nUnlike files on your computer, APIs depend on the internet, remote servers, and services you don’t control. Things will go wrong, and your program needs to handle failures without crashing:\n\nCommon API Problems\n\nNo Internet Connection - Can’t reach the server\nInvalid API Key - Authentication failed\nRate Limiting - Too many requests\nServer Errors - API is down\nInvalid Data - Unexpected response format\n\n\n\nError Handling Strategies\ndef safe_api_call(url, params=None):\n    \"\"\"Make an API call with error handling\"\"\"\n    try:\n        response = requests.get(url, params=params, timeout=5)\n        \n        # Check status code\n        if response.status_code == 200:\n            return response.json()\n        elif response.status_code == 401:\n            print(\"Error: Invalid API key\")\n        elif response.status_code == 429:\n            print(\"Error: Too many requests - slow down!\")\n        else:\n            print(f\"Error: {response.status_code}\")\n            \n    except requests.ConnectionError:\n        print(\"Error: No internet connection\")\n    except requests.Timeout:\n        print(\"Error: Request timed out\")\n    except Exception as e:\n        print(f\"Unexpected error: {e}\")\n    \n    return None\n\n\n\n\n\n\nImportantRate Limiting Reality\n\n\n\nMost free APIs limit how many requests you can make. Always check the documentation and add delays between requests if needed:\nimport time\ntime.sleep(1)  # Wait 1 second between requests",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3600,8 +3676,8 @@
     "objectID": "chapters/chapter-connected-programs.html#creating-a-currency-converter",
     "href": "chapters/chapter-connected-programs.html#creating-a-currency-converter",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.8 Creating a Currency Converter",
-    "text": "21.8 Creating a Currency Converter\nLet’s build something practical - a live currency converter:\ndef get_exchange_rate(from_currency, to_currency):\n    \"\"\"Get current exchange rate\"\"\"\n    url = \"https://api.exchangerate-api.com/v4/latest/\" + from_currency\n    \n    response = requests.get(url)\n    if response.status_code == 200:\n        data = response.json()\n        rate = data['rates'].get(to_currency)\n        return rate\n    return None\n\ndef convert_currency(amount, from_currency, to_currency):\n    \"\"\"Convert between currencies\"\"\"\n    rate = get_exchange_rate(from_currency, to_currency)\n    \n    if rate:\n        converted = amount * rate\n        print(f\"{amount} {from_currency} = {converted:.2f} {to_currency}\")\n        print(f\"Exchange rate: 1 {from_currency} = {rate} {to_currency}\")\n    else:\n        print(\"Could not get exchange rate\")\n\n# Use it\nconvert_currency(100, \"USD\", \"EUR\")",
+    "section": "21.11 Creating a Currency Converter",
+    "text": "21.11 Creating a Currency Converter\nWith error handling in place, let’s build something practical – a live currency converter. Notice how this example uses a free API that doesn’t require a key, making it a great one to try yourself:\ndef get_exchange_rate(from_currency, to_currency):\n    \"\"\"Get current exchange rate\"\"\"\n    url = \"https://api.exchangerate-api.com/v4/latest/\" + from_currency\n    \n    response = requests.get(url)\n    if response.status_code == 200:\n        data = response.json()\n        rate = data['rates'].get(to_currency)\n        return rate\n    return None\n\ndef convert_currency(amount, from_currency, to_currency):\n    \"\"\"Convert between currencies\"\"\"\n    rate = get_exchange_rate(from_currency, to_currency)\n    \n    if rate:\n        converted = amount * rate\n        print(f\"{amount} {from_currency} = {converted:.2f} {to_currency}\")\n        print(f\"Exchange rate: 1 {from_currency} = {rate} {to_currency}\")\n    else:\n        print(\"Could not get exchange rate\")\n\n# Use it\nconvert_currency(100, \"USD\", \"EUR\")",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3611,8 +3687,8 @@
     "objectID": "chapters/chapter-connected-programs.html#working-with-different-api-types",
     "href": "chapters/chapter-connected-programs.html#working-with-different-api-types",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.9 Working with Different API Types",
-    "text": "21.9 Working with Different API Types\n\nREST APIs (Most Common)\n\nRequest specific URLs\nGet JSON responses\nLike ordering from a menu\n\n\n\nReal-time APIs\n\nContinuous data streams\nLike a news ticker\nMore complex to handle\n\n\n\nGraphQL APIs\n\nRequest exactly what you need\nLike a customisable menu\nGrowing in popularity",
+    "section": "21.12 Working with Different API Types",
+    "text": "21.12 Working with Different API Types\nYou’ll encounter different styles of APIs as you explore. For now, REST APIs are all you need – they’re the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.\n\nREST APIs (Most Common)\n\nRequest specific URLs\nGet JSON responses\nLike ordering from a menu\n\n\n\nReal-time APIs\n\nContinuous data streams\nLike a news ticker\nMore complex to handle\n\n\n\nGraphQL APIs\n\nRequest exactly what you need\nLike a customizable menu\nGrowing in popularity",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3622,8 +3698,8 @@
     "objectID": "chapters/chapter-connected-programs.html#building-a-news-aggregator",
     "href": "chapters/chapter-connected-programs.html#building-a-news-aggregator",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.10 Building a News Aggregator",
-    "text": "21.10 Building a News Aggregator\nLet’s create a program that collects news from multiple sources:\ndef get_tech_news():\n    \"\"\"Get latest technology news\"\"\"\n    api_key = load_api_key('news_key.txt')\n    \n    # Get news from API\n    url = \"https://newsapi.org/v2/top-headlines\"\n    params = {\n        'apiKey': api_key,\n        'category': 'technology',\n        'pageSize': 10\n    }\n    \n    response = requests.get(url, params=params)\n    if response.status_code == 200:\n        articles = response.json()['articles']\n        \n        # Display headlines\n        print(\"\\n📰 LATEST TECH NEWS\")\n        print(\"=\" * 50)\n        for i, article in enumerate(articles, 1):\n            print(f\"\\n{i}. {article['title']}\")\n            print(f\"   Source: {article['source']['name']}\")\n            print(f\"   {article['description'][:100]}...\")\n\n# Run the aggregator\nget_tech_news()",
+    "section": "21.13 Building a News Aggregator",
+    "text": "21.13 Building a News Aggregator\nLet’s create a program that collects news from multiple sources:\ndef get_tech_news():\n    \"\"\"Get latest technology news\"\"\"\n    api_key = load_api_key('news_key.txt')\n    \n    # Get news from API\n    url = \"https://newsapi.org/v2/top-headlines\"\n    params = {\n        'apiKey': api_key,\n        'category': 'technology',\n        'pageSize': 10\n    }\n    \n    response = requests.get(url, params=params)\n    if response.status_code == 200:\n        articles = response.json()['articles']\n        \n        # Display headlines\n        print(\"\\n📰 LATEST TECH NEWS\")\n        print(\"=\" * 50)\n        for i, article in enumerate(articles, 1):\n            print(f\"\\n{i}. {article['title']}\")\n            print(f\"   Source: {article['source']['name']}\")\n            print(f\"   {article['description'][:100]}...\")\n\n# Run the aggregator\nget_tech_news()",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3633,8 +3709,8 @@
     "objectID": "chapters/chapter-connected-programs.html#api-best-practices",
     "href": "chapters/chapter-connected-programs.html#api-best-practices",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.11 API Best Practices",
-    "text": "21.11 API Best Practices\n\n1. Cache Responses\nDon’t request the same data repeatedly:\ncache = {}\n\ndef get_cached_weather(city):\n    if city not in cache:\n        cache[city] = fetch_weather_from_api(city)\n    return cache[city]\n\n\n2. Handle Timeouts\nNetworks can be slow:\nresponse = requests.get(url, timeout=5)  # 5 second timeout\n\n\n3. Validate Data\nAPIs can return unexpected data:\ndef safe_get(data, *keys):\n    \"\"\"Safely navigate nested dictionaries\"\"\"\n    for key in keys:\n        if isinstance(data, dict):\n            data = data.get(key)\n        else:\n            return None\n    return data\n\n# Use: safe_get(data, 'current', 'temp_f')",
+    "section": "21.14 API Best Practices",
+    "text": "21.14 API Best Practices\n\n1. Cache Responses\nDon’t request the same data repeatedly:\ncache = {}\n\ndef get_cached_weather(city):\n    if city not in cache:\n        cache[city] = fetch_weather_from_api(city)\n    return cache[city]\n\n\n2. Handle Timeouts\nNetworks can be slow:\nresponse = requests.get(url, timeout=5)  # 5 second timeout\n\n\n3. Validate Data\nAPIs can return unexpected data:\ndef safe_get(data, *keys):\n    \"\"\"Safely navigate nested dictionaries\"\"\"\n    for key in keys:\n        if isinstance(data, dict):\n            data = data.get(key)\n        else:\n            return None\n    return data\n\n# Use: safe_get(data, 'current', 'temp_f')",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3644,8 +3720,8 @@
     "objectID": "chapters/chapter-connected-programs.html#creating-your-api-toolkit",
     "href": "chapters/chapter-connected-programs.html#creating-your-api-toolkit",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.12 Creating Your API Toolkit",
-    "text": "21.12 Creating Your API Toolkit\nBuild reusable functions for common patterns:\nclass APIClient:\n    \"\"\"Reusable API client\"\"\"\n    \n    def __init__(self, base_url, api_key=None):\n        self.base_url = base_url\n        self.api_key = api_key\n        self.session = requests.Session()\n    \n    def get(self, endpoint, params=None):\n        \"\"\"Make a GET request\"\"\"\n        url = self.base_url + endpoint\n        \n        if self.api_key:\n            if params is None:\n                params = {}\n            params['api_key'] = self.api_key\n        \n        try:\n            response = self.session.get(url, params=params)\n            response.raise_for_status()\n            return response.json()\n        except requests.exceptions.RequestException as e:\n            print(f\"API Error: {e}\")\n            return None\n\n# Use your toolkit\nweather_client = APIClient(\"http://api.weatherapi.com/v1/\", api_key=\"your_key\")\ndata = weather_client.get(\"current.json\", {\"q\": \"Boston\"})",
+    "section": "21.15 Creating Your API Toolkit",
+    "text": "21.15 Creating Your API Toolkit\nOnce you’ve written a few API calls, you’ll notice you’re repeating the same steps: build a URL, send a request, check the status, parse the JSON. That repetition is a signal that it’s time to build reusable tools:\nclass APIClient:\n    \"\"\"Reusable API client\"\"\"\n    \n    def __init__(self, base_url, api_key=None):\n        self.base_url = base_url\n        self.api_key = api_key\n        self.session = requests.Session()\n    \n    def get(self, endpoint, params=None):\n        \"\"\"Make a GET request\"\"\"\n        url = self.base_url + endpoint\n        \n        if self.api_key:\n            if params is None:\n                params = {}\n            params['api_key'] = self.api_key\n        \n        try:\n            response = self.session.get(url, params=params)\n            response.raise_for_status()\n            return response.json()\n        except requests.exceptions.RequestException as e:\n            print(f\"API Error: {e}\")\n            return None\n\n# Use your toolkit\nweather_client = APIClient(\"http://api.weatherapi.com/v1/\", api_key=\"your_key\")\ndata = weather_client.get(\"current.json\", {\"q\": \"Boston\"})",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3655,8 +3731,19 @@
     "objectID": "chapters/chapter-connected-programs.html#real-project-multi-source-dashboard",
     "href": "chapters/chapter-connected-programs.html#real-project-multi-source-dashboard",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.13 Real Project: Multi-Source Dashboard",
-    "text": "21.13 Real Project: Multi-Source Dashboard\nLet’s combine multiple APIs into one useful program:\ndef create_morning_briefing():\n    \"\"\"Get weather, news, and quote for the day\"\"\"\n    print(\"\\n☀️ GOOD MORNING! Here's your briefing:\\n\")\n    \n    # Weather\n    weather = get_weather(\"New York\")\n    if weather:\n        print(f\"🌡️ Weather: {weather['temp']}°F, {weather['condition']}\")\n    \n    # Motivational quote\n    quote = get_daily_quote()\n    if quote:\n        print(f\"\\n💭 Quote of the day: \\\"{quote['content']}\\\"\")\n        print(f\"   - {quote['author']}\")\n    \n    # Top news\n    news = get_headlines(3)\n    if news:\n        print(\"\\n📰 Top Headlines:\")\n        for headline in news:\n            print(f\"  • {headline}\")\n    \n    # Currency rates\n    rates = get_currency_rates(\"USD\", [\"EUR\", \"GBP\", \"JPY\"])\n    if rates:\n        print(\"\\n💱 Currency Rates:\")\n        for currency, rate in rates.items():\n            print(f\"  • 1 USD = {rate} {currency}\")",
+    "section": "21.16 Real Project: Multi-Source Dashboard",
+    "text": "21.16 Real Project: Multi-Source Dashboard\nLet’s combine multiple APIs into one useful program:\ndef create_morning_briefing():\n    \"\"\"Get weather, news, and quote for the day\"\"\"\n    print(\"\\n☀️ GOOD MORNING! Here's your briefing:\\n\")\n    \n    # Weather\n    weather = get_weather(\"New York\")\n    if weather:\n        print(f\"🌡️ Weather: {weather['temp']}°F, {weather['condition']}\")\n    \n    # Motivational quote\n    quote = get_daily_quote()\n    if quote:\n        print(f\"\\n💭 Quote of the day: \\\"{quote['content']}\\\"\")\n        print(f\"   - {quote['author']}\")\n    \n    # Top news\n    news = get_headlines(3)\n    if news:\n        print(\"\\n📰 Top Headlines:\")\n        for headline in news:\n            print(f\"  • {headline}\")\n    \n    # Currency rates\n    rates = get_currency_rates(\"USD\", [\"EUR\", \"GBP\", \"JPY\"])\n    if rates:\n        print(\"\\n💱 Currency Rates:\")\n        for currency, rate in rates.items():\n            print(f\"  • 1 USD = {rate} {currency}\")",
+    "crumbs": [
+      "Part III: Real-World Programming (Weeks 9-12)",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-connected-programs.html#common-ai-complications",
+    "href": "chapters/chapter-connected-programs.html#common-ai-complications",
+    "title": "21  Chapter 11: Connected Programs",
+    "section": "21.17 Common AI Complications",
+    "text": "21.17 Common AI Complications\nWhen you ask AI to help you make API calls, it tends to build a spaceship when you need a bicycle. Here’s a typical example of what AI produces when you ask “How do I get data from an API?”:\nimport requests\nfrom requests.adapters import HTTPAdapter\nfrom urllib3.util.retry import Retry\n\nclass ResilientAPIClient:\n    \"\"\"Production-grade API client with retry logic,\n    session management, exponential backoff, and\n    custom exception hierarchy.\"\"\"\n\n    def __init__(self, base_url, api_key, max_retries=3,\n                 backoff_factor=0.5, timeout=(3.05, 27)):\n        self.session = requests.Session()\n        retry_strategy = Retry(\n            total=max_retries,\n            backoff_factor=backoff_factor,\n            status_forcelist=[429, 500, 502, 503, 504]\n        )\n        adapter = HTTPAdapter(max_retries=retry_strategy)\n        self.session.mount(\"https://\", adapter)\n        self.session.mount(\"http://\", adapter)\n        self.session.headers.update({\n            'Authorization': f'Bearer {api_key}',\n            'Accept': 'application/json'\n        })\n        self.base_url = base_url\n        self.timeout = timeout\n\n    def get(self, endpoint, params=None):\n        try:\n            response = self.session.get(\n                f\"{self.base_url}/{endpoint}\",\n                params=params, timeout=self.timeout\n            )\n            response.raise_for_status()\n            return response.json()\n        except requests.exceptions.HTTPError as e:\n            raise APIError(f\"HTTP error: {e}\") from e\n        except requests.exceptions.ConnectionError as e:\n            raise NetworkError(f\"Connection failed: {e}\") from e\nThat’s 35+ lines before you’ve even asked for any data! For learning and most small projects, all you need is this:\nimport requests\n\nresponse = requests.get(\"https://api.example.com/data\")\nif response.status_code == 200:\n    data = response.json()\n    print(data)\nelse:\n    print(f\"Something went wrong: {response.status_code}\")\n\n\n\n\n\n\nTipSimplification Strategy\n\n\n\nWhen AI gives you a complex API client with sessions, retry adapters, custom exceptions, and connection pooling, ask: “Can you show me the simplest version that makes one successful request and handles basic errors with try/except?” You can always add complexity later when you understand why you need it.\n\n\nWatch for these specific over-engineering patterns:\n\nSession objects when you’re making a single request\nRetry logic with exponential backoff when you’re just learning how APIs work\nCustom exception hierarchies when a simple try/except tells you everything you need to know\nConnection pooling and adapter mounting which are performance optimizations for production servers, not learning exercises\n\nStart simple. Add complexity only when a real problem demands it.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3666,8 +3753,8 @@
     "objectID": "chapters/chapter-connected-programs.html#common-pitfalls-and-solutions",
     "href": "chapters/chapter-connected-programs.html#common-pitfalls-and-solutions",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.14 Common Pitfalls and Solutions",
-    "text": "21.14 Common Pitfalls and Solutions\n\nPitfall 1: Hardcoding API Keys\nProblem: Keys in code are security risks Solution: Use environment variables or secure files\n\n\nPitfall 2: No Error Handling\nProblem: Program crashes when API fails Solution: Always use try/except blocks\n\n\nPitfall 3: Ignoring Rate Limits\nProblem: API blocks your requests Solution: Add delays and check documentation\n\n\nPitfall 4: Not Checking Response Status\nProblem: Assuming all requests succeed Solution: Always check status_code",
+    "section": "21.18 Common Pitfalls and Solutions",
+    "text": "21.18 Common Pitfalls and Solutions\n\nPitfall 1: Hardcoding API Keys\nProblem: Keys in code are security risks Solution: Use environment variables or secure files\n\n\nPitfall 2: No Error Handling\nProblem: Program crashes when API fails Solution: Always use try/except blocks\n\n\nPitfall 3: Ignoring Rate Limits\nProblem: API blocks your requests Solution: Add delays and check documentation\n\n\nPitfall 4: Not Checking Response Status\nProblem: Assuming all requests succeed Solution: Always check status_code",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3677,8 +3764,8 @@
     "objectID": "chapters/chapter-connected-programs.html#practice-projects",
     "href": "chapters/chapter-connected-programs.html#practice-projects",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.15 Practice Projects",
-    "text": "21.15 Practice Projects\n\nProject 1: Weather Tracker\n\nTrack weather for multiple cities\nStore historical data\nFind weather patterns\nAlert for extreme conditions\n\n\n\nProject 2: Stock Portfolio Monitor\n\nTrack stock prices\nCalculate gains/losses\nSet price alerts\nGenerate reports\n\n\n\nProject 3: News Sentiment Analyzer\n\nCollect news articles\nanalyse headlines\nTrack topics over time\nCreate summaries",
+    "section": "21.19 Practice Projects",
+    "text": "21.19 Practice Projects\n\nProject 1: Weather Tracker\n\nTrack weather for multiple cities\nStore historical data\nFind weather patterns\nAlert for extreme conditions\n\n\n\nProject 2: Stock Portfolio Monitor\n\nTrack stock prices\nCalculate gains/losses\nSet price alerts\nGenerate reports\n\n\n\nProject 3: News Sentiment Analyzer\n\nCollect news articles\nanalyse headlines\nTrack topics over time\nCreate summaries",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3688,8 +3775,8 @@
     "objectID": "chapters/chapter-connected-programs.html#looking-ahead",
     "href": "chapters/chapter-connected-programs.html#looking-ahead",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.16 Looking Ahead",
-    "text": "21.16 Looking Ahead\nNext chapter, you’ll learn to create interactive programs with graphical interfaces. Instead of just printing to the console, your programs will have buttons, windows, and visual elements that users can click and interact with!",
+    "section": "21.20 Looking Ahead",
+    "text": "21.20 Looking Ahead\nNext chapter, you’ll learn to create interactive programs with graphical interfaces. Instead of just printing to the console, your programs will have buttons, windows, and visual elements that users can click and interact with!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3699,8 +3786,8 @@
     "objectID": "chapters/chapter-connected-programs.html#chapter-summary-1",
     "href": "chapters/chapter-connected-programs.html#chapter-summary-1",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.17 Chapter Summary",
-    "text": "21.17 Chapter Summary\nYou’ve learned to: - Understand how APIs work - Make web requests from Python - Handle JSON responses - Manage API keys securely - Build programs that use live data - Handle errors gracefully\nYour programs are no longer isolated - they’re connected to the world’s information!",
+    "section": "21.21 Chapter Summary",
+    "text": "21.21 Chapter Summary\nYou’ve learned to: - Understand how APIs work - Make web requests from Python - Handle JSON responses - Manage API keys securely - Build programs that use live data - Handle errors gracefully\nYour programs are no longer isolated - they’re connected to the world’s information!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3710,8 +3797,8 @@
     "objectID": "chapters/chapter-connected-programs.html#reflection-prompts",
     "href": "chapters/chapter-connected-programs.html#reflection-prompts",
     "title": "21  Chapter 11: Connected Programs",
-    "section": "21.18 Reflection Prompts",
-    "text": "21.18 Reflection Prompts\n\nAPI Design: What makes a good API vs a frustrating one?\nError Planning: What could go wrong with internet-connected programs?\nPrivacy Concerns: What data should programs be careful about?\nFuture APIs: What APIs would you like to exist?\n\nRemember: The internet is your program’s library. APIs are the librarians that help you find exactly what you need!",
+    "section": "21.22 Reflection Prompts",
+    "text": "21.22 Reflection Prompts\n\nAPI Design: What makes a good API vs a frustrating one?\nError Planning: What could go wrong with internet-connected programs?\nPrivacy Concerns: What data should programs be careful about?\nFuture APIs: What APIs would you like to exist?\n\nRemember: The internet is your program’s library. APIs are the librarians that help you find exactly what you need!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>21</span>  <span class='chapter-title'>Chapter 11: Connected Programs</span>"
@@ -3722,7 +3809,7 @@
     "href": "chapters/chapter-interactive-systems.html",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "",
-    "text": "22.1 Introduction: From Console to Canvas\nAll your programs so far have lived in the console - that text-based world of print() and input(). But most software you use daily has windows, buttons, menus, and graphics. Today, you’ll learn to build those kinds of programs!\nThink about the apps you use: - They have buttons you can click - Text fields where you type - Menus you can navigate - Images and colors - Multiple things happening at once\nThis chapter teaches you to create all of these.",
+    "text": "22.1 Introduction: From Console to Canvas\nAll your programs so far have lived in the console - that text-based world of print() and input(). But most software you use daily has windows, buttons, menus, and graphics. In this chapter, you’ll learn to build those kinds of programs.\nThink about the apps you use: - They have buttons you can click - Text fields where you type - Menus you can navigate - Images and colors - Multiple things happening at once\nThis chapter teaches you to create all of these. But more importantly, it introduces a fundamentally different way of thinking about how programs run.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3733,7 +3820,7 @@
     "href": "chapters/chapter-interactive-systems.html#understanding-event-driven-programming",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.2 Understanding Event-Driven Programming",
-    "text": "22.2 Understanding Event-Driven Programming\nConsole programs are like a conversation - one thing happens, then the next. GUI programs are like a party - many things can happen at any time!\n\nThe Event Loop\nGUI programs work differently: 1. Setup - Create window and widgets 2. Wait - Program waits for user action 3. React - User clicks/types/moves 4. Update - Program responds 5. Repeat - Back to waiting\nimport tkinter as tk\n\n# Create window\nwindow = tk.Tk()\nwindow.title(\"My First GUI\")\n\n# Add a label\nlabel = tk.Label(window, text=\"Hello, GUI World!\")\nlabel.pack()\n\n# Start the event loop\nwindow.mainloop()\n\n\n\n\n\n\nTipAI Partnership for GUIs\n\n\n\nWhen learning GUI programming, ask AI: “Show me the simplest possible tkinter program with just one button that prints ‘clicked’ when pressed.”",
+    "text": "22.2 Understanding Event-Driven Programming\nUntil now, every program you’ve written runs top to bottom. Line 1 executes, then line 2, then line 3. Even with functions and loops, you control the order. Your program asks a question with input(), waits for an answer, and moves on.\nGUI programs abandon that model entirely. Instead of your code deciding what happens next, the user decides. They might click a button, type in a text field, resize the window, or do nothing at all. Your program has to be ready for any of those actions, in any order, at any time. This is event-driven programming, and it requires a genuine shift in how you think about code.\n\nThe Event Loop\nThink of the event loop like a receptionist at a front desk. The receptionist doesn’t decide who walks in or when - they simply wait, and when someone arrives, they handle the request and go back to waiting. Your GUI program works the same way: it sets everything up, then hands control to an event loop that watches for user actions and dispatches them to the right handler.\nHere’s the cycle:\n\nSetup - Create window and widgets\nWait - Program waits for user action\nReact - User clicks/types/moves\nUpdate - Program responds\nRepeat - Back to waiting\n\nThat final call to mainloop() in every tkinter program is where your code says: “I’m done setting up. Start the receptionist.”\nimport tkinter as tk\n\n# Create window\nwindow = tk.Tk()\nwindow.title(\"My First GUI\")\n\n# Add a label\nlabel = tk.Label(window, text=\"Hello, GUI World!\")\nlabel.pack()\n\n# Start the event loop\nwindow.mainloop()\n\n\n\n\n\n\nTipAI Partnership for GUIs\n\n\n\nWhen learning GUI programming, ask AI: “Show me the simplest possible tkinter program with just one button that prints ‘clicked’ when pressed.”\n\n\n\n\nDiscovering GUIs with Your AI Partner\nThe jump to event-driven programming is big enough that it’s worth exploring before you start building.\nAsk your AI:\nCompare a console-based number guessing game with a GUI version of the same game.\nShow both side by side and explain how the flow of control differs.\nNotice how the console version uses a while loop to keep asking, but the GUI version sets up widgets once and lets the event loop handle everything after that.\nTry this follow-up:\nIn a tkinter program, what happens if I put a long-running calculation\ninside a button's command function? Why does the window freeze?\nThis reveals something important about the event loop: while your handler is running, the receptionist is busy and can’t respond to anyone else.",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3744,7 +3831,7 @@
     "href": "chapters/chapter-interactive-systems.html#your-first-interactive-window",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.3 Your First Interactive Window",
-    "text": "22.3 Your First Interactive Window\nLet’s build a simple temperature converter with a GUI:\nimport tkinter as tk\n\ndef convert_temperature():\n    \"\"\"Convert Celsius to Fahrenheit\"\"\"\n    celsius = float(entry.get())\n    fahrenheit = celsius * 9/5 + 32\n    result_label.config(text=f\"{fahrenheit:.1f}°F\")\n\n# Create main window\nwindow = tk.Tk()\nwindow.title(\"Temperature Converter\")\nwindow.geometry(\"300x150\")\n\n# Create widgets\ntk.Label(window, text=\"Enter Celsius:\").pack()\nentry = tk.Entry(window)\nentry.pack()\n\nconvert_button = tk.Button(window, text=\"Convert\", command=convert_temperature)\nconvert_button.pack()\n\nresult_label = tk.Label(window, text=\"\")\nresult_label.pack()\n\n# Run the program\nwindow.mainloop()\n\n\n\n\n\n\nWarningExpression Explorer: Lambda Functions\n\n\n\nYou’ll often see command=lambda: function() in GUI code. Ask AI: “Explain lambda functions in tkinter buttons with simple examples.”",
+    "text": "22.3 Your First Interactive Window\nNow that you understand the event-driven model, let’s build something with it. The key pattern is always the same: create widgets, connect them to handler functions, and start the event loop. Here’s a simple temperature converter:\nimport tkinter as tk\n\ndef convert_temperature():\n    \"\"\"Convert Celsius to Fahrenheit\"\"\"\n    celsius = float(entry.get())\n    fahrenheit = celsius * 9/5 + 32\n    result_label.config(text=f\"{fahrenheit:.1f}°F\")\n\n# Create main window\nwindow = tk.Tk()\nwindow.title(\"Temperature Converter\")\nwindow.geometry(\"300x150\")\n\n# Create widgets\ntk.Label(window, text=\"Enter Celsius:\").pack()\nentry = tk.Entry(window)\nentry.pack()\n\nconvert_button = tk.Button(window, text=\"Convert\", command=convert_temperature)\nconvert_button.pack()\n\nresult_label = tk.Label(window, text=\"\")\nresult_label.pack()\n\n# Run the program\nwindow.mainloop()\n\n\n\n\n\n\nNoteExpression Explorer: Lambda Functions\n\n\n\nYou’ll see lambda appear frequently in GUI code, so it’s worth understanding before we go further. A lambda is simply a small, anonymous function written on one line. Where you’d normally write:\ndef set_red():\n    set_color('red')\nYou can instead write lambda: set_color('red'). It does the same thing - creates a function that calls set_color('red') - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. You’ll see it in action shortly.\nAsk your AI:\nShow me three examples of lambda in tkinter button commands.\nThen show the same thing using regular named functions.\nWhen would I prefer one over the other?",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3755,7 +3842,7 @@
     "href": "chapters/chapter-interactive-systems.html#building-blocks-of-guis",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.4 Building Blocks of GUIs",
-    "text": "22.4 Building Blocks of GUIs\n\nCommon Widgets\nThink of widgets like LEGO blocks for your interface:\n\nLabel - Displays text or images\nButton - Clickable actions\nEntry - Single-line text input\nText - Multi-line text area\nFrame - Container for organisation\nCanvas - Drawing and graphics\n\n\n\nLayout Managers\nLayout managers arrange your widgets:\n# Pack - Simple stacking\nlabel.pack(side=\"top\")\nbutton.pack(side=\"bottom\")\n\n# Grid - Table-like layout\nlabel.grid(row=0, column=0)\nentry.grid(row=0, column=1)\n\n# Place - Exact positioning\nbutton.place(x=10, y=50)",
+    "text": "22.4 Building Blocks of GUIs\nWith the basic pattern under your belt - create widgets, connect handlers, run the event loop - let’s look at the building blocks you have to work with.\n\nCommon Widgets\nThink of widgets like LEGO blocks for your interface:\n\nLabel - Displays text or images\nButton - Clickable actions\nEntry - Single-line text input\nText - Multi-line text area\nFrame - Container for organisation\nCanvas - Drawing and graphics\n\n\n\nLayout Managers\nLayout managers arrange your widgets:\n# Pack - Simple stacking\nlabel.pack(side=\"top\")\nbutton.pack(side=\"bottom\")\n\n# Grid - Table-like layout\nlabel.grid(row=0, column=0)\nentry.grid(row=0, column=1)\n\n# Place - Exact positioning\nbutton.place(x=10, y=50)",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3766,7 +3853,7 @@
     "href": "chapters/chapter-interactive-systems.html#creating-a-to-do-list-application",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.5 Creating a To-Do List Application",
-    "text": "22.5 Creating a To-Do List Application\nLet’s build something useful - a visual to-do list:\nimport tkinter as tk\n\nclass TodoApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"My To-Do List\")\n        self.root.geometry(\"400x500\")\n        \n        # Create widgets\n        self.create_widgets()\n        \n    def create_widgets(self):\n        # Title\n        title = tk.Label(self.root, text=\"To-Do List\", font=(\"Arial\", 20))\n        title.pack(pady=10)\n        \n        # Entry frame\n        entry_frame = tk.Frame(self.root)\n        entry_frame.pack(pady=10)\n        \n        self.task_entry = tk.Entry(entry_frame, width=30)\n        self.task_entry.pack(side=\"left\", padx=5)\n        \n        add_button = tk.Button(entry_frame, text=\"Add Task\", command=self.add_task)\n        add_button.pack(side=\"left\")\n        \n        # Task list\n        self.task_listbox = tk.Listbox(self.root, width=50, height=15)\n        self.task_listbox.pack(pady=10)\n        \n        # Delete button\n        delete_button = tk.Button(self.root, text=\"Delete Selected\", command=self.delete_task)\n        delete_button.pack()\n        \n    def add_task(self):\n        task = self.task_entry.get()\n        if task:\n            self.task_listbox.insert(tk.END, task)\n            self.task_entry.delete(0, tk.END)\n            \n    def delete_task(self):\n        try:\n            index = self.task_listbox.curselection()[0]\n            self.task_listbox.delete(index)\n        except IndexError:\n            pass\n\n# Run the app\nroot = tk.Tk()\napp = TodoApp(root)\nroot.mainloop()",
+    "text": "22.5 Creating a To-Do List Application\nYou’ve seen individual widgets and layout managers. Now let’s combine them into a complete, useful application. This to-do list uses a class to keep all the related widgets and functions organised together:\nimport tkinter as tk\n\nclass TodoApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"My To-Do List\")\n        self.root.geometry(\"400x500\")\n        \n        # Create widgets\n        self.create_widgets()\n        \n    def create_widgets(self):\n        # Title\n        title = tk.Label(self.root, text=\"To-Do List\", font=(\"Arial\", 20))\n        title.pack(pady=10)\n        \n        # Entry frame\n        entry_frame = tk.Frame(self.root)\n        entry_frame.pack(pady=10)\n        \n        self.task_entry = tk.Entry(entry_frame, width=30)\n        self.task_entry.pack(side=\"left\", padx=5)\n        \n        add_button = tk.Button(entry_frame, text=\"Add Task\", command=self.add_task)\n        add_button.pack(side=\"left\")\n        \n        # Task list\n        self.task_listbox = tk.Listbox(self.root, width=50, height=15)\n        self.task_listbox.pack(pady=10)\n        \n        # Delete button\n        delete_button = tk.Button(self.root, text=\"Delete Selected\", command=self.delete_task)\n        delete_button.pack()\n        \n    def add_task(self):\n        task = self.task_entry.get()\n        if task:\n            self.task_listbox.insert(tk.END, task)\n            self.task_entry.delete(0, tk.END)\n            \n    def delete_task(self):\n        try:\n            index = self.task_listbox.curselection()[0]\n            self.task_listbox.delete(index)\n        except IndexError:\n            pass\n\n# Run the app\nroot = tk.Tk()\napp = TodoApp(root)\nroot.mainloop()",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3777,7 +3864,7 @@
     "href": "chapters/chapter-interactive-systems.html#event-handling-making-things-happen",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.6 Event Handling: Making Things Happen",
-    "text": "22.6 Event Handling: Making Things Happen\nEvents are user actions - clicks, key presses, mouse movements. Your program responds to these events:\n\nCommon Events\n# Button click\nbutton = tk.Button(window, text=\"Click Me\", command=handle_click)\n\n# Key press\nentry.bind('&lt;Return&gt;', handle_enter_key)\n\n# Mouse events\ncanvas.bind('&lt;Button-1&gt;', handle_left_click)\ncanvas.bind('&lt;Motion&gt;', handle_mouse_move)\n\n# Window events\nwindow.bind('&lt;Configure&gt;', handle_resize)\n\n\nEvent Handler Functions\ndef handle_click():\n    print(\"Button clicked!\")\n\ndef handle_enter_key(event):\n    print(f\"Enter pressed, text: {entry.get()}\")\n\ndef handle_mouse_move(event):\n    print(f\"Mouse at {event.x}, {event.y}\")\n\n\n\n\n\n\nImportantEvent Function Parameters\n\n\n\nNotice how some handlers have an event parameter and others don’t? Button commands don’t pass events, but bindings do. Always check what your handler receives!",
+    "text": "22.6 Event Handling: Making Things Happen\nIn the to-do app, we only handled button clicks. But the event loop can respond to much more than that - key presses, mouse movements, window resizing, and more. Let’s look at how to connect your code to these different kinds of user actions:\n\nCommon Events\n# Button click\nbutton = tk.Button(window, text=\"Click Me\", command=handle_click)\n\n# Key press\nentry.bind('&lt;Return&gt;', handle_enter_key)\n\n# Mouse events\ncanvas.bind('&lt;Button-1&gt;', handle_left_click)\ncanvas.bind('&lt;Motion&gt;', handle_mouse_move)\n\n# Window events\nwindow.bind('&lt;Configure&gt;', handle_resize)\n\n\nEvent Handler Functions\ndef handle_click():\n    print(\"Button clicked!\")\n\ndef handle_enter_key(event):\n    print(f\"Enter pressed, text: {entry.get()}\")\n\ndef handle_mouse_move(event):\n    print(f\"Mouse at {event.x}, {event.y}\")\n\n\n\n\n\n\nImportantEvent Function Parameters\n\n\n\nNotice how some handlers have an event parameter and others don’t? Button commands don’t pass events, but bindings do. Always check what your handler receives!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3799,7 +3886,7 @@
     "href": "chapters/chapter-interactive-systems.html#working-with-user-input",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.8 Working with User Input",
-    "text": "22.8 Working with User Input\nGUI programs need to validate and process user input carefully:\n\nInput Validation\ndef validate_number_input():\n    \"\"\"Check if entry contains a valid number\"\"\"\n    try:\n        value = float(entry.get())\n        error_label.config(text=\"\")\n        return value\n    except ValueError:\n        error_label.config(text=\"Please enter a number\", fg=\"red\")\n        return None\n\ndef process_input():\n    value = validate_number_input()\n    if value is not None:\n        # Process the valid input\n        result = value * 2\n        result_label.config(text=f\"Result: {result}\")\n\n\nProviding Feedback\nGood GUIs tell users what’s happening:\ndef long_operation():\n    # Show progress\n    status_label.config(text=\"Processing...\")\n    root.update()  # Force display update\n    \n    # Do the work\n    import time\n    time.sleep(2)  # Simulate work\n    \n    # Show completion\n    status_label.config(text=\"Complete!\", fg=\"green\")",
+    "text": "22.8 Working with User Input\nWith console programs, input() always returns a string and your program stops to wait for it. In a GUI, user input arrives whenever the user decides to type or click, and you need to validate it without halting the event loop. Here are the key patterns:\n\nInput Validation\ndef validate_number_input():\n    \"\"\"Check if entry contains a valid number\"\"\"\n    try:\n        value = float(entry.get())\n        error_label.config(text=\"\")\n        return value\n    except ValueError:\n        error_label.config(text=\"Please enter a number\", fg=\"red\")\n        return None\n\ndef process_input():\n    value = validate_number_input()\n    if value is not None:\n        # Process the valid input\n        result = value * 2\n        result_label.config(text=f\"Result: {result}\")\n\n\nProviding Feedback\nGood GUIs tell users what’s happening:\ndef long_operation():\n    # Show progress\n    status_label.config(text=\"Processing...\")\n    root.update()  # Force display update\n    \n    # Do the work\n    import time\n    time.sleep(2)  # Simulate work\n    \n    # Show completion\n    status_label.config(text=\"Complete!\", fg=\"green\")",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3832,7 +3919,7 @@
     "href": "chapters/chapter-interactive-systems.html#managing-application-state",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.11 Managing Application State",
-    "text": "22.11 Managing Application State\nGUI applications need to track their state carefully:\n\nState Management Pattern\nclass AppState:\n    def __init__(self):\n        self.data = []\n        self.current_file = None\n        self.is_modified = False\n        \n    def add_item(self, item):\n        self.data.append(item)\n        self.is_modified = True\n        \n    def save_state(self):\n        if self.current_file:\n            with open(self.current_file, 'w') as f:\n                json.dump(self.data, f)\n            self.is_modified = False\n            \n    def check_save_needed(self):\n        if self.is_modified:\n            return messagebox.askyesno(\"Save?\", \"Save changes before closing?\")\n        return True",
+    "text": "22.11 Managing Application State\nIn a console program, state is straightforward: variables hold values, and your code updates them in a predictable sequence. GUI state is harder because changes can come from anywhere - a button click, a menu selection, a timer, or a key press - and the display needs to stay in sync with the data at all times. If your data changes but the screen doesn’t update, or the screen shows something that doesn’t match your data, users see bugs. Keeping data and display synchronised is the central challenge of GUI programming.\n\nState Management Pattern\nclass AppState:\n    def __init__(self):\n        self.data = []\n        self.current_file = None\n        self.is_modified = False\n        \n    def add_item(self, item):\n        self.data.append(item)\n        self.is_modified = True\n        \n    def save_state(self):\n        if self.current_file:\n            with open(self.current_file, 'w') as f:\n                json.dump(self.data, f)\n            self.is_modified = False\n            \n    def check_save_needed(self):\n        if self.is_modified:\n            return messagebox.askyesno(\"Save?\", \"Save changes before closing?\")\n        return True",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3843,7 +3930,7 @@
     "href": "chapters/chapter-interactive-systems.html#creating-responsive-interfaces",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.12 Creating Responsive Interfaces",
-    "text": "22.12 Creating Responsive Interfaces\nGood GUIs stay responsive even during long operations:\n\nUsing After() for Updates\ndef update_clock():\n    \"\"\"Update time display every second\"\"\"\n    current_time = time.strftime(\"%H:%M:%S\")\n    time_label.config(text=current_time)\n    # Schedule next update\n    root.after(1000, update_clock)\n\n# Start the clock\nupdate_clock()\n\n\nProgress Indication\nimport tkinter.ttk as ttk\n\ndef start_task():\n    progress_bar = ttk.Progressbar(root, length=200, mode='determinate')\n    progress_bar.pack()\n    \n    for i in range(101):\n        progress_bar['value'] = i\n        root.update()\n        time.sleep(0.01)\n    \n    progress_bar.destroy()",
+    "text": "22.12 Creating Responsive Interfaces\nRemember the receptionist metaphor? If a handler takes a long time to finish, the receptionist can’t greet anyone else - and the window freezes. Good GUIs stay responsive even during long operations by breaking work into small pieces:\n\nUsing After() for Updates\ndef update_clock():\n    \"\"\"Update time display every second\"\"\"\n    current_time = time.strftime(\"%H:%M:%S\")\n    time_label.config(text=current_time)\n    # Schedule next update\n    root.after(1000, update_clock)\n\n# Start the clock\nupdate_clock()\n\n\nProgress Indication\nimport tkinter.ttk as ttk\n\ndef start_task():\n    progress_bar = ttk.Progressbar(root, length=200, mode='determinate')\n    progress_bar.pack()\n    \n    for i in range(101):\n        progress_bar['value'] = i\n        root.update()\n        time.sleep(0.01)\n    \n    progress_bar.destroy()",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3854,7 +3941,7 @@
     "href": "chapters/chapter-interactive-systems.html#common-gui-patterns",
     "title": "22  Chapter 12: Interactive Systems",
     "section": "22.13 Common GUI Patterns",
-    "text": "22.13 Common GUI Patterns\n\nModel-View Pattern\nSeparate your data (model) from display (view):\nclass TodoModel:\n    def __init__(self):\n        self.tasks = []\n    \n    def add_task(self, task):\n        self.tasks.append(task)\n    \n    def remove_task(self, index):\n        del self.tasks[index]\n\nclass TodoView:\n    def __init__(self, root, model):\n        self.model = model\n        self.root = root\n        # Create GUI...\n    \n    def refresh_display(self):\n        # Update GUI from model\n        self.listbox.delete(0, tk.END)\n        for task in self.model.tasks:\n            self.listbox.insert(tk.END, task)",
+    "text": "22.13 Common GUI Patterns\nAs your GUI applications grow, you’ll want to keep your code organised. One of the most useful ideas is separating what your program knows from what it shows on screen.\n\nModel-View Pattern\nSeparate your data (model) from display (view):\nclass TodoModel:\n    def __init__(self):\n        self.tasks = []\n    \n    def add_task(self, task):\n        self.tasks.append(task)\n    \n    def remove_task(self, index):\n        del self.tasks[index]\n\nclass TodoView:\n    def __init__(self, root, model):\n        self.model = model\n        self.root = root\n        # Create GUI...\n    \n    def refresh_display(self):\n        # Update GUI from model\n        self.listbox.delete(0, tk.END)\n        for task in self.model.tasks:\n            self.listbox.insert(tk.END, task)",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3872,11 +3959,22 @@
     ]
   },
   {
+    "objectID": "chapters/chapter-interactive-systems.html#common-ai-complications",
+    "href": "chapters/chapter-interactive-systems.html#common-ai-complications",
+    "title": "22  Chapter 12: Interactive Systems",
+    "section": "22.15 Common AI Complications",
+    "text": "22.15 Common AI Complications\nGUI code is where AI tends to overcomplicate things the most. Ask AI to build a simple counter app (a label and two buttons: increment and decrement), and you’ll likely get a class hierarchy with a base Application class, a separate CounterWidget that inherits from tk.Frame, a Controller mediating between a Model and a View, and custom event dispatchers - all for what could be twenty lines of straightforward code.\nHere’s what to watch for:\n\nUnnecessary class inheritance. AI loves creating custom widget classes that inherit from tk.Frame or tk.Toplevel. For learning, a simple function-based approach or a single class is almost always enough.\nDesign patterns you don’t need yet. Model-View-Controller (MVC), Observer patterns, and event bus architectures are real tools for large applications, but they add complexity that obscures the fundamentals when you’re starting out.\nPremature abstraction. AI may create a generic WidgetFactory or a ThemeManager when you just need a button with a colour. If you can’t explain why an abstraction exists, you probably don’t need it yet.\n\nWhen AI gives you GUI code, ask yourself: “Could I build this with just functions, a few widgets, and mainloop()?” If yes, simplify. You can always add structure later when your application genuinely needs it.\n\n\n\n\n\n\nTipSimplification Prompt\n\n\n\nWhen AI overcomplicates your GUI code, try this prompt:\nRewrite this using only functions (no classes) and the fewest widgets possible.\nKeep it under 30 lines. I'm learning, not building production software.",
+    "crumbs": [
+      "Part III: Real-World Programming (Weeks 9-12)",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
+    ]
+  },
+  {
     "objectID": "chapters/chapter-interactive-systems.html#practice-projects",
     "href": "chapters/chapter-interactive-systems.html#practice-projects",
     "title": "22  Chapter 12: Interactive Systems",
-    "section": "22.15 Practice Projects",
-    "text": "22.15 Practice Projects\n\nProject 1: Note Taking App\n\nMultiple text areas\nSave/load files\nSearch functionality\nFont customisation\n\n\n\nProject 2: Simple Paint Program\n\nDrawing tools (pencil, shapes)\nColor picker\nUndo/redo\nSave drawings\n\n\n\nProject 3: Quiz Game GUI\n\nQuestion display\nMultiple choice buttons\nScore tracking\nTimer display",
+    "section": "22.16 Practice Projects",
+    "text": "22.16 Practice Projects\n\nProject 1: Note Taking App\n\nMultiple text areas\nSave/load files\nSearch functionality\nFont customisation\n\n\n\nProject 2: Simple Paint Program\n\nDrawing tools (pencil, shapes)\nColor picker\nUndo/redo\nSave drawings\n\n\n\nProject 3: Quiz Game GUI\n\nQuestion display\nMultiple choice buttons\nScore tracking\nTimer display",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3886,8 +3984,8 @@
     "objectID": "chapters/chapter-interactive-systems.html#looking-ahead",
     "href": "chapters/chapter-interactive-systems.html#looking-ahead",
     "title": "22  Chapter 12: Interactive Systems",
-    "section": "22.16 Looking Ahead",
-    "text": "22.16 Looking Ahead\nIn the final chapter of Part III, you’ll learn to think like a software architect - planning and designing complete applications before writing code. You’ll combine everything you’ve learned to create professional-quality programs!",
+    "section": "22.17 Looking Ahead",
+    "text": "22.17 Looking Ahead\nIn the final chapter of Part III, you’ll learn to think like a software architect - planning and designing complete applications before writing code. You’ll combine everything you’ve learned to create professional-quality programs!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3897,8 +3995,8 @@
     "objectID": "chapters/chapter-interactive-systems.html#chapter-summary-1",
     "href": "chapters/chapter-interactive-systems.html#chapter-summary-1",
     "title": "22  Chapter 12: Interactive Systems",
-    "section": "22.17 Chapter Summary",
-    "text": "22.17 Chapter Summary\nYou’ve learned to: - Create windows and widgets - Handle user events - Build interactive interfaces - Manage application state - Create menus and dialogs - Keep interfaces responsive\nYour programs are no longer confined to the console - they’re full applications with professional interfaces!",
+    "section": "22.18 Chapter Summary",
+    "text": "22.18 Chapter Summary\nYou’ve learned to: - Create windows and widgets - Handle user events - Build interactive interfaces - Manage application state - Create menus and dialogs - Keep interfaces responsive\nYour programs are no longer confined to the console - they’re full applications with professional interfaces!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"
@@ -3908,8 +4006,8 @@
     "objectID": "chapters/chapter-interactive-systems.html#reflection-prompts",
     "href": "chapters/chapter-interactive-systems.html#reflection-prompts",
     "title": "22  Chapter 12: Interactive Systems",
-    "section": "22.18 Reflection Prompts",
-    "text": "22.18 Reflection Prompts\n\nDesign Thinking: What makes a GUI intuitive vs confusing?\nEvent Planning: How do you decide what events to handle?\nState Management: Why is tracking state harder in GUIs?\nUser Experience: What frustrated you about GUIs you’ve used?\n\nRemember: Great GUIs are invisible - users focus on their task, not on figuring out the interface!",
+    "section": "22.19 Reflection Prompts",
+    "text": "22.19 Reflection Prompts\n\nDesign Thinking: What makes a GUI intuitive vs confusing?\nEvent Planning: How do you decide what events to handle?\nState Management: Why is tracking state harder in GUIs?\nUser Experience: What frustrated you about GUIs you’ve used?\n\nRemember: Great GUIs are invisible - users focus on their task, not on figuring out the interface!",
     "crumbs": [
       "Part III: Real-World Programming (Weeks 9-12)",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Chapter 12: Interactive Systems</span>"

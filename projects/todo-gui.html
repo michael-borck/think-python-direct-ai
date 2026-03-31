@@ -700,7 +700,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="design-your-interface" class="level3">
 <h3 class="anchored" data-anchor-id="design-your-interface">2. Design Your Interface</h3>
 <p>Sketch your application layout:</p>
-<pre><code>┌─────────────────────────────────────────────────────────────┐
+<pre class="text"><code>┌─────────────────────────────────────────────────────────────┐
 │  📋 Todo Manager - My Tasks                    [Save] [Load] │
 ├─────────────────────────────────────────────────────────────┤
 │  Add New Task:                                              │
@@ -799,14 +799,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="effective-architecture-prompts" class="level3">
 <h3 class="anchored" data-anchor-id="effective-architecture-prompts">Effective Architecture Prompts</h3>
 <p>✅ <strong>Good Learning Prompts</strong>:</p>
-<pre><code>"I'm building a todo app with this data structure: [paste structure]
+<pre class="text"><code>"I'm building a todo app with this data structure: [paste structure]
 I need a TaskManager class that handles adding, completing, and 
 deleting tasks. Show me a clean implementation with methods for 
 each operation."</code></pre>
-<pre><code>"My todo app needs to save/load from JSON. I have this data 
+<pre class="text"><code>"My todo app needs to save/load from JSON. I have this data 
 structure: [paste]. Show me functions to safely save and load 
 this data with error handling."</code></pre>
-<pre><code>"I need a tkinter interface that displays a list of tasks with 
+<pre class="text"><code>"I need a tkinter interface that displays a list of tasks with 
 checkboxes. Each task should show description and priority. 
 Show me how to create this with proper layout."</code></pre>
 <p>❌ <strong>Avoid These Prompts</strong>: - “Build a complete todo app with cloud sync” - “Add machine learning to predict task completion” - “Create a mobile app version”</p>
@@ -815,16 +815,16 @@ Show me how to create this with proper layout."</code></pre>
 <h3 class="anchored" data-anchor-id="ai-learning-progression">AI Learning Progression</h3>
 <ol type="1">
 <li><p><strong>Architecture Phase</strong>: System design</p>
-<pre><code>"I want to build a todo app. Help me design the class structure
+<pre class="text"><code>"I want to build a todo app. Help me design the class structure
 and data flow. What are the main components I'll need?"</code></pre></li>
 <li><p><strong>Implementation Phase</strong>: Component building</p>
-<pre><code>"Here's my TaskManager class design: [paste]. Help me implement
+<pre class="text"><code>"Here's my TaskManager class design: [paste]. Help me implement
 the add_task method with proper validation."</code></pre></li>
 <li><p><strong>Integration Phase</strong>: Connecting pieces</p>
-<pre><code>"I have separate Task, TaskManager, and GUI classes. Show me 
+<pre class="text"><code>"I have separate Task, TaskManager, and GUI classes. Show me 
 how to connect them so GUI updates when tasks change."</code></pre></li>
 <li><p><strong>Polish Phase</strong>: Enhancement and refinement</p>
-<pre><code>"My todo app works but needs better error handling. Show me 
+<pre class="text"><code>"My todo app works but needs better error handling. Show me 
 how to validate user input and handle file errors gracefully."</code></pre></li>
 </ol>
 </section>
@@ -874,7 +874,7 @@ how to validate user input and handle file errors gracefully."</code></pre></li>
 <section id="sample-interaction" class="level2" data-number="27.7">
 <h2 data-number="27.7" class="anchored" data-anchor-id="sample-interaction"><span class="header-section-number">27.7</span> Sample Interaction</h2>
 <p>Here’s how your todo application might work:</p>
-<pre><code>📋 TODO MANAGER - Starting Up...
+<pre class="text"><code>📋 TODO MANAGER - Starting Up...
 Loading saved tasks from: todo_data.json
 Found 3 existing tasks
 
@@ -1545,7 +1545,7 @@ User adds new task: "Start Python Jumpstart course"
 </section>
 <section id="manual-testing-checklist" class="level3">
 <h3 class="anchored" data-anchor-id="manual-testing-checklist">Manual Testing Checklist</h3>
-<pre><code>□ Add new task with each priority level
+<pre class="text"><code>□ Add new task with each priority level
 □ Complete and uncomplete tasks
 □ Edit existing task descriptions
 □ Delete tasks with confirmation
@@ -2161,7 +2161,7 @@ User adds new task: "Start Python Jumpstart course"
 <span id="cb16-60"><a href="#cb16-60" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Design Your Interface</span></span>
 <span id="cb16-61"><a href="#cb16-61" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-62"><a href="#cb16-62" aria-hidden="true" tabindex="-1"></a>Sketch your application layout:</span>
-<span id="cb16-63"><a href="#cb16-63" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-63"><a href="#cb16-63" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-64"><a href="#cb16-64" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────────────────────────┐</span></span>
 <span id="cb16-65"><a href="#cb16-65" aria-hidden="true" tabindex="-1"></a><span class="in">│  📋 Todo Manager - My Tasks                    [Save] [Load] │</span></span>
 <span id="cb16-66"><a href="#cb16-66" aria-hidden="true" tabindex="-1"></a><span class="in">├─────────────────────────────────────────────────────────────┤</span></span>
@@ -2251,20 +2251,20 @@ User adds new task: "Start Python Jumpstart course"
 <span id="cb16-150"><a href="#cb16-150" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effective Architecture Prompts</span></span>
 <span id="cb16-151"><a href="#cb16-151" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-152"><a href="#cb16-152" aria-hidden="true" tabindex="-1"></a>✅ **Good Learning Prompts**:</span>
-<span id="cb16-153"><a href="#cb16-153" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-153"><a href="#cb16-153" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-154"><a href="#cb16-154" aria-hidden="true" tabindex="-1"></a><span class="in">"I'm building a todo app with this data structure: [paste structure]</span></span>
 <span id="cb16-155"><a href="#cb16-155" aria-hidden="true" tabindex="-1"></a><span class="in">I need a TaskManager class that handles adding, completing, and </span></span>
 <span id="cb16-156"><a href="#cb16-156" aria-hidden="true" tabindex="-1"></a><span class="in">deleting tasks. Show me a clean implementation with methods for </span></span>
 <span id="cb16-157"><a href="#cb16-157" aria-hidden="true" tabindex="-1"></a><span class="in">each operation."</span></span>
 <span id="cb16-158"><a href="#cb16-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb16-159"><a href="#cb16-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-160"><a href="#cb16-160" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-160"><a href="#cb16-160" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-161"><a href="#cb16-161" aria-hidden="true" tabindex="-1"></a><span class="in">"My todo app needs to save/load from JSON. I have this data </span></span>
 <span id="cb16-162"><a href="#cb16-162" aria-hidden="true" tabindex="-1"></a><span class="in">structure: [paste]. Show me functions to safely save and load </span></span>
 <span id="cb16-163"><a href="#cb16-163" aria-hidden="true" tabindex="-1"></a><span class="in">this data with error handling."</span></span>
 <span id="cb16-164"><a href="#cb16-164" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb16-165"><a href="#cb16-165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-166"><a href="#cb16-166" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-166"><a href="#cb16-166" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-167"><a href="#cb16-167" aria-hidden="true" tabindex="-1"></a><span class="in">"I need a tkinter interface that displays a list of tasks with </span></span>
 <span id="cb16-168"><a href="#cb16-168" aria-hidden="true" tabindex="-1"></a><span class="in">checkboxes. Each task should show description and priority. </span></span>
 <span id="cb16-169"><a href="#cb16-169" aria-hidden="true" tabindex="-1"></a><span class="in">Show me how to create this with proper layout."</span></span>
@@ -2278,25 +2278,25 @@ User adds new task: "Start Python Jumpstart course"
 <span id="cb16-177"><a href="#cb16-177" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Learning Progression</span></span>
 <span id="cb16-178"><a href="#cb16-178" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-179"><a href="#cb16-179" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Architecture Phase**: System design</span>
-<span id="cb16-180"><a href="#cb16-180" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-180"><a href="#cb16-180" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-181"><a href="#cb16-181" aria-hidden="true" tabindex="-1"></a><span class="in">   "I want to build a todo app. Help me design the class structure</span></span>
 <span id="cb16-182"><a href="#cb16-182" aria-hidden="true" tabindex="-1"></a><span class="in">   and data flow. What are the main components I'll need?"</span></span>
 <span id="cb16-183"><a href="#cb16-183" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb16-184"><a href="#cb16-184" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-185"><a href="#cb16-185" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Implementation Phase**: Component building</span>
-<span id="cb16-186"><a href="#cb16-186" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-186"><a href="#cb16-186" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-187"><a href="#cb16-187" aria-hidden="true" tabindex="-1"></a><span class="in">   "Here's my TaskManager class design: [paste]. Help me implement</span></span>
 <span id="cb16-188"><a href="#cb16-188" aria-hidden="true" tabindex="-1"></a><span class="in">   the add_task method with proper validation."</span></span>
 <span id="cb16-189"><a href="#cb16-189" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb16-190"><a href="#cb16-190" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-191"><a href="#cb16-191" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Integration Phase**: Connecting pieces</span>
-<span id="cb16-192"><a href="#cb16-192" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-192"><a href="#cb16-192" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-193"><a href="#cb16-193" aria-hidden="true" tabindex="-1"></a><span class="in">   "I have separate Task, TaskManager, and GUI classes. Show me </span></span>
 <span id="cb16-194"><a href="#cb16-194" aria-hidden="true" tabindex="-1"></a><span class="in">   how to connect them so GUI updates when tasks change."</span></span>
 <span id="cb16-195"><a href="#cb16-195" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb16-196"><a href="#cb16-196" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-197"><a href="#cb16-197" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Polish Phase**: Enhancement and refinement</span>
-<span id="cb16-198"><a href="#cb16-198" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb16-198"><a href="#cb16-198" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb16-199"><a href="#cb16-199" aria-hidden="true" tabindex="-1"></a><span class="in">   "My todo app works but needs better error handling. Show me </span></span>
 <span id="cb16-200"><a href="#cb16-200" aria-hidden="true" tabindex="-1"></a><span class="in">   how to validate user input and handle file errors gracefully."</span></span>
 <span id="cb16-201"><a href="#cb16-201" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
@@ -2345,7 +2345,7 @@ User adds new task: "Start Python Jumpstart course"
 <span id="cb16-244"><a href="#cb16-244" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-245"><a href="#cb16-245" aria-hidden="true" tabindex="-1"></a>Here's how your todo application might work:</span>
 <span id="cb16-246"><a href="#cb16-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-247"><a href="#cb16-247" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-247"><a href="#cb16-247" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-248"><a href="#cb16-248" aria-hidden="true" tabindex="-1"></a><span class="in">📋 TODO MANAGER - Starting Up...</span></span>
 <span id="cb16-249"><a href="#cb16-249" aria-hidden="true" tabindex="-1"></a><span class="in">Loading saved tasks from: todo_data.json</span></span>
 <span id="cb16-250"><a href="#cb16-250" aria-hidden="true" tabindex="-1"></a><span class="in">Found 3 existing tasks</span></span>
@@ -3017,7 +3017,7 @@ User adds new task: "Start Python Jumpstart course"
 <span id="cb16-916"><a href="#cb16-916" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-917"><a href="#cb16-917" aria-hidden="true" tabindex="-1"></a><span class="fu">### Manual Testing Checklist</span></span>
 <span id="cb16-918"><a href="#cb16-918" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-919"><a href="#cb16-919" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb16-919"><a href="#cb16-919" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb16-920"><a href="#cb16-920" aria-hidden="true" tabindex="-1"></a><span class="in">□ Add new task with each priority level</span></span>
 <span id="cb16-921"><a href="#cb16-921" aria-hidden="true" tabindex="-1"></a><span class="in">□ Complete and uncomplete tasks</span></span>
 <span id="cb16-922"><a href="#cb16-922" aria-hidden="true" tabindex="-1"></a><span class="in">□ Edit existing task descriptions</span></span>

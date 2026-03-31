@@ -737,11 +737,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="effective-prompts-for-this-project" class="level3">
 <h3 class="anchored" data-anchor-id="effective-prompts-for-this-project">Effective Prompts for This Project</h3>
 <p>✅ <strong>Good Learning Prompts</strong>:</p>
-<pre><code>"I'm building a journal app. How can I get today's date and format it 
+<pre class="text"><code>"I'm building a journal app. How can I get today's date and format it 
 nicely for a journal entry header? Show me simple Python code."</code></pre>
-<pre><code>"My journal stores entries with dates. What's a good file format that's 
+<pre class="text"><code>"My journal stores entries with dates. What's a good file format that's 
 human-readable and easy to search? Show me an example entry."</code></pre>
-<pre><code>"I want to search through a journal file for entries containing a keyword. 
+<pre class="text"><code>"I want to search through a journal file for entries containing a keyword. 
 How do I read the file and find matching entries?"</code></pre>
 <p>❌ <strong>Avoid These Prompts</strong>: - “Build a complete journaling application” - “Add encryption and cloud sync to my journal” - “Create a multi-user journal with authentication”</p>
 </section>
@@ -749,16 +749,16 @@ How do I read the file and find matching entries?"</code></pre>
 <h3 class="anchored" data-anchor-id="ai-learning-progression">AI Learning Progression</h3>
 <ol type="1">
 <li><p><strong>Design Phase</strong>: Entry format planning</p>
-<pre><code>"What information should each journal entry include? 
+<pre class="text"><code>"What information should each journal entry include? 
 Show me a simple, readable format for storing entries."</code></pre></li>
 <li><p><strong>Date Handling</strong>: Working with time</p>
-<pre><code>"How do I get the current date and time in Python 
+<pre class="text"><code>"How do I get the current date and time in Python 
 and format it like 'Monday, January 15, 2024 - 2:30 PM'?"</code></pre></li>
 <li><p><strong>File Strategy</strong>: Append vs overwrite</p>
-<pre><code>"For a journal app, should I use one big file or separate files? 
+<pre class="text"><code>"For a journal app, should I use one big file or separate files? 
 What are the trade-offs?"</code></pre></li>
 <li><p><strong>Search Implementation</strong>: Finding content</p>
-<pre><code>"How can I search through a text file line by line 
+<pre class="text"><code>"How can I search through a text file line by line 
 to find entries containing specific words?"</code></pre></li>
 </ol>
 </section>
@@ -807,7 +807,7 @@ to find entries containing specific words?"</code></pre></li>
 <section id="sample-interaction" class="level2" data-number="18.7">
 <h2 data-number="18.7" class="anchored" data-anchor-id="sample-interaction"><span class="header-section-number">18.7</span> Sample Interaction</h2>
 <p>Here’s how your journal might work:</p>
-<pre><code>📖 PERSONAL JOURNAL 📖
+<pre class="text"><code>📖 PERSONAL JOURNAL 📖
 You have 47 entries since January 1, 2024
 
 ════════════════════════════════════════
@@ -1686,17 +1686,17 @@ View full entry number (1-12) or 0 to return: 1
 <span id="cb18-92"><a href="#cb18-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Effective Prompts for This Project</span></span>
 <span id="cb18-93"><a href="#cb18-93" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-94"><a href="#cb18-94" aria-hidden="true" tabindex="-1"></a>✅ **Good Learning Prompts**:</span>
-<span id="cb18-95"><a href="#cb18-95" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-95"><a href="#cb18-95" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb18-96"><a href="#cb18-96" aria-hidden="true" tabindex="-1"></a><span class="in">"I'm building a journal app. How can I get today's date and format it </span></span>
 <span id="cb18-97"><a href="#cb18-97" aria-hidden="true" tabindex="-1"></a><span class="in">nicely for a journal entry header? Show me simple Python code."</span></span>
 <span id="cb18-98"><a href="#cb18-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-99"><a href="#cb18-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-100"><a href="#cb18-100" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-100"><a href="#cb18-100" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb18-101"><a href="#cb18-101" aria-hidden="true" tabindex="-1"></a><span class="in">"My journal stores entries with dates. What's a good file format that's </span></span>
 <span id="cb18-102"><a href="#cb18-102" aria-hidden="true" tabindex="-1"></a><span class="in">human-readable and easy to search? Show me an example entry."</span></span>
 <span id="cb18-103"><a href="#cb18-103" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-104"><a href="#cb18-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-105"><a href="#cb18-105" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-105"><a href="#cb18-105" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb18-106"><a href="#cb18-106" aria-hidden="true" tabindex="-1"></a><span class="in">"I want to search through a journal file for entries containing a keyword. </span></span>
 <span id="cb18-107"><a href="#cb18-107" aria-hidden="true" tabindex="-1"></a><span class="in">How do I read the file and find matching entries?"</span></span>
 <span id="cb18-108"><a href="#cb18-108" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1709,25 +1709,25 @@ View full entry number (1-12) or 0 to return: 1
 <span id="cb18-115"><a href="#cb18-115" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Learning Progression</span></span>
 <span id="cb18-116"><a href="#cb18-116" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-117"><a href="#cb18-117" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Design Phase**: Entry format planning</span>
-<span id="cb18-118"><a href="#cb18-118" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb18-118"><a href="#cb18-118" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb18-119"><a href="#cb18-119" aria-hidden="true" tabindex="-1"></a><span class="in">   "What information should each journal entry include? </span></span>
 <span id="cb18-120"><a href="#cb18-120" aria-hidden="true" tabindex="-1"></a><span class="in">   Show me a simple, readable format for storing entries."</span></span>
 <span id="cb18-121"><a href="#cb18-121" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb18-122"><a href="#cb18-122" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-123"><a href="#cb18-123" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Date Handling**: Working with time</span>
-<span id="cb18-124"><a href="#cb18-124" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb18-124"><a href="#cb18-124" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb18-125"><a href="#cb18-125" aria-hidden="true" tabindex="-1"></a><span class="in">   "How do I get the current date and time in Python </span></span>
 <span id="cb18-126"><a href="#cb18-126" aria-hidden="true" tabindex="-1"></a><span class="in">   and format it like 'Monday, January 15, 2024 - 2:30 PM'?"</span></span>
 <span id="cb18-127"><a href="#cb18-127" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb18-128"><a href="#cb18-128" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-129"><a href="#cb18-129" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**File Strategy**: Append vs overwrite</span>
-<span id="cb18-130"><a href="#cb18-130" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb18-130"><a href="#cb18-130" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb18-131"><a href="#cb18-131" aria-hidden="true" tabindex="-1"></a><span class="in">   "For a journal app, should I use one big file or separate files? </span></span>
 <span id="cb18-132"><a href="#cb18-132" aria-hidden="true" tabindex="-1"></a><span class="in">   What are the trade-offs?"</span></span>
 <span id="cb18-133"><a href="#cb18-133" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
 <span id="cb18-134"><a href="#cb18-134" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-135"><a href="#cb18-135" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Search Implementation**: Finding content</span>
-<span id="cb18-136"><a href="#cb18-136" aria-hidden="true" tabindex="-1"></a>   <span class="in">```</span></span>
+<span id="cb18-136"><a href="#cb18-136" aria-hidden="true" tabindex="-1"></a>   <span class="in">```text</span></span>
 <span id="cb18-137"><a href="#cb18-137" aria-hidden="true" tabindex="-1"></a><span class="in">   "How can I search through a text file line by line </span></span>
 <span id="cb18-138"><a href="#cb18-138" aria-hidden="true" tabindex="-1"></a><span class="in">   to find entries containing specific words?"</span></span>
 <span id="cb18-139"><a href="#cb18-139" aria-hidden="true" tabindex="-1"></a><span class="in">   ```</span></span>
@@ -1775,7 +1775,7 @@ View full entry number (1-12) or 0 to return: 1
 <span id="cb18-181"><a href="#cb18-181" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-182"><a href="#cb18-182" aria-hidden="true" tabindex="-1"></a>Here's how your journal might work:</span>
 <span id="cb18-183"><a href="#cb18-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-184"><a href="#cb18-184" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-184"><a href="#cb18-184" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
 <span id="cb18-185"><a href="#cb18-185" aria-hidden="true" tabindex="-1"></a><span class="in">📖 PERSONAL JOURNAL 📖</span></span>
 <span id="cb18-186"><a href="#cb18-186" aria-hidden="true" tabindex="-1"></a><span class="in">You have 47 entries since January 1, 2024</span></span>
 <span id="cb18-187"><a href="#cb18-187" aria-hidden="true" tabindex="-1"></a></span>
