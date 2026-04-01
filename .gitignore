@@ -170,6 +170,9 @@ credentials/
 !*-sample.csv
 !*-sample.json
 !*-sample.xml
+!code/*.csv
+!code/*.json
+!code/*.py
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
