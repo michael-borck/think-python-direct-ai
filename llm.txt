@@ -77,7 +77,7 @@ This book is available in several formats. Pick whichever fits how you work and 
 - Read it on paper or e-reader. Available as a paperback and ebook through Amazon KDP.
 - Converse with it. The online edition includes a chatbot grounded in the book's content.
 - Feed it to your own AI. The `llm.txt` file provides a clean text version of the entire book, ready to paste into ChatGPT, Claude, or any AI tool.
-- Run the code. All code examples are available on GitHub. DeepWiki provides an AI-navigable view of the repository.
+- Run the code. All project code is available as Python scripts and Jupyter notebooks in the `code/` folder on GitHub. Each notebook includes an "Open in Colab" button — click it to run the code directly in Google Colab with no installation required. Colab also includes Google Gemini, so you can practice coding with AI right in the notebook. DeepWiki provides an AI-navigable view of the repository.
 - Browse all books. This book is part of a series. See all titles at books.borck.education.
 
 The online version is always the most current.
@@ -2246,6 +2246,8 @@ You should understand:
 - How to store information in variables
 - How to make decisions with if statements
 - How to repeat actions with loops
+
+Starter code and Jupyter notebooks for all projects are available in the `code/` folder on GitHub. Notebooks include an "Open in Colab" button for zero-install coding. See books.borck.education for links.
 
 ## Project Overview
 
@@ -4734,6 +4736,8 @@ You should understand:
 - How to build modular programs
 - How to organise code effectively
 
+Starter code and notebooks for all projects are available on GitHub with "Open in Colab" buttons. See books.borck.education.
+
 ## Project Overview
 
 Temperature conversion is a perfect example of where functions shine. Instead of writing the same conversion formula repeatedly, you'll create a smart converter that remembers conversions, supports multiple units, and can be extended easily.
@@ -6902,9 +6906,11 @@ You should be ready to:
 - Handle messy, imperfect data
 - Create meaningful reports
 
+Starter code and notebooks for all projects are available on GitHub with "Open in Colab" buttons. See books.borck.education.
+
 ## Project Overview
 
-This project combines everything you've learned about data processing to create a real tool that teachers and students can use. You'll analyse grade data from CSV files, calculate statistics, identify trends, and generate actionable insights.
+This project combines everything you've learned about data processing to create a real tool for analysing performance data. You'll analyse grade data from CSV files, calculate statistics, identify trends, and generate actionable insights.
 
 This is where programming becomes genuinely useful - solving real problems with real data.
 
@@ -7106,7 +7112,7 @@ After completing the project:
 1. Data Quality: What surprised you about real-world data?
 2. Statistics Understanding: Which calculations were most insightful?
 3. Error Handling: How did you make your code robust?
-4. User Value: How would teachers actually use this tool?
+4. User Value: How would someone actually use this tool?
 
 ## Next Project Preview
 
@@ -7549,6 +7555,8 @@ You should be ready to:
 - Integrate multiple programming concepts
 - Work with AI as your implementation partner
 - Create professional-quality software
+
+Complete code and notebooks for all projects are available on GitHub with "Open in Colab" buttons. See books.borck.education.
 
 ## Project Overview
 
@@ -8196,7 +8204,7 @@ Approach:
 
 ## Building Your Programming Identity
 
-### From Student to Professional
+### From Beginner to Professional
 
 You're transitioning from someone who "is learning to program" to someone who "is a programmer who is always learning." This identity shift is crucial for your continued growth.
 
@@ -8302,7 +8310,7 @@ This isn't the end of your learning journey - it's the beginning of your career 
 
 Python Jumpstart awaits, ready to challenge you with real-world projects that will transform you from a programmer into a professional developer.
 
-Your AI partnership continues, evolving from teacher-student to architect-builder as you tackle increasingly sophisticated challenges.
+Your AI partnership continues, evolving from guided learner to architect-builder as you tackle increasingly sophisticated challenges.
 
 Your problem-solving skills expand, enabling you to break down any complex challenge into solvable pieces.
 
