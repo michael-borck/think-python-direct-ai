@@ -17,6 +17,10 @@ You should understand:
 - How to repeat actions with loops
 :::
 
+::: {.callout-tip title="Code available online" icon=true}
+Starter code and Jupyter notebooks for all projects are available in the `code/` folder on GitHub. Notebooks include an "Open in Colab" button for zero-install coding. See [books.borck.education](https://books.borck.education) for links.
+:::
+
 ## Project Overview
 
 Fortune tellers have fascinated people for centuries. They ask questions, consider the answers, and provide mysterious insights. Your digital fortune teller will do the same - but with code!

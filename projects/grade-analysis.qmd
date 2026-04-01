@@ -14,6 +14,10 @@ You should be ready to:
 - Create meaningful reports
 :::
 
+::: {.callout-tip title="Code available online" icon=true}
+Starter code and notebooks for all projects are available on GitHub with "Open in Colab" buttons. See [books.borck.education](https://books.borck.education).
+:::
+
 ## Project Overview
 
 This project combines everything you've learned about data processing to create a real tool that teachers and students can use. You'll analyse grade data from CSV files, calculate statistics, identify trends, and generate actionable insights.
