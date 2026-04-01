@@ -20,7 +20,7 @@ Starter code and notebooks for all projects are available on GitHub with "Open i
 
 ## Project Overview
 
-This project combines everything you've learned about data processing to create a real tool that teachers and students can use. You'll analyse grade data from CSV files, calculate statistics, identify trends, and generate actionable insights.
+This project combines everything you've learned about data processing to create a real tool for analysing performance data. You'll analyse grade data from CSV files, calculate statistics, identify trends, and generate actionable insights.
 
 This is where programming becomes genuinely useful - solving real problems with real data.
 
@@ -527,7 +527,7 @@ After completing the project:
 1. **Data Quality**: What surprised you about real-world data?
 2. **Statistics Understanding**: Which calculations were most insightful?
 3. **Error Handling**: How did you make your code robust?
-4. **User Value**: How would teachers actually use this tool?
+4. **User Value**: How would someone actually use this tool?
 
 ## Next Project Preview
 

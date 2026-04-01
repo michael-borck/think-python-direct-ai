@@ -403,7 +403,7 @@ You ask: "Show me how to build this with just basic Python and simple web reques
 
 ## Building Your Programming Identity
 
-### From Student to Professional
+### From Beginner to Professional
 
 You're transitioning from someone who "is learning to program" to someone who "is a programmer who is always learning." This identity shift is crucial for your continued growth.
 
@@ -509,7 +509,7 @@ This isn't the end of your learning journey - it's the beginning of your career 
 
 **Python Jumpstart awaits**, ready to challenge you with real-world projects that will transform you from a programmer into a professional developer.
 
-**Your AI partnership continues**, evolving from teacher-student to architect-builder as you tackle increasingly sophisticated challenges.
+**Your AI partnership continues**, evolving from guided learner to architect-builder as you tackle increasingly sophisticated challenges.
 
 **Your problem-solving skills expand**, enabling you to break down any complex challenge into solvable pieces.
 
