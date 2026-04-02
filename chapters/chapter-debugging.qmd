@@ -300,6 +300,10 @@ Python's error names tell you what went wrong:
 Ask AI: "Show me simple examples of each Python error type"
 :::
 
+::: {.callout-note title="Going Deeper"}
+Knowing error types helps you debug, but Python also lets you *handle* errors gracefully with `try`/`except` blocks so your programs don't crash on bad input. *Code Python, Consult AI* covers exception handling in depth, teaching you to write programs that recover from problems instead of stopping dead.
+:::
+
 ## Exercises
 
 ::: {.exercise-container}

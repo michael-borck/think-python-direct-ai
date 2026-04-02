@@ -290,6 +290,10 @@ The second parameter in `open()` determines what you can do:
 Ask AI: "What happens if I open a file in write mode that already exists?"
 :::
 
+::: {.callout-note title="Going Deeper"}
+We're keeping file operations simple here — open, read, write, close. There's more to the story: the `with` statement for safer file handling, encoding options, and structured formats like JSON and CSV. *Code Python, Consult AI* covers file I/O comprehensively so you can handle any data your programs need.
+:::
+
 ## Exercises
 
 ::: {.exercise-container}

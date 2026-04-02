@@ -537,6 +537,10 @@ For this chapter, record:
 - **Use both when**: You have complex data (list of student dictionaries)
 :::
 
+::: {.callout-note title="Going Deeper"}
+We've introduced lists and dictionaries here as organizational tools for your data. *Code Python, Consult AI* explores these collections in much greater depth — including the full set of list and dictionary methods, when to choose one over the other in tricky situations, and how Python implements them under the hood.
+:::
+
 ## Next Steps
 
 In Chapter 8, we'll learn how to save and load data from files. You'll see how collections become even more powerful when you can preserve them between program runs - turning temporary programs into persistent applications!

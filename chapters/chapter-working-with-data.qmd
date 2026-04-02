@@ -281,6 +281,10 @@ def safe_int(value):
 Professional programmers spend 80% of their time cleaning data! When working with AI, always ask: "What could go wrong with this data? Show me how to handle those cases."
 :::
 
+::: {.callout-note title="Going Deeper"}
+Data cleaning relies heavily on string methods like `.strip()`, `.split()`, and `.replace()`, plus error handling with `try`/`except`. We're using them here to get the job done, but *Code Python, Consult AI* covers strings and error handling systematically so you'll know exactly which tool to reach for.
+:::
+
 ## Building a Data Pipeline
 
 A data pipeline is a series of steps that transform raw data into useful information:
