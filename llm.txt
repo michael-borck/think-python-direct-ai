@@ -3566,6 +3566,8 @@ The `return` statement sends a value back from the function:
 
 Ask AI: "Show me the difference between functions that print vs functions that return"
 
+Functions have more to offer than we cover here — default parameter values, variable scope, and techniques for organizing larger programs. Code Python, Consult AI gives functions a thorough treatment so you can use them with full confidence.
+
 ## Exercises
 
 Exercise 6.1: Concept Recognition
@@ -4062,6 +4064,8 @@ For this chapter, record:
 - Use a dictionary when: You need labels, you'll look things up, order doesn't matter
 - Use both when: You have complex data (list of student dictionaries)
 
+We've introduced lists and dictionaries here as organizational tools for your data. Code Python, Consult AI explores these collections in much greater depth — including the full set of list and dictionary methods, when to choose one over the other in tricky situations, and how Python implements them under the hood.
+
 ## Next Steps
 
 In Chapter 8, we'll learn how to save and load data from files. You'll see how collections become even more powerful when you can preserve them between program runs - turning temporary programs into persistent applications!
@@ -4203,6 +4207,8 @@ The second parameter in `open()` determines what you can do:
 - `"a"` - Append (adds to end of existing file)
 
 Ask AI: "What happens if I open a file in write mode that already exists?"
+
+We're keeping file operations simple here — open, read, write, close. There's more to the story: the `with` statement for safer file handling, encoding options, and structured formats like JSON and CSV. Code Python, Consult AI covers file I/O comprehensively so you can handle any data your programs need.
 
 ## Exercises
 
@@ -4535,6 +4541,8 @@ Python's error names tell you what went wrong:
 - `IndentationError`: Spacing is wrong
 
 Ask AI: "Show me simple examples of each Python error type"
+
+Knowing error types helps you debug, but Python also lets you handle errors gracefully with `try`/`except` blocks so your programs don't crash on bad input. Code Python, Consult AI covers exception handling in depth, teaching you to write programs that recover from problems instead of stopping dead.
 
 ## Exercises
 
@@ -6008,6 +6016,8 @@ Real-world data is messy! Here's what you'll encounter:
 
 ## Data Cleaning Reality
 Professional programmers spend 80% of their time cleaning data! When working with AI, always ask: "What could go wrong with this data? Show me how to handle those cases."
+
+Data cleaning relies heavily on string methods like `.strip()`, `.split()`, and `.replace()`, plus error handling with `try`/`except`. We're using them here to get the job done, but Code Python, Consult AI covers strings and error handling systematically so you'll know exactly which tool to reach for.
 
 ## Building a Data Pipeline
 

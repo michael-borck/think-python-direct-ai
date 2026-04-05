@@ -905,6 +905,19 @@ that combines greeting and farewell messages.</code></pre>
 <p>Ask AI: “Show me the difference between functions that print vs functions that return”</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled" title="Going Deeper">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Going Deeper
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Functions have more to offer than we cover here — default parameter values, variable scope, and techniques for organizing larger programs. <em>Code Python, Consult AI</em> gives functions a thorough treatment so you can use them with full confidence.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="exercises" class="level2" data-number="12.9">
@@ -1911,291 +1924,295 @@ Design Example
 <span id="cb27-281"><a href="#cb27-281" aria-hidden="true" tabindex="-1"></a>Ask AI: "Show me the difference between functions that print vs functions that return"</span>
 <span id="cb27-282"><a href="#cb27-282" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb27-283"><a href="#cb27-283" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-284"><a href="#cb27-284" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exercises</span></span>
-<span id="cb27-285"><a href="#cb27-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-286"><a href="#cb27-286" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
-<span id="cb27-287"><a href="#cb27-287" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-1-badge}</span>
-<span id="cb27-288"><a href="#cb27-288" aria-hidden="true" tabindex="-1"></a>Exercise 6.1: Concept Recognition</span>
-<span id="cb27-289"><a href="#cb27-289" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-290"><a href="#cb27-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-291"><a href="#cb27-291" aria-hidden="true" tabindex="-1"></a><span class="fu">### Identifying Function Opportunities</span></span>
-<span id="cb27-292"><a href="#cb27-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-293"><a href="#cb27-293" aria-hidden="true" tabindex="-1"></a>Look at this repetitive code and identify what could become functions:</span>
+<span id="cb27-284"><a href="#cb27-284" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Going Deeper"}</span>
+<span id="cb27-285"><a href="#cb27-285" aria-hidden="true" tabindex="-1"></a>Functions have more to offer than we cover here — default parameter values, variable scope, and techniques for organizing larger programs. *Code Python, Consult AI* gives functions a thorough treatment so you can use them with full confidence.</span>
+<span id="cb27-286"><a href="#cb27-286" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-287"><a href="#cb27-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-288"><a href="#cb27-288" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exercises</span></span>
+<span id="cb27-289"><a href="#cb27-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-290"><a href="#cb27-290" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-291"><a href="#cb27-291" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-1-badge}</span>
+<span id="cb27-292"><a href="#cb27-292" aria-hidden="true" tabindex="-1"></a>Exercise 6.1: Concept Recognition</span>
+<span id="cb27-293"><a href="#cb27-293" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb27-294"><a href="#cb27-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-295"><a href="#cb27-295" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-296"><a href="#cb27-296" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
-<span id="cb27-297"><a href="#cb27-297" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"WELCOME TO THE GAME"</span>)</span>
-<span id="cb27-298"><a href="#cb27-298" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
-<span id="cb27-299"><a href="#cb27-299" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-300"><a href="#cb27-300" aria-hidden="true" tabindex="-1"></a>name1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Player 1 name: "</span>)</span>
-<span id="cb27-301"><a href="#cb27-301" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Welcome, </span><span class="sc">{</span>name1<span class="sc">}</span><span class="ss">!"</span>)</span>
-<span id="cb27-302"><a href="#cb27-302" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-303"><a href="#cb27-303" aria-hidden="true" tabindex="-1"></a>name2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Player 2 name: "</span>)</span>
-<span id="cb27-304"><a href="#cb27-304" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Welcome, </span><span class="sc">{</span>name2<span class="sc">}</span><span class="ss">!"</span>)</span>
-<span id="cb27-305"><a href="#cb27-305" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-306"><a href="#cb27-306" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
-<span id="cb27-307"><a href="#cb27-307" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"GAME OVER"</span>)</span>
-<span id="cb27-308"><a href="#cb27-308" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
-<span id="cb27-309"><a href="#cb27-309" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-310"><a href="#cb27-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-311"><a href="#cb27-311" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-312"><a href="#cb27-312" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Check Your Analysis<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
-<span id="cb27-313"><a href="#cb27-313" aria-hidden="true" tabindex="-1"></a>Function opportunities:</span>
-<span id="cb27-314"><a href="#cb27-314" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Banner display (the ='s with text)</span>
-<span id="cb27-315"><a href="#cb27-315" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Player welcome (get name and greet)</span>
-<span id="cb27-316"><a href="#cb27-316" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Any repeated pattern is a function candidate!</span>
-<span id="cb27-317"><a href="#cb27-317" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-318"><a href="#cb27-318" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-319"><a href="#cb27-319" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-320"><a href="#cb27-320" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
-<span id="cb27-321"><a href="#cb27-321" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-2-badge}</span>
-<span id="cb27-322"><a href="#cb27-322" aria-hidden="true" tabindex="-1"></a>Exercise 6.2: Prompt Engineering</span>
-<span id="cb27-323"><a href="#cb27-323" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-324"><a href="#cb27-324" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-325"><a href="#cb27-325" aria-hidden="true" tabindex="-1"></a><span class="fu">### Getting Function Examples</span></span>
-<span id="cb27-326"><a href="#cb27-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-327"><a href="#cb27-327" aria-hidden="true" tabindex="-1"></a>Start with: "temperature converter"</span>
+<span id="cb27-295"><a href="#cb27-295" aria-hidden="true" tabindex="-1"></a><span class="fu">### Identifying Function Opportunities</span></span>
+<span id="cb27-296"><a href="#cb27-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-297"><a href="#cb27-297" aria-hidden="true" tabindex="-1"></a>Look at this repetitive code and identify what could become functions:</span>
+<span id="cb27-298"><a href="#cb27-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-299"><a href="#cb27-299" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-300"><a href="#cb27-300" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
+<span id="cb27-301"><a href="#cb27-301" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"WELCOME TO THE GAME"</span>)</span>
+<span id="cb27-302"><a href="#cb27-302" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
+<span id="cb27-303"><a href="#cb27-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-304"><a href="#cb27-304" aria-hidden="true" tabindex="-1"></a>name1 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Player 1 name: "</span>)</span>
+<span id="cb27-305"><a href="#cb27-305" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Welcome, </span><span class="sc">{</span>name1<span class="sc">}</span><span class="ss">!"</span>)</span>
+<span id="cb27-306"><a href="#cb27-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-307"><a href="#cb27-307" aria-hidden="true" tabindex="-1"></a>name2 <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Player 2 name: "</span>)</span>
+<span id="cb27-308"><a href="#cb27-308" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Welcome, </span><span class="sc">{</span>name2<span class="sc">}</span><span class="ss">!"</span>)</span>
+<span id="cb27-309"><a href="#cb27-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-310"><a href="#cb27-310" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
+<span id="cb27-311"><a href="#cb27-311" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"GAME OVER"</span>)</span>
+<span id="cb27-312"><a href="#cb27-312" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span><span class="op">*</span><span class="dv">40</span>)</span>
+<span id="cb27-313"><a href="#cb27-313" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-314"><a href="#cb27-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-315"><a href="#cb27-315" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-316"><a href="#cb27-316" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Check Your Analysis<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-317"><a href="#cb27-317" aria-hidden="true" tabindex="-1"></a>Function opportunities:</span>
+<span id="cb27-318"><a href="#cb27-318" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Banner display (the ='s with text)</span>
+<span id="cb27-319"><a href="#cb27-319" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Player welcome (get name and greet)</span>
+<span id="cb27-320"><a href="#cb27-320" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Any repeated pattern is a function candidate!</span>
+<span id="cb27-321"><a href="#cb27-321" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-322"><a href="#cb27-322" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-323"><a href="#cb27-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-324"><a href="#cb27-324" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-325"><a href="#cb27-325" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-2-badge}</span>
+<span id="cb27-326"><a href="#cb27-326" aria-hidden="true" tabindex="-1"></a>Exercise 6.2: Prompt Engineering</span>
+<span id="cb27-327"><a href="#cb27-327" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb27-328"><a href="#cb27-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-329"><a href="#cb27-329" aria-hidden="true" tabindex="-1"></a>Evolve this prompt to get AI to show you:</span>
-<span id="cb27-330"><a href="#cb27-330" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A function that converts Celsius to Fahrenheit</span>
-<span id="cb27-331"><a href="#cb27-331" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Accepts temperature as input</span>
-<span id="cb27-332"><a href="#cb27-332" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Returns the converted value</span>
-<span id="cb27-333"><a href="#cb27-333" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Keep it simple (no error handling)</span>
-<span id="cb27-334"><a href="#cb27-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-335"><a href="#cb27-335" aria-hidden="true" tabindex="-1"></a>Document your prompt evolution.</span>
-<span id="cb27-336"><a href="#cb27-336" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-337"><a href="#cb27-337" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-338"><a href="#cb27-338" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Effective Final Prompt<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
-<span id="cb27-339"><a href="#cb27-339" aria-hidden="true" tabindex="-1"></a>"Show me a simple Python function that:</span>
-<span id="cb27-340"><a href="#cb27-340" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Takes a Celsius temperature as input</span>
-<span id="cb27-341"><a href="#cb27-341" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Converts it to Fahrenheit  </span>
-<span id="cb27-342"><a href="#cb27-342" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Returns the result</span>
-<span id="cb27-343"><a href="#cb27-343" aria-hidden="true" tabindex="-1"></a>No error handling or extra features, just the basic conversion function"</span>
-<span id="cb27-344"><a href="#cb27-344" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-345"><a href="#cb27-345" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-346"><a href="#cb27-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-347"><a href="#cb27-347" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
-<span id="cb27-348"><a href="#cb27-348" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-3-badge}</span>
-<span id="cb27-349"><a href="#cb27-349" aria-hidden="true" tabindex="-1"></a>Exercise 6.3: Pattern Matching</span>
-<span id="cb27-350"><a href="#cb27-350" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-351"><a href="#cb27-351" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-352"><a href="#cb27-352" aria-hidden="true" tabindex="-1"></a><span class="fu">### Finding Hidden Functions</span></span>
-<span id="cb27-353"><a href="#cb27-353" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-354"><a href="#cb27-354" aria-hidden="true" tabindex="-1"></a>Ask AI for a "professional menu system". In the complex code:</span>
-<span id="cb27-355"><a href="#cb27-355" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Identify all the functions</span>
-<span id="cb27-356"><a href="#cb27-356" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Determine what each function does</span>
-<span id="cb27-357"><a href="#cb27-357" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Rewrite using 3-4 simple functions</span>
-<span id="cb27-358"><a href="#cb27-358" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-359"><a href="#cb27-359" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-360"><a href="#cb27-360" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Core Functions to Extract<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
-<span id="cb27-361"><a href="#cb27-361" aria-hidden="true" tabindex="-1"></a>Essential functions might be:</span>
-<span id="cb27-362"><a href="#cb27-362" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`display_menu()`</span> - Shows options</span>
-<span id="cb27-363"><a href="#cb27-363" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`get_choice()`</span> - Gets user selection</span>
-<span id="cb27-364"><a href="#cb27-364" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`process_choice(choice)`</span> - Handles the selection</span>
-<span id="cb27-365"><a href="#cb27-365" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`say_goodbye()`</span> - Exit message</span>
-<span id="cb27-366"><a href="#cb27-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-367"><a href="#cb27-367" aria-hidden="true" tabindex="-1"></a>Everything else is probably AI overengineering!</span>
-<span id="cb27-368"><a href="#cb27-368" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-369"><a href="#cb27-369" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-329"><a href="#cb27-329" aria-hidden="true" tabindex="-1"></a><span class="fu">### Getting Function Examples</span></span>
+<span id="cb27-330"><a href="#cb27-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-331"><a href="#cb27-331" aria-hidden="true" tabindex="-1"></a>Start with: "temperature converter"</span>
+<span id="cb27-332"><a href="#cb27-332" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-333"><a href="#cb27-333" aria-hidden="true" tabindex="-1"></a>Evolve this prompt to get AI to show you:</span>
+<span id="cb27-334"><a href="#cb27-334" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A function that converts Celsius to Fahrenheit</span>
+<span id="cb27-335"><a href="#cb27-335" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Accepts temperature as input</span>
+<span id="cb27-336"><a href="#cb27-336" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Returns the converted value</span>
+<span id="cb27-337"><a href="#cb27-337" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Keep it simple (no error handling)</span>
+<span id="cb27-338"><a href="#cb27-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-339"><a href="#cb27-339" aria-hidden="true" tabindex="-1"></a>Document your prompt evolution.</span>
+<span id="cb27-340"><a href="#cb27-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-341"><a href="#cb27-341" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-342"><a href="#cb27-342" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Effective Final Prompt<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-343"><a href="#cb27-343" aria-hidden="true" tabindex="-1"></a>"Show me a simple Python function that:</span>
+<span id="cb27-344"><a href="#cb27-344" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Takes a Celsius temperature as input</span>
+<span id="cb27-345"><a href="#cb27-345" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Converts it to Fahrenheit  </span>
+<span id="cb27-346"><a href="#cb27-346" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Returns the result</span>
+<span id="cb27-347"><a href="#cb27-347" aria-hidden="true" tabindex="-1"></a>No error handling or extra features, just the basic conversion function"</span>
+<span id="cb27-348"><a href="#cb27-348" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-349"><a href="#cb27-349" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-350"><a href="#cb27-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-351"><a href="#cb27-351" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-352"><a href="#cb27-352" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-3-badge}</span>
+<span id="cb27-353"><a href="#cb27-353" aria-hidden="true" tabindex="-1"></a>Exercise 6.3: Pattern Matching</span>
+<span id="cb27-354"><a href="#cb27-354" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-355"><a href="#cb27-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-356"><a href="#cb27-356" aria-hidden="true" tabindex="-1"></a><span class="fu">### Finding Hidden Functions</span></span>
+<span id="cb27-357"><a href="#cb27-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-358"><a href="#cb27-358" aria-hidden="true" tabindex="-1"></a>Ask AI for a "professional menu system". In the complex code:</span>
+<span id="cb27-359"><a href="#cb27-359" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Identify all the functions</span>
+<span id="cb27-360"><a href="#cb27-360" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Determine what each function does</span>
+<span id="cb27-361"><a href="#cb27-361" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Rewrite using 3-4 simple functions</span>
+<span id="cb27-362"><a href="#cb27-362" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-363"><a href="#cb27-363" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-364"><a href="#cb27-364" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Core Functions to Extract<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-365"><a href="#cb27-365" aria-hidden="true" tabindex="-1"></a>Essential functions might be:</span>
+<span id="cb27-366"><a href="#cb27-366" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`display_menu()`</span> - Shows options</span>
+<span id="cb27-367"><a href="#cb27-367" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`get_choice()`</span> - Gets user selection</span>
+<span id="cb27-368"><a href="#cb27-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`process_choice(choice)`</span> - Handles the selection</span>
+<span id="cb27-369"><a href="#cb27-369" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`say_goodbye()`</span> - Exit message</span>
 <span id="cb27-370"><a href="#cb27-370" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-371"><a href="#cb27-371" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
-<span id="cb27-372"><a href="#cb27-372" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-4-badge}</span>
-<span id="cb27-373"><a href="#cb27-373" aria-hidden="true" tabindex="-1"></a>Exercise 6.4: Build a Model</span>
-<span id="cb27-374"><a href="#cb27-374" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-375"><a href="#cb27-375" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-376"><a href="#cb27-376" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualizing Function Flow</span></span>
-<span id="cb27-377"><a href="#cb27-377" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-378"><a href="#cb27-378" aria-hidden="true" tabindex="-1"></a>Create three different models showing how functions work:</span>
-<span id="cb27-379"><a href="#cb27-379" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A diagram showing data flow through a function</span>
-<span id="cb27-380"><a href="#cb27-380" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>An analogy using a vending machine</span>
-<span id="cb27-381"><a href="#cb27-381" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>A before/after comparison of code with and without functions</span>
-<span id="cb27-382"><a href="#cb27-382" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-383"><a href="#cb27-383" aria-hidden="true" tabindex="-1"></a>Share your models to explain functions to someone.</span>
-<span id="cb27-384"><a href="#cb27-384" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-385"><a href="#cb27-385" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-386"><a href="#cb27-386" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
-<span id="cb27-387"><a href="#cb27-387" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-5-badge}</span>
-<span id="cb27-388"><a href="#cb27-388" aria-hidden="true" tabindex="-1"></a>Exercise 6.5: Architect First</span>
-<span id="cb27-389"><a href="#cb27-389" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-390"><a href="#cb27-390" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-391"><a href="#cb27-391" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Function-Based Programs</span></span>
-<span id="cb27-392"><a href="#cb27-392" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-393"><a href="#cb27-393" aria-hidden="true" tabindex="-1"></a>Design these programs using functions:</span>
+<span id="cb27-371"><a href="#cb27-371" aria-hidden="true" tabindex="-1"></a>Everything else is probably AI overengineering!</span>
+<span id="cb27-372"><a href="#cb27-372" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-373"><a href="#cb27-373" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-374"><a href="#cb27-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-375"><a href="#cb27-375" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-376"><a href="#cb27-376" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-4-badge}</span>
+<span id="cb27-377"><a href="#cb27-377" aria-hidden="true" tabindex="-1"></a>Exercise 6.4: Build a Model</span>
+<span id="cb27-378"><a href="#cb27-378" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-379"><a href="#cb27-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-380"><a href="#cb27-380" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualizing Function Flow</span></span>
+<span id="cb27-381"><a href="#cb27-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-382"><a href="#cb27-382" aria-hidden="true" tabindex="-1"></a>Create three different models showing how functions work:</span>
+<span id="cb27-383"><a href="#cb27-383" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A diagram showing data flow through a function</span>
+<span id="cb27-384"><a href="#cb27-384" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>An analogy using a vending machine</span>
+<span id="cb27-385"><a href="#cb27-385" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>A before/after comparison of code with and without functions</span>
+<span id="cb27-386"><a href="#cb27-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-387"><a href="#cb27-387" aria-hidden="true" tabindex="-1"></a>Share your models to explain functions to someone.</span>
+<span id="cb27-388"><a href="#cb27-388" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-389"><a href="#cb27-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-390"><a href="#cb27-390" aria-hidden="true" tabindex="-1"></a>::: {.exercise-container}</span>
+<span id="cb27-391"><a href="#cb27-391" aria-hidden="true" tabindex="-1"></a>::: {.exercise-level-badge .level-5-badge}</span>
+<span id="cb27-392"><a href="#cb27-392" aria-hidden="true" tabindex="-1"></a>Exercise 6.5: Architect First</span>
+<span id="cb27-393"><a href="#cb27-393" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb27-394"><a href="#cb27-394" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-395"><a href="#cb27-395" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Greeting System**</span>
-<span id="cb27-396"><a href="#cb27-396" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Functions needed: formal_greeting(), casual_greeting(), goodbye()</span>
-<span id="cb27-397"><a href="#cb27-397" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Each takes a name and creates appropriate message</span>
+<span id="cb27-395"><a href="#cb27-395" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Function-Based Programs</span></span>
+<span id="cb27-396"><a href="#cb27-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-397"><a href="#cb27-397" aria-hidden="true" tabindex="-1"></a>Design these programs using functions:</span>
 <span id="cb27-398"><a href="#cb27-398" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-399"><a href="#cb27-399" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Calculator**</span>
-<span id="cb27-400"><a href="#cb27-400" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Functions needed: add(), subtract(), multiply(), divide()</span>
-<span id="cb27-401"><a href="#cb27-401" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Each takes two numbers and returns result</span>
+<span id="cb27-399"><a href="#cb27-399" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Greeting System**</span>
+<span id="cb27-400"><a href="#cb27-400" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Functions needed: formal_greeting(), casual_greeting(), goodbye()</span>
+<span id="cb27-401"><a href="#cb27-401" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Each takes a name and creates appropriate message</span>
 <span id="cb27-402"><a href="#cb27-402" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-403"><a href="#cb27-403" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Game Utilities**</span>
-<span id="cb27-404"><a href="#cb27-404" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Functions needed: roll_dice(), flip_coin(), draw_card()</span>
-<span id="cb27-405"><a href="#cb27-405" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Each returns a random result</span>
+<span id="cb27-403"><a href="#cb27-403" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Calculator**</span>
+<span id="cb27-404"><a href="#cb27-404" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Functions needed: add(), subtract(), multiply(), divide()</span>
+<span id="cb27-405"><a href="#cb27-405" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Each takes two numbers and returns result</span>
 <span id="cb27-406"><a href="#cb27-406" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-407"><a href="#cb27-407" aria-hidden="true" tabindex="-1"></a>Write your design as:</span>
-<span id="cb27-408"><a href="#cb27-408" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Function name and purpose</span>
-<span id="cb27-409"><a href="#cb27-409" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What inputs it needs</span>
-<span id="cb27-410"><a href="#cb27-410" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What it returns or does</span>
-<span id="cb27-411"><a href="#cb27-411" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How functions work together</span>
-<span id="cb27-412"><a href="#cb27-412" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-413"><a href="#cb27-413" aria-hidden="true" tabindex="-1"></a>Then ask AI: "Implement these exact functions: <span class="co">[</span><span class="ot">your design</span><span class="co">]</span>"</span>
-<span id="cb27-414"><a href="#cb27-414" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-415"><a href="#cb27-415" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-416"><a href="#cb27-416" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Design Example<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
-<span id="cb27-417"><a href="#cb27-417" aria-hidden="true" tabindex="-1"></a>**Greeting System Design**:</span>
-<span id="cb27-418"><a href="#cb27-418" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`formal_greeting(name)`</span> - Takes name, returns "Good day, Mr./Ms. <span class="co">[</span><span class="ot">name</span><span class="co">]</span>"</span>
-<span id="cb27-419"><a href="#cb27-419" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`casual_greeting(name)`</span> - Takes name, returns "Hey <span class="co">[</span><span class="ot">name</span><span class="co">]</span>!"</span>
-<span id="cb27-420"><a href="#cb27-420" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`goodbye(name)`</span> - Takes name, prints farewell message</span>
-<span id="cb27-421"><a href="#cb27-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Main program uses all three based on user choice</span>
-<span id="cb27-422"><a href="#cb27-422" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
-<span id="cb27-423"><a href="#cb27-423" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-424"><a href="#cb27-424" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-425"><a href="#cb27-425" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI Partnership Patterns</span></span>
-<span id="cb27-426"><a href="#cb27-426" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-427"><a href="#cb27-427" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 1: Refactoring to Functions</span></span>
-<span id="cb27-428"><a href="#cb27-428" aria-hidden="true" tabindex="-1"></a>Show AI repetitive code and ask:</span>
-<span id="cb27-429"><a href="#cb27-429" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"What parts of this code repeat?"</span>
-<span id="cb27-430"><a href="#cb27-430" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"How would functions reduce this repetition?"</span>
-<span id="cb27-431"><a href="#cb27-431" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Show me the simplest function version"</span>
-<span id="cb27-432"><a href="#cb27-432" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-433"><a href="#cb27-433" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 2: Function Evolution</span></span>
-<span id="cb27-434"><a href="#cb27-434" aria-hidden="true" tabindex="-1"></a>Build complexity gradually:</span>
-<span id="cb27-435"><a href="#cb27-435" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>"Show a function that prints a greeting"</span>
-<span id="cb27-436"><a href="#cb27-436" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>"Now make it accept a name"</span>
-<span id="cb27-437"><a href="#cb27-437" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>"Now make it return the greeting instead"</span>
-<span id="cb27-438"><a href="#cb27-438" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>"Now add a style parameter (formal/casual)"</span>
-<span id="cb27-439"><a href="#cb27-439" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-440"><a href="#cb27-440" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 3: Real-World Connections</span></span>
-<span id="cb27-441"><a href="#cb27-441" aria-hidden="true" tabindex="-1"></a>Connect functions to familiar concepts:</span>
-<span id="cb27-442"><a href="#cb27-442" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Explain functions like TV remote buttons"</span>
-<span id="cb27-443"><a href="#cb27-443" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"How are functions like phone contacts?"</span>
-<span id="cb27-444"><a href="#cb27-444" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Compare functions to keyboard shortcuts"</span>
-<span id="cb27-445"><a href="#cb27-445" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-446"><a href="#cb27-446" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Misconceptions</span></span>
-<span id="cb27-447"><a href="#cb27-447" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-448"><a href="#cb27-448" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Functions must be complex"</span></span>
-<span id="cb27-449"><a href="#cb27-449" aria-hidden="true" tabindex="-1"></a>**Reality**: The best functions do one thing well:</span>
-<span id="cb27-450"><a href="#cb27-450" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-451"><a href="#cb27-451" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_two(number):</span>
-<span id="cb27-452"><a href="#cb27-452" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> number <span class="op">+</span> <span class="dv">2</span></span>
-<span id="cb27-453"><a href="#cb27-453" aria-hidden="true" tabindex="-1"></a><span class="co"># Perfectly valid and useful!</span></span>
-<span id="cb27-454"><a href="#cb27-454" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-455"><a href="#cb27-455" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-456"><a href="#cb27-456" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Functions can't use other functions"</span></span>
-<span id="cb27-457"><a href="#cb27-457" aria-hidden="true" tabindex="-1"></a>**Reality**: Functions can call other functions - this is how we build complex programs from simple pieces:</span>
-<span id="cb27-458"><a href="#cb27-458" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-459"><a href="#cb27-459" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_greeting(name):</span>
-<span id="cb27-460"><a href="#cb27-460" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb27-461"><a href="#cb27-461" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-462"><a href="#cb27-462" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet_loudly(name):</span>
-<span id="cb27-463"><a href="#cb27-463" aria-hidden="true" tabindex="-1"></a>    greeting <span class="op">=</span> get_greeting(name)</span>
-<span id="cb27-464"><a href="#cb27-464" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(greeting.upper() <span class="op">+</span> <span class="st">"!!!"</span>)</span>
-<span id="cb27-465"><a href="#cb27-465" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-466"><a href="#cb27-466" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-467"><a href="#cb27-467" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Print and return are the same"</span></span>
-<span id="cb27-468"><a href="#cb27-468" aria-hidden="true" tabindex="-1"></a>**Reality**: </span>
-<span id="cb27-469"><a href="#cb27-469" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`print()`</span> displays to screen (side effect)</span>
-<span id="cb27-470"><a href="#cb27-470" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`return`</span> sends value back to use elsewhere (result)</span>
-<span id="cb27-471"><a href="#cb27-471" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-472"><a href="#cb27-472" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> bad_double(x):</span>
-<span id="cb27-473"><a href="#cb27-473" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x <span class="op">*</span> <span class="dv">2</span>)  <span class="co"># Just shows it</span></span>
-<span id="cb27-474"><a href="#cb27-474" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-475"><a href="#cb27-475" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> good_double(x):</span>
-<span id="cb27-476"><a href="#cb27-476" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">*</span> <span class="dv">2</span>  <span class="co"># Gives it back to use</span></span>
-<span id="cb27-477"><a href="#cb27-477" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-478"><a href="#cb27-478" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> good_double(<span class="dv">5</span>)  <span class="co"># Can use the 10</span></span>
-<span id="cb27-479"><a href="#cb27-479" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-480"><a href="#cb27-480" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-481"><a href="#cb27-481" aria-hidden="true" tabindex="-1"></a><span class="fu">## Real-World Connection</span></span>
-<span id="cb27-482"><a href="#cb27-482" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-483"><a href="#cb27-483" aria-hidden="true" tabindex="-1"></a>Every app is built from functions:</span>
+<span id="cb27-407"><a href="#cb27-407" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Game Utilities**</span>
+<span id="cb27-408"><a href="#cb27-408" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Functions needed: roll_dice(), flip_coin(), draw_card()</span>
+<span id="cb27-409"><a href="#cb27-409" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Each returns a random result</span>
+<span id="cb27-410"><a href="#cb27-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-411"><a href="#cb27-411" aria-hidden="true" tabindex="-1"></a>Write your design as:</span>
+<span id="cb27-412"><a href="#cb27-412" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Function name and purpose</span>
+<span id="cb27-413"><a href="#cb27-413" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What inputs it needs</span>
+<span id="cb27-414"><a href="#cb27-414" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What it returns or does</span>
+<span id="cb27-415"><a href="#cb27-415" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How functions work together</span>
+<span id="cb27-416"><a href="#cb27-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-417"><a href="#cb27-417" aria-hidden="true" tabindex="-1"></a>Then ask AI: "Implement these exact functions: <span class="co">[</span><span class="ot">your design</span><span class="co">]</span>"</span>
+<span id="cb27-418"><a href="#cb27-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-419"><a href="#cb27-419" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-420"><a href="#cb27-420" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Design Example<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb27-421"><a href="#cb27-421" aria-hidden="true" tabindex="-1"></a>**Greeting System Design**:</span>
+<span id="cb27-422"><a href="#cb27-422" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`formal_greeting(name)`</span> - Takes name, returns "Good day, Mr./Ms. <span class="co">[</span><span class="ot">name</span><span class="co">]</span>"</span>
+<span id="cb27-423"><a href="#cb27-423" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`casual_greeting(name)`</span> - Takes name, returns "Hey <span class="co">[</span><span class="ot">name</span><span class="co">]</span>!"</span>
+<span id="cb27-424"><a href="#cb27-424" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`goodbye(name)`</span> - Takes name, prints farewell message</span>
+<span id="cb27-425"><a href="#cb27-425" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Main program uses all three based on user choice</span>
+<span id="cb27-426"><a href="#cb27-426" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb27-427"><a href="#cb27-427" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb27-428"><a href="#cb27-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-429"><a href="#cb27-429" aria-hidden="true" tabindex="-1"></a><span class="fu">## AI Partnership Patterns</span></span>
+<span id="cb27-430"><a href="#cb27-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-431"><a href="#cb27-431" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 1: Refactoring to Functions</span></span>
+<span id="cb27-432"><a href="#cb27-432" aria-hidden="true" tabindex="-1"></a>Show AI repetitive code and ask:</span>
+<span id="cb27-433"><a href="#cb27-433" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"What parts of this code repeat?"</span>
+<span id="cb27-434"><a href="#cb27-434" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"How would functions reduce this repetition?"</span>
+<span id="cb27-435"><a href="#cb27-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Show me the simplest function version"</span>
+<span id="cb27-436"><a href="#cb27-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-437"><a href="#cb27-437" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 2: Function Evolution</span></span>
+<span id="cb27-438"><a href="#cb27-438" aria-hidden="true" tabindex="-1"></a>Build complexity gradually:</span>
+<span id="cb27-439"><a href="#cb27-439" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>"Show a function that prints a greeting"</span>
+<span id="cb27-440"><a href="#cb27-440" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>"Now make it accept a name"</span>
+<span id="cb27-441"><a href="#cb27-441" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>"Now make it return the greeting instead"</span>
+<span id="cb27-442"><a href="#cb27-442" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>"Now add a style parameter (formal/casual)"</span>
+<span id="cb27-443"><a href="#cb27-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-444"><a href="#cb27-444" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pattern 3: Real-World Connections</span></span>
+<span id="cb27-445"><a href="#cb27-445" aria-hidden="true" tabindex="-1"></a>Connect functions to familiar concepts:</span>
+<span id="cb27-446"><a href="#cb27-446" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Explain functions like TV remote buttons"</span>
+<span id="cb27-447"><a href="#cb27-447" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"How are functions like phone contacts?"</span>
+<span id="cb27-448"><a href="#cb27-448" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Compare functions to keyboard shortcuts"</span>
+<span id="cb27-449"><a href="#cb27-449" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-450"><a href="#cb27-450" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Misconceptions</span></span>
+<span id="cb27-451"><a href="#cb27-451" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-452"><a href="#cb27-452" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Functions must be complex"</span></span>
+<span id="cb27-453"><a href="#cb27-453" aria-hidden="true" tabindex="-1"></a>**Reality**: The best functions do one thing well:</span>
+<span id="cb27-454"><a href="#cb27-454" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-455"><a href="#cb27-455" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_two(number):</span>
+<span id="cb27-456"><a href="#cb27-456" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> number <span class="op">+</span> <span class="dv">2</span></span>
+<span id="cb27-457"><a href="#cb27-457" aria-hidden="true" tabindex="-1"></a><span class="co"># Perfectly valid and useful!</span></span>
+<span id="cb27-458"><a href="#cb27-458" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-459"><a href="#cb27-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-460"><a href="#cb27-460" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Functions can't use other functions"</span></span>
+<span id="cb27-461"><a href="#cb27-461" aria-hidden="true" tabindex="-1"></a>**Reality**: Functions can call other functions - this is how we build complex programs from simple pieces:</span>
+<span id="cb27-462"><a href="#cb27-462" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-463"><a href="#cb27-463" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_greeting(name):</span>
+<span id="cb27-464"><a href="#cb27-464" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb27-465"><a href="#cb27-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-466"><a href="#cb27-466" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet_loudly(name):</span>
+<span id="cb27-467"><a href="#cb27-467" aria-hidden="true" tabindex="-1"></a>    greeting <span class="op">=</span> get_greeting(name)</span>
+<span id="cb27-468"><a href="#cb27-468" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(greeting.upper() <span class="op">+</span> <span class="st">"!!!"</span>)</span>
+<span id="cb27-469"><a href="#cb27-469" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-470"><a href="#cb27-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-471"><a href="#cb27-471" aria-hidden="true" tabindex="-1"></a><span class="fu">### "Print and return are the same"</span></span>
+<span id="cb27-472"><a href="#cb27-472" aria-hidden="true" tabindex="-1"></a>**Reality**: </span>
+<span id="cb27-473"><a href="#cb27-473" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`print()`</span> displays to screen (side effect)</span>
+<span id="cb27-474"><a href="#cb27-474" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`return`</span> sends value back to use elsewhere (result)</span>
+<span id="cb27-475"><a href="#cb27-475" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-476"><a href="#cb27-476" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> bad_double(x):</span>
+<span id="cb27-477"><a href="#cb27-477" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x <span class="op">*</span> <span class="dv">2</span>)  <span class="co"># Just shows it</span></span>
+<span id="cb27-478"><a href="#cb27-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-479"><a href="#cb27-479" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> good_double(x):</span>
+<span id="cb27-480"><a href="#cb27-480" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">*</span> <span class="dv">2</span>  <span class="co"># Gives it back to use</span></span>
+<span id="cb27-481"><a href="#cb27-481" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-482"><a href="#cb27-482" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> good_double(<span class="dv">5</span>)  <span class="co"># Can use the 10</span></span>
+<span id="cb27-483"><a href="#cb27-483" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb27-484"><a href="#cb27-484" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-485"><a href="#cb27-485" aria-hidden="true" tabindex="-1"></a>**Calculator App**:</span>
-<span id="cb27-486"><a href="#cb27-486" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-487"><a href="#cb27-487" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b):</span>
-<span id="cb27-488"><a href="#cb27-488" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
-<span id="cb27-489"><a href="#cb27-489" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-490"><a href="#cb27-490" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> subtract(a, b):</span>
-<span id="cb27-491"><a href="#cb27-491" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">-</span> b</span>
-<span id="cb27-492"><a href="#cb27-492" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-493"><a href="#cb27-493" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_tax(amount):</span>
-<span id="cb27-494"><a href="#cb27-494" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> amount <span class="op">*</span> <span class="fl">0.08</span></span>
-<span id="cb27-495"><a href="#cb27-495" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-485"><a href="#cb27-485" aria-hidden="true" tabindex="-1"></a><span class="fu">## Real-World Connection</span></span>
+<span id="cb27-486"><a href="#cb27-486" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-487"><a href="#cb27-487" aria-hidden="true" tabindex="-1"></a>Every app is built from functions:</span>
+<span id="cb27-488"><a href="#cb27-488" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-489"><a href="#cb27-489" aria-hidden="true" tabindex="-1"></a>**Calculator App**:</span>
+<span id="cb27-490"><a href="#cb27-490" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-491"><a href="#cb27-491" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b):</span>
+<span id="cb27-492"><a href="#cb27-492" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb27-493"><a href="#cb27-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-494"><a href="#cb27-494" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> subtract(a, b):</span>
+<span id="cb27-495"><a href="#cb27-495" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">-</span> b</span>
 <span id="cb27-496"><a href="#cb27-496" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-497"><a href="#cb27-497" aria-hidden="true" tabindex="-1"></a>**Game Functions**:</span>
-<span id="cb27-498"><a href="#cb27-498" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-499"><a href="#cb27-499" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> move_player(direction):</span>
-<span id="cb27-500"><a href="#cb27-500" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Update position</span></span>
-<span id="cb27-501"><a href="#cb27-501" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-502"><a href="#cb27-502" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_collision():</span>
-<span id="cb27-503"><a href="#cb27-503" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Detect crashes</span></span>
-<span id="cb27-504"><a href="#cb27-504" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-505"><a href="#cb27-505" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_score(points):</span>
-<span id="cb27-506"><a href="#cb27-506" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add to score</span></span>
-<span id="cb27-507"><a href="#cb27-507" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-497"><a href="#cb27-497" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_tax(amount):</span>
+<span id="cb27-498"><a href="#cb27-498" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> amount <span class="op">*</span> <span class="fl">0.08</span></span>
+<span id="cb27-499"><a href="#cb27-499" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-500"><a href="#cb27-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-501"><a href="#cb27-501" aria-hidden="true" tabindex="-1"></a>**Game Functions**:</span>
+<span id="cb27-502"><a href="#cb27-502" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-503"><a href="#cb27-503" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> move_player(direction):</span>
+<span id="cb27-504"><a href="#cb27-504" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Update position</span></span>
+<span id="cb27-505"><a href="#cb27-505" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-506"><a href="#cb27-506" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_collision():</span>
+<span id="cb27-507"><a href="#cb27-507" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Detect crashes</span></span>
 <span id="cb27-508"><a href="#cb27-508" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-509"><a href="#cb27-509" aria-hidden="true" tabindex="-1"></a>**Social Media**:</span>
-<span id="cb27-510"><a href="#cb27-510" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-511"><a href="#cb27-511" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> post_update(message):</span>
-<span id="cb27-512"><a href="#cb27-512" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Share message</span></span>
-<span id="cb27-513"><a href="#cb27-513" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-514"><a href="#cb27-514" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> like_post(post_id):</span>
-<span id="cb27-515"><a href="#cb27-515" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add like</span></span>
-<span id="cb27-516"><a href="#cb27-516" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-517"><a href="#cb27-517" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_friend(username):</span>
-<span id="cb27-518"><a href="#cb27-518" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Connect users</span></span>
-<span id="cb27-519"><a href="#cb27-519" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-509"><a href="#cb27-509" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_score(points):</span>
+<span id="cb27-510"><a href="#cb27-510" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add to score</span></span>
+<span id="cb27-511"><a href="#cb27-511" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-512"><a href="#cb27-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-513"><a href="#cb27-513" aria-hidden="true" tabindex="-1"></a>**Social Media**:</span>
+<span id="cb27-514"><a href="#cb27-514" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-515"><a href="#cb27-515" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> post_update(message):</span>
+<span id="cb27-516"><a href="#cb27-516" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Share message</span></span>
+<span id="cb27-517"><a href="#cb27-517" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-518"><a href="#cb27-518" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> like_post(post_id):</span>
+<span id="cb27-519"><a href="#cb27-519" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add like</span></span>
 <span id="cb27-520"><a href="#cb27-520" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-521"><a href="#cb27-521" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
-<span id="cb27-522"><a href="#cb27-522" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-523"><a href="#cb27-523" aria-hidden="true" tabindex="-1"></a>You've learned:</span>
-<span id="cb27-524"><a href="#cb27-524" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Functions package multiple steps into reusable commands</span>
-<span id="cb27-525"><a href="#cb27-525" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Parameters let functions adapt to different inputs</span>
-<span id="cb27-526"><a href="#cb27-526" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Return values let functions produce results</span>
-<span id="cb27-527"><a href="#cb27-527" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Functions calling functions creates powerful programs</span>
-<span id="cb27-528"><a href="#cb27-528" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Good function names make code self-documenting</span>
-<span id="cb27-529"><a href="#cb27-529" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-530"><a href="#cb27-530" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection Checklist</span></span>
-<span id="cb27-531"><a href="#cb27-531" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-532"><a href="#cb27-532" aria-hidden="true" tabindex="-1"></a>Before moving to Chapter 7, ensure you:</span>
+<span id="cb27-521"><a href="#cb27-521" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_friend(username):</span>
+<span id="cb27-522"><a href="#cb27-522" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Connect users</span></span>
+<span id="cb27-523"><a href="#cb27-523" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-524"><a href="#cb27-524" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-525"><a href="#cb27-525" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
+<span id="cb27-526"><a href="#cb27-526" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-527"><a href="#cb27-527" aria-hidden="true" tabindex="-1"></a>You've learned:</span>
+<span id="cb27-528"><a href="#cb27-528" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Functions package multiple steps into reusable commands</span>
+<span id="cb27-529"><a href="#cb27-529" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Parameters let functions adapt to different inputs</span>
+<span id="cb27-530"><a href="#cb27-530" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Return values let functions produce results</span>
+<span id="cb27-531"><a href="#cb27-531" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Functions calling functions creates powerful programs</span>
+<span id="cb27-532"><a href="#cb27-532" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Good function names make code self-documenting</span>
 <span id="cb27-533"><a href="#cb27-533" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-534"><a href="#cb27-534" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Understand functions as named groups of commands</span>
-<span id="cb27-535"><a href="#cb27-535" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can create simple functions with and without parameters</span>
-<span id="cb27-536"><a href="#cb27-536" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Know the difference between print and return</span>
-<span id="cb27-537"><a href="#cb27-537" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can identify repetitive code that needs functions</span>
-<span id="cb27-538"><a href="#cb27-538" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> See how functions make programs modular and reusable</span>
-<span id="cb27-539"><a href="#cb27-539" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-540"><a href="#cb27-540" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your Learning Journal</span></span>
-<span id="cb27-541"><a href="#cb27-541" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-542"><a href="#cb27-542" aria-hidden="true" tabindex="-1"></a>For this chapter, record:</span>
+<span id="cb27-534"><a href="#cb27-534" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection Checklist</span></span>
+<span id="cb27-535"><a href="#cb27-535" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-536"><a href="#cb27-536" aria-hidden="true" tabindex="-1"></a>Before moving to Chapter 7, ensure you:</span>
+<span id="cb27-537"><a href="#cb27-537" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-538"><a href="#cb27-538" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Understand functions as named groups of commands</span>
+<span id="cb27-539"><a href="#cb27-539" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can create simple functions with and without parameters</span>
+<span id="cb27-540"><a href="#cb27-540" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Know the difference between print and return</span>
+<span id="cb27-541"><a href="#cb27-541" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can identify repetitive code that needs functions</span>
+<span id="cb27-542"><a href="#cb27-542" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> See how functions make programs modular and reusable</span>
 <span id="cb27-543"><a href="#cb27-543" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-544"><a href="#cb27-544" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Function Opportunities**: Find 5 repetitive tasks in your daily life that could be "functions"</span>
-<span id="cb27-545"><a href="#cb27-545" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Code Comparison**: Write greeting code with and without functions - which is clearer?</span>
-<span id="cb27-546"><a href="#cb27-546" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Mental Models**: Draw your favourite visualization of how functions work</span>
-<span id="cb27-547"><a href="#cb27-547" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Design Practice**: List functions needed for a simple recipe app</span>
-<span id="cb27-548"><a href="#cb27-548" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-549"><a href="#cb27-549" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb27-550"><a href="#cb27-550" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Power of Good Names</span></span>
-<span id="cb27-551"><a href="#cb27-551" aria-hidden="true" tabindex="-1"></a>Well-named functions make code read like English:</span>
-<span id="cb27-552"><a href="#cb27-552" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb27-553"><a href="#cb27-553" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_sandwich(filling):</span>
-<span id="cb27-554"><a href="#cb27-554" aria-hidden="true" tabindex="-1"></a>    bread <span class="op">=</span> get_bread()</span>
-<span id="cb27-555"><a href="#cb27-555" aria-hidden="true" tabindex="-1"></a>    spread <span class="op">=</span> add_condiments()</span>
-<span id="cb27-556"><a href="#cb27-556" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> combine(bread, filling, spread)</span>
-<span id="cb27-557"><a href="#cb27-557" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
-<span id="cb27-558"><a href="#cb27-558" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-559"><a href="#cb27-559" aria-hidden="true" tabindex="-1"></a>lunch <span class="op">=</span> make_sandwich(<span class="st">"turkey"</span>)</span>
-<span id="cb27-560"><a href="#cb27-560" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb27-561"><a href="#cb27-561" aria-hidden="true" tabindex="-1"></a>Anyone can understand what this does!</span>
-<span id="cb27-562"><a href="#cb27-562" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb27-563"><a href="#cb27-563" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-564"><a href="#cb27-564" aria-hidden="true" tabindex="-1"></a><span class="fu">## Next Steps</span></span>
-<span id="cb27-565"><a href="#cb27-565" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-566"><a href="#cb27-566" aria-hidden="true" tabindex="-1"></a>In Chapter 7, we'll explore how to organise complex information using lists and dictionaries. You'll see how functions and data structures work together to create powerful programs that can handle real-world complexity.</span>
+<span id="cb27-544"><a href="#cb27-544" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your Learning Journal</span></span>
+<span id="cb27-545"><a href="#cb27-545" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-546"><a href="#cb27-546" aria-hidden="true" tabindex="-1"></a>For this chapter, record:</span>
+<span id="cb27-547"><a href="#cb27-547" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-548"><a href="#cb27-548" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Function Opportunities**: Find 5 repetitive tasks in your daily life that could be "functions"</span>
+<span id="cb27-549"><a href="#cb27-549" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Code Comparison**: Write greeting code with and without functions - which is clearer?</span>
+<span id="cb27-550"><a href="#cb27-550" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Mental Models**: Draw your favourite visualization of how functions work</span>
+<span id="cb27-551"><a href="#cb27-551" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Design Practice**: List functions needed for a simple recipe app</span>
+<span id="cb27-552"><a href="#cb27-552" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-553"><a href="#cb27-553" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb27-554"><a href="#cb27-554" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Power of Good Names</span></span>
+<span id="cb27-555"><a href="#cb27-555" aria-hidden="true" tabindex="-1"></a>Well-named functions make code read like English:</span>
+<span id="cb27-556"><a href="#cb27-556" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb27-557"><a href="#cb27-557" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_sandwich(filling):</span>
+<span id="cb27-558"><a href="#cb27-558" aria-hidden="true" tabindex="-1"></a>    bread <span class="op">=</span> get_bread()</span>
+<span id="cb27-559"><a href="#cb27-559" aria-hidden="true" tabindex="-1"></a>    spread <span class="op">=</span> add_condiments()</span>
+<span id="cb27-560"><a href="#cb27-560" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> combine(bread, filling, spread)</span>
+<span id="cb27-561"><a href="#cb27-561" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb27-562"><a href="#cb27-562" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-563"><a href="#cb27-563" aria-hidden="true" tabindex="-1"></a>lunch <span class="op">=</span> make_sandwich(<span class="st">"turkey"</span>)</span>
+<span id="cb27-564"><a href="#cb27-564" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb27-565"><a href="#cb27-565" aria-hidden="true" tabindex="-1"></a>Anyone can understand what this does!</span>
+<span id="cb27-566"><a href="#cb27-566" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb27-567"><a href="#cb27-567" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-568"><a href="#cb27-568" aria-hidden="true" tabindex="-1"></a>Remember: Functions aren't about memorizing syntax. They're about recognising patterns, reducing repetition, and building programs from well-named, reusable pieces!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb27-568"><a href="#cb27-568" aria-hidden="true" tabindex="-1"></a><span class="fu">## Next Steps</span></span>
+<span id="cb27-569"><a href="#cb27-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-570"><a href="#cb27-570" aria-hidden="true" tabindex="-1"></a>In Chapter 7, we'll explore how to organise complex information using lists and dictionaries. You'll see how functions and data structures work together to create powerful programs that can handle real-world complexity.</span>
+<span id="cb27-571"><a href="#cb27-571" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-572"><a href="#cb27-572" aria-hidden="true" tabindex="-1"></a>Remember: Functions aren't about memorizing syntax. They're about recognising patterns, reducing repetition, and building programs from well-named, reusable pieces!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
