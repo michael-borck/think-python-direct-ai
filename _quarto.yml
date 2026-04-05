@@ -12,7 +12,6 @@ book:
   date: "last-modified"
   license: "CC BY 4.0 (content), MIT (code examples)"
   description: "A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions."
-  cover-image: cover.png
   site-url: https://michael-borck.github.io/think-python-direct-ai
   repo-url: https://github.com/michael-borck/think-python-direct-ai
   repo-branch: main
@@ -99,6 +98,7 @@ format:
       light: cosmo
       dark: darkly
     css: assets/custom.css
+    cover-image: cover.png
     include-after-body: chatbot.html
     code-fold: false
     code-tools: true
