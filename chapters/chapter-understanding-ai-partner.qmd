@@ -227,6 +227,8 @@ The exercises are simple so you can focus on the process, not the problem. Once 
 
 One more thing: this book does not argue for avoiding AI until you are ready to write code. AI is your thinking partner *throughout*. Use it to brainstorm what a program should do. Use it to explore edge cases you had not considered. Use it to check your understanding of a concept. Use it to trace through your logic before you write a single line. The three learning strategies in this chapter — concept before code, explore not avoid, build mental models — all involve AI. The difference between this approach and vibe coding is not whether you use AI. It is whether you are thinking alongside it or just accepting what it gives you.
 
+There is an economic version of this, and it is worth saying plainly. As AI gets better at writing code for everyone, "AI can write the code" stops being an advantage — it can write your competitor's code just as well, the same way. What it cannot produce is the variation: your judgement about which problem matters, your taste for the solution that fits, your ability to spot the answer that is confidently wrong. That is the only edge that does not commoditise, and it is exactly what this book builds. *Conversation, Not Delegation* makes the full argument.
+
 ## Practice: Prompt Evolution Mastery
 
 Let's practice the core skill you'll use throughout this book. Complete each evolution:
