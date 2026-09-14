@@ -7,11 +7,11 @@ In this chapter, you'll learn how to work with real-world data files. You'll dis
 
 ## The Concept First
 
-Up until now, your programs have worked with data you typed in or created yourself. But real programs work with *existing* data — grade books, weather records, product inventories, survey results. The data already exists somewhere; your job is to read it, make sense of it, and do something useful.
+Up until now, your programs have worked with data you typed in or created yourself. But real programs work with *existing* data: grade books, weather records, product inventories, survey results. The data already exists somewhere; your job is to read it, make sense of it, and do something useful.
 
-Think of it this way: you already know how to cook (write programs). Now you need to learn how to unpack groceries (read data files). The food arrives in different packaging — cans, bags, boxes — and you need to know how to open each one before you can start cooking.
+Think of it this way: you already know how to cook (write programs). Now you need to learn how to unpack groceries (read data files). The food arrives in different packaging (cans, bags, boxes) and you need to know how to open each one before you can start cooking.
 
-Two formats dominate the data world. **CSV** is like a spreadsheet saved as plain text — rows and columns separated by commas, nothing fancy. **JSON** is like a set of nested labelled boxes — open one and you might find more boxes inside, each with its own label. Most data you'll encounter comes in one of these two formats.
+Two formats dominate the data world. **CSV** is like a spreadsheet saved as plain text, with rows and columns separated by commas and nothing fancy. **JSON** is like a set of nested labelled boxes: open one and you might find more boxes inside, each with its own label. Most data you'll encounter comes in one of these two formats.
 
 ## Discovering Data with Your AI Partner
 
@@ -32,7 +32,7 @@ CSV stands for "Comma-Separated Values" - it's the simplest way to store table-l
 
 ::: {.callout-note}
 ## Mental Model: CSV as a Text Spreadsheet
-Picture a spreadsheet. Now imagine stripping away the grid lines, the colours, the formulas — and just keeping the text, with commas where the column borders were. That's a CSV file. Each line is a row, each comma marks a new column. You could create one in any text editor.
+Picture a spreadsheet. Now imagine stripping away the grid lines, the colours, the formulas, and just keeping the text, with commas where the column borders were. That's a CSV file. Each line is a row, each comma marks a new column. You could create one in any text editor.
 :::
 
 ### Understanding CSV Structure
@@ -113,7 +113,7 @@ When working with CSV files, you'll often need to:
 
 ## From Tables to Trees: JSON
 
-CSV works brilliantly for flat, table-shaped data. But what happens when your data has structure *within* structure — a contact who has multiple phone numbers, or a student who belongs to several clubs? You need a format that can nest information. That's where JSON comes in.
+CSV works brilliantly for flat, table-shaped data. But what happens when your data has structure *within* structure, such as a contact who has multiple phone numbers, or a student who belongs to several clubs? You need a format that can nest information. That's where JSON comes in.
 
 JSON (JavaScript Object Notation) is how modern applications share data. It's like Python dictionaries written as text - perfect for complex, nested information.
 
@@ -401,7 +401,7 @@ with open('output.json', 'w') as file:
 
 When you ask AI to help with data processing, watch for these patterns where it overcomplicates things.
 
-**Pandas for everything.** Ask AI to read a CSV file and it will often reach for `pandas`, a powerful data analysis library. For simple tasks — reading rows, calculating averages, filtering — Python's built-in `csv` module or even plain string splitting is simpler and teaches you more. Save pandas for when you actually need its power.
+**Pandas for everything.** Ask AI to read a CSV file and it will often reach for `pandas`, a powerful data analysis library. For simple tasks (reading rows, calculating averages, filtering) Python's built-in `csv` module or even plain string splitting is simpler and teaches you more. Save pandas for when you actually need its power.
 
 **One-liner list comprehensions.** AI loves to compress data processing into dense single lines like `[{k: (int(v) if v.isdigit() else v) for k, v in zip(headers, line.split(','))} for line in open('data.csv').readlines()[1:]]`. This is clever but unreadable. A simple `for` loop with clear variable names is almost always better when you're learning.
 

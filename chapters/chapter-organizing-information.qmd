@@ -538,7 +538,7 @@ For this chapter, record:
 :::
 
 ::: {.callout-note title="Going Deeper"}
-We've introduced lists and dictionaries here as organizational tools for your data. *Code Python, Consult AI* explores these collections in much greater depth — including the full set of list and dictionary methods, when to choose one over the other in tricky situations, and how Python implements them under the hood.
+We've introduced lists and dictionaries here as organizational tools for your data. *Code Python, Consult AI* explores these collections in much greater depth, including the full set of list and dictionary methods, when to choose one over the other in tricky situations, and how Python implements them under the hood.
 :::
 
 ## Next Steps

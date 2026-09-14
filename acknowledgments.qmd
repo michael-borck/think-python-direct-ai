@@ -1,6 +1,6 @@
 # Acknowledgments {.unnumbered}
 
-This book distils years of teaching programming across multiple languages — C, C++, C#, Python — into the concepts that stay constant regardless of syntax. The students who worked through earlier versions of this material, in handouts and exercises and lab sessions, shaped the approach long before it became a book. Their questions revealed which explanations worked and which needed rethinking. Their frustrations pointed to the real barriers, which were almost never about syntax.
+This book distils years of teaching programming across multiple languages (C, C++, C#, Python) into the concepts that stay constant regardless of syntax. The students who worked through earlier versions of this material, in handouts and exercises and lab sessions, shaped the approach long before it became a book. Their questions revealed which explanations worked and which needed rethinking. Their frustrations pointed to the real barriers, which were almost never about syntax.
 
 Colleagues who teach programming in different contexts provided feedback that kept the ideas grounded. The question "would a complete beginner actually understand this?" became a design principle.
 

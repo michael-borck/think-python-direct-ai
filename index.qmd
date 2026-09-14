@@ -4,9 +4,9 @@
 
 Most programming books teach you syntax. This one teaches you to think.
 
-That distinction matters more now than it ever has. AI can generate code in seconds. If your only skill is writing code, you are competing with something faster and cheaper. But if you can decompose a problem, design a solution, and evaluate whether an implementation is correct — you have the skill that makes AI useful rather than dangerous.
+That distinction matters more now than it ever has. AI can generate code in seconds. If your only skill is writing code, you are competing with something faster and cheaper. But if you can decompose a problem, design a solution, and evaluate whether an implementation is correct, you have the skill that makes AI useful rather than dangerous.
 
-This book grew out of years of teaching programming across multiple languages — C, C++, C#, Python — and noticing that the students who struggled were rarely struggling with syntax. They were struggling with the thinking that comes before syntax: breaking a problem into parts, recognising patterns, understanding what a program is actually doing. The concepts are the same regardless of the language. Python is simply the vehicle we use to express them.
+This book grew out of years of teaching programming across multiple languages (C, C++, C#, Python) and noticing that the students who struggled were rarely struggling with syntax. They were struggling with the thinking that comes before syntax: breaking a problem into parts, recognising patterns, understanding what a program is actually doing. The concepts are the same regardless of the language. Python is simply the vehicle we use to express them.
 
 ## Who This Book Is For
 
@@ -22,7 +22,7 @@ It is not a prompt engineering guide. You will use AI as an exploration tool thr
 
 It is not the only Python book you will ever need. It is the first one. It gives you the mental models that make every subsequent book, course, or tutorial more effective. When you are ready for focused fundamentals, move to *Code Python, Consult AI*. When you are ready for professional practices, move to *Ship Python, Orchestrate AI*. The series is designed so each book builds on the one before.
 
-And it is not a book that avoids AI or treats it as cheating. AI is your learning partner here. The book teaches you to use it as an exploration tool — to ask questions, test hypotheses, and discover patterns — not as a shortcut around understanding.
+And it is not a book that avoids AI or treats it as cheating. AI is your learning partner here. The book teaches you to use it as an exploration tool, to ask questions and test hypotheses and discover patterns, not as a shortcut around understanding.
 
 ## If You Are Feeling Uncertain
 
@@ -42,7 +42,7 @@ Each chapter follows a consistent pattern: concept first, then AI-guided explora
 
 ## Conventions Used in This Book
 
-Throughout the book, AI exploration prompts appear as grey monospace blocks — these are things you type into your AI tool:
+Throughout the book, AI exploration prompts appear as grey monospace blocks. These are things you type into your AI tool:
 
 ```text
 Show me 5 examples of input→process→output
@@ -59,11 +59,11 @@ print(f"Hello, {name}!")
 You will also encounter coloured callout boxes. Each serves a different purpose.
 
 ::: {.callout-tip title="Practical advice"}
-**Green boxes** offer tips you can apply immediately — things to try, exploration suggestions.
+**Green boxes** offer tips you can apply immediately: things to try, exploration suggestions.
 :::
 
 ::: {.callout-note title="Key concept"}
-**Blue boxes** highlight important ideas worth pausing on — mental models, patterns, principles.
+**Blue boxes** highlight important ideas worth pausing on: mental models, patterns, principles.
 :::
 
 ::: {.callout-warning title="Watch out"}
@@ -86,7 +86,7 @@ This book is available in several formats. Pick whichever fits how you work and 
 - **Read it on paper or e-reader.** Available as a paperback and ebook through Amazon KDP.
 - **Converse with it.** The online edition includes a chatbot grounded in the book's content.
 - **Feed it to your own AI.** The `llm.txt` file provides a clean text version of the entire book, ready to paste into ChatGPT, Claude, or any AI tool.
-- **Run the code.** All project code is available as Python scripts and Jupyter notebooks in the `code/` folder on [GitHub](https://github.com/michael-borck/think-python-direct-ai). Each notebook includes an "Open in Colab" button — click it to run the code directly in Google Colab with no installation required. Colab also includes Google Gemini, so you can practice coding with AI right in the notebook. [DeepWiki](https://deepwiki.com/michael-borck/think-python-direct-ai) provides an AI-navigable view of the repository.
+- **Run the code.** All project code is available as Python scripts and Jupyter notebooks in the `code/` folder on [GitHub](https://github.com/michael-borck/think-python-direct-ai). Each notebook includes an "Open in Colab" button. Click it to run the code directly in Google Colab with no installation required. Colab also includes Google Gemini, so you can practice coding with AI right in the notebook. [DeepWiki](https://deepwiki.com/michael-borck/think-python-direct-ai) provides an AI-navigable view of the repository.
 - **Browse all books.** This book is part of a series. See all titles at [books.borck.education](https://books.borck.education).
 
 The online version is always the most current.
@@ -124,11 +124,11 @@ flowchart TD
 
 Two ways in: start with *Conversation, Not Delegation* if you want the ideas before (or without) code, or start with *Think Python, Direct AI* if you want to code from your first page. The methodology in *Converse Python, Partner AI* enhances every path.
 
-- **Conversation, Not Delegation** — the general methodology for working with AI across any discipline. No code required; the broadest entry point.
-- **Think Python, Direct AI** (this book) — computational thinking for absolute beginners. The entry point if you want to code from the start.
-- **Converse Python, Partner AI** — the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.
-- **Code Python, Consult AI** — focused Python fundamentals through AI conversation.
-- **Ship Python, Orchestrate AI** — professional Python development practices and tooling.
-- **Build Web, Guide AI** — web development with AI as your development partner.
+- **Conversation, Not Delegation**: the general methodology for working with AI across any discipline. No code required; the broadest entry point.
+- **Think Python, Direct AI** (this book): computational thinking for absolute beginners. The entry point if you want to code from the start.
+- **Converse Python, Partner AI**: the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.
+- **Code Python, Consult AI**: focused Python fundamentals through AI conversation.
+- **Ship Python, Orchestrate AI**: professional Python development practices and tooling.
+- **Build Web, Guide AI**: web development with AI as your development partner.
 
 All titles are available at [books.borck.education](https://books.borck.education).

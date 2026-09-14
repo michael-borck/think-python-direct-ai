@@ -282,7 +282,7 @@ Ask AI: "Show me the difference between functions that print vs functions that r
 :::
 
 ::: {.callout-note title="Going Deeper"}
-Functions have more to offer than we cover here — default parameter values, variable scope, and techniques for organizing larger programs. *Code Python, Consult AI* gives functions a thorough treatment so you can use them with full confidence.
+Functions have more to offer than we cover here: default parameter values, variable scope, and techniques for organizing larger programs. *Code Python, Consult AI* gives functions a thorough treatment so you can use them with full confidence.
 :::
 
 ## Exercises

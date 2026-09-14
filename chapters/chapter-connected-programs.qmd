@@ -7,7 +7,7 @@ In this chapter, you'll learn how to connect your programs to the internet. You'
 
 ## The Concept First
 
-Every program you've written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world -- weather apps, price trackers, news readers -- all have one thing in common: they talk to other programs across the internet to get fresh, live information.
+Every program you've written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world (weather apps, price trackers, news readers) all have one thing in common: they talk to other programs across the internet to get fresh, live information.
 
 This is a fundamental shift. Your program stops being a closed box and becomes part of a network. Instead of *containing* all the data it needs, it *asks for* data from services that already have it. That's the idea behind connected programs, and it's how most modern software actually works.
 
@@ -33,7 +33,7 @@ Think of APIs like this:
 3. **Kitchen** (Server) - Prepares your data
 4. **Delivery** (Response) - You receive what you ordered
 
-You never walk into the kitchen yourself. You don't need to know *how* the food is prepared -- you just need to know what's on the menu and how to order. APIs work the same way: your program doesn't need to know how a weather service collects its data, only how to ask for it and what the answer will look like.
+You never walk into the kitchen yourself. You don't need to know *how* the food is prepared. You just need to know what's on the menu and how to order. APIs work the same way: your program doesn't need to know how a weather service collects its data, only how to ask for it and what the answer will look like.
 
 ::: {.callout-note}
 ## Mental Model: The Request-Response Cycle
@@ -77,7 +77,7 @@ Now that you understand the pattern, let's see it in Python.
 
 ### Your First API Call
 
-Let's start with something fun -- getting a random joke:
+Let's start with something fun, getting a random joke:
 
 ```python
 import requests
@@ -106,7 +106,7 @@ When your program "talks" to the internet, it follows a simple conversation patt
 1. **Request**: "Hey weather service, what's the temperature in Boston?"
 2. **Response**: "It's 72°F, partly cloudy"
 
-Every response comes with a **status code** -- a number that tells you whether things went well. Think of it like a delivery receipt: 200 means "here's your data," 401 means "you're not authorized," 404 means "we don't have that," and 500 means "something broke on our end." You don't need to memorize these; you just need to know that 200 means success and anything else means something went wrong.
+Every response comes with a **status code**, a number that tells you whether things went well. Think of it like a delivery receipt: 200 means "here's your data," 401 means "you're not authorized," 404 means "we don't have that," and 500 means "something broke on our end." You don't need to memorize these; you just need to know that 200 means success and anything else means something went wrong.
 
 ### The Request-Response Cycle
 
@@ -169,7 +169,7 @@ When you see `data['current']['temp_f']`, you're accessing nested dictionaries. 
 
 ## API Keys: Your Program's ID Card
 
-Some APIs are open to everyone (like the joke API above), but many require an **API key** -- a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.
+Some APIs are open to everyone (like the joke API above), but many require an **API key**, a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.
 
 ### Getting and Using API Keys
 
@@ -201,7 +201,7 @@ def get_news_headlines():
 
 ## Building a Weather Dashboard
 
-Now that you understand the building blocks -- requests, responses, JSON, and API keys -- let's combine them into something useful. This weather comparison tool applies every concept from the previous sections:
+Now that you understand the building blocks (requests, responses, JSON, and API keys) let's combine them into something useful. This weather comparison tool applies every concept from the previous sections:
 
 ```python
 def create_weather_dashboard(cities):
@@ -284,7 +284,7 @@ time.sleep(1)  # Wait 1 second between requests
 
 ## Creating a Currency Converter
 
-With error handling in place, let's build something practical -- a live currency converter. Notice how this example uses a free API that doesn't require a key, making it a great one to try yourself:
+With error handling in place, let's build something practical: a live currency converter. Notice how this example uses a free API that doesn't require a key, making it a great one to try yourself:
 
 ```python
 def get_exchange_rate(from_currency, to_currency):
@@ -315,7 +315,7 @@ convert_currency(100, "USD", "EUR")
 
 ## Working with Different API Types
 
-You'll encounter different styles of APIs as you explore. For now, REST APIs are all you need -- they're the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.
+You'll encounter different styles of APIs as you explore. For now, REST APIs are all you need, because they're the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.
 
 ### REST APIs (Most Common)
 - Request specific URLs

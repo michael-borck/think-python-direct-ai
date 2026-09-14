@@ -9,6 +9,7 @@ book:
   subtitle: "Computational Thinking for Beginners"
   favicon: favicon.svg
   author: "Michael Borck"
+  isbn: "979-8-2544-1990-7"
   date: "last-modified"
   license: "CC BY 4.0 (content), MIT (code examples)"
   description: "A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions."
@@ -66,6 +67,7 @@ book:
     style: docked
     search: true
     collapse-level: 2
+    footer: Paperback ISBN 979-8-2544-1990-7
     tools:
       - icon: github
         href: https://github.com/michael-borck/think-python-direct-ai
