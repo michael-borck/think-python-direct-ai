@@ -2,6 +2,9 @@ project:
   type: book
   output-dir: _book
   resources:
+    - LICENSE
+    - LICENSE-CONTENT.md
+    - LICENSE-CODE.md
     - tools/**
 
 book:
@@ -11,7 +14,7 @@ book:
   author: "Michael Borck"
   isbn: "979-8-2544-1990-7"
   date: "last-modified"
-  license: "CC BY 4.0 (content), MIT (code examples)"
+  license: "CC BY 4.0 International"
   description: "A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions."
   site-url: https://michael-borck.github.io/think-python-direct-ai
   repo-url: https://github.com/michael-borck/think-python-direct-ai

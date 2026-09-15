@@ -8,7 +8,11 @@
 
 **Think Python, Direct AI: Computational Thinking for Beginners**
 
-Copyright © 2026 Michael Borck. All rights reserved.
+Copyright © 2026 Michael Borck.
+
+Book content is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0 International)](https://creativecommons.org/licenses/by/4.0/). Original code examples and accompanying software are licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+These grants cover material the author has authority to license. Separately credited third-party material retains its stated terms. Give appropriate credit, link the content licence and indicate changes; retain the MIT notice when reusing code.
 
 Published by Michael Borck\
 Perth, Western Australia
@@ -17,7 +21,6 @@ Perth, Western Australia
 
 First edition, 2026.
 
-No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author, except for brief quotations in reviews and certain non-commercial uses permitted by copyright law.
 
 While every precaution has been taken in the preparation of this book, the author assumes no responsibility for errors or omissions, or for damages resulting from the use of information contained herein.
 
