@@ -4,7 +4,7 @@
 ## Before You Start
 Make sure you've completed:
 - All of Part I and Part II
-- Chapter 10: Working with Data
+- Chapter 20: Working with Data
 - Understanding of CSV files and data processing
 
 You should be ready to:

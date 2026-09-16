@@ -77,10 +77,10 @@ book:
   other-links:
     - text: Download PDF
       icon: file-pdf
-      href: think-python-direct-ai.pdf
+      href: /think-python-direct-ai.pdf
     - text: Download EPUB
       icon: book
-      href: think-python-direct-ai.epub
+      href: /think-python-direct-ai.epub
     - text: Download llm.txt
       icon: robot
       href: llm.txt
@@ -100,9 +100,8 @@ csl: chicago-author-date.csl
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
-    css: assets/custom.css
+      light: [cosmo, assets/custom.scss]
+      dark: [darkly, assets/custom-dark.scss]
     cover-image: cover.png
     include-after-body: chatbot.html
     code-fold: false

@@ -286,7 +286,7 @@ Ask AI: "Why do programming lists start at 0 instead of 1?"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 7.1: Concept Recognition
+Exercise 13.1: Concept Recognition
 :::
 
 ### Identifying Collection Needs
@@ -311,7 +311,7 @@ For each scenario, decide: list or dictionary?
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 7.2: Prompt Engineering
+Exercise 13.2: Prompt Engineering
 :::
 
 ### Getting Collection Examples
@@ -339,7 +339,7 @@ Keep it beginner-friendly with no classes or advanced features"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 7.3: Pattern Matching
+Exercise 13.3: Pattern Matching
 :::
 
 ### Simplifying Complex Collections
@@ -361,7 +361,7 @@ Everything else (categories, timestamps, user assignments) is overkill!
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 7.4: Build a Model
+Exercise 13.4: Build a Model
 :::
 
 ### Visualizing Collections
@@ -376,7 +376,7 @@ Make your models clear enough to teach someone else.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 7.5: Architect First
+Exercise 13.5: Architect First
 :::
 
 ### Design Collection-Based Programs
@@ -513,7 +513,7 @@ You've learned:
 
 ## Reflection Checklist
 
-Before moving to Chapter 8, ensure you:
+Before moving on, ensure you:
 
 - [ ] Understand when to use lists vs dictionaries
 - [ ] Can create and modify both types of collections
@@ -543,6 +543,6 @@ We've introduced lists and dictionaries here as organizational tools for your da
 
 ## Next Steps
 
-In Chapter 8, we'll learn how to save and load data from files. You'll see how collections become even more powerful when you can preserve them between program runs - turning temporary programs into persistent applications!
+In the next chapter, we'll learn how to save and load data from files. You'll see how collections become even more powerful when you can preserve them between program runs - turning temporary programs into persistent applications!
 
 Remember: Lists and dictionaries aren't about syntax. They're about choosing the right organizational tool for your data - just like choosing between a numbered list or a labelled filing system in real life!

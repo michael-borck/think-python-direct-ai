@@ -1,4 +1,4 @@
-# Chapter 12: Interactive Systems {#sec-interactive-systems}
+# Interactive Systems {#sec-interactive-systems}
 
 ::: {.callout-note}
 ## Chapter Summary
@@ -120,7 +120,7 @@ def set_red():
     set_color('red')
 ```
 
-You can instead write `lambda: set_color('red')`. It does the same thing - creates a function that calls `set_color('red')` - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. You'll see it in action shortly.
+You can instead write `lambda: set_color('red')`. It does the same thing - creates a function that calls `set_color('red')` - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. One pattern to watch for: `lambda c=color: self.set_color(c)` copies the loop variable's *current* value into each button's own command. Without the `c=color` part, every button would end up calling the last colour in the loop. You'll see it in action shortly, and you can ask AI: "Why does a lambda inside a loop use the last loop value, and how does a default argument fix it?"
 
 Ask your AI:
 ```text
@@ -165,6 +165,11 @@ button.place(x=10, y=50)
 ## Creating a To-Do List Application
 
 You've seen individual widgets and layout managers. Now let's combine them into a complete, useful application. This to-do list uses a class to keep all the related widgets and functions organised together:
+
+::: {.callout-note}
+## Your First Look at Classes
+The listings in this chapter use `class` — Python's way of bundling data and the functions that work on it into one object. Inside `TodoApp`, `self` means "this particular app", so `self.task_entry` is this app's entry box. Read these listings as templates: create the class, set up its widgets in `__init__`, and connect buttons to its methods. You'll also spot `try/except` here — Python's way of handling an empty selection without crashing. Classes and exceptions both get proper introductions in *Code Python, Consult AI*; for now, copy the shape and trace what each part does.
+:::
 
 ```python
 import tkinter as tk

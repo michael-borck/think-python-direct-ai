@@ -4,9 +4,9 @@
 ## Before You Start
 Make sure you've completed:
 - All previous projects
-- Chapter 6: Functions
-- Chapter 7: organising Information (Lists & Dictionaries)
-- Chapter 8: Saving Your Work (Files)
+- Chapter 12: Functions
+- Chapter 13: organising Information (Lists & Dictionaries)
+- Chapter 14: Saving Your Work (Files)
 
 You should understand:
 - Creating and using functions

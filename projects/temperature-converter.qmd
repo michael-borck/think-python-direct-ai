@@ -4,8 +4,8 @@
 ## Before You Start
 Make sure you've completed:
 - Part I: All concepts and projects
-- Chapter 6: Creating Your Own Commands (Functions)
-- Chapter 7: organising Information (Lists & Dictionaries)
+- Chapter 12: Creating Your Own Commands (Functions)
+- Chapter 13: organising Information (Lists & Dictionaries)
 
 You should understand:
 - How to create and use functions

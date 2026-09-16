@@ -277,7 +277,7 @@ print("Thanks for playing!")
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 5.1: Concept Recognition
+Exercise 6.1: Concept Recognition
 :::
 
 ### Identifying Repetition Patterns
@@ -313,7 +313,7 @@ For each scenario, identify:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 5.2: Prompt Engineering
+Exercise 6.2: Prompt Engineering
 :::
 
 ### Getting Clear Loop Examples
@@ -336,7 +336,7 @@ Document your prompt evolution.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 5.3: Pattern Matching
+Exercise 6.3: Pattern Matching
 :::
 
 ### Finding Core Loop Patterns
@@ -360,7 +360,7 @@ Strip away databases, classes, error handling - keep just the repetition pattern
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 5.4: Build a Model
+Exercise 6.4: Build a Model
 :::
 
 ### Visualizing Loop Flow
@@ -375,7 +375,7 @@ Test your models by explaining loops to someone.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 5.5: Architect First
+Exercise 6.5: Architect First
 :::
 
 ### Design Loop-Based Programs
@@ -449,9 +449,11 @@ for word in sentence.split():
 ### "You need to know the count beforehand"
 **Reality**: Loops can run until a condition is met:
 ```python
+user_input = ""
 while user_input != "quit":
     user_input = input("Command: ")
 ```
+Note the first line: `user_input` must exist before the `while` can check it. Starting it as an empty string means the loop always runs at least once — and Python never meets a variable that doesn't exist yet.
 
 ### "Loop variables are just throwaway counters"
 **Reality**: Loop variables can be meaningful:

@@ -269,7 +269,7 @@ Ask AI: "Show me a truth table for 'and' and 'or' with simple examples"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 4.1: Concept Recognition
+Exercise 5.1: Concept Recognition
 :::
 
 ### Identifying Decision Patterns
@@ -305,7 +305,7 @@ For each scenario, identify:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 4.2: Prompt Engineering
+Exercise 5.2: Prompt Engineering
 :::
 
 ### Getting Clear Decision Examples
@@ -333,7 +333,7 @@ Use only if-else, no functions or loops"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 4.3: Pattern Matching
+Exercise 5.3: Pattern Matching
 :::
 
 ### Finding Core Decision Logic
@@ -355,7 +355,7 @@ Ask AI for a "professional game menu system". In the complex code:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 4.4: Build a Model
+Exercise 5.4: Build a Model
 :::
 
 ### Visualizing Decision Flow
@@ -370,7 +370,7 @@ Test your models by explaining to someone how programs decide.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 4.5: Architect First
+Exercise 5.5: Architect First
 :::
 
 ### Design Decision-Based Programs
@@ -419,7 +419,7 @@ Guide AI to simpler versions:
 1. "Show a complex if statement"
 2. "Now show the same logic more simply"
 3. "Now make it beginner-friendly"
-4. "Now use only concepts from chapters 1-3"
+4. "Now use only concepts covered so far"
 
 ### Pattern 3: Real-World Mapping
 Connect decisions to life:
@@ -498,7 +498,7 @@ You've learned:
 
 ## Reflection Checklist
 
-Before moving to Chapter 5, ensure you:
+Before moving on, ensure you:
 
 - [ ] Understand decisions as choosing paths based on conditions
 - [ ] Can write simple if, if-else, and if-elif-else statements
@@ -528,6 +528,6 @@ You're no longer writing calculators - you're creating responsive programs!
 
 ## Next Steps
 
-In Chapter 5, we'll discover how to make programs repeat actions with loops. Combined with decisions, this will let you create programs that can handle any number of items, retry on errors, and process data efficiently.
+In the next chapter, we'll discover how to make programs repeat actions with loops. Combined with decisions, this will let you create programs that can handle any number of items, retry on errors, and process data efficiently.
 
 Remember: Decisions aren't about memorizing if-elif-else syntax. They're about teaching programs to respond intelligently to different situations - just like we do in real life!

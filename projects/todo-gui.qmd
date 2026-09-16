@@ -4,8 +4,8 @@
 ## Capstone Project - Before You Start
 This is your **final project** that demonstrates everything you've learned! Make sure you've completed:
 - All previous projects
-- Chapter 12: Interactive Systems  
-- Chapter 13: Becoming an Architect
+- Chapter 22: Interactive Systems  
+- Chapter 23: Becoming an Architect
 
 You should be ready to:
 - Design complete applications from scratch
@@ -261,11 +261,11 @@ Found 3 existing tasks
 ├─────────────────────────────────────────────────────────────┤
 │  📋 Current Tasks (3 total, 1 completed, 2 remaining):      │
 │                                                             │
-│  ☐ HIGH   | Finish Python Step by Step course              │
+│  ☐ HIGH   | Finish the Think Python book              │
 │  ☑ MEDIUM | Complete text adventure project                 │
 │  ☐ LOW    | Read about software design patterns            │
 │                                                             │
-│  Selected: [Finish Python Step by Step course]             │
+│  Selected: [Finish the Think Python book]             │
 │  [✓ Complete] [✏️ Edit] [🗑️ Delete]                          │
 ├─────────────────────────────────────────────────────────────┤
 │  📊 Progress: ████████░░░░░░░░░░░░ 33% (1 of 3 completed)   │
@@ -274,13 +274,13 @@ Found 3 existing tasks
 
 User clicks "✓ Complete" on first task...
 
-✅ Task completed: "Finish Python Step by Step course"
+✅ Task completed: "Finish the Think Python book"
 📊 Progress updated: 66% complete!
 💾 Auto-saved to todo_data.json
 
-User adds new task: "Start Python Jumpstart course"
+User adds new task: "Start the Code Python book"
 
-➕ New task added: "Start Python Jumpstart course" (Priority: High)
+➕ New task added: "Start the Code Python book" (Priority: High)
 📊 Stats updated: 4 total tasks, 2 completed, 2 remaining
 💾 Auto-saved to todo_data.json
 ```
@@ -980,14 +980,14 @@ You've built a complete, professional-quality application that demonstrates mast
 - ✅ **Software architecture** and design patterns
 - ✅ **AI partnership** for efficient development
 
-This capstone project proves you're ready for **Python Jumpstart** and advanced programming challenges. You've transformed from a complete beginner to a software architect who can design and build real applications!
+This capstone project proves you're ready for *Code Python, Consult AI* and deeper programming challenges. You've transformed from a complete beginner to a software architect who can design and build real applications!
 
 ## Next Steps
 
 Your journey with Python is just beginning:
 
 1. **Enhance your todo app** with additional features
-2. **Start Python Jumpstart** for web development
+2. **Start *Code Python, Consult AI** to deepen your fundamentals
 3. **Build more projects** using your new skills
 4. **Join programming communities** to continue learning
 5. **Teach others** what you've learned

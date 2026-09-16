@@ -138,10 +138,10 @@ You're prepared for a programming landscape where AI collaboration is standard, 
 - Thought programming was mysterious magic
 
 **Now:**
-- Architects complete applications from scratch
-- Debugs problems systematically
-- Collaborates effectively with AI
-- Sees programming as a learnable, logical skill
+- Architect complete applications from scratch
+- Debug problems systematically
+- Collaborate effectively with AI
+- See programming as a learnable, logical skill
 
 This transformation occurred through consistent practice, thoughtful reflection, and maintaining a growth mindset throughout challenges.
 
@@ -211,14 +211,14 @@ These capabilities form the foundation for any programming career path you choos
 
 ## Looking Forward: Your Next Chapter
 
-### Python Jumpstart Awaits
+### Code Python, Consult AI Awaits
 
-Your next adventure in **Python Jumpstart** will challenge you to:
-- Build web applications that serve real users
-- Work with databases and persistent data
-- Deploy applications to the internet
-- Handle user authentication and security
-- Create responsive, professional interfaces
+Your next adventure in ***Code Python, Consult AI*** will challenge you to:
+- Deepen your command of Python's core language
+- Write programs that handle messy, real-world input
+- Refactor working code into cleaner, better-organised versions
+- Reason about trade-offs and explain the choices behind your code
+- Strengthen the AI-partnership habits this book began
 
 You're fully prepared for these challenges. The problem-solving processes, AI collaboration skills, and programming fundamentals you've mastered provide a solid foundation for any advanced topic.
 
@@ -346,7 +346,7 @@ These same principles will continue serving you as you take on increasingly chal
 
 You've completed more than a course. You've undergone a transformation. You now possess the knowledge, skills, and mindset necessary to build applications, solve problems, and create value through programming.
 
-**Your adventure in professional programming begins now.** Python Jumpstart awaits with web development challenges that will stretch your abilities and expand your possibilities.
+**Your adventure in professional programming begins now.** *Code Python, Consult AI* awaits with challenges that will stretch your abilities and expand your possibilities.
 
 **Your AI partnership continues evolving** as you tackle more sophisticated projects that require architectural thinking and strategic implementation.
 
@@ -354,4 +354,4 @@ You've completed more than a course. You've undergone a transformation. You now 
 
 The foundation is complete. The tools are ready. Your future as a programmer is bright with unlimited possibilities.
 
-**Congratulations on completing Python Step by Step: Learning with AI. Welcome to your programming future! 🚀**
+**Congratulations on completing *Think Python, Direct AI*. Welcome to your programming future! 🚀**

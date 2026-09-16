@@ -289,7 +289,7 @@ Functions have more to offer than we cover here: default parameter values, varia
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 6.1: Concept Recognition
+Exercise 12.1: Concept Recognition
 :::
 
 ### Identifying Function Opportunities
@@ -323,7 +323,7 @@ Function opportunities:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 6.2: Prompt Engineering
+Exercise 12.2: Prompt Engineering
 :::
 
 ### Getting Function Examples
@@ -350,7 +350,7 @@ No error handling or extra features, just the basic conversion function"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 6.3: Pattern Matching
+Exercise 12.3: Pattern Matching
 :::
 
 ### Finding Hidden Functions
@@ -374,7 +374,7 @@ Everything else is probably AI overengineering!
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 6.4: Build a Model
+Exercise 12.4: Build a Model
 :::
 
 ### Visualizing Function Flow
@@ -389,7 +389,7 @@ Share your models to explain functions to someone.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 6.5: Architect First
+Exercise 12.5: Architect First
 :::
 
 ### Design Function-Based Programs
@@ -533,7 +533,7 @@ You've learned:
 
 ## Reflection Checklist
 
-Before moving to Chapter 7, ensure you:
+Before moving on, ensure you:
 
 - [ ] Understand functions as named groups of commands
 - [ ] Can create simple functions with and without parameters
@@ -567,6 +567,6 @@ Anyone can understand what this does!
 
 ## Next Steps
 
-In Chapter 7, we'll explore how to organise complex information using lists and dictionaries. You'll see how functions and data structures work together to create powerful programs that can handle real-world complexity.
+In the next chapter, we'll explore how to organise complex information using lists and dictionaries. You'll see how functions and data structures work together to create powerful programs that can handle real-world complexity.
 
 Remember: Functions aren't about memorizing syntax. They're about recognising patterns, reducing repetition, and building programs from well-named, reusable pieces!

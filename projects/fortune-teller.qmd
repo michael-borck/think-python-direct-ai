@@ -3,11 +3,11 @@
 ::: {.callout-important}
 ## Before You Start
 Make sure you've completed:
-- Chapter 1: Input, Process, Output
-- Chapter 2: Remembering Things (Variables)
-- Chapter 3: Asking Questions (Input)
-- Chapter 4: Making Decisions (If Statements)
-- Chapter 5: Doing Things Over and Over (Loops)
+- Chapter 2: Input, Process, Output
+- Chapter 3: Remembering Things (Variables)
+- Chapter 4: Asking Questions (Input)
+- Chapter 5: Making Decisions (If Statements)
+- Chapter 6: Doing Things Over and Over (Loops)
 - Your Expression Toolkit
 
 You should understand:
@@ -174,7 +174,7 @@ Your fortune teller must:
 ### Learning Requirements
 
 Your implementation should:
-- [ ] Use only concepts from Chapters 1-5
+- [ ] Use only concepts from Chapters 2-6
 - [ ] Include clear comments explaining your logic
 - [ ] Follow the I→P→O pattern
 - [ ] Use meaningful variable names
@@ -238,6 +238,19 @@ Don't try to build everything at once:
 3. Add age question and one fortune
 4. Test again
 5. Keep building incrementally
+
+To see something working before you design the rest, start from this:
+
+```python
+# EXTRACT: fortune-teller.py
+# Stage 1: a minimal fortune teller.
+# Follow the project phases to grow it into the full version.
+
+print("Welcome to the Mystic Fortune Teller!")
+name = input("What is your name, seeker? ")
+print(f"Ah, {name}... let me gaze into the crystal ball...")
+print("The mist clears. I see good fortune in your future!")
+```
 
 ### Step 3: Test Your Edge Cases
 

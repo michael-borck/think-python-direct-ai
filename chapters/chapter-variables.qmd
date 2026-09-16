@@ -27,6 +27,8 @@ The simplest mental model: Variables are like labelled boxes.
 - You can change what's in the box
 - But the label stays the same
 
+This box picture will serve you well throughout this book — and toward the end of the chapter you'll meet the refinement professional Python programmers use.
+
 ### Real-World Variables
 
 Your phone uses variables constantly:
@@ -243,7 +245,7 @@ Try asking AI: "Show me how the same expression gives different results with dif
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 2.1: Concept Recognition
+Exercise 3.1: Concept Recognition
 :::
 
 ### Identifying Variables in Real Programs
@@ -272,7 +274,7 @@ Note how `gold` demonstrates the "variable" nature - its value varies!
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 2.2: Prompt Engineering
+Exercise 3.2: Prompt Engineering
 :::
 
 ### Getting Clear Examples
@@ -300,7 +302,7 @@ Keep it as simple as possible - just 4-5 lines"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 2.3: Pattern Matching
+Exercise 3.3: Pattern Matching
 :::
 
 ### Finding the Core Pattern
@@ -323,7 +325,7 @@ Everything else is probably AI being fancy!
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 2.4: Build a Model
+Exercise 3.4: Build a Model
 :::
 
 ### Create Your Own Understanding
@@ -338,7 +340,7 @@ Test your explanations on someone. Which worked best? Why?
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 2.5: Architect First
+Exercise 3.5: Architect First
 :::
 
 ### Design Before Code
@@ -395,8 +397,8 @@ When confused, ask:
 
 ## Common Misconceptions
 
-### "Variables are boxes that hold things"
-**Better Understanding**: Variables are names that point to values. When you change a variable, you're pointing the name at a new value.
+### "Variables are literally boxes"
+**Refining the box model**: The labelled-box picture got you this far. The truer picture: a variable is a name that points to a value. When you change a variable, you're pointing the name at a new value — `gold = gold + 10` computes the right side, then points `gold` at the new number. Same behaviour as the box picture, but it explains more, and it will matter when two names refer to the same value in *Code Python, Consult AI*.
 
 ### "= means equals"
 **Reality**: In Python, `=` means "assign" or "remember as"
@@ -451,7 +453,7 @@ You've learned:
 
 ## Reflection Checklist
 
-Before moving to Chapter 3, ensure you:
+Before moving on, ensure you:
 
 - [ ] Understand variables as "program memory"
 - [ ] Can create variables with meaningful names
@@ -479,6 +481,6 @@ Well-named variables make code self-documenting. Instead of remembering what `x`
 
 ## Next Steps
 
-In Chapter 3, we'll explore how to get information from users with the `input()` function. You'll see how variables become essential for remembering what users tell us, and how this completes the Input→Process→Output pattern with memory!
+In the next chapter, we'll explore how to get information from users with the `input()` function. You'll see how variables become essential for remembering what users tell us, and how this completes the Input→Process→Output pattern with memory!
 
 Remember: Variables aren't about syntax. They're about giving programs the ability to remember and track the changing state of the world.

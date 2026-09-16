@@ -1,4 +1,4 @@
-# Chapter 10: Working with Data {#sec-working-with-data}
+# Working with Data {#sec-working-with-data}
 
 ::: {.callout-note}
 ## Chapter Summary
@@ -64,7 +64,12 @@ AI will likely show you Python's `csv` module. But here's the learning approach:
 
 ### Building a Grade Analyzer
 
-Let's design a program that reads student grades and provides insights:
+Let's design a program that reads student grades and provides insights.
+
+::: {.callout-note}
+## Borrowed Tools in This Chapter
+The listings here use three tools before their official introduction. `with open(...) as file:` opens a file and closes it automatically, even if something goes wrong — Chapter 14 used open/close pairs so you could see every step. `try/except` handles errors gracefully instead of crashing. And a list comprehension like `[int(p) for p in parts]` builds a list in one line. *Code Python, Consult AI* covers all three systematically; for now, read them as patterns to recognise and ask AI to trace.
+:::
 
 ```python
 def read_grades_simple(filename):
@@ -278,7 +283,7 @@ def safe_int(value):
 
 ::: {.callout-important}
 ## Data Cleaning Reality
-Professional programmers spend 80% of their time cleaning data! When working with AI, always ask: "What could go wrong with this data? Show me how to handle those cases."
+Ask any working programmer: a huge share of real-world data work is cleaning data, not analysing it. When working with AI, always ask: "What could go wrong with this data? Show me how to handle those cases."
 :::
 
 ::: {.callout-note title="Going Deeper"}
@@ -298,10 +303,21 @@ A data pipeline is a series of steps that transform raw data into useful informa
 ### Example: Student Performance Pipeline
 
 ```python
+def get_letter_grade(average):
+    """Convert a numeric average to a letter grade"""
+    if average >= 90:
+        return "A"
+    elif average >= 80:
+        return "B"
+    elif average >= 70:
+        return "C"
+    else:
+        return "Needs practice"
+
 def process_student_data(csv_file):
     """Complete pipeline for student data"""
-    # Load
-    students = load_csv(csv_file)
+    # Load (using read_grades_simple from the grade analyzer above)
+    students = read_grades_simple(csv_file)
     
     # Clean
     for student in students:
@@ -318,6 +334,7 @@ def process_student_data(csv_file):
     # Report
     print(f"Class Average: {class_average:.1f}")
     print("\nTop Students:")
+    # lambda s: s['average'] tells sorted() to compare students by their average
     top_students = sorted(students, key=lambda s: s['average'], reverse=True)[:3]
     for student in top_students:
         print(f"  {student['name']}: {student['average']:.1f}")
@@ -340,13 +357,15 @@ def process_large_file(filename, chunk_size=1000):
             chunk.append(line.strip())
             
             if len(chunk) >= chunk_size:
-                process_chunk(chunk)
+                process_chunk(chunk)  # your function that handles 1,000 rows
                 chunk = []
         
         # Don't forget the last chunk!
         if chunk:
             process_chunk(chunk)
 ```
+
+`process_chunk` is the function you write to summarise or store each block of rows — the chunking pattern stays the same either way.
 
 ::: {.callout-tip}
 ## Memory Management

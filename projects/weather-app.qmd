@@ -4,9 +4,9 @@
 ## Before You Start
 Make sure you've completed:
 - All previous projects
-- Chapter 10: Working with Data
-- Chapter 11: Connected Programs
-- Chapter 12: Interactive Systems
+- Chapter 20: Working with Data
+- Chapter 21: Connected Programs
+- Chapter 22: Interactive Systems
 
 You should understand:
 - Making API requests with `requests`

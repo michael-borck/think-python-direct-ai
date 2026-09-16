@@ -1,4 +1,4 @@
-# Chapter 11: Connected Programs {#sec-connected-programs}
+# Connected Programs {#sec-connected-programs}
 
 ::: {.callout-note}
 ## Chapter Summary
@@ -158,8 +158,8 @@ def explore_api_response(url):
     
     return data
 
-# Try it with a quote API
-quote_data = explore_api_response("https://api.quotable.io/random")
+# Try it with the joke API
+joke_data = explore_api_response("https://official-joke-api.appspot.com/random_joke")
 ```
 
 ::: {.callout-warning}
@@ -177,6 +177,8 @@ Some APIs are open to everyone (like the joke API above), but many require an **
 2. **Get your key** from your account dashboard
 3. **Keep it secret** - never put keys in your code!
 4. **Use it in requests** as shown below
+
+Weather and news services require a free signup key; the joke and exchange-rate examples in this chapter work without one. Availability of free APIs changes — if an example stops working, ask AI for a current alternative.
 
 ```python
 def get_news_headlines():
@@ -197,6 +199,11 @@ def get_news_headlines():
     
     response = requests.get(url, params=params)
     return response.json()
+
+def load_api_key(filename):
+    """Read an API key from the first line of a text file"""
+    with open(filename, 'r') as f:
+        return f.readline().strip()
 ```
 
 ## Building a Weather Dashboard
@@ -436,7 +443,7 @@ data = weather_client.get("current.json", {"q": "Boston"})
 
 ## Real Project: Multi-Source Dashboard
 
-Let's combine multiple APIs into one useful program:
+Let's combine multiple APIs into one useful program. Each helper below — `get_weather`, `get_daily_quote`, `get_headlines`, `get_currency_rates` — is a small function built from the request-check-parse pattern you've practised throughout this chapter; the weather-app notebook in the book's `code/` folder assembles a complete runnable version:
 
 ```python
 def create_morning_briefing():

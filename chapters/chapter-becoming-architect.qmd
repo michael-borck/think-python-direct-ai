@@ -1,4 +1,4 @@
-# Chapter 13: Becoming an Architect {#sec-becoming-architect}
+# Becoming an Architect {#sec-becoming-architect}
 
 ::: {.callout-note}
 ## Chapter Summary
@@ -248,6 +248,8 @@ When you provide clear specifications, AI can build exactly what you envision. Y
 :::
 
 ## Architecture Patterns
+
+The patterns below are sketches: they show the shape of each idea, not runnable code. That is normal at the architecture stage — you are deciding how pieces relate before asking AI to implement them.
 
 ### Pattern 1: Model-View-Controller (MVC)
 
@@ -564,7 +566,7 @@ You're no longer just writing code - you're designing and building complete soft
 ## Reflection Prompts
 
 1. **Design First**: How does planning change your coding experience?
-2. **AI Partnership**: How has your relationship with AI evolved from Chapter 0?
+2. **AI Partnership**: How has your relationship with AI evolved since the very first chapter?
 3. **Architecture Patterns**: Which patterns make the most sense to you?
 4. **Future Projects**: What would you like to architect and build?
 

@@ -1,8 +1,8 @@
-# Chapter 14: Your Programming Journey Forward {#sec-next-steps}
+# Your Programming Journey Forward {#sec-next-steps}
 
 ::: {.callout-note}
 ## Chapter Summary
-Congratulations! You've completed your foundation in Python programming with AI partnership. This final chapter helps you transition from "Step by Step" learning to tackling ambitious projects in Python Jumpstart. You're no longer a beginner - you're a programmer ready for real-world challenges!
+Congratulations! You've completed your foundation in Python programming with AI partnership. This final chapter helps you transition from guided, step-by-step learning to focused, independent work in *Code Python, Consult AI*. You're no longer a beginner - you're a programmer ready for real-world challenges!
 :::
 
 ## From Beginner to Builder
@@ -88,27 +88,27 @@ Before moving forward, let's verify your readiness. You should be able to confid
 - [ ] "I can build graphical interfaces that users can actually use"
 - [ ] "I can integrate different programming concepts into working systems"
 
-If you can honestly check most of these boxes, you're ready for Python Jumpstart!
+If you can honestly check most of these boxes, you're ready for *Code Python, Consult AI*!
 
-## The Python Jumpstart Transition
+## The Code Python, Consult AI Transition
 
 ### What Changes in Project-Based Learning
 
-**From Chapters to Projects:**
-- *Step by Step*: Learn one concept at a time
-- *Jumpstart*: Build complete applications using all concepts together
+**From Guided Tour to Focused Depth:**
+- *This book*: Survey the core concepts through varied projects
+- *Code Python, Consult AI*: Deepen each fundamental through AI conversation
 
-**From Console to Web:**
-- *Step by Step*: Text-based programs and simple GUIs
-- *Jumpstart*: Web applications, databases, and user authentication
+**From Examples to Understanding:**
+- *This book*: New code explained as concepts are introduced
+- *Code Python, Consult AI*: Fewer hints; you reason first, then check
 
 **From Simple to Sophisticated:**
-- *Step by Step*: Basic programs that demonstrate concepts
-- *Jumpstart*: Professional-quality applications you can deploy
+- *This book*: Basic programs that demonstrate concepts
+- *Code Python, Consult AI*: Polished programs that handle real inputs
 
 **From Guided to Independent:**
-- *Step by Step*: Detailed instructions and scaffolding
-- *Jumpstart*: Project goals with freedom to choose your approach
+- *This book*: Detailed instructions and scaffolding
+- *Code Python, Consult AI*: Clearer goals with freedom to choose your approach
 
 ### What Stays the Same
 
@@ -166,7 +166,7 @@ You know how to work effectively with AI:
 - **Implementation Help**: "Here's my design - help me implement this part"
 - **Code Review**: "What could go wrong with this approach?"
 
-## Preparing for Python Jumpstart
+## Preparing for Code Python, Consult AI
 
 ### Technical Preparation
 
@@ -191,7 +191,7 @@ You know how to work effectively with AI:
 ### Mindset Preparation
 
 **Embrace Complexity:**
-Python Jumpstart projects will be more complex than anything you've built. That's the point! You're ready to handle that complexity because you understand the underlying principles.
+Projects in *Code Python, Consult AI* will stretch you further than anything you've built. That's the point! You're ready to handle that complexity because you understand the underlying principles.
 
 **Trust Your Problem-Solving Process:**
 When faced with overwhelming requirements, break them down using the same techniques you've practiced. Every complex application is just simple pieces working together.
@@ -206,7 +206,7 @@ Real programming involves getting stuck, working through problems, and discoveri
 
 ### Bridge Projects
 
-Before jumping into Jumpstart, consider building these practice projects:
+Before moving on, consider building these practice projects:
 
 **Personal Dashboard:**
 - Combine weather API, todo list, and calendar
@@ -270,17 +270,17 @@ Before jumping into Jumpstart, consider building these practice projects:
 - Help someone else with their programming questions
 
 **Preparation**
-- Set up your development environment for web programming
-- Review web development fundamentals
-- Plan your first Jumpstart project
+- Set up your development environment for the work ahead
+- Review the fundamentals you built in this book
+- Plan your first project for *Code Python, Consult AI*
 
 ### Long-term Journey (Months 4-12)
 
-**Months 4-6: Python Jumpstart**
-- Build 6-8 substantial web applications
-- Learn database design and management
-- Deploy applications to the internet
-- Work with real user feedback
+**Months 4-6: Deepen your Python**
+- Work through *Code Python, Consult AI*
+- Strengthen the fundamentals every path depends on
+- Rebuild and refactor earlier projects as your skills grow
+- Work with real feedback from people who use what you make
 
 **Months 7-9: Specialization**
 - Choose an area that interests you (web development, data science, automation)
@@ -312,8 +312,8 @@ Before jumping into Jumpstart, consider building these practice projects:
 
 ### Warning Signs
 
-**If you're struggling with Jumpstart projects:**
-- Come back to Step by Step concepts and reinforce your foundation
+**If you.re struggling with next-book projects:**
+- Come back to this book's chapters and reinforce your foundation
 - Build more practice projects at this level before advancing
 - Focus on understanding rather than just completing projects
 - Remember: there's no shame in taking more time to build solid foundations
@@ -358,7 +358,7 @@ Before jumping into Jumpstart, consider building these practice projects:
 
 ### Challenge 1: "The Projects Are Too Big"
 
-**What's happening:** Jumpstart projects integrate many concepts simultaneously, which can feel overwhelming.
+**What's happening:** The next book's projects integrate many concepts simultaneously, which can feel overwhelming.
 
 **Solution:** Use your decomposition skills. Every large project is just smaller pieces connected together. Break requirements into the smallest possible tasks.
 
@@ -443,10 +443,10 @@ Use this perspective to help others and contribute to the programming community 
 - Thought programming was magic
 
 **You now:**
-- Builds complete applications from scratch
-- Designs solutions before implementing
-- Debugs problems systematically
-- Understands programming as a learnable skill
+- Build complete applications from scratch
+- Design solutions before implementing
+- Debug problems systematically
+- Understand programming as a learnable skill
 
 This transformation happened through consistent practice, thoughtful reflection, and maintaining a growth mindset. The same approach will serve you well in everything that comes next.
 
@@ -507,7 +507,7 @@ You've accomplished something significant. Many people start learning programmin
 
 This isn't the end of your learning journey - it's the beginning of your career as a programmer. You now have the foundation to build anything you can imagine.
 
-**Python Jumpstart awaits**, ready to challenge you with real-world projects that will transform you from a programmer into a professional developer.
+**Code Python, Consult AI awaits**, ready to deepen the fundamentals that will carry you from programmer to professional developer.
 
 **Your AI partnership continues**, evolving from guided learner to architect-builder as you tackle increasingly sophisticated challenges.
 
@@ -517,14 +517,14 @@ This isn't the end of your learning journey - it's the beginning of your career 
 
 The foundation is complete. The tools are ready. Your adventure in professional programming begins now!
 
-## Next Chapter: Python Jumpstart
+## Next: Code Python, Consult AI
 
 When you're ready to continue your journey:
 
 1. **Assess your readiness** using the checklists in this chapter
 2. **Complete any additional practice projects** to strengthen weak areas
 3. **Set up your development environment** for web programming
-4. **Begin Python Jumpstart** with confidence in your foundational skills
+4. **Begin *Code Python, Consult AI*** with confidence in your foundational skills
 
 Remember: You're not just someone who completed a programming course. You're a programmer who builds solutions. You've earned that identity through consistent effort and thoughtful practice.
 

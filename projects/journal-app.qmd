@@ -4,8 +4,8 @@
 ## Before You Start
 Make sure you've completed:
 - All previous projects
-- Chapter 8: Saving Your Work (Files)
-- Chapter 9: When Things Go Wrong (Debugging)
+- Chapter 14: Saving Your Work (Files)
+- Chapter 15: When Things Go Wrong (Debugging)
 
 You should understand:
 - Working with files (read, write, append)

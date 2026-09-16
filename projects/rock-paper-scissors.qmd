@@ -3,7 +3,7 @@
 ::: {.callout-important}
 ## Before You Start
 Make sure you've completed:
-- All of Part I: Computational Thinking (Chapters 1-5)
+- All of Part I: Computational Thinking (Chapters 2-6)
 - The Fortune Teller project
 - The Mad Libs Generator project
 - The Number Guessing Game project

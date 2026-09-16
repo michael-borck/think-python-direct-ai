@@ -308,7 +308,7 @@ Knowing error types helps you debug, but Python also lets you *handle* errors gr
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 9.1: Concept Recognition
+Exercise 15.1: Concept Recognition
 :::
 
 ### Identifying Bug Types
@@ -333,7 +333,7 @@ For each problem, identify the likely bug type:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 9.2: Prompt Engineering
+Exercise 15.2: Prompt Engineering
 :::
 
 ### Getting Debug Help
@@ -360,7 +360,7 @@ Can you help me understand:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 9.3: Pattern Matching
+Exercise 15.3: Pattern Matching
 :::
 
 ### Finding Bugs in Complex Code
@@ -383,7 +383,7 @@ Ask AI for a "professional inventory system with a bug". In the code:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 9.4: Build a Model
+Exercise 15.4: Build a Model
 :::
 
 ### Visualizing Debug Processes
@@ -398,7 +398,7 @@ Make them clear enough to help future you!
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 9.5: Architect First
+Exercise 15.5: Architect First
 :::
 
 ### Design Debugging-Friendly Code

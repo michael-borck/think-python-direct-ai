@@ -298,7 +298,7 @@ We're keeping file operations simple here: open, read, write, close. There's mor
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 8.1: Concept Recognition
+Exercise 14.1: Concept Recognition
 :::
 
 ### Identifying File Needs
@@ -323,7 +323,7 @@ For each program, identify what should be saved to files:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 8.2: Prompt Engineering
+Exercise 14.2: Prompt Engineering
 :::
 
 ### Getting File Examples
@@ -350,7 +350,7 @@ Use basic file operations with no JSON or advanced features"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 8.3: Pattern Matching
+Exercise 14.3: Pattern Matching
 :::
 
 ### Simplifying File Operations
@@ -376,7 +376,7 @@ Everything else is professional polish!
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 8.4: Build a Model
+Exercise 14.4: Build a Model
 :::
 
 ### Visualizing File Operations
@@ -391,7 +391,7 @@ Use diagrams, analogies, or stories to explain.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 8.5: Architect First
+Exercise 14.5: Architect First
 :::
 
 ### Design File-Based Programs
@@ -524,7 +524,7 @@ You've learned:
 
 ## Reflection Checklist
 
-Before moving to Chapter 9, ensure you:
+Before moving on, ensure you:
 
 - [ ] Understand files as permanent storage
 - [ ] Can write data to files and read it back
@@ -552,6 +552,6 @@ For this chapter, record:
 
 ## Next Steps
 
-In Chapter 9, we'll learn about debugging - how to find and fix problems when things go wrong. You'll discover that errors aren't failures; they're clues that help you build better programs. Files will become even more valuable as you learn to log information for debugging!
+In the next chapter, we'll learn about debugging - how to find and fix problems when things go wrong. You'll discover that errors aren't failures; they're clues that help you build better programs. Files will become even more valuable as you learn to log information for debugging!
 
 Remember: Files aren't about memorizing modes and methods. They're about giving your programs lasting memory - transforming temporary calculations into persistent applications that remember their users!

@@ -4,7 +4,7 @@
 ## Before You Start
 Make sure you've completed:
 - All previous projects
-- Chapter 12: Interactive Systems
+- Chapter 22: Interactive Systems
 - Understanding of GUI event handling and state management
 
 You should be ready to:

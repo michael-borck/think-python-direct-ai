@@ -263,7 +263,7 @@ print(first + " + " + second + " = " + str(sum_result))
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 3.1: Concept Recognition
+Exercise 4.1: Concept Recognition
 :::
 
 ### Identifying Input Patterns
@@ -303,7 +303,7 @@ print(pet_name + " sounds like a wonderful " + pet_type)
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 3.2: Prompt Engineering
+Exercise 4.2: Prompt Engineering
 :::
 
 ### Getting Interactive Examples
@@ -330,7 +330,7 @@ Use only input() and print(), nothing complex"
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 3.3: Pattern Matching
+Exercise 4.3: Pattern Matching
 :::
 
 ### Finding Core Input Patterns
@@ -360,7 +360,7 @@ Keep just the core question-asking pattern!
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 3.4: Build a Model
+Exercise 4.4: Build a Model
 :::
 
 ### Visualizing Input Flow
@@ -375,7 +375,7 @@ Test your models by explaining input() to someone who's never programmed.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 3.5: Architect First
+Exercise 4.5: Architect First
 :::
 
 ### Design Interactive Programs
@@ -488,7 +488,7 @@ You've learned:
 
 ## Reflection Checklist
 
-Before moving to Chapter 4, ensure you:
+Before moving on, ensure you:
 
 - [ ] Understand input as program-user conversation
 - [ ] Can write clear prompts for input()
@@ -521,6 +521,6 @@ Compare:
 
 ## Next Steps
 
-In Chapter 4, we'll discover how programs make decisions using if statements. You'll see how input becomes powerful when programs can respond differently based on what users tell them. Get ready to make your programs smart!
+In the next chapter, we'll discover how programs make decisions using if statements. You'll see how input becomes powerful when programs can respond differently based on what users tell them. Get ready to make your programs smart!
 
 Remember: Getting input isn't about the syntax of `input()`. It's about creating conversations between programs and people. Every interactive program in the world is built on this simple concept.

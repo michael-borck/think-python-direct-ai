@@ -249,7 +249,7 @@ Start with "loops" and evolve it to get an explanation of repetition before any 
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-1-badge}
-Exercise 0.1: Concept Recognition
+Exercise 1.1: Concept Recognition
 :::
 
 ### recognising AI's Patterns
@@ -263,7 +263,7 @@ Document:
 
 <details>
 <summary>What to Look For</summary>
-Most AIs will include:
+Most AIs tend to include:
 - Functions (unnecessary for simple greeting)
 - Error handling (not needed yet)
 - Multiple options or features
@@ -278,7 +278,7 @@ The simplest version needs only:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-2-badge}
-Exercise 0.2: Prompt Engineering
+Exercise 1.2: Prompt Engineering
 :::
 
 ### Building Better Prompts
@@ -301,7 +301,7 @@ Transform each vague prompt into a learning-focused prompt:
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-3-badge}
-Exercise 0.3: Simplification Practice
+Exercise 1.3: Simplification Practice
 :::
 
 ### Making AI Code Learner-Friendly
@@ -316,7 +316,7 @@ Document how the code changes with each iteration.
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-4-badge}
-Exercise 0.4: Mental Model Building
+Exercise 1.4: Mental Model Building
 :::
 
 ### Understanding AI's Thinking
@@ -331,7 +331,7 @@ Share this with a classmate or friend. Can they understand it?
 
 ::: {.exercise-container}
 ::: {.exercise-level-badge .level-5-badge}
-Exercise 0.5: Design Your Learning
+Exercise 1.5: Design Your Learning
 :::
 
 ### Architect Your AI Partnership
@@ -355,7 +355,7 @@ Create a "My AI Learning Plan" document.
 
 ## Reflection
 
-Before moving to Chapter 1, ensure you:
+Before moving on, ensure you:
 
 - [ ] Completed the Partnership Experiment
 - [ ] Understand why AI overcomplicates by default
@@ -389,7 +389,7 @@ This book is part of a comprehensive series for mastering modern software develo
 
 - [Think Python, Direct AI: Computational Thinking for Beginners](https://michael-borck.github.io/think-python-direct-ai) (this book) - Perfect for absolute beginners
 - [Code Python, Consult AI: Python Fundamentals for the AI Era](https://michael-borck.github.io/code-python-consult-ai) - Core Python knowledge
-- [Ship Python, Orchestrate AI](https://michael-borck.github.io/ship-it-python-in-production) - Professional Python in the AI Era
+- [Ship Python, Orchestrate AI](https://michael-borck.github.io/ship-python-orchestrate-ai) - Professional Python in the AI Era
 
 **Web Track**
 
@@ -397,6 +397,6 @@ This book is part of a comprehensive series for mastering modern software develo
 
 ## Next Steps
 
-In Chapter 1, we'll explore the fundamental pattern of all programs: Input → Process → Output. You'll use your new prompt evolution skills to discover this pattern with AI's help, then build a clear mental model of how all programs work.
+In the next chapter, we'll explore the fundamental pattern of all programs: Input → Process → Output. You'll use your new prompt evolution skills to discover this pattern with AI's help, then build a clear mental model of how all programs work.
 
 Remember: You're not learning to code. You're learning to think computationally and direct AI to help you build solutions. Let's begin!
