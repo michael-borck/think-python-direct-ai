@@ -191,7 +191,7 @@ You know how to work effectively with AI:
 ### Mindset Preparation
 
 **Embrace Complexity:**
-Projects in *Code Python, Consult AI* will stretch you further than anything you've built. That's the point! You're ready to handle that complexity because you understand the underlying principles.
+Projects in *Code Python, Consult AI* will stretch you further than anything you've built. You're ready to handle that complexity because you understand the underlying principles.
 
 **Trust Your Problem-Solving Process:**
 When faced with overwhelming requirements, break them down using the same techniques you've practiced. Every complex application is just simple pieces working together.
