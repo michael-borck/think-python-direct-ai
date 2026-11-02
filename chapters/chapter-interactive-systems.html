@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions.">
 
-<title>22&nbsp; Chapter 12: Interactive Systems – Think Python, Direct AI</title>
+<title>22&nbsp; Interactive Systems – Think Python, Direct AI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -78,14 +81,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-23bbe8b5e4efc1e257f6d59dce478b08.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed6a1a2bbb6c38e19b91e14da0015bdb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6752c11968d1768e6ffb59eed447bf43.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed6a1a2bbb6c38e19b91e14da0015bdb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-36d1909bcb541879de504f1ebcc96011.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-9950bca906ef9bb3ea288c0af376aad5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-36d1909bcb541879de504f1ebcc96011.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-bcef54b0580e13fa4c97f066e820aa1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-15f167cafc6866a0830865e5150cddc2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-bcef54b0580e13fa4c97f066e820aa1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -115,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="assets/custom.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -289,7 +292,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-interactive-systems.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Chapter 12: Interactive Systems</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-interactive-systems.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Interactive Systems</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -496,25 +499,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-working-with-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Chapter 10: Working with Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Working with Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-connected-programs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Chapter 11: Connected Programs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Connected Programs</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-interactive-systems.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Chapter 12: Interactive Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Interactive Systems</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-becoming-architect.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Chapter 13: Becoming an Architect</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Becoming an Architect</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -555,7 +558,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-next-steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Chapter 14: Your Programming Journey Forward</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Your Programming Journey Forward</span></span></a>
   </div>
 </li>
       </ul>
@@ -580,7 +583,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2544-1990-7</p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -647,15 +652,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#chapter-summary-1" id="toc-chapter-summary-1" class="nav-link" data-scroll-target="#chapter-summary-1"><span class="header-section-number">22.18</span> Chapter Summary</a></li>
   <li><a href="#reflection-prompts" id="toc-reflection-prompts" class="nav-link" data-scroll-target="#reflection-prompts"><span class="header-section-number">22.19</span> Reflection Prompts</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/michael-borck/think-python-direct-ai/edit/main/chapters/chapter-interactive-systems.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="think-python-direct-ai.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="think-python-direct-ai.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/think-python-direct-ai"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/michael-borck/think-python-direct-ai/edit/main/chapters/chapter-interactive-systems.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/think-python-direct-ai.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/think-python-direct-ai.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/think-python-direct-ai"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-interactive-systems.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Chapter 12: Interactive Systems</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-interactive-systems.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Interactive Systems</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-interactive-systems" class="quarto-section-identifier"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Chapter 12: Interactive Systems</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-interactive-systems" class="quarto-section-identifier"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Interactive Systems</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -689,7 +694,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="22.1" class="anchored" data-anchor-id="introduction-from-console-to-canvas"><span class="header-section-number">22.1</span> Introduction: From Console to Canvas</h2>
 <p>All your programs so far have lived in the console - that text-based world of <code>print()</code> and <code>input()</code>. But most software you use daily has windows, buttons, menus, and graphics. In this chapter, you’ll learn to build those kinds of programs.</p>
 <p>Think about the apps you use: - They have buttons you can click - Text fields where you type - Menus you can navigate - Images and colors - Multiple things happening at once</p>
-<p>This chapter teaches you to create all of these. But more importantly, it introduces a fundamentally different way of thinking about how programs run.</p>
+<p>This chapter teaches you to create all of these, and it introduces a fundamentally different way of thinking about how programs run.</p>
 </section>
 <section id="understanding-event-driven-programming" class="level2" data-number="22.2">
 <h2 data-number="22.2" class="anchored" data-anchor-id="understanding-event-driven-programming"><span class="header-section-number">22.2</span> Understanding Event-Driven Programming</h2>
@@ -788,7 +793,7 @@ inside a button's command function? Why does the window freeze?</code></pre>
 <p>You’ll see <code>lambda</code> appear frequently in GUI code, so it’s worth understanding before we go further. A lambda is simply a small, anonymous function written on one line. Where you’d normally write:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> set_red():</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    set_color(<span class="st">'red'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You can instead write <code>lambda: set_color('red')</code>. It does the same thing - creates a function that calls <code>set_color('red')</code> - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. You’ll see it in action shortly.</p>
+<p>You can instead write <code>lambda: set_color('red')</code>. It does the same thing - creates a function that calls <code>set_color('red')</code> - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. One pattern to watch for: <code>lambda c=color: self.set_color(c)</code> copies the loop variable’s <em>current</em> value into each button’s own command. Without the <code>c=color</code> part, every button would end up calling the last colour in the loop. You’ll see it in action shortly, and you can ask AI: “Why does a lambda inside a loop use the last loop value, and how does a default argument fix it?”</p>
 <p>Ask your AI:</p>
 <pre class="text"><code>Show me three examples of lambda in tkinter button commands.
 Then show the same thing using regular named functions.
@@ -829,6 +834,19 @@ When would I prefer one over the other?</code></pre>
 <section id="creating-a-to-do-list-application" class="level2" data-number="22.5">
 <h2 data-number="22.5" class="anchored" data-anchor-id="creating-a-to-do-list-application"><span class="header-section-number">22.5</span> Creating a To-Do List Application</h2>
 <p>You’ve seen individual widgets and layout managers. Now let’s combine them into a complete, useful application. This to-do list uses a class to keep all the related widgets and functions organised together:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Your First Look at Classes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The listings in this chapter use <code>class</code>, Python’s way of bundling data and the functions that work on it into one object. Inside <code>TodoApp</code>, <code>self</code> means “this particular app”, so <code>self.task_entry</code> is this app’s entry box. Read these listings as templates: create the class, set up its widgets in <code>__init__</code>, and connect buttons to its methods. You’ll also spot <code>try/except</code> here, Python’s way of handling an empty selection without crashing. Classes and exceptions both get proper introductions in <em>Code Python, Consult AI</em>; for now, copy the shape and trace what each part does.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TodoApp:</span>
@@ -1445,16 +1463,16 @@ Keep it under 30 lines. I'm learning, not building production software.</code></
     }
     function toggleCodeHandler(show) {
       return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
           if (show) {
             details.open = true;
           } else {
             details.removeAttribute("open");
           }
         }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
         const fromCls = show ? "hidden" : "unhidden";
         const toCls = show ? "unhidden" : "hidden";
         for (let i=0; i<cellCodeDivs.length; i++) {
@@ -1806,17 +1824,17 @@ Keep it under 30 lines. I'm learning, not building production software.</code></
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/chapter-connected-programs.html" class="pagination-link" aria-label="Chapter 11: Connected Programs">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Chapter 11: Connected Programs</span></span>
+      <a href="../chapters/chapter-connected-programs.html" class="pagination-link" aria-label="Connected Programs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Connected Programs</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/chapter-becoming-architect.html" class="pagination-link" aria-label="Chapter 13: Becoming an Architect">
-        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Chapter 13: Becoming an Architect</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/chapter-becoming-architect.html" class="pagination-link" aria-label="Becoming an Architect">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Becoming an Architect</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Chapter 12: Interactive Systems {#sec-interactive-systems}</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Interactive Systems {#sec-interactive-systems}</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
@@ -1834,7 +1852,7 @@ Keep it under 30 lines. I'm learning, not building production software.</code></
 <span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Images and colors</span>
 <span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multiple things happening at once</span>
 <span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>This chapter teaches you to create all of these. But more importantly, it introduces a fundamentally different way of thinking about how programs run.</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>This chapter teaches you to create all of these, and it introduces a fundamentally different way of thinking about how programs run.</span>
 <span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Understanding Event-Driven Programming</span></span>
 <span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a></span>
@@ -1938,7 +1956,7 @@ Keep it under 30 lines. I'm learning, not building production software.</code></
 <span id="cb24-120"><a href="#cb24-120" aria-hidden="true" tabindex="-1"></a>    set_color(<span class="st">'red'</span>)</span>
 <span id="cb24-121"><a href="#cb24-121" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-122"><a href="#cb24-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-123"><a href="#cb24-123" aria-hidden="true" tabindex="-1"></a>You can instead write <span class="in">`lambda: set_color('red')`</span>. It does the same thing - creates a function that calls <span class="in">`set_color('red')`</span> - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. You'll see it in action shortly.</span>
+<span id="cb24-123"><a href="#cb24-123" aria-hidden="true" tabindex="-1"></a>You can instead write <span class="in">`lambda: set_color('red')`</span>. It does the same thing - creates a function that calls <span class="in">`set_color('red')`</span> - but without needing a name. This is especially useful in GUIs when you need to create many similar button commands. One pattern to watch for: <span class="in">`lambda c=color: self.set_color(c)`</span> copies the loop variable's *current* value into each button's own command. Without the <span class="in">`c=color`</span> part, every button would end up calling the last colour in the loop. You'll see it in action shortly, and you can ask AI: "Why does a lambda inside a loop use the last loop value, and how does a default argument fix it?"</span>
 <span id="cb24-124"><a href="#cb24-124" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-125"><a href="#cb24-125" aria-hidden="true" tabindex="-1"></a>Ask your AI:</span>
 <span id="cb24-126"><a href="#cb24-126" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
@@ -1984,514 +2002,519 @@ Keep it under 30 lines. I'm learning, not building production software.</code></
 <span id="cb24-166"><a href="#cb24-166" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-167"><a href="#cb24-167" aria-hidden="true" tabindex="-1"></a>You've seen individual widgets and layout managers. Now let's combine them into a complete, useful application. This to-do list uses a class to keep all the related widgets and functions organised together:</span>
 <span id="cb24-168"><a href="#cb24-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-169"><a href="#cb24-169" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-170"><a href="#cb24-170" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
-<span id="cb24-171"><a href="#cb24-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-172"><a href="#cb24-172" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TodoApp:</span>
-<span id="cb24-173"><a href="#cb24-173" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</span>
-<span id="cb24-174"><a href="#cb24-174" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
-<span id="cb24-175"><a href="#cb24-175" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.title(<span class="st">"My To-Do List"</span>)</span>
-<span id="cb24-176"><a href="#cb24-176" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.geometry(<span class="st">"400x500"</span>)</span>
-<span id="cb24-177"><a href="#cb24-177" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-178"><a href="#cb24-178" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Create widgets</span></span>
-<span id="cb24-179"><a href="#cb24-179" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_widgets()</span>
-<span id="cb24-180"><a href="#cb24-180" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-181"><a href="#cb24-181" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_widgets(<span class="va">self</span>):</span>
-<span id="cb24-182"><a href="#cb24-182" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Title</span></span>
-<span id="cb24-183"><a href="#cb24-183" aria-hidden="true" tabindex="-1"></a>        title <span class="op">=</span> tk.Label(<span class="va">self</span>.root, text<span class="op">=</span><span class="st">"To-Do List"</span>, font<span class="op">=</span>(<span class="st">"Arial"</span>, <span class="dv">20</span>))</span>
-<span id="cb24-184"><a href="#cb24-184" aria-hidden="true" tabindex="-1"></a>        title.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb24-169"><a href="#cb24-169" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb24-170"><a href="#cb24-170" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your First Look at Classes</span></span>
+<span id="cb24-171"><a href="#cb24-171" aria-hidden="true" tabindex="-1"></a>The listings in this chapter use <span class="in">`class`</span>, Python's way of bundling data and the functions that work on it into one object. Inside <span class="in">`TodoApp`</span>, <span class="in">`self`</span> means "this particular app", so <span class="in">`self.task_entry`</span> is this app's entry box. Read these listings as templates: create the class, set up its widgets in <span class="in">`__init__`</span>, and connect buttons to its methods. You'll also spot <span class="in">`try/except`</span> here, Python's way of handling an empty selection without crashing. Classes and exceptions both get proper introductions in *Code Python, Consult AI*; for now, copy the shape and trace what each part does.</span>
+<span id="cb24-172"><a href="#cb24-172" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-173"><a href="#cb24-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-174"><a href="#cb24-174" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-175"><a href="#cb24-175" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb24-176"><a href="#cb24-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-177"><a href="#cb24-177" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TodoApp:</span>
+<span id="cb24-178"><a href="#cb24-178" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</span>
+<span id="cb24-179"><a href="#cb24-179" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
+<span id="cb24-180"><a href="#cb24-180" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.title(<span class="st">"My To-Do List"</span>)</span>
+<span id="cb24-181"><a href="#cb24-181" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.geometry(<span class="st">"400x500"</span>)</span>
+<span id="cb24-182"><a href="#cb24-182" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-183"><a href="#cb24-183" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Create widgets</span></span>
+<span id="cb24-184"><a href="#cb24-184" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_widgets()</span>
 <span id="cb24-185"><a href="#cb24-185" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-186"><a href="#cb24-186" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Entry frame</span></span>
-<span id="cb24-187"><a href="#cb24-187" aria-hidden="true" tabindex="-1"></a>        entry_frame <span class="op">=</span> tk.Frame(<span class="va">self</span>.root)</span>
-<span id="cb24-188"><a href="#cb24-188" aria-hidden="true" tabindex="-1"></a>        entry_frame.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb24-189"><a href="#cb24-189" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-190"><a href="#cb24-190" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_entry <span class="op">=</span> tk.Entry(entry_frame, width<span class="op">=</span><span class="dv">30</span>)</span>
-<span id="cb24-191"><a href="#cb24-191" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_entry.pack(side<span class="op">=</span><span class="st">"left"</span>, padx<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb24-192"><a href="#cb24-192" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-193"><a href="#cb24-193" aria-hidden="true" tabindex="-1"></a>        add_button <span class="op">=</span> tk.Button(entry_frame, text<span class="op">=</span><span class="st">"Add Task"</span>, command<span class="op">=</span><span class="va">self</span>.add_task)</span>
-<span id="cb24-194"><a href="#cb24-194" aria-hidden="true" tabindex="-1"></a>        add_button.pack(side<span class="op">=</span><span class="st">"left"</span>)</span>
-<span id="cb24-195"><a href="#cb24-195" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-196"><a href="#cb24-196" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Task list</span></span>
-<span id="cb24-197"><a href="#cb24-197" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_listbox <span class="op">=</span> tk.Listbox(<span class="va">self</span>.root, width<span class="op">=</span><span class="dv">50</span>, height<span class="op">=</span><span class="dv">15</span>)</span>
-<span id="cb24-198"><a href="#cb24-198" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_listbox.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb24-199"><a href="#cb24-199" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-200"><a href="#cb24-200" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Delete button</span></span>
-<span id="cb24-201"><a href="#cb24-201" aria-hidden="true" tabindex="-1"></a>        delete_button <span class="op">=</span> tk.Button(<span class="va">self</span>.root, text<span class="op">=</span><span class="st">"Delete Selected"</span>, command<span class="op">=</span><span class="va">self</span>.delete_task)</span>
-<span id="cb24-202"><a href="#cb24-202" aria-hidden="true" tabindex="-1"></a>        delete_button.pack()</span>
-<span id="cb24-203"><a href="#cb24-203" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-204"><a href="#cb24-204" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add_task(<span class="va">self</span>):</span>
-<span id="cb24-205"><a href="#cb24-205" aria-hidden="true" tabindex="-1"></a>        task <span class="op">=</span> <span class="va">self</span>.task_entry.get()</span>
-<span id="cb24-206"><a href="#cb24-206" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> task:</span>
-<span id="cb24-207"><a href="#cb24-207" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.task_listbox.insert(tk.END, task)</span>
-<span id="cb24-208"><a href="#cb24-208" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.task_entry.delete(<span class="dv">0</span>, tk.END)</span>
-<span id="cb24-209"><a href="#cb24-209" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb24-210"><a href="#cb24-210" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> delete_task(<span class="va">self</span>):</span>
-<span id="cb24-211"><a href="#cb24-211" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
-<span id="cb24-212"><a href="#cb24-212" aria-hidden="true" tabindex="-1"></a>            index <span class="op">=</span> <span class="va">self</span>.task_listbox.curselection()[<span class="dv">0</span>]</span>
-<span id="cb24-213"><a href="#cb24-213" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.task_listbox.delete(index)</span>
-<span id="cb24-214"><a href="#cb24-214" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">IndexError</span>:</span>
-<span id="cb24-215"><a href="#cb24-215" aria-hidden="true" tabindex="-1"></a>            <span class="cf">pass</span></span>
-<span id="cb24-216"><a href="#cb24-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-217"><a href="#cb24-217" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the app</span></span>
-<span id="cb24-218"><a href="#cb24-218" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> tk.Tk()</span>
-<span id="cb24-219"><a href="#cb24-219" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> TodoApp(root)</span>
-<span id="cb24-220"><a href="#cb24-220" aria-hidden="true" tabindex="-1"></a>root.mainloop()</span>
-<span id="cb24-221"><a href="#cb24-221" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-222"><a href="#cb24-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-223"><a href="#cb24-223" aria-hidden="true" tabindex="-1"></a><span class="fu">## Event Handling: Making Things Happen</span></span>
-<span id="cb24-224"><a href="#cb24-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-225"><a href="#cb24-225" aria-hidden="true" tabindex="-1"></a>In the to-do app, we only handled button clicks. But the event loop can respond to much more than that - key presses, mouse movements, window resizing, and more. Let's look at how to connect your code to these different kinds of user actions:</span>
-<span id="cb24-226"><a href="#cb24-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-227"><a href="#cb24-227" aria-hidden="true" tabindex="-1"></a><span class="fu">### Common Events</span></span>
-<span id="cb24-228"><a href="#cb24-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-229"><a href="#cb24-229" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-230"><a href="#cb24-230" aria-hidden="true" tabindex="-1"></a><span class="co"># Button click</span></span>
-<span id="cb24-231"><a href="#cb24-231" aria-hidden="true" tabindex="-1"></a>button <span class="op">=</span> tk.Button(window, text<span class="op">=</span><span class="st">"Click Me"</span>, command<span class="op">=</span>handle_click)</span>
-<span id="cb24-232"><a href="#cb24-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-233"><a href="#cb24-233" aria-hidden="true" tabindex="-1"></a><span class="co"># Key press</span></span>
-<span id="cb24-234"><a href="#cb24-234" aria-hidden="true" tabindex="-1"></a>entry.bind(<span class="st">'&lt;Return&gt;'</span>, handle_enter_key)</span>
-<span id="cb24-235"><a href="#cb24-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-236"><a href="#cb24-236" aria-hidden="true" tabindex="-1"></a><span class="co"># Mouse events</span></span>
-<span id="cb24-237"><a href="#cb24-237" aria-hidden="true" tabindex="-1"></a>canvas.bind(<span class="st">'&lt;Button-1&gt;'</span>, handle_left_click)</span>
-<span id="cb24-238"><a href="#cb24-238" aria-hidden="true" tabindex="-1"></a>canvas.bind(<span class="st">'&lt;Motion&gt;'</span>, handle_mouse_move)</span>
-<span id="cb24-239"><a href="#cb24-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-240"><a href="#cb24-240" aria-hidden="true" tabindex="-1"></a><span class="co"># Window events</span></span>
-<span id="cb24-241"><a href="#cb24-241" aria-hidden="true" tabindex="-1"></a>window.bind(<span class="st">'&lt;Configure&gt;'</span>, handle_resize)</span>
-<span id="cb24-242"><a href="#cb24-242" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-243"><a href="#cb24-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-244"><a href="#cb24-244" aria-hidden="true" tabindex="-1"></a><span class="fu">### Event Handler Functions</span></span>
-<span id="cb24-245"><a href="#cb24-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-246"><a href="#cb24-246" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-247"><a href="#cb24-247" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> handle_click():</span>
-<span id="cb24-248"><a href="#cb24-248" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Button clicked!"</span>)</span>
-<span id="cb24-249"><a href="#cb24-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-250"><a href="#cb24-250" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> handle_enter_key(event):</span>
-<span id="cb24-251"><a href="#cb24-251" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Enter pressed, text: </span><span class="sc">{</span>entry<span class="sc">.</span>get()<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-252"><a href="#cb24-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-253"><a href="#cb24-253" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> handle_mouse_move(event):</span>
-<span id="cb24-254"><a href="#cb24-254" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Mouse at </span><span class="sc">{</span>event<span class="sc">.</span>x<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>event<span class="sc">.</span>y<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-255"><a href="#cb24-255" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-256"><a href="#cb24-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-257"><a href="#cb24-257" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb24-258"><a href="#cb24-258" aria-hidden="true" tabindex="-1"></a><span class="fu">## Event Function Parameters</span></span>
-<span id="cb24-259"><a href="#cb24-259" aria-hidden="true" tabindex="-1"></a>Notice how some handlers have an <span class="in">`event`</span> parameter and others don't? Button commands don't pass events, but bindings do. Always check what your handler receives!</span>
-<span id="cb24-260"><a href="#cb24-260" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-186"><a href="#cb24-186" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_widgets(<span class="va">self</span>):</span>
+<span id="cb24-187"><a href="#cb24-187" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Title</span></span>
+<span id="cb24-188"><a href="#cb24-188" aria-hidden="true" tabindex="-1"></a>        title <span class="op">=</span> tk.Label(<span class="va">self</span>.root, text<span class="op">=</span><span class="st">"To-Do List"</span>, font<span class="op">=</span>(<span class="st">"Arial"</span>, <span class="dv">20</span>))</span>
+<span id="cb24-189"><a href="#cb24-189" aria-hidden="true" tabindex="-1"></a>        title.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb24-190"><a href="#cb24-190" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-191"><a href="#cb24-191" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Entry frame</span></span>
+<span id="cb24-192"><a href="#cb24-192" aria-hidden="true" tabindex="-1"></a>        entry_frame <span class="op">=</span> tk.Frame(<span class="va">self</span>.root)</span>
+<span id="cb24-193"><a href="#cb24-193" aria-hidden="true" tabindex="-1"></a>        entry_frame.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb24-194"><a href="#cb24-194" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-195"><a href="#cb24-195" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_entry <span class="op">=</span> tk.Entry(entry_frame, width<span class="op">=</span><span class="dv">30</span>)</span>
+<span id="cb24-196"><a href="#cb24-196" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_entry.pack(side<span class="op">=</span><span class="st">"left"</span>, padx<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb24-197"><a href="#cb24-197" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-198"><a href="#cb24-198" aria-hidden="true" tabindex="-1"></a>        add_button <span class="op">=</span> tk.Button(entry_frame, text<span class="op">=</span><span class="st">"Add Task"</span>, command<span class="op">=</span><span class="va">self</span>.add_task)</span>
+<span id="cb24-199"><a href="#cb24-199" aria-hidden="true" tabindex="-1"></a>        add_button.pack(side<span class="op">=</span><span class="st">"left"</span>)</span>
+<span id="cb24-200"><a href="#cb24-200" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-201"><a href="#cb24-201" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Task list</span></span>
+<span id="cb24-202"><a href="#cb24-202" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_listbox <span class="op">=</span> tk.Listbox(<span class="va">self</span>.root, width<span class="op">=</span><span class="dv">50</span>, height<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb24-203"><a href="#cb24-203" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.task_listbox.pack(pady<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb24-204"><a href="#cb24-204" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-205"><a href="#cb24-205" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Delete button</span></span>
+<span id="cb24-206"><a href="#cb24-206" aria-hidden="true" tabindex="-1"></a>        delete_button <span class="op">=</span> tk.Button(<span class="va">self</span>.root, text<span class="op">=</span><span class="st">"Delete Selected"</span>, command<span class="op">=</span><span class="va">self</span>.delete_task)</span>
+<span id="cb24-207"><a href="#cb24-207" aria-hidden="true" tabindex="-1"></a>        delete_button.pack()</span>
+<span id="cb24-208"><a href="#cb24-208" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-209"><a href="#cb24-209" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add_task(<span class="va">self</span>):</span>
+<span id="cb24-210"><a href="#cb24-210" aria-hidden="true" tabindex="-1"></a>        task <span class="op">=</span> <span class="va">self</span>.task_entry.get()</span>
+<span id="cb24-211"><a href="#cb24-211" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> task:</span>
+<span id="cb24-212"><a href="#cb24-212" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.task_listbox.insert(tk.END, task)</span>
+<span id="cb24-213"><a href="#cb24-213" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.task_entry.delete(<span class="dv">0</span>, tk.END)</span>
+<span id="cb24-214"><a href="#cb24-214" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb24-215"><a href="#cb24-215" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> delete_task(<span class="va">self</span>):</span>
+<span id="cb24-216"><a href="#cb24-216" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb24-217"><a href="#cb24-217" aria-hidden="true" tabindex="-1"></a>            index <span class="op">=</span> <span class="va">self</span>.task_listbox.curselection()[<span class="dv">0</span>]</span>
+<span id="cb24-218"><a href="#cb24-218" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.task_listbox.delete(index)</span>
+<span id="cb24-219"><a href="#cb24-219" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">IndexError</span>:</span>
+<span id="cb24-220"><a href="#cb24-220" aria-hidden="true" tabindex="-1"></a>            <span class="cf">pass</span></span>
+<span id="cb24-221"><a href="#cb24-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-222"><a href="#cb24-222" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the app</span></span>
+<span id="cb24-223"><a href="#cb24-223" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> tk.Tk()</span>
+<span id="cb24-224"><a href="#cb24-224" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> TodoApp(root)</span>
+<span id="cb24-225"><a href="#cb24-225" aria-hidden="true" tabindex="-1"></a>root.mainloop()</span>
+<span id="cb24-226"><a href="#cb24-226" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-227"><a href="#cb24-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-228"><a href="#cb24-228" aria-hidden="true" tabindex="-1"></a><span class="fu">## Event Handling: Making Things Happen</span></span>
+<span id="cb24-229"><a href="#cb24-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-230"><a href="#cb24-230" aria-hidden="true" tabindex="-1"></a>In the to-do app, we only handled button clicks. But the event loop can respond to much more than that - key presses, mouse movements, window resizing, and more. Let's look at how to connect your code to these different kinds of user actions:</span>
+<span id="cb24-231"><a href="#cb24-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-232"><a href="#cb24-232" aria-hidden="true" tabindex="-1"></a><span class="fu">### Common Events</span></span>
+<span id="cb24-233"><a href="#cb24-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-234"><a href="#cb24-234" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-235"><a href="#cb24-235" aria-hidden="true" tabindex="-1"></a><span class="co"># Button click</span></span>
+<span id="cb24-236"><a href="#cb24-236" aria-hidden="true" tabindex="-1"></a>button <span class="op">=</span> tk.Button(window, text<span class="op">=</span><span class="st">"Click Me"</span>, command<span class="op">=</span>handle_click)</span>
+<span id="cb24-237"><a href="#cb24-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-238"><a href="#cb24-238" aria-hidden="true" tabindex="-1"></a><span class="co"># Key press</span></span>
+<span id="cb24-239"><a href="#cb24-239" aria-hidden="true" tabindex="-1"></a>entry.bind(<span class="st">'&lt;Return&gt;'</span>, handle_enter_key)</span>
+<span id="cb24-240"><a href="#cb24-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-241"><a href="#cb24-241" aria-hidden="true" tabindex="-1"></a><span class="co"># Mouse events</span></span>
+<span id="cb24-242"><a href="#cb24-242" aria-hidden="true" tabindex="-1"></a>canvas.bind(<span class="st">'&lt;Button-1&gt;'</span>, handle_left_click)</span>
+<span id="cb24-243"><a href="#cb24-243" aria-hidden="true" tabindex="-1"></a>canvas.bind(<span class="st">'&lt;Motion&gt;'</span>, handle_mouse_move)</span>
+<span id="cb24-244"><a href="#cb24-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-245"><a href="#cb24-245" aria-hidden="true" tabindex="-1"></a><span class="co"># Window events</span></span>
+<span id="cb24-246"><a href="#cb24-246" aria-hidden="true" tabindex="-1"></a>window.bind(<span class="st">'&lt;Configure&gt;'</span>, handle_resize)</span>
+<span id="cb24-247"><a href="#cb24-247" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-248"><a href="#cb24-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-249"><a href="#cb24-249" aria-hidden="true" tabindex="-1"></a><span class="fu">### Event Handler Functions</span></span>
+<span id="cb24-250"><a href="#cb24-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-251"><a href="#cb24-251" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-252"><a href="#cb24-252" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> handle_click():</span>
+<span id="cb24-253"><a href="#cb24-253" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Button clicked!"</span>)</span>
+<span id="cb24-254"><a href="#cb24-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-255"><a href="#cb24-255" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> handle_enter_key(event):</span>
+<span id="cb24-256"><a href="#cb24-256" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Enter pressed, text: </span><span class="sc">{</span>entry<span class="sc">.</span>get()<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb24-257"><a href="#cb24-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-258"><a href="#cb24-258" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> handle_mouse_move(event):</span>
+<span id="cb24-259"><a href="#cb24-259" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Mouse at </span><span class="sc">{</span>event<span class="sc">.</span>x<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>event<span class="sc">.</span>y<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb24-260"><a href="#cb24-260" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-261"><a href="#cb24-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-262"><a href="#cb24-262" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a Simple Drawing App</span></span>
-<span id="cb24-263"><a href="#cb24-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-264"><a href="#cb24-264" aria-hidden="true" tabindex="-1"></a>Let's create a program where users can draw:</span>
-<span id="cb24-265"><a href="#cb24-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-266"><a href="#cb24-266" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-267"><a href="#cb24-267" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb24-262"><a href="#cb24-262" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb24-263"><a href="#cb24-263" aria-hidden="true" tabindex="-1"></a><span class="fu">## Event Function Parameters</span></span>
+<span id="cb24-264"><a href="#cb24-264" aria-hidden="true" tabindex="-1"></a>Notice how some handlers have an <span class="in">`event`</span> parameter and others don't? Button commands don't pass events, but bindings do. Always check what your handler receives!</span>
+<span id="cb24-265"><a href="#cb24-265" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-266"><a href="#cb24-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-267"><a href="#cb24-267" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a Simple Drawing App</span></span>
 <span id="cb24-268"><a href="#cb24-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-269"><a href="#cb24-269" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DrawingApp:</span>
-<span id="cb24-270"><a href="#cb24-270" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</span>
-<span id="cb24-271"><a href="#cb24-271" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
-<span id="cb24-272"><a href="#cb24-272" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.title(<span class="st">"Simple Drawing"</span>)</span>
-<span id="cb24-273"><a href="#cb24-273" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-274"><a href="#cb24-274" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Drawing state</span></span>
-<span id="cb24-275"><a href="#cb24-275" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.drawing <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb24-276"><a href="#cb24-276" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_x <span class="op">=</span> <span class="va">None</span></span>
-<span id="cb24-277"><a href="#cb24-277" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_y <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb24-269"><a href="#cb24-269" aria-hidden="true" tabindex="-1"></a>Let's create a program where users can draw:</span>
+<span id="cb24-270"><a href="#cb24-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-271"><a href="#cb24-271" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-272"><a href="#cb24-272" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb24-273"><a href="#cb24-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-274"><a href="#cb24-274" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DrawingApp:</span>
+<span id="cb24-275"><a href="#cb24-275" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</span>
+<span id="cb24-276"><a href="#cb24-276" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
+<span id="cb24-277"><a href="#cb24-277" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.title(<span class="st">"Simple Drawing"</span>)</span>
 <span id="cb24-278"><a href="#cb24-278" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-279"><a href="#cb24-279" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Create canvas</span></span>
-<span id="cb24-280"><a href="#cb24-280" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas <span class="op">=</span> tk.Canvas(root, width<span class="op">=</span><span class="dv">600</span>, height<span class="op">=</span><span class="dv">400</span>, bg<span class="op">=</span><span class="st">"white"</span>)</span>
-<span id="cb24-281"><a href="#cb24-281" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.pack()</span>
-<span id="cb24-282"><a href="#cb24-282" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-283"><a href="#cb24-283" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Bind mouse events</span></span>
-<span id="cb24-284"><a href="#cb24-284" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.bind(<span class="st">'&lt;Button-1&gt;'</span>, <span class="va">self</span>.start_draw)</span>
-<span id="cb24-285"><a href="#cb24-285" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.bind(<span class="st">'&lt;B1-Motion&gt;'</span>, <span class="va">self</span>.draw)</span>
-<span id="cb24-286"><a href="#cb24-286" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.bind(<span class="st">'&lt;ButtonRelease-1&gt;'</span>, <span class="va">self</span>.stop_draw)</span>
+<span id="cb24-279"><a href="#cb24-279" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Drawing state</span></span>
+<span id="cb24-280"><a href="#cb24-280" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.drawing <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb24-281"><a href="#cb24-281" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_x <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb24-282"><a href="#cb24-282" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_y <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb24-283"><a href="#cb24-283" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-284"><a href="#cb24-284" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Create canvas</span></span>
+<span id="cb24-285"><a href="#cb24-285" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas <span class="op">=</span> tk.Canvas(root, width<span class="op">=</span><span class="dv">600</span>, height<span class="op">=</span><span class="dv">400</span>, bg<span class="op">=</span><span class="st">"white"</span>)</span>
+<span id="cb24-286"><a href="#cb24-286" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.pack()</span>
 <span id="cb24-287"><a href="#cb24-287" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-288"><a href="#cb24-288" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add controls</span></span>
-<span id="cb24-289"><a href="#cb24-289" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_controls()</span>
-<span id="cb24-290"><a href="#cb24-290" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-291"><a href="#cb24-291" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_controls(<span class="va">self</span>):</span>
-<span id="cb24-292"><a href="#cb24-292" aria-hidden="true" tabindex="-1"></a>        control_frame <span class="op">=</span> tk.Frame(<span class="va">self</span>.root)</span>
-<span id="cb24-293"><a href="#cb24-293" aria-hidden="true" tabindex="-1"></a>        control_frame.pack()</span>
-<span id="cb24-294"><a href="#cb24-294" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-295"><a href="#cb24-295" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Color buttons</span></span>
-<span id="cb24-296"><a href="#cb24-296" aria-hidden="true" tabindex="-1"></a>        colors <span class="op">=</span> [<span class="st">'black'</span>, <span class="st">'red'</span>, <span class="st">'blue'</span>, <span class="st">'green'</span>, <span class="st">'yellow'</span>]</span>
-<span id="cb24-297"><a href="#cb24-297" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> color <span class="kw">in</span> colors:</span>
-<span id="cb24-298"><a href="#cb24-298" aria-hidden="true" tabindex="-1"></a>            btn <span class="op">=</span> tk.Button(control_frame, bg<span class="op">=</span>color, width<span class="op">=</span><span class="dv">3</span>,</span>
-<span id="cb24-299"><a href="#cb24-299" aria-hidden="true" tabindex="-1"></a>                          command<span class="op">=</span><span class="kw">lambda</span> c<span class="op">=</span>color: <span class="va">self</span>.set_color(c))</span>
-<span id="cb24-300"><a href="#cb24-300" aria-hidden="true" tabindex="-1"></a>            btn.pack(side<span class="op">=</span><span class="st">"left"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb24-301"><a href="#cb24-301" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-302"><a href="#cb24-302" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Clear button</span></span>
-<span id="cb24-303"><a href="#cb24-303" aria-hidden="true" tabindex="-1"></a>        clear_btn <span class="op">=</span> tk.Button(control_frame, text<span class="op">=</span><span class="st">"Clear"</span>, command<span class="op">=</span><span class="va">self</span>.clear_canvas)</span>
-<span id="cb24-304"><a href="#cb24-304" aria-hidden="true" tabindex="-1"></a>        clear_btn.pack(side<span class="op">=</span><span class="st">"left"</span>, padx<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb24-305"><a href="#cb24-305" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-306"><a href="#cb24-306" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current_color <span class="op">=</span> <span class="st">'black'</span></span>
-<span id="cb24-307"><a href="#cb24-307" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-308"><a href="#cb24-308" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> start_draw(<span class="va">self</span>, event):</span>
-<span id="cb24-309"><a href="#cb24-309" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.drawing <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb24-310"><a href="#cb24-310" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_x <span class="op">=</span> event.x</span>
-<span id="cb24-311"><a href="#cb24-311" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_y <span class="op">=</span> event.y</span>
+<span id="cb24-288"><a href="#cb24-288" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Bind mouse events</span></span>
+<span id="cb24-289"><a href="#cb24-289" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.bind(<span class="st">'&lt;Button-1&gt;'</span>, <span class="va">self</span>.start_draw)</span>
+<span id="cb24-290"><a href="#cb24-290" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.bind(<span class="st">'&lt;B1-Motion&gt;'</span>, <span class="va">self</span>.draw)</span>
+<span id="cb24-291"><a href="#cb24-291" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.bind(<span class="st">'&lt;ButtonRelease-1&gt;'</span>, <span class="va">self</span>.stop_draw)</span>
+<span id="cb24-292"><a href="#cb24-292" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-293"><a href="#cb24-293" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add controls</span></span>
+<span id="cb24-294"><a href="#cb24-294" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_controls()</span>
+<span id="cb24-295"><a href="#cb24-295" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-296"><a href="#cb24-296" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_controls(<span class="va">self</span>):</span>
+<span id="cb24-297"><a href="#cb24-297" aria-hidden="true" tabindex="-1"></a>        control_frame <span class="op">=</span> tk.Frame(<span class="va">self</span>.root)</span>
+<span id="cb24-298"><a href="#cb24-298" aria-hidden="true" tabindex="-1"></a>        control_frame.pack()</span>
+<span id="cb24-299"><a href="#cb24-299" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-300"><a href="#cb24-300" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Color buttons</span></span>
+<span id="cb24-301"><a href="#cb24-301" aria-hidden="true" tabindex="-1"></a>        colors <span class="op">=</span> [<span class="st">'black'</span>, <span class="st">'red'</span>, <span class="st">'blue'</span>, <span class="st">'green'</span>, <span class="st">'yellow'</span>]</span>
+<span id="cb24-302"><a href="#cb24-302" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> color <span class="kw">in</span> colors:</span>
+<span id="cb24-303"><a href="#cb24-303" aria-hidden="true" tabindex="-1"></a>            btn <span class="op">=</span> tk.Button(control_frame, bg<span class="op">=</span>color, width<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb24-304"><a href="#cb24-304" aria-hidden="true" tabindex="-1"></a>                          command<span class="op">=</span><span class="kw">lambda</span> c<span class="op">=</span>color: <span class="va">self</span>.set_color(c))</span>
+<span id="cb24-305"><a href="#cb24-305" aria-hidden="true" tabindex="-1"></a>            btn.pack(side<span class="op">=</span><span class="st">"left"</span>, padx<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb24-306"><a href="#cb24-306" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-307"><a href="#cb24-307" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Clear button</span></span>
+<span id="cb24-308"><a href="#cb24-308" aria-hidden="true" tabindex="-1"></a>        clear_btn <span class="op">=</span> tk.Button(control_frame, text<span class="op">=</span><span class="st">"Clear"</span>, command<span class="op">=</span><span class="va">self</span>.clear_canvas)</span>
+<span id="cb24-309"><a href="#cb24-309" aria-hidden="true" tabindex="-1"></a>        clear_btn.pack(side<span class="op">=</span><span class="st">"left"</span>, padx<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb24-310"><a href="#cb24-310" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-311"><a href="#cb24-311" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current_color <span class="op">=</span> <span class="st">'black'</span></span>
 <span id="cb24-312"><a href="#cb24-312" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-313"><a href="#cb24-313" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> draw(<span class="va">self</span>, event):</span>
-<span id="cb24-314"><a href="#cb24-314" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.drawing:</span>
-<span id="cb24-315"><a href="#cb24-315" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.canvas.create_line(<span class="va">self</span>.last_x, <span class="va">self</span>.last_y, event.x, event.y,</span>
-<span id="cb24-316"><a href="#cb24-316" aria-hidden="true" tabindex="-1"></a>                                   fill<span class="op">=</span><span class="va">self</span>.current_color, width<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb24-317"><a href="#cb24-317" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.last_x <span class="op">=</span> event.x</span>
-<span id="cb24-318"><a href="#cb24-318" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.last_y <span class="op">=</span> event.y</span>
-<span id="cb24-319"><a href="#cb24-319" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb24-320"><a href="#cb24-320" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> stop_draw(<span class="va">self</span>, event):</span>
-<span id="cb24-321"><a href="#cb24-321" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.drawing <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb24-322"><a href="#cb24-322" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-323"><a href="#cb24-323" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> set_color(<span class="va">self</span>, color):</span>
-<span id="cb24-324"><a href="#cb24-324" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current_color <span class="op">=</span> color</span>
-<span id="cb24-325"><a href="#cb24-325" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-326"><a href="#cb24-326" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> clear_canvas(<span class="va">self</span>):</span>
-<span id="cb24-327"><a href="#cb24-327" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.delete(<span class="st">"all"</span>)</span>
-<span id="cb24-328"><a href="#cb24-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-329"><a href="#cb24-329" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the app</span></span>
-<span id="cb24-330"><a href="#cb24-330" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> tk.Tk()</span>
-<span id="cb24-331"><a href="#cb24-331" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> DrawingApp(root)</span>
-<span id="cb24-332"><a href="#cb24-332" aria-hidden="true" tabindex="-1"></a>root.mainloop()</span>
-<span id="cb24-333"><a href="#cb24-333" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-334"><a href="#cb24-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-335"><a href="#cb24-335" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working with User Input</span></span>
-<span id="cb24-336"><a href="#cb24-336" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-337"><a href="#cb24-337" aria-hidden="true" tabindex="-1"></a>With console programs, <span class="in">`input()`</span> always returns a string and your program stops to wait for it. In a GUI, user input arrives whenever the user decides to type or click, and you need to validate it without halting the event loop. Here are the key patterns:</span>
-<span id="cb24-338"><a href="#cb24-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-339"><a href="#cb24-339" aria-hidden="true" tabindex="-1"></a><span class="fu">### Input Validation</span></span>
-<span id="cb24-340"><a href="#cb24-340" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-341"><a href="#cb24-341" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-342"><a href="#cb24-342" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> validate_number_input():</span>
-<span id="cb24-343"><a href="#cb24-343" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Check if entry contains a valid number"""</span></span>
-<span id="cb24-344"><a href="#cb24-344" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb24-345"><a href="#cb24-345" aria-hidden="true" tabindex="-1"></a>        value <span class="op">=</span> <span class="bu">float</span>(entry.get())</span>
-<span id="cb24-346"><a href="#cb24-346" aria-hidden="true" tabindex="-1"></a>        error_label.config(text<span class="op">=</span><span class="st">""</span>)</span>
-<span id="cb24-347"><a href="#cb24-347" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> value</span>
-<span id="cb24-348"><a href="#cb24-348" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
-<span id="cb24-349"><a href="#cb24-349" aria-hidden="true" tabindex="-1"></a>        error_label.config(text<span class="op">=</span><span class="st">"Please enter a number"</span>, fg<span class="op">=</span><span class="st">"red"</span>)</span>
-<span id="cb24-350"><a href="#cb24-350" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
-<span id="cb24-351"><a href="#cb24-351" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-352"><a href="#cb24-352" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_input():</span>
-<span id="cb24-353"><a href="#cb24-353" aria-hidden="true" tabindex="-1"></a>    value <span class="op">=</span> validate_number_input()</span>
-<span id="cb24-354"><a href="#cb24-354" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> value <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
-<span id="cb24-355"><a href="#cb24-355" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Process the valid input</span></span>
-<span id="cb24-356"><a href="#cb24-356" aria-hidden="true" tabindex="-1"></a>        result <span class="op">=</span> value <span class="op">*</span> <span class="dv">2</span></span>
-<span id="cb24-357"><a href="#cb24-357" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="ss">f"Result: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-358"><a href="#cb24-358" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-359"><a href="#cb24-359" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-360"><a href="#cb24-360" aria-hidden="true" tabindex="-1"></a><span class="fu">### Providing Feedback</span></span>
-<span id="cb24-361"><a href="#cb24-361" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-362"><a href="#cb24-362" aria-hidden="true" tabindex="-1"></a>Good GUIs tell users what's happening:</span>
-<span id="cb24-363"><a href="#cb24-363" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-364"><a href="#cb24-364" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-365"><a href="#cb24-365" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> long_operation():</span>
-<span id="cb24-366"><a href="#cb24-366" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Show progress</span></span>
-<span id="cb24-367"><a href="#cb24-367" aria-hidden="true" tabindex="-1"></a>    status_label.config(text<span class="op">=</span><span class="st">"Processing..."</span>)</span>
-<span id="cb24-368"><a href="#cb24-368" aria-hidden="true" tabindex="-1"></a>    root.update()  <span class="co"># Force display update</span></span>
-<span id="cb24-369"><a href="#cb24-369" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-370"><a href="#cb24-370" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Do the work</span></span>
-<span id="cb24-371"><a href="#cb24-371" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> time</span>
-<span id="cb24-372"><a href="#cb24-372" aria-hidden="true" tabindex="-1"></a>    time.sleep(<span class="dv">2</span>)  <span class="co"># Simulate work</span></span>
-<span id="cb24-373"><a href="#cb24-373" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-374"><a href="#cb24-374" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Show completion</span></span>
-<span id="cb24-375"><a href="#cb24-375" aria-hidden="true" tabindex="-1"></a>    status_label.config(text<span class="op">=</span><span class="st">"Complete!"</span>, fg<span class="op">=</span><span class="st">"green"</span>)</span>
-<span id="cb24-376"><a href="#cb24-376" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-377"><a href="#cb24-377" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-378"><a href="#cb24-378" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Menus and Dialogs</span></span>
-<span id="cb24-379"><a href="#cb24-379" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-380"><a href="#cb24-380" aria-hidden="true" tabindex="-1"></a>Professional applications have menus and dialog boxes:</span>
-<span id="cb24-381"><a href="#cb24-381" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-382"><a href="#cb24-382" aria-hidden="true" tabindex="-1"></a><span class="fu">### Menu Bar</span></span>
-<span id="cb24-383"><a href="#cb24-383" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-384"><a href="#cb24-384" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-385"><a href="#cb24-385" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_menu():</span>
-<span id="cb24-386"><a href="#cb24-386" aria-hidden="true" tabindex="-1"></a>    menubar <span class="op">=</span> tk.Menu(root)</span>
-<span id="cb24-387"><a href="#cb24-387" aria-hidden="true" tabindex="-1"></a>    root.config(menu<span class="op">=</span>menubar)</span>
-<span id="cb24-388"><a href="#cb24-388" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-389"><a href="#cb24-389" aria-hidden="true" tabindex="-1"></a>    <span class="co"># File menu</span></span>
-<span id="cb24-390"><a href="#cb24-390" aria-hidden="true" tabindex="-1"></a>    file_menu <span class="op">=</span> tk.Menu(menubar, tearoff<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb24-391"><a href="#cb24-391" aria-hidden="true" tabindex="-1"></a>    menubar.add_cascade(label<span class="op">=</span><span class="st">"File"</span>, menu<span class="op">=</span>file_menu)</span>
-<span id="cb24-392"><a href="#cb24-392" aria-hidden="true" tabindex="-1"></a>    file_menu.add_command(label<span class="op">=</span><span class="st">"New"</span>, command<span class="op">=</span>new_file)</span>
-<span id="cb24-393"><a href="#cb24-393" aria-hidden="true" tabindex="-1"></a>    file_menu.add_command(label<span class="op">=</span><span class="st">"Open"</span>, command<span class="op">=</span>open_file)</span>
-<span id="cb24-394"><a href="#cb24-394" aria-hidden="true" tabindex="-1"></a>    file_menu.add_separator()</span>
-<span id="cb24-395"><a href="#cb24-395" aria-hidden="true" tabindex="-1"></a>    file_menu.add_command(label<span class="op">=</span><span class="st">"Exit"</span>, command<span class="op">=</span>root.quit)</span>
-<span id="cb24-396"><a href="#cb24-396" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-397"><a href="#cb24-397" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Edit menu</span></span>
-<span id="cb24-398"><a href="#cb24-398" aria-hidden="true" tabindex="-1"></a>    edit_menu <span class="op">=</span> tk.Menu(menubar, tearoff<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb24-399"><a href="#cb24-399" aria-hidden="true" tabindex="-1"></a>    menubar.add_cascade(label<span class="op">=</span><span class="st">"Edit"</span>, menu<span class="op">=</span>edit_menu)</span>
-<span id="cb24-400"><a href="#cb24-400" aria-hidden="true" tabindex="-1"></a>    edit_menu.add_command(label<span class="op">=</span><span class="st">"Cut"</span>, command<span class="op">=</span>cut_text)</span>
-<span id="cb24-401"><a href="#cb24-401" aria-hidden="true" tabindex="-1"></a>    edit_menu.add_command(label<span class="op">=</span><span class="st">"Copy"</span>, command<span class="op">=</span>copy_text)</span>
-<span id="cb24-402"><a href="#cb24-402" aria-hidden="true" tabindex="-1"></a>    edit_menu.add_command(label<span class="op">=</span><span class="st">"Paste"</span>, command<span class="op">=</span>paste_text)</span>
-<span id="cb24-403"><a href="#cb24-403" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-404"><a href="#cb24-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-405"><a href="#cb24-405" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dialog Boxes</span></span>
-<span id="cb24-406"><a href="#cb24-406" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-407"><a href="#cb24-407" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-408"><a href="#cb24-408" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tkinter <span class="im">import</span> messagebox, filedialog</span>
+<span id="cb24-313"><a href="#cb24-313" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> start_draw(<span class="va">self</span>, event):</span>
+<span id="cb24-314"><a href="#cb24-314" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.drawing <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb24-315"><a href="#cb24-315" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_x <span class="op">=</span> event.x</span>
+<span id="cb24-316"><a href="#cb24-316" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.last_y <span class="op">=</span> event.y</span>
+<span id="cb24-317"><a href="#cb24-317" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-318"><a href="#cb24-318" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> draw(<span class="va">self</span>, event):</span>
+<span id="cb24-319"><a href="#cb24-319" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.drawing:</span>
+<span id="cb24-320"><a href="#cb24-320" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.canvas.create_line(<span class="va">self</span>.last_x, <span class="va">self</span>.last_y, event.x, event.y,</span>
+<span id="cb24-321"><a href="#cb24-321" aria-hidden="true" tabindex="-1"></a>                                   fill<span class="op">=</span><span class="va">self</span>.current_color, width<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb24-322"><a href="#cb24-322" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.last_x <span class="op">=</span> event.x</span>
+<span id="cb24-323"><a href="#cb24-323" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.last_y <span class="op">=</span> event.y</span>
+<span id="cb24-324"><a href="#cb24-324" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb24-325"><a href="#cb24-325" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> stop_draw(<span class="va">self</span>, event):</span>
+<span id="cb24-326"><a href="#cb24-326" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.drawing <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb24-327"><a href="#cb24-327" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-328"><a href="#cb24-328" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> set_color(<span class="va">self</span>, color):</span>
+<span id="cb24-329"><a href="#cb24-329" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current_color <span class="op">=</span> color</span>
+<span id="cb24-330"><a href="#cb24-330" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-331"><a href="#cb24-331" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> clear_canvas(<span class="va">self</span>):</span>
+<span id="cb24-332"><a href="#cb24-332" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.canvas.delete(<span class="st">"all"</span>)</span>
+<span id="cb24-333"><a href="#cb24-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-334"><a href="#cb24-334" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the app</span></span>
+<span id="cb24-335"><a href="#cb24-335" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> tk.Tk()</span>
+<span id="cb24-336"><a href="#cb24-336" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> DrawingApp(root)</span>
+<span id="cb24-337"><a href="#cb24-337" aria-hidden="true" tabindex="-1"></a>root.mainloop()</span>
+<span id="cb24-338"><a href="#cb24-338" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-339"><a href="#cb24-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-340"><a href="#cb24-340" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working with User Input</span></span>
+<span id="cb24-341"><a href="#cb24-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-342"><a href="#cb24-342" aria-hidden="true" tabindex="-1"></a>With console programs, <span class="in">`input()`</span> always returns a string and your program stops to wait for it. In a GUI, user input arrives whenever the user decides to type or click, and you need to validate it without halting the event loop. Here are the key patterns:</span>
+<span id="cb24-343"><a href="#cb24-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-344"><a href="#cb24-344" aria-hidden="true" tabindex="-1"></a><span class="fu">### Input Validation</span></span>
+<span id="cb24-345"><a href="#cb24-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-346"><a href="#cb24-346" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-347"><a href="#cb24-347" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> validate_number_input():</span>
+<span id="cb24-348"><a href="#cb24-348" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Check if entry contains a valid number"""</span></span>
+<span id="cb24-349"><a href="#cb24-349" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb24-350"><a href="#cb24-350" aria-hidden="true" tabindex="-1"></a>        value <span class="op">=</span> <span class="bu">float</span>(entry.get())</span>
+<span id="cb24-351"><a href="#cb24-351" aria-hidden="true" tabindex="-1"></a>        error_label.config(text<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb24-352"><a href="#cb24-352" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> value</span>
+<span id="cb24-353"><a href="#cb24-353" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb24-354"><a href="#cb24-354" aria-hidden="true" tabindex="-1"></a>        error_label.config(text<span class="op">=</span><span class="st">"Please enter a number"</span>, fg<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb24-355"><a href="#cb24-355" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb24-356"><a href="#cb24-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-357"><a href="#cb24-357" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_input():</span>
+<span id="cb24-358"><a href="#cb24-358" aria-hidden="true" tabindex="-1"></a>    value <span class="op">=</span> validate_number_input()</span>
+<span id="cb24-359"><a href="#cb24-359" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> value <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb24-360"><a href="#cb24-360" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Process the valid input</span></span>
+<span id="cb24-361"><a href="#cb24-361" aria-hidden="true" tabindex="-1"></a>        result <span class="op">=</span> value <span class="op">*</span> <span class="dv">2</span></span>
+<span id="cb24-362"><a href="#cb24-362" aria-hidden="true" tabindex="-1"></a>        result_label.config(text<span class="op">=</span><span class="ss">f"Result: </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb24-363"><a href="#cb24-363" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-364"><a href="#cb24-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-365"><a href="#cb24-365" aria-hidden="true" tabindex="-1"></a><span class="fu">### Providing Feedback</span></span>
+<span id="cb24-366"><a href="#cb24-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-367"><a href="#cb24-367" aria-hidden="true" tabindex="-1"></a>Good GUIs tell users what's happening:</span>
+<span id="cb24-368"><a href="#cb24-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-369"><a href="#cb24-369" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-370"><a href="#cb24-370" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> long_operation():</span>
+<span id="cb24-371"><a href="#cb24-371" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Show progress</span></span>
+<span id="cb24-372"><a href="#cb24-372" aria-hidden="true" tabindex="-1"></a>    status_label.config(text<span class="op">=</span><span class="st">"Processing..."</span>)</span>
+<span id="cb24-373"><a href="#cb24-373" aria-hidden="true" tabindex="-1"></a>    root.update()  <span class="co"># Force display update</span></span>
+<span id="cb24-374"><a href="#cb24-374" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-375"><a href="#cb24-375" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Do the work</span></span>
+<span id="cb24-376"><a href="#cb24-376" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> time</span>
+<span id="cb24-377"><a href="#cb24-377" aria-hidden="true" tabindex="-1"></a>    time.sleep(<span class="dv">2</span>)  <span class="co"># Simulate work</span></span>
+<span id="cb24-378"><a href="#cb24-378" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-379"><a href="#cb24-379" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Show completion</span></span>
+<span id="cb24-380"><a href="#cb24-380" aria-hidden="true" tabindex="-1"></a>    status_label.config(text<span class="op">=</span><span class="st">"Complete!"</span>, fg<span class="op">=</span><span class="st">"green"</span>)</span>
+<span id="cb24-381"><a href="#cb24-381" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-382"><a href="#cb24-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-383"><a href="#cb24-383" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Menus and Dialogs</span></span>
+<span id="cb24-384"><a href="#cb24-384" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-385"><a href="#cb24-385" aria-hidden="true" tabindex="-1"></a>Professional applications have menus and dialog boxes:</span>
+<span id="cb24-386"><a href="#cb24-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-387"><a href="#cb24-387" aria-hidden="true" tabindex="-1"></a><span class="fu">### Menu Bar</span></span>
+<span id="cb24-388"><a href="#cb24-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-389"><a href="#cb24-389" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-390"><a href="#cb24-390" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_menu():</span>
+<span id="cb24-391"><a href="#cb24-391" aria-hidden="true" tabindex="-1"></a>    menubar <span class="op">=</span> tk.Menu(root)</span>
+<span id="cb24-392"><a href="#cb24-392" aria-hidden="true" tabindex="-1"></a>    root.config(menu<span class="op">=</span>menubar)</span>
+<span id="cb24-393"><a href="#cb24-393" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-394"><a href="#cb24-394" aria-hidden="true" tabindex="-1"></a>    <span class="co"># File menu</span></span>
+<span id="cb24-395"><a href="#cb24-395" aria-hidden="true" tabindex="-1"></a>    file_menu <span class="op">=</span> tk.Menu(menubar, tearoff<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb24-396"><a href="#cb24-396" aria-hidden="true" tabindex="-1"></a>    menubar.add_cascade(label<span class="op">=</span><span class="st">"File"</span>, menu<span class="op">=</span>file_menu)</span>
+<span id="cb24-397"><a href="#cb24-397" aria-hidden="true" tabindex="-1"></a>    file_menu.add_command(label<span class="op">=</span><span class="st">"New"</span>, command<span class="op">=</span>new_file)</span>
+<span id="cb24-398"><a href="#cb24-398" aria-hidden="true" tabindex="-1"></a>    file_menu.add_command(label<span class="op">=</span><span class="st">"Open"</span>, command<span class="op">=</span>open_file)</span>
+<span id="cb24-399"><a href="#cb24-399" aria-hidden="true" tabindex="-1"></a>    file_menu.add_separator()</span>
+<span id="cb24-400"><a href="#cb24-400" aria-hidden="true" tabindex="-1"></a>    file_menu.add_command(label<span class="op">=</span><span class="st">"Exit"</span>, command<span class="op">=</span>root.quit)</span>
+<span id="cb24-401"><a href="#cb24-401" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-402"><a href="#cb24-402" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Edit menu</span></span>
+<span id="cb24-403"><a href="#cb24-403" aria-hidden="true" tabindex="-1"></a>    edit_menu <span class="op">=</span> tk.Menu(menubar, tearoff<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb24-404"><a href="#cb24-404" aria-hidden="true" tabindex="-1"></a>    menubar.add_cascade(label<span class="op">=</span><span class="st">"Edit"</span>, menu<span class="op">=</span>edit_menu)</span>
+<span id="cb24-405"><a href="#cb24-405" aria-hidden="true" tabindex="-1"></a>    edit_menu.add_command(label<span class="op">=</span><span class="st">"Cut"</span>, command<span class="op">=</span>cut_text)</span>
+<span id="cb24-406"><a href="#cb24-406" aria-hidden="true" tabindex="-1"></a>    edit_menu.add_command(label<span class="op">=</span><span class="st">"Copy"</span>, command<span class="op">=</span>copy_text)</span>
+<span id="cb24-407"><a href="#cb24-407" aria-hidden="true" tabindex="-1"></a>    edit_menu.add_command(label<span class="op">=</span><span class="st">"Paste"</span>, command<span class="op">=</span>paste_text)</span>
+<span id="cb24-408"><a href="#cb24-408" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-409"><a href="#cb24-409" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-410"><a href="#cb24-410" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_info():</span>
-<span id="cb24-411"><a href="#cb24-411" aria-hidden="true" tabindex="-1"></a>    messagebox.showinfo(<span class="st">"Information"</span>, <span class="st">"This is an info dialog"</span>)</span>
-<span id="cb24-412"><a href="#cb24-412" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-413"><a href="#cb24-413" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ask_yes_no():</span>
-<span id="cb24-414"><a href="#cb24-414" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> messagebox.askyesno(<span class="st">"Question"</span>, <span class="st">"Do you want to continue?"</span>)</span>
-<span id="cb24-415"><a href="#cb24-415" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> result:</span>
-<span id="cb24-416"><a href="#cb24-416" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"User clicked Yes"</span>)</span>
+<span id="cb24-410"><a href="#cb24-410" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dialog Boxes</span></span>
+<span id="cb24-411"><a href="#cb24-411" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-412"><a href="#cb24-412" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-413"><a href="#cb24-413" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tkinter <span class="im">import</span> messagebox, filedialog</span>
+<span id="cb24-414"><a href="#cb24-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-415"><a href="#cb24-415" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_info():</span>
+<span id="cb24-416"><a href="#cb24-416" aria-hidden="true" tabindex="-1"></a>    messagebox.showinfo(<span class="st">"Information"</span>, <span class="st">"This is an info dialog"</span>)</span>
 <span id="cb24-417"><a href="#cb24-417" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-418"><a href="#cb24-418" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> choose_file():</span>
-<span id="cb24-419"><a href="#cb24-419" aria-hidden="true" tabindex="-1"></a>    filename <span class="op">=</span> filedialog.askopenfilename(</span>
-<span id="cb24-420"><a href="#cb24-420" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Select a file"</span>,</span>
-<span id="cb24-421"><a href="#cb24-421" aria-hidden="true" tabindex="-1"></a>        filetypes<span class="op">=</span>((<span class="st">"Text files"</span>, <span class="st">"*.txt"</span>), (<span class="st">"All files"</span>, <span class="st">"*.*"</span>))</span>
-<span id="cb24-422"><a href="#cb24-422" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb24-423"><a href="#cb24-423" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> filename:</span>
-<span id="cb24-424"><a href="#cb24-424" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Selected: </span><span class="sc">{</span>filename<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-425"><a href="#cb24-425" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-426"><a href="#cb24-426" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-427"><a href="#cb24-427" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a Calculator</span></span>
-<span id="cb24-428"><a href="#cb24-428" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-429"><a href="#cb24-429" aria-hidden="true" tabindex="-1"></a>Let's create a functional calculator with a GUI:</span>
-<span id="cb24-430"><a href="#cb24-430" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-431"><a href="#cb24-431" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-432"><a href="#cb24-432" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb24-418"><a href="#cb24-418" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ask_yes_no():</span>
+<span id="cb24-419"><a href="#cb24-419" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> messagebox.askyesno(<span class="st">"Question"</span>, <span class="st">"Do you want to continue?"</span>)</span>
+<span id="cb24-420"><a href="#cb24-420" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> result:</span>
+<span id="cb24-421"><a href="#cb24-421" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"User clicked Yes"</span>)</span>
+<span id="cb24-422"><a href="#cb24-422" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-423"><a href="#cb24-423" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> choose_file():</span>
+<span id="cb24-424"><a href="#cb24-424" aria-hidden="true" tabindex="-1"></a>    filename <span class="op">=</span> filedialog.askopenfilename(</span>
+<span id="cb24-425"><a href="#cb24-425" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Select a file"</span>,</span>
+<span id="cb24-426"><a href="#cb24-426" aria-hidden="true" tabindex="-1"></a>        filetypes<span class="op">=</span>((<span class="st">"Text files"</span>, <span class="st">"*.txt"</span>), (<span class="st">"All files"</span>, <span class="st">"*.*"</span>))</span>
+<span id="cb24-427"><a href="#cb24-427" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb24-428"><a href="#cb24-428" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> filename:</span>
+<span id="cb24-429"><a href="#cb24-429" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Selected: </span><span class="sc">{</span>filename<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb24-430"><a href="#cb24-430" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-431"><a href="#cb24-431" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-432"><a href="#cb24-432" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a Calculator</span></span>
 <span id="cb24-433"><a href="#cb24-433" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-434"><a href="#cb24-434" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Calculator:</span>
-<span id="cb24-435"><a href="#cb24-435" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</span>
-<span id="cb24-436"><a href="#cb24-436" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
-<span id="cb24-437"><a href="#cb24-437" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.title(<span class="st">"Calculator"</span>)</span>
-<span id="cb24-438"><a href="#cb24-438" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.geometry(<span class="st">"300x400"</span>)</span>
-<span id="cb24-439"><a href="#cb24-439" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-440"><a href="#cb24-440" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb24-441"><a href="#cb24-441" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.display_var <span class="op">=</span> tk.StringVar()</span>
-<span id="cb24-442"><a href="#cb24-442" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="st">"0"</span>)</span>
-<span id="cb24-443"><a href="#cb24-443" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-444"><a href="#cb24-444" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_display()</span>
-<span id="cb24-445"><a href="#cb24-445" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_buttons()</span>
-<span id="cb24-446"><a href="#cb24-446" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-447"><a href="#cb24-447" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_display(<span class="va">self</span>):</span>
-<span id="cb24-448"><a href="#cb24-448" aria-hidden="true" tabindex="-1"></a>        display <span class="op">=</span> tk.Entry(<span class="va">self</span>.root, textvariable<span class="op">=</span><span class="va">self</span>.display_var,</span>
-<span id="cb24-449"><a href="#cb24-449" aria-hidden="true" tabindex="-1"></a>                          font<span class="op">=</span>(<span class="st">"Arial"</span>, <span class="dv">20</span>), justify<span class="op">=</span><span class="st">"right"</span>)</span>
-<span id="cb24-450"><a href="#cb24-450" aria-hidden="true" tabindex="-1"></a>        display.grid(row<span class="op">=</span><span class="dv">0</span>, column<span class="op">=</span><span class="dv">0</span>, columnspan<span class="op">=</span><span class="dv">4</span>, padx<span class="op">=</span><span class="dv">5</span>, pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb24-434"><a href="#cb24-434" aria-hidden="true" tabindex="-1"></a>Let's create a functional calculator with a GUI:</span>
+<span id="cb24-435"><a href="#cb24-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-436"><a href="#cb24-436" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-437"><a href="#cb24-437" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter <span class="im">as</span> tk</span>
+<span id="cb24-438"><a href="#cb24-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-439"><a href="#cb24-439" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Calculator:</span>
+<span id="cb24-440"><a href="#cb24-440" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</span>
+<span id="cb24-441"><a href="#cb24-441" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
+<span id="cb24-442"><a href="#cb24-442" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.title(<span class="st">"Calculator"</span>)</span>
+<span id="cb24-443"><a href="#cb24-443" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root.geometry(<span class="st">"300x400"</span>)</span>
+<span id="cb24-444"><a href="#cb24-444" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-445"><a href="#cb24-445" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb24-446"><a href="#cb24-446" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.display_var <span class="op">=</span> tk.StringVar()</span>
+<span id="cb24-447"><a href="#cb24-447" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="st">"0"</span>)</span>
+<span id="cb24-448"><a href="#cb24-448" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-449"><a href="#cb24-449" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_display()</span>
+<span id="cb24-450"><a href="#cb24-450" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.create_buttons()</span>
 <span id="cb24-451"><a href="#cb24-451" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-452"><a href="#cb24-452" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_buttons(<span class="va">self</span>):</span>
-<span id="cb24-453"><a href="#cb24-453" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Button layout</span></span>
-<span id="cb24-454"><a href="#cb24-454" aria-hidden="true" tabindex="-1"></a>        buttons <span class="op">=</span> [</span>
-<span id="cb24-455"><a href="#cb24-455" aria-hidden="true" tabindex="-1"></a>            <span class="st">'7'</span>, <span class="st">'8'</span>, <span class="st">'9'</span>, <span class="st">'/'</span>,</span>
-<span id="cb24-456"><a href="#cb24-456" aria-hidden="true" tabindex="-1"></a>            <span class="st">'4'</span>, <span class="st">'5'</span>, <span class="st">'6'</span>, <span class="st">'*'</span>,</span>
-<span id="cb24-457"><a href="#cb24-457" aria-hidden="true" tabindex="-1"></a>            <span class="st">'1'</span>, <span class="st">'2'</span>, <span class="st">'3'</span>, <span class="st">'-'</span>,</span>
-<span id="cb24-458"><a href="#cb24-458" aria-hidden="true" tabindex="-1"></a>            <span class="st">'C'</span>, <span class="st">'0'</span>, <span class="st">'='</span>, <span class="st">'+'</span></span>
-<span id="cb24-459"><a href="#cb24-459" aria-hidden="true" tabindex="-1"></a>        ]</span>
-<span id="cb24-460"><a href="#cb24-460" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-461"><a href="#cb24-461" aria-hidden="true" tabindex="-1"></a>        row <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb24-462"><a href="#cb24-462" aria-hidden="true" tabindex="-1"></a>        col <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb24-463"><a href="#cb24-463" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> button <span class="kw">in</span> buttons:</span>
-<span id="cb24-464"><a href="#cb24-464" aria-hidden="true" tabindex="-1"></a>            cmd <span class="op">=</span> <span class="kw">lambda</span> x<span class="op">=</span>button: <span class="va">self</span>.click(x)</span>
-<span id="cb24-465"><a href="#cb24-465" aria-hidden="true" tabindex="-1"></a>            tk.Button(<span class="va">self</span>.root, text<span class="op">=</span>button, width<span class="op">=</span><span class="dv">5</span>, height<span class="op">=</span><span class="dv">2</span>,</span>
-<span id="cb24-466"><a href="#cb24-466" aria-hidden="true" tabindex="-1"></a>                     command<span class="op">=</span>cmd).grid(row<span class="op">=</span>row, column<span class="op">=</span>col, padx<span class="op">=</span><span class="dv">2</span>, pady<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb24-467"><a href="#cb24-467" aria-hidden="true" tabindex="-1"></a>            col <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb24-468"><a href="#cb24-468" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> col <span class="op">&gt;</span> <span class="dv">3</span>:</span>
-<span id="cb24-469"><a href="#cb24-469" aria-hidden="true" tabindex="-1"></a>                col <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb24-470"><a href="#cb24-470" aria-hidden="true" tabindex="-1"></a>                row <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb24-471"><a href="#cb24-471" aria-hidden="true" tabindex="-1"></a>                </span>
-<span id="cb24-472"><a href="#cb24-472" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> click(<span class="va">self</span>, key):</span>
-<span id="cb24-473"><a href="#cb24-473" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> key <span class="op">==</span> <span class="st">'='</span>:</span>
-<span id="cb24-474"><a href="#cb24-474" aria-hidden="true" tabindex="-1"></a>            <span class="cf">try</span>:</span>
-<span id="cb24-475"><a href="#cb24-475" aria-hidden="true" tabindex="-1"></a>                result <span class="op">=</span> <span class="bu">eval</span>(<span class="va">self</span>.current)</span>
-<span id="cb24-476"><a href="#cb24-476" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.display_var.<span class="bu">set</span>(result)</span>
-<span id="cb24-477"><a href="#cb24-477" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.current <span class="op">=</span> <span class="bu">str</span>(result)</span>
-<span id="cb24-478"><a href="#cb24-478" aria-hidden="true" tabindex="-1"></a>            <span class="cf">except</span>:</span>
-<span id="cb24-479"><a href="#cb24-479" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="st">"Error"</span>)</span>
-<span id="cb24-480"><a href="#cb24-480" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.current <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb24-481"><a href="#cb24-481" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> key <span class="op">==</span> <span class="st">'C'</span>:</span>
-<span id="cb24-482"><a href="#cb24-482" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.current <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb24-483"><a href="#cb24-483" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="st">"0"</span>)</span>
-<span id="cb24-484"><a href="#cb24-484" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb24-485"><a href="#cb24-485" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.current <span class="op">+=</span> key</span>
-<span id="cb24-486"><a href="#cb24-486" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="va">self</span>.current)</span>
-<span id="cb24-487"><a href="#cb24-487" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-488"><a href="#cb24-488" aria-hidden="true" tabindex="-1"></a><span class="co"># Run calculator</span></span>
-<span id="cb24-489"><a href="#cb24-489" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> tk.Tk()</span>
-<span id="cb24-490"><a href="#cb24-490" aria-hidden="true" tabindex="-1"></a>calc <span class="op">=</span> Calculator(root)</span>
-<span id="cb24-491"><a href="#cb24-491" aria-hidden="true" tabindex="-1"></a>root.mainloop()</span>
-<span id="cb24-492"><a href="#cb24-492" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-493"><a href="#cb24-493" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-494"><a href="#cb24-494" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
-<span id="cb24-495"><a href="#cb24-495" aria-hidden="true" tabindex="-1"></a><span class="fu">## Security Note</span></span>
-<span id="cb24-496"><a href="#cb24-496" aria-hidden="true" tabindex="-1"></a>Using <span class="in">`eval()`</span> is dangerous in real applications! For learning it's okay, but ask AI: "How can I evaluate math expressions safely without using eval()?"</span>
-<span id="cb24-497"><a href="#cb24-497" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-452"><a href="#cb24-452" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_display(<span class="va">self</span>):</span>
+<span id="cb24-453"><a href="#cb24-453" aria-hidden="true" tabindex="-1"></a>        display <span class="op">=</span> tk.Entry(<span class="va">self</span>.root, textvariable<span class="op">=</span><span class="va">self</span>.display_var,</span>
+<span id="cb24-454"><a href="#cb24-454" aria-hidden="true" tabindex="-1"></a>                          font<span class="op">=</span>(<span class="st">"Arial"</span>, <span class="dv">20</span>), justify<span class="op">=</span><span class="st">"right"</span>)</span>
+<span id="cb24-455"><a href="#cb24-455" aria-hidden="true" tabindex="-1"></a>        display.grid(row<span class="op">=</span><span class="dv">0</span>, column<span class="op">=</span><span class="dv">0</span>, columnspan<span class="op">=</span><span class="dv">4</span>, padx<span class="op">=</span><span class="dv">5</span>, pady<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb24-456"><a href="#cb24-456" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-457"><a href="#cb24-457" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> create_buttons(<span class="va">self</span>):</span>
+<span id="cb24-458"><a href="#cb24-458" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Button layout</span></span>
+<span id="cb24-459"><a href="#cb24-459" aria-hidden="true" tabindex="-1"></a>        buttons <span class="op">=</span> [</span>
+<span id="cb24-460"><a href="#cb24-460" aria-hidden="true" tabindex="-1"></a>            <span class="st">'7'</span>, <span class="st">'8'</span>, <span class="st">'9'</span>, <span class="st">'/'</span>,</span>
+<span id="cb24-461"><a href="#cb24-461" aria-hidden="true" tabindex="-1"></a>            <span class="st">'4'</span>, <span class="st">'5'</span>, <span class="st">'6'</span>, <span class="st">'*'</span>,</span>
+<span id="cb24-462"><a href="#cb24-462" aria-hidden="true" tabindex="-1"></a>            <span class="st">'1'</span>, <span class="st">'2'</span>, <span class="st">'3'</span>, <span class="st">'-'</span>,</span>
+<span id="cb24-463"><a href="#cb24-463" aria-hidden="true" tabindex="-1"></a>            <span class="st">'C'</span>, <span class="st">'0'</span>, <span class="st">'='</span>, <span class="st">'+'</span></span>
+<span id="cb24-464"><a href="#cb24-464" aria-hidden="true" tabindex="-1"></a>        ]</span>
+<span id="cb24-465"><a href="#cb24-465" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-466"><a href="#cb24-466" aria-hidden="true" tabindex="-1"></a>        row <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb24-467"><a href="#cb24-467" aria-hidden="true" tabindex="-1"></a>        col <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb24-468"><a href="#cb24-468" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> button <span class="kw">in</span> buttons:</span>
+<span id="cb24-469"><a href="#cb24-469" aria-hidden="true" tabindex="-1"></a>            cmd <span class="op">=</span> <span class="kw">lambda</span> x<span class="op">=</span>button: <span class="va">self</span>.click(x)</span>
+<span id="cb24-470"><a href="#cb24-470" aria-hidden="true" tabindex="-1"></a>            tk.Button(<span class="va">self</span>.root, text<span class="op">=</span>button, width<span class="op">=</span><span class="dv">5</span>, height<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb24-471"><a href="#cb24-471" aria-hidden="true" tabindex="-1"></a>                     command<span class="op">=</span>cmd).grid(row<span class="op">=</span>row, column<span class="op">=</span>col, padx<span class="op">=</span><span class="dv">2</span>, pady<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb24-472"><a href="#cb24-472" aria-hidden="true" tabindex="-1"></a>            col <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb24-473"><a href="#cb24-473" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> col <span class="op">&gt;</span> <span class="dv">3</span>:</span>
+<span id="cb24-474"><a href="#cb24-474" aria-hidden="true" tabindex="-1"></a>                col <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb24-475"><a href="#cb24-475" aria-hidden="true" tabindex="-1"></a>                row <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb24-476"><a href="#cb24-476" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb24-477"><a href="#cb24-477" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> click(<span class="va">self</span>, key):</span>
+<span id="cb24-478"><a href="#cb24-478" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> key <span class="op">==</span> <span class="st">'='</span>:</span>
+<span id="cb24-479"><a href="#cb24-479" aria-hidden="true" tabindex="-1"></a>            <span class="cf">try</span>:</span>
+<span id="cb24-480"><a href="#cb24-480" aria-hidden="true" tabindex="-1"></a>                result <span class="op">=</span> <span class="bu">eval</span>(<span class="va">self</span>.current)</span>
+<span id="cb24-481"><a href="#cb24-481" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.display_var.<span class="bu">set</span>(result)</span>
+<span id="cb24-482"><a href="#cb24-482" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.current <span class="op">=</span> <span class="bu">str</span>(result)</span>
+<span id="cb24-483"><a href="#cb24-483" aria-hidden="true" tabindex="-1"></a>            <span class="cf">except</span>:</span>
+<span id="cb24-484"><a href="#cb24-484" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="st">"Error"</span>)</span>
+<span id="cb24-485"><a href="#cb24-485" aria-hidden="true" tabindex="-1"></a>                <span class="va">self</span>.current <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb24-486"><a href="#cb24-486" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> key <span class="op">==</span> <span class="st">'C'</span>:</span>
+<span id="cb24-487"><a href="#cb24-487" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.current <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb24-488"><a href="#cb24-488" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="st">"0"</span>)</span>
+<span id="cb24-489"><a href="#cb24-489" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb24-490"><a href="#cb24-490" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.current <span class="op">+=</span> key</span>
+<span id="cb24-491"><a href="#cb24-491" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.display_var.<span class="bu">set</span>(<span class="va">self</span>.current)</span>
+<span id="cb24-492"><a href="#cb24-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-493"><a href="#cb24-493" aria-hidden="true" tabindex="-1"></a><span class="co"># Run calculator</span></span>
+<span id="cb24-494"><a href="#cb24-494" aria-hidden="true" tabindex="-1"></a>root <span class="op">=</span> tk.Tk()</span>
+<span id="cb24-495"><a href="#cb24-495" aria-hidden="true" tabindex="-1"></a>calc <span class="op">=</span> Calculator(root)</span>
+<span id="cb24-496"><a href="#cb24-496" aria-hidden="true" tabindex="-1"></a>root.mainloop()</span>
+<span id="cb24-497"><a href="#cb24-497" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-498"><a href="#cb24-498" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-499"><a href="#cb24-499" aria-hidden="true" tabindex="-1"></a><span class="fu">## Managing Application State</span></span>
-<span id="cb24-500"><a href="#cb24-500" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-501"><a href="#cb24-501" aria-hidden="true" tabindex="-1"></a>In a console program, state is straightforward: variables hold values, and your code updates them in a predictable sequence. GUI state is harder because changes can come from anywhere - a button click, a menu selection, a timer, or a key press - and the display needs to stay in sync with the data at all times. If your data changes but the screen doesn't update, or the screen shows something that doesn't match your data, users see bugs. Keeping data and display synchronised is the central challenge of GUI programming.</span>
-<span id="cb24-502"><a href="#cb24-502" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-503"><a href="#cb24-503" aria-hidden="true" tabindex="-1"></a><span class="fu">### State Management Pattern</span></span>
-<span id="cb24-504"><a href="#cb24-504" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-505"><a href="#cb24-505" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-506"><a href="#cb24-506" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> AppState:</span>
-<span id="cb24-507"><a href="#cb24-507" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
-<span id="cb24-508"><a href="#cb24-508" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.data <span class="op">=</span> []</span>
-<span id="cb24-509"><a href="#cb24-509" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current_file <span class="op">=</span> <span class="va">None</span></span>
-<span id="cb24-510"><a href="#cb24-510" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.is_modified <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb24-511"><a href="#cb24-511" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-512"><a href="#cb24-512" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add_item(<span class="va">self</span>, item):</span>
-<span id="cb24-513"><a href="#cb24-513" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.data.append(item)</span>
-<span id="cb24-514"><a href="#cb24-514" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.is_modified <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb24-515"><a href="#cb24-515" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb24-516"><a href="#cb24-516" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> save_state(<span class="va">self</span>):</span>
-<span id="cb24-517"><a href="#cb24-517" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.current_file:</span>
-<span id="cb24-518"><a href="#cb24-518" aria-hidden="true" tabindex="-1"></a>            <span class="cf">with</span> <span class="bu">open</span>(<span class="va">self</span>.current_file, <span class="st">'w'</span>) <span class="im">as</span> f:</span>
-<span id="cb24-519"><a href="#cb24-519" aria-hidden="true" tabindex="-1"></a>                json.dump(<span class="va">self</span>.data, f)</span>
-<span id="cb24-520"><a href="#cb24-520" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.is_modified <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb24-521"><a href="#cb24-521" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb24-522"><a href="#cb24-522" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> check_save_needed(<span class="va">self</span>):</span>
-<span id="cb24-523"><a href="#cb24-523" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.is_modified:</span>
-<span id="cb24-524"><a href="#cb24-524" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> messagebox.askyesno(<span class="st">"Save?"</span>, <span class="st">"Save changes before closing?"</span>)</span>
-<span id="cb24-525"><a href="#cb24-525" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">True</span></span>
-<span id="cb24-526"><a href="#cb24-526" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-527"><a href="#cb24-527" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-528"><a href="#cb24-528" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Responsive Interfaces</span></span>
-<span id="cb24-529"><a href="#cb24-529" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-530"><a href="#cb24-530" aria-hidden="true" tabindex="-1"></a>Remember the receptionist metaphor? If a handler takes a long time to finish, the receptionist can't greet anyone else - and the window freezes. Good GUIs stay responsive even during long operations by breaking work into small pieces:</span>
-<span id="cb24-531"><a href="#cb24-531" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-532"><a href="#cb24-532" aria-hidden="true" tabindex="-1"></a><span class="fu">### Using After() for Updates</span></span>
-<span id="cb24-533"><a href="#cb24-533" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-534"><a href="#cb24-534" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-535"><a href="#cb24-535" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_clock():</span>
-<span id="cb24-536"><a href="#cb24-536" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Update time display every second"""</span></span>
-<span id="cb24-537"><a href="#cb24-537" aria-hidden="true" tabindex="-1"></a>    current_time <span class="op">=</span> time.strftime(<span class="st">"%H:%M:%S"</span>)</span>
-<span id="cb24-538"><a href="#cb24-538" aria-hidden="true" tabindex="-1"></a>    time_label.config(text<span class="op">=</span>current_time)</span>
-<span id="cb24-539"><a href="#cb24-539" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Schedule next update</span></span>
-<span id="cb24-540"><a href="#cb24-540" aria-hidden="true" tabindex="-1"></a>    root.after(<span class="dv">1000</span>, update_clock)</span>
-<span id="cb24-541"><a href="#cb24-541" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-542"><a href="#cb24-542" aria-hidden="true" tabindex="-1"></a><span class="co"># Start the clock</span></span>
-<span id="cb24-543"><a href="#cb24-543" aria-hidden="true" tabindex="-1"></a>update_clock()</span>
-<span id="cb24-544"><a href="#cb24-544" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-545"><a href="#cb24-545" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-546"><a href="#cb24-546" aria-hidden="true" tabindex="-1"></a><span class="fu">### Progress Indication</span></span>
-<span id="cb24-547"><a href="#cb24-547" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-548"><a href="#cb24-548" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-549"><a href="#cb24-549" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter.ttk <span class="im">as</span> ttk</span>
+<span id="cb24-499"><a href="#cb24-499" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb24-500"><a href="#cb24-500" aria-hidden="true" tabindex="-1"></a><span class="fu">## Security Note</span></span>
+<span id="cb24-501"><a href="#cb24-501" aria-hidden="true" tabindex="-1"></a>Using <span class="in">`eval()`</span> is dangerous in real applications! For learning it's okay, but ask AI: "How can I evaluate math expressions safely without using eval()?"</span>
+<span id="cb24-502"><a href="#cb24-502" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-503"><a href="#cb24-503" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-504"><a href="#cb24-504" aria-hidden="true" tabindex="-1"></a><span class="fu">## Managing Application State</span></span>
+<span id="cb24-505"><a href="#cb24-505" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-506"><a href="#cb24-506" aria-hidden="true" tabindex="-1"></a>In a console program, state is straightforward: variables hold values, and your code updates them in a predictable sequence. GUI state is harder because changes can come from anywhere - a button click, a menu selection, a timer, or a key press - and the display needs to stay in sync with the data at all times. If your data changes but the screen doesn't update, or the screen shows something that doesn't match your data, users see bugs. Keeping data and display synchronised is the central challenge of GUI programming.</span>
+<span id="cb24-507"><a href="#cb24-507" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-508"><a href="#cb24-508" aria-hidden="true" tabindex="-1"></a><span class="fu">### State Management Pattern</span></span>
+<span id="cb24-509"><a href="#cb24-509" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-510"><a href="#cb24-510" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-511"><a href="#cb24-511" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> AppState:</span>
+<span id="cb24-512"><a href="#cb24-512" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb24-513"><a href="#cb24-513" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.data <span class="op">=</span> []</span>
+<span id="cb24-514"><a href="#cb24-514" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.current_file <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb24-515"><a href="#cb24-515" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.is_modified <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb24-516"><a href="#cb24-516" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-517"><a href="#cb24-517" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add_item(<span class="va">self</span>, item):</span>
+<span id="cb24-518"><a href="#cb24-518" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.data.append(item)</span>
+<span id="cb24-519"><a href="#cb24-519" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.is_modified <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb24-520"><a href="#cb24-520" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-521"><a href="#cb24-521" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> save_state(<span class="va">self</span>):</span>
+<span id="cb24-522"><a href="#cb24-522" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.current_file:</span>
+<span id="cb24-523"><a href="#cb24-523" aria-hidden="true" tabindex="-1"></a>            <span class="cf">with</span> <span class="bu">open</span>(<span class="va">self</span>.current_file, <span class="st">'w'</span>) <span class="im">as</span> f:</span>
+<span id="cb24-524"><a href="#cb24-524" aria-hidden="true" tabindex="-1"></a>                json.dump(<span class="va">self</span>.data, f)</span>
+<span id="cb24-525"><a href="#cb24-525" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.is_modified <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb24-526"><a href="#cb24-526" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb24-527"><a href="#cb24-527" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> check_save_needed(<span class="va">self</span>):</span>
+<span id="cb24-528"><a href="#cb24-528" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.is_modified:</span>
+<span id="cb24-529"><a href="#cb24-529" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> messagebox.askyesno(<span class="st">"Save?"</span>, <span class="st">"Save changes before closing?"</span>)</span>
+<span id="cb24-530"><a href="#cb24-530" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb24-531"><a href="#cb24-531" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-532"><a href="#cb24-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-533"><a href="#cb24-533" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Responsive Interfaces</span></span>
+<span id="cb24-534"><a href="#cb24-534" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-535"><a href="#cb24-535" aria-hidden="true" tabindex="-1"></a>Remember the receptionist metaphor? If a handler takes a long time to finish, the receptionist can't greet anyone else - and the window freezes. Good GUIs stay responsive even during long operations by breaking work into small pieces:</span>
+<span id="cb24-536"><a href="#cb24-536" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-537"><a href="#cb24-537" aria-hidden="true" tabindex="-1"></a><span class="fu">### Using After() for Updates</span></span>
+<span id="cb24-538"><a href="#cb24-538" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-539"><a href="#cb24-539" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-540"><a href="#cb24-540" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_clock():</span>
+<span id="cb24-541"><a href="#cb24-541" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Update time display every second"""</span></span>
+<span id="cb24-542"><a href="#cb24-542" aria-hidden="true" tabindex="-1"></a>    current_time <span class="op">=</span> time.strftime(<span class="st">"%H:%M:%S"</span>)</span>
+<span id="cb24-543"><a href="#cb24-543" aria-hidden="true" tabindex="-1"></a>    time_label.config(text<span class="op">=</span>current_time)</span>
+<span id="cb24-544"><a href="#cb24-544" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Schedule next update</span></span>
+<span id="cb24-545"><a href="#cb24-545" aria-hidden="true" tabindex="-1"></a>    root.after(<span class="dv">1000</span>, update_clock)</span>
+<span id="cb24-546"><a href="#cb24-546" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-547"><a href="#cb24-547" aria-hidden="true" tabindex="-1"></a><span class="co"># Start the clock</span></span>
+<span id="cb24-548"><a href="#cb24-548" aria-hidden="true" tabindex="-1"></a>update_clock()</span>
+<span id="cb24-549"><a href="#cb24-549" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-550"><a href="#cb24-550" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-551"><a href="#cb24-551" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> start_task():</span>
-<span id="cb24-552"><a href="#cb24-552" aria-hidden="true" tabindex="-1"></a>    progress_bar <span class="op">=</span> ttk.Progressbar(root, length<span class="op">=</span><span class="dv">200</span>, mode<span class="op">=</span><span class="st">'determinate'</span>)</span>
-<span id="cb24-553"><a href="#cb24-553" aria-hidden="true" tabindex="-1"></a>    progress_bar.pack()</span>
-<span id="cb24-554"><a href="#cb24-554" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-555"><a href="#cb24-555" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">101</span>):</span>
-<span id="cb24-556"><a href="#cb24-556" aria-hidden="true" tabindex="-1"></a>        progress_bar[<span class="st">'value'</span>] <span class="op">=</span> i</span>
-<span id="cb24-557"><a href="#cb24-557" aria-hidden="true" tabindex="-1"></a>        root.update()</span>
-<span id="cb24-558"><a href="#cb24-558" aria-hidden="true" tabindex="-1"></a>        time.sleep(<span class="fl">0.01</span>)</span>
+<span id="cb24-551"><a href="#cb24-551" aria-hidden="true" tabindex="-1"></a><span class="fu">### Progress Indication</span></span>
+<span id="cb24-552"><a href="#cb24-552" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-553"><a href="#cb24-553" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-554"><a href="#cb24-554" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tkinter.ttk <span class="im">as</span> ttk</span>
+<span id="cb24-555"><a href="#cb24-555" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-556"><a href="#cb24-556" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> start_task():</span>
+<span id="cb24-557"><a href="#cb24-557" aria-hidden="true" tabindex="-1"></a>    progress_bar <span class="op">=</span> ttk.Progressbar(root, length<span class="op">=</span><span class="dv">200</span>, mode<span class="op">=</span><span class="st">'determinate'</span>)</span>
+<span id="cb24-558"><a href="#cb24-558" aria-hidden="true" tabindex="-1"></a>    progress_bar.pack()</span>
 <span id="cb24-559"><a href="#cb24-559" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-560"><a href="#cb24-560" aria-hidden="true" tabindex="-1"></a>    progress_bar.destroy()</span>
-<span id="cb24-561"><a href="#cb24-561" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-562"><a href="#cb24-562" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-563"><a href="#cb24-563" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common GUI Patterns</span></span>
-<span id="cb24-564"><a href="#cb24-564" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-565"><a href="#cb24-565" aria-hidden="true" tabindex="-1"></a>As your GUI applications grow, you'll want to keep your code organised. One of the most useful ideas is separating *what your program knows* from *what it shows on screen*.</span>
-<span id="cb24-566"><a href="#cb24-566" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-567"><a href="#cb24-567" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model-View Pattern</span></span>
-<span id="cb24-568"><a href="#cb24-568" aria-hidden="true" tabindex="-1"></a>Separate your data (model) from display (view):</span>
+<span id="cb24-560"><a href="#cb24-560" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">101</span>):</span>
+<span id="cb24-561"><a href="#cb24-561" aria-hidden="true" tabindex="-1"></a>        progress_bar[<span class="st">'value'</span>] <span class="op">=</span> i</span>
+<span id="cb24-562"><a href="#cb24-562" aria-hidden="true" tabindex="-1"></a>        root.update()</span>
+<span id="cb24-563"><a href="#cb24-563" aria-hidden="true" tabindex="-1"></a>        time.sleep(<span class="fl">0.01</span>)</span>
+<span id="cb24-564"><a href="#cb24-564" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-565"><a href="#cb24-565" aria-hidden="true" tabindex="-1"></a>    progress_bar.destroy()</span>
+<span id="cb24-566"><a href="#cb24-566" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-567"><a href="#cb24-567" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-568"><a href="#cb24-568" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common GUI Patterns</span></span>
 <span id="cb24-569"><a href="#cb24-569" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-570"><a href="#cb24-570" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-571"><a href="#cb24-571" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TodoModel:</span>
-<span id="cb24-572"><a href="#cb24-572" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
-<span id="cb24-573"><a href="#cb24-573" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.tasks <span class="op">=</span> []</span>
-<span id="cb24-574"><a href="#cb24-574" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-575"><a href="#cb24-575" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add_task(<span class="va">self</span>, task):</span>
-<span id="cb24-576"><a href="#cb24-576" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.tasks.append(task)</span>
-<span id="cb24-577"><a href="#cb24-577" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-578"><a href="#cb24-578" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> remove_task(<span class="va">self</span>, index):</span>
-<span id="cb24-579"><a href="#cb24-579" aria-hidden="true" tabindex="-1"></a>        <span class="kw">del</span> <span class="va">self</span>.tasks[index]</span>
-<span id="cb24-580"><a href="#cb24-580" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-581"><a href="#cb24-581" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TodoView:</span>
-<span id="cb24-582"><a href="#cb24-582" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root, model):</span>
-<span id="cb24-583"><a href="#cb24-583" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
-<span id="cb24-584"><a href="#cb24-584" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
-<span id="cb24-585"><a href="#cb24-585" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Create GUI...</span></span>
-<span id="cb24-586"><a href="#cb24-586" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb24-587"><a href="#cb24-587" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> refresh_display(<span class="va">self</span>):</span>
-<span id="cb24-588"><a href="#cb24-588" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Update GUI from model</span></span>
-<span id="cb24-589"><a href="#cb24-589" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.listbox.delete(<span class="dv">0</span>, tk.END)</span>
-<span id="cb24-590"><a href="#cb24-590" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> task <span class="kw">in</span> <span class="va">self</span>.model.tasks:</span>
-<span id="cb24-591"><a href="#cb24-591" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.listbox.insert(tk.END, task)</span>
-<span id="cb24-592"><a href="#cb24-592" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-593"><a href="#cb24-593" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-594"><a href="#cb24-594" aria-hidden="true" tabindex="-1"></a><span class="fu">## Debugging GUI Applications</span></span>
-<span id="cb24-595"><a href="#cb24-595" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-596"><a href="#cb24-596" aria-hidden="true" tabindex="-1"></a>GUI debugging requires special techniques:</span>
-<span id="cb24-597"><a href="#cb24-597" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-598"><a href="#cb24-598" aria-hidden="true" tabindex="-1"></a><span class="fu">### Debug Prints</span></span>
-<span id="cb24-599"><a href="#cb24-599" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-600"><a href="#cb24-600" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> debug_event(event):</span>
-<span id="cb24-601"><a href="#cb24-601" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Event: </span><span class="sc">{</span>event<span class="sc">.</span><span class="bu">type</span><span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-602"><a href="#cb24-602" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Widget: </span><span class="sc">{</span>event<span class="sc">.</span>widget<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb24-603"><a href="#cb24-603" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Position: (</span><span class="sc">{</span>event<span class="sc">.</span>x<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>event<span class="sc">.</span>y<span class="sc">}</span><span class="ss">)"</span>)</span>
-<span id="cb24-604"><a href="#cb24-604" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-605"><a href="#cb24-605" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-606"><a href="#cb24-606" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visual Debugging</span></span>
-<span id="cb24-607"><a href="#cb24-607" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb24-608"><a href="#cb24-608" aria-hidden="true" tabindex="-1"></a><span class="co"># Highlight widget borders for layout debugging</span></span>
-<span id="cb24-609"><a href="#cb24-609" aria-hidden="true" tabindex="-1"></a>widget.config(relief<span class="op">=</span><span class="st">"solid"</span>, borderwidth<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb24-610"><a href="#cb24-610" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-611"><a href="#cb24-611" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-612"><a href="#cb24-612" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common AI Complications</span></span>
-<span id="cb24-613"><a href="#cb24-613" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-614"><a href="#cb24-614" aria-hidden="true" tabindex="-1"></a>GUI code is where AI tends to overcomplicate things the most. Ask AI to build a simple counter app (a label and two buttons: increment and decrement), and you'll likely get a class hierarchy with a base <span class="in">`Application`</span> class, a separate <span class="in">`CounterWidget`</span> that inherits from <span class="in">`tk.Frame`</span>, a <span class="in">`Controller`</span> mediating between a <span class="in">`Model`</span> and a <span class="in">`View`</span>, and custom event dispatchers - all for what could be twenty lines of straightforward code.</span>
-<span id="cb24-615"><a href="#cb24-615" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-616"><a href="#cb24-616" aria-hidden="true" tabindex="-1"></a>Here's what to watch for:</span>
-<span id="cb24-617"><a href="#cb24-617" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-618"><a href="#cb24-618" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Unnecessary class inheritance.** AI loves creating custom widget classes that inherit from <span class="in">`tk.Frame`</span> or <span class="in">`tk.Toplevel`</span>. For learning, a simple function-based approach or a single class is almost always enough.</span>
-<span id="cb24-619"><a href="#cb24-619" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Design patterns you don't need yet.** Model-View-Controller (MVC), Observer patterns, and event bus architectures are real tools for large applications, but they add complexity that obscures the fundamentals when you're starting out.</span>
-<span id="cb24-620"><a href="#cb24-620" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Premature abstraction.** AI may create a generic <span class="in">`WidgetFactory`</span> or a <span class="in">`ThemeManager`</span> when you just need a button with a colour. If you can't explain why an abstraction exists, you probably don't need it yet.</span>
-<span id="cb24-621"><a href="#cb24-621" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-622"><a href="#cb24-622" aria-hidden="true" tabindex="-1"></a>When AI gives you GUI code, ask yourself: "Could I build this with just functions, a few widgets, and <span class="in">`mainloop()`</span>?" If yes, simplify. You can always add structure later when your application genuinely needs it.</span>
-<span id="cb24-623"><a href="#cb24-623" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-624"><a href="#cb24-624" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb24-625"><a href="#cb24-625" aria-hidden="true" tabindex="-1"></a><span class="fu">## Simplification Prompt</span></span>
-<span id="cb24-626"><a href="#cb24-626" aria-hidden="true" tabindex="-1"></a>When AI overcomplicates your GUI code, try this prompt:</span>
-<span id="cb24-627"><a href="#cb24-627" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
-<span id="cb24-628"><a href="#cb24-628" aria-hidden="true" tabindex="-1"></a><span class="in">Rewrite this using only functions (no classes) and the fewest widgets possible.</span></span>
-<span id="cb24-629"><a href="#cb24-629" aria-hidden="true" tabindex="-1"></a><span class="in">Keep it under 30 lines. I'm learning, not building production software.</span></span>
-<span id="cb24-630"><a href="#cb24-630" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb24-631"><a href="#cb24-631" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb24-632"><a href="#cb24-632" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-633"><a href="#cb24-633" aria-hidden="true" tabindex="-1"></a><span class="fu">## Practice Projects</span></span>
-<span id="cb24-634"><a href="#cb24-634" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-635"><a href="#cb24-635" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 1: Note Taking App</span></span>
-<span id="cb24-636"><a href="#cb24-636" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multiple text areas</span>
-<span id="cb24-637"><a href="#cb24-637" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Save/load files</span>
-<span id="cb24-638"><a href="#cb24-638" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Search functionality</span>
-<span id="cb24-639"><a href="#cb24-639" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Font customisation</span>
-<span id="cb24-640"><a href="#cb24-640" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-641"><a href="#cb24-641" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 2: Simple Paint Program</span></span>
-<span id="cb24-642"><a href="#cb24-642" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Drawing tools (pencil, shapes)</span>
-<span id="cb24-643"><a href="#cb24-643" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Color picker</span>
-<span id="cb24-644"><a href="#cb24-644" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Undo/redo</span>
-<span id="cb24-645"><a href="#cb24-645" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Save drawings</span>
-<span id="cb24-646"><a href="#cb24-646" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-647"><a href="#cb24-647" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 3: Quiz Game GUI</span></span>
-<span id="cb24-648"><a href="#cb24-648" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Question display</span>
-<span id="cb24-649"><a href="#cb24-649" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multiple choice buttons</span>
-<span id="cb24-650"><a href="#cb24-650" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Score tracking</span>
-<span id="cb24-651"><a href="#cb24-651" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Timer display</span>
-<span id="cb24-652"><a href="#cb24-652" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-653"><a href="#cb24-653" aria-hidden="true" tabindex="-1"></a><span class="fu">## Looking Ahead</span></span>
-<span id="cb24-654"><a href="#cb24-654" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-655"><a href="#cb24-655" aria-hidden="true" tabindex="-1"></a>In the final chapter of Part III, you'll learn to think like a software architect - planning and designing complete applications before writing code. You'll combine everything you've learned to create professional-quality programs!</span>
-<span id="cb24-656"><a href="#cb24-656" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-657"><a href="#cb24-657" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
-<span id="cb24-658"><a href="#cb24-658" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-659"><a href="#cb24-659" aria-hidden="true" tabindex="-1"></a>You've learned to:</span>
-<span id="cb24-660"><a href="#cb24-660" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create windows and widgets</span>
-<span id="cb24-661"><a href="#cb24-661" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Handle user events</span>
-<span id="cb24-662"><a href="#cb24-662" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Build interactive interfaces</span>
-<span id="cb24-663"><a href="#cb24-663" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Manage application state</span>
-<span id="cb24-664"><a href="#cb24-664" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create menus and dialogs</span>
-<span id="cb24-665"><a href="#cb24-665" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keep interfaces responsive</span>
-<span id="cb24-666"><a href="#cb24-666" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-667"><a href="#cb24-667" aria-hidden="true" tabindex="-1"></a>Your programs are no longer confined to the console - they're full applications with professional interfaces!</span>
-<span id="cb24-668"><a href="#cb24-668" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-669"><a href="#cb24-669" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection Prompts</span></span>
-<span id="cb24-670"><a href="#cb24-670" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-671"><a href="#cb24-671" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Design Thinking**: What makes a GUI intuitive vs confusing?</span>
-<span id="cb24-672"><a href="#cb24-672" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Event Planning**: How do you decide what events to handle?</span>
-<span id="cb24-673"><a href="#cb24-673" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**State Management**: Why is tracking state harder in GUIs?</span>
-<span id="cb24-674"><a href="#cb24-674" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**User Experience**: What frustrated you about GUIs you've used?</span>
+<span id="cb24-570"><a href="#cb24-570" aria-hidden="true" tabindex="-1"></a>As your GUI applications grow, you'll want to keep your code organised. One of the most useful ideas is separating *what your program knows* from *what it shows on screen*.</span>
+<span id="cb24-571"><a href="#cb24-571" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-572"><a href="#cb24-572" aria-hidden="true" tabindex="-1"></a><span class="fu">### Model-View Pattern</span></span>
+<span id="cb24-573"><a href="#cb24-573" aria-hidden="true" tabindex="-1"></a>Separate your data (model) from display (view):</span>
+<span id="cb24-574"><a href="#cb24-574" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-575"><a href="#cb24-575" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-576"><a href="#cb24-576" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TodoModel:</span>
+<span id="cb24-577"><a href="#cb24-577" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb24-578"><a href="#cb24-578" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.tasks <span class="op">=</span> []</span>
+<span id="cb24-579"><a href="#cb24-579" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-580"><a href="#cb24-580" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add_task(<span class="va">self</span>, task):</span>
+<span id="cb24-581"><a href="#cb24-581" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.tasks.append(task)</span>
+<span id="cb24-582"><a href="#cb24-582" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-583"><a href="#cb24-583" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> remove_task(<span class="va">self</span>, index):</span>
+<span id="cb24-584"><a href="#cb24-584" aria-hidden="true" tabindex="-1"></a>        <span class="kw">del</span> <span class="va">self</span>.tasks[index]</span>
+<span id="cb24-585"><a href="#cb24-585" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-586"><a href="#cb24-586" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TodoView:</span>
+<span id="cb24-587"><a href="#cb24-587" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root, model):</span>
+<span id="cb24-588"><a href="#cb24-588" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model <span class="op">=</span> model</span>
+<span id="cb24-589"><a href="#cb24-589" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.root <span class="op">=</span> root</span>
+<span id="cb24-590"><a href="#cb24-590" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Create GUI...</span></span>
+<span id="cb24-591"><a href="#cb24-591" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-592"><a href="#cb24-592" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> refresh_display(<span class="va">self</span>):</span>
+<span id="cb24-593"><a href="#cb24-593" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Update GUI from model</span></span>
+<span id="cb24-594"><a href="#cb24-594" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.listbox.delete(<span class="dv">0</span>, tk.END)</span>
+<span id="cb24-595"><a href="#cb24-595" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> task <span class="kw">in</span> <span class="va">self</span>.model.tasks:</span>
+<span id="cb24-596"><a href="#cb24-596" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.listbox.insert(tk.END, task)</span>
+<span id="cb24-597"><a href="#cb24-597" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-598"><a href="#cb24-598" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-599"><a href="#cb24-599" aria-hidden="true" tabindex="-1"></a><span class="fu">## Debugging GUI Applications</span></span>
+<span id="cb24-600"><a href="#cb24-600" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-601"><a href="#cb24-601" aria-hidden="true" tabindex="-1"></a>GUI debugging requires special techniques:</span>
+<span id="cb24-602"><a href="#cb24-602" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-603"><a href="#cb24-603" aria-hidden="true" tabindex="-1"></a><span class="fu">### Debug Prints</span></span>
+<span id="cb24-604"><a href="#cb24-604" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-605"><a href="#cb24-605" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> debug_event(event):</span>
+<span id="cb24-606"><a href="#cb24-606" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Event: </span><span class="sc">{</span>event<span class="sc">.</span><span class="bu">type</span><span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb24-607"><a href="#cb24-607" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Widget: </span><span class="sc">{</span>event<span class="sc">.</span>widget<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb24-608"><a href="#cb24-608" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Position: (</span><span class="sc">{</span>event<span class="sc">.</span>x<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>event<span class="sc">.</span>y<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb24-609"><a href="#cb24-609" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-610"><a href="#cb24-610" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-611"><a href="#cb24-611" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visual Debugging</span></span>
+<span id="cb24-612"><a href="#cb24-612" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb24-613"><a href="#cb24-613" aria-hidden="true" tabindex="-1"></a><span class="co"># Highlight widget borders for layout debugging</span></span>
+<span id="cb24-614"><a href="#cb24-614" aria-hidden="true" tabindex="-1"></a>widget.config(relief<span class="op">=</span><span class="st">"solid"</span>, borderwidth<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb24-615"><a href="#cb24-615" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-616"><a href="#cb24-616" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-617"><a href="#cb24-617" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common AI Complications</span></span>
+<span id="cb24-618"><a href="#cb24-618" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-619"><a href="#cb24-619" aria-hidden="true" tabindex="-1"></a>GUI code is where AI tends to overcomplicate things the most. Ask AI to build a simple counter app (a label and two buttons: increment and decrement), and you'll likely get a class hierarchy with a base <span class="in">`Application`</span> class, a separate <span class="in">`CounterWidget`</span> that inherits from <span class="in">`tk.Frame`</span>, a <span class="in">`Controller`</span> mediating between a <span class="in">`Model`</span> and a <span class="in">`View`</span>, and custom event dispatchers - all for what could be twenty lines of straightforward code.</span>
+<span id="cb24-620"><a href="#cb24-620" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-621"><a href="#cb24-621" aria-hidden="true" tabindex="-1"></a>Here's what to watch for:</span>
+<span id="cb24-622"><a href="#cb24-622" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-623"><a href="#cb24-623" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Unnecessary class inheritance.** AI loves creating custom widget classes that inherit from <span class="in">`tk.Frame`</span> or <span class="in">`tk.Toplevel`</span>. For learning, a simple function-based approach or a single class is almost always enough.</span>
+<span id="cb24-624"><a href="#cb24-624" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Design patterns you don't need yet.** Model-View-Controller (MVC), Observer patterns, and event bus architectures are real tools for large applications, but they add complexity that obscures the fundamentals when you're starting out.</span>
+<span id="cb24-625"><a href="#cb24-625" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Premature abstraction.** AI may create a generic <span class="in">`WidgetFactory`</span> or a <span class="in">`ThemeManager`</span> when you just need a button with a colour. If you can't explain why an abstraction exists, you probably don't need it yet.</span>
+<span id="cb24-626"><a href="#cb24-626" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-627"><a href="#cb24-627" aria-hidden="true" tabindex="-1"></a>When AI gives you GUI code, ask yourself: "Could I build this with just functions, a few widgets, and <span class="in">`mainloop()`</span>?" If yes, simplify. You can always add structure later when your application genuinely needs it.</span>
+<span id="cb24-628"><a href="#cb24-628" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-629"><a href="#cb24-629" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb24-630"><a href="#cb24-630" aria-hidden="true" tabindex="-1"></a><span class="fu">## Simplification Prompt</span></span>
+<span id="cb24-631"><a href="#cb24-631" aria-hidden="true" tabindex="-1"></a>When AI overcomplicates your GUI code, try this prompt:</span>
+<span id="cb24-632"><a href="#cb24-632" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb24-633"><a href="#cb24-633" aria-hidden="true" tabindex="-1"></a><span class="in">Rewrite this using only functions (no classes) and the fewest widgets possible.</span></span>
+<span id="cb24-634"><a href="#cb24-634" aria-hidden="true" tabindex="-1"></a><span class="in">Keep it under 30 lines. I'm learning, not building production software.</span></span>
+<span id="cb24-635"><a href="#cb24-635" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb24-636"><a href="#cb24-636" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb24-637"><a href="#cb24-637" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-638"><a href="#cb24-638" aria-hidden="true" tabindex="-1"></a><span class="fu">## Practice Projects</span></span>
+<span id="cb24-639"><a href="#cb24-639" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-640"><a href="#cb24-640" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 1: Note Taking App</span></span>
+<span id="cb24-641"><a href="#cb24-641" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multiple text areas</span>
+<span id="cb24-642"><a href="#cb24-642" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Save/load files</span>
+<span id="cb24-643"><a href="#cb24-643" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Search functionality</span>
+<span id="cb24-644"><a href="#cb24-644" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Font customisation</span>
+<span id="cb24-645"><a href="#cb24-645" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-646"><a href="#cb24-646" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 2: Simple Paint Program</span></span>
+<span id="cb24-647"><a href="#cb24-647" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Drawing tools (pencil, shapes)</span>
+<span id="cb24-648"><a href="#cb24-648" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Color picker</span>
+<span id="cb24-649"><a href="#cb24-649" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Undo/redo</span>
+<span id="cb24-650"><a href="#cb24-650" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Save drawings</span>
+<span id="cb24-651"><a href="#cb24-651" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-652"><a href="#cb24-652" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 3: Quiz Game GUI</span></span>
+<span id="cb24-653"><a href="#cb24-653" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Question display</span>
+<span id="cb24-654"><a href="#cb24-654" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multiple choice buttons</span>
+<span id="cb24-655"><a href="#cb24-655" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Score tracking</span>
+<span id="cb24-656"><a href="#cb24-656" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Timer display</span>
+<span id="cb24-657"><a href="#cb24-657" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-658"><a href="#cb24-658" aria-hidden="true" tabindex="-1"></a><span class="fu">## Looking Ahead</span></span>
+<span id="cb24-659"><a href="#cb24-659" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-660"><a href="#cb24-660" aria-hidden="true" tabindex="-1"></a>In the final chapter of Part III, you'll learn to think like a software architect - planning and designing complete applications before writing code. You'll combine everything you've learned to create professional-quality programs!</span>
+<span id="cb24-661"><a href="#cb24-661" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-662"><a href="#cb24-662" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
+<span id="cb24-663"><a href="#cb24-663" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-664"><a href="#cb24-664" aria-hidden="true" tabindex="-1"></a>You've learned to:</span>
+<span id="cb24-665"><a href="#cb24-665" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create windows and widgets</span>
+<span id="cb24-666"><a href="#cb24-666" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Handle user events</span>
+<span id="cb24-667"><a href="#cb24-667" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Build interactive interfaces</span>
+<span id="cb24-668"><a href="#cb24-668" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Manage application state</span>
+<span id="cb24-669"><a href="#cb24-669" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create menus and dialogs</span>
+<span id="cb24-670"><a href="#cb24-670" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keep interfaces responsive</span>
+<span id="cb24-671"><a href="#cb24-671" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-672"><a href="#cb24-672" aria-hidden="true" tabindex="-1"></a>Your programs are no longer confined to the console - they're full applications with professional interfaces!</span>
+<span id="cb24-673"><a href="#cb24-673" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-674"><a href="#cb24-674" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection Prompts</span></span>
 <span id="cb24-675"><a href="#cb24-675" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-676"><a href="#cb24-676" aria-hidden="true" tabindex="-1"></a>Remember: Great GUIs are invisible - users focus on their task, not on figuring out the interface!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb24-676"><a href="#cb24-676" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Design Thinking**: What makes a GUI intuitive vs confusing?</span>
+<span id="cb24-677"><a href="#cb24-677" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Event Planning**: How do you decide what events to handle?</span>
+<span id="cb24-678"><a href="#cb24-678" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**State Management**: Why is tracking state harder in GUIs?</span>
+<span id="cb24-679"><a href="#cb24-679" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**User Experience**: What frustrated you about GUIs you've used?</span>
+<span id="cb24-680"><a href="#cb24-680" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-681"><a href="#cb24-681" aria-hidden="true" tabindex="-1"></a>Remember: Great GUIs are invisible - users focus on their task, not on figuring out the interface!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

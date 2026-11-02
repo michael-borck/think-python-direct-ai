@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="A revolutionary approach to learning Python by partnering with AI to build mental models, understand concepts, and architect solutions.">
 
-<title>21&nbsp; Chapter 11: Connected Programs – Think Python, Direct AI</title>
+<title>21&nbsp; Connected Programs – Think Python, Direct AI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -78,14 +81,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-23bbe8b5e4efc1e257f6d59dce478b08.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed6a1a2bbb6c38e19b91e14da0015bdb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-6752c11968d1768e6ffb59eed447bf43.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed6a1a2bbb6c38e19b91e14da0015bdb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-36d1909bcb541879de504f1ebcc96011.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-9950bca906ef9bb3ea288c0af376aad5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-36d1909bcb541879de504f1ebcc96011.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-bcef54b0580e13fa4c97f066e820aa1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-15f167cafc6866a0830865e5150cddc2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-bcef54b0580e13fa4c97f066e820aa1f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -115,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="assets/custom.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -289,7 +292,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-connected-programs.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Chapter 11: Connected Programs</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-connected-programs.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Connected Programs</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -496,25 +499,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-working-with-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Chapter 10: Working with Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Working with Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-connected-programs.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Chapter 11: Connected Programs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Connected Programs</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-interactive-systems.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Chapter 12: Interactive Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Interactive Systems</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-becoming-architect.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Chapter 13: Becoming an Architect</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Becoming an Architect</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -555,7 +558,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/chapter-next-steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Chapter 14: Your Programming Journey Forward</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Your Programming Journey Forward</span></span></a>
   </div>
 </li>
       </ul>
@@ -580,7 +583,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2544-1990-7</p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -656,15 +661,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#chapter-summary-1" id="toc-chapter-summary-1" class="nav-link" data-scroll-target="#chapter-summary-1"><span class="header-section-number">21.21</span> Chapter Summary</a></li>
   <li><a href="#reflection-prompts" id="toc-reflection-prompts" class="nav-link" data-scroll-target="#reflection-prompts"><span class="header-section-number">21.22</span> Reflection Prompts</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/michael-borck/think-python-direct-ai/edit/main/chapters/chapter-connected-programs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="think-python-direct-ai.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="think-python-direct-ai.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/think-python-direct-ai"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/michael-borck/think-python-direct-ai/edit/main/chapters/chapter-connected-programs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/think-python-direct-ai.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/think-python-direct-ai.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/think-python-direct-ai"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/think-python-direct-ai"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-connected-programs.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Chapter 11: Connected Programs</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter-working-with-data.html">Real-World Programming</a></li><li class="breadcrumb-item"><a href="../chapters/chapter-connected-programs.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Connected Programs</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-connected-programs" class="quarto-section-identifier"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Chapter 11: Connected Programs</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-connected-programs" class="quarto-section-identifier"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Connected Programs</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -696,7 +701,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="the-concept-first" class="level2" data-number="21.1">
 <h2 data-number="21.1" class="anchored" data-anchor-id="the-concept-first"><span class="header-section-number">21.1</span> The Concept First</h2>
-<p>Every program you’ve written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world – weather apps, price trackers, news readers – all have one thing in common: they talk to other programs across the internet to get fresh, live information.</p>
+<p>Every program you’ve written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world (weather apps, price trackers, news readers) all have one thing in common: they talk to other programs across the internet to get fresh, live information.</p>
 <p>This is a fundamental shift. Your program stops being a closed box and becomes part of a network. Instead of <em>containing</em> all the data it needs, it <em>asks for</em> data from services that already have it. That’s the idea behind connected programs, and it’s how most modern software actually works.</p>
 </section>
 <section id="understanding-through-real-life" class="level2" data-number="21.2">
@@ -710,7 +715,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-restaurant-analogy" class="level3">
 <h3 class="anchored" data-anchor-id="the-restaurant-analogy">The Restaurant Analogy</h3>
 <p>Think of APIs like this: 1. <strong>Menu</strong> (API Documentation) - Lists what’s available 2. <strong>Order</strong> (Request) - You ask for specific items 3. <strong>Kitchen</strong> (Server) - Prepares your data 4. <strong>Delivery</strong> (Response) - You receive what you ordered</p>
-<p>You never walk into the kitchen yourself. You don’t need to know <em>how</em> the food is prepared – you just need to know what’s on the menu and how to order. APIs work the same way: your program doesn’t need to know how a weather service collects its data, only how to ask for it and what the answer will look like.</p>
+<p>You never walk into the kitchen yourself. You don’t need to know <em>how</em> the food is prepared. You just need to know what’s on the menu and how to order. APIs work the same way: your program doesn’t need to know how a weather service collects its data, only how to ask for it and what the answer will look like.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -753,7 +758,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Now that you understand the pattern, let’s see it in Python.</p>
 <section id="your-first-api-call" class="level3">
 <h3 class="anchored" data-anchor-id="your-first-api-call">Your First API Call</h3>
-<p>Let’s start with something fun – getting a random joke:</p>
+<p>Let’s start with something fun, getting a random joke:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a request to the joke API</span></span>
@@ -788,7 +793,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Request</strong>: “Hey weather service, what’s the temperature in Boston?”</li>
 <li><strong>Response</strong>: “It’s 72°F, partly cloudy”</li>
 </ol>
-<p>Every response comes with a <strong>status code</strong> – a number that tells you whether things went well. Think of it like a delivery receipt: 200 means “here’s your data,” 401 means “you’re not authorized,” 404 means “we don’t have that,” and 500 means “something broke on our end.” You don’t need to memorize these; you just need to know that 200 means success and anything else means something went wrong.</p>
+<p>Every response comes with a <strong>status code</strong>, a number that tells you whether things went well. Think of it like a delivery receipt: 200 means “here’s your data,” 401 means “you’re not authorized,” 404 means “we don’t have that,” and 500 means “something broke on our end.” You don’t need to memorize these; you just need to know that 200 means success and anything else means something went wrong.</p>
 <section id="the-request-response-cycle" class="level3">
 <h3 class="anchored" data-anchor-id="the-request-response-cycle">The Request-Response Cycle</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_weather(city):</span>
@@ -843,8 +848,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data</span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Try it with a quote API</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>quote_data <span class="op">=</span> explore_api_response(<span class="st">"https://api.quotable.io/random"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Try it with the joke API</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>joke_data <span class="op">=</span> explore_api_response(<span class="st">"https://official-joke-api.appspot.com/random_joke"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -862,7 +867,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="api-keys-your-programs-id-card" class="level2" data-number="21.8">
 <h2 data-number="21.8" class="anchored" data-anchor-id="api-keys-your-programs-id-card"><span class="header-section-number">21.8</span> API Keys: Your Program’s ID Card</h2>
-<p>Some APIs are open to everyone (like the joke API above), but many require an <strong>API key</strong> – a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.</p>
+<p>Some APIs are open to everyone (like the joke API above), but many require an <strong>API key</strong>, a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.</p>
 <section id="getting-and-using-api-keys" class="level3">
 <h3 class="anchored" data-anchor-id="getting-and-using-api-keys">Getting and Using API Keys</h3>
 <ol type="1">
@@ -871,6 +876,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Keep it secret</strong> - never put keys in your code!</li>
 <li><strong>Use it in requests</strong> as shown below</li>
 </ol>
+<p>Weather and news services require a free signup key; the joke and exchange-rate examples in this chapter work without one. Availability of free APIs changes. If an example stops working, ask AI for a current alternative.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_news_headlines():</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get top news headlines"""</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># DON'T DO THIS - key exposed in code!</span></span>
@@ -888,12 +894,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params)</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.json()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.json()</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_api_key(filename):</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Read an API key from the first line of a text file"""</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">'r'</span>) <span class="im">as</span> f:</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> f.readline().strip()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="building-a-weather-dashboard" class="level2" data-number="21.9">
 <h2 data-number="21.9" class="anchored" data-anchor-id="building-a-weather-dashboard"><span class="header-section-number">21.9</span> Building a Weather Dashboard</h2>
-<p>Now that you understand the building blocks – requests, responses, JSON, and API keys – let’s combine them into something useful. This weather comparison tool applies every concept from the previous sections:</p>
+<p>Now that you understand the building blocks (requests, responses, JSON, and API keys) let’s combine them into something useful. This weather comparison tool applies every concept from the previous sections:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_weather_dashboard(cities):</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Compare weather across multiple cities"""</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    api_key <span class="op">=</span> load_api_key(<span class="st">'weather_key.txt'</span>)</span>
@@ -979,7 +990,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="creating-a-currency-converter" class="level2" data-number="21.11">
 <h2 data-number="21.11" class="anchored" data-anchor-id="creating-a-currency-converter"><span class="header-section-number">21.11</span> Creating a Currency Converter</h2>
-<p>With error handling in place, let’s build something practical – a live currency converter. Notice how this example uses a free API that doesn’t require a key, making it a great one to try yourself:</p>
+<p>With error handling in place, let’s build something practical: a live currency converter. Notice how this example uses a free API that doesn’t require a key, making it a great one to try yourself:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_exchange_rate(from_currency, to_currency):</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get current exchange rate"""</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://api.exchangerate-api.com/v4/latest/"</span> <span class="op">+</span> from_currency</span>
@@ -1007,7 +1018,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="working-with-different-api-types" class="level2" data-number="21.12">
 <h2 data-number="21.12" class="anchored" data-anchor-id="working-with-different-api-types"><span class="header-section-number">21.12</span> Working with Different API Types</h2>
-<p>You’ll encounter different styles of APIs as you explore. For now, REST APIs are all you need – they’re the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.</p>
+<p>You’ll encounter different styles of APIs as you explore. For now, REST APIs are all you need, because they’re the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.</p>
 <section id="rest-apis-most-common" class="level3">
 <h3 class="anchored" data-anchor-id="rest-apis-most-common">REST APIs (Most Common)</h3>
 <ul>
@@ -1129,7 +1140,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="real-project-multi-source-dashboard" class="level2" data-number="21.16">
 <h2 data-number="21.16" class="anchored" data-anchor-id="real-project-multi-source-dashboard"><span class="header-section-number">21.16</span> Real Project: Multi-Source Dashboard</h2>
-<p>Let’s combine multiple APIs into one useful program:</p>
+<p>Let’s combine multiple APIs into one useful program. Each helper below (<code>get_weather</code>, <code>get_daily_quote</code>, <code>get_headlines</code>, <code>get_currency_rates</code>) is a small function built from the request-check-parse pattern you’ve practised throughout this chapter; the weather-app notebook in the book’s <code>code/</code> folder assembles a complete runnable version:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_morning_briefing():</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get weather, news, and quote for the day"""</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">☀️ GOOD MORNING! Here's your briefing:</span><span class="ch">\n</span><span class="st">"</span>)</span>
@@ -1413,16 +1424,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
     function toggleCodeHandler(show) {
       return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
           if (show) {
             details.open = true;
           } else {
             details.removeAttribute("open");
           }
         }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
         const fromCls = show ? "hidden" : "unhidden";
         const toCls = show ? "unhidden" : "hidden";
         for (let i=0; i<cellCodeDivs.length; i++) {
@@ -1774,17 +1785,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/chapter-working-with-data.html" class="pagination-link" aria-label="Chapter 10: Working with Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Chapter 10: Working with Data</span></span>
+      <a href="../chapters/chapter-working-with-data.html" class="pagination-link" aria-label="Working with Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Working with Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/chapter-interactive-systems.html" class="pagination-link" aria-label="Chapter 12: Interactive Systems">
-        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Chapter 12: Interactive Systems</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/chapter-interactive-systems.html" class="pagination-link" aria-label="Interactive Systems">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Interactive Systems</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Chapter 11: Connected Programs {#sec-connected-programs}</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Connected Programs {#sec-connected-programs}</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
@@ -1793,7 +1804,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Concept First</span></span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>Every program you've written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world -- weather apps, price trackers, news readers -- all have one thing in common: they talk to other programs across the internet to get fresh, live information.</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>Every program you've written so far lives in isolation. It knows only what you type in or save to a file. But the most useful programs in the world (weather apps, price trackers, news readers) all have one thing in common: they talk to other programs across the internet to get fresh, live information.</span>
 <span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>This is a fundamental shift. Your program stops being a closed box and becomes part of a network. Instead of *containing* all the data it needs, it *asks for* data from services that already have it. That's the idea behind connected programs, and it's how most modern software actually works.</span>
 <span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
@@ -1819,7 +1830,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Kitchen** (Server) - Prepares your data</span>
 <span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Delivery** (Response) - You receive what you ordered</span>
 <span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>You never walk into the kitchen yourself. You don't need to know *how* the food is prepared -- you just need to know what's on the menu and how to order. APIs work the same way: your program doesn't need to know how a weather service collects its data, only how to ask for it and what the answer will look like.</span>
+<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>You never walk into the kitchen yourself. You don't need to know *how* the food is prepared. You just need to know what's on the menu and how to order. APIs work the same way: your program doesn't need to know how a weather service collects its data, only how to ask for it and what the answer will look like.</span>
 <span id="cb20-37"><a href="#cb20-37" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
 <span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mental Model: The Request-Response Cycle</span></span>
@@ -1863,7 +1874,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-77"><a href="#cb20-77" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-78"><a href="#cb20-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### Your First API Call</span></span>
 <span id="cb20-79"><a href="#cb20-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-80"><a href="#cb20-80" aria-hidden="true" tabindex="-1"></a>Let's start with something fun -- getting a random joke:</span>
+<span id="cb20-80"><a href="#cb20-80" aria-hidden="true" tabindex="-1"></a>Let's start with something fun, getting a random joke:</span>
 <span id="cb20-81"><a href="#cb20-81" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-82"><a href="#cb20-82" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
 <span id="cb20-83"><a href="#cb20-83" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
@@ -1892,7 +1903,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-106"><a href="#cb20-106" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Request**: "Hey weather service, what's the temperature in Boston?"</span>
 <span id="cb20-107"><a href="#cb20-107" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Response**: "It's 72°F, partly cloudy"</span>
 <span id="cb20-108"><a href="#cb20-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-109"><a href="#cb20-109" aria-hidden="true" tabindex="-1"></a>Every response comes with a **status code** -- a number that tells you whether things went well. Think of it like a delivery receipt: 200 means "here's your data," 401 means "you're not authorized," 404 means "we don't have that," and 500 means "something broke on our end." You don't need to memorize these; you just need to know that 200 means success and anything else means something went wrong.</span>
+<span id="cb20-109"><a href="#cb20-109" aria-hidden="true" tabindex="-1"></a>Every response comes with a **status code**, a number that tells you whether things went well. Think of it like a delivery receipt: 200 means "here's your data," 401 means "you're not authorized," 404 means "we don't have that," and 500 means "something broke on our end." You don't need to memorize these; you just need to know that 200 means success and anything else means something went wrong.</span>
 <span id="cb20-110"><a href="#cb20-110" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-111"><a href="#cb20-111" aria-hidden="true" tabindex="-1"></a><span class="fu">### The Request-Response Cycle</span></span>
 <span id="cb20-112"><a href="#cb20-112" aria-hidden="true" tabindex="-1"></a></span>
@@ -1944,8 +1955,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-158"><a href="#cb20-158" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb20-159"><a href="#cb20-159" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data</span>
 <span id="cb20-160"><a href="#cb20-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-161"><a href="#cb20-161" aria-hidden="true" tabindex="-1"></a><span class="co"># Try it with a quote API</span></span>
-<span id="cb20-162"><a href="#cb20-162" aria-hidden="true" tabindex="-1"></a>quote_data <span class="op">=</span> explore_api_response(<span class="st">"https://api.quotable.io/random"</span>)</span>
+<span id="cb20-161"><a href="#cb20-161" aria-hidden="true" tabindex="-1"></a><span class="co"># Try it with the joke API</span></span>
+<span id="cb20-162"><a href="#cb20-162" aria-hidden="true" tabindex="-1"></a>joke_data <span class="op">=</span> explore_api_response(<span class="st">"https://official-joke-api.appspot.com/random_joke"</span>)</span>
 <span id="cb20-163"><a href="#cb20-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-164"><a href="#cb20-164" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-165"><a href="#cb20-165" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
@@ -1955,7 +1966,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-169"><a href="#cb20-169" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-170"><a href="#cb20-170" aria-hidden="true" tabindex="-1"></a><span class="fu">## API Keys: Your Program's ID Card</span></span>
 <span id="cb20-171"><a href="#cb20-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-172"><a href="#cb20-172" aria-hidden="true" tabindex="-1"></a>Some APIs are open to everyone (like the joke API above), but many require an **API key** -- a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.</span>
+<span id="cb20-172"><a href="#cb20-172" aria-hidden="true" tabindex="-1"></a>Some APIs are open to everyone (like the joke API above), but many require an **API key**, a unique string that identifies your program. Think of it like a library card: the library is free to use, but they need to know who you are so they can manage how many books you borrow. API keys let services track usage and prevent abuse.</span>
 <span id="cb20-173"><a href="#cb20-173" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-174"><a href="#cb20-174" aria-hidden="true" tabindex="-1"></a><span class="fu">### Getting and Using API Keys</span></span>
 <span id="cb20-175"><a href="#cb20-175" aria-hidden="true" tabindex="-1"></a></span>
@@ -1964,432 +1975,439 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-178"><a href="#cb20-178" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Keep it secret** - never put keys in your code!</span>
 <span id="cb20-179"><a href="#cb20-179" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Use it in requests** as shown below</span>
 <span id="cb20-180"><a href="#cb20-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-181"><a href="#cb20-181" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-182"><a href="#cb20-182" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_news_headlines():</span>
-<span id="cb20-183"><a href="#cb20-183" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get top news headlines"""</span></span>
-<span id="cb20-184"><a href="#cb20-184" aria-hidden="true" tabindex="-1"></a>    <span class="co"># DON'T DO THIS - key exposed in code!</span></span>
-<span id="cb20-185"><a href="#cb20-185" aria-hidden="true" tabindex="-1"></a>    <span class="co"># api_key = "abc123mysecretkey"</span></span>
-<span id="cb20-186"><a href="#cb20-186" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-187"><a href="#cb20-187" aria-hidden="true" tabindex="-1"></a>    <span class="co"># DO THIS - read from environment or file</span></span>
-<span id="cb20-188"><a href="#cb20-188" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="st">'api_keys.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> f:</span>
-<span id="cb20-189"><a href="#cb20-189" aria-hidden="true" tabindex="-1"></a>        api_key <span class="op">=</span> f.readline().strip()</span>
-<span id="cb20-190"><a href="#cb20-190" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-191"><a href="#cb20-191" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://newsapi.org/v2/top-headlines"</span></span>
-<span id="cb20-192"><a href="#cb20-192" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
-<span id="cb20-193"><a href="#cb20-193" aria-hidden="true" tabindex="-1"></a>        <span class="st">'apiKey'</span>: api_key,</span>
-<span id="cb20-194"><a href="#cb20-194" aria-hidden="true" tabindex="-1"></a>        <span class="st">'country'</span>: <span class="st">'us'</span>,</span>
-<span id="cb20-195"><a href="#cb20-195" aria-hidden="true" tabindex="-1"></a>        <span class="st">'pageSize'</span>: <span class="dv">5</span></span>
-<span id="cb20-196"><a href="#cb20-196" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb20-197"><a href="#cb20-197" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-198"><a href="#cb20-198" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params)</span>
-<span id="cb20-199"><a href="#cb20-199" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.json()</span>
-<span id="cb20-200"><a href="#cb20-200" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-201"><a href="#cb20-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-202"><a href="#cb20-202" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a Weather Dashboard</span></span>
-<span id="cb20-203"><a href="#cb20-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-204"><a href="#cb20-204" aria-hidden="true" tabindex="-1"></a>Now that you understand the building blocks -- requests, responses, JSON, and API keys -- let's combine them into something useful. This weather comparison tool applies every concept from the previous sections:</span>
-<span id="cb20-205"><a href="#cb20-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-206"><a href="#cb20-206" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-207"><a href="#cb20-207" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_weather_dashboard(cities):</span>
-<span id="cb20-208"><a href="#cb20-208" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Compare weather across multiple cities"""</span></span>
-<span id="cb20-209"><a href="#cb20-209" aria-hidden="true" tabindex="-1"></a>    api_key <span class="op">=</span> load_api_key(<span class="st">'weather_key.txt'</span>)</span>
-<span id="cb20-210"><a href="#cb20-210" aria-hidden="true" tabindex="-1"></a>    weather_data <span class="op">=</span> []</span>
-<span id="cb20-211"><a href="#cb20-211" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-212"><a href="#cb20-212" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> city <span class="kw">in</span> cities:</span>
-<span id="cb20-213"><a href="#cb20-213" aria-hidden="true" tabindex="-1"></a>        url <span class="op">=</span> <span class="ss">f"http://api.weatherapi.com/v1/current.json"</span></span>
-<span id="cb20-214"><a href="#cb20-214" aria-hidden="true" tabindex="-1"></a>        params <span class="op">=</span> {<span class="st">'key'</span>: api_key, <span class="st">'q'</span>: city}</span>
-<span id="cb20-215"><a href="#cb20-215" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb20-216"><a href="#cb20-216" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params)</span>
-<span id="cb20-217"><a href="#cb20-217" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb20-218"><a href="#cb20-218" aria-hidden="true" tabindex="-1"></a>            data <span class="op">=</span> response.json()</span>
-<span id="cb20-219"><a href="#cb20-219" aria-hidden="true" tabindex="-1"></a>            weather_data.append({</span>
-<span id="cb20-220"><a href="#cb20-220" aria-hidden="true" tabindex="-1"></a>                <span class="st">'city'</span>: city,</span>
-<span id="cb20-221"><a href="#cb20-221" aria-hidden="true" tabindex="-1"></a>                <span class="st">'temp'</span>: data[<span class="st">'current'</span>][<span class="st">'temp_f'</span>],</span>
-<span id="cb20-222"><a href="#cb20-222" aria-hidden="true" tabindex="-1"></a>                <span class="st">'condition'</span>: data[<span class="st">'current'</span>][<span class="st">'condition'</span>][<span class="st">'text'</span>],</span>
-<span id="cb20-223"><a href="#cb20-223" aria-hidden="true" tabindex="-1"></a>                <span class="st">'humidity'</span>: data[<span class="st">'current'</span>][<span class="st">'humidity'</span>]</span>
-<span id="cb20-224"><a href="#cb20-224" aria-hidden="true" tabindex="-1"></a>            })</span>
-<span id="cb20-225"><a href="#cb20-225" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-226"><a href="#cb20-226" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Display the dashboard</span></span>
-<span id="cb20-227"><a href="#cb20-227" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">🌤️  WEATHER DASHBOARD  🌤️"</span>)</span>
-<span id="cb20-228"><a href="#cb20-228" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">40</span>)</span>
-<span id="cb20-229"><a href="#cb20-229" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> weather <span class="kw">in</span> weather_data:</span>
-<span id="cb20-230"><a href="#cb20-230" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span>weather[<span class="st">'city'</span>]<span class="sc">}</span><span class="ss">:"</span>)</span>
-<span id="cb20-231"><a href="#cb20-231" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  Temperature: </span><span class="sc">{</span>weather[<span class="st">'temp'</span>]<span class="sc">}</span><span class="ss">°F"</span>)</span>
-<span id="cb20-232"><a href="#cb20-232" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  Condition: </span><span class="sc">{</span>weather[<span class="st">'condition'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-233"><a href="#cb20-233" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  Humidity: </span><span class="sc">{</span>weather[<span class="st">'humidity'</span>]<span class="sc">}</span><span class="ss">%"</span>)</span>
-<span id="cb20-234"><a href="#cb20-234" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-235"><a href="#cb20-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-236"><a href="#cb20-236" aria-hidden="true" tabindex="-1"></a><span class="fu">## Handling API Errors Gracefully</span></span>
-<span id="cb20-237"><a href="#cb20-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-238"><a href="#cb20-238" aria-hidden="true" tabindex="-1"></a>Unlike files on your computer, APIs depend on the internet, remote servers, and services you don't control. Things *will* go wrong, and your program needs to handle failures without crashing:</span>
-<span id="cb20-239"><a href="#cb20-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-240"><a href="#cb20-240" aria-hidden="true" tabindex="-1"></a><span class="fu">### Common API Problems</span></span>
-<span id="cb20-241"><a href="#cb20-241" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-242"><a href="#cb20-242" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**No Internet Connection** - Can't reach the server</span>
-<span id="cb20-243"><a href="#cb20-243" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Invalid API Key** - Authentication failed</span>
-<span id="cb20-244"><a href="#cb20-244" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Rate Limiting** - Too many requests</span>
-<span id="cb20-245"><a href="#cb20-245" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Server Errors** - API is down</span>
-<span id="cb20-246"><a href="#cb20-246" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Invalid Data** - Unexpected response format</span>
-<span id="cb20-247"><a href="#cb20-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-248"><a href="#cb20-248" aria-hidden="true" tabindex="-1"></a><span class="fu">### Error Handling Strategies</span></span>
-<span id="cb20-249"><a href="#cb20-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-250"><a href="#cb20-250" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-251"><a href="#cb20-251" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> safe_api_call(url, params<span class="op">=</span><span class="va">None</span>):</span>
-<span id="cb20-252"><a href="#cb20-252" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Make an API call with error handling"""</span></span>
-<span id="cb20-253"><a href="#cb20-253" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
-<span id="cb20-254"><a href="#cb20-254" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params, timeout<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb20-255"><a href="#cb20-255" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb20-256"><a href="#cb20-256" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check status code</span></span>
-<span id="cb20-257"><a href="#cb20-257" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb20-258"><a href="#cb20-258" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> response.json()</span>
-<span id="cb20-259"><a href="#cb20-259" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> response.status_code <span class="op">==</span> <span class="dv">401</span>:</span>
-<span id="cb20-260"><a href="#cb20-260" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"Error: Invalid API key"</span>)</span>
-<span id="cb20-261"><a href="#cb20-261" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> response.status_code <span class="op">==</span> <span class="dv">429</span>:</span>
-<span id="cb20-262"><a href="#cb20-262" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"Error: Too many requests - slow down!"</span>)</span>
-<span id="cb20-263"><a href="#cb20-263" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb20-264"><a href="#cb20-264" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"Error: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-265"><a href="#cb20-265" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb20-266"><a href="#cb20-266" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> requests.<span class="pp">ConnectionError</span>:</span>
-<span id="cb20-267"><a href="#cb20-267" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Error: No internet connection"</span>)</span>
-<span id="cb20-268"><a href="#cb20-268" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> requests.Timeout:</span>
-<span id="cb20-269"><a href="#cb20-269" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Error: Request timed out"</span>)</span>
-<span id="cb20-270"><a href="#cb20-270" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
-<span id="cb20-271"><a href="#cb20-271" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Unexpected error: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-272"><a href="#cb20-272" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-273"><a href="#cb20-273" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">None</span></span>
-<span id="cb20-274"><a href="#cb20-274" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-275"><a href="#cb20-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-276"><a href="#cb20-276" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb20-277"><a href="#cb20-277" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rate Limiting Reality</span></span>
-<span id="cb20-278"><a href="#cb20-278" aria-hidden="true" tabindex="-1"></a>Most free APIs limit how many requests you can make. Always check the documentation and add delays between requests if needed:</span>
-<span id="cb20-279"><a href="#cb20-279" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-280"><a href="#cb20-280" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
-<span id="cb20-281"><a href="#cb20-281" aria-hidden="true" tabindex="-1"></a>time.sleep(<span class="dv">1</span>)  <span class="co"># Wait 1 second between requests</span></span>
-<span id="cb20-282"><a href="#cb20-282" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-283"><a href="#cb20-283" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb20-284"><a href="#cb20-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-285"><a href="#cb20-285" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating a Currency Converter</span></span>
-<span id="cb20-286"><a href="#cb20-286" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-287"><a href="#cb20-287" aria-hidden="true" tabindex="-1"></a>With error handling in place, let's build something practical -- a live currency converter. Notice how this example uses a free API that doesn't require a key, making it a great one to try yourself:</span>
-<span id="cb20-288"><a href="#cb20-288" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-289"><a href="#cb20-289" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-290"><a href="#cb20-290" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_exchange_rate(from_currency, to_currency):</span>
-<span id="cb20-291"><a href="#cb20-291" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get current exchange rate"""</span></span>
-<span id="cb20-292"><a href="#cb20-292" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://api.exchangerate-api.com/v4/latest/"</span> <span class="op">+</span> from_currency</span>
-<span id="cb20-293"><a href="#cb20-293" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-294"><a href="#cb20-294" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url)</span>
-<span id="cb20-295"><a href="#cb20-295" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb20-296"><a href="#cb20-296" aria-hidden="true" tabindex="-1"></a>        data <span class="op">=</span> response.json()</span>
-<span id="cb20-297"><a href="#cb20-297" aria-hidden="true" tabindex="-1"></a>        rate <span class="op">=</span> data[<span class="st">'rates'</span>].get(to_currency)</span>
-<span id="cb20-298"><a href="#cb20-298" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> rate</span>
-<span id="cb20-299"><a href="#cb20-299" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">None</span></span>
-<span id="cb20-300"><a href="#cb20-300" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-301"><a href="#cb20-301" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_currency(amount, from_currency, to_currency):</span>
-<span id="cb20-302"><a href="#cb20-302" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Convert between currencies"""</span></span>
-<span id="cb20-303"><a href="#cb20-303" aria-hidden="true" tabindex="-1"></a>    rate <span class="op">=</span> get_exchange_rate(from_currency, to_currency)</span>
-<span id="cb20-304"><a href="#cb20-304" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-305"><a href="#cb20-305" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> rate:</span>
-<span id="cb20-306"><a href="#cb20-306" aria-hidden="true" tabindex="-1"></a>        converted <span class="op">=</span> amount <span class="op">*</span> rate</span>
-<span id="cb20-307"><a href="#cb20-307" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>amount<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>from_currency<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>converted<span class="sc">:.2f}</span><span class="ss"> </span><span class="sc">{</span>to_currency<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-308"><a href="#cb20-308" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Exchange rate: 1 </span><span class="sc">{</span>from_currency<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>rate<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>to_currency<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-309"><a href="#cb20-309" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb20-310"><a href="#cb20-310" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Could not get exchange rate"</span>)</span>
-<span id="cb20-311"><a href="#cb20-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-312"><a href="#cb20-312" aria-hidden="true" tabindex="-1"></a><span class="co"># Use it</span></span>
-<span id="cb20-313"><a href="#cb20-313" aria-hidden="true" tabindex="-1"></a>convert_currency(<span class="dv">100</span>, <span class="st">"USD"</span>, <span class="st">"EUR"</span>)</span>
-<span id="cb20-314"><a href="#cb20-314" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-315"><a href="#cb20-315" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-316"><a href="#cb20-316" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working with Different API Types</span></span>
-<span id="cb20-317"><a href="#cb20-317" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-318"><a href="#cb20-318" aria-hidden="true" tabindex="-1"></a>You'll encounter different styles of APIs as you explore. For now, REST APIs are all you need -- they're the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.</span>
-<span id="cb20-319"><a href="#cb20-319" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-320"><a href="#cb20-320" aria-hidden="true" tabindex="-1"></a><span class="fu">### REST APIs (Most Common)</span></span>
-<span id="cb20-321"><a href="#cb20-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Request specific URLs</span>
-<span id="cb20-322"><a href="#cb20-322" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Get JSON responses</span>
-<span id="cb20-323"><a href="#cb20-323" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Like ordering from a menu</span>
+<span id="cb20-181"><a href="#cb20-181" aria-hidden="true" tabindex="-1"></a>Weather and news services require a free signup key; the joke and exchange-rate examples in this chapter work without one. Availability of free APIs changes. If an example stops working, ask AI for a current alternative.</span>
+<span id="cb20-182"><a href="#cb20-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-183"><a href="#cb20-183" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-184"><a href="#cb20-184" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_news_headlines():</span>
+<span id="cb20-185"><a href="#cb20-185" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get top news headlines"""</span></span>
+<span id="cb20-186"><a href="#cb20-186" aria-hidden="true" tabindex="-1"></a>    <span class="co"># DON'T DO THIS - key exposed in code!</span></span>
+<span id="cb20-187"><a href="#cb20-187" aria-hidden="true" tabindex="-1"></a>    <span class="co"># api_key = "abc123mysecretkey"</span></span>
+<span id="cb20-188"><a href="#cb20-188" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-189"><a href="#cb20-189" aria-hidden="true" tabindex="-1"></a>    <span class="co"># DO THIS - read from environment or file</span></span>
+<span id="cb20-190"><a href="#cb20-190" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="st">'api_keys.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> f:</span>
+<span id="cb20-191"><a href="#cb20-191" aria-hidden="true" tabindex="-1"></a>        api_key <span class="op">=</span> f.readline().strip()</span>
+<span id="cb20-192"><a href="#cb20-192" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-193"><a href="#cb20-193" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://newsapi.org/v2/top-headlines"</span></span>
+<span id="cb20-194"><a href="#cb20-194" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
+<span id="cb20-195"><a href="#cb20-195" aria-hidden="true" tabindex="-1"></a>        <span class="st">'apiKey'</span>: api_key,</span>
+<span id="cb20-196"><a href="#cb20-196" aria-hidden="true" tabindex="-1"></a>        <span class="st">'country'</span>: <span class="st">'us'</span>,</span>
+<span id="cb20-197"><a href="#cb20-197" aria-hidden="true" tabindex="-1"></a>        <span class="st">'pageSize'</span>: <span class="dv">5</span></span>
+<span id="cb20-198"><a href="#cb20-198" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb20-199"><a href="#cb20-199" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-200"><a href="#cb20-200" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params)</span>
+<span id="cb20-201"><a href="#cb20-201" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.json()</span>
+<span id="cb20-202"><a href="#cb20-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-203"><a href="#cb20-203" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> load_api_key(filename):</span>
+<span id="cb20-204"><a href="#cb20-204" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Read an API key from the first line of a text file"""</span></span>
+<span id="cb20-205"><a href="#cb20-205" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">'r'</span>) <span class="im">as</span> f:</span>
+<span id="cb20-206"><a href="#cb20-206" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> f.readline().strip()</span>
+<span id="cb20-207"><a href="#cb20-207" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-208"><a href="#cb20-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-209"><a href="#cb20-209" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a Weather Dashboard</span></span>
+<span id="cb20-210"><a href="#cb20-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-211"><a href="#cb20-211" aria-hidden="true" tabindex="-1"></a>Now that you understand the building blocks (requests, responses, JSON, and API keys) let's combine them into something useful. This weather comparison tool applies every concept from the previous sections:</span>
+<span id="cb20-212"><a href="#cb20-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-213"><a href="#cb20-213" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-214"><a href="#cb20-214" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_weather_dashboard(cities):</span>
+<span id="cb20-215"><a href="#cb20-215" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Compare weather across multiple cities"""</span></span>
+<span id="cb20-216"><a href="#cb20-216" aria-hidden="true" tabindex="-1"></a>    api_key <span class="op">=</span> load_api_key(<span class="st">'weather_key.txt'</span>)</span>
+<span id="cb20-217"><a href="#cb20-217" aria-hidden="true" tabindex="-1"></a>    weather_data <span class="op">=</span> []</span>
+<span id="cb20-218"><a href="#cb20-218" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-219"><a href="#cb20-219" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> city <span class="kw">in</span> cities:</span>
+<span id="cb20-220"><a href="#cb20-220" aria-hidden="true" tabindex="-1"></a>        url <span class="op">=</span> <span class="ss">f"http://api.weatherapi.com/v1/current.json"</span></span>
+<span id="cb20-221"><a href="#cb20-221" aria-hidden="true" tabindex="-1"></a>        params <span class="op">=</span> {<span class="st">'key'</span>: api_key, <span class="st">'q'</span>: city}</span>
+<span id="cb20-222"><a href="#cb20-222" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb20-223"><a href="#cb20-223" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params)</span>
+<span id="cb20-224"><a href="#cb20-224" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb20-225"><a href="#cb20-225" aria-hidden="true" tabindex="-1"></a>            data <span class="op">=</span> response.json()</span>
+<span id="cb20-226"><a href="#cb20-226" aria-hidden="true" tabindex="-1"></a>            weather_data.append({</span>
+<span id="cb20-227"><a href="#cb20-227" aria-hidden="true" tabindex="-1"></a>                <span class="st">'city'</span>: city,</span>
+<span id="cb20-228"><a href="#cb20-228" aria-hidden="true" tabindex="-1"></a>                <span class="st">'temp'</span>: data[<span class="st">'current'</span>][<span class="st">'temp_f'</span>],</span>
+<span id="cb20-229"><a href="#cb20-229" aria-hidden="true" tabindex="-1"></a>                <span class="st">'condition'</span>: data[<span class="st">'current'</span>][<span class="st">'condition'</span>][<span class="st">'text'</span>],</span>
+<span id="cb20-230"><a href="#cb20-230" aria-hidden="true" tabindex="-1"></a>                <span class="st">'humidity'</span>: data[<span class="st">'current'</span>][<span class="st">'humidity'</span>]</span>
+<span id="cb20-231"><a href="#cb20-231" aria-hidden="true" tabindex="-1"></a>            })</span>
+<span id="cb20-232"><a href="#cb20-232" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-233"><a href="#cb20-233" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Display the dashboard</span></span>
+<span id="cb20-234"><a href="#cb20-234" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">🌤️  WEATHER DASHBOARD  🌤️"</span>)</span>
+<span id="cb20-235"><a href="#cb20-235" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">40</span>)</span>
+<span id="cb20-236"><a href="#cb20-236" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> weather <span class="kw">in</span> weather_data:</span>
+<span id="cb20-237"><a href="#cb20-237" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span>weather[<span class="st">'city'</span>]<span class="sc">}</span><span class="ss">:"</span>)</span>
+<span id="cb20-238"><a href="#cb20-238" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  Temperature: </span><span class="sc">{</span>weather[<span class="st">'temp'</span>]<span class="sc">}</span><span class="ss">°F"</span>)</span>
+<span id="cb20-239"><a href="#cb20-239" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  Condition: </span><span class="sc">{</span>weather[<span class="st">'condition'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-240"><a href="#cb20-240" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"  Humidity: </span><span class="sc">{</span>weather[<span class="st">'humidity'</span>]<span class="sc">}</span><span class="ss">%"</span>)</span>
+<span id="cb20-241"><a href="#cb20-241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-242"><a href="#cb20-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-243"><a href="#cb20-243" aria-hidden="true" tabindex="-1"></a><span class="fu">## Handling API Errors Gracefully</span></span>
+<span id="cb20-244"><a href="#cb20-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-245"><a href="#cb20-245" aria-hidden="true" tabindex="-1"></a>Unlike files on your computer, APIs depend on the internet, remote servers, and services you don't control. Things *will* go wrong, and your program needs to handle failures without crashing:</span>
+<span id="cb20-246"><a href="#cb20-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-247"><a href="#cb20-247" aria-hidden="true" tabindex="-1"></a><span class="fu">### Common API Problems</span></span>
+<span id="cb20-248"><a href="#cb20-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-249"><a href="#cb20-249" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**No Internet Connection** - Can't reach the server</span>
+<span id="cb20-250"><a href="#cb20-250" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Invalid API Key** - Authentication failed</span>
+<span id="cb20-251"><a href="#cb20-251" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Rate Limiting** - Too many requests</span>
+<span id="cb20-252"><a href="#cb20-252" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Server Errors** - API is down</span>
+<span id="cb20-253"><a href="#cb20-253" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Invalid Data** - Unexpected response format</span>
+<span id="cb20-254"><a href="#cb20-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-255"><a href="#cb20-255" aria-hidden="true" tabindex="-1"></a><span class="fu">### Error Handling Strategies</span></span>
+<span id="cb20-256"><a href="#cb20-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-257"><a href="#cb20-257" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-258"><a href="#cb20-258" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> safe_api_call(url, params<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb20-259"><a href="#cb20-259" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Make an API call with error handling"""</span></span>
+<span id="cb20-260"><a href="#cb20-260" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb20-261"><a href="#cb20-261" aria-hidden="true" tabindex="-1"></a>        response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params, timeout<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb20-262"><a href="#cb20-262" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb20-263"><a href="#cb20-263" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check status code</span></span>
+<span id="cb20-264"><a href="#cb20-264" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb20-265"><a href="#cb20-265" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> response.json()</span>
+<span id="cb20-266"><a href="#cb20-266" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> response.status_code <span class="op">==</span> <span class="dv">401</span>:</span>
+<span id="cb20-267"><a href="#cb20-267" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"Error: Invalid API key"</span>)</span>
+<span id="cb20-268"><a href="#cb20-268" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> response.status_code <span class="op">==</span> <span class="dv">429</span>:</span>
+<span id="cb20-269"><a href="#cb20-269" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"Error: Too many requests - slow down!"</span>)</span>
+<span id="cb20-270"><a href="#cb20-270" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb20-271"><a href="#cb20-271" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"Error: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-272"><a href="#cb20-272" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb20-273"><a href="#cb20-273" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> requests.<span class="pp">ConnectionError</span>:</span>
+<span id="cb20-274"><a href="#cb20-274" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Error: No internet connection"</span>)</span>
+<span id="cb20-275"><a href="#cb20-275" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> requests.Timeout:</span>
+<span id="cb20-276"><a href="#cb20-276" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Error: Request timed out"</span>)</span>
+<span id="cb20-277"><a href="#cb20-277" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb20-278"><a href="#cb20-278" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Unexpected error: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-279"><a href="#cb20-279" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-280"><a href="#cb20-280" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb20-281"><a href="#cb20-281" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-282"><a href="#cb20-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-283"><a href="#cb20-283" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb20-284"><a href="#cb20-284" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rate Limiting Reality</span></span>
+<span id="cb20-285"><a href="#cb20-285" aria-hidden="true" tabindex="-1"></a>Most free APIs limit how many requests you can make. Always check the documentation and add delays between requests if needed:</span>
+<span id="cb20-286"><a href="#cb20-286" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-287"><a href="#cb20-287" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb20-288"><a href="#cb20-288" aria-hidden="true" tabindex="-1"></a>time.sleep(<span class="dv">1</span>)  <span class="co"># Wait 1 second between requests</span></span>
+<span id="cb20-289"><a href="#cb20-289" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-290"><a href="#cb20-290" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb20-291"><a href="#cb20-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-292"><a href="#cb20-292" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating a Currency Converter</span></span>
+<span id="cb20-293"><a href="#cb20-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-294"><a href="#cb20-294" aria-hidden="true" tabindex="-1"></a>With error handling in place, let's build something practical: a live currency converter. Notice how this example uses a free API that doesn't require a key, making it a great one to try yourself:</span>
+<span id="cb20-295"><a href="#cb20-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-296"><a href="#cb20-296" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-297"><a href="#cb20-297" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_exchange_rate(from_currency, to_currency):</span>
+<span id="cb20-298"><a href="#cb20-298" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get current exchange rate"""</span></span>
+<span id="cb20-299"><a href="#cb20-299" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://api.exchangerate-api.com/v4/latest/"</span> <span class="op">+</span> from_currency</span>
+<span id="cb20-300"><a href="#cb20-300" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-301"><a href="#cb20-301" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url)</span>
+<span id="cb20-302"><a href="#cb20-302" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb20-303"><a href="#cb20-303" aria-hidden="true" tabindex="-1"></a>        data <span class="op">=</span> response.json()</span>
+<span id="cb20-304"><a href="#cb20-304" aria-hidden="true" tabindex="-1"></a>        rate <span class="op">=</span> data[<span class="st">'rates'</span>].get(to_currency)</span>
+<span id="cb20-305"><a href="#cb20-305" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> rate</span>
+<span id="cb20-306"><a href="#cb20-306" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb20-307"><a href="#cb20-307" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-308"><a href="#cb20-308" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_currency(amount, from_currency, to_currency):</span>
+<span id="cb20-309"><a href="#cb20-309" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Convert between currencies"""</span></span>
+<span id="cb20-310"><a href="#cb20-310" aria-hidden="true" tabindex="-1"></a>    rate <span class="op">=</span> get_exchange_rate(from_currency, to_currency)</span>
+<span id="cb20-311"><a href="#cb20-311" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-312"><a href="#cb20-312" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> rate:</span>
+<span id="cb20-313"><a href="#cb20-313" aria-hidden="true" tabindex="-1"></a>        converted <span class="op">=</span> amount <span class="op">*</span> rate</span>
+<span id="cb20-314"><a href="#cb20-314" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>amount<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>from_currency<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>converted<span class="sc">:.2f}</span><span class="ss"> </span><span class="sc">{</span>to_currency<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-315"><a href="#cb20-315" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Exchange rate: 1 </span><span class="sc">{</span>from_currency<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>rate<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>to_currency<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-316"><a href="#cb20-316" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb20-317"><a href="#cb20-317" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Could not get exchange rate"</span>)</span>
+<span id="cb20-318"><a href="#cb20-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-319"><a href="#cb20-319" aria-hidden="true" tabindex="-1"></a><span class="co"># Use it</span></span>
+<span id="cb20-320"><a href="#cb20-320" aria-hidden="true" tabindex="-1"></a>convert_currency(<span class="dv">100</span>, <span class="st">"USD"</span>, <span class="st">"EUR"</span>)</span>
+<span id="cb20-321"><a href="#cb20-321" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-322"><a href="#cb20-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-323"><a href="#cb20-323" aria-hidden="true" tabindex="-1"></a><span class="fu">## Working with Different API Types</span></span>
 <span id="cb20-324"><a href="#cb20-324" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-325"><a href="#cb20-325" aria-hidden="true" tabindex="-1"></a><span class="fu">### Real-time APIs</span></span>
-<span id="cb20-326"><a href="#cb20-326" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Continuous data streams</span>
-<span id="cb20-327"><a href="#cb20-327" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Like a news ticker</span>
-<span id="cb20-328"><a href="#cb20-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>More complex to handle</span>
-<span id="cb20-329"><a href="#cb20-329" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-330"><a href="#cb20-330" aria-hidden="true" tabindex="-1"></a><span class="fu">### GraphQL APIs</span></span>
-<span id="cb20-331"><a href="#cb20-331" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Request exactly what you need</span>
-<span id="cb20-332"><a href="#cb20-332" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Like a customizable menu</span>
-<span id="cb20-333"><a href="#cb20-333" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Growing in popularity</span>
-<span id="cb20-334"><a href="#cb20-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-335"><a href="#cb20-335" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a News Aggregator</span></span>
+<span id="cb20-325"><a href="#cb20-325" aria-hidden="true" tabindex="-1"></a>You'll encounter different styles of APIs as you explore. For now, REST APIs are all you need, because they're the most common and the simplest to understand. The others are worth knowing about so you recognize the terms when AI mentions them.</span>
+<span id="cb20-326"><a href="#cb20-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-327"><a href="#cb20-327" aria-hidden="true" tabindex="-1"></a><span class="fu">### REST APIs (Most Common)</span></span>
+<span id="cb20-328"><a href="#cb20-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Request specific URLs</span>
+<span id="cb20-329"><a href="#cb20-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Get JSON responses</span>
+<span id="cb20-330"><a href="#cb20-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Like ordering from a menu</span>
+<span id="cb20-331"><a href="#cb20-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-332"><a href="#cb20-332" aria-hidden="true" tabindex="-1"></a><span class="fu">### Real-time APIs</span></span>
+<span id="cb20-333"><a href="#cb20-333" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Continuous data streams</span>
+<span id="cb20-334"><a href="#cb20-334" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Like a news ticker</span>
+<span id="cb20-335"><a href="#cb20-335" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>More complex to handle</span>
 <span id="cb20-336"><a href="#cb20-336" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-337"><a href="#cb20-337" aria-hidden="true" tabindex="-1"></a>Let's create a program that collects news from multiple sources:</span>
-<span id="cb20-338"><a href="#cb20-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-339"><a href="#cb20-339" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-340"><a href="#cb20-340" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_tech_news():</span>
-<span id="cb20-341"><a href="#cb20-341" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get latest technology news"""</span></span>
-<span id="cb20-342"><a href="#cb20-342" aria-hidden="true" tabindex="-1"></a>    api_key <span class="op">=</span> load_api_key(<span class="st">'news_key.txt'</span>)</span>
-<span id="cb20-343"><a href="#cb20-343" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-344"><a href="#cb20-344" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get news from API</span></span>
-<span id="cb20-345"><a href="#cb20-345" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://newsapi.org/v2/top-headlines"</span></span>
-<span id="cb20-346"><a href="#cb20-346" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
-<span id="cb20-347"><a href="#cb20-347" aria-hidden="true" tabindex="-1"></a>        <span class="st">'apiKey'</span>: api_key,</span>
-<span id="cb20-348"><a href="#cb20-348" aria-hidden="true" tabindex="-1"></a>        <span class="st">'category'</span>: <span class="st">'technology'</span>,</span>
-<span id="cb20-349"><a href="#cb20-349" aria-hidden="true" tabindex="-1"></a>        <span class="st">'pageSize'</span>: <span class="dv">10</span></span>
-<span id="cb20-350"><a href="#cb20-350" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb20-351"><a href="#cb20-351" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-352"><a href="#cb20-352" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params)</span>
-<span id="cb20-353"><a href="#cb20-353" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb20-354"><a href="#cb20-354" aria-hidden="true" tabindex="-1"></a>        articles <span class="op">=</span> response.json()[<span class="st">'articles'</span>]</span>
-<span id="cb20-355"><a href="#cb20-355" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb20-356"><a href="#cb20-356" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Display headlines</span></span>
-<span id="cb20-357"><a href="#cb20-357" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">📰 LATEST TECH NEWS"</span>)</span>
-<span id="cb20-358"><a href="#cb20-358" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">50</span>)</span>
-<span id="cb20-359"><a href="#cb20-359" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, article <span class="kw">in</span> <span class="bu">enumerate</span>(articles, <span class="dv">1</span>):</span>
-<span id="cb20-360"><a href="#cb20-360" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>article[<span class="st">'title'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-361"><a href="#cb20-361" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"   Source: </span><span class="sc">{</span>article[<span class="st">'source'</span>][<span class="st">'name'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-362"><a href="#cb20-362" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"   </span><span class="sc">{</span>article[<span class="st">'description'</span>][:<span class="dv">100</span>]<span class="sc">}</span><span class="ss">..."</span>)</span>
-<span id="cb20-363"><a href="#cb20-363" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-364"><a href="#cb20-364" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the aggregator</span></span>
-<span id="cb20-365"><a href="#cb20-365" aria-hidden="true" tabindex="-1"></a>get_tech_news()</span>
-<span id="cb20-366"><a href="#cb20-366" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-367"><a href="#cb20-367" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-368"><a href="#cb20-368" aria-hidden="true" tabindex="-1"></a><span class="fu">## API Best Practices</span></span>
-<span id="cb20-369"><a href="#cb20-369" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-370"><a href="#cb20-370" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. Cache Responses</span></span>
-<span id="cb20-371"><a href="#cb20-371" aria-hidden="true" tabindex="-1"></a>Don't request the same data repeatedly:</span>
-<span id="cb20-372"><a href="#cb20-372" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-373"><a href="#cb20-373" aria-hidden="true" tabindex="-1"></a>cache <span class="op">=</span> {}</span>
+<span id="cb20-337"><a href="#cb20-337" aria-hidden="true" tabindex="-1"></a><span class="fu">### GraphQL APIs</span></span>
+<span id="cb20-338"><a href="#cb20-338" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Request exactly what you need</span>
+<span id="cb20-339"><a href="#cb20-339" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Like a customizable menu</span>
+<span id="cb20-340"><a href="#cb20-340" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Growing in popularity</span>
+<span id="cb20-341"><a href="#cb20-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-342"><a href="#cb20-342" aria-hidden="true" tabindex="-1"></a><span class="fu">## Building a News Aggregator</span></span>
+<span id="cb20-343"><a href="#cb20-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-344"><a href="#cb20-344" aria-hidden="true" tabindex="-1"></a>Let's create a program that collects news from multiple sources:</span>
+<span id="cb20-345"><a href="#cb20-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-346"><a href="#cb20-346" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-347"><a href="#cb20-347" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_tech_news():</span>
+<span id="cb20-348"><a href="#cb20-348" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get latest technology news"""</span></span>
+<span id="cb20-349"><a href="#cb20-349" aria-hidden="true" tabindex="-1"></a>    api_key <span class="op">=</span> load_api_key(<span class="st">'news_key.txt'</span>)</span>
+<span id="cb20-350"><a href="#cb20-350" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-351"><a href="#cb20-351" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get news from API</span></span>
+<span id="cb20-352"><a href="#cb20-352" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> <span class="st">"https://newsapi.org/v2/top-headlines"</span></span>
+<span id="cb20-353"><a href="#cb20-353" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
+<span id="cb20-354"><a href="#cb20-354" aria-hidden="true" tabindex="-1"></a>        <span class="st">'apiKey'</span>: api_key,</span>
+<span id="cb20-355"><a href="#cb20-355" aria-hidden="true" tabindex="-1"></a>        <span class="st">'category'</span>: <span class="st">'technology'</span>,</span>
+<span id="cb20-356"><a href="#cb20-356" aria-hidden="true" tabindex="-1"></a>        <span class="st">'pageSize'</span>: <span class="dv">10</span></span>
+<span id="cb20-357"><a href="#cb20-357" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb20-358"><a href="#cb20-358" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-359"><a href="#cb20-359" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url, params<span class="op">=</span>params)</span>
+<span id="cb20-360"><a href="#cb20-360" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb20-361"><a href="#cb20-361" aria-hidden="true" tabindex="-1"></a>        articles <span class="op">=</span> response.json()[<span class="st">'articles'</span>]</span>
+<span id="cb20-362"><a href="#cb20-362" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb20-363"><a href="#cb20-363" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Display headlines</span></span>
+<span id="cb20-364"><a href="#cb20-364" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">📰 LATEST TECH NEWS"</span>)</span>
+<span id="cb20-365"><a href="#cb20-365" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">50</span>)</span>
+<span id="cb20-366"><a href="#cb20-366" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, article <span class="kw">in</span> <span class="bu">enumerate</span>(articles, <span class="dv">1</span>):</span>
+<span id="cb20-367"><a href="#cb20-367" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">. </span><span class="sc">{</span>article[<span class="st">'title'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-368"><a href="#cb20-368" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"   Source: </span><span class="sc">{</span>article[<span class="st">'source'</span>][<span class="st">'name'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-369"><a href="#cb20-369" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"   </span><span class="sc">{</span>article[<span class="st">'description'</span>][:<span class="dv">100</span>]<span class="sc">}</span><span class="ss">..."</span>)</span>
+<span id="cb20-370"><a href="#cb20-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-371"><a href="#cb20-371" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the aggregator</span></span>
+<span id="cb20-372"><a href="#cb20-372" aria-hidden="true" tabindex="-1"></a>get_tech_news()</span>
+<span id="cb20-373"><a href="#cb20-373" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-374"><a href="#cb20-374" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-375"><a href="#cb20-375" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_cached_weather(city):</span>
-<span id="cb20-376"><a href="#cb20-376" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> city <span class="kw">not</span> <span class="kw">in</span> cache:</span>
-<span id="cb20-377"><a href="#cb20-377" aria-hidden="true" tabindex="-1"></a>        cache[city] <span class="op">=</span> fetch_weather_from_api(city)</span>
-<span id="cb20-378"><a href="#cb20-378" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cache[city]</span>
-<span id="cb20-379"><a href="#cb20-379" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-380"><a href="#cb20-380" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-381"><a href="#cb20-381" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Handle Timeouts</span></span>
-<span id="cb20-382"><a href="#cb20-382" aria-hidden="true" tabindex="-1"></a>Networks can be slow:</span>
-<span id="cb20-383"><a href="#cb20-383" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-384"><a href="#cb20-384" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url, timeout<span class="op">=</span><span class="dv">5</span>)  <span class="co"># 5 second timeout</span></span>
-<span id="cb20-385"><a href="#cb20-385" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-386"><a href="#cb20-386" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-387"><a href="#cb20-387" aria-hidden="true" tabindex="-1"></a><span class="fu">### 3. Validate Data</span></span>
-<span id="cb20-388"><a href="#cb20-388" aria-hidden="true" tabindex="-1"></a>APIs can return unexpected data:</span>
-<span id="cb20-389"><a href="#cb20-389" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-390"><a href="#cb20-390" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> safe_get(data, <span class="op">*</span>keys):</span>
-<span id="cb20-391"><a href="#cb20-391" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Safely navigate nested dictionaries"""</span></span>
-<span id="cb20-392"><a href="#cb20-392" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key <span class="kw">in</span> keys:</span>
-<span id="cb20-393"><a href="#cb20-393" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">isinstance</span>(data, <span class="bu">dict</span>):</span>
-<span id="cb20-394"><a href="#cb20-394" aria-hidden="true" tabindex="-1"></a>            data <span class="op">=</span> data.get(key)</span>
-<span id="cb20-395"><a href="#cb20-395" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb20-396"><a href="#cb20-396" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">None</span></span>
-<span id="cb20-397"><a href="#cb20-397" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data</span>
-<span id="cb20-398"><a href="#cb20-398" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-399"><a href="#cb20-399" aria-hidden="true" tabindex="-1"></a><span class="co"># Use: safe_get(data, 'current', 'temp_f')</span></span>
-<span id="cb20-400"><a href="#cb20-400" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-401"><a href="#cb20-401" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-402"><a href="#cb20-402" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Your API Toolkit</span></span>
-<span id="cb20-403"><a href="#cb20-403" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-404"><a href="#cb20-404" aria-hidden="true" tabindex="-1"></a>Once you've written a few API calls, you'll notice you're repeating the same steps: build a URL, send a request, check the status, parse the JSON. That repetition is a signal that it's time to build reusable tools:</span>
+<span id="cb20-375"><a href="#cb20-375" aria-hidden="true" tabindex="-1"></a><span class="fu">## API Best Practices</span></span>
+<span id="cb20-376"><a href="#cb20-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-377"><a href="#cb20-377" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. Cache Responses</span></span>
+<span id="cb20-378"><a href="#cb20-378" aria-hidden="true" tabindex="-1"></a>Don't request the same data repeatedly:</span>
+<span id="cb20-379"><a href="#cb20-379" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-380"><a href="#cb20-380" aria-hidden="true" tabindex="-1"></a>cache <span class="op">=</span> {}</span>
+<span id="cb20-381"><a href="#cb20-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-382"><a href="#cb20-382" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_cached_weather(city):</span>
+<span id="cb20-383"><a href="#cb20-383" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> city <span class="kw">not</span> <span class="kw">in</span> cache:</span>
+<span id="cb20-384"><a href="#cb20-384" aria-hidden="true" tabindex="-1"></a>        cache[city] <span class="op">=</span> fetch_weather_from_api(city)</span>
+<span id="cb20-385"><a href="#cb20-385" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cache[city]</span>
+<span id="cb20-386"><a href="#cb20-386" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-387"><a href="#cb20-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-388"><a href="#cb20-388" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Handle Timeouts</span></span>
+<span id="cb20-389"><a href="#cb20-389" aria-hidden="true" tabindex="-1"></a>Networks can be slow:</span>
+<span id="cb20-390"><a href="#cb20-390" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-391"><a href="#cb20-391" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url, timeout<span class="op">=</span><span class="dv">5</span>)  <span class="co"># 5 second timeout</span></span>
+<span id="cb20-392"><a href="#cb20-392" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-393"><a href="#cb20-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-394"><a href="#cb20-394" aria-hidden="true" tabindex="-1"></a><span class="fu">### 3. Validate Data</span></span>
+<span id="cb20-395"><a href="#cb20-395" aria-hidden="true" tabindex="-1"></a>APIs can return unexpected data:</span>
+<span id="cb20-396"><a href="#cb20-396" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-397"><a href="#cb20-397" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> safe_get(data, <span class="op">*</span>keys):</span>
+<span id="cb20-398"><a href="#cb20-398" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Safely navigate nested dictionaries"""</span></span>
+<span id="cb20-399"><a href="#cb20-399" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key <span class="kw">in</span> keys:</span>
+<span id="cb20-400"><a href="#cb20-400" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">isinstance</span>(data, <span class="bu">dict</span>):</span>
+<span id="cb20-401"><a href="#cb20-401" aria-hidden="true" tabindex="-1"></a>            data <span class="op">=</span> data.get(key)</span>
+<span id="cb20-402"><a href="#cb20-402" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb20-403"><a href="#cb20-403" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb20-404"><a href="#cb20-404" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data</span>
 <span id="cb20-405"><a href="#cb20-405" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-406"><a href="#cb20-406" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-407"><a href="#cb20-407" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> APIClient:</span>
-<span id="cb20-408"><a href="#cb20-408" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Reusable API client"""</span></span>
-<span id="cb20-409"><a href="#cb20-409" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-410"><a href="#cb20-410" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, base_url, api_key<span class="op">=</span><span class="va">None</span>):</span>
-<span id="cb20-411"><a href="#cb20-411" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.base_url <span class="op">=</span> base_url</span>
-<span id="cb20-412"><a href="#cb20-412" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.api_key <span class="op">=</span> api_key</span>
-<span id="cb20-413"><a href="#cb20-413" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session <span class="op">=</span> requests.Session()</span>
-<span id="cb20-414"><a href="#cb20-414" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-415"><a href="#cb20-415" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> get(<span class="va">self</span>, endpoint, params<span class="op">=</span><span class="va">None</span>):</span>
-<span id="cb20-416"><a href="#cb20-416" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Make a GET request"""</span></span>
-<span id="cb20-417"><a href="#cb20-417" aria-hidden="true" tabindex="-1"></a>        url <span class="op">=</span> <span class="va">self</span>.base_url <span class="op">+</span> endpoint</span>
-<span id="cb20-418"><a href="#cb20-418" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb20-419"><a href="#cb20-419" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.api_key:</span>
-<span id="cb20-420"><a href="#cb20-420" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> params <span class="kw">is</span> <span class="va">None</span>:</span>
-<span id="cb20-421"><a href="#cb20-421" aria-hidden="true" tabindex="-1"></a>                params <span class="op">=</span> {}</span>
-<span id="cb20-422"><a href="#cb20-422" aria-hidden="true" tabindex="-1"></a>            params[<span class="st">'api_key'</span>] <span class="op">=</span> <span class="va">self</span>.api_key</span>
-<span id="cb20-423"><a href="#cb20-423" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb20-424"><a href="#cb20-424" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
-<span id="cb20-425"><a href="#cb20-425" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> <span class="va">self</span>.session.get(url, params<span class="op">=</span>params)</span>
-<span id="cb20-426"><a href="#cb20-426" aria-hidden="true" tabindex="-1"></a>            response.raise_for_status()</span>
-<span id="cb20-427"><a href="#cb20-427" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> response.json()</span>
-<span id="cb20-428"><a href="#cb20-428" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.exceptions.RequestException <span class="im">as</span> e:</span>
-<span id="cb20-429"><a href="#cb20-429" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"API Error: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-430"><a href="#cb20-430" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">None</span></span>
-<span id="cb20-431"><a href="#cb20-431" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-432"><a href="#cb20-432" aria-hidden="true" tabindex="-1"></a><span class="co"># Use your toolkit</span></span>
-<span id="cb20-433"><a href="#cb20-433" aria-hidden="true" tabindex="-1"></a>weather_client <span class="op">=</span> APIClient(<span class="st">"http://api.weatherapi.com/v1/"</span>, api_key<span class="op">=</span><span class="st">"your_key"</span>)</span>
-<span id="cb20-434"><a href="#cb20-434" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> weather_client.get(<span class="st">"current.json"</span>, {<span class="st">"q"</span>: <span class="st">"Boston"</span>})</span>
-<span id="cb20-435"><a href="#cb20-435" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-436"><a href="#cb20-436" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-437"><a href="#cb20-437" aria-hidden="true" tabindex="-1"></a><span class="fu">## Real Project: Multi-Source Dashboard</span></span>
+<span id="cb20-406"><a href="#cb20-406" aria-hidden="true" tabindex="-1"></a><span class="co"># Use: safe_get(data, 'current', 'temp_f')</span></span>
+<span id="cb20-407"><a href="#cb20-407" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-408"><a href="#cb20-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-409"><a href="#cb20-409" aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Your API Toolkit</span></span>
+<span id="cb20-410"><a href="#cb20-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-411"><a href="#cb20-411" aria-hidden="true" tabindex="-1"></a>Once you've written a few API calls, you'll notice you're repeating the same steps: build a URL, send a request, check the status, parse the JSON. That repetition is a signal that it's time to build reusable tools:</span>
+<span id="cb20-412"><a href="#cb20-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-413"><a href="#cb20-413" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-414"><a href="#cb20-414" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> APIClient:</span>
+<span id="cb20-415"><a href="#cb20-415" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Reusable API client"""</span></span>
+<span id="cb20-416"><a href="#cb20-416" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-417"><a href="#cb20-417" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, base_url, api_key<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb20-418"><a href="#cb20-418" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.base_url <span class="op">=</span> base_url</span>
+<span id="cb20-419"><a href="#cb20-419" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.api_key <span class="op">=</span> api_key</span>
+<span id="cb20-420"><a href="#cb20-420" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session <span class="op">=</span> requests.Session()</span>
+<span id="cb20-421"><a href="#cb20-421" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-422"><a href="#cb20-422" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> get(<span class="va">self</span>, endpoint, params<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb20-423"><a href="#cb20-423" aria-hidden="true" tabindex="-1"></a>        <span class="co">"""Make a GET request"""</span></span>
+<span id="cb20-424"><a href="#cb20-424" aria-hidden="true" tabindex="-1"></a>        url <span class="op">=</span> <span class="va">self</span>.base_url <span class="op">+</span> endpoint</span>
+<span id="cb20-425"><a href="#cb20-425" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb20-426"><a href="#cb20-426" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.api_key:</span>
+<span id="cb20-427"><a href="#cb20-427" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> params <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb20-428"><a href="#cb20-428" aria-hidden="true" tabindex="-1"></a>                params <span class="op">=</span> {}</span>
+<span id="cb20-429"><a href="#cb20-429" aria-hidden="true" tabindex="-1"></a>            params[<span class="st">'api_key'</span>] <span class="op">=</span> <span class="va">self</span>.api_key</span>
+<span id="cb20-430"><a href="#cb20-430" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb20-431"><a href="#cb20-431" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb20-432"><a href="#cb20-432" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> <span class="va">self</span>.session.get(url, params<span class="op">=</span>params)</span>
+<span id="cb20-433"><a href="#cb20-433" aria-hidden="true" tabindex="-1"></a>            response.raise_for_status()</span>
+<span id="cb20-434"><a href="#cb20-434" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> response.json()</span>
+<span id="cb20-435"><a href="#cb20-435" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.exceptions.RequestException <span class="im">as</span> e:</span>
+<span id="cb20-436"><a href="#cb20-436" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"API Error: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-437"><a href="#cb20-437" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">None</span></span>
 <span id="cb20-438"><a href="#cb20-438" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-439"><a href="#cb20-439" aria-hidden="true" tabindex="-1"></a>Let's combine multiple APIs into one useful program:</span>
-<span id="cb20-440"><a href="#cb20-440" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-441"><a href="#cb20-441" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-442"><a href="#cb20-442" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_morning_briefing():</span>
-<span id="cb20-443"><a href="#cb20-443" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get weather, news, and quote for the day"""</span></span>
-<span id="cb20-444"><a href="#cb20-444" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">☀️ GOOD MORNING! Here's your briefing:</span><span class="ch">\n</span><span class="st">"</span>)</span>
-<span id="cb20-445"><a href="#cb20-445" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-446"><a href="#cb20-446" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Weather</span></span>
-<span id="cb20-447"><a href="#cb20-447" aria-hidden="true" tabindex="-1"></a>    weather <span class="op">=</span> get_weather(<span class="st">"New York"</span>)</span>
-<span id="cb20-448"><a href="#cb20-448" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> weather:</span>
-<span id="cb20-449"><a href="#cb20-449" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"🌡️ Weather: </span><span class="sc">{</span>weather[<span class="st">'temp'</span>]<span class="sc">}</span><span class="ss">°F, </span><span class="sc">{</span>weather[<span class="st">'condition'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-450"><a href="#cb20-450" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-451"><a href="#cb20-451" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Motivational quote</span></span>
-<span id="cb20-452"><a href="#cb20-452" aria-hidden="true" tabindex="-1"></a>    quote <span class="op">=</span> get_daily_quote()</span>
-<span id="cb20-453"><a href="#cb20-453" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> quote:</span>
-<span id="cb20-454"><a href="#cb20-454" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">💭 Quote of the day: </span><span class="ch">\"</span><span class="sc">{</span>quote[<span class="st">'content'</span>]<span class="sc">}</span><span class="ch">\"</span><span class="ss">"</span>)</span>
-<span id="cb20-455"><a href="#cb20-455" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"   - </span><span class="sc">{</span>quote[<span class="st">'author'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-456"><a href="#cb20-456" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-457"><a href="#cb20-457" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Top news</span></span>
-<span id="cb20-458"><a href="#cb20-458" aria-hidden="true" tabindex="-1"></a>    news <span class="op">=</span> get_headlines(<span class="dv">3</span>)</span>
-<span id="cb20-459"><a href="#cb20-459" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> news:</span>
-<span id="cb20-460"><a href="#cb20-460" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">📰 Top Headlines:"</span>)</span>
-<span id="cb20-461"><a href="#cb20-461" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> headline <span class="kw">in</span> news:</span>
-<span id="cb20-462"><a href="#cb20-462" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  • </span><span class="sc">{</span>headline<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-439"><a href="#cb20-439" aria-hidden="true" tabindex="-1"></a><span class="co"># Use your toolkit</span></span>
+<span id="cb20-440"><a href="#cb20-440" aria-hidden="true" tabindex="-1"></a>weather_client <span class="op">=</span> APIClient(<span class="st">"http://api.weatherapi.com/v1/"</span>, api_key<span class="op">=</span><span class="st">"your_key"</span>)</span>
+<span id="cb20-441"><a href="#cb20-441" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> weather_client.get(<span class="st">"current.json"</span>, {<span class="st">"q"</span>: <span class="st">"Boston"</span>})</span>
+<span id="cb20-442"><a href="#cb20-442" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-443"><a href="#cb20-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-444"><a href="#cb20-444" aria-hidden="true" tabindex="-1"></a><span class="fu">## Real Project: Multi-Source Dashboard</span></span>
+<span id="cb20-445"><a href="#cb20-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-446"><a href="#cb20-446" aria-hidden="true" tabindex="-1"></a>Let's combine multiple APIs into one useful program. Each helper below (<span class="in">`get_weather`</span>, <span class="in">`get_daily_quote`</span>, <span class="in">`get_headlines`</span>, <span class="in">`get_currency_rates`</span>) is a small function built from the request-check-parse pattern you've practised throughout this chapter; the weather-app notebook in the book's <span class="in">`code/`</span> folder assembles a complete runnable version:</span>
+<span id="cb20-447"><a href="#cb20-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-448"><a href="#cb20-448" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-449"><a href="#cb20-449" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_morning_briefing():</span>
+<span id="cb20-450"><a href="#cb20-450" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Get weather, news, and quote for the day"""</span></span>
+<span id="cb20-451"><a href="#cb20-451" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">☀️ GOOD MORNING! Here's your briefing:</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb20-452"><a href="#cb20-452" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-453"><a href="#cb20-453" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Weather</span></span>
+<span id="cb20-454"><a href="#cb20-454" aria-hidden="true" tabindex="-1"></a>    weather <span class="op">=</span> get_weather(<span class="st">"New York"</span>)</span>
+<span id="cb20-455"><a href="#cb20-455" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> weather:</span>
+<span id="cb20-456"><a href="#cb20-456" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"🌡️ Weather: </span><span class="sc">{</span>weather[<span class="st">'temp'</span>]<span class="sc">}</span><span class="ss">°F, </span><span class="sc">{</span>weather[<span class="st">'condition'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-457"><a href="#cb20-457" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-458"><a href="#cb20-458" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Motivational quote</span></span>
+<span id="cb20-459"><a href="#cb20-459" aria-hidden="true" tabindex="-1"></a>    quote <span class="op">=</span> get_daily_quote()</span>
+<span id="cb20-460"><a href="#cb20-460" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> quote:</span>
+<span id="cb20-461"><a href="#cb20-461" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">💭 Quote of the day: </span><span class="ch">\"</span><span class="sc">{</span>quote[<span class="st">'content'</span>]<span class="sc">}</span><span class="ch">\"</span><span class="ss">"</span>)</span>
+<span id="cb20-462"><a href="#cb20-462" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"   - </span><span class="sc">{</span>quote[<span class="st">'author'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb20-463"><a href="#cb20-463" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb20-464"><a href="#cb20-464" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Currency rates</span></span>
-<span id="cb20-465"><a href="#cb20-465" aria-hidden="true" tabindex="-1"></a>    rates <span class="op">=</span> get_currency_rates(<span class="st">"USD"</span>, [<span class="st">"EUR"</span>, <span class="st">"GBP"</span>, <span class="st">"JPY"</span>])</span>
-<span id="cb20-466"><a href="#cb20-466" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> rates:</span>
-<span id="cb20-467"><a href="#cb20-467" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">💱 Currency Rates:"</span>)</span>
-<span id="cb20-468"><a href="#cb20-468" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> currency, rate <span class="kw">in</span> rates.items():</span>
-<span id="cb20-469"><a href="#cb20-469" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  • 1 USD = </span><span class="sc">{</span>rate<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>currency<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-470"><a href="#cb20-470" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-471"><a href="#cb20-471" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-472"><a href="#cb20-472" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common AI Complications</span></span>
-<span id="cb20-473"><a href="#cb20-473" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-474"><a href="#cb20-474" aria-hidden="true" tabindex="-1"></a>When you ask AI to help you make API calls, it tends to build a spaceship when you need a bicycle. Here's a typical example of what AI produces when you ask "How do I get data from an API?":</span>
-<span id="cb20-475"><a href="#cb20-475" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-476"><a href="#cb20-476" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-477"><a href="#cb20-477" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb20-478"><a href="#cb20-478" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> requests.adapters <span class="im">import</span> HTTPAdapter</span>
-<span id="cb20-479"><a href="#cb20-479" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib3.util.retry <span class="im">import</span> Retry</span>
+<span id="cb20-464"><a href="#cb20-464" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Top news</span></span>
+<span id="cb20-465"><a href="#cb20-465" aria-hidden="true" tabindex="-1"></a>    news <span class="op">=</span> get_headlines(<span class="dv">3</span>)</span>
+<span id="cb20-466"><a href="#cb20-466" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> news:</span>
+<span id="cb20-467"><a href="#cb20-467" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">📰 Top Headlines:"</span>)</span>
+<span id="cb20-468"><a href="#cb20-468" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> headline <span class="kw">in</span> news:</span>
+<span id="cb20-469"><a href="#cb20-469" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  • </span><span class="sc">{</span>headline<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-470"><a href="#cb20-470" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-471"><a href="#cb20-471" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Currency rates</span></span>
+<span id="cb20-472"><a href="#cb20-472" aria-hidden="true" tabindex="-1"></a>    rates <span class="op">=</span> get_currency_rates(<span class="st">"USD"</span>, [<span class="st">"EUR"</span>, <span class="st">"GBP"</span>, <span class="st">"JPY"</span>])</span>
+<span id="cb20-473"><a href="#cb20-473" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> rates:</span>
+<span id="cb20-474"><a href="#cb20-474" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">💱 Currency Rates:"</span>)</span>
+<span id="cb20-475"><a href="#cb20-475" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> currency, rate <span class="kw">in</span> rates.items():</span>
+<span id="cb20-476"><a href="#cb20-476" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"  • 1 USD = </span><span class="sc">{</span>rate<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>currency<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-477"><a href="#cb20-477" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-478"><a href="#cb20-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-479"><a href="#cb20-479" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common AI Complications</span></span>
 <span id="cb20-480"><a href="#cb20-480" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-481"><a href="#cb20-481" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ResilientAPIClient:</span>
-<span id="cb20-482"><a href="#cb20-482" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Production-grade API client with retry logic,</span></span>
-<span id="cb20-483"><a href="#cb20-483" aria-hidden="true" tabindex="-1"></a><span class="co">    session management, exponential backoff, and</span></span>
-<span id="cb20-484"><a href="#cb20-484" aria-hidden="true" tabindex="-1"></a><span class="co">    custom exception hierarchy."""</span></span>
-<span id="cb20-485"><a href="#cb20-485" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-486"><a href="#cb20-486" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, base_url, api_key, max_retries<span class="op">=</span><span class="dv">3</span>,</span>
-<span id="cb20-487"><a href="#cb20-487" aria-hidden="true" tabindex="-1"></a>                 backoff_factor<span class="op">=</span><span class="fl">0.5</span>, timeout<span class="op">=</span>(<span class="fl">3.05</span>, <span class="dv">27</span>)):</span>
-<span id="cb20-488"><a href="#cb20-488" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session <span class="op">=</span> requests.Session()</span>
-<span id="cb20-489"><a href="#cb20-489" aria-hidden="true" tabindex="-1"></a>        retry_strategy <span class="op">=</span> Retry(</span>
-<span id="cb20-490"><a href="#cb20-490" aria-hidden="true" tabindex="-1"></a>            total<span class="op">=</span>max_retries,</span>
-<span id="cb20-491"><a href="#cb20-491" aria-hidden="true" tabindex="-1"></a>            backoff_factor<span class="op">=</span>backoff_factor,</span>
-<span id="cb20-492"><a href="#cb20-492" aria-hidden="true" tabindex="-1"></a>            status_forcelist<span class="op">=</span>[<span class="dv">429</span>, <span class="dv">500</span>, <span class="dv">502</span>, <span class="dv">503</span>, <span class="dv">504</span>]</span>
-<span id="cb20-493"><a href="#cb20-493" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb20-494"><a href="#cb20-494" aria-hidden="true" tabindex="-1"></a>        adapter <span class="op">=</span> HTTPAdapter(max_retries<span class="op">=</span>retry_strategy)</span>
-<span id="cb20-495"><a href="#cb20-495" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session.mount(<span class="st">"https://"</span>, adapter)</span>
-<span id="cb20-496"><a href="#cb20-496" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session.mount(<span class="st">"http://"</span>, adapter)</span>
-<span id="cb20-497"><a href="#cb20-497" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session.headers.update({</span>
-<span id="cb20-498"><a href="#cb20-498" aria-hidden="true" tabindex="-1"></a>            <span class="st">'Authorization'</span>: <span class="ss">f'Bearer </span><span class="sc">{</span>api_key<span class="sc">}</span><span class="ss">'</span>,</span>
-<span id="cb20-499"><a href="#cb20-499" aria-hidden="true" tabindex="-1"></a>            <span class="st">'Accept'</span>: <span class="st">'application/json'</span></span>
-<span id="cb20-500"><a href="#cb20-500" aria-hidden="true" tabindex="-1"></a>        })</span>
-<span id="cb20-501"><a href="#cb20-501" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.base_url <span class="op">=</span> base_url</span>
-<span id="cb20-502"><a href="#cb20-502" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.timeout <span class="op">=</span> timeout</span>
-<span id="cb20-503"><a href="#cb20-503" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-504"><a href="#cb20-504" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> get(<span class="va">self</span>, endpoint, params<span class="op">=</span><span class="va">None</span>):</span>
-<span id="cb20-505"><a href="#cb20-505" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
-<span id="cb20-506"><a href="#cb20-506" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> <span class="va">self</span>.session.get(</span>
-<span id="cb20-507"><a href="#cb20-507" aria-hidden="true" tabindex="-1"></a>                <span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>base_url<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>endpoint<span class="sc">}</span><span class="ss">"</span>,</span>
-<span id="cb20-508"><a href="#cb20-508" aria-hidden="true" tabindex="-1"></a>                params<span class="op">=</span>params, timeout<span class="op">=</span><span class="va">self</span>.timeout</span>
-<span id="cb20-509"><a href="#cb20-509" aria-hidden="true" tabindex="-1"></a>            )</span>
-<span id="cb20-510"><a href="#cb20-510" aria-hidden="true" tabindex="-1"></a>            response.raise_for_status()</span>
-<span id="cb20-511"><a href="#cb20-511" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> response.json()</span>
-<span id="cb20-512"><a href="#cb20-512" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.exceptions.HTTPError <span class="im">as</span> e:</span>
-<span id="cb20-513"><a href="#cb20-513" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> APIError(<span class="ss">f"HTTP error: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>) <span class="im">from</span> e</span>
-<span id="cb20-514"><a href="#cb20-514" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.exceptions.<span class="pp">ConnectionError</span> <span class="im">as</span> e:</span>
-<span id="cb20-515"><a href="#cb20-515" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> NetworkError(<span class="ss">f"Connection failed: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>) <span class="im">from</span> e</span>
-<span id="cb20-516"><a href="#cb20-516" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-517"><a href="#cb20-517" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-518"><a href="#cb20-518" aria-hidden="true" tabindex="-1"></a>That's 35+ lines before you've even asked for any data! For learning and most small projects, all you need is this:</span>
-<span id="cb20-519"><a href="#cb20-519" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-520"><a href="#cb20-520" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb20-521"><a href="#cb20-521" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb20-522"><a href="#cb20-522" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-523"><a href="#cb20-523" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(<span class="st">"https://api.example.com/data"</span>)</span>
-<span id="cb20-524"><a href="#cb20-524" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb20-525"><a href="#cb20-525" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> response.json()</span>
-<span id="cb20-526"><a href="#cb20-526" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(data)</span>
-<span id="cb20-527"><a href="#cb20-527" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb20-528"><a href="#cb20-528" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Something went wrong: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb20-529"><a href="#cb20-529" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb20-530"><a href="#cb20-530" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-531"><a href="#cb20-531" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb20-532"><a href="#cb20-532" aria-hidden="true" tabindex="-1"></a><span class="fu">## Simplification Strategy</span></span>
-<span id="cb20-533"><a href="#cb20-533" aria-hidden="true" tabindex="-1"></a>When AI gives you a complex API client with sessions, retry adapters, custom exceptions, and connection pooling, ask: "Can you show me the simplest version that makes one successful request and handles basic errors with try/except?" You can always add complexity later when you understand why you need it.</span>
-<span id="cb20-534"><a href="#cb20-534" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb20-535"><a href="#cb20-535" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-536"><a href="#cb20-536" aria-hidden="true" tabindex="-1"></a>Watch for these specific over-engineering patterns:</span>
+<span id="cb20-481"><a href="#cb20-481" aria-hidden="true" tabindex="-1"></a>When you ask AI to help you make API calls, it tends to build a spaceship when you need a bicycle. Here's a typical example of what AI produces when you ask "How do I get data from an API?":</span>
+<span id="cb20-482"><a href="#cb20-482" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-483"><a href="#cb20-483" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-484"><a href="#cb20-484" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb20-485"><a href="#cb20-485" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> requests.adapters <span class="im">import</span> HTTPAdapter</span>
+<span id="cb20-486"><a href="#cb20-486" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib3.util.retry <span class="im">import</span> Retry</span>
+<span id="cb20-487"><a href="#cb20-487" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-488"><a href="#cb20-488" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ResilientAPIClient:</span>
+<span id="cb20-489"><a href="#cb20-489" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Production-grade API client with retry logic,</span></span>
+<span id="cb20-490"><a href="#cb20-490" aria-hidden="true" tabindex="-1"></a><span class="co">    session management, exponential backoff, and</span></span>
+<span id="cb20-491"><a href="#cb20-491" aria-hidden="true" tabindex="-1"></a><span class="co">    custom exception hierarchy."""</span></span>
+<span id="cb20-492"><a href="#cb20-492" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-493"><a href="#cb20-493" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, base_url, api_key, max_retries<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb20-494"><a href="#cb20-494" aria-hidden="true" tabindex="-1"></a>                 backoff_factor<span class="op">=</span><span class="fl">0.5</span>, timeout<span class="op">=</span>(<span class="fl">3.05</span>, <span class="dv">27</span>)):</span>
+<span id="cb20-495"><a href="#cb20-495" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session <span class="op">=</span> requests.Session()</span>
+<span id="cb20-496"><a href="#cb20-496" aria-hidden="true" tabindex="-1"></a>        retry_strategy <span class="op">=</span> Retry(</span>
+<span id="cb20-497"><a href="#cb20-497" aria-hidden="true" tabindex="-1"></a>            total<span class="op">=</span>max_retries,</span>
+<span id="cb20-498"><a href="#cb20-498" aria-hidden="true" tabindex="-1"></a>            backoff_factor<span class="op">=</span>backoff_factor,</span>
+<span id="cb20-499"><a href="#cb20-499" aria-hidden="true" tabindex="-1"></a>            status_forcelist<span class="op">=</span>[<span class="dv">429</span>, <span class="dv">500</span>, <span class="dv">502</span>, <span class="dv">503</span>, <span class="dv">504</span>]</span>
+<span id="cb20-500"><a href="#cb20-500" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb20-501"><a href="#cb20-501" aria-hidden="true" tabindex="-1"></a>        adapter <span class="op">=</span> HTTPAdapter(max_retries<span class="op">=</span>retry_strategy)</span>
+<span id="cb20-502"><a href="#cb20-502" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session.mount(<span class="st">"https://"</span>, adapter)</span>
+<span id="cb20-503"><a href="#cb20-503" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session.mount(<span class="st">"http://"</span>, adapter)</span>
+<span id="cb20-504"><a href="#cb20-504" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.session.headers.update({</span>
+<span id="cb20-505"><a href="#cb20-505" aria-hidden="true" tabindex="-1"></a>            <span class="st">'Authorization'</span>: <span class="ss">f'Bearer </span><span class="sc">{</span>api_key<span class="sc">}</span><span class="ss">'</span>,</span>
+<span id="cb20-506"><a href="#cb20-506" aria-hidden="true" tabindex="-1"></a>            <span class="st">'Accept'</span>: <span class="st">'application/json'</span></span>
+<span id="cb20-507"><a href="#cb20-507" aria-hidden="true" tabindex="-1"></a>        })</span>
+<span id="cb20-508"><a href="#cb20-508" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.base_url <span class="op">=</span> base_url</span>
+<span id="cb20-509"><a href="#cb20-509" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.timeout <span class="op">=</span> timeout</span>
+<span id="cb20-510"><a href="#cb20-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-511"><a href="#cb20-511" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> get(<span class="va">self</span>, endpoint, params<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb20-512"><a href="#cb20-512" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb20-513"><a href="#cb20-513" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> <span class="va">self</span>.session.get(</span>
+<span id="cb20-514"><a href="#cb20-514" aria-hidden="true" tabindex="-1"></a>                <span class="ss">f"</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>base_url<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>endpoint<span class="sc">}</span><span class="ss">"</span>,</span>
+<span id="cb20-515"><a href="#cb20-515" aria-hidden="true" tabindex="-1"></a>                params<span class="op">=</span>params, timeout<span class="op">=</span><span class="va">self</span>.timeout</span>
+<span id="cb20-516"><a href="#cb20-516" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb20-517"><a href="#cb20-517" aria-hidden="true" tabindex="-1"></a>            response.raise_for_status()</span>
+<span id="cb20-518"><a href="#cb20-518" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> response.json()</span>
+<span id="cb20-519"><a href="#cb20-519" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.exceptions.HTTPError <span class="im">as</span> e:</span>
+<span id="cb20-520"><a href="#cb20-520" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> APIError(<span class="ss">f"HTTP error: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>) <span class="im">from</span> e</span>
+<span id="cb20-521"><a href="#cb20-521" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.exceptions.<span class="pp">ConnectionError</span> <span class="im">as</span> e:</span>
+<span id="cb20-522"><a href="#cb20-522" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> NetworkError(<span class="ss">f"Connection failed: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>) <span class="im">from</span> e</span>
+<span id="cb20-523"><a href="#cb20-523" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb20-524"><a href="#cb20-524" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-525"><a href="#cb20-525" aria-hidden="true" tabindex="-1"></a>That's 35+ lines before you've even asked for any data! For learning and most small projects, all you need is this:</span>
+<span id="cb20-526"><a href="#cb20-526" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-527"><a href="#cb20-527" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb20-528"><a href="#cb20-528" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb20-529"><a href="#cb20-529" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-530"><a href="#cb20-530" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(<span class="st">"https://api.example.com/data"</span>)</span>
+<span id="cb20-531"><a href="#cb20-531" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb20-532"><a href="#cb20-532" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> response.json()</span>
+<span id="cb20-533"><a href="#cb20-533" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(data)</span>
+<span id="cb20-534"><a href="#cb20-534" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb20-535"><a href="#cb20-535" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Something went wrong: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb20-536"><a href="#cb20-536" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-537"><a href="#cb20-537" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-538"><a href="#cb20-538" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Session objects** when you're making a single request</span>
-<span id="cb20-539"><a href="#cb20-539" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Retry logic with exponential backoff** when you're just learning how APIs work</span>
-<span id="cb20-540"><a href="#cb20-540" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Custom exception hierarchies** when a simple <span class="in">`try/except`</span> tells you everything you need to know</span>
-<span id="cb20-541"><a href="#cb20-541" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Connection pooling and adapter mounting** which are performance optimizations for production servers, not learning exercises</span>
+<span id="cb20-538"><a href="#cb20-538" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb20-539"><a href="#cb20-539" aria-hidden="true" tabindex="-1"></a><span class="fu">## Simplification Strategy</span></span>
+<span id="cb20-540"><a href="#cb20-540" aria-hidden="true" tabindex="-1"></a>When AI gives you a complex API client with sessions, retry adapters, custom exceptions, and connection pooling, ask: "Can you show me the simplest version that makes one successful request and handles basic errors with try/except?" You can always add complexity later when you understand why you need it.</span>
+<span id="cb20-541"><a href="#cb20-541" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb20-542"><a href="#cb20-542" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-543"><a href="#cb20-543" aria-hidden="true" tabindex="-1"></a>Start simple. Add complexity only when a real problem demands it.</span>
+<span id="cb20-543"><a href="#cb20-543" aria-hidden="true" tabindex="-1"></a>Watch for these specific over-engineering patterns:</span>
 <span id="cb20-544"><a href="#cb20-544" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-545"><a href="#cb20-545" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Pitfalls and Solutions</span></span>
-<span id="cb20-546"><a href="#cb20-546" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-547"><a href="#cb20-547" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 1: Hardcoding API Keys</span></span>
-<span id="cb20-548"><a href="#cb20-548" aria-hidden="true" tabindex="-1"></a>**Problem**: Keys in code are security risks</span>
-<span id="cb20-549"><a href="#cb20-549" aria-hidden="true" tabindex="-1"></a>**Solution**: Use environment variables or secure files</span>
-<span id="cb20-550"><a href="#cb20-550" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-551"><a href="#cb20-551" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 2: No Error Handling</span></span>
-<span id="cb20-552"><a href="#cb20-552" aria-hidden="true" tabindex="-1"></a>**Problem**: Program crashes when API fails</span>
-<span id="cb20-553"><a href="#cb20-553" aria-hidden="true" tabindex="-1"></a>**Solution**: Always use try/except blocks</span>
-<span id="cb20-554"><a href="#cb20-554" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-555"><a href="#cb20-555" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 3: Ignoring Rate Limits</span></span>
-<span id="cb20-556"><a href="#cb20-556" aria-hidden="true" tabindex="-1"></a>**Problem**: API blocks your requests</span>
-<span id="cb20-557"><a href="#cb20-557" aria-hidden="true" tabindex="-1"></a>**Solution**: Add delays and check documentation</span>
-<span id="cb20-558"><a href="#cb20-558" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-559"><a href="#cb20-559" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 4: Not Checking Response Status</span></span>
-<span id="cb20-560"><a href="#cb20-560" aria-hidden="true" tabindex="-1"></a>**Problem**: Assuming all requests succeed</span>
-<span id="cb20-561"><a href="#cb20-561" aria-hidden="true" tabindex="-1"></a>**Solution**: Always check status_code</span>
-<span id="cb20-562"><a href="#cb20-562" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-563"><a href="#cb20-563" aria-hidden="true" tabindex="-1"></a><span class="fu">## Practice Projects</span></span>
-<span id="cb20-564"><a href="#cb20-564" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-565"><a href="#cb20-565" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 1: Weather Tracker</span></span>
-<span id="cb20-566"><a href="#cb20-566" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Track weather for multiple cities</span>
-<span id="cb20-567"><a href="#cb20-567" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Store historical data</span>
-<span id="cb20-568"><a href="#cb20-568" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Find weather patterns</span>
-<span id="cb20-569"><a href="#cb20-569" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Alert for extreme conditions</span>
-<span id="cb20-570"><a href="#cb20-570" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-571"><a href="#cb20-571" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 2: Stock Portfolio Monitor</span></span>
-<span id="cb20-572"><a href="#cb20-572" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Track stock prices</span>
-<span id="cb20-573"><a href="#cb20-573" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Calculate gains/losses</span>
-<span id="cb20-574"><a href="#cb20-574" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Set price alerts</span>
-<span id="cb20-575"><a href="#cb20-575" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generate reports</span>
-<span id="cb20-576"><a href="#cb20-576" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-577"><a href="#cb20-577" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 3: News Sentiment Analyzer</span></span>
-<span id="cb20-578"><a href="#cb20-578" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collect news articles</span>
-<span id="cb20-579"><a href="#cb20-579" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>analyse headlines</span>
-<span id="cb20-580"><a href="#cb20-580" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Track topics over time</span>
-<span id="cb20-581"><a href="#cb20-581" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create summaries</span>
-<span id="cb20-582"><a href="#cb20-582" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-583"><a href="#cb20-583" aria-hidden="true" tabindex="-1"></a><span class="fu">## Looking Ahead</span></span>
-<span id="cb20-584"><a href="#cb20-584" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-585"><a href="#cb20-585" aria-hidden="true" tabindex="-1"></a>Next chapter, you'll learn to create interactive programs with graphical interfaces. Instead of just printing to the console, your programs will have buttons, windows, and visual elements that users can click and interact with!</span>
-<span id="cb20-586"><a href="#cb20-586" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-587"><a href="#cb20-587" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
-<span id="cb20-588"><a href="#cb20-588" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-589"><a href="#cb20-589" aria-hidden="true" tabindex="-1"></a>You've learned to:</span>
-<span id="cb20-590"><a href="#cb20-590" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand how APIs work</span>
-<span id="cb20-591"><a href="#cb20-591" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Make web requests from Python</span>
-<span id="cb20-592"><a href="#cb20-592" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Handle JSON responses</span>
-<span id="cb20-593"><a href="#cb20-593" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Manage API keys securely</span>
-<span id="cb20-594"><a href="#cb20-594" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Build programs that use live data</span>
-<span id="cb20-595"><a href="#cb20-595" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Handle errors gracefully</span>
-<span id="cb20-596"><a href="#cb20-596" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-597"><a href="#cb20-597" aria-hidden="true" tabindex="-1"></a>Your programs are no longer isolated - they're connected to the world's information!</span>
-<span id="cb20-598"><a href="#cb20-598" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-599"><a href="#cb20-599" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection Prompts</span></span>
-<span id="cb20-600"><a href="#cb20-600" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-601"><a href="#cb20-601" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**API Design**: What makes a good API vs a frustrating one?</span>
-<span id="cb20-602"><a href="#cb20-602" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Error Planning**: What could go wrong with internet-connected programs?</span>
-<span id="cb20-603"><a href="#cb20-603" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Privacy Concerns**: What data should programs be careful about?</span>
-<span id="cb20-604"><a href="#cb20-604" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Future APIs**: What APIs would you like to exist?</span>
+<span id="cb20-545"><a href="#cb20-545" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Session objects** when you're making a single request</span>
+<span id="cb20-546"><a href="#cb20-546" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Retry logic with exponential backoff** when you're just learning how APIs work</span>
+<span id="cb20-547"><a href="#cb20-547" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Custom exception hierarchies** when a simple <span class="in">`try/except`</span> tells you everything you need to know</span>
+<span id="cb20-548"><a href="#cb20-548" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Connection pooling and adapter mounting** which are performance optimizations for production servers, not learning exercises</span>
+<span id="cb20-549"><a href="#cb20-549" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-550"><a href="#cb20-550" aria-hidden="true" tabindex="-1"></a>Start simple. Add complexity only when a real problem demands it.</span>
+<span id="cb20-551"><a href="#cb20-551" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-552"><a href="#cb20-552" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Pitfalls and Solutions</span></span>
+<span id="cb20-553"><a href="#cb20-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-554"><a href="#cb20-554" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 1: Hardcoding API Keys</span></span>
+<span id="cb20-555"><a href="#cb20-555" aria-hidden="true" tabindex="-1"></a>**Problem**: Keys in code are security risks</span>
+<span id="cb20-556"><a href="#cb20-556" aria-hidden="true" tabindex="-1"></a>**Solution**: Use environment variables or secure files</span>
+<span id="cb20-557"><a href="#cb20-557" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-558"><a href="#cb20-558" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 2: No Error Handling</span></span>
+<span id="cb20-559"><a href="#cb20-559" aria-hidden="true" tabindex="-1"></a>**Problem**: Program crashes when API fails</span>
+<span id="cb20-560"><a href="#cb20-560" aria-hidden="true" tabindex="-1"></a>**Solution**: Always use try/except blocks</span>
+<span id="cb20-561"><a href="#cb20-561" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-562"><a href="#cb20-562" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 3: Ignoring Rate Limits</span></span>
+<span id="cb20-563"><a href="#cb20-563" aria-hidden="true" tabindex="-1"></a>**Problem**: API blocks your requests</span>
+<span id="cb20-564"><a href="#cb20-564" aria-hidden="true" tabindex="-1"></a>**Solution**: Add delays and check documentation</span>
+<span id="cb20-565"><a href="#cb20-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-566"><a href="#cb20-566" aria-hidden="true" tabindex="-1"></a><span class="fu">### Pitfall 4: Not Checking Response Status</span></span>
+<span id="cb20-567"><a href="#cb20-567" aria-hidden="true" tabindex="-1"></a>**Problem**: Assuming all requests succeed</span>
+<span id="cb20-568"><a href="#cb20-568" aria-hidden="true" tabindex="-1"></a>**Solution**: Always check status_code</span>
+<span id="cb20-569"><a href="#cb20-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-570"><a href="#cb20-570" aria-hidden="true" tabindex="-1"></a><span class="fu">## Practice Projects</span></span>
+<span id="cb20-571"><a href="#cb20-571" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-572"><a href="#cb20-572" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 1: Weather Tracker</span></span>
+<span id="cb20-573"><a href="#cb20-573" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Track weather for multiple cities</span>
+<span id="cb20-574"><a href="#cb20-574" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Store historical data</span>
+<span id="cb20-575"><a href="#cb20-575" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Find weather patterns</span>
+<span id="cb20-576"><a href="#cb20-576" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Alert for extreme conditions</span>
+<span id="cb20-577"><a href="#cb20-577" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-578"><a href="#cb20-578" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 2: Stock Portfolio Monitor</span></span>
+<span id="cb20-579"><a href="#cb20-579" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Track stock prices</span>
+<span id="cb20-580"><a href="#cb20-580" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Calculate gains/losses</span>
+<span id="cb20-581"><a href="#cb20-581" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Set price alerts</span>
+<span id="cb20-582"><a href="#cb20-582" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Generate reports</span>
+<span id="cb20-583"><a href="#cb20-583" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-584"><a href="#cb20-584" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project 3: News Sentiment Analyzer</span></span>
+<span id="cb20-585"><a href="#cb20-585" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collect news articles</span>
+<span id="cb20-586"><a href="#cb20-586" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>analyse headlines</span>
+<span id="cb20-587"><a href="#cb20-587" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Track topics over time</span>
+<span id="cb20-588"><a href="#cb20-588" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create summaries</span>
+<span id="cb20-589"><a href="#cb20-589" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-590"><a href="#cb20-590" aria-hidden="true" tabindex="-1"></a><span class="fu">## Looking Ahead</span></span>
+<span id="cb20-591"><a href="#cb20-591" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-592"><a href="#cb20-592" aria-hidden="true" tabindex="-1"></a>Next chapter, you'll learn to create interactive programs with graphical interfaces. Instead of just printing to the console, your programs will have buttons, windows, and visual elements that users can click and interact with!</span>
+<span id="cb20-593"><a href="#cb20-593" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-594"><a href="#cb20-594" aria-hidden="true" tabindex="-1"></a><span class="fu">## Chapter Summary</span></span>
+<span id="cb20-595"><a href="#cb20-595" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-596"><a href="#cb20-596" aria-hidden="true" tabindex="-1"></a>You've learned to:</span>
+<span id="cb20-597"><a href="#cb20-597" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand how APIs work</span>
+<span id="cb20-598"><a href="#cb20-598" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Make web requests from Python</span>
+<span id="cb20-599"><a href="#cb20-599" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Handle JSON responses</span>
+<span id="cb20-600"><a href="#cb20-600" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Manage API keys securely</span>
+<span id="cb20-601"><a href="#cb20-601" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Build programs that use live data</span>
+<span id="cb20-602"><a href="#cb20-602" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Handle errors gracefully</span>
+<span id="cb20-603"><a href="#cb20-603" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-604"><a href="#cb20-604" aria-hidden="true" tabindex="-1"></a>Your programs are no longer isolated - they're connected to the world's information!</span>
 <span id="cb20-605"><a href="#cb20-605" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-606"><a href="#cb20-606" aria-hidden="true" tabindex="-1"></a>Remember: The internet is your program's library. APIs are the librarians that help you find exactly what you need!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb20-606"><a href="#cb20-606" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reflection Prompts</span></span>
+<span id="cb20-607"><a href="#cb20-607" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-608"><a href="#cb20-608" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**API Design**: What makes a good API vs a frustrating one?</span>
+<span id="cb20-609"><a href="#cb20-609" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Error Planning**: What could go wrong with internet-connected programs?</span>
+<span id="cb20-610"><a href="#cb20-610" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Privacy Concerns**: What data should programs be careful about?</span>
+<span id="cb20-611"><a href="#cb20-611" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Future APIs**: What APIs would you like to exist?</span>
+<span id="cb20-612"><a href="#cb20-612" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-613"><a href="#cb20-613" aria-hidden="true" tabindex="-1"></a>Remember: The internet is your program's library. APIs are the librarians that help you find exactly what you need!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
