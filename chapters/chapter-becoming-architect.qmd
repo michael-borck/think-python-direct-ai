@@ -7,7 +7,7 @@ In this final chapter of Part III, you'll learn to think like a software archite
 
 ## Introduction: From Coder to Creator
 
-Throughout this book, you've learned to write code. But professional software isn't just written - it's designed, planned, and architected. Just as architects design buildings before construction begins, software architects design programs before coding starts.
+Throughout this book, you've learned to write code. Professional software is also designed and planned before anyone writes it. Just as architects design buildings before construction begins, software architects design programs before coding starts.
 
 This chapter teaches you to:
 - Plan complete applications
@@ -249,7 +249,7 @@ When you provide clear specifications, AI can build exactly what you envision. Y
 
 ## Architecture Patterns
 
-The patterns below are sketches: they show the shape of each idea, not runnable code. That is normal at the architecture stage — you are deciding how pieces relate before asking AI to implement them.
+The patterns below are sketches: they show the shape of each idea, not runnable code. That is normal at the architecture stage. You are deciding how pieces relate before asking AI to implement them.
 
 ### Pattern 1: Model-View-Controller (MVC)
 
@@ -561,7 +561,7 @@ You've learned to:
 - Document architectural decisions
 - Test systematically
 
-You're no longer just writing code - you're designing and building complete software solutions!
+You can design and build complete software solutions!
 
 ## Reflection Prompts
 

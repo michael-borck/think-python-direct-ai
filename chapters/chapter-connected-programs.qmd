@@ -178,7 +178,7 @@ Some APIs are open to everyone (like the joke API above), but many require an **
 3. **Keep it secret** - never put keys in your code!
 4. **Use it in requests** as shown below
 
-Weather and news services require a free signup key; the joke and exchange-rate examples in this chapter work without one. Availability of free APIs changes — if an example stops working, ask AI for a current alternative.
+Weather and news services require a free signup key; the joke and exchange-rate examples in this chapter work without one. Availability of free APIs changes. If an example stops working, ask AI for a current alternative.
 
 ```python
 def get_news_headlines():
@@ -443,7 +443,7 @@ data = weather_client.get("current.json", {"q": "Boston"})
 
 ## Real Project: Multi-Source Dashboard
 
-Let's combine multiple APIs into one useful program. Each helper below — `get_weather`, `get_daily_quote`, `get_headlines`, `get_currency_rates` — is a small function built from the request-check-parse pattern you've practised throughout this chapter; the weather-app notebook in the book's `code/` folder assembles a complete runnable version:
+Let's combine multiple APIs into one useful program. Each helper below (`get_weather`, `get_daily_quote`, `get_headlines`, `get_currency_rates`) is a small function built from the request-check-parse pattern you've practised throughout this chapter; the weather-app notebook in the book's `code/` folder assembles a complete runnable version:
 
 ```python
 def create_morning_briefing():

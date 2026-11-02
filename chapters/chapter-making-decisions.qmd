@@ -41,8 +41,6 @@ ELSE
 
 ## Discovering Decisions with Your AI Partner
 
-Let's explore how programs make intelligent choices.
-
 ### Exploration 1: Types of Decisions
 
 Ask your AI:
@@ -530,4 +528,4 @@ You're no longer writing calculators - you're creating responsive programs!
 
 In the next chapter, we'll discover how to make programs repeat actions with loops. Combined with decisions, this will let you create programs that can handle any number of items, retry on errors, and process data efficiently.
 
-Remember: Decisions aren't about memorizing if-elif-else syntax. They're about teaching programs to respond intelligently to different situations - just like we do in real life!
+Remember: Decisions are about teaching programs to respond to different situations, just as we do in real life!

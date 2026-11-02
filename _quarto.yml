@@ -8,6 +8,7 @@ project:
     - tools/**
 
 book:
+  cover-image: cover.png
   title: "Think Python, Direct AI"
   subtitle: "Computational Thinking for Beginners"
   favicon: favicon.svg
@@ -102,6 +103,7 @@ format:
     theme:
       light: [cosmo, assets/custom.scss]
       dark: [darkly, assets/custom-dark.scss]
+    css: book-design.css
     cover-image: cover.png
     include-after-body: chatbot.html
     code-fold: false
@@ -115,6 +117,9 @@ format:
     number-depth: 2
     highlight-style: github
   pdf:
+    pdf-engine: lualatex
+    fontsize: 11pt
+    linestretch: 1.08
     documentclass: book
     toc: true
     toc-depth: 1
@@ -127,13 +132,14 @@ format:
       - outer=0.75in
       - top=0.75in
       - bottom=0.75in
-    include-in-header: pdf-header.tex
+    include-in-header: [pdf-header.tex, book-design.tex]
     include-before-body:
       - copyright-page.tex
   epub:
+    epub-cover-image: cover.png
     toc: true
     toc-depth: 1
-    css: epub-styles.css
+    css: [epub-styles.css, book-design-epub.css]
 
 crossref:
   chapters: true

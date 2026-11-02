@@ -49,8 +49,6 @@ Each line is a row, commas separate columns. Simple, but powerful!
 
 ### The AI Partnership Approach
 
-Let's explore CSV files together:
-
 ::: {.callout-tip}
 ## Prompt Engineering for CSV
 "I have a CSV file with student grades. Show me how to read it and calculate each student's average. Keep it simple - just the basics."
@@ -68,7 +66,7 @@ Let's design a program that reads student grades and provides insights.
 
 ::: {.callout-note}
 ## Borrowed Tools in This Chapter
-The listings here use three tools before their official introduction. `with open(...) as file:` opens a file and closes it automatically, even if something goes wrong — Chapter 14 used open/close pairs so you could see every step. `try/except` handles errors gracefully instead of crashing. And a list comprehension like `[int(p) for p in parts]` builds a list in one line. *Code Python, Consult AI* covers all three systematically; for now, read them as patterns to recognise and ask AI to trace.
+The listings here use three tools before their official introduction. `with open(...) as file:` opens a file and closes it automatically, even if something goes wrong. Chapter 14 used open/close pairs so you could see every step. `try/except` handles errors gracefully instead of crashing. And a list comprehension like `[int(p) for p in parts]` builds a list in one line. *Code Python, Consult AI* covers all three systematically; for now, read them as patterns to recognise and ask AI to trace.
 :::
 
 ```python
@@ -365,7 +363,7 @@ def process_large_file(filename, chunk_size=1000):
             process_chunk(chunk)
 ```
 
-`process_chunk` is the function you write to summarise or store each block of rows — the chunking pattern stays the same either way.
+`process_chunk` is the function you write to summarise or store each block of rows, and the chunking pattern stays the same either way.
 
 ::: {.callout-tip}
 ## Memory Management
@@ -480,7 +478,7 @@ You've learned to:
 - Process large files efficiently
 - Build complete data pipelines
 
-These aren't just programming skills - they're data literacy skills that apply whether you're coding, using spreadsheets, or just understanding how modern applications work.
+These programming skills are also data literacy skills. They apply whether you're coding, using spreadsheets, or just understanding how modern applications work.
 
 ## Reflection Prompts
 

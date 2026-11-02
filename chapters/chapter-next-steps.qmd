@@ -505,7 +505,7 @@ You've accomplished something significant. Many people start learning programmin
 
 ## Welcome to Your Programming Future
 
-This isn't the end of your learning journey - it's the beginning of your career as a programmer. You now have the foundation to build anything you can imagine.
+Your career as a programmer is beginning, and you will keep learning as it does. You now have the foundation to build anything you can imagine.
 
 **Code Python, Consult AI awaits**, ready to deepen the fundamentals that will carry you from programmer to professional developer.
 
@@ -526,7 +526,7 @@ When you're ready to continue your journey:
 3. **Set up your development environment** for web programming
 4. **Begin *Code Python, Consult AI*** with confidence in your foundational skills
 
-Remember: You're not just someone who completed a programming course. You're a programmer who builds solutions. You've earned that identity through consistent effort and thoughtful practice.
+Remember: You are a programmer who builds solutions, and you earned that identity through consistent effort and thoughtful practice.
 
 Your journey from zero to programmer is complete. Your journey from programmer to professional developer is just beginning.
 

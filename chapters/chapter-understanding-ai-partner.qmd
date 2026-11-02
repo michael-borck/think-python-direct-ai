@@ -399,4 +399,4 @@ This book is part of a comprehensive series for mastering modern software develo
 
 In the next chapter, we'll explore the fundamental pattern of all programs: Input → Process → Output. You'll use your new prompt evolution skills to discover this pattern with AI's help, then build a clear mental model of how all programs work.
 
-Remember: You're not learning to code. You're learning to think computationally and direct AI to help you build solutions. Let's begin!
+Remember: You are learning to think computationally and direct AI to help you build solutions. Let's begin!

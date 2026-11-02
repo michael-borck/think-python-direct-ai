@@ -16,7 +16,7 @@ Think about the apps you use:
 - Images and colors
 - Multiple things happening at once
 
-This chapter teaches you to create all of these. But more importantly, it introduces a fundamentally different way of thinking about how programs run.
+This chapter teaches you to create all of these, and it introduces a fundamentally different way of thinking about how programs run.
 
 ## Understanding Event-Driven Programming
 
@@ -168,7 +168,7 @@ You've seen individual widgets and layout managers. Now let's combine them into 
 
 ::: {.callout-note}
 ## Your First Look at Classes
-The listings in this chapter use `class` — Python's way of bundling data and the functions that work on it into one object. Inside `TodoApp`, `self` means "this particular app", so `self.task_entry` is this app's entry box. Read these listings as templates: create the class, set up its widgets in `__init__`, and connect buttons to its methods. You'll also spot `try/except` here — Python's way of handling an empty selection without crashing. Classes and exceptions both get proper introductions in *Code Python, Consult AI*; for now, copy the shape and trace what each part does.
+The listings in this chapter use `class`, Python's way of bundling data and the functions that work on it into one object. Inside `TodoApp`, `self` means "this particular app", so `self.task_entry` is this app's entry box. Read these listings as templates: create the class, set up its widgets in `__init__`, and connect buttons to its methods. You'll also spot `try/except` here, Python's way of handling an empty selection without crashing. Classes and exceptions both get proper introductions in *Code Python, Consult AI*; for now, copy the shape and trace what each part does.
 :::
 
 ```python

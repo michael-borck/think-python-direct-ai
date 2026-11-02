@@ -39,8 +39,6 @@ Every input follows the same pattern:
 
 ## Discovering Input with Your AI Partner
 
-Let's explore how programs ask questions and get answers.
-
 ### Exploration 1: Types of Questions
 
 Ask your AI:
@@ -523,4 +521,4 @@ Compare:
 
 In the next chapter, we'll discover how programs make decisions using if statements. You'll see how input becomes powerful when programs can respond differently based on what users tell them. Get ready to make your programs smart!
 
-Remember: Getting input isn't about the syntax of `input()`. It's about creating conversations between programs and people. Every interactive program in the world is built on this simple concept.
+Remember: Getting input is about creating conversations between programs and people. Every interactive program in the world is built on this simple concept.

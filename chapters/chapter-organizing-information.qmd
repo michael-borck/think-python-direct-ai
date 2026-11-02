@@ -39,8 +39,6 @@ Different organizational needs require different tools.
 
 ## Discovering Collections with Your AI Partner
 
-Let's explore how programs organise multiple pieces of information.
-
 ### Exploration 1: The Problem with Many Variables
 
 Ask your AI:
@@ -545,4 +543,4 @@ We've introduced lists and dictionaries here as organizational tools for your da
 
 In the next chapter, we'll learn how to save and load data from files. You'll see how collections become even more powerful when you can preserve them between program runs - turning temporary programs into persistent applications!
 
-Remember: Lists and dictionaries aren't about syntax. They're about choosing the right organizational tool for your data - just like choosing between a numbered list or a labelled filing system in real life!
+Remember: Lists and dictionaries are about choosing the right organizational tool for your data, just as you might choose between a numbered list and a labelled filing system in real life!

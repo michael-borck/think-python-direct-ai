@@ -40,8 +40,6 @@ Functions prevent repetition and ensure consistency.
 
 ## Discovering Functions with Your AI Partner
 
-Let's explore how functions transform programming.
-
 ### Exploration 1: Finding Repetition
 
 Ask your AI:
@@ -569,4 +567,4 @@ Anyone can understand what this does!
 
 In the next chapter, we'll explore how to organise complex information using lists and dictionaries. You'll see how functions and data structures work together to create powerful programs that can handle real-world complexity.
 
-Remember: Functions aren't about memorizing syntax. They're about recognising patterns, reducing repetition, and building programs from well-named, reusable pieces!
+Remember: Functions are about recognising patterns, reducing repetition, and building programs from well-named, reusable pieces!

@@ -1,0 +1,13 @@
+version: 1
+style: editorial-c
+art: cover-art.png
+family: PROGRAMMING / PYTHON 01
+accent: '#27776C'
+background: '#E0EBE4'
+title_lines:
+- Think Python,
+- Direct AI
+dark: false
+pixel: false
+scene: think
+art_origin: Locally constructed editable vector illustration.

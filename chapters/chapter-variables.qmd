@@ -27,7 +27,7 @@ The simplest mental model: Variables are like labelled boxes.
 - You can change what's in the box
 - But the label stays the same
 
-This box picture will serve you well throughout this book — and toward the end of the chapter you'll meet the refinement professional Python programmers use.
+This box picture will serve you well throughout this book. Toward the end of the chapter you'll meet the refinement professional Python programmers use.
 
 ### Real-World Variables
 
@@ -40,8 +40,6 @@ Your phone uses variables constantly:
 These values change, but the labels remain consistent.
 
 ## Discovering Variables with Your AI Partner
-
-Let's explore how programs remember things.
 
 ### Exploration 1: The Need for Memory
 
@@ -398,7 +396,7 @@ When confused, ask:
 ## Common Misconceptions
 
 ### "Variables are literally boxes"
-**Refining the box model**: The labelled-box picture got you this far. The truer picture: a variable is a name that points to a value. When you change a variable, you're pointing the name at a new value — `gold = gold + 10` computes the right side, then points `gold` at the new number. Same behaviour as the box picture, but it explains more, and it will matter when two names refer to the same value in *Code Python, Consult AI*.
+**Refining the box model**: The labelled-box picture got you this far. The truer picture: a variable is a name that points to a value. When you change a variable, you're pointing the name at a new value: `gold = gold + 10` computes the right side, then points `gold` at the new number. Same behaviour as the box picture, but it explains more, and it will matter when two names refer to the same value in *Code Python, Consult AI*.
 
 ### "= means equals"
 **Reality**: In Python, `=` means "assign" or "remember as"
@@ -483,4 +481,4 @@ Well-named variables make code self-documenting. Instead of remembering what `x`
 
 In the next chapter, we'll explore how to get information from users with the `input()` function. You'll see how variables become essential for remembering what users tell us, and how this completes the Input→Process→Output pattern with memory!
 
-Remember: Variables aren't about syntax. They're about giving programs the ability to remember and track the changing state of the world.
+Remember: Variables are about giving programs the ability to remember and track the changing state of the world.

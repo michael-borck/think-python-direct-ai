@@ -35,8 +35,6 @@ Every interaction follows this pattern. Once you see it, you can't unsee it.
 
 ## Discovering I/P/O with Your AI Partner
 
-Let's explore this concept with AI. This is where AI shines - helping us see patterns everywhere.
-
 ### Exploration 1: Finding the Pattern
 
 Ask your AI:
@@ -497,6 +495,6 @@ The goal isn't to memorize Python's `input()` and `print()` functions. The goal 
 
 ## Next Steps
 
-In the next chapter, we'll explore how programs remember things using variables. You'll discover that variables aren't just storage - they're how programs track the state of the world. We'll use your I/P/O understanding to see how data flows through variables during processing.
+In the next chapter, we'll explore how programs remember things using variables. You'll see how variables store values so programs can track the state of the world. We'll use your I/P/O understanding to see how data flows through variables during processing.
 
-Remember: You're not learning to type code. You're learning to think computationally and express your thoughts through code. Let's continue building that thinking!
+Remember: You're learning to think computationally and express your thoughts through code. Let's continue building that thinking!

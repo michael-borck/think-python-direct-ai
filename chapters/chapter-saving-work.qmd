@@ -35,8 +35,6 @@ Think of files as variables that survive between program runs:
 
 ## Discovering Files with Your AI Partner
 
-Let's explore how programs create lasting memory.
-
 ### Exploration 1: The Problem with Temporary Data
 
 Ask your AI:
@@ -554,4 +552,4 @@ For this chapter, record:
 
 In the next chapter, we'll learn about debugging - how to find and fix problems when things go wrong. You'll discover that errors aren't failures; they're clues that help you build better programs. Files will become even more valuable as you learn to log information for debugging!
 
-Remember: Files aren't about memorizing modes and methods. They're about giving your programs lasting memory - transforming temporary calculations into persistent applications that remember their users!
+Remember: Files are about giving your programs lasting memory, turning temporary calculations into persistent applications that remember their users!

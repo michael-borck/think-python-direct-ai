@@ -22,7 +22,7 @@ Complete code and notebooks for all projects are available on GitHub with "Open 
 
 This capstone project brings together **every skill** you've learned throughout the course. You'll build a complete Todo application with a graphical interface that demonstrates your journey from beginner to software architect.
 
-This isn't just about completing a project - it's about proving you can design, build, and refine real applications that solve real problems!
+The project asks you to design, build, and refine a real application that solves a real problem.
 
 ## The Problem to Solve
 

@@ -268,7 +268,7 @@ Write about your learning journey, create tutorials, or speak at events to help 
 
 ## The Continuous Learning Journey
 
-Programming is a field of constant evolution. New languages, frameworks, and paradigms emerge regularly. Your greatest asset isn't knowledge of any specific technology. It is your ability to learn effectively.
+Programming is a field of constant evolution. New languages, frameworks, and paradigms emerge regularly. Your ability to learn effectively matters more than knowledge of any specific technology.
 
 **The skills that will serve you throughout your career:**
 
@@ -351,7 +351,5 @@ You've completed more than a course. You've undergone a transformation. You now 
 **Your AI partnership continues evolving** as you tackle more sophisticated projects that require architectural thinking and strategic implementation.
 
 **Your programming community expands** as you connect with other developers, contribute to projects, and help newcomers discover the joy of programming.
-
-The foundation is complete. The tools are ready. Your future as a programmer is bright with unlimited possibilities.
 
 **Congratulations on completing *Think Python, Direct AI*. Welcome to your programming future! 🚀**

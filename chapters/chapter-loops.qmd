@@ -40,8 +40,6 @@ Once you define a pattern, it works for any amount:
 
 ## Discovering Loops with Your AI Partner
 
-Let's explore how programs repeat intelligently.
-
 ### Exploration 1: Finding Repetition
 
 Ask your AI:
@@ -453,7 +451,7 @@ user_input = ""
 while user_input != "quit":
     user_input = input("Command: ")
 ```
-Note the first line: `user_input` must exist before the `while` can check it. Starting it as an empty string means the loop always runs at least once — and Python never meets a variable that doesn't exist yet.
+Note the first line: `user_input` must exist before the `while` can check it. Starting it as an empty string means the loop always runs at least once. Python never meets a variable that doesn't exist yet.
 
 ### "Loop variables are just throwaway counters"
 **Reality**: Loop variables can be meaningful:
@@ -535,4 +533,4 @@ With just these four concepts, you can build surprisingly powerful programs!
 
 Congratulations! You've completed the fundamental concepts of programming. In the Fortune Teller project, you'll combine everything you've learned to build your first complete program: a Fortune Teller that uses input, variables, decisions, and loops to create an interactive experience.
 
-Remember: Loops aren't about memorizing `for` and `while` syntax. They're about recognising repetition patterns and making programs that can handle anything from 1 to 1 million items with the same elegant code!
+Remember: Loops are about recognising repetition patterns and making programs that can handle anything from 1 to 1 million items with the same code!
