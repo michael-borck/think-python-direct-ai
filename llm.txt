@@ -99,6 +99,8 @@ Found an error? Have a suggestion?
 
 This book is part of a series designed to help you master modern software development in the AI era.
 
+The series has a trunk: Conversation, Not Delegation for method and The Human Edge for professional judgement. This book is the Python foundations branch.
+
 Two ways in:
 
 | Start with | Continue with | Because |
@@ -317,9 +319,7 @@ But vibe coding has a ceiling, and you hit it fast.
 
 When a vibe-coded program breaks, you cannot fix it. You can only paste the error back into the AI and hope. When requirements change, you start over because you never understood the original design. When the project grows beyond a single file, you have no mental model of how the pieces connect, so every change risks breaking something else. The AI gets stuck too, suggesting fixes that introduce new bugs, because it is guessing at the architecture just like you are.
 
-The exercises in this book look simple. A temperature converter. A greeting program. A number game. You could vibe code all of them in minutes. But that is not the point.
-
-The point is developing habits that scale. The student who learns to decompose a temperature converter into input, process, and output will decompose a web application into routes, handlers, and data layers. The student who learns to trace through a loop by hand will find the off-by-one error that the AI cannot see. The student who learns to write pseudocode before code will give the AI specifications precise enough to produce correct implementations on the first try.
+The exercises in this book look simple. A temperature converter. A greeting program. A number game. You could vibe code all of them in minutes. The goal is developing habits that scale. The student who learns to decompose a temperature converter into input, process, and output will decompose a web application into routes, handlers, and data layers. The student who learns to trace through a loop by hand will find the off-by-one error that the AI cannot see. The student who learns to write pseudocode before code will give the AI specifications precise enough to produce correct implementations on the first try.
 
 The exercises are simple so you can focus on the process, not the problem. Once the process is second nature, you can apply it to problems that are too complex to vibe code, and those are the problems that matter professionally.
 
@@ -9976,7 +9976,7 @@ Expand Your Comfort Zone:
 ### Mindset Preparation
 
 Embrace Complexity:
-Projects in Code Python, Consult AI will stretch you further than anything you've built. That's the point! You're ready to handle that complexity because you understand the underlying principles.
+Projects in Code Python, Consult AI will stretch you further than anything you've built. You're ready to handle that complexity because you understand the underlying principles.
 
 Trust Your Problem-Solving Process:
 When faced with overwhelming requirements, break them down using the same techniques you've practiced. Every complex application is just simple pieces working together.
