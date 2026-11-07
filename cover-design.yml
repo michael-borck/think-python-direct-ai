@@ -2,12 +2,12 @@ version: 1
 style: editorial-c
 art: cover-art.png
 family: PROGRAMMING / PYTHON 01
-accent: '#27776C'
-background: '#E0EBE4'
+accent: '#2DD4BF'
+background: '#134E4A'
 title_lines:
 - Think Python,
 - Direct AI
-dark: false
+dark: true
 pixel: false
 scene: think
 art_origin: Locally constructed editable vector illustration.
